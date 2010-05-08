@@ -1,0 +1,543 @@
+# translation of libktorrent.po to Français
+# traduction de ...po en Français
+# Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2010 Free Software Foundation, Inc.
+# Pierre "delroth" Bourdon <delroth@gmail.com>
+# Simon "asmanur" Castellan <asmanur@gmail.com>
+# Grégoire "Metzgermeister" Duchêne <duchene.g@gmail.com>
+# Quentin "Cygal" Pradet <moi@cygal.info>
+# Gabriel "bluestorm" Scherer <bluestorm.dylc@gmail.com>
+# Kevin "Katen" Soltysiak <nightroad.katen@gmail.com>
+# Najib Zulon Idrissi Katouni <ZulonZ@gmail.com>
+# Thomas 'Dark-Side' Refis <refis.thomas@gmail.com>
+#
+# Benoit Verduyn <benoit.verduyn@videotron.ca>, 2007, 2008.
+# Sébastien Renard <Sebastien.Renard@digitalfox.org>, 2007, 2008, 2009.
+# Nicolas Ternisien <nicolas.ternisien@gmail.com>, 2008.
+# Anne-Marie Mahfouf <annemarie.mahfouf@free.fr>, 2008.
+# Mickael Sibelle <kimael@gmail.com>, 2008.
+# Joëlle Cornavin <jcornavin@laposte.net>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: libktorrent\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2010-04-29 04:59+0200\n"
+"PO-Revision-Date: 2010-04-16 00:08+0200\n"
+"Last-Translator: Joëlle Cornavin <jcornavin@laposte.net>\n"
+"Language-Team: Français <kde-francophone@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"kde-francophone@kde.org>\n"
+"kde-francophone@kde.org>\n"
+"kde-francophone@kde.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: KBabel 1.11.4\n"
+"X-Accelerator-Marker: &\n"
+
+# unreviewed-context
+#: src/bcodec/bdecoder.cpp:62
+#, kde-format
+msgid "Illegal token: %1"
+msgstr "Jeton illégal : %1"
+
+#: src/bcodec/bdecoder.cpp:125 src/bcodec/bdecoder.cpp:133
+msgid "Decode error"
+msgstr "Erreur de décodage"
+
+#: src/bcodec/bdecoder.cpp:193 src/bcodec/bdecoder.cpp:238
+msgid "Unexpected end of input"
+msgstr "Fin de données inattendue"
+
+#: src/bcodec/bdecoder.cpp:213 src/bcodec/bdecoder.cpp:247
+#, kde-format
+msgid "Cannot convert %1 to an int"
+msgstr "Impossible de convertir %1 en un entier"
+
+# unreviewed-context
+#: src/bcodec/bdecoder.cpp:252
+msgid "Torrent is incomplete."
+msgstr "Le torrent est incomplet."
+
+# unreviewed-context
+#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:325
+#: src/util/fileops.cpp:367
+#, kde-format
+msgid "Cannot open %1 : %2"
+msgstr "Impossible d'ouvrir %1 : %2"
+
+# unreviewed-context
+#: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:246
+#: src/diskio/cachefile.cpp:433 src/diskio/cachefile.cpp:501
+#, kde-format
+msgid "Cannot open %1 for writing : readonly filesystem"
+msgstr ""
+"Impossible d'ouvrir %1 pour y écrire : système de fichiers en lecture seule"
+
+#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:439
+#, kde-format
+msgid "Attempting to write beyond the maximum size of %1"
+msgstr "Tentative d'écriture au-delà de la taille maximale de %1"
+
+#: src/diskio/cachefile.cpp:131
+#, kde-format
+msgid "Not enough free disk space for %1"
+msgstr "Pas assez d'espace disque libre pour %1"
+
+#: src/diskio/cachefile.cpp:253
+#, kde-format
+msgid ""
+"Cannot expand file %1 : attempting to grow the file beyond the maximum size"
+msgstr ""
+"Impossible d'étendre le fichier %1 : tentative de faire croître le fichier "
+"au-delà de la taille maximale"
+
+# unreviewed-context
+#: src/diskio/cachefile.cpp:257
+#, kde-format
+msgid "Cannot expand file %1 : %2"
+msgstr "Impossible de développer le fichier %1 : %2"
+
+# unreviewed-context
+#: src/diskio/cachefile.cpp:399
+#, kde-format
+msgid "Error : Reading past the end of the file %1"
+msgstr "Erreur : lecture après la fin du fichier %1"
+
+# unreviewed-context
+#: src/diskio/cachefile.cpp:404 src/diskio/cachefile.cpp:451
+#, kde-format
+msgid "Failed to seek file %1 : %2"
+msgstr "Impossible de se déplacer dans le fichier %1 : %2"
+
+#: src/diskio/cachefile.cpp:412
+#, kde-format
+msgid "Error reading from %1"
+msgstr "Erreur de lecture depuis %1"
+
+# unreviewed-context
+#: src/diskio/cachefile.cpp:455
+#, kde-format
+msgid "Failed to write to file %1 : %2"
+msgstr "Impossible d'écrire dans le fichier %1 : %2"
+
+# unreviewed-context
+#: src/diskio/cachefile.cpp:522
+#, kde-format
+msgid "Cannot preallocate diskspace : %1"
+msgstr "Impossible de préallouer l'espace disque : %1"
+
+# unreviewed-context
+#: src/diskio/chunkmanager.cpp:207 src/diskio/chunkmanager.cpp:322
+#, kde-format
+msgid "Cannot open index file %1 : %2"
+msgstr "Impossible d'ouvrir le fichier d'index %1 : %2"
+
+# unreviewed-context
+#: src/diskio/singlefilecache.cpp:72 src/diskio/multifilecache.cpp:107
+#, kde-format
+msgid "Failed to open %1 : %2"
+msgstr "Impossible d'ouvrir %1 : %2"
+
+# unreviewed-context
+#: src/diskio/singlefilecache.cpp:83 src/diskio/multifilecache.cpp:134
+#, kde-format
+msgid "Failed to create %1 : %2"
+msgstr "Impossible de créer %1 : %2"
+
+# unreviewed-context
+#: src/diskio/dndfile.cpp:89
+#, kde-format
+msgid "Cannot create file %1 : %2"
+msgstr "Impossible de créer le fichier %1 : %2"
+
+# unreviewed-context
+#: src/diskio/dndfile.cpp:137
+#, kde-format
+msgid "Failed to write first chunk to DND file : %1"
+msgstr "Échec dans l'écriture du premier morceau dans le fichier DND : %1"
+
+# unreviewed-context
+#: src/diskio/dndfile.cpp:155
+#, kde-format
+msgid "Failed to write last chunk to DND file : %1"
+msgstr "Échec dans l'écriture du dernier morceau dans le fichier DND : %1"
+
+# unreviewed-context
+#: src/diskio/multifilecache.cpp:725 src/diskio/multifilecache.cpp:764
+#, kde-format
+msgid "Cannot open file %1 : %2"
+msgstr "Impossible d'ouvrir le fichier %1 : %2"
+
+#: src/interfaces/trackerinterface.cpp:58
+msgid "OK"
+msgstr "Ok"
+
+#: src/interfaces/trackerinterface.cpp:59
+msgid "Announcing"
+msgstr "Annonce"
+
+# unreviewed-context
+#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:85
+#, kde-format
+msgid "Error: %1"
+msgstr "Erreur : %1"
+
+#: src/migrate/migrate.cpp:45
+#, kde-format
+msgid "The directory %1 does not exist"
+msgstr "Le dossier %1 n'existe pas"
+
+#: src/peer/peerid.cpp:203
+msgid "Unknown client"
+msgstr "Client inconnu"
+
+#: src/tracker/httpannouncejob.cpp:140
+msgid "Redirect without a redirect location"
+msgstr "Rediriger sans un emplacement de redirection"
+
+#: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
+#: src/tracker/httptracker.cpp:554
+#, kde-format
+msgid "Timeout contacting tracker %1"
+msgstr "Temps imparti dépassé pour contacter le traqueur %1"
+
+#: src/tracker/udptracker.cpp:408
+#, kde-format
+msgid "Unable to resolve hostname %1"
+msgstr "Impossible de résoudre le nom d'hôte %1"
+
+#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
+#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+msgid "Invalid response from tracker"
+msgstr "Réponse du traqueur non valable"
+
+#: src/tracker/httptracker.cpp:293
+msgid "Invalid data from tracker"
+msgstr "Données non valables venant du traqueur"
+
+#: src/tracker/httptracker.cpp:476
+msgid "Invalid tracker URL"
+msgstr "URL du traqueur mal formée"
+
+#: src/torrent/torrentstats.cpp:71
+msgid "Not started"
+msgstr "Non démarré"
+
+#: src/torrent/torrentstats.cpp:73
+msgid "Download completed"
+msgstr "Téléchargement terminé"
+
+#: src/torrent/torrentstats.cpp:75
+msgid "Seeding completed"
+msgstr "Ensemencement terminé"
+
+#: src/torrent/torrentstats.cpp:77
+msgctxt "Status of a torrent file"
+msgid "Seeding"
+msgstr "Ensemencement"
+
+#: src/torrent/torrentstats.cpp:79
+msgid "Downloading"
+msgstr "Téléchargement"
+
+#: src/torrent/torrentstats.cpp:81
+msgid "Stalled"
+msgstr "En pause"
+
+#: src/torrent/torrentstats.cpp:83
+msgid "Stopped"
+msgstr "Stoppé"
+
+#: src/torrent/torrentstats.cpp:87
+msgid "Allocating diskspace"
+msgstr "Allocation de l'espace disque"
+
+# unreviewed-context
+#: src/torrent/torrentstats.cpp:89
+msgid "Queued for seeding"
+msgstr "Mis en file d'attente pour ensemencement"
+
+# unreviewed-context
+#: src/torrent/torrentstats.cpp:89
+msgid "Queued for downloading"
+msgstr "Mis en file d'attente pour téléchargement"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Checking data"
+msgstr "Vérification des données"
+
+#: src/torrent/torrentstats.cpp:93
+msgid "Stopped. No space left on device."
+msgstr "Stoppé. Plus de place sur le disque dur."
+
+#: src/torrent/torrentstats.cpp:95
+msgid "Paused"
+msgstr "En pause"
+
+# unreviewed-context
+#: src/torrent/torrentcreator.cpp:124 src/torrent/torrentcreator.cpp:255
+#: src/torrent/torrentcreator.cpp:292
+#, kde-format
+msgid "Cannot open file %1: %2"
+msgstr "Impossible d'ouvrir le fichier %1 : %2"
+
+# unreviewed-context
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "Impossible de créer le fichier index : %1"
+
+# unreviewed-context
+#: src/torrent/torrent.cpp:92 src/torrent/torrent.cpp:166
+#: src/torrent/torrent.cpp:194 src/torrent/torrent.cpp:201
+#: src/torrent/torrent.cpp:209 src/torrent/torrent.cpp:213
+#: src/torrent/torrent.cpp:234 src/torrent/torrent.cpp:305
+msgid "Corrupted torrent."
+msgstr "Torrent corrompu."
+
+# unreviewed-context
+#: src/torrent/torrent.cpp:157
+#, kde-format
+msgid " Unable to open torrent file %1 : %2"
+msgstr "Impossible d'ouvrir le fichier torrent %1 : %2"
+
+#: src/torrent/torrent.cpp:287
+msgid "Parse Error"
+msgstr "Erreur d'analyse"
+
+#: src/torrent/torrentcontrol.cpp:533
+#, kde-format
+msgid ""
+"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
+"torrent is probably corrupt or is not a valid torrent file."
+msgstr ""
+"Une erreur est survenue lors du chargement du torrent <b>%1</b> :<br/><b>%2</"
+"b><br/> Le torrent est probablement corrompu ou n'est pas un fichier torrent "
+"valable."
+
+#: src/torrent/torrentcontrol.cpp:563
+#, kde-format
+msgid ""
+"An error occurred while loading the torrent:<br/><b>%1</b><br/>The torrent "
+"is probably corrupt or is not a valid torrent file."
+msgstr ""
+"Une erreur est survenue lors du chargement du torrent :<br/><b>%1</b><br/> "
+"Le torrent est probablement corrompu ou n'est pas un fichier torrent valable."
+
+# unreviewed-context
+#: src/torrent/torrentcontrol.cpp:574
+#, kde-format
+msgid "Unable to create %1 : %2"
+msgstr "Impossible de créer %1 : %2"
+
+#: src/torrent/torrentcontrol.cpp:589
+#, kde-format
+msgid ""
+"You are already downloading the torrent <b>%1</b>. The tracker lists from "
+"both torrents have been merged."
+msgstr ""
+"Vous téléchargez déjà actuellement le torrent <b>%1</b>. Les listes de "
+"traqueurs des deux torrents ont été fusionnées."
+
+#: src/torrent/torrentcontrol.cpp:594
+#, kde-format
+msgid "You are already downloading the torrent <b>%1</b>."
+msgstr "Vous téléchargez déjà actuellement le torrent <b>%1</b>."
+
+# unreviewed-context
+#: src/datachecker/singledatachecker.cpp:49
+#, kde-format
+msgid "Cannot open file : %1 : %2"
+msgstr "Impossible d'ouvrir le fichier : %1 : %2"
+
+#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:49
+#: src/download/webseed.cpp:93
+msgid "Not connected"
+msgstr "Non connecté"
+
+# unreviewed-context
+#: src/download/httpconnection.cpp:103
+#, kde-format
+msgid "Resolving proxy %1:%2"
+msgstr "Résolution du serveur mandataire %1 : %2"
+
+#: src/download/httpconnection.cpp:112
+#, kde-format
+msgid "Resolving hostname %1"
+msgstr "Résolution du nom de machine %1"
+
+#: src/download/httpconnection.cpp:125 src/download/webseed.cpp:321
+msgid "Connection closed"
+msgstr "Connexion fermée"
+
+# unreviewed-context
+#: src/download/httpconnection.cpp:132
+#, kde-format
+msgid "Error: request failed: %1"
+msgstr "Erreur : la requête a échouée : %1"
+
+#: src/download/httpconnection.cpp:149 src/download/httpconnection.cpp:213
+msgid "Connected"
+msgstr "Connectés"
+
+# unreviewed-context
+#: src/download/httpconnection.cpp:155
+msgid "Error: Failed to connect to webseed"
+msgstr "Erreur : impossible de se connecter à la webseed"
+
+#: src/download/httpconnection.cpp:220
+msgid "Connecting"
+msgstr "Connexion"
+
+#: src/download/httpconnection.cpp:231
+msgid "Failed to connect to webseed"
+msgstr "Impossible de se connecter à la webseed"
+
+#: src/download/httpconnection.cpp:238
+msgid "Failed to resolve hostname of webseed"
+msgstr "Impossible de résoudre le nom de la webseed"
+
+# unreviewed-context
+#: src/download/httpconnection.cpp:318
+msgid "Error: failed to connect, server not responding"
+msgstr "Erreur : impossible de se connecter. Le serveur ne répond pas"
+
+# unreviewed-context
+#: src/download/httpconnection.cpp:327
+msgid "Error: request timed out"
+msgstr "Erreur : le délai alloué à la requête a expiré"
+
+#: src/download/httpconnection.cpp:391
+msgid "Redirected without a new location."
+msgstr "Redirigé sans un nouvel emplacement."
+
+#: src/download/chunkdownload.cpp:373
+#, kde-format
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] "1 pair"
+msgstr[1] "%1 pairs"
+
+#: src/download/webseed.cpp:303 src/download/webseed.cpp:517
+msgid "Not in use"
+msgstr "Non utilisé"
+
+# unreviewed-context
+#: src/util/file.cpp:83
+#, kde-format
+msgid "Cannot write to %1 : %2"
+msgstr "Impossible d'écrire sur %1 : %2"
+
+#: src/util/file.cpp:97
+#, kde-format
+msgid "Cannot read from %1"
+msgstr "Impossible de lire depuis %1"
+
+# unreviewed-context
+#: src/util/log.cpp:115
+#, kde-format
+msgid "Cannot open log file %1 : %2"
+msgstr "Impossible d'ouvrir le fichier journal %1 : %2"
+
+# unreviewed-context
+#: src/util/fileops.cpp:92
+#, kde-format
+msgid "Cannot create directory %1"
+msgstr "Impossible de créer le dossier %1"
+
+# unreviewed-context
+#: src/util/fileops.cpp:133
+#, kde-format
+msgid "Cannot symlink %1 to %2: %3"
+msgstr "Impossible de créer le lien de %1 vers %2 : %3"
+
+# unreviewed-context
+#: src/util/fileops.cpp:150
+#, kde-format
+msgid "Cannot move %1 to %2: %3"
+msgstr "Impossible de déplacer %1 vers %2 : %3"
+
+# unreviewed-context
+#: src/util/fileops.cpp:166 src/util/fileops.cpp:182
+#, kde-format
+msgid "Cannot copy %1 to %2: %3"
+msgstr "Impossible de copier %1 sur %2 : %3"
+
+# unreviewed-context
+#: src/util/fileops.cpp:247
+#, kde-format
+msgid "Cannot delete %1: %2"
+msgstr "Impossible de supprimer %1 : %2"
+
+# unreviewed-context
+#: src/util/fileops.cpp:264
+#, kde-format
+msgid "Cannot create %1: %2"
+msgstr "Impossible de créer %1 : %2"
+
+# unreviewed-context
+#: src/util/fileops.cpp:282
+#, kde-format
+msgid "Cannot calculate the filesize of %1: %2"
+msgstr "Impossible de calculer la taille du fichier %1 : %2"
+
+# unreviewed-context
+#: src/util/fileops.cpp:298
+#, kde-format
+msgid "Cannot calculate the filesize : %1"
+msgstr "Impossible de calculer la taille du fichier : %1"
+
+# unreviewed-context
+#: src/util/fileops.cpp:346 src/util/fileops.cpp:352 src/util/fileops.cpp:355
+#: src/util/fileops.cpp:358
+#, kde-format
+msgid "Cannot expand file: %1"
+msgstr "Impossible de développer le fichier : %1"
+
+# unreviewed-context
+#: src/util/fileops.cpp:388
+#, kde-format
+msgid "Cannot seek in file : %1"
+msgstr "Impossible de rechercher dans le fichier : %1"
+
+#: src/util/functions.cpp:263
+#, kde-format
+msgid "%1/s"
+msgstr "%1/s"
+
+#: src/util/functions.cpp:274
+#, kde-format
+msgid "1 day "
+msgid_plural "%1 days "
+msgstr[0] "1 jour"
+msgstr[1] "%1 jours"
+
+# unreviewed-context
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "Général"
+
+# unreviewed-context
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
+msgstr "Connexions"
+
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "Traqueur"
+
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
+
+# unreviewed-context
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
+msgstr "Entrée/Sortie du disque"
+
+#: src/util/logsystemmanager.cpp:38
+msgid "UTP"
+msgstr "UTP"
+
+#~ msgid "Cannot bind to udp port %1 or the 10 following ports."
+#~ msgstr "Impossible de lier le port udp %1 ou les 10 ports suivants."

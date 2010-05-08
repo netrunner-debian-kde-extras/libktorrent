@@ -1,0 +1,5709 @@
+# Translation of ktorrent into Japanese.
+# This file is distributed under the same license as the ktorrent package.
+# Yukiko Bando <ybando@k6.dion.ne.jp>, 2005, 2006, 2007, 2008, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ktorrent\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2010-04-29 04:59+0200\n"
+"PO-Revision-Date: 2009-10-31 23:24+0900\n"
+"Last-Translator: Yukiko Bando <ybando@k6.dion.ne.jp>\n"
+"Language-Team: Japanese <Kdeveloper@kde.gr.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#: src/bcodec/bdecoder.cpp:62
+#, kde-format
+msgid "Illegal token: %1"
+msgstr "不正なトークン: %1"
+
+#: src/bcodec/bdecoder.cpp:125 src/bcodec/bdecoder.cpp:133
+msgid "Decode error"
+msgstr "デコードエラー"
+
+#: src/bcodec/bdecoder.cpp:193 src/bcodec/bdecoder.cpp:238
+msgid "Unexpected end of input"
+msgstr "予期しない入力の終端"
+
+#: src/bcodec/bdecoder.cpp:213 src/bcodec/bdecoder.cpp:247
+#, kde-format
+msgid "Cannot convert %1 to an int"
+msgstr "%1 を整数に変換できません"
+
+#: src/bcodec/bdecoder.cpp:252
+msgid "Torrent is incomplete."
+msgstr "torrent が不完全です。"
+
+#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:325
+#: src/util/fileops.cpp:367
+#, kde-format
+msgid "Cannot open %1 : %2"
+msgstr "<filename>%1</filename> を開けません: %2"
+
+#: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:246
+#: src/diskio/cachefile.cpp:433 src/diskio/cachefile.cpp:501
+#, kde-format
+msgid "Cannot open %1 for writing : readonly filesystem"
+msgstr ""
+"<filename>%1</filename> を書き込みのために開けません: 読み取り専用のファイル"
+"システムです"
+
+#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:439
+#, kde-format
+msgid "Attempting to write beyond the maximum size of %1"
+msgstr ""
+
+#: src/diskio/cachefile.cpp:131
+#, fuzzy, kde-format
+#| msgid "Insufficient disk space for %1"
+msgid "Not enough free disk space for %1"
+msgstr "<resource>%1</resource> に必要なディスク領域がありません"
+
+#: src/diskio/cachefile.cpp:253
+#, kde-format
+msgid ""
+"Cannot expand file %1 : attempting to grow the file beyond the maximum size"
+msgstr ""
+
+#: src/diskio/cachefile.cpp:257
+#, kde-format
+msgid "Cannot expand file %1 : %2"
+msgstr "ファイル <filename>%1</filename> を展開できません: %2"
+
+#: src/diskio/cachefile.cpp:399
+#, kde-format
+msgid "Error : Reading past the end of the file %1"
+msgstr ""
+"エラー: ファイル <filename>%1</filename> の終端を越えて読むことはできません"
+
+#: src/diskio/cachefile.cpp:404 src/diskio/cachefile.cpp:451
+#, kde-format
+msgid "Failed to seek file %1 : %2"
+msgstr "ファイル <filename>%1</filename> をシークできませんでした: %2"
+
+#: src/diskio/cachefile.cpp:412
+#, kde-format
+msgid "Error reading from %1"
+msgstr "<filename>%1</filename> からの読み取りエラー"
+
+#: src/diskio/cachefile.cpp:455
+#, kde-format
+msgid "Failed to write to file %1 : %2"
+msgstr "ファイル <filename>%1</filename> に書き込めませんでした: %2"
+
+#: src/diskio/cachefile.cpp:522
+#, kde-format
+msgid "Cannot preallocate diskspace : %1"
+msgstr "ディスク領域の事前割り当てができません: %1"
+
+#: src/diskio/chunkmanager.cpp:207 src/diskio/chunkmanager.cpp:322
+#, kde-format
+msgid "Cannot open index file %1 : %2"
+msgstr "インデックスファイル <filename>%1</filename> を開けません: %2"
+
+#: src/diskio/singlefilecache.cpp:72 src/diskio/multifilecache.cpp:107
+#, kde-format
+msgid "Failed to open %1 : %2"
+msgstr "<filename>%1</filename> を開けませんでした: %2"
+
+#: src/diskio/singlefilecache.cpp:83 src/diskio/multifilecache.cpp:134
+#, kde-format
+msgid "Failed to create %1 : %2"
+msgstr "<filename>%1</filename> を作成できませんでした: %2"
+
+#: src/diskio/dndfile.cpp:89
+#, kde-format
+msgid "Cannot create file %1 : %2"
+msgstr "ファイル <filename>%1</filename> を作成できません: %2"
+
+#: src/diskio/dndfile.cpp:137
+#, kde-format
+msgid "Failed to write first chunk to DND file : %1"
+msgstr "最初のピースを DND ファイルに書き込めませんでした: %1"
+
+#: src/diskio/dndfile.cpp:155
+#, kde-format
+msgid "Failed to write last chunk to DND file : %1"
+msgstr "最後のピースを DND ファイルに書き込めませんでした: %1"
+
+#: src/diskio/multifilecache.cpp:725 src/diskio/multifilecache.cpp:764
+#, kde-format
+msgid "Cannot open file %1 : %2"
+msgstr "ファイル <filename>%1</filename> を開けません: %2"
+
+#: src/interfaces/trackerinterface.cpp:58
+msgid "OK"
+msgstr "OK"
+
+#: src/interfaces/trackerinterface.cpp:59
+msgid "Announcing"
+msgstr "アナウンス"
+
+#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:85
+#, kde-format
+msgid "Error: %1"
+msgstr "エラー: %1"
+
+#: src/migrate/migrate.cpp:45
+#, kde-format
+msgid "The directory %1 does not exist"
+msgstr "フォルダ <filename>%1</filename> は存在しません"
+
+#: src/peer/peerid.cpp:203
+msgid "Unknown client"
+msgstr "未知のクライアント"
+
+#: src/tracker/httpannouncejob.cpp:140
+msgid "Redirect without a redirect location"
+msgstr "リダイレクト先なしでリダイレクトされました"
+
+#: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
+#: src/tracker/httptracker.cpp:554
+#, kde-format
+msgid "Timeout contacting tracker %1"
+msgstr "トラッカー %1 への接続中にタイムアウト"
+
+#: src/tracker/udptracker.cpp:408
+#, kde-format
+msgid "Unable to resolve hostname %1"
+msgstr "ホスト名 %1 を解決できませんでした"
+
+#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
+#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+msgid "Invalid response from tracker"
+msgstr "トラッカーから無効な応答"
+
+#: src/tracker/httptracker.cpp:293
+msgid "Invalid data from tracker"
+msgstr "トラッカーから無効なデータ"
+
+#: src/tracker/httptracker.cpp:476
+msgid "Invalid tracker URL"
+msgstr "無効なトラッカー URL"
+
+#: src/torrent/torrentstats.cpp:71
+msgid "Not started"
+msgstr "開始していません"
+
+#: src/torrent/torrentstats.cpp:73
+msgid "Download completed"
+msgstr "ダウンロード完了"
+
+#: src/torrent/torrentstats.cpp:75
+msgid "Seeding completed"
+msgstr "シード完了"
+
+#: src/torrent/torrentstats.cpp:77
+msgctxt "Status of a torrent file"
+msgid "Seeding"
+msgstr "シード中"
+
+#: src/torrent/torrentstats.cpp:79
+msgid "Downloading"
+msgstr "ダウンロード中"
+
+#: src/torrent/torrentstats.cpp:81
+msgid "Stalled"
+msgstr "ストールしました"
+
+#: src/torrent/torrentstats.cpp:83
+msgid "Stopped"
+msgstr "停止中"
+
+#: src/torrent/torrentstats.cpp:87
+msgid "Allocating diskspace"
+msgstr "ディスク領域を割り当て中"
+
+#: src/torrent/torrentstats.cpp:89
+msgid "Queued for seeding"
+msgstr "シード待ち"
+
+#: src/torrent/torrentstats.cpp:89
+msgid "Queued for downloading"
+msgstr "ダウンロード待ち"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Checking data"
+msgstr "データをチェック中"
+
+#: src/torrent/torrentstats.cpp:93
+msgid "Stopped. No space left on device."
+msgstr "停止しました。デバイスに空き領域が残っていません。"
+
+#: src/torrent/torrentstats.cpp:95
+msgid "Paused"
+msgstr "一時停止"
+
+#: src/torrent/torrentcreator.cpp:124 src/torrent/torrentcreator.cpp:255
+#: src/torrent/torrentcreator.cpp:292
+#, kde-format
+msgid "Cannot open file %1: %2"
+msgstr "ファイル <filename>%1</filename> を開けません: %2"
+
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "インデックスファイルを作成できません: %1"
+
+#: src/torrent/torrent.cpp:92 src/torrent/torrent.cpp:166
+#: src/torrent/torrent.cpp:194 src/torrent/torrent.cpp:201
+#: src/torrent/torrent.cpp:209 src/torrent/torrent.cpp:213
+#: src/torrent/torrent.cpp:234 src/torrent/torrent.cpp:305
+msgid "Corrupted torrent."
+msgstr "torrent が壊れています。"
+
+#: src/torrent/torrent.cpp:157
+#, kde-format
+msgid " Unable to open torrent file %1 : %2"
+msgstr "torrent ファイル <filename>%1</filename> を開けません: %2"
+
+#: src/torrent/torrent.cpp:287
+msgid "Parse Error"
+msgstr "解析エラー"
+
+#: src/torrent/torrentcontrol.cpp:533
+#, kde-format
+msgid ""
+"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
+"torrent is probably corrupt or is not a valid torrent file."
+msgstr ""
+"torrent <b>%1</b> のロード中にエラーが発生しました:<br/>%2<br/>おそらく "
+"torrent が壊れているか、有効な torrent ファイルではありません。"
+
+#: src/torrent/torrentcontrol.cpp:563
+#, kde-format
+msgid ""
+"An error occurred while loading the torrent:<br/><b>%1</b><br/>The torrent "
+"is probably corrupt or is not a valid torrent file."
+msgstr ""
+"torrent のロード中にエラーが発生しました:<br/>%1<br/>おそらく torrent が壊れ"
+"ているか、有効な torrent ファイルではありません。"
+
+#: src/torrent/torrentcontrol.cpp:574
+#, kde-format
+msgid "Unable to create %1 : %2"
+msgstr "<resource>%1</resource> を作成できません: %2"
+
+#: src/torrent/torrentcontrol.cpp:589
+#, fuzzy, kde-format
+#| msgid ""
+#| "You are already downloading this torrent %1, the list of trackers of both "
+#| "torrents has been merged."
+msgid ""
+"You are already downloading the torrent <b>%1</b>. The tracker lists from "
+"both torrents have been merged."
+msgstr ""
+"torrent <resource>%1</resource> は既にダウンロード中です。両方の torrent のト"
+"ラッカーリストをマージしました。"
+
+#: src/torrent/torrentcontrol.cpp:594
+#, fuzzy, kde-format
+#| msgid "You are already downloading the torrent %1"
+msgid "You are already downloading the torrent <b>%1</b>."
+msgstr "torrent <resource>%1</resource> は既にダウンロード中です"
+
+#: src/datachecker/singledatachecker.cpp:49
+#, kde-format
+msgid "Cannot open file : %1 : %2"
+msgstr "ファイル <filename>%1</filename> を開けません: %2"
+
+#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:49
+#: src/download/webseed.cpp:93
+msgid "Not connected"
+msgstr "接続していません"
+
+#: src/download/httpconnection.cpp:103
+#, kde-format
+msgid "Resolving proxy %1:%2"
+msgstr "プロキシ %1:%2 を解決"
+
+#: src/download/httpconnection.cpp:112
+#, kde-format
+msgid "Resolving hostname %1"
+msgstr "ホスト名 %1 を解決"
+
+#: src/download/httpconnection.cpp:125 src/download/webseed.cpp:321
+msgid "Connection closed"
+msgstr "接続が閉じられました"
+
+#: src/download/httpconnection.cpp:132
+#, kde-format
+msgid "Error: request failed: %1"
+msgstr "エラー: 要求が失敗しました: %1"
+
+#: src/download/httpconnection.cpp:149 src/download/httpconnection.cpp:213
+msgid "Connected"
+msgstr "接続しました"
+
+#: src/download/httpconnection.cpp:155
+msgid "Error: Failed to connect to webseed"
+msgstr "エラー: ウェブシードに接続できませんでした"
+
+#: src/download/httpconnection.cpp:220
+msgid "Connecting"
+msgstr "接続中"
+
+#: src/download/httpconnection.cpp:231
+msgid "Failed to connect to webseed"
+msgstr "ウェブシードに接続できませんでした"
+
+#: src/download/httpconnection.cpp:238
+msgid "Failed to resolve hostname of webseed"
+msgstr "ウェブシードのホスト名を解決できませんでした"
+
+#: src/download/httpconnection.cpp:318
+msgid "Error: failed to connect, server not responding"
+msgstr "エラー: 接続できませんでした、サーバが応答しません"
+
+#: src/download/httpconnection.cpp:327
+msgid "Error: request timed out"
+msgstr "エラー: 要求がタイムアウトしました"
+
+#: src/download/httpconnection.cpp:391
+msgid "Redirected without a new location."
+msgstr "新しい場所なしでリダイレクトされました。"
+
+#: src/download/chunkdownload.cpp:373
+#, kde-format
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] "1 ピア"
+msgstr[1] "%1 ピア"
+
+#: src/download/webseed.cpp:303 src/download/webseed.cpp:517
+msgid "Not in use"
+msgstr "使用されていません"
+
+#: src/util/file.cpp:83
+#, kde-format
+msgid "Cannot write to %1 : %2"
+msgstr "<filename>%1</filename> に書き込めません: %2"
+
+#: src/util/file.cpp:97
+#, kde-format
+msgid "Cannot read from %1"
+msgstr "<filename>%1</filename> から読み取れません"
+
+#: src/util/log.cpp:115
+#, kde-format
+msgid "Cannot open log file %1 : %2"
+msgstr "ログファイル <filename>%1</filename> を開けません: %2"
+
+#: src/util/fileops.cpp:92
+#, kde-format
+msgid "Cannot create directory %1"
+msgstr "フォルダ <filename>%1</filename> を作成できません"
+
+#: src/util/fileops.cpp:133
+#, kde-format
+msgid "Cannot symlink %1 to %2: %3"
+msgstr ""
+"<filename>%1</filename> のシンボリックリンク <filename>%2</filename> を作成で"
+"きません: %3"
+
+#: src/util/fileops.cpp:150
+#, kde-format
+msgid "Cannot move %1 to %2: %3"
+msgstr ""
+"<filename>%1</filename> を <filename>%2</filename> に移動できません: %3"
+
+#: src/util/fileops.cpp:166 src/util/fileops.cpp:182
+#, kde-format
+msgid "Cannot copy %1 to %2: %3"
+msgstr ""
+"<filename>%1</filename> を <filename>%2</filename> にコピーできません: %3"
+
+#: src/util/fileops.cpp:247
+#, kde-format
+msgid "Cannot delete %1: %2"
+msgstr "<filename>%1</filename> を削除できません: %2"
+
+#: src/util/fileops.cpp:264
+#, kde-format
+msgid "Cannot create %1: %2"
+msgstr "<filename>%1</filename> を作成できません: %2"
+
+#: src/util/fileops.cpp:282
+#, kde-format
+msgid "Cannot calculate the filesize of %1: %2"
+msgstr "<filename>%1</filename> のファイルサイズを計算できません: %2"
+
+#: src/util/fileops.cpp:298
+#, kde-format
+msgid "Cannot calculate the filesize : %1"
+msgstr "ファイルサイズを計算できません: %1"
+
+#: src/util/fileops.cpp:346 src/util/fileops.cpp:352 src/util/fileops.cpp:355
+#: src/util/fileops.cpp:358
+#, kde-format
+msgid "Cannot expand file: %1"
+msgstr "ファイルを展開できません: %1"
+
+#: src/util/fileops.cpp:388
+#, kde-format
+msgid "Cannot seek in file : %1"
+msgstr "ファイル内でシークできません: %1"
+
+#: src/util/functions.cpp:263
+#, kde-format
+msgid "%1/s"
+msgstr "%1/秒"
+
+#: src/util/functions.cpp:274
+#, kde-format
+msgid "1 day "
+msgid_plural "%1 days "
+msgstr[0] "1 日"
+msgstr[1] "%1 日"
+
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "全般"
+
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
+msgstr "接続"
+
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "トラッカー"
+
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
+
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
+msgstr "ディスク I/O (入出力)"
+
+#: src/util/logsystemmanager.cpp:38
+#, fuzzy
+#| msgid "UDP"
+msgid "UTP"
+msgstr "UDP"
+
+#~ msgid "Cannot bind to udp port %1 or the 10 following ports."
+#~ msgstr ""
+#~ "UDP ポート <numid>%1</numid> またはそれに続く 10 個のポートにバインドでき"
+#~ "ません。"
+
+#, fuzzy
+#~| msgid "Scan Folder"
+#~ msgctxt "plugin name"
+#~ msgid "Scan Folder"
+#~ msgstr "スキャンフォルダ"
+
+#~ msgid "loaded"
+#~ msgstr "ロード済み"
+
+#~ msgid "Device"
+#~ msgstr "デバイス"
+
+#~ msgid "Port Forwarded"
+#~ msgstr "フォワードされたポート"
+
+#~ msgid "WAN Connection"
+#~ msgstr "WAN 接続"
+
+# dummy markup
+#~ msgid ""
+#~ "Model Name: <b>%1</b><br/>Manufacturer: <b>%2</b><br/>Model Description: "
+#~ "<b>%3</b><br/>"
+#~ msgstr "<i></i>機種: %1<br/>メーカー: %2<br/>機種の説明: %3"
+
+#~ msgid "UPnP"
+#~ msgstr "UPnP"
+
+#~ msgid "Shows the status of the UPnP plugin"
+#~ msgstr "UPnP プラグインの状態を表示します"
+
+#~ msgid ""
+#~ "%2\n"
+#~ "1 active filter"
+#~ msgid_plural ""
+#~ "%2\n"
+#~ "%1 active filters"
+#~ msgstr[0] ""
+#~ "%2\n"
+#~ "アクティブなフィルタ 1 個"
+#~ msgstr[1] ""
+#~ "%2\n"
+#~ "アクティブなフィルタ %1 個"
+
+#~ msgid "<b>%1</b><br/><br/>%2"
+#~ msgstr "<b>%1</b><br/><br/>%2"
+
+#~ msgid "Syndication"
+#~ msgstr "シンジケーション"
+
+#~ msgid "Manages RSS and Atom feeds"
+#~ msgstr "RSS と Atom フィードを管理します"
+
+#~ msgid "Enter the URL"
+#~ msgstr "URL を入力"
+
+#~ msgid "Please enter the URL of the RSS or Atom feed."
+#~ msgstr "RSS または Atom フィードの URL を入力してください。"
+
+#~ msgid "Failed to load feed %1."
+#~ msgstr "フィード <resource>%1</resource> の読み込みに失敗しました。"
+
+#~ msgid "Failed to create directory for feed %1 : %2"
+#~ msgstr ""
+#~ "フィード <resource>%1</resource> 用のフォルダの作成に失敗しました: %2"
+
+#~ msgid "New Filter"
+#~ msgstr "新しいフィルタ"
+
+#~ msgid "Add New Filter"
+#~ msgstr "新しいフィルタを追加"
+
+#~ msgid "Add Feed"
+#~ msgstr "フィードを追加"
+
+#~ msgid "Remove Feed"
+#~ msgstr "フィードを削除"
+
+#~ msgid "Show Feed"
+#~ msgstr "フィードを表示"
+
+#~ msgid "Add/Remove Filters"
+#~ msgstr "フィルタを追加/削除"
+
+#~ msgid "Rename"
+#~ msgstr "名前変更"
+
+#~ msgid "Add Filter"
+#~ msgstr "フィルタを追加"
+
+#~ msgid "Remove Filter"
+#~ msgstr "フィルタを削除"
+
+#~ msgid "Edit Filter"
+#~ msgstr "フィルタを編集"
+
+#~ msgid "Feed: <b>%1</b>"
+#~ msgstr "フィード: %1"
+
+#~ msgid "<b>OK</b>"
+#~ msgstr "OK"
+
+#~ msgid "<b>Not Loaded</b>"
+#~ msgstr "読み込まれていません"
+
+#~ msgid "<b>Download Failed</b>"
+#~ msgstr "ダウンロード失敗"
+
+#~ msgid "<b>Downloading</b>"
+#~ msgstr "ダウンロード中"
+
+#~ msgid "Could not find a valid link to a torrent on %1"
+#~ msgstr "torrent への有効なリンクが %1 に見つかりませんでした"
+
+#~ msgid "Title"
+#~ msgstr "タイトル"
+
+#~ msgid "Date Published"
+#~ msgstr "公開日"
+
+#~ msgid "Torrent"
+#~ msgstr "Torrent"
+
+#~ msgid "There already is a filter named %1, filter names must be unique."
+#~ msgstr ""
+#~ "<resource>%1</resource> という名前のフィルタは既に存在します。フィルタ名は"
+#~ "一意でなければなりません。"
+
+#~ msgid "ZeroConf"
+#~ msgstr "ZeroConf"
+
+#~ msgid "Available"
+#~ msgstr "利用可能"
+
+#~ msgid "Pending"
+#~ msgstr "保留"
+
+#~ msgid "<b>%1</b><br/>Preview: %2<br/>Downloaded: %3 %"
+#~ msgstr "<b>%1</b><br/>プレビュー: %2<br/>ダウンロード済み: %3%"
+
+#~ msgid "Artist"
+#~ msgstr "アーティスト"
+
+#~ msgid "Album"
+#~ msgstr "アルバム"
+
+#~ msgid "Length"
+#~ msgstr "長さ"
+
+#~ msgid "Year"
+#~ msgstr "年"
+
+#~ msgid "Ready to play"
+#~ msgstr "準備完了"
+
+#~ msgid "Mode:"
+#~ msgstr "モード:"
+
+#~ msgid "Single File"
+#~ msgstr "単一のファイル"
+
+#~ msgid "Playlist"
+#~ msgstr "プレイリスト"
+
+#~ msgid "Random"
+#~ msgstr "ランダム"
+
+#~ msgid "Remove"
+#~ msgstr "削除"
+
+#~ msgid "Add Media"
+#~ msgstr "メディアを追加"
+
+#~ msgid "Clear Playlist"
+#~ msgstr "プレイリストをクリア"
+
+# dummy markup
+#~ msgid "Title: <b>%1</b><br/>Artist: <b>%2</b><br/>Album: <b>%3</b>"
+#~ msgstr "<i></i>タイトル: %1<br/>アーティスト: %2<br/>アルバム: %3"
+
+# dummy markup
+#~ msgid ""
+#~ "Playing: <b>%1</b><br/>\n"
+#~ "%2"
+#~ msgstr ""
+#~ "<i></i>再生中: %1<br/>\n"
+#~ "%2"
+
+# dummy markup
+#~ msgid "Title: <b>%1</b><br/>Artist: <b>%2</b>"
+#~ msgstr "<i></i>タイトル: %1<br/>アーティスト: %2"
+
+#~ msgid "Title: <b>%1</b>"
+#~ msgstr "タイトル: %1"
+
+#~ msgid "Playing: <b>%1</b>"
+#~ msgstr "再生中: %1"
+
+#~ msgid "Media Player"
+#~ msgstr "メディアプレーヤー"
+
+#~ msgid "Play List"
+#~ msgstr "プレイリスト"
+
+#~ msgid "Play"
+#~ msgstr "再生"
+
+#~ msgid "Pause"
+#~ msgstr "一時停止"
+
+#~ msgid "Stop"
+#~ msgstr "停止"
+
+#~ msgid "Previous"
+#~ msgstr "前へ"
+
+#~ msgid "Next"
+#~ msgstr "次へ"
+
+#~ msgid "Show Video"
+#~ msgstr "動画を表示"
+
+#~ msgid "Movie player"
+#~ msgstr "動画プレーヤー"
+
+#~ msgid "Collection:"
+#~ msgstr "コレクション:"
+
+#~ msgid "Toggle Fullscreen"
+#~ msgstr "フルスクリーンの切り替え"
+
+#~ msgid "KTorrent is playing a video."
+#~ msgstr "KTorrent は動画を再生しています。"
+
+#~ msgid "Cannot find web interface skins."
+#~ msgstr "ウェブインターフェースのスキンが見つかりません。"
+
+#~ msgid "Unsupported HTTP method"
+#~ msgstr "サポートされていない HTTP メソッド"
+
+#~ msgid "Web Interface"
+#~ msgstr "ウェブインターフェース"
+
+#~ msgid "HTTP Get not supported when uploading a torrent"
+#~ msgstr "torrent のアップロードには HTTP GET メソッドは使えません"
+
+#~ msgid "Invalid data received"
+#~ msgstr "無効な日付を受け取りました"
+
+#~ msgid "Failed to open temporary file"
+#~ msgstr "一時ファイルを開けませんでした"
+
+#~ msgid "An internal server error occurred: %1"
+#~ msgstr "サーバの内部エラーが発生しました: %1"
+
+#~ msgid "Unknown"
+#~ msgstr "不明"
+
+#~ msgid ""
+#~ "<h1 align='center' style='font-size: large; text-decoration: "
+#~ "underline'>Legend:</h1><ul type='square'>"
+#~ msgstr ""
+#~ "<h1 align='center' style='font-size: large; text-decoration: underline'>凡"
+#~ "例:</h1><ul type='square'>"
+
+#~ msgid ""
+#~ "<li><span style='background-color: %1; font-size: 14px; font-family: "
+#~ "monospace'>&nbsp;&nbsp;</span>&nbsp;—&nbsp;%2</li>"
+#~ msgstr ""
+#~ "<li><span style='background-color: %1; font-size: 14px; font-family: "
+#~ "monospace'>&nbsp;&nbsp;</span>&nbsp;—&nbsp;%2</li>"
+
+#~ msgid "Save as image…"
+#~ msgstr "画像として保存..."
+
+#~ msgid "Rescale"
+#~ msgstr "再計測"
+
+#~ msgid "Reset"
+#~ msgstr "リセット"
+
+#~ msgid "Select path to save image…"
+#~ msgstr "画像の保存先を選択..."
+
+#~ msgid "KiB/s"
+#~ msgstr "KiB/秒"
+
+#~ msgid "Statistics"
+#~ msgstr "統計"
+
+#~ msgid "(= %1 ms)"
+#~ msgstr "(= %1/ミリ秒)"
+
+#~ msgid "Leechers connected"
+#~ msgstr "接続中のリーチャー"
+
+#~ msgid "Leechers in swarms"
+#~ msgstr "スウォームのリーチャー"
+
+#~ msgid "Seeds connected"
+#~ msgstr "接続中のシード"
+
+#~ msgid "Seeds in swarms"
+#~ msgstr "スウォームのシード"
+
+#~ msgid "Average leechers connected per torrent"
+#~ msgstr "torrent あたりのリーチャーの平均接続数"
+
+#~ msgid "Average seeds connected per torrent"
+#~ msgstr "torrent あたりのシードの平均接続数"
+
+#~ msgid "Average leechers connected per running torrent"
+#~ msgstr "実行中の torrent あたりのリーチャーの平均接続数"
+
+#~ msgid "Average seeds connected per running torrent"
+#~ msgstr "実行中の torrent あたりのシードの平均接続数"
+
+#~ msgid "Nodes"
+#~ msgstr "ノード"
+
+#~ msgid "Tasks"
+#~ msgstr "タスク"
+
+#~ msgid "Current speed"
+#~ msgstr "現在の速度"
+
+#~ msgid "Average speed"
+#~ msgstr "平均速度"
+
+#~ msgid "Speed limit"
+#~ msgstr "速度制限"
+
+#~ msgid "Average from leechers"
+#~ msgstr "リーチャーからの平均速度"
+
+#~ msgid "Average to leechers"
+#~ msgstr "リーチャーへの平均速度"
+
+#~ msgid "Average from seeds"
+#~ msgstr "シードからの平均速度"
+
+#~ msgid "From leechers"
+#~ msgstr "リーチャーから"
+
+#~ msgid "From seeds"
+#~ msgstr "シードから"
+
+#~ msgid "Speed charts"
+#~ msgstr "速度チャート"
+
+#~ msgid "Displays charts about download and upload speed"
+#~ msgstr "ダウンロード/アップロード速度に関するチャートを表示します"
+
+#~ msgid "Connections charts"
+#~ msgstr "接続チャート"
+
+#~ msgid "Displays charts about connections"
+#~ msgstr "接続に関するチャートを表示します"
+
+#~ msgid "Display"
+#~ msgstr "表示"
+
+#~ msgctxt "Choked"
+#~ msgid "Yes"
+#~ msgstr "はい"
+
+#~ msgctxt "Not choked"
+#~ msgid "No"
+#~ msgstr "いいえ"
+
+#~ msgctxt "Snubbed"
+#~ msgid "Yes"
+#~ msgstr "はい"
+
+#~ msgctxt "Not snubbed"
+#~ msgid "No"
+#~ msgstr "いいえ"
+
+#~ msgctxt "Interested"
+#~ msgid "Yes"
+#~ msgstr "はい"
+
+#~ msgctxt "Not Interested"
+#~ msgid "No"
+#~ msgstr "いいえ"
+
+#~ msgctxt "Interesting"
+#~ msgid "Yes"
+#~ msgstr "はい"
+
+#~ msgctxt "Not Interesting"
+#~ msgid "No"
+#~ msgstr "いいえ"
+
+#~ msgid "Address"
+#~ msgstr "アドレス"
+
+#~ msgid "Country"
+#~ msgstr "国"
+
+#~ msgid "Client"
+#~ msgstr "クライアント"
+
+#~ msgid "Down Speed"
+#~ msgstr "下り速度"
+
+#~ msgid "Up Speed"
+#~ msgstr "上り速度"
+
+#~ msgid "Choked"
+#~ msgstr "Choked"
+
+#~ msgid "Snubbed"
+#~ msgstr "Snubbed"
+
+#~ msgid "Availability"
+#~ msgstr "利用可能"
+
+#~ msgid "Score"
+#~ msgstr "スコア"
+
+#~ msgid "Upload Slot"
+#~ msgstr "アップロードスロット"
+
+#~ msgid "Requests"
+#~ msgstr "要求"
+
+#~ msgid "Downloaded"
+#~ msgstr "ダウンロード済み"
+
+#~ msgid "Uploaded"
+#~ msgstr "アップロード済み"
+
+#~ msgid "Interested"
+#~ msgstr "Interested"
+
+#~ msgid "Interesting"
+#~ msgstr "Interesting"
+
+#~ msgid "IP address of the peer"
+#~ msgstr "ピアの IP アドレス"
+
+#~ msgid "Country the peer is in"
+#~ msgstr "ピアの国"
+
+#~ msgid "Which client the peer is using"
+#~ msgstr "ピアが使用しているクライアント"
+
+#~ msgid "Download speed"
+#~ msgstr "ダウンロード速度"
+
+#~ msgid "Upload speed"
+#~ msgstr "アップロード速度"
+
+#~ msgid ""
+#~ "Whether or not the peer has choked us - when we are choked the peer will "
+#~ "not send us any data"
+#~ msgstr ""
+#~ "ピアがこちらを Choked (チョーク) としてマークしているかどうか。マークされ"
+#~ "ると、ピアはこちらに何もデータを送ってきません。"
+
+#~ msgid ""
+#~ "Snubbed means the peer has not sent us any data in the last 2 minutes"
+#~ msgstr ""
+#~ "ピアが 2 分間こちらに何もデータを送信してこなかった場合、Snubbed (スナッ"
+#~ "ブ) としてマークされます。"
+
+#~ msgid "How much data the peer has of the torrent"
+#~ msgstr "ピアが持っているこの torrent のデータ"
+
+#~ msgid "Whether or not the peer has DHT enabled"
+#~ msgstr "ピアが DHT を有効にしているかどうか"
+
+#~ msgid ""
+#~ "The score of the peer, KTorrent uses this to determine who to upload to"
+#~ msgstr ""
+#~ "ピアのスコア。KTorrent はこの情報に基づいて誰にアップロードするかを決定し"
+#~ "ます。"
+
+#~ msgid "Only peers which have an upload slot will get data from us"
+#~ msgstr ""
+#~ "アップロードスロットを持っているピアだけが、こちらのデータを取得します"
+
+#~ msgid "The number of download and upload requests"
+#~ msgstr "ダウンロード/アップロード要求の数"
+
+#~ msgid "How much data we have downloaded from this peer"
+#~ msgstr "このピアからダウンロードしたデータ"
+
+#~ msgid "How much data we have uploaded to this peer"
+#~ msgstr "このピアにアップロードしたデータ"
+
+# Interested
+#~ msgid "Whether the peer is interested in downloading data from us"
+#~ msgstr "こちらが持っているデータをピアが必要としているかどうか"
+
+# Interesting
+#~ msgid "Whether we are interested in downloading from this peer"
+#~ msgstr "ピアが持っているデータをこちらが必要としているかどうか"
+
+#~ msgid "No limit"
+#~ msgstr "制限なし"
+
+#~ msgid "Private"
+#~ msgstr "非公開"
+
+#~ msgid "Public"
+#~ msgstr "公開"
+
+#~ msgid "Info Widget"
+#~ msgstr "情報ウィジェット"
+
+#, fuzzy
+#~| msgid "Status"
+#~ msgctxt "@title:tab"
+#~ msgid "Status"
+#~ msgstr "状態"
+
+#~ msgid "Displays status information about a torrent"
+#~ msgstr "torrent の状態情報を表示します"
+
+#, fuzzy
+#~| msgid "Files"
+#~ msgctxt "@title:tab"
+#~ msgid "Files"
+#~ msgstr "ファイル"
+
+#~ msgid "Shows all the files in a torrent"
+#~ msgstr "torrent 中のすべてのファイルを表示します"
+
+#~ msgid "Bandwidth Scheduler"
+#~ msgstr "帯域幅スケジューラ"
+
+#~ msgid "Peers"
+#~ msgstr "ピア"
+
+#~ msgid "Displays all the peers you are connected to for a torrent"
+#~ msgstr "torrent ごとに接続中のすべてのピアを表示します"
+
+#~ msgid "Chunks"
+#~ msgstr "ピース"
+
+#~ msgid "Displays all the chunks you are downloading, of a torrent"
+#~ msgstr "torrent ごとにダウンロード中のすべてのピースを表示します"
+
+#~ msgid "Trackers"
+#~ msgstr "トラッカー"
+
+#~ msgid "Displays information about all the trackers of a torrent"
+#~ msgstr "torrent のすべてのトラッカーに関する情報を表示します"
+
+#~ msgid "Webseeds"
+#~ msgstr "ウェブシード"
+
+#~ msgid "Displays all the webseeds of a torrent"
+#~ msgstr "torrent のすべてのウェブシードを表示します"
+
+#~ msgid "Chunk"
+#~ msgstr "ピース"
+
+#~ msgid "Progress"
+#~ msgstr "進捗"
+
+#~ msgid "Peer"
+#~ msgstr "ピア"
+
+#~ msgid "Files"
+#~ msgstr "ファイル"
+
+#~ msgid "Number of the chunk"
+#~ msgstr "ピースの番号"
+
+#~ msgid "Download progress of the chunk"
+#~ msgstr "ピースのダウンロードの進捗"
+
+#~ msgid "Which peer we are downloading it from"
+#~ msgstr "ピースをどのピアからダウンロードしているか"
+
+#~ msgid "Download speed of the chunk"
+#~ msgstr "ピースのダウンロード速度"
+
+#~ msgid "Which files the chunk is located in"
+#~ msgstr "ピースがどのファイルにあるか"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid "Speed"
+#~ msgstr "速度"
+
+#~ msgid "Status"
+#~ msgstr "状態"
+
+#~ msgid "Kick Peer"
+#~ msgstr "ピアを切断"
+
+#~ msgid "Ban Peer"
+#~ msgstr "ピアを禁止"
+
+#~ msgid ""
+#~ "Cannot add the webseed %1, it is already part of the list of webseeds."
+#~ msgstr ""
+#~ "ウェブシード <resource>%1</resource> を追加できません。既にウェブシードの"
+#~ "一覧にあります。"
+
+#~ msgid "Cannot remove webseed %1, it is part of the torrent."
+#~ msgstr ""
+#~ "ウェブシード <resource>%1</resource> は torrent の一部なので削除できませ"
+#~ "ん。"
+
+#~ msgid "Filter"
+#~ msgstr "フィルタ"
+
+#~ msgctxt "Open file"
+#~ msgid "Open"
+#~ msgstr "開く"
+
+#~ msgid "Download first"
+#~ msgstr "最初にダウンロード"
+
+#~ msgid "Download normally"
+#~ msgstr "普通にダウンロード"
+
+#~ msgid "Download last"
+#~ msgstr "最後にダウンロード"
+
+#~ msgid "Do Not Download"
+#~ msgstr "ダウンロードしない"
+
+#~ msgid "Delete File(s)"
+#~ msgstr "ファイルを削除"
+
+#~ msgid "Move File"
+#~ msgstr "ファイルを移動"
+
+#~ msgid "Collapse Folder Tree"
+#~ msgstr "フォルダツリーをたたむ"
+
+#~ msgid "Expand Folder Tree"
+#~ msgstr "フォルダツリーを展開"
+
+#~ msgid "File Tree"
+#~ msgstr "ファイルツリー"
+
+#~ msgid "File List"
+#~ msgstr "ファイル一覧"
+
+#~ msgid "Show Filter"
+#~ msgstr "フィルタを表示"
+
+#~ msgid ""
+#~ "You will lose all data in this file, are you sure you want to do this?"
+#~ msgid_plural ""
+#~ "You will lose all data in these files, are you sure you want to do this?"
+#~ msgstr[0] ""
+#~ "このファイルのすべてのデータを失うことになります。本当によろしいですか？"
+#~ msgstr[1] ""
+#~ "これらのファイルのすべてのデータを失うことになります。本当によろしいです"
+#~ "か？"
+
+#~ msgid "Select a directory to move the data to."
+#~ msgstr "データを移動するフォルダを選択します。"
+
+#~ msgid "Url"
+#~ msgstr "URL"
+
+#~ msgid "Seeders"
+#~ msgstr "シーダー"
+
+#~ msgid "Leechers"
+#~ msgstr "リーチャー"
+
+#~ msgid "Times Downloaded"
+#~ msgstr "ダウンロード回数"
+
+#~ msgid "Next Update"
+#~ msgstr "次回の更新"
+
+#~ msgid "Priority"
+#~ msgstr "優先度"
+
+#, fuzzy
+#~| msgid "Preview"
+#~ msgctxt "@title:column"
+#~ msgid "Preview"
+#~ msgstr "プレビュー"
+
+#~ msgctxt "Percent of File Downloaded"
+#~ msgid "% Complete"
+#~ msgstr "% 完了"
+
+#~ msgctxt "Download first"
+#~ msgid "First"
+#~ msgstr "最初に"
+
+#~ msgctxt "Download last"
+#~ msgid "Last"
+#~ msgstr "最後に"
+
+#~ msgctxt "Download normally(not as first or last)"
+#~ msgid "Normal"
+#~ msgstr "普通に"
+
+#~ msgctxt "preview available"
+#~ msgid "Available"
+#~ msgstr "利用可能"
+
+#~ msgctxt "Preview pending"
+#~ msgid "Pending"
+#~ msgstr "保留"
+
+#~ msgctxt "No preview available"
+#~ msgid "No"
+#~ msgstr "なし"
+
+#~ msgid "%1 %"
+#~ msgstr "%1%"
+
+#~ msgctxt "Preview available"
+#~ msgid "Available"
+#~ msgstr "利用可能"
+
+#, fuzzy
+#~| msgid "Add Tracker"
+#~ msgid "Add Trackers"
+#~ msgstr "トラッカーを追加"
+
+#, fuzzy
+#~| msgid "Enter the URL of the tracker:"
+#~ msgid "Enter the URL's of the trackers, one per line:"
+#~ msgstr "トラッカーの URL を入力:"
+
+#~ msgid "There already is a tracker named <b>%1</b>."
+#~ msgstr "<resource>%1</resource> という名前のトラッカーは既に存在します。"
+
+#~ msgid ""
+#~ "<img src=\"available_color\">&nbsp; - Available Chunks<br><img src="
+#~ "\"unavailable_color\">&nbsp; - Unavailable Chunks<br><img src="
+#~ "\"excluded_color\">&nbsp; - Excluded Chunks"
+#~ msgstr ""
+#~ "<html><img src=\"available_color\">&nbsp; - ダウンロード可能<br/><img src="
+#~ "\"unavailable_color\">&nbsp; - ダウンロード不可<br/><img src="
+#~ "\"excluded_color\">&nbsp; - 対象外</html>"
+
+#~ msgctxt "Download Normal (not as first or last)"
+#~ msgid "Normal"
+#~ msgstr "普通に"
+
+#~ msgid "Scripts"
+#~ msgstr "スクリプト"
+
+#~ msgid "Widget to start, stop and manage scripts"
+#~ msgstr "スクリプトの開始/停止と管理を行うためのウィジェット"
+
+#~ msgid "Add Script"
+#~ msgstr "スクリプトを追加"
+
+#~ msgid "Remove Script"
+#~ msgstr "スクリプトを削除"
+
+#~ msgid "Run Script"
+#~ msgstr "スクリプトを実行"
+
+#~ msgid "Stop Script"
+#~ msgstr "スクリプトを停止"
+
+#~ msgid "Edit Script"
+#~ msgstr "スクリプトを編集"
+
+#~ msgid "Properties"
+#~ msgstr "プロパティ"
+
+#~ msgid "Configure"
+#~ msgstr "設定"
+
+#~ msgid "Scripting"
+#~ msgstr "スクリプティング"
+
+#~ msgid "KTorrent Script Packages"
+#~ msgstr "KTorrent スクリプトパッケージ"
+
+#~ msgid "All files"
+#~ msgstr "すべてのファイル"
+
+#~ msgid ""
+#~ "Removing these scripts will fully delete them from your disk. Are you "
+#~ "sure you want to do this ?"
+#~ msgstr ""
+#~ "これらのスクリプトを削除するとディスクから完全に削除されます。本当によろし"
+#~ "いですか？"
+
+#~ msgid "Script Properties"
+#~ msgstr "スクリプトのプロパティ"
+
+#~ msgid "Cannot open archive for reading."
+#~ msgstr "アーカイブを読み取りのために開けません。"
+
+#~ msgid "Invalid archive."
+#~ msgstr "無効なアーカイブです。"
+
+#~ msgid "There is already a script package named %1 installed."
+#~ msgstr ""
+#~ "<resource>%1</resource> という名前のスクリプトは既にインストールされていま"
+#~ "す。"
+
+#~ msgid ""
+#~ "Failed to load script from archive. There is something wrong with the "
+#~ "desktop file."
+#~ msgstr ""
+#~ "アーカイブからスクリプトを読み込めませんでした。デスクトップファイルに問題"
+#~ "があります。"
+
+#~ msgid "No script found in archive."
+#~ msgstr "アーカイブの中にスクリプトが見つかりません。"
+
+#~ msgid "System"
+#~ msgstr "システム"
+
+#~ msgid "Log Level"
+#~ msgstr "ログレベル"
+
+#~ msgid "Debug"
+#~ msgstr "デバッグ"
+
+#~ msgid "Notice"
+#~ msgstr "通知"
+
+#~ msgid "Important"
+#~ msgstr "重要"
+
+#~ msgid "All"
+#~ msgstr "すべて"
+
+#~ msgid "None"
+#~ msgstr "なし"
+
+#~ msgid "Log"
+#~ msgstr "ログ"
+
+#~ msgid "View the logging output generated by KTorrent"
+#~ msgstr "KTorrent が生成するログ出力を表示します"
+
+#~ msgid "Suspend Output"
+#~ msgstr "出力を一時停止"
+
+#~ msgid "<font color=\"#FF0000\">Logging output suspended</font>"
+#~ msgstr "<font color=\"#FF0000\">ログ出力が一時停止されました</font>"
+
+#~ msgid "<font color=\"#00FF00\">Logging output resumed</font>"
+#~ msgstr "<font color=\"#00FF00\">ログ出力が再開されました</font>"
+
+#~ msgid "Log Viewer"
+#~ msgstr "ログビューア"
+
+#~ msgid "File Download Order"
+#~ msgstr "ファイルのダウンロード順序"
+
+#~ msgid "File download order for <b>%1</b>:"
+#~ msgstr "<b>%1</b> のファイルのダウンロード順序:"
+
+#~ msgid " Engine:"
+#~ msgstr " エンジン:"
+
+#~ msgid "Open in New Tab"
+#~ msgstr "新しいタブで開く"
+
+#, fuzzy
+#~| msgid "Copy Torrent URL"
+#~ msgid "Copy URL"
+#~ msgstr "torrent の URL をコピー"
+
+#~ msgid "Searching for %1..."
+#~ msgstr "“%1” を検索中..."
+
+#~ msgid "torrent files"
+#~ msgstr "torrent ファイル"
+
+#~ msgid "Search finished"
+#~ msgstr "検索完了"
+
+#, fuzzy
+#~| msgid "Search"
+#~ msgctxt "plugin name"
+#~ msgid "Search"
+#~ msgstr "検索"
+
+#~ msgid "Add a Search Engine"
+#~ msgstr "検索エンジンを追加"
+
+#~ msgid ""
+#~ "Enter the hostname of the search engine (for example www.google.com) :"
+#~ msgstr "検索エンジンのホスト名を入力 (例: www.google.com):"
+
+#~ msgid ""
+#~ "Opensearch is not supported by %1, you will need to enter the search URL "
+#~ "manually. The URL should contain {searchTerms}, ktorrent will replace "
+#~ "this by the thing you are searching for."
+#~ msgstr ""
+#~ "%1 は OpenSearch をサポートしていないため、検索 URL を手入力する必要があり"
+#~ "ます。この URL には {searchTerms} が含まれていなければなりません。"
+#~ "KTorrent はこれをユーザが入力する検索語に置き換えます。"
+
+#~ msgid "The URL %1 does not contain {searchTerms}."
+#~ msgstr "URL %1 には {searchTerms} が含まれていません。"
+
+#~ msgid "Search for %1"
+#~ msgstr "“%1” を検索"
+
+#~ msgid "Search"
+#~ msgstr "検索"
+
+#~ msgid "Home"
+#~ msgstr "ホーム"
+
+#~ msgid "KTorrent"
+#~ msgstr "KTorrent"
+
+#~ msgctxt "KDE 4 tag line, see http://kde.org/img/kde40.png"
+#~ msgid "Be free."
+#~ msgstr "Be free."
+
+#~ msgid "Search the web for torrents."
+#~ msgstr "ウェブで torrent を検索します。"
+
+#~ msgid "Failed to parse %1"
+#~ msgstr "<filename>%1</filename> を解析できませんでした"
+
+#~ msgid "Url: <b>%1</b>"
+#~ msgstr "URL: %1"
+
+#~ msgid "Search Text"
+#~ msgstr "検索テキスト"
+
+#~ msgid "Search Engine"
+#~ msgstr "検索エンジン"
+
+#~ msgid "Search Engine Label"
+#~ msgstr "検索エンジン名"
+
+#~ msgid " Engine: "
+#~ msgstr " エンジン: "
+
+#, fuzzy
+#~| msgid "Do you want to download or save the torrent?"
+#~ msgid "Do you want to download this magnet link?"
+#~ msgstr "torrent をダウンロードしますか？それとも保存しますか？"
+
+#~ msgid "Do you want to download or save the torrent?"
+#~ msgstr "torrent をダウンロードしますか？それとも保存しますか？"
+
+#~ msgid "Download Torrent"
+#~ msgstr "torrent をダウンロード"
+
+#~ msgid "Download"
+#~ msgstr "ダウンロード"
+
+#~ msgid "Add an item"
+#~ msgstr "アイテムを追加"
+
+#~ msgid "No day has been selected."
+#~ msgstr "曜日が選択されていません。"
+
+#~ msgid ""
+#~ "Failed to add item, because it conflicts with another item on the "
+#~ "schedule."
+#~ msgstr ""
+#~ "スケジュールの他のアイテムと競合するため、アイテムを追加できませんでした。"
+
+#~ msgid ""
+#~ "This item could not be added to all selected days, because it conflicts "
+#~ "with another item on the schedule."
+#~ msgstr ""
+#~ "スケジュールの他のアイテムと競合するため、アイテムを選択されたすべての曜日"
+#~ "に追加できませんでした。"
+
+#~ msgid ""
+#~ "Bandwidth\n"
+#~ "Schedule"
+#~ msgstr ""
+#~ "帯域幅\n"
+#~ "スケジュール"
+
+#~ msgid "Edit the bandwidth schedule"
+#~ msgstr "帯域幅スケジュールを編集"
+
+#~ msgid "Load Schedule"
+#~ msgstr "スケジュールを読み込み"
+
+#~ msgid "Save Schedule"
+#~ msgstr "スケジュールを保存"
+
+#~ msgid "New Item"
+#~ msgstr "新しいアイテム"
+
+#~ msgid "Remove Item"
+#~ msgstr "アイテムを削除"
+
+#~ msgid "Edit Item"
+#~ msgstr "アイテムを編集"
+
+#~ msgid "Clear Schedule"
+#~ msgstr "スケジュールをクリア"
+
+#, fuzzy
+#~| msgid "Schedule line color:"
+#~ msgid "Scheduler Active"
+#~ msgstr "スケジュール表の線の色:"
+
+#, fuzzy
+#~| msgid "Add a new item to the schedule"
+#~ msgid "Activate or deactivate the scheduler"
+#~ msgstr "スケジュールに新しいアイテムを追加"
+
+#~ msgid "KTorrent scheduler files"
+#~ msgstr "KTorrent スケジュールファイル"
+
+#~ msgid ""
+#~ "This item conflicts with another item in the schedule, we cannot change "
+#~ "it."
+#~ msgstr ""
+#~ "スケジュールの他のアイテムと競合するため、このアイテムは変更できません。"
+
+#, fuzzy
+#~| msgid "Current schedule: paused"
+#~ msgid "Current schedule: suspended"
+#~ msgstr "現在のスケジュール: 一時停止"
+
+#, fuzzy
+#~| msgid "Current schedule: %1 KiB/s download, %2 KiB/s upload"
+#~ msgid "Current schedule: %1/s download, %2/s upload"
+#~ msgstr "現在のスケジュール: ダウンロード %1 KiB/秒、アップロード %2 KiB/秒"
+
+#, fuzzy
+#~| msgid "Current schedule: unlimited download, %1 KiB/s upload"
+#~ msgid "Current schedule: unlimited download, %1/s upload"
+#~ msgstr "現在のスケジュール: ダウンロード制限なし、アップロード %1 KiB/秒"
+
+#, fuzzy
+#~| msgid "Current schedule: %1 KiB/s download, unlimited upload"
+#~ msgid "Current schedule: %1/s download, unlimited upload"
+#~ msgstr "現在のスケジュール: ダウンロード %1 KiB/秒、アップロード制限なし"
+
+#~ msgid "Current schedule: unlimited upload and download"
+#~ msgstr "現在のスケジュール: ダウンロード制限なし、アップロード制限なし"
+
+#, fuzzy
+#~| msgid "KTorrent scheduler files"
+#~ msgid " (scheduler disabled)"
+#~ msgstr "KTorrent スケジュールファイル"
+
+#~ msgid "Current schedule:"
+#~ msgstr "現在のスケジュール:"
+
+#~ msgid "Edit an item"
+#~ msgstr "アイテムを編集"
+
+#~ msgid "The file %1 is corrupted or not a proper KTorrent schedule file."
+#~ msgstr ""
+#~ "ファイル <filename>%1</filename> は壊れているか、有効な KTorrent スケ"
+#~ "ジュールファイルであはりません。"
+
+#, fuzzy
+#~| msgid "Speed"
+#~ msgid "Suspended"
+#~ msgstr "速度"
+
+#~ msgid "Unlimited"
+#~ msgstr "無制限"
+
+#~ msgid ""
+#~ "%1 Down\n"
+#~ "%2 Up"
+#~ msgstr ""
+#~ "%1 下り\n"
+#~ "%2 上り"
+
+#, fuzzy
+#~| msgid "Configure Shutdown"
+#~ msgctxt "@title:window"
+#~ msgid "Configure Shutdown"
+#~ msgstr "シャットダウンの設定"
+
+#~ msgid "Shutdown"
+#~ msgstr "シャットダウン"
+
+#~ msgid "Lock"
+#~ msgstr "ロック"
+
+#~ msgid "Standby"
+#~ msgstr "スタンバイ"
+
+#~ msgid "Sleep (suspend to RAM)"
+#~ msgstr "サスペンド"
+
+#~ msgid "Hibernate (suspend to disk)"
+#~ msgstr "ハイバネート"
+
+#~ msgid "When all torrents finish downloading"
+#~ msgstr "すべての torrent のダウンロードが完了したとき"
+
+#~ msgid "When all torrents finish seeding"
+#~ msgstr "すべての torrent のシードが完了したとき"
+
+#~ msgid "When the events below happen"
+#~ msgstr "下のイベントが起こったとき"
+
+#~ msgid "Shutdown Enabled"
+#~ msgstr "シャットダウンを有効化"
+
+#~ msgid "Configure Shutdown"
+#~ msgstr "シャットダウンの設定"
+
+#~ msgid "Downloading finishes"
+#~ msgstr "ダウンロード完了"
+
+#~ msgid "Seeding finishes"
+#~ msgstr "シード完了"
+
+#~ msgid "Event"
+#~ msgstr "イベント"
+
+#~ msgid "Loading txt file..."
+#~ msgstr "txt ファイルを読み込み..."
+
+#~ msgid "There are no IP addresses to convert in %1"
+#~ msgstr "<filename>%1</filename> には変換する IP アドレスがありません"
+
+#~ msgid "Converting..."
+#~ msgstr "変換中..."
+
+#~ msgid "Cannot open zip file %1."
+#~ msgstr "ZIP ファイル <filename>%1</filename> を開けません。"
+
+#~ msgid "Cannot find blocklist in zip file %1."
+#~ msgstr ""
+#~ "ZIP ファイル <filename>%1</filename> にブロックリストが見つかりません。"
+
+#~ msgid ""
+#~ "Filter file (level1.dat) already exists, do you want to convert it again?"
+#~ msgstr ""
+#~ "フィルタファイル (level1.dat) は既にあります。もう一度変換しますか？"
+
+#~ msgid "File Exists"
+#~ msgstr "ファイルは存在します"
+
+#~ msgid "IP Filter"
+#~ msgstr "IP フィルタ"
+
+#~ msgid "Status: Loaded and running."
+#~ msgstr "状態: ロードして実行中"
+
+#~ msgid "Status: Not loaded."
+#~ msgstr "状態: 未ロード"
+
+#~ msgid "Status: Downloading and converting new block list..."
+#~ msgstr "状態: 新しいブロックリストをダウンロードして変換中..."
+
+#~ msgid "No update done yet."
+#~ msgstr "まだ更新されていません。"
+
+#~ msgid "%1 (Last update attempt failed.)"
+#~ msgstr "%1 (前回の更新は失敗しました)"
+
+#~ msgid "Never"
+#~ msgstr "なし"
+
+#, fuzzy
+#~| msgid "Copy Torrent URL"
+#~ msgid "Copy Magnet URI"
+#~ msgstr "torrent の URL をコピー"
+
+#~ msgid "KTUPnPTest"
+#~ msgstr "KTUPnPTest"
+
+#~ msgid "KTorrent's UPnP test application"
+#~ msgstr "KTorrent の UPnP テスト用アプリケーション"
+
+#~ msgid "(C) 2005 - 2007 Joris Guisson and Ivan Vasic"
+#~ msgstr "(C) 2005 - 2007 Joris Guisson, Ivan Vasic"
+
+#, fuzzy
+#~| msgid "Time Downloaded"
+#~ msgid "KTMagnetDownloader"
+#~ msgstr "ダウンロード時間"
+
+#, fuzzy
+#~| msgid "Joris Guisson"
+#~ msgid "(C) 2009 Joris Guisson"
+#~ msgstr "Joris Guisson"
+
+#~ msgid "Document to open"
+#~ msgstr "開くドキュメント"
+
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "%1 のダウンロードに失敗しました: %2"
+
+#~ msgid "Error parsing router description."
+#~ msgstr "ルータの説明の解析でエラーが発生しました。"
+
+#~ msgid ""
+#~ "Forwarding failed: \n"
+#~ "Device does not have a WANIPConnection or WANPPPConnection."
+#~ msgstr ""
+#~ "フォワーディングに失敗しました: \n"
+#~ "デバイスに WANIPConnection または WANPPPConnection がありません。"
+
+#~ msgid "Cannot find port forwarding service in the device's description."
+#~ msgstr "デバイスの説明にポートフォワーディングサービスが見つかりません。"
+
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "接続が突然閉じられました。"
+
+#~ msgid "Timeout occurred"
+#~ msgstr "タイムアウトが発生しました"
+
+#~ msgid "Proxy"
+#~ msgstr "プロキシ"
+
+#~ msgid "Network"
+#~ msgstr "ネットワーク"
+
+#~ msgid "All interfaces"
+#~ msgstr "すべてのインターフェース"
+
+#~ msgid "BitTorrent"
+#~ msgstr "BitTorrent"
+
+#~ msgid " corrupted chunk"
+#~ msgid_plural " corrupted chunks"
+#~ msgstr[0] " ピース"
+#~ msgstr[1] " ピース"
+
+#~ msgid " corrupted chunks"
+#~ msgstr " ピース"
+
+#~ msgid "Advanced"
+#~ msgstr "詳細"
+
+#~ msgid "Application"
+#~ msgstr "アプリケーション"
+
+#~ msgid "Queue Manager"
+#~ msgstr "キューマネージャ"
+
+#~ msgid "Calculate Recommended Settings"
+#~ msgstr "推奨設定を計算"
+
+#~ msgid "(= %1/s)"
+#~ msgstr "(= %1/秒)"
+
+#~ msgid "Order"
+#~ msgstr "順序"
+
+#~ msgid "Name"
+#~ msgstr "名前"
+
+#~ msgid "Time Stalled"
+#~ msgstr "ストール時間"
+
+#~ msgid "Running"
+#~ msgstr "実行中"
+
+#~ msgid "Queued"
+#~ msgstr "待機中"
+
+#~ msgid "Not queued"
+#~ msgstr "待機中でない"
+
+#~ msgid "%1"
+#~ msgstr "%1"
+
+#~ msgid ""
+#~ "Order of a torrent in the queue.\n"
+#~ "Use drag and drop or the move up and down buttons on the right to change "
+#~ "the order."
+#~ msgstr ""
+#~ "キューの torrent の順序を変更するには、ドラッグ＆ドロップするか、上下に移"
+#~ "動するボタンを使います。"
+
+#, fuzzy
+#~| msgid "Search"
+#~ msgid "Show Search"
+#~ msgstr "検索"
+
+#, fuzzy
+#~| msgid "Show or hide the group view"
+#~ msgid "Show or hide the search bar"
+#~ msgstr "グループビューを表示/隠す"
+
+#, fuzzy
+#~| msgid "Move Up"
+#~ msgid "Move Top"
+#~ msgstr "上へ移動"
+
+#~ msgid "Move a torrent to the top of the queue"
+#~ msgstr "torrent をキューの最上位へ移動"
+
+#~ msgid "Move Up"
+#~ msgstr "上へ移動"
+
+#~ msgid "Move a torrent up in the queue"
+#~ msgstr "torrent をキューの上位へ移動"
+
+#~ msgid "Move Down"
+#~ msgstr "下へ移動"
+
+#~ msgid "Move a torrent down in the queue"
+#~ msgstr "torrent をキューの下位へ移動"
+
+#, fuzzy
+#~| msgid "Bottom"
+#~ msgid "Move Bottom"
+#~ msgstr "下"
+
+#~ msgid "Move a torrent to the bottom of the queue"
+#~ msgstr "torrent をキューの最下位へ移動"
+
+#, fuzzy
+#~| msgid "Start torrent"
+#~ msgid "Start Magnet"
+#~ msgstr "torrent を開始"
+
+#, fuzzy
+#~| msgid "Remove Torrent"
+#~ msgid "Remove Magnet"
+#~ msgstr "torrent を削除"
+
+#~ msgid "Checked %v of %m chunks"
+#~ msgstr "%v / %m 個のピースをチェック"
+
+#, fuzzy
+#~| msgid "Start"
+#~ msgctxt "@action Start all selected torrents in the current tab"
+#~ msgid "Start"
+#~ msgstr "開始"
+
+#~ msgid "Start all selected torrents in the current tab"
+#~ msgstr "現在のタブで選択したすべての torrent を開始します"
+
+#, fuzzy
+#~| msgid "Stop"
+#~ msgctxt "@action Stop all selected torrents in the current tab"
+#~ msgid "Stop"
+#~ msgstr "停止"
+
+#~ msgid "Stop all selected torrents in the current tab"
+#~ msgstr "現在のタブで選択したすべての torrent を停止します"
+
+#, fuzzy
+#~| msgid "Pause"
+#~ msgctxt "@action Pause all selected torrents in the current tab"
+#~ msgid "Pause"
+#~ msgstr "一時停止"
+
+#, fuzzy
+#~| msgid "Start all selected torrents in the current tab"
+#~ msgid "Pause all selected torrents in the current tab"
+#~ msgstr "現在のタブで選択したすべての torrent を開始します"
+
+#, fuzzy
+#~| msgid "Remove"
+#~ msgctxt "@action Remove all selected torrents in the current tab"
+#~ msgid "Remove"
+#~ msgstr "削除"
+
+#~ msgid "Remove all selected torrents in the current tab"
+#~ msgstr "現在のタブで選択したすべての torrent を削除します"
+
+#, fuzzy
+#~| msgid "Start All"
+#~ msgctxt "@action Start all torrents in the current tab"
+#~ msgid "Start All"
+#~ msgstr "すべて開始"
+
+#~ msgid "Start all torrents in the current tab"
+#~ msgstr "現在のタブのすべての torrent を開始します"
+
+#, fuzzy
+#~| msgid "Stop All"
+#~ msgctxt "@action Stop all torrents in the current tab"
+#~ msgid "Stop All"
+#~ msgstr "すべて停止"
+
+#~ msgid "Stop all torrents in the current tab"
+#~ msgstr "現在のタブのすべての torrent を停止します"
+
+#~ msgid "Remove Torrent and Data"
+#~ msgstr "torrent とデータを削除"
+
+#~ msgid "Rename Torrent"
+#~ msgstr "torrent の名前を変更"
+
+#~ msgid "Add Peers"
+#~ msgstr "ピアを追加"
+
+#~ msgid "Peer Exchange"
+#~ msgstr "ピア交換"
+
+#~ msgid "Manual Announce"
+#~ msgstr "手動アナウンス"
+
+#~ msgid "Scrape"
+#~ msgstr "スクレイプ"
+
+#~ msgid "Preview"
+#~ msgstr "プレビュー"
+
+#~ msgid "Data Directory"
+#~ msgstr "データフォルダ"
+
+#~ msgid "Temporary Directory"
+#~ msgstr "一時フォルダ"
+
+#~ msgid "Move Data"
+#~ msgstr "データを移動"
+
+#~ msgid "Remove from Group"
+#~ msgstr "グループから削除"
+
+#~ msgid "New Group"
+#~ msgstr "新しいグループ"
+
+#~ msgid "Check Data"
+#~ msgstr "データをチェック"
+
+#~ msgid "Check all the data of a torrent"
+#~ msgstr "torrent のすべてのデータをチェックします"
+
+#~ msgid "Open Directory"
+#~ msgstr "フォルダを開く"
+
+#~ msgid "Add to Group"
+#~ msgstr "グループに追加"
+
+#~ msgid "Copy Torrent URL"
+#~ msgstr "torrent の URL をコピー"
+
+#~ msgid "Export Torrent"
+#~ msgstr "torrent をエクスポート"
+
+#~ msgid "Speed Limits"
+#~ msgstr "速度制限"
+
+#~ msgid "Set the speed limits of individual torrents"
+#~ msgstr "torrent ごとに速度制限を設定します"
+
+#~ msgid "Torrents (*.torrent)"
+#~ msgstr "torrent (*.torrent)"
+
+#~ msgid "Columns"
+#~ msgstr "カラム"
+
+#~ msgid ""
+#~ "The torrent <b>%1</b> has not finished downloading, do you want to delete "
+#~ "the incomplete data, too?"
+#~ msgstr ""
+#~ "torrent <b>%1</b> のダウンロードはまだ完了していません。不完全なデータも削"
+#~ "除しますか？"
+
+#~ msgid "Remove Download"
+#~ msgstr "ダウンロードを削除"
+
+#~ msgid "Delete Data"
+#~ msgstr "データを削除"
+
+#~ msgid "Keep Data"
+#~ msgstr "データを保持"
+
+#~ msgid ""
+#~ "You will lose all the downloaded data. Are you sure you want to do this?"
+#~ msgstr ""
+#~ "ダウンロード済みのすべてのデータが失われます。本当によろしいですか？"
+
+#~ msgid "Remove Torrent"
+#~ msgstr "torrent を削除"
+
+#~ msgid "Size"
+#~ msgstr "サイズ"
+
+#~ msgid "Time Left"
+#~ msgstr "残り時間"
+
+#~ msgid "% Complete"
+#~ msgstr "% 完了"
+
+#~ msgid "Share Ratio"
+#~ msgstr "負担率"
+
+#~ msgid "Time Downloaded"
+#~ msgstr "ダウンロード時間"
+
+#~ msgid "Time Seeded"
+#~ msgstr "シード時間"
+
+#~ msgid "Location"
+#~ msgstr "場所"
+
+#, fuzzy
+#~| msgid "Add Feed"
+#~ msgid "Added"
+#~ msgstr "フィードを追加"
+
+#~ msgid "How much data we have downloaded of the torrent"
+#~ msgstr "これまでにダウンロードした torrent のデータ"
+
+#~ msgid "Total size of the torrent, excluded files are not included"
+#~ msgstr "対象外のファイルを除いた torrent の合計サイズ"
+
+#~ msgid "How much data we have uploaded"
+#~ msgstr "これまでにアップロードしたデータ"
+
+#~ msgid "Current download speed"
+#~ msgstr "現在のダウンロード速度"
+
+#~ msgid "Current upload speed"
+#~ msgstr "現在のアップロード速度"
+
+#~ msgid ""
+#~ "How much time is left before the torrent is finished or before the "
+#~ "maximum share ratio is reached, if that is enabled"
+#~ msgstr ""
+#~ "torrent が完了するまでの残り時間。最大負担率が設定されている場合は、その負"
+#~ "担率に達するまでの残り時間。"
+
+#~ msgid ""
+#~ "How many seeders we are connected to (How many seeders there are "
+#~ "according to the tracker)"
+#~ msgstr "接続中のシーダーの数 (トラッカーの情報によるシーダーの数)"
+
+#~ msgid ""
+#~ "How many leechers we are connected to (How many leechers there are "
+#~ "according to the tracker)"
+#~ msgstr "接続中のリーチャーの数 (トラッカーの情報によるリーチャーの数)"
+
+#~ msgid ""
+#~ "The percentage of data we have of the whole torrent, not including "
+#~ "excluded files"
+#~ msgstr ""
+#~ "torrent 全体の何パーセントのデータを持っているか (対象外のファイルを除く)"
+
+#~ msgid ""
+#~ "Share ratio is the number of bytes uploaded divided by the number of "
+#~ "bytes downloaded"
+#~ msgstr ""
+#~ "アップロードしたバイト数をダウンロードしたバイト数で割ったものが負担率です"
+
+#~ msgid "How long we have been downloading the torrent"
+#~ msgstr "この torrent をダウンロードした時間"
+
+#~ msgid "How long we have been seeding the torrent"
+#~ msgstr "この torrent をシードした時間"
+
+#~ msgid "The location of the torrent's data on disk"
+#~ msgstr "torrent のデータがあるディスク上の場所"
+
+#, fuzzy
+#~| msgid "When all torrents finish seeding"
+#~ msgid "When this torrent was added"
+#~ msgstr "すべての torrent のシードが完了したとき"
+
+#, fuzzy
+#~| msgid "Timeout contacting tracker %1"
+#~ msgid "Unable to contact a tracker."
+#~ msgstr "トラッカー %1 への接続中にタイムアウト"
+
+#~ msgid "%1<br>Url: <b>%2</b>"
+#~ msgstr "%1<br>URL: <b>%2</b>"
+
+#~ msgid "Policy for the %1 group"
+#~ msgstr "グループ <resource>%1</resource> のポリシー"
+
+#~ msgid "Custom Groups"
+#~ msgstr "カスタムグループ"
+
+#~ msgid "Edit Name"
+#~ msgstr "名前を編集"
+
+#~ msgid "Remove Group"
+#~ msgstr "グループを削除"
+
+#~ msgid "Open Tab"
+#~ msgstr "タブを開く"
+
+#~ msgid "Group Policy"
+#~ msgstr "グループポリシー"
+
+#~ msgid "Please enter the group name."
+#~ msgstr "グループの名前を入力してください。"
+
+#~ msgid "The group %1 already exists."
+#~ msgstr "グループ <resource>%1</resource> は既に存在します。"
+
+#~ msgid "Download Limit"
+#~ msgstr "ダウンロード制限"
+
+#~ msgid "Upload Limit"
+#~ msgstr "アップロード制限"
+
+#~ msgid "Assured Download Speed"
+#~ msgstr "確実なダウンロード速度"
+
+#~ msgid "Assured Upload Speed"
+#~ msgstr "確実なアップロード速度"
+
+#~ msgid "No assured speed"
+#~ msgstr "確実な速度なし"
+
+#~ msgid "Create A Torrent"
+#~ msgstr "torrent を作成"
+
+#~ msgid "All Torrents"
+#~ msgstr "すべての torrent"
+
+#~ msgid "Invalid url %1"
+#~ msgstr "無効な URL %1"
+
+#~ msgid "Only HTTP is supported for webseeding."
+#~ msgstr "ウェブシードには HTTP しか使えません。"
+
+#~ msgid "You must select a file or a folder."
+#~ msgstr "ファイルまたはフォルダを選んでください。"
+
+#~ msgid ""
+#~ "You have not added a tracker, are you sure you want to create this "
+#~ "torrent ?"
+#~ msgstr "トラッカーを追加していません。本当にこの torrent を作成しますか？"
+
+#~ msgid "You must add at least one node."
+#~ msgstr "ノードを最低一つ追加してください。"
+
+#~ msgid "Torrent Files (*.torrent)"
+#~ msgstr "torrent ファイル (*.torrent)"
+
+#~ msgid "Choose a file to save the torrent"
+#~ msgstr "torrent を保存するファイルを選択"
+
+#~ msgid "Show a file tree"
+#~ msgstr "ファイルツリーを表示"
+
+#~ msgid "Show a file list"
+#~ msgstr "ファイル一覧を表示"
+
+#~ msgid "Opening %1"
+#~ msgstr "<filename>%1</filename> を開く"
+
+#~ msgid ""
+#~ "Some files of this torrent have been found in the completed downloads "
+#~ "directory. Do you want to import these files and use the completed "
+#~ "downloads directory as the location?"
+#~ msgstr ""
+#~ "この torrent のいくつかのファイルが完了したダウンロード用のフォルダに見つ"
+#~ "かりました。それらのファイルをインポートし、完了したダウンロード用のフォル"
+#~ "ダを場所として使いますか？"
+
+#~ msgid ""
+#~ "All files of this torrent have been found in the completed downloads "
+#~ "directory. Do you want to import these files and use the completed "
+#~ "downloads directory as the location?"
+#~ msgstr ""
+#~ "この torrent のすべてのファイルが完了したダウンロード用のフォルダに見つか"
+#~ "りました。それらのファイルをインポートし、完了したダウンロード用のフォルダ"
+#~ "を場所として使いますか？"
+
+#~ msgid ""
+#~ "The file <b>%1</b> was found in the completed downloads directory. Do you "
+#~ "want to import this file?"
+#~ msgstr ""
+#~ "ファイル <filename>%1</filename> が完了したダウンロード用のフォルダに見つ"
+#~ "かりました。このファイルをインポートしますか？"
+
+#~ msgid "The directory %1 does not exist, do you want to create it?"
+#~ msgstr "フォルダ <filename>%1</filename> は存在しません。作成しますか？"
+
+#~ msgid ""
+#~ "You have deselected the following existing files. You will lose all data "
+#~ "in these files, are you sure you want to do this?"
+#~ msgstr ""
+#~ "以下の既存のファイルの選択が解除されました。これらのファイルのすべてのデー"
+#~ "タを失うことになります。本当によろしいですか？"
+
+#~ msgid "Yes, delete the files"
+#~ msgstr "はい、ファイルを削除します"
+
+#~ msgid "No, keep the files"
+#~ msgstr "いいえ、ファイルを保持します"
+
+#~ msgctxt "We are %1 bytes short of what we need"
+#~ msgid "%1 short"
+#~ msgstr "%1 不足"
+
+#~ msgid "Existing files: <b>None</b>"
+#~ msgstr "既存のファイル: なし"
+
+#~ msgid "Existing files: <b>All</b>"
+#~ msgstr "既存のファイル: すべて"
+
+#~ msgid "Existing files: <b>%1</b> of <b>%2</b>"
+#~ msgstr "既存のファイル: %1 / %2"
+
+#~ msgid "Existing file: <b>No</b>"
+#~ msgstr "既存のファイル: いいえ"
+
+#~ msgid "Existing file: <b>Yes</b>"
+#~ msgstr "既存のファイル: はい"
+
+#~ msgid " KiB/s"
+#~ msgstr " KiB/秒"
+
+#~ msgid "Select the directory where the data now is."
+#~ msgstr "現在データが保存されているフォルダを選択します。"
+
+#~ msgid ""
+#~ "The data files are not present in the location you selected. Do you want "
+#~ "to create all the files in the selected directory?"
+#~ msgstr ""
+#~ "選択された場所にはデータファイルがありません。選択されたフォルダにすべての"
+#~ "ファイルを作成しますか？"
+
+#~ msgid ""
+#~ "Not all files were found in the new location; some are still missing. Do "
+#~ "you want to create the missing files in the selected directory?"
+#~ msgstr ""
+#~ "新しい場所に見つからなかったファイルがあります。選択されたフォルダに足りな"
+#~ "いファイルを作成しますか？"
+
+#~ msgid ""
+#~ "The data file is not present in the location you selected. Do you want to "
+#~ "create the file in the selected directory?"
+#~ msgstr ""
+#~ "選択された場所にはデータファイルがありません。選択されたフォルダにファイル"
+#~ "を作成しますか？"
+
+#~ msgid "Importing 1 torrent ..."
+#~ msgid_plural "Importing %1 torrents ..."
+#~ msgstr[0] "1 個の torrent をインポート中..."
+#~ msgstr[1] "%1 個の torrent をインポート中..."
+
+#~ msgid "Importing <b>%1</b> ..."
+#~ msgstr "<b>%1</b> をインポート中..."
+
+#~ msgid "Finished import."
+#~ msgstr "インポート完了。"
+
+#~ msgid "Torrent <b>%1</b> already loaded."
+#~ msgstr "torrent <b>%1</b> は既にロードされています。"
+
+#~ msgid "Failed to load <b>%1</b>"
+#~ msgstr "<b>%1</b> をロードできませんでした"
+
+#~ msgid "Failed to import <b>%1</b> : %2"
+#~ msgstr "<b>%1</b> をインポートできませんでした: %2"
+
+#~ msgid "Imported <b>%1</b>"
+#~ msgstr "<b>%1</b> をインポートしました"
+
+#~ msgid "Torrent files"
+#~ msgstr "torrent ファイル"
+
+#~ msgid "Cannot verify data : %1"
+#~ msgstr "データを検証できません: %1"
+
+#~ msgid "Cannot load the torrent file : %1"
+#~ msgstr "torrent ファイルをロードできません: %1"
+
+#~ msgid "Open an URL"
+#~ msgstr "URL を開く"
+
+#~ msgid "Invalid URL: %1"
+#~ msgstr "無効な URL: %1"
+
+#~ msgid "Speed down: %1 / up: %2"
+#~ msgstr "速度 下り: %1 / 上り: %2"
+
+#~ msgid "Transferred down: %1 / up: %2"
+#~ msgstr "転送済み 下り: %1 / 上り: %2"
+
+#~ msgid "DHT: off"
+#~ msgstr "DHT: オフ"
+
+#~ msgid "DHT: %1 nodes, %2 tasks"
+#~ msgstr "DHT: %1 ノード、%2 タスク"
+
+#~ msgid "IP Filter List"
+#~ msgstr "IP フィルタのリスト"
+
+#, fuzzy
+#~| msgid ""
+#~| "Invalid IP address %1. You must enter an IP address in the format 'XXX."
+#~| "XXX.XXX.XXX'. You can also use wildcards for ranges like '127.0.0.*'."
+#~ msgid ""
+#~ "Invalid IP address <b>%1</b>. IP addresses must be in the format 'XXX.XXX."
+#~ "XXX.XXX'.<br/><br/>You can also use wildcards like '127.0.0.*' or specify "
+#~ "ranges like '200.10.10.0-200.10.10.40'."
+#~ msgstr ""
+#~ "%1 は無効な IP アドレスです。IP アドレスは “XXX.XXX.XXX.XXX” の形式で入力"
+#~ "してください。範囲には “127.0.0.*” のようにワイルドカードが使えます。"
+
+#~ msgid "Choose a file"
+#~ msgstr "ファイルを選択"
+
+#~ msgid "Choose a filename to save under"
+#~ msgstr "保存するファイル名を選択"
+
+#~ msgid "Bittorrent client for KDE"
+#~ msgstr "KDE のための BitTorrent クライアント"
+
+#, fuzzy
+#~| msgid "(C) 2005 - 2007 Joris Guisson and Ivan Vasic"
+#~ msgid "(C) 2005 - 2010 Joris Guisson and Ivan Vasic"
+#~ msgstr "(C) 2005 - 2007 Joris Guisson, Ivan Vasic"
+
+#~ msgid "Joris Guisson"
+#~ msgstr "Joris Guisson"
+
+#~ msgid "Ivan Vasic"
+#~ msgstr "Ivan Vasic"
+
+#~ msgid "Alan Jones"
+#~ msgstr "Alan Jones"
+
+#~ msgid "BitFinder Plugin"
+#~ msgstr "BitFinder プラグイン"
+
+#~ msgid "Diego R. Brogna"
+#~ msgstr "Diego R. Brogna"
+
+#~ msgid "Webinterface Plugin"
+#~ msgstr "WebInterface プラグイン"
+
+#~ msgid "Krzysztof Kundzicz"
+#~ msgstr "Krzysztof Kundzicz"
+
+#~ msgid "Statistics Plugin"
+#~ msgstr "統計プラグイン"
+
+#~ msgid "Mladen Babic"
+#~ msgstr "Mladen Babic"
+
+#~ msgid "Application icon and a couple of others"
+#~ msgstr "アプリケーションアイコンその他"
+
+#~ msgid "Adam Treat"
+#~ msgstr "Adam Treat"
+
+#~ msgid "Danny Allen"
+#~ msgstr "Danny Allen"
+
+#~ msgid "1.0 application icon"
+#~ msgstr "1.0 アプリケーションアイコン"
+
+#~ msgid "Vincent Wagelaar"
+#~ msgstr "Vincent Wagelaar"
+
+#~ msgid "Knut Morten Johansson"
+#~ msgstr "Knut Morten Johansson"
+
+#~ msgid "Felix Berger"
+#~ msgstr "Felix Berger"
+
+#~ msgid "ChunkBar's tooltip and IWFileTreeItem sorting"
+#~ msgstr "ピースバーのツールチップと情報ウィジェットのツリーアイテムのソート"
+
+#~ msgid "Andreas Kling"
+#~ msgstr "Andreas Kling"
+
+#~ msgid "Felipe Sateler"
+#~ msgstr "Felipe Sateler"
+
+#~ msgid "Maxmind"
+#~ msgstr "Maxmind"
+
+#~ msgid ""
+#~ "Country locator for InfoWidget plugin. Flags are taken from http://flags."
+#~ "blogpotato.de/ so thanks to them too."
+#~ msgstr ""
+#~ "情報ウィジェットプラグインの国探知器。(国旗は http://flags.blogpotato.de/ "
+#~ "より。感謝。)"
+
+#~ msgid "Adam Forsyth"
+#~ msgstr "Adam Forsyth"
+
+#~ msgid "File prioritization and some other patches"
+#~ msgstr "ファイルの優先順位、いくつかのパッチ"
+
+#~ msgid "Thomas Bernard"
+#~ msgstr "Thomas Bernard"
+
+#~ msgid "Miniupnp was used as an example for our own UPnP implementation"
+#~ msgstr "KTorrent の UPnP 実装は Miniupnp を手本にしました"
+
+#~ msgid "Diego Rosario Brogna"
+#~ msgstr "Diego Rosario Brogna"
+
+#~ msgid "Global max share ratio patch"
+#~ msgstr "全体の最大負担率のパッチ"
+
+#~ msgid "Lesly Weyts"
+#~ msgstr "Lesly Weyts"
+
+#~ msgid "Zeroconf enhancements"
+#~ msgstr "Zeroconf の強化"
+
+#~ msgid "Kevin Andre"
+#~ msgstr "Kevin Andre"
+
+#~ msgid "Dagur Valberg Johannsson"
+#~ msgstr "Dagur Valberg Johannsson"
+
+#~ msgid "Coldmilk webgui"
+#~ msgstr "Coldmilk ウェブ GUI"
+
+#~ msgid "Alexander Dymo"
+#~ msgstr "Alexander Dymo"
+
+#~ msgid "IDEAl code from KDevelop"
+#~ msgstr "KDevelop の IDEAl コード"
+
+#~ msgid "Scott Wolchok"
+#~ msgstr "Scott Wolchok"
+
+#~ msgid "Conversion speed improvement in ipfilter plugin"
+#~ msgstr "IPFilter プラグインの変換速度を改善"
+
+#~ msgid "Bryan Burns of Juniper Networks"
+#~ msgstr "Juniper Networks の Bryan Burns"
+
+#~ msgid "Discovered 2 security vulnerabilities (both are fixed)"
+#~ msgstr "セキュリティ上の弱点を二つ発見 (両方とも修正済み)"
+
+#~ msgid "Goten Xiao"
+#~ msgstr "Goten Xiao"
+
+#~ msgid "Patch to load silently with a save location"
+#~ msgstr "保存場所を尋ねずにロードするためのパッチ"
+
+#~ msgid "Rapsys"
+#~ msgstr "Rapsys"
+
+#~ msgid "Fixes in PHP code of webinterface"
+#~ msgstr "WebInterface の PHP コードを修正"
+
+#~ msgid "Athantor"
+#~ msgstr "Athantor"
+
+#~ msgid "XFS specific disk preallocation"
+#~ msgstr "XFS 専用のディスクの事前割り当て"
+
+#~ msgid "twisted_fall"
+#~ msgstr "twisted_fall"
+
+#~ msgid "Patch to not show very low speeds"
+#~ msgstr "極度に遅い速度を表示しないようにするためのパッチ"
+
+#~ msgid "Lucke"
+#~ msgstr "Lucke"
+
+#~ msgid "Patch to show potentially firewalled status"
+#~ msgstr ""
+#~ "ファイアウォールで遮断されている可能性のある状態を表示するためのパッチ"
+
+#~ msgid "Modestas Vainius"
+#~ msgstr "Modestas Vainius"
+
+#~ msgid "Several patches"
+#~ msgstr "いくつかのパッチ"
+
+#~ msgid "Stefan Monov"
+#~ msgstr "Stefan Monov"
+
+#~ msgid "Patch to hide menu bar"
+#~ msgstr "メニューバーを非表示にするためのパッチ"
+
+#~ msgid "The_Kernel"
+#~ msgstr "The_Kernel"
+
+#~ msgid "Patch to change file priorities in the webgui"
+#~ msgstr "ウェブ GUI でファイルの優先順位を変更するためのパッチ"
+
+#~ msgid "Rafał Miłecki"
+#~ msgstr "Rafał Miłecki"
+
+#~ msgid "Several webgui patches"
+#~ msgstr "ウェブ GUI のいくつかのパッチ"
+
+#~ msgid "Ozzi"
+#~ msgstr "Ozzi"
+
+#~ msgid "Fixes for several warnings"
+#~ msgstr "いくつかの警告を修正"
+
+#~ msgid "Markus Brueffer"
+#~ msgstr "Markus Brueffer"
+
+#~ msgid "Patch to fix free diskspace calculation on FreeBSD"
+#~ msgstr "FreeBSD でのディスクの空き領域の計算の不具合を修正するパッチ"
+
+#~ msgid "Lukas Appelhans"
+#~ msgstr "Lukas Appelhans"
+
+#~ msgid "Patch to fix a crash in ChunkDownloadView"
+#~ msgstr "ChunkDownloadView のクラッシュを修正するパッチ"
+
+#~ msgid "Rickard Närström"
+#~ msgstr "Rickard Närström"
+
+#~ msgid "A couple of bugfixes"
+#~ msgstr "いくつかのバグ修正"
+
+#~ msgid "caruccio"
+#~ msgstr "caruccio"
+
+#~ msgid "Patch to load torrents silently from the command line"
+#~ msgstr ""
+#~ "コマンドラインから保存場所を尋ねずに torrent をロードするためのパッチ"
+
+#~ msgid "Lee Olson"
+#~ msgstr "Lee Olson"
+
+#~ msgid "New set of icons"
+#~ msgstr "新しいアイコン"
+
+#~ msgid "Aaron J. Seigo"
+#~ msgstr "Aaron J. Seigo"
+
+#~ msgid "Drag and drop support for plasma applet"
+#~ msgstr "Plasma アプレットのためのドラッグ＆ドロップのサポート"
+
+#~ msgid "Ian Higginson"
+#~ msgstr "Ian Higginson"
+
+#~ msgid "Patch to cleanup the plugin list"
+#~ msgstr "プラグインのリストを整理するパッチ"
+
+#~ msgid "Amichai Rothman"
+#~ msgstr "Amichai Rothman"
+
+#~ msgid "Patch to make the plasma applet a popup applet"
+#~ msgstr "Plasma アプレットをポップアップアプレットにするパッチ"
+
+#, fuzzy
+#~| msgid "When all torrents finish seeding"
+#~ msgid "Feature which adds the date a torrent was added"
+#~ msgstr "すべての torrent のシードが完了したとき"
+
+#~ msgid "Silently open torrent given on URL"
+#~ msgstr "URL で指定した torrent を保存場所を尋ねずに開く"
+
+#~ msgid "Torrent Files"
+#~ msgstr "torrent ファイル"
+
+#~ msgid "All Files"
+#~ msgstr "すべてのファイル"
+
+#~ msgid "Open Location"
+#~ msgstr "場所を開く"
+
+#~ msgid "Create a new torrent"
+#~ msgstr "新しい torrent を作成します"
+
+#~ msgid "Open a torrent"
+#~ msgstr "torrent を開きます"
+
+#~ msgid "Open Silently"
+#~ msgstr "質問せずに開く"
+
+#~ msgid "Open a torrent without asking any questions"
+#~ msgstr "何も質問せずに torrent を開きます"
+
+#~ msgid "Start All"
+#~ msgstr "すべて開始"
+
+#~ msgid "Start all torrents"
+#~ msgstr "すべての torrent を開始します"
+
+#~ msgid "Stop All"
+#~ msgstr "すべて停止"
+
+#~ msgid "Stop all torrents"
+#~ msgstr "すべての torrent を停止する"
+
+#~ msgid "Open URL"
+#~ msgstr "URL を開く"
+
+#, fuzzy
+#~| msgid "Open a URL which points to a torrent"
+#~ msgid "Open a URL which points to a torrent, magnet links are supported"
+#~ msgstr "torrent の URL を開きます"
+
+#, fuzzy
+#~| msgid "Pause KTorrent"
+#~ msgid "Suspend KTorrent"
+#~ msgstr "KTorrent を一時停止"
+
+#, fuzzy
+#~| msgid "Pause all running torrents"
+#~ msgid "Suspend all running torrents"
+#~ msgstr "実行中のすべての torrent を一時停止します"
+
+#~ msgid "Show the list of blocked IP addresses"
+#~ msgstr "ブロックした IP アドレスの一覧を表示します"
+
+#~ msgid "Import Torrent"
+#~ msgstr "torrent をインポート"
+
+#~ msgid "Import a torrent"
+#~ msgstr "torrent をインポートします"
+
+#~ msgid "Import KDE3 Torrents"
+#~ msgstr "KDE3 の torrent をインポート"
+
+#~ msgid "Import all torrents from the KDE3 version of KTorrent"
+#~ msgstr "KDE3 用の KTorrent からすべての torrent をインポートします"
+
+#~ msgid "Show/Hide KTorrent"
+#~ msgstr "KTorrent を表示/隠す"
+
+#~ msgid "Group View Visible"
+#~ msgstr "グループビューの表示"
+
+#~ msgid "Show or hide the group view"
+#~ msgstr "グループビューを表示/隠す"
+
+#~ msgid "Torrents"
+#~ msgstr "Torrent"
+
+#~ msgid "Widget to manage the torrent queue"
+#~ msgstr "torrent のキューを管理するウィジェット"
+
+#, fuzzy
+#~| msgid "Displays all the chunks you are downloading, of a torrent"
+#~ msgid "Displays the currently downloading magnet links"
+#~ msgstr "torrent ごとにダウンロード中のすべてのピースを表示します"
+
+#~ msgid "Invalid IP address %1"
+#~ msgstr "無効な IP アドレス %1"
+
+#~ msgid "Duplicate IP address %1"
+#~ msgstr "重複した IP アドレス %1"
+
+#~ msgid "Set max upload speed"
+#~ msgstr "最大アップロード速度を設定"
+
+#~ msgid "Set max download speed"
+#~ msgstr "最大ダウンロード速度を設定"
+
+#~ msgid ""
+#~ "<table cellpadding='2' cellspacing='2' align='center'><tr><td><b>Speed:</"
+#~ "b></td><td></td></tr><tr><td>Download: <font color='#1c9a1c'>%1</font></"
+#~ "td><td>Upload: <font color='#990000'>%2</font></td></"
+#~ "tr><tr><td><b>Transfer:</b></td><td></td></tr><tr><td>Download: <font "
+#~ "color='#1c9a1c'>%3</font></td><td>Upload: <font color='#990000'>%4</"
+#~ "font></td></tr></table>"
+#~ msgstr ""
+#~ "<table cellpadding='2' cellspacing='2' align='center'><tr><td><b>速度:</"
+#~ "b></td><td></td></tr><tr><td>ダウンロード: <font color='#1c9a1c'>%1</"
+#~ "font></td><td>アップロード: <font color='#990000'>%2</font></td></"
+#~ "tr><tr><td><b>転送:</b></td><td></td></tr><tr><td>ダウンロード: <font "
+#~ "color='#1c9a1c'>%3</font></td><td>アップロード: <font color='#990000'>%4</"
+#~ "font></td></tr></table>"
+
+#~ msgid ""
+#~ "<b>%1</b> has completed downloading.<br>Average speed: %2 DL / %3 UL."
+#~ msgstr ""
+#~ "<html><b>%1</b> のダウンロード完了<br/>平均速度: 下り %2 / 上り %3</html>"
+
+#~ msgid ""
+#~ "<b>%1</b> has reached its maximum share ratio of %2 and has been stopped."
+#~ "<br>Uploaded %3 at an average speed of %4."
+#~ msgstr ""
+#~ "<html><b>%1</b> は指定された最大負担率 %2 に達したため、停止しました。<br/"
+#~ ">平均速度 %4 で %3 アップロードしました。</html>"
+
+#~ msgid ""
+#~ "<b>%1</b> has reached its maximum seed time of %2 hours and has been "
+#~ "stopped.<br>Uploaded %3 at an average speed of %4."
+#~ msgstr ""
+#~ "<html><b>%1</b> は最大シード時間 (%2 時間) に達したため、停止しました。"
+#~ "<br/>平均速度 %4 で %3 アップロードしました。</html>"
+
+#~ msgid "<b>%1</b> has been stopped with the following error: <br>%2"
+#~ msgstr "<html><b>%1</b> は次のエラーで停止しました: <br/>%2</html>"
+
+#~ msgid ""
+#~ "Corrupted data has been found in the torrent <b>%1</b><br>It would be a "
+#~ "good idea to do a data integrity check on the torrent."
+#~ msgstr ""
+#~ "<html>torrent <b>%1</b> に壊れたデータを検出しました。<br/>この torrent の"
+#~ "データの整合性をチェックしてください。</html>"
+
+#~ msgid ""
+#~ "<b>%1</b> has reached its maximum share ratio of %2 and cannot be "
+#~ "enqueued. <br>Remove the limit manually if you want to continue seeding."
+#~ msgstr ""
+#~ "<b>%1</b> は指定された最大負担率 %2 に達したため、キューに追加できません。"
+#~ "<br/>シードを続けるには、手動で制限を解除してください。"
+
+#~ msgid ""
+#~ "<b>%1</b> has reached its maximum seed time of %2 hours and cannot be "
+#~ "enqueued. <br>Remove the limit manually if you want to continue seeding."
+#~ msgstr ""
+#~ "<b>%1</b> は最大シード時間 (%2 時間) に達したため、キューに追加できませ"
+#~ "ん。<br/>シードを続けるには、手動で制限を解除してください。"
+
+#~ msgid "Cannot start <b>%1</b> : <br>"
+#~ msgstr "<html><b>%1</b> を開始できません: <br/></html>"
+
+#~ msgid "Cannot seed more than 1 torrent. <br>"
+#~ msgid_plural "Cannot seed more than %1 torrents. <br>"
+#~ msgstr[0] "<html>torrent のシードは 1 件しかできません。<br/></html>"
+#~ msgstr[1] "<html>torrent のシードは %1 件までしかできません。<br/></html>"
+
+#~ msgid "Cannot download more than 1 torrent. <br>"
+#~ msgid_plural "Cannot download more than %1 torrents. <br>"
+#~ msgstr[0] "<html>torrent のダウンロードは 1 件しかできません。<br/></html>"
+#~ msgstr[1] ""
+#~ "<html>torrent のダウンロードは %1 件までしかできません。<br/></html>"
+
+#~ msgid ""
+#~ "Go to Settings -> Configure KTorrent, if you want to change the limits."
+#~ msgstr ""
+#~ "この制限を変更するには<interface>設定|KTorrent を設定</interface>を開いて"
+#~ "ください。"
+
+#~ msgid "There is not enough diskspace available."
+#~ msgstr "ディスクに十分な空き領域がありません。"
+
+#~ msgid ""
+#~ "Your disk is running out of space.<br /><b>%1</b> is being downloaded to "
+#~ "'%2'."
+#~ msgstr ""
+#~ "<html>ディスク領域が足りません。<br /><b>%1</b> を <filename>%2</"
+#~ "filename> にダウンロードしています。</html>"
+
+#~ msgid "Torrent has been stopped.<br />"
+#~ msgstr "<html>torrent を停止しました。<br /></html>"
+
+#~ msgid "Speed limit in KiB/s"
+#~ msgstr "速度制限 (KiB/秒)"
+
+#, fuzzy
+#~| msgid ""
+#~| "KTorrent is unable to accept connections because the ports %1 to %2 are "
+#~| "already in use by another program."
+#~ msgid ""
+#~ "KTorrent is unable to accept connections because the TCP ports %1 is "
+#~ "already in use by another program."
+#~ msgstr ""
+#~ "<numid>%1</numid> から <numid>%2</numid> のポートが既に他のプログラムに"
+#~ "よって使用されているため、KTorrent は接続を受け入れられません。"
+
+#, fuzzy
+#~| msgid ""
+#~| "KTorrent is unable to accept connections because the ports %1 to %2 are "
+#~| "already in use by another program."
+#~ msgid ""
+#~ "KTorrent is unable to accept connections because the UDP port %1 is "
+#~ "already in use by another program."
+#~ msgstr ""
+#~ "<numid>%1</numid> から <numid>%2</numid> のポートが既に他のプログラムに"
+#~ "よって使用されているため、KTorrent は接続を受け入れられません。"
+
+#~ msgid "KTorrent is running one or more torrents"
+#~ msgstr "KTorrent は一つ以上の torrent を実行中です"
+
+#~ msgid "Cannot create torrent: %1"
+#~ msgstr "torrent を作成できません: %1"
+
+#~ msgid ""
+#~ "Several data files of the torrent \"%1\" are missing. \n"
+#~ "Do you want to recreate them, or do you want to not download them?"
+#~ msgstr ""
+#~ "torrent <resource>%1</resource> のいくつかのデータファイルが欠けていま"
+#~ "す。\n"
+#~ "それらを作成し直しますか？それとも、それらはダウンロードしませんか？"
+
+#~ msgid "Data files are missing"
+#~ msgstr "データファイルがありません"
+
+#~ msgid "Cannot deselect missing files: %1"
+#~ msgstr "欠落したファイルを選択解除できません: %1"
+
+#~ msgid "Cannot recreate missing files: %1"
+#~ msgstr "欠落したファイルを作成し直せません: %1"
+
+#~ msgid ""
+#~ "The file where the data is saved of the torrent \"%1\" is missing. \n"
+#~ "Do you want to recreate it?"
+#~ msgstr ""
+#~ "torrent <resource>%1</resource> のデータが保存されているファイルがありませ"
+#~ "ん。\n"
+#~ "作成し直しますか？"
+
+#~ msgid "Data file is missing"
+#~ msgstr "データファイルがありません"
+
+#~ msgid "Cannot recreate data file: %1"
+#~ msgstr "データファイルを作成し直せません: %1"
+
+#~ msgid ""
+#~ "KTorrent has found a torrent from the KDE3 version of KTorrent, do you "
+#~ "want to import it?"
+#~ msgid_plural ""
+#~ "KTorrent has found %1 torrents from the KDE3 version of KTorrent, do you "
+#~ "want to import them?"
+#~ msgstr[0] "KDE3 バージョンの torrent が見つかりました。インポートしますか？"
+#~ msgstr[1] ""
+#~ "KDE3 バージョンの torrent が %1 個見つかりました。インポートしますか？"
+
+#~ msgid "No torrents from the KDE3 version were found."
+#~ msgstr "KDE3 バージョンの torrent は見つかりませんでした。"
+
+#~ msgid "Applet"
+#~ msgstr "アプレット"
+
+#~ msgid ""
+#~ "<table>\t\t\t\t<tr><td>Download Speed:</td><td>%5 </td><td>Seeders: </"
+#~ "td><td>%1 (%2)</td></tr>\t\t\t\t<tr><td>Upload Speed:</td><td>%6 </"
+#~ "td><td>Leechers: </td><td>%3 (%4)</td></tr>"
+#~ msgstr ""
+#~ "<table>\t\t\t\t<tr><td>ダウンロード速度:</td><td>%5 </td><td>シーダー: </"
+#~ "td><td>%1 (%2)</td></tr>\t\t\t\t<tr><td>アップロード速度:</td><td>%6 </"
+#~ "td><td>リーチャー: </td><td>%3 (%4)</td></tr>"
+
+#~ msgid ""
+#~ "<tr><td>Downloaded:</td><td>%1 </td><td>Size: </td><td>%2</td></tr>\t\t\t"
+#~ "\t<tr><td>Uploaded:</td><td>%3 </td><td>Complete: </td><td>%4 %</td></tr>"
+#~ "\t\t\t\t</table>"
+#~ msgstr ""
+#~ "<tr><td>ダウンロード済み:</td><td>%1 </td><td>サイズ: </td><td>%2</td></"
+#~ "tr>\t\t\t\t<tr><td>アップロード済み:</td><td>%3 </td><td>完了: </td><td>%"
+#~ "4%</td></tr>\t\t\t\t</table>"
+
+#~ msgid "<b>%1</b><br/>%2 (Share Ratio: <font color=\"%4\">%3</font>)"
+#~ msgstr "<b>%1</b><br/>%2 (負担率: <font color=\"%4\">%3</font>)"
+
+#~ msgid "KTorrent is not running."
+#~ msgstr "KTorrent が起動していません。"
+
+#~ msgid "No torrents loaded."
+#~ msgstr "torrent がロードされていません。"
+
+#~ msgid "Selected torrent is unavailable."
+#~ msgstr "選択された torrent は利用できません。"
+
+#~ msgid "Ungrouped Torrents"
+#~ msgstr "グループ化されていない torrent"
+
+#~ msgid "Uploads"
+#~ msgstr "アップロード"
+
+#~ msgid "Running Uploads"
+#~ msgstr "実行中のアップロード"
+
+#~ msgid "Not Running Uploads"
+#~ msgstr "実行中ではないアップロード"
+
+#~ msgid "Downloads"
+#~ msgstr "ダウンロード"
+
+#~ msgid "Running Downloads"
+#~ msgstr "実行中のダウンロード"
+
+#~ msgid "Not Running Downloads"
+#~ msgstr "実行中ではないダウンロード"
+
+#~ msgid "Active Torrents"
+#~ msgstr "アクティブな torrent"
+
+#~ msgid "Active Downloads"
+#~ msgstr "アクティブなダウンロード"
+
+#~ msgid "Active Uploads"
+#~ msgstr "アクティブなアップロード"
+
+#~ msgid "Passive Torrents"
+#~ msgstr "受動的な torrent"
+
+#~ msgid "Passive Downloads"
+#~ msgstr "受動的なダウンロード"
+
+#~ msgid "Passive Uploads"
+#~ msgstr "受動的なアップロード"
+
+#~ msgid "Little icons"
+#~ msgstr "小さいアイコン"
+
+#~ msgid "Normal icons"
+#~ msgstr "普通のアイコン"
+
+#~ msgid "Big icons"
+#~ msgstr "大きいアイコン"
+
+#~ msgid "Icons only"
+#~ msgstr "アイコンのみ"
+
+#~ msgid "Text only"
+#~ msgstr "テキストのみ"
+
+#~ msgid "Icons and text"
+#~ msgstr "アイコンとテキスト"
+
+#~ msgid "Left"
+#~ msgstr "左"
+
+#~ msgid "Right"
+#~ msgstr "右"
+
+#~ msgid "Top"
+#~ msgstr "上"
+
+#~ msgid "Bottom"
+#~ msgstr "下"
+
+#~ msgid "Maximum share ratio reached."
+#~ msgstr "最大負担率に達しました。"
+
+#~ msgid "Maximum seed time reached."
+#~ msgstr "最長シード時間に達しました。"
+
+#~ msgid "File"
+#~ msgstr "ファイル"
+
+#~ msgid ""
+#~ "The torrent \"%1\" has reached its maximum share ratio and its maximum "
+#~ "seed time. Ignore the limit and start seeding anyway?"
+#~ msgstr ""
+#~ "torrent <resource>%1</resource> は最大負担率と最長シード時間に達しました。"
+#~ "制限を無視してシードを開始しますか？"
+
+#~ msgid ""
+#~ "The torrent \"%1\" has reached its maximum share ratio. Ignore the limit "
+#~ "and start seeding anyway?"
+#~ msgstr ""
+#~ "torrent <resource>%1</resource> は最大負担率に達しました。制限を無視して"
+#~ "シードを開始しますか？"
+
+#~ msgid ""
+#~ "The torrent \"%1\" has reached its maximum seed time. Ignore the limit "
+#~ "and start seeding anyway?"
+#~ msgstr ""
+#~ "torrent <resource>%1</resource> は最長シード時間に達しました。制限を無視し"
+#~ "てシードを開始しますか？"
+
+#~ msgid ""
+#~ "You don't have enough disk space to download this torrent. Are you sure "
+#~ "you want to continue?"
+#~ msgstr ""
+#~ "この torrent をダウンロードするために必要なディスク領域がありません。本当"
+#~ "に続けますか？"
+
+#~ msgid "Insufficient disk space for %1"
+#~ msgstr "<resource>%1</resource> に必要なディスク領域がありません"
+
+#~ msgid ""
+#~ "Not enough disk space for the following torrents. Do you want to start "
+#~ "them anyway ?"
+#~ msgstr ""
+#~ "以下の torrent のために必要なディスク領域がありません。それでも開始します"
+#~ "か？"
+
+#~ msgid ""
+#~ "The following torrents have reached their maximum seed time. Do you want "
+#~ "to start them anyway ?"
+#~ msgstr "以下の torrent は最長シード時間に達しました。それでも開始しますか？"
+
+#~ msgid ""
+#~ "The following torrents have reached their maximum share ratio. Do you "
+#~ "want to start them anyway ?"
+#~ msgstr "以下の torrent は最大負担率に達しました。それでも開始しますか？"
+
+#~ msgid "Error starting torrent %1 : %2"
+#~ msgstr "torrent <resource>%1</resource> の開始エラー: %2"
+
+#~ msgid "Error"
+#~ msgstr "エラー"
+
+#~ msgid "Error stopping torrent %1 : %2"
+#~ msgstr "torrent <resource>%1</resource> の停止エラー: %2"
+
+#~ msgid ""
+#~ "<img src=\"available_color\">&nbsp; - Downloaded Chunks<br><img src="
+#~ "\"unavailable_color\">&nbsp; - Chunks to Download<br><img src="
+#~ "\"excluded_color\">&nbsp; - Excluded Chunks"
+#~ msgstr ""
+#~ "<html><img src=\"available_color\">&nbsp; - ダウンロード済み<br/><img src="
+#~ "\"unavailable_color\">&nbsp; - 未ダウンロード<br/><img src="
+#~ "\"excluded_color\">&nbsp; - 対象外</html>"
+
+#~ msgid "Cannot write beyond end of the mmap buffer."
+#~ msgstr "mmap バッファの終端を越えて書き込むことはできません。"
+
+#~ msgid "Plugins"
+#~ msgstr "プラグイン"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Yukiko Bando"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "ybando@k6.dion.ne.jp"
+
+#~ msgid "Folders to scan for torrents:"
+#~ msgstr "torrent をスキャンするフォルダ:"
+
+#~ msgid "List of folders which will be scanned for torrents by this plugin."
+#~ msgstr "このプラグインが torrent を探すためにスキャンするフォルダの一覧"
+
+#~ msgid "Add a new folder to be scanned."
+#~ msgstr "スキャンするフォルダを追加します。"
+
+#~ msgid "Add Folder"
+#~ msgstr "フォルダを追加"
+
+#~ msgid "Remove a folder from the list."
+#~ msgstr "リストからフォルダを削除します。"
+
+#~ msgid "Remove Folder"
+#~ msgstr "フォルダを削除"
+
+#~ msgid "Options"
+#~ msgstr "オプション"
+
+#~ msgid "Open the torrents without asking any questions."
+#~ msgstr "何も質問せずに torrent を開きます。"
+
+#~ msgid "Open silently"
+#~ msgstr "質問せずに開く"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Scan the folder "
+#~ "recursively for torrents.</p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;\">Note: "
+#~ "<span style=\" font-weight:400;\">This will not be done for any folder "
+#~ "named loaded.</span></p></body></html>"
+#~ msgstr ""
+#~ "<html><para>このフォルダを再帰的にスキャンして torrent ファイルを探しま"
+#~ "す。</para><para><note>これは名前が「ロード済み」であるフォルダに対しては"
+#~ "行われません。</note></para></html>"
+
+#~ msgid "Scan subfolders"
+#~ msgstr "サブフォルダもスキャンする"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">When a torrent file has "
+#~ "been found and loaded, delete it.</p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"
+#~ "\">Warning:<span style=\" font-weight:400;\"> you will permanently lose "
+#~ "this file.</span></p></body></html>"
+#~ msgstr ""
+#~ "<html><para>見つかった torrent ファイルをロードしたらファイルを削除しま"
+#~ "す。</para><para><warning>ファイルは恒久的に失われます。</warning></"
+#~ "para></html>"
+
+#~ msgid "Remove torrent file after loading"
+#~ msgstr "ロード後に torrent ファイルを削除する"
+
+#~ msgid ""
+#~ "When a torrent file is loaded, move it to a subdirectory named loaded. If "
+#~ "the folder does not exist, it will be created."
+#~ msgstr ""
+#~ "<html>torrent ファイルがロードされたら「ロード済み」という名前のサブフォル"
+#~ "ダにファイルを移動します。フォルダが存在しなければ作成します。</html>"
+
+#~ msgid "Move torrent file to loaded directory"
+#~ msgstr "torrent ファイルをロード済みフォルダに移動する"
+
+#~ msgid "Add torrents opened with this plugin to a group."
+#~ msgstr "このプラグインで開かれた torrent をグループに追加します。"
+
+#~ msgid "Add torrent to group:"
+#~ msgstr "torrent をこのグループに追加:"
+
+#~ msgid "Group to add torrents to."
+#~ msgstr "torrent を追加するグループ"
+
+#~ msgid "Whether to open torrent silently or not."
+#~ msgstr "質問せずに torrent を開くかどうか"
+
+#, fuzzy
+#~| msgid "Execute action when:"
+#~ msgid "Delete action checked."
+#~ msgstr "アクションを実行するとき:"
+
+# skip-rule: forward
+#~ msgid "Forward"
+#~ msgstr "フォワード"
+
+#~ msgid "Undo Forward"
+#~ msgstr "フォワードを元に戻す"
+
+#~ msgid "Rescan"
+#~ msgstr "再スキャン"
+
+#~ msgid "Default UPnP device to use"
+#~ msgstr "デフォルトで使用する UPnP デバイス"
+
+#~ msgid "Syndication Toolbar"
+#~ msgstr "シンジケーションツールバー"
+
+#~ msgid "Name:"
+#~ msgstr "名前:"
+
+#~ msgid "String Matching"
+#~ msgstr "文字列マッチ"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">The string to find in "
+#~ "the title of an item. Simple wildcard syntax is supported :</p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<table border=\"0\" style=\" margin-top:0px; margin-bottom:0px; margin-"
+#~ "left:0px; margin-right:0px;\" align=\"center\" cellspacing=\"1\" "
+#~ "cellpadding=\"2\">\n"
+#~ "<tr>\n"
+#~ "<td style=\" vertical-align:top;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;\"><span "
+#~ "style=\" font-weight:600;\">c</span></p></td>\n"
+#~ "<td style=\" vertical-align:top;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Any character "
+#~ "represents itself apart from those mentioned below. Thus <span style=\" "
+#~ "font-weight:600;\">c</span> matches the character <span style=\" font-"
+#~ "style:italic;\">c</span>.</p></td></tr>\n"
+#~ "<tr>\n"
+#~ "<td style=\" vertical-align:top;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;\"><span "
+#~ "style=\" font-weight:600;\">?</span></p></td>\n"
+#~ "<td style=\" vertical-align:top;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;\">Matches "
+#~ "any single character. </p></td></tr>\n"
+#~ "<tr>\n"
+#~ "<td style=\" vertical-align:top;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;\"><span "
+#~ "style=\" font-weight:600;\">*</span></p></td>\n"
+#~ "<td style=\" vertical-align:top;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;\">Matches "
+#~ "zero or more of any characters.</p></td></tr>\n"
+#~ "<tr>\n"
+#~ "<td style=\" vertical-align:top;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;\"><span "
+#~ "style=\" font-weight:600;\">[...]</span></p></td>\n"
+#~ "<td style=\" vertical-align:top;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;\">Sets of "
+#~ "characters can be represented in square brackets. Within the character "
+#~ "class, like outside, backslash has no special meaning.</p></td></tr></"
+#~ "table>\n"
+#~ "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; color:#000000;\">For "
+#~ "example the *.torrent will match any item which ends in .torrent. </p></"
+#~ "body></html>"
+#~ msgstr ""
+#~ "<html>\n"
+#~ "<p>アイテムのタイトルにマッチさせる文字列を指定します。簡単なワイルドカー"
+#~ "ド構文が使えます。</p><p><table border=\"0\" style=\" margin-top:0px; "
+#~ "margin-bottom:0px; margin-left:0px; margin-right:0px;\" align=\"center\" "
+#~ "cellspacing=\"1\" cellpadding=\"2\">\n"
+#~ "<tr><td><b>c</b></td><td>下の特殊文字を除く文字どおりの文字。<b>c</b> は "
+#~ "c にマッチします。</td></tr>\n"
+#~ "<tr><td><b>?</b></td><td>任意の 1 文字にマッチします。</td></tr>\n"
+#~ "<tr><td><b>*</b></td><td>空文字も含めて、任意の文字にマッチします。</td></"
+#~ "tr>\n"
+#~ "<tr><td><b>[...]</b></td><td>文字クラス。括弧の中のいずれかの 1 文字にマッ"
+#~ "チします。バックスラッシュ (\\) は、文字クラスの中でも外でも特別な意味を持"
+#~ "ちません。</td></tr></table></p>\n"
+#~ "<p>例えば *.torrent は .torrent で終わるすべてのアイテムにマッチします。</"
+#~ "p></html>"
+
+#~ msgid ""
+#~ "By default strings will use wildcard matching. If you want to use regular "
+#~ "expressions, this needs to be enabled."
+#~ msgstr ""
+#~ "文字列に正規表現を使う場合は、これを有効にする必要があります。標準では文字"
+#~ "列をワイルドカード構文と見なします。"
+
+#~ msgid "Strings are regular expressions"
+#~ msgstr "正規表現を使う"
+
+#~ msgid "Item must match all strings"
+#~ msgstr "すべての文字列にマッチするアイテム"
+
+#~ msgid "Case sensitive matching"
+#~ msgstr "大文字と小文字を区別する"
+
+#~ msgid "Seasons && Episodes"
+#~ msgstr "シーズンとエピソード"
+
+#~ msgid "Use season and episode matching"
+#~ msgstr "シーズンとエピソードを指定する"
+
+#~ msgid "Seasons: "
+#~ msgstr "シーズン: "
+
+#~ msgid ""
+#~ "Specify the seasons to download, multiple seasons can be separated by a , "
+#~ "and you can also use ranges by using a -\n"
+#~ "\n"
+#~ "For example: 1, 3-6, 9\n"
+#~ "\n"
+#~ "Will download seasons 1, 3, 4, 5, 6 and 9"
+#~ msgstr ""
+#~ "ダウンロードするシーズンを指定します。複数のシーズンはコンマ (,) で区切り"
+#~ "ます。ハイフン (-) を使って範囲を指定することもできます。\n"
+#~ "\n"
+#~ "例: 1, 3-6, 9\n"
+#~ "\n"
+#~ "と指定すると、シーズン 1, 3, 4, 5, 6, 9 をダウンロードします。"
+
+#~ msgid "Episodes:"
+#~ msgstr "エピソード:"
+
+#~ msgid ""
+#~ "Specify the episodes to download, multiple episodes can be separated by "
+#~ "a , and you can also use ranges by using a -\n"
+#~ "\n"
+#~ "For example: 1, 3-6, 9\n"
+#~ "\n"
+#~ "Will download episodes 1, 3, 4, 5, 6 and 9"
+#~ msgstr ""
+#~ "ダウンロードするエピソードを指定します。複数のエピソードはコンマ (,) で区"
+#~ "切ります。ハイフン (-) を使って範囲を指定することもできます。\n"
+#~ "\n"
+#~ "例: 1, 3-6, 9\n"
+#~ "\n"
+#~ "と指定すると、エピソード 1, 3, 4, 5, 6, 9 をダウンロードします。"
+
+#~ msgid "Do not download multiple items with the same season and episode"
+#~ msgstr "同じシーズンとエピソードのアイテムを複数ダウンロードしない"
+
+#~ msgid "Download torrents of matching items"
+#~ msgstr "マッチするアイテムの torrent をダウンロードする"
+
+#~ msgid "Download torrents of non matching items"
+#~ msgstr "マッチしないアイテムの torrent をダウンロードする"
+
+#~ msgid "Add to group:"
+#~ msgstr "グループに追加:"
+
+#~ msgid "Download to:"
+#~ msgstr "ダウンロード先:"
+
+#~ msgid "Open torrents silently"
+#~ msgstr "質問せずに torrent を開く"
+
+#~ msgid "Test"
+#~ msgstr "テスト"
+
+#~ msgid "filter on feed:"
+#~ msgstr "フィルタをテストするフィード:"
+
+#~ msgid "URL:"
+#~ msgstr "URL:"
+
+#~ msgid "Status:"
+#~ msgstr "状態:"
+
+#~ msgid "Refresh every:"
+#~ msgstr "更新間隔:"
+
+#~ msgid "Time between automatic refreshes of the feed."
+#~ msgstr "フィードの自動更新間隔"
+
+#~ msgid " minutes"
+#~ msgstr " 分"
+
+#~ msgid "Refresh"
+#~ msgstr "更新"
+
+#~ msgid "Filters"
+#~ msgstr "フィルタ"
+
+#~ msgid "Manage Filters"
+#~ msgstr "フィルタの管理"
+
+#~ msgid "Feed:"
+#~ msgstr "フィード:"
+
+#~ msgid "Active filters:"
+#~ msgstr "アクティブなフィルタ:"
+
+#~ msgid "Add"
+#~ msgstr "追加"
+
+#~ msgid "Available filters:"
+#~ msgstr "利用可能なフィルタ:"
+
+#~ msgid "Remove All"
+#~ msgstr "すべて削除"
+
+#~ msgid "Media Player Menu"
+#~ msgstr "メディアプレーヤーメニュー"
+
+#~ msgid "Media Player Toolbar"
+#~ msgstr "メディアプレーヤーツールバー"
+
+#~ msgid "Search Preferences"
+#~ msgstr "検索のオプション設定"
+
+#~ msgid "Web interface skin:"
+#~ msgstr "ウェブインターフェースのスキン:"
+
+#~ msgid "Which interface to use."
+#~ msgstr "使用するインターフェース"
+
+#, fuzzy
+#~| msgid ""
+#~| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/"
+#~| "TR/REC-html40/strict.dtd\">\n"
+#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~| "css\">\n"
+#~| "p, li { white-space: pre-wrap; }\n"
+#~| "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~| "font-weight:400; font-style:normal;\">\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Scan the folder "
+#~| "recursively for torrents.</p>\n"
+#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~| "\"></p>\n"
+#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~| "right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;\">Note: "
+#~| "<span style=\" font-weight:400;\">This will not be done for any folder "
+#~| "named loaded.</span></p></body></html>"
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">If login required is "
+#~ "enabled, you need to enter a username and a password.</p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600;\">Attention: </span>You should not disable this when the "
+#~ "webinterface is accessible from the internet. It will allow anybody "
+#~ "access to it.</p></body></html>"
+#~ msgstr ""
+#~ "<html><para>このフォルダを再帰的にスキャンして torrent ファイルを探しま"
+#~ "す。</para><para><note>これは名前が「ロード済み」であるフォルダに対しては"
+#~ "行われません。</note></para></html>"
+
+#, fuzzy
+#~| msgid "Required:"
+#~ msgid "Login required"
+#~ msgstr "必要:"
+
+#~ msgid "Username:"
+#~ msgstr "ユーザ名:"
+
+#~ msgid "Username you need to use in the login page of the webinterface."
+#~ msgstr "ウェブインターフェースのログインページで使用するユーザ名"
+
+#~ msgid "Password:"
+#~ msgstr "パスワード:"
+
+#~ msgid ""
+#~ "The password for the webinterface login page. By default this is set to "
+#~ "ktorrent."
+#~ msgstr ""
+#~ "ウェブインターフェースのログインページで使用するパスワード。これは標準で "
+#~ "ktorrent に設定されています。"
+
+#~ msgid "Web Server"
+#~ msgstr "ウェブサーバ"
+
+#~ msgid "Port:"
+#~ msgstr "ポート:"
+
+#~ msgid "The port the webinterface listens on."
+#~ msgstr "ウェブインターフェースが待ち受けするポート"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">If you are behind a "
+#~ "router and you want to access the webinterface from somewhere on the "
+#~ "Internet you need to forward the correct port.</p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">This checkbox will "
+#~ "ensure that the UPnP plugin automatically forwards the port. The UPnP "
+#~ "plugin needs to be loaded for this to work.</p></body></html>"
+#~ msgstr ""
+#~ "<html><para>ルータの背後にいる場合は、インターネット上のある場所からウェブ"
+#~ "インターフェースにアクセスするには正しいポートをフォワードする必要がありま"
+#~ "す。</para><para>このボックスをチェックすると、UPnP プラグインが必ず自動的"
+#~ "にポートをフォワードします。そのためには UPnP プラグインがロードされている"
+#~ "必要があります。</para></html>"
+
+#~ msgid "Forward port"
+#~ msgstr "ポートをフォワードする"
+
+#~ msgid "Session TTL:"
+#~ msgstr "セッション TTL:"
+
+#~ msgid "How long a session is valid (in seconds)."
+#~ msgstr "セッションの有効時間 (秒)"
+
+#~ msgid " secs"
+#~ msgstr " 秒"
+
+#~ msgid "Port number"
+#~ msgstr "ポート番号"
+
+#, fuzzy
+#~| msgid "Forward port"
+#~ msgid "forward Port"
+#~ msgstr "ポートをフォワードする"
+
+#~ msgid "interface skin"
+#~ msgstr "インターフェースのスキン"
+
+#~ msgid "username"
+#~ msgstr "ユーザ名"
+
+#~ msgid "password"
+#~ msgstr "パスワード"
+
+#, fuzzy
+#~| msgid "Update charts every"
+#~ msgid "Update charts every n gui updates"
+#~ msgstr "チャートの更新間隔"
+
+#~ msgid "Whether to show seeds in swarms"
+#~ msgstr "スウォームのシードを表示するかどうか"
+
+#~ msgid "Whether to show leachers in swarms"
+#~ msgstr "スウォームのリーチャーを表示するかどうか"
+
+#~ msgid "Color of the speed on dl chart"
+#~ msgstr "ダウンロードチャートの速度の色"
+
+#~ msgid "Color of the average on dl chart"
+#~ msgstr "ダウンロードチャートの平均の色"
+
+#~ msgid "Color of the limit on dl chart"
+#~ msgstr "ダウンロードチャートの制限の色"
+
+#~ msgid "Color of the leechers on peers chart"
+#~ msgstr "ピアチャートのリーチャーの色"
+
+#~ msgid "Color of the seeds on peers chart"
+#~ msgstr "ピアチャートのシードの色"
+
+#~ msgid "Color of the speed on upload chart"
+#~ msgstr "アップロードチャートの速度の色"
+
+#~ msgid "Color of the avg on upload chart"
+#~ msgstr "アップロードチャートの平均の色"
+
+#~ msgid "Color of the limit on upload chart"
+#~ msgstr "アップロードチャートの制限の色"
+
+#~ msgid "Color of the nodes on DHT chart"
+#~ msgstr "DHT チャートのノードの色"
+
+#~ msgid "Color of the tasks on DHT chart"
+#~ msgstr "DHT チャートのタスクの色"
+
+#~ msgid "Use anti aliasing on charts?"
+#~ msgstr "チャートにアンチエイリアシングを使うかどうか"
+
+#~ msgid "Draw ugly grey background grid?"
+#~ msgstr "グレーの背景グリッドを描画しますか？"
+
+#, fuzzy
+#~| msgid "Speed"
+#~ msgctxt "@title:window"
+#~ msgid "Speed"
+#~ msgstr "速度"
+
+#~ msgid "Upload"
+#~ msgstr "アップロード"
+
+#~ msgid "Colors"
+#~ msgstr "色"
+
+#~ msgid "Average"
+#~ msgstr "平均"
+
+#~ msgid "Limit"
+#~ msgstr "制限"
+
+#~ msgid "Seeds  in swarms"
+#~ msgstr "スウォームのシード"
+
+#~ msgid "Avg. leechers connected per running torr."
+#~ msgstr "実行中の torrent あたりのリーチャーの平均接続数"
+
+#~ msgid "Avg. seeds connected per running torrent"
+#~ msgstr "実行中の torrent あたりのシードの平均接続数"
+
+#~ msgid "Use anti-aliasing"
+#~ msgstr "アンチエイリアシングを使う"
+
+#~ msgid "Draw background grid"
+#~ msgstr "背景のグリッドを描画する"
+
+#~ msgid "Widget type:"
+#~ msgstr "ウィジェットのタイプ:"
+
+#~ msgid "Native"
+#~ msgstr "ネイティブ"
+
+#~ msgid "KDE"
+#~ msgstr "KDE"
+
+#~ msgid "(plugin reload is needed after change)"
+#~ msgstr "(変更を適用するにはプラグインの再ロードが必要です)"
+
+#~ msgid "Settings"
+#~ msgstr "設定"
+
+#~ msgid "Update"
+#~ msgstr "更新"
+
+#~ msgid "Update charts every"
+#~ msgstr "チャートの更新間隔"
+
+#~ msgid "GUI updates"
+#~ msgstr "GUI の更新ごと"
+
+#~ msgid "Gather data every"
+#~ msgstr "データの収集間隔"
+
+#~ msgid "milliseconds"
+#~ msgstr "ミリ秒"
+
+#~ msgid "Measurements counts"
+#~ msgstr "測定数"
+
+#~ msgid "Maximum"
+#~ msgstr "最大"
+
+#~ msgid "Maximum speed scale mode: "
+#~ msgstr "速度スケールの最大モード: "
+
+#~ msgid "Exact"
+#~ msgstr "正確"
+
+#~ msgid "Peers connections"
+#~ msgstr "ピアの接続数"
+
+#~ msgid "Show seeds in swarms"
+#~ msgstr "スウォームのシードを表示する"
+
+#~ msgid "Show leechers in swarms"
+#~ msgstr "スウォームのリーチャーを表示する"
+
+#~ msgid "Remove Tracker"
+#~ msgstr "トラッカーを削除"
+
+#~ msgid "Change Tracker"
+#~ msgstr "トラッカーを変更"
+
+#~ msgid "Update Trackers"
+#~ msgstr "トラッカーを更新"
+
+#~ msgid "Restore Defaults"
+#~ msgstr "標準設定に戻す"
+
+#~ msgid "Info"
+#~ msgstr "情報"
+
+#~ msgid "Average down speed:"
+#~ msgstr "下り平均速度:"
+
+#~ msgid "Type:"
+#~ msgstr "タイプ:"
+
+#~ msgid "Average up speed:"
+#~ msgstr "上り平均速度:"
+
+#~ msgid "Comments:"
+#~ msgstr "コメント:"
+
+#~ msgid "Downloaded chunks:"
+#~ msgstr "ダウンロード済みのピース:"
+
+#~ msgid "Available chunks:"
+#~ msgstr "利用可能なピース:"
+
+#~ msgid "Sharing"
+#~ msgstr "共有"
+
+#~ msgid "Share ratio:"
+#~ msgstr "負担率:"
+
+#~ msgid "Ratio limit:"
+#~ msgstr "負担率制限:"
+
+#~ msgid "Time limit:"
+#~ msgstr "時間制限:"
+
+#~ msgid " Hours"
+#~ msgstr " 時間"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:8pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Webseed to add to the "
+#~ "torrent.</p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600;\">Note: </span>Only http webseeds are supported.</p></body></"
+#~ "html>"
+#~ msgstr ""
+#~ "<html><para>この torrent に追加するウェブシードです。</para><para><note>サ"
+#~ "ポートされているのは HTTP のウェブシードのみです。</note></para></html>"
+
+#~ msgid "Add Webseed"
+#~ msgstr "ウェブシードを追加"
+
+#~ msgid "Remove Webseed"
+#~ msgstr "ウェブシードを削除"
+
+#~ msgid "Enable All"
+#~ msgstr "すべて有効にする"
+
+#~ msgid "Disable All"
+#~ msgstr "すべて無効にする"
+
+#~ msgid "Tabs"
+#~ msgstr "タブ"
+
+#~ msgid "Whether or not to show the peers tab in the bottom of the window."
+#~ msgstr "ウィンドウの下部にピアのタブを表示するかどうか"
+
+#~ msgid "Show list of peers"
+#~ msgstr "ピアの一覧を表示する"
+
+#~ msgid "Whether or not to show the chunks tab in the bottom of the window."
+#~ msgstr "ウィンドウの下部にピースのタブを表示するかどうか"
+
+#~ msgid "Show list of chunks currently downloading"
+#~ msgstr "ダウンロード中のピースの一覧を表示する"
+
+#~ msgid "Whether or not to show the trackers tab in the bottom of the window."
+#~ msgstr "ウィンドウの下部にトラッカーのタブを表示するかどうか"
+
+#~ msgid "Show list of trackers"
+#~ msgstr "トラッカーの一覧を表示する"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:8pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Whether or not to show "
+#~ "the webseeds tab at the bottom of the window.</p></body></html>"
+#~ msgstr "<html>ウィンドウの下部にウェブシードのタブを表示するかどうか</html>"
+
+#~ msgid "Show list of webseeds"
+#~ msgstr "ウェブシードの一覧を表示する"
+
+#~ msgid "File Priority Colors"
+#~ msgstr "ファイルの優先順位を表す色"
+
+#~ msgid "First priority:"
+#~ msgstr "最初にダウンロード:"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:8pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Color to use for first "
+#~ "priority files.</p></body></html>"
+#~ msgstr "<html>最初にダウンロードするファイルを示す色を指定します。</html>"
+
+#~ msgid "Last priority:"
+#~ msgstr "最後にダウンロード:"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:8pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Color to use for last "
+#~ "priority files.</p></body></html>"
+#~ msgstr "<html>最後にダウンロードするファイルの色を指定します。</html>"
+
+#~ msgid "Total:"
+#~ msgstr "合計:"
+
+#~ msgid "Currently downloading:"
+#~ msgstr "ダウンロード中:"
+
+#~ msgid "Downloaded:"
+#~ msgstr "ダウンロード済み:"
+
+#~ msgid "Excluded:"
+#~ msgstr "対象外:"
+
+#~ msgid "Left:"
+#~ msgstr "残り:"
+
+#~ msgid "Size:"
+#~ msgstr "サイズ:"
+
+#~ msgid "EMail Settings"
+#~ msgstr "メールの設定"
+
+#~ msgid "SMTP Server"
+#~ msgstr "SMTP サーバ"
+
+#~ msgid "SMTP server:"
+#~ msgstr "SMTP サーバ:"
+
+#~ msgid "Use SSL/TLS encryption"
+#~ msgstr "SSL/TLS 暗号化を使う"
+
+#~ msgid "Destination"
+#~ msgstr "宛先"
+
+#~ msgid "Send mails to:"
+#~ msgstr "メールの宛先:"
+
+#~ msgid "Add CC:"
+#~ msgstr "CC を追加:"
+
+#~ msgid "Add BCC:"
+#~ msgstr "BBC を追加:"
+
+#~ msgid "Auto Resume Settings"
+#~ msgstr "自動再開の設定"
+
+#~ msgid "Auto remove a torrent when:"
+#~ msgstr "torrent の自動削除:"
+
+#~ msgid "The torrent finishes downloading"
+#~ msgstr "ダウンロードが完了したとき"
+
+#~ msgid "The torrent finishes seeding"
+#~ msgstr "シードが完了したとき"
+
+#~ msgid "Auto resume after:"
+#~ msgstr "指定した時間後に自動的に再開する:"
+
+#~ msgid " hours"
+#~ msgstr " 時間"
+
+#~ msgid " seconds"
+#~ msgstr " 秒"
+
+#~ msgid "Description:"
+#~ msgstr "説明:"
+
+#~ msgid "License:"
+#~ msgstr "ライセンス:"
+
+#~ msgid "Author:"
+#~ msgstr "作者:"
+
+#~ msgid "E-Mail:"
+#~ msgstr "メールアドレス:"
+
+#~ msgid "Website:"
+#~ msgstr "ウェブサイト:"
+
+#~ msgid "Use rich log text"
+#~ msgstr "ログ出力にリッチテキストを使う"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:8pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Double click on the log "
+#~ "level to alter it. The possible levels are :</p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600;\">All: </span>All messages are shown</p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600;\">Important: </span>Only important messages are shown</p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600;\">Notice: </span>Only notice and important messages are "
+#~ "shown</p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600;\">Debug: </span>Debug, notice and important messages are "
+#~ "shown</p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600;\">None:</span> No messages are shown</p></body></html>"
+#~ msgstr ""
+#~ "<html><para>ログレベルには以下のものがあります。変更するにはダブルクリック"
+#~ "してください。<list><item>すべて: すべてのメッセージを表示します。</"
+#~ "item><item>重要: 重要なメッセージのみを表示します。</item><item>通知: 通知"
+#~ "と重要なメッセージを表示します。</item><item>デバッグ: デバッグ、通知、お"
+#~ "よび重要なメッセージを表示します。</item><item>なし: メッセージを表示しま"
+#~ "せん。</item></list></para></html>"
+
+#~ msgid ""
+#~ "Whether or not to use rich text or just plain text, for the logging "
+#~ "output shown in the logviewer."
+#~ msgstr ""
+#~ "ログビューアへのログ出力にリッチテキストを使うかプレーンテキストを使うか"
+
+#~ msgid "Use rich text for logging output"
+#~ msgstr "ログ出力にリッチテキストを使う"
+
+#~ msgid "Log widget position:"
+#~ msgstr "ログウィジェットの位置:"
+
+#~ msgid "Separate activity"
+#~ msgstr "別のアクティビティ"
+
+#~ msgid "Dockable widget"
+#~ msgstr "ドッキング可能なウィジェット"
+
+#~ msgid "Torrent activity"
+#~ msgstr "torrent のアクティビティ"
+
+#~ msgid "File download order for:"
+#~ msgstr "次のファイルのダウンロード順序: "
+
+#~ msgid "Whether or not to enable a custom download order."
+#~ msgstr "ファイルのダウンロード順序を指定できるようにするかどうか。"
+
+#~ msgid "Custom file download order enabled"
+#~ msgstr "ファイルのダウンロード順序を指定する"
+
+#~ msgid ""
+#~ "Order in which to download the files of a torrent. The file at the top "
+#~ "will be downloaded first, followed by the second, then the third ..."
+#~ msgstr ""
+#~ "torrent のファイルをダウンロードする順序。一番上のファイルから順にダウン"
+#~ "ロードします。"
+
+#~ msgid "Search Toolbar"
+#~ msgstr "検索ツールバー"
+
+#~ msgid "Current search engine"
+#~ msgstr "現在の検索エンジン"
+
+#~ msgid "Use default browser"
+#~ msgstr "デフォルトのブラウザを使う"
+
+#~ msgid "Use custom browser"
+#~ msgstr "指定したブラウザを使う"
+
+#~ msgid "Custom browser executable path"
+#~ msgstr "指定ブラウザの実行ファイルのパス"
+
+#~ msgid "Clear the search history combo boxes."
+#~ msgstr "コンボボックスの検索履歴をクリアします。"
+
+#~ msgid "Clear Search History"
+#~ msgstr "検索履歴をクリア"
+
+#~ msgid "Whether or not to open searches in an external browser."
+#~ msgstr "検索を外部ブラウザで開くかどうか"
+
+#~ msgid "Open searches in external browser"
+#~ msgstr "検索結果を外部ブラウザで開く"
+
+#~ msgid "Use the default browser configured in the system settings."
+#~ msgstr "KDE システム設定で設定されているデフォルトのブラウザを使います。"
+
+#~ msgid "Use a custom browser."
+#~ msgstr "指定したブラウザを使います。"
+
+#~ msgid "Custom browser path:"
+#~ msgstr "次のブラウザを使う (パスを指定):"
+
+#~ msgid "Path of the custom browser."
+#~ msgstr "使用するブラウザのパスを入力します。"
+
+#~ msgid "Search Engines"
+#~ msgstr "検索エンジン"
+
+#~ msgid "Add a new search engine."
+#~ msgstr "新しい検索エンジンを追加します。"
+
+#~ msgid "Remove all selected search engines."
+#~ msgstr "選択したすべての検索エンジンを削除します。"
+
+#~ msgid "&Remove"
+#~ msgstr "削除(&R)"
+
+#~ msgid "Remove all search engines."
+#~ msgstr "すべての検索エンジンを削除します。"
+
+#~ msgid "R&emove All"
+#~ msgstr "すべて削除(&E)"
+
+#~ msgid "Add all default search engines."
+#~ msgstr "標準のすべての検索エンジンを追加します。"
+
+#~ msgid "Add Defau&lt"
+#~ msgstr "標準エンジンを追加(&L)"
+
+#~ msgid "Special Limits"
+#~ msgstr "特別な制限"
+
+#~ msgid ""
+#~ "Use these global limits when the screensaver is activated, instead of the "
+#~ "ones configured in the network settings."
+#~ msgstr ""
+#~ "スクリーンセーバーが起動している間は、ネットワークの設定で設定されている制"
+#~ "限ではなく、ここで設定する全体の制限を使います。"
+
+#~ msgid "Use different speed limits when the screensaver is activated"
+#~ msgstr "スクリーンセーバーの起動時には別の速度制限を使う"
+
+#~ msgid "Maximum upload speed:"
+#~ msgstr "最大アップロード速度:"
+
+#~ msgid "Global upload limit when the screensaver is activated."
+#~ msgstr "スクリーンセーバー起動時のアップロード全体の制限"
+
+#~ msgid "Maximum download speed:"
+#~ msgstr "最大ダウンロード速度:"
+
+#~ msgid "Global download limit when the screensaver is activated."
+#~ msgstr "スクリーンセーバー起動時のダウンロード全体の制限"
+
+#~ msgid "Schedule background color:"
+#~ msgstr "スケジュール表の背景色:"
+
+#~ msgid "Color of the schedule background."
+#~ msgstr "スケジュール表の背景色"
+
+#~ msgid "Schedule line color:"
+#~ msgstr "スケジュール表の線の色:"
+
+#~ msgid "Color of all lines on the schedule."
+#~ msgstr "スケジュール表のすべての線の色"
+
+#~ msgid "Schedule Item color:"
+#~ msgstr "アイテムの色:"
+
+#~ msgid "Color of each normal item on the schedule."
+#~ msgstr "スケジュール表の通常のアイテムの色"
+
+#, fuzzy
+#~| msgid "Paused schedule item color:"
+#~ msgid "Suspended schedule item color:"
+#~ msgstr "一時停止中のアイテムの色:"
+
+#, fuzzy
+#~| msgid "Color of each paused item on the schedule."
+#~ msgid "Color of each suspended item on the schedule."
+#~ msgstr "スケジュール表の一時停止中のアイテムの色"
+
+#~ msgid "Time"
+#~ msgstr "時間"
+
+#~ msgid "From:"
+#~ msgstr "開始:"
+
+#~ msgid "hh:mm"
+#~ msgstr "hh:mm"
+
+#~ msgid "To:"
+#~ msgstr "終了:"
+
+#~ msgid "Day:"
+#~ msgstr "曜日:"
+
+#~ msgid "Limits"
+#~ msgstr "制限"
+
+#~ msgid "Download limit:"
+#~ msgstr "ダウンロード制限:"
+
+#~ msgid "Upload limit:"
+#~ msgstr "アップロード制限:"
+
+#~ msgid "When screensaver is activated:"
+#~ msgstr "スクリーンセーバーの起動時:"
+
+#~ msgid "Connection Limits"
+#~ msgstr "接続制限"
+
+#~ msgid "Set connection limits"
+#~ msgstr "接続制限を設定する"
+
+#~ msgid "Maximum connections per torrent:"
+#~ msgstr "torrent あたりの最大接続数:"
+
+#~ msgid "Global connection limit:"
+#~ msgstr "全体の接続制限:"
+
+#~ msgid "Add a new item to the schedule"
+#~ msgstr "スケジュールに新しいアイテムを追加"
+
+#~ msgid "Days:"
+#~ msgstr "曜日:"
+
+#~ msgid "Entire Week"
+#~ msgstr "すべての曜日"
+
+#~ msgid "Weekdays Only"
+#~ msgstr "平日のみ"
+
+#~ msgid "Weekend"
+#~ msgstr "週末"
+
+#~ msgid "Shutdown Toolbar"
+#~ msgstr "シャットダウンツールバー"
+
+#~ msgid "Shutdown Settings"
+#~ msgstr "シャットダウンの設定"
+
+#~ msgid "Action to execute:"
+#~ msgstr "実行するアクション:"
+
+#~ msgid "Execute action when:"
+#~ msgstr "アクションを実行するとき:"
+
+#~ msgid "Level1 filter url"
+#~ msgstr "Level1 フィルタの URL"
+
+#~ msgid "Use level1 filter?"
+#~ msgstr "Level1 フィルタを使いますか？"
+
+#~ msgid "IPBlocking Preferences"
+#~ msgstr "IPBlocking の設定"
+
+#~ msgid "PeerGuardian Filter File "
+#~ msgstr "PeerGuardian フィルタファイル"
+
+#~ msgid "Enable this if you want the IP filter plugin to work."
+#~ msgstr "IP フィルタプラグインを使う場合、これを有効にします。"
+
+#~ msgid "Use PeerGuardian filter"
+#~ msgstr "PeerGuardian フィルタを使う"
+
+#~ msgid "IP filter file:"
+#~ msgstr "IP フィルタファイル:"
+
+#~ msgid "Filter file to use, this can be a local file or a remote file."
+#~ msgstr ""
+#~ "使用するフィルタファイル。これはローカルファイルでもリモートファイルでもか"
+#~ "まいません。"
+
+#~ msgid "Download and convert the IP filter file."
+#~ msgstr "IP フィルタファイルをダウンロードして変換します。"
+
+#~ msgid "Dow&nload/Convert"
+#~ msgstr "ダウンロード/変換(&N)"
+
+#~ msgid ""
+#~ "Download PeerGuardian filter from bluetack.co.uk or blocklist.org.\n"
+#~ "NOTE: ZIP file from bluetack.co.uk is supported."
+#~ msgstr ""
+#~ "PeerGuardian フィルタを bluetack.co.uk または blocklist.org からダウンロー"
+#~ "ドします。\n"
+#~ "<note>bluetack.co.uk の ZIP ファイルはサポートしていません。</note>"
+
+#~ msgid "Automatic Update"
+#~ msgstr "自動更新"
+
+#~ msgid "Enable this if you want to automatically update the filter file."
+#~ msgstr "フィルタファイルを自動的に更新するには、これを有効にします。"
+
+#~ msgid "Update file every:"
+#~ msgstr "ファイルの更新間隔:"
+
+#~ msgid "Update interval in days."
+#~ msgstr "更新間隔を日数で指定します。"
+
+#~ msgid " days"
+#~ msgstr " 日"
+
+#~ msgid "Last updated:"
+#~ msgstr "前回の更新:"
+
+#~ msgid "Next update:"
+#~ msgstr "次回の更新:"
+
+#~ msgid "Converting block list to KTorrent format. This might take some time."
+#~ msgstr ""
+#~ "ブロックリストを KTorrent のフォーマットに変換しています。しばらく時間がか"
+#~ "かる場合があります。"
+
+#~ msgid "C&ancel"
+#~ msgstr "キャンセル(&A)"
+
+#, fuzzy
+#~| msgid "Search Preferences"
+#~ msgid "Magnet Generator Preferences"
+#~ msgstr "検索のオプション設定"
+
+#, fuzzy
+#~| msgid "Add Tracker"
+#~ msgid "Add tracker"
+#~ msgstr "トラッカーを追加"
+
+#, fuzzy
+#~| msgid "Tracker"
+#~ msgid "Tracker:"
+#~ msgstr "トラッカー"
+
+#, fuzzy
+#~| msgid "Move a torrent down in the queue"
+#~ msgid "Add the torrent name in the URI"
+#~ msgstr "torrent をキューの下位へ移動"
+
+#, fuzzy
+#~| msgid "Add an item"
+#~ msgid "Add name"
+#~ msgstr "アイテムを追加"
+
+#, fuzzy
+#~| msgid "Show Video"
+#~ msgid "Show popup"
+#~ msgstr "動画を表示"
+
+#, fuzzy
+#~| msgid "Tracker"
+#~ msgid "Toggles tracker"
+#~ msgstr "トラッカー"
+
+#, fuzzy
+#~| msgid "Use default browser"
+#~ msgid "The default tracker"
+#~ msgstr "デフォルトのブラウザを使う"
+
+#, fuzzy
+#~| msgid "Show Feed"
+#~ msgid "Show dn"
+#~ msgstr "フィードを表示"
+
+#~ msgid "UPnP Test Application"
+#~ msgstr "UPnP テスト用アプリケーション"
+
+#~ msgid "Router:"
+#~ msgstr "ルータ:"
+
+#~ msgid "No routers found."
+#~ msgstr "ルータが見つかりません。"
+
+#~ msgid "Find Routers"
+#~ msgstr "ルータを検出"
+
+#~ msgid "Protocol:"
+#~ msgstr "プロトコル:"
+
+#~ msgid "UDP"
+#~ msgstr "UDP"
+
+#~ msgid "TCP"
+#~ msgstr "TCP"
+
+#~ msgid "Verbose mode"
+#~ msgstr "詳細モード"
+
+#~ msgid "Ports && Limits"
+#~ msgstr "ポートと制限"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'OpenSymbol'; "
+#~ "font-size:9pt;\"><span style=\" font-size:8pt;\">Port used for the "
+#~ "bittorrent protocol.</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'OpenSymbol';\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'OpenSymbol';"
+#~ "\"><span style=\" font-weight:600;\">Attention:</span> If you are behind "
+#~ "a router, this port needs to be forwarded to accept incoming connections. "
+#~ "The UPnP plugin can do this for you.</p></body></html>"
+#~ msgstr ""
+#~ "<html><para>BitTorrent プロトコルに使用するポート。</para><para><note>ルー"
+#~ "タの背後にいる場合は、外からの接続を受け入れるためにこのポートをフォワード"
+#~ "する必要があります。UPnP プラグインはこれを自動的に行います。</note></"
+#~ "para></html>"
+
+#~ msgid "UDP tracker port:"
+#~ msgstr "UDP トラッカーのポート:"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'OpenSymbol'; "
+#~ "font-size:9pt;\"><span style=\" font-size:8pt;\">Port used for the UDP "
+#~ "tracker protocol.</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'OpenSymbol';\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'OpenSymbol';"
+#~ "\"><span style=\" font-weight:600;\">Attention:</span> If you are behind "
+#~ "a router, this port needs to be forwarded. The UPnP plugin can do this "
+#~ "for you.</p></body></html>"
+#~ msgstr ""
+#~ "<html><para>UDP トラッカープロトコルに使用するポート。</para><para><note>"
+#~ "ルータの背後にいる場合は、このポートをフォワードする必要があります。UPnP "
+#~ "プラグインはこれを自動的に行います。</note></para></html>"
+
+#~ msgid "The maximum number of connections allowed per torrent."
+#~ msgstr "torrent ごとに許可する最大接続数"
+
+#~ msgid "The global connection limit for all torrents combined."
+#~ msgstr "すべての torrent を合わせた最大接続数"
+
+#~ msgid "The maximum download speed in KiB/s."
+#~ msgstr "ダウンロードの最大速度 (KiB/秒)"
+
+#~ msgid "The maximum upload speed in KiB/s"
+#~ msgstr "アップロードの最大速度 (KiB/秒)"
+
+#~ msgid "DSCP value for IP packets:"
+#~ msgstr "IP パケットの DSCP:"
+
+#~ msgid ""
+#~ "This value will be filled in the DSCP field of all the IP packets sent "
+#~ "for the bittorrent protocol."
+#~ msgstr ""
+#~ "この値は BitTorrent プロトコルで送出されるすべての IP パケットの DSCP "
+#~ "フィールドの値になります。"
+
+#~ msgid "Maximum number of connection setups:"
+#~ msgstr "最大接続数の設定:"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">The maximum number of "
+#~ "outgoing connections ktorrent will try to setup simultaneously.</p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'OpenSymbol';\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'OpenSymbol';"
+#~ "\">If you are having trouble with ktorrent blocking other internet "
+#~ "traffic, try setting this number a bit lower.</p></body></html>"
+#~ msgstr ""
+#~ "<html><para>KTorrent が同時に確立を試みる送信接続の最大数です。</"
+#~ "para><para>KTorrent が他のインターネット接続をブロックしてしまうようであれ"
+#~ "ば、この値を少し低く設定してみてください。</para></html>"
+
+#~ msgid "Network interface:"
+#~ msgstr "ネットワークインターフェース:"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Which network interface "
+#~ "to use for all network traffic.</p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
+#~ "font-family:'OpenSymbol';\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'OpenSymbol';"
+#~ "\"><span style=\" font-weight:600;\">Note: </span>Requires a restart to "
+#~ "take effect.</p></body></html>"
+#~ msgstr ""
+#~ "<html><para>すべてのネットワークトラフィックに使用するネットワークインター"
+#~ "フェース。</para><para><note>変更を適用するには KTorrent を再起動する必要"
+#~ "があります。</note></para></html>"
+
+#~ msgid ""
+#~ "Let KTorrent calculate the recommended settings based upon the bandwidth "
+#~ "you have available."
+#~ msgstr "利用可能な帯域幅に基づいて KTorrent に推奨設定を計算させます。"
+
+#, fuzzy
+#~| msgid "Recommended Settings"
+#~ msgid "Recommended Settings..."
+#~ msgstr "推奨設定"
+
+#~ msgid "Features"
+#~ msgstr "機能"
+
+#~ msgid ""
+#~ "DHT is a trackerless protocol to find peers sharing the same torrents as "
+#~ "you do."
+#~ msgstr ""
+#~ "DHT はトラッカーを介さずに同じ torrent を共有するピアを見つけるプロトコル"
+#~ "です。"
+
+#~ msgid "Use DHT to get additional peers"
+#~ msgstr "ピアを追加するために DHT を使う"
+
+#~ msgid "UDP port for DHT communications:"
+#~ msgstr "DHT コミュニケーションのための UDP ポート:"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;  font-size:9pt;\"><span "
+#~ "style=\" font-size:8pt;\">UDP port to use for the DHT protocol.</span></"
+#~ "p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; \"><span style=\" font-"
+#~ "weight:600;\">Attention:</span> If you are behind a router, this port "
+#~ "needs to be forwarded to accept incoming DHT requests. The UPnP plugin "
+#~ "can do this for you.</p></body></html>"
+#~ msgstr ""
+#~ "<html><para>DHT プロトコルで使用する UDP ポート。</para><para><note>ルータ"
+#~ "の背後にいる場合は、外からの DHT 要求を受け入れるためにこのポートをフォ"
+#~ "ワードする必要があります。UPnP プラグインはこれを自動的に行います。</"
+#~ "note></para></html>"
+
+#~ msgid "Whether or not to use µTorrent compatible peer exchange."
+#~ msgstr "µTorrent 互換のピア交換を使うかどうか"
+
+#~ msgid "Use peer exchange"
+#~ msgstr "ピア交換を使う"
+
+#~ msgid ""
+#~ "Enable or disable the use of webseeds when they are present in a torrent."
+#~ msgstr ""
+#~ "torrent にウェブシードが含まれている場合に、その使用を有効/無効にします。"
+
+#~ msgid "Use webseeds"
+#~ msgstr "ウェブシードを使う"
+
+#~ msgid "Encryption"
+#~ msgstr "暗号化"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Protocol encryption is "
+#~ "useful when your ISP is slowing down bittorrent connections. </p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">The encryption will "
+#~ "prevent your bittorrent traffic to be flagged as bittorrent traffic, and "
+#~ "so the ISP will not slow it down.</p></body></html>"
+#~ msgstr ""
+#~ "<html>プロトコルの暗号化は ISP が BitTorrent 接続の速度を制限している場合"
+#~ "に役立ちます。暗号化すると BitTorrent トラフィックとして認識されないので、"
+#~ "ISP に速度を制限されません。</html>"
+
+#~ msgid "Use protocol encryption"
+#~ msgstr "プロトコル暗号化を使う"
+
+#~ msgid ""
+#~ "Not all clients support encryption, and some people have encryption "
+#~ "disabled. If you want to connect to those peers, you need to have this "
+#~ "option enabled."
+#~ msgstr ""
+#~ "<html>すべてのクライアントが暗号化をサポートしているわけではありません。ま"
+#~ "た、暗号化を無効にしているユーザもいます。そのようなピアと接続するには、こ"
+#~ "のオプションを有効にする必要があります。</html>"
+
+#~ msgid "Allow unencrypted connections"
+#~ msgstr "暗号化されていない接続を許可する"
+
+#~ msgid ""
+#~ "Instead of allowing the tracker to determine your IP address, tell the "
+#~ "tracker which IP address to use. Use this when you are behind a proxy."
+#~ msgstr ""
+#~ "トラッカーに IP アドレスを判断させずに、使用する IP アドレスをトラッカーに"
+#~ "通知します。これはプロキシの背後にいる場合に利用してください。"
+
+#~ msgid "Send the tracker a custom IP address or hostname"
+#~ msgstr "トラッカーにカスタム IP アドレスまたはホスト名を送る"
+
+#~ msgid "Custom IP address or hostname:"
+#~ msgstr "カスタム IP アドレスまたはホスト名:"
+
+#~ msgid ""
+#~ "Custom IP address or hostname to send to the tracker. Hostnames will be "
+#~ "resolved at runtime and the resolved IP address will be sent to the "
+#~ "tracker."
+#~ msgstr ""
+#~ "トラッカーに送る IP アドレスまたはホスト名。ホスト名は実行時に IP アドレス"
+#~ "に解決されてトラッカーに送られます。"
+
+#~ msgid "Data Checking"
+#~ msgstr "データチェック"
+
+#~ msgid ""
+#~ "During uploading when a chunk is loaded into memory automatically recheck "
+#~ "this chunk, to see if it still is OK."
+#~ msgstr ""
+#~ "アップロード中にメモリにロードされたピースを自動的に再チェックし、問題が発"
+#~ "生していないか調べます。"
+
+#~ msgid "Recheck chunks during uploading"
+#~ msgstr "アップロード中にピースを再チェックする"
+
+#~ msgid ""
+#~ "Because rechecking big chunks can take a lot of time, the recheck can be "
+#~ "disabled when the chunks are bigger then a certain size."
+#~ msgstr ""
+#~ "大きなピースを再チェックすると非常に時間がかかるので、一定のサイズを超える"
+#~ "ピースについて再チェックを無効にすることができます。"
+
+#~ msgid "Do not recheck when chunks are bigger than"
+#~ msgstr "次より大きいピースは再チェックしない"
+
+#~ msgid "The maximum size a chunk can be for rechecking during uploading."
+#~ msgstr "アップロード中に再チェックするピースの最大サイズ"
+
+#~ msgid " KiB"
+#~ msgstr " KiB"
+
+#~ msgid ""
+#~ "Automatically do a full data check when we find to many corrupted chunks."
+#~ msgstr ""
+#~ "壊れたピースがたくさん見つかった場合に自動的に完全なデータチェックを行いま"
+#~ "す。"
+
+#~ msgid "Do a full data check after "
+#~ msgstr "壊れたピースが次の数を超えたら完全なチェックを行う"
+
+#~ msgid "The number of corrupted chunks before a full data check is done"
+#~ msgstr ""
+#~ "この数を超える壊れたピースが見つかれば完全なデータチェックを行います。"
+
+#~ msgid ""
+#~ "When a torrent has finished downloading, do a full data check on the "
+#~ "torrent."
+#~ msgstr "torrent のダウンロード完了後に完全なデータチェックを行います。"
+
+#~ msgid "Check data when download is finished"
+#~ msgstr "ダウンロード完了後にデータをチェックする"
+
+#~ msgid ""
+#~ "Whether or not diskspace should be reserved before starting to download a "
+#~ "torrent."
+#~ msgstr "torrent のダウンロードを開始する前にディスク領域を確保するかどうか"
+
+#~ msgid "Reserve disk space before starting a torrent"
+#~ msgstr "torrent を開始する前にディスク領域を確保する"
+
+#~ msgid ""
+#~ "Instead of doing a quick reservation, do a full reservation. This is "
+#~ "slower than the quick way, but avoids fragmentation on the disk."
+#~ msgstr ""
+#~ "<html>必要なディスク領域を簡単に確保するのではなく完全に確保します。こちら"
+#~ "の方が時間がかかりますが、ディスク上の断片化を防ぐことができます。</html>"
+
+#~ msgid "Fully reserve disk space (avoids fragmentation)"
+#~ msgstr "ディスク領域を完全に確保する (断片化を防ぐ)"
+
+#~ msgid "Performance"
+#~ msgstr "パフォーマンス"
+
+#~ msgid "GUI update interval:"
+#~ msgstr "GUI の更新間隔:"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;\"><span "
+#~ "style=\" font-size:8pt;\">The interval in milliseconds between GUI "
+#~ "updates.</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600;\">Note: </span>Increasing this will decrease CPU usage.</p></"
+#~ "body></html>"
+#~ msgstr ""
+#~ "<html><para>GUI を更新する間隔 (ミリ秒)。</para><para><note label='注'>こ"
+#~ "の値を増やすと CPU の使用が減ります。</note></para></html>"
+
+#~ msgid " ms"
+#~ msgstr " ミリ秒"
+
+#~ msgid "Network sleep interval:"
+#~ msgstr "ネットワークのスリープ間隔:"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;\"><span "
+#~ "style=\" font-size:8pt;\">Amount of time the network threads will sleep "
+#~ "when they are speed limited. This has absolutely no effect when there are "
+#~ "no speed limits.</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600;\">Note:</span> The lower this is the more CPU is used. "
+#~ "Setting it high can lead to lower speeds in high bandwith situations. </"
+#~ "p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">For example on an 100 "
+#~ "Mbit LAN, if you set a limit of 3000 KiB/s, you might not actually reach "
+#~ "this speed when this value is too high. Without a limit you can easily "
+#~ "get above 3000 KiB/s on a LAN.</p></body></html>"
+#~ msgstr ""
+#~ "<html><para>速度が制限されている場合にネットワークスレッドがスリープする時"
+#~ "間。これは速度が制限されていない場合には全く効果がありません。</"
+#~ "para><para><note>値を低くするほど多くの CPU を消費します。また、高帯域幅で"
+#~ "この値を高く設定すると速度が落ちることがあります。</note></para><para>例え"
+#~ "ば 100 Mbit の LAN で 3000 KiB/秒に速度を制限した場合、この値が高すぎると"
+#~ "その速度に達しない可能性があります。制限なしの場合は LAN 上で容易に 3000 "
+#~ "KiB/秒より速い速度が出ます。</para></html>"
+
+#~ msgid "Miscellaneous"
+#~ msgstr "その他"
+
+#~ msgid "Time estimation algorithm:"
+#~ msgstr "残り時間を計算するアルゴリズム:"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
+#~ "style=\" font-size:8pt;\">Select which algorithm to use for estimating "
+#~ "the time left :</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600;\">KTorrent:</span> Mix of other algorithms, we use the one "
+#~ "which fits best in the current situation.</p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600;\">Current speed:</span> Bytes left to download / current "
+#~ "speed</p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600;\">Average speed: </span>Bytes left to download / average "
+#~ "speed</p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600;\">Window of X:</span> Average of the last X samples (X = 20)</"
+#~ "p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600;\">Moving average:</span>  Moving average of the last 20 "
+#~ "samples</p></body></html>"
+#~ msgstr ""
+#~ "<html><para>残り時間の計算に使用するアルゴリズムを選択します。"
+#~ "<list><item>KTorrent: 以下のアルゴリズムの中からその時々の状況に最も適した"
+#~ "ものを使います。</item><item>現在の速度: 残りバイトを現在の速度で割りま"
+#~ "す。</item><item>平均速度: 残りバイトを平均速度で割ります。</item><item>X "
+#~ "のウィンドウ: 最後の X サンプルの平均に基づいて計算します (X = 20)。</"
+#~ "item><item>移動平均: 最後の 20 個のサンプルの移動平均に基づいて計算しま"
+#~ "す。</item></list></para></html>"
+
+#~ msgid "Window of X"
+#~ msgstr "X のウィンドウ"
+
+#~ msgid "Moving average"
+#~ msgstr "移動平均"
+
+#~ msgid "Preview size for audio files:"
+#~ msgstr "音声ファイルのプレビューサイズ:"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">The amount of data at "
+#~ "the beginning and end of an audio file, which will be prioritized for "
+#~ "previewing.</p></body></html>"
+#~ msgstr ""
+#~ "<html>プレビューのために優先する音声ファイルの最初と最後のデータの量を指定"
+#~ "します。</html>"
+
+#~ msgid "Preview size for video files:"
+#~ msgstr "動画ファイルのプレビューサイズ:"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">The amount of data at "
+#~ "the beginning and end of a video file, which will be prioritized for "
+#~ "previewing.</p></body></html>"
+#~ msgstr ""
+#~ "<html>プレビューのために優先する動画ファイルの最初と最後のデータの量を指定"
+#~ "します。</html>"
+
+#~ msgid "Do not use KIO for tracker announces"
+#~ msgstr "トラッカーのアナウンスに KIO を使わない"
+
+#~ msgid ""
+#~ "Resolve the hostname of each peer. This will result in the hostname of a "
+#~ "peer being displayed instead of the IP address. \n"
+#~ "\n"
+#~ "It can be disabled if you do not like the additional network traffic it "
+#~ "generates"
+#~ msgstr ""
+#~ "ピアのホスト名を解決し、IP アドレスの代わりにホスト名を表示します。\n"
+#~ "\n"
+#~ "これによってネットワークトラフィックを増やしたくない場合は、このオプション"
+#~ "を無効にしてください。"
+
+#~ msgid "Resolve hostnames of peers"
+#~ msgstr "ピアのホスト名を解決する"
+
+#~ msgid "Folders"
+#~ msgstr "フォルダ"
+
+#~ msgid "Folder to store torrent information:"
+#~ msgstr "torrent 情報を保存するフォルダ:"
+
+#~ msgid ""
+#~ "Directory to store information about all torrents currently opened in "
+#~ "KTorrent."
+#~ msgstr ""
+#~ "KTorrent で開いているすべての torrent に関する情報を保存するフォルダ"
+
+#~ msgid "Directory to use as a default save location for all data."
+#~ msgstr "すべてのデータのデフォルトの保存先として使用するフォルダ"
+
+#~ msgid "Default save location:"
+#~ msgstr "デフォルトの保存先:"
+
+#~ msgid "Directory to move data to when a torrent has finished downloading."
+#~ msgstr "torrent のダウンロードが完了したときにデータを移動するフォルダ"
+
+#~ msgid "Move completed downloads to:"
+#~ msgstr "完了したダウンロードの移動先:"
+
+#~ msgid ""
+#~ "Directory to copy all torrent files in, which are opened by KTorrent."
+#~ msgstr "KTorrent で開いたすべての torrent ファイルをコピーするフォルダ"
+
+#~ msgid "Copy torrent files to:"
+#~ msgstr "torrent ファイルのコピー先:"
+
+#~ msgid "System Tray Icon"
+#~ msgstr "システムトレイアイコン"
+
+#~ msgid "Whether or not to show an icon in the system tray."
+#~ msgstr "システムトレイにアイコンを表示するかどうか"
+
+#~ msgid "Show system tray icon"
+#~ msgstr "システムトレイにアイコンを表示する"
+
+#~ msgid "Whether or not to show system tray popup messages."
+#~ msgstr "システムトレイのポップアップメッセージを表示するかどうか"
+
+#~ msgid "Show system tray popup messages"
+#~ msgstr "システムトレイのポップアップメッセージを表示する"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:8pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">When you select "
+#~ "multiple torrents to be opened at the same time, open them silently.</p></"
+#~ "body></html>"
+#~ msgstr ""
+#~ "<html>複数の torrent を同時に開くように選択したときに、質問せずに開きま"
+#~ "す。</html>"
+
+#~ msgid "Open multiple torrents silently"
+#~ msgstr "質問せずに複数の torrent を開く"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:8pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Prevent computer from "
+#~ "going into a sleep state when torrents are running.</p></body></html>"
+#~ msgstr ""
+#~ "<html>実行中の torrent がある間はコンピュータがスリープ状態に移行しないよ"
+#~ "うにします。</html>"
+
+#~ msgid "Suppress sleep when torrents are running"
+#~ msgstr "torrent 実行中はスリープ状態に移行しない"
+
+#~ msgid ""
+#~ "When enabled, the queue manager will be totally disabled, allowing you to "
+#~ "fully control all torrents manually."
+#~ msgstr ""
+#~ "このオプションはキューマネージャを完全に無効にし、すべての torrent を手動"
+#~ "で制御できるようにします。"
+
+#~ msgid "Control torrents manually"
+#~ msgstr "すべての torrent を手動で制御する"
+
+#~ msgid "Maximum downloads:"
+#~ msgstr "最大ダウンロード数:"
+
+#~ msgid ""
+#~ "The maximum number of simultaneous downloads the queue manager will run."
+#~ msgstr "キューマネージャが同時に実行する最大ダウンロード数"
+
+#~ msgid "Maximum seeds:"
+#~ msgstr "最大シード数:"
+
+#~ msgid "The maximum number of simultaneous seeds the queue manager will run."
+#~ msgstr "キューマネージャが同時に実行する最大シード数"
+
+#~ msgid "When diskspace is running low:"
+#~ msgstr "ディスクの空き領域が少ない場合:"
+
+#~ msgid ""
+#~ "What to do when the diskspace is running low and the queue manager wants "
+#~ "to start a torrent."
+#~ msgstr ""
+#~ "ディスクの空き領域が少ないときにキューマネージャに torrent を開始させるか"
+#~ "どうかを指定します。"
+
+#~ msgid "Don't start torrents"
+#~ msgstr "torrent を開始しない"
+
+#~ msgid "Ask if torrents can be started"
+#~ msgstr "torrent を開始するか尋ねる"
+
+#~ msgid "Start torrents"
+#~ msgstr "torrent を開始する"
+
+#~ msgid "Stop torrents when free disk space is lower than:"
+#~ msgstr "torrent を停止するディスクの空き領域の下限:"
+
+#~ msgid ""
+#~ "When the free diskspace drops below this value, stop all torrents "
+#~ "downloading."
+#~ msgstr ""
+#~ "ディスクの空き領域がこの値より少なくなると、すべての torrent のダウンロー"
+#~ "ドを停止します。"
+
+#~ msgid " MiB"
+#~ msgstr " MiB"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-size:8pt; font-weight:400; font-style:"
+#~ "normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">With this enabled, the "
+#~ "queue manager will decrease the priority of a torrent which has been "
+#~ "stalled for too long. </p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">This will allow the "
+#~ "queue manager to run other torrents, when a torrent is doing nothing.</"
+#~ "p></body></html>"
+#~ msgstr ""
+#~ "<html><para>このオプションを有効にすると、キューマネージャは長時間ストール"
+#~ "している torrent の優先順位を下げます。</para><para>そうすることによって、"
+#~ "他の torrent を実行できるようにします。</para></html>"
+
+#~ msgid "Decrease priority of torrents which are stalled for too long"
+#~ msgstr "長時間ストールした torrent の優先順位を下げる"
+
+#~ msgid "Stalled timer:"
+#~ msgstr "ストールタイマー:"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Bitstream "
+#~ "Vera Sans';\">Time used for the stall timer. When a torrent is stalled "
+#~ "longer than this, its priority will be decreased.</p></body></html>"
+#~ msgstr ""
+#~ "<html>ストールタイマーに使用する時間です。torrent がここで指定した時間以上"
+#~ "ストールした場合は、その優先順位を下げます。</html>"
+
+#~ msgid " Minutes"
+#~ msgstr " 分"
+
+#~ msgctxt "@title:group Options regarging Seeding"
+#~ msgid "Seeding"
+#~ msgstr "シード"
+
+#~ msgid ""
+#~ "When a download is finished, continue seeding it. If this is disabled, "
+#~ "the torrent will be stopped."
+#~ msgstr ""
+#~ "ダウンロードが完了した後もシードを続けます。このオプションを無効にすると、"
+#~ "ダウンロードが完了したら torrent を停止します。"
+
+#~ msgid "Keep seeding after download is finished"
+#~ msgstr "ダウンロード完了後シードを続ける"
+
+#~ msgid "Number of upload slots:"
+#~ msgstr "アップロードスロットの数:"
+
+#~ msgid ""
+#~ "The number of upload slots, this determines the number of peers you can "
+#~ "upload to simultaneously for one torrent."
+#~ msgstr ""
+#~ "アップロードのスロット数。これによって一つの torrent について同時にアップ"
+#~ "ロードできるピアの数が決まります。"
+
+#~ msgid "Default maximum share ratio:"
+#~ msgstr "デフォルトの最大負担率:"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;\"><span "
+#~ "style=\" font-size:8pt;\">The maximum share ratio, if this value is "
+#~ "reached seeding will be stopped. This is only applied to newly opened "
+#~ "torrents, existing torrents will not be affected by changing this.</"
+#~ "span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600;\">Attention: </span>This is not used when downloading, only "
+#~ "when seeding.</p></body></html>"
+#~ msgstr ""
+#~ "<html><para>最大負担率。この値に達するとシードを停止します。この変更は新し"
+#~ "く開いた torrent にのみ適用されます。既存の torrent の最大負担率は変わりま"
+#~ "せん。</para><para><note>これはダウンロード中には適用されません。シード中"
+#~ "にのみ適用されます。</note></para></html>"
+
+#~ msgid "Default maximum seed time:"
+#~ msgstr "デフォルトの最長シード時間:"
+
+#~ msgid ""
+#~ "The maximum seed time in hours. Once you reach this time, the torrent "
+#~ "will be stopped. This is only applied to newly opened torrents, existing "
+#~ "torrents will not be affected by changing this."
+#~ msgstr ""
+#~ "最長シード時間。この時間に達すると torrent を停止します。この変更は新しく"
+#~ "開いた torrent にのみ適用されます。既存の torrent の最長シード時間は変わり"
+#~ "ません。"
+
+#~ msgid "Recommended Settings"
+#~ msgstr "推奨設定"
+
+#~ msgid "Available upload bandwidth:"
+#~ msgstr "利用可能なアップロード帯域幅:"
+
+#~ msgid " Kbps"
+#~ msgstr " Kbps"
+
+#~ msgid " kb/s"
+#~ msgstr " kb/秒"
+
+#~ msgid "Available download bandwidth:"
+#~ msgstr "利用可能なダウンロード帯域幅:"
+
+#~ msgid "(= 32 KiB/s)"
+#~ msgstr "(= 32 KiB/秒)"
+
+#~ msgid "(= 500 KiB/s)"
+#~ msgstr "(= 500 KiB/秒)"
+
+#~ msgid "Calculate"
+#~ msgstr "計算"
+
+#~ msgid "Preferences"
+#~ msgstr "設定"
+
+#~ msgid "Average speed per slot:"
+#~ msgstr "スロットあたりの平均速度:"
+
+#~ msgid "Number of torrents you usually download simultaneously:"
+#~ msgstr "ふだん同時にダウンロードする torrent の数:"
+
+#~ msgid "Slots per torrent:"
+#~ msgstr "torrent あたりのスロット数:"
+
+#~ msgid "Recommended settings:"
+#~ msgstr "推奨設定:"
+
+#~ msgid "HTTP"
+#~ msgstr "HTTP"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;\"><span "
+#~ "style=\" font-size:8pt;\">Use the HTTP proxy settings configured in the "
+#~ "settings of KDE.</span></p></body></html>"
+#~ msgstr "<html>KDE の設定で指定されている HTTP プロキシを使います。</html>"
+
+#~ msgid "Use KDE proxy settings"
+#~ msgstr "KDE のプロキシ設定を使う"
+
+#~ msgid "Proxy:"
+#~ msgstr "プロキシ:"
+
+#~ msgid "IP address or hostname of the HTTP proxy to use. "
+#~ msgstr "使用する HTTP プロキシの IP アドレスまたはホスト名"
+
+#~ msgid "Port of the HTTP proxy."
+#~ msgstr "HTTP プロキシのポート"
+
+#~ msgid "Whether or not to use the HTTP proxy for webseed connections."
+#~ msgstr "ウェブシード接続にプロキシを使うかどうか"
+
+#~ msgid "Use proxy for webseed connections"
+#~ msgstr "ウェブシード接続にプロキシを使う"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Whether or not to use "
+#~ "the HTTP proxy for tracker connections.</p></body></html>"
+#~ msgstr "<html>トラッカー接続に HTTP プロキシを使うかどうか</html>"
+
+#~ msgid "Use proxy for tracker connections"
+#~ msgstr "トラッカー接続にプロキシを使う"
+
+#~ msgid "SOCKS"
+#~ msgstr "SOCKS"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;\"><span "
+#~ "style=\" font-size:8pt;\">Use a SOCKS proxy server for bittorrent "
+#~ "connections.</span></p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\" font-family:'OpenSymbol'; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"><span style=\" font-weight:600;\">Note: </span>This is not used for "
+#~ "tracker connections</p></body></html>"
+#~ msgstr ""
+#~ "<html><para>BitTorrent 接続に SOCKS プロキシサーバを使用します。</"
+#~ "para><para><note>これはトラッカー接続には使用されません。</note></para></"
+#~ "html>"
+
+#~ msgid "Use a SOCKS proxy server:"
+#~ msgstr "SOCKS プロキシサーバを使う:"
+
+#~ msgid "Server:"
+#~ msgstr "サーバ:"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;\"><span "
+#~ "style=\" font-size:8pt;\">IP address or hostname of the SOCKS server</"
+#~ "span></p></body></html>"
+#~ msgstr "<html>SOCKS サーバの IP アドレスまたはホスト名</html>"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;\"><span "
+#~ "style=\" font-size:8pt;\">Port used by the SOCKS server</span></p></"
+#~ "body></html>"
+#~ msgstr "<html>SOCKS サーバが使用するポート</html>"
+
+#~ msgid "Version:"
+#~ msgstr "バージョン:"
+
+#~ msgid ""
+#~ "If the SOCKS server requires authentication via a username and a "
+#~ "password, enable this box."
+#~ msgstr ""
+#~ "SOCKS サーバがユーザ名とパスワードによる認証を必要とする場合、このボックス"
+#~ "を有効にします。"
+
+#~ msgid "Username and password required"
+#~ msgstr "ユーザ名とパスワードが必要"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
+#~ "style=\" font-size:8pt;\">Username for the SOCKS proxy server.</span></"
+#~ "p></body></html>"
+#~ msgstr "<html>SOCKS プロキシサーバのユーザ名</html>"
+
+#~ msgid ""
+#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+#~ "REC-html40/strict.dtd\">\n"
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><span "
+#~ "style=\" font-size:8pt;\">Password for the SOCKS proxy server.</span></"
+#~ "p></body></html>"
+#~ msgstr "<html>SOCKS プロキシサーバのパスワード</html>"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Found:"
+#~ msgstr "発見:"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:8pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">The number of chunks "
+#~ "which were not downloaded but have been found anyway.</p></body></html>"
+#~ msgstr "<html>ダウンロードはしていないけれども見つかったピースの数</html>"
+
+#~ msgid "0"
+#~ msgstr "0"
+
+#~ msgid "Failed:"
+#~ msgstr "失敗:"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:8pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">The number of chunks "
+#~ "which have been downloaded, and which are not OK.</p></body></html>"
+#~ msgstr "<html>ダウンロードしたけれども問題のあるピースの数</html>"
+
+#~ msgid "Not downloaded:"
+#~ msgstr "未ダウンロード:"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:8pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">The number of chunks "
+#~ "which have not been downloaded.</p></body></html>"
+#~ msgstr "<html>ダウンロードしていないピースの数</html>"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:8pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">The number of chunks "
+#~ "which have been downloaded, and which are OK.</p></body></html>"
+#~ msgstr "<html>ダウンロード済みで問題のないピースの数</html>"
+
+#~ msgid "Cancel"
+#~ msgstr "キャンセル"
+
+#~ msgid "Close"
+#~ msgstr "閉じる"
+
+#~ msgid "Dialog"
+#~ msgstr "ダイアログ"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:8pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Default save location "
+#~ "for torrents from this group. </p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600;\">Note:</span> This is only used in the file selection "
+#~ "dialog, when you change the group, the download location in the dialog "
+#~ "will be set to this. You can still override it, if you want to. </p></"
+#~ "body></html>"
+#~ msgstr ""
+#~ "<html><para>このグループの torrent のデフォルトの保存場所です。</"
+#~ "para><para><note>これはファイル選択ダイアログでのみ使用されます。グループ"
+#~ "を変更すると、ダイアログ中のダウンロード先がこの場所に設定されます。必要で"
+#~ "あれば変更できます。</note></para></html>"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:8pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Default save location "
+#~ "for torrents from this group. </p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600;\">Note: </span>This is only used in the file selection "
+#~ "dialog, when you change the group, the download location in the dialog "
+#~ "will be set to this. You can still override it, if you want to.</p></"
+#~ "body></html>"
+#~ msgstr ""
+#~ "<html><para>このグループの torrent のデフォルトの保存場所です。</"
+#~ "para><para><note>これはファイル選択ダイアログでのみ使用されます。グループ"
+#~ "を変更すると、ダイアログ中のダウンロード先がこの場所に設定されます。必要で"
+#~ "あれば変更できます。</note></para></html>"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:8pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Default settings for "
+#~ "torrents which are added to the group.</p></body></html>"
+#~ msgstr ""
+#~ "<html>このグループに追加された torrent のデフォルトの設定です。</html>"
+
+#~ msgid "Torrent Limits"
+#~ msgstr "torrent の制限"
+
+#~ msgid "Maximum download rate:"
+#~ msgstr "最大ダウンロード率:"
+
+#~ msgid "Maximum upload rate:"
+#~ msgstr "最大アップロード率:"
+
+#~ msgid "Maximum seed time:"
+#~ msgstr "最長シード時間:"
+
+#~ msgid "Maximum share ratio:"
+#~ msgstr "最大負担率:"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:8pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">When this is enabled, "
+#~ "these settings will only be applied when a torrent is added to the group "
+#~ "in the file selection dialog or the torrent creation dialog.</p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">If this is not enabled, "
+#~ "the settings will always be applied when you add a torrent to this group. "
+#~ "</p></body></html>"
+#~ msgstr ""
+#~ "<html><para>このオプションを有効にすると、torrent がファイル選択ダイアログ"
+#~ "または torrent 作成ダイアログでグループに追加された場合にのみ、これらの設"
+#~ "定が適用されます。</para><para>有効にしなければ、このグループに追加された"
+#~ "すべての torrent に適用されます。</para></html>"
+
+#~ msgid "Apply settings only for newly opened or created torrents"
+#~ msgstr "新しく開いたか作成された torrent にのみ設定を適用する"
+
+#~ msgid "Create a torrent"
+#~ msgstr "torrent を作成"
+
+#~ msgid "File or directory to create torrent from:"
+#~ msgstr "torrent を作成する元のファイルまたはフォルダ:"
+
+#~ msgid "Size of each chunk:"
+#~ msgstr "各ピースのサイズ:"
+
+#~ msgid "32 KiB"
+#~ msgstr "32 KiB"
+
+#~ msgid "64 KiB"
+#~ msgstr "64 KiB"
+
+#~ msgid "128 KiB"
+#~ msgstr "128 KiB"
+
+#~ msgid "256 KiB"
+#~ msgstr "256 KiB"
+
+#~ msgid "512 KiB"
+#~ msgstr "512 KiB"
+
+#~ msgid "1 MiB"
+#~ msgstr "1 MiB"
+
+#~ msgid "2 MiB"
+#~ msgstr "2 MiB"
+
+#~ msgid "4 MiB"
+#~ msgstr "4 MiB"
+
+#~ msgid "8 MiB"
+#~ msgstr "8 MiB"
+
+#~ msgid "Start seeding"
+#~ msgstr "シードを開始"
+
+#~ msgid "Private torrent (DHT not allowed)"
+#~ msgstr "非公開 torrent (DHT は使えません)"
+
+#~ msgid "Decentralized (DHT only)"
+#~ msgstr "分散型 (DHT のみ)"
+
+#~ msgid "DHT Nodes"
+#~ msgstr "DHT ノード"
+
+#~ msgid "Node:"
+#~ msgstr "ノード:"
+
+#~ msgid "IP or Hostname"
+#~ msgstr "IP またはホスト名"
+
+#~ msgid "Port"
+#~ msgstr "ポート"
+
+#~ msgid "Web Seeds"
+#~ msgstr "ウェブシード"
+
+#~ msgid "Select Which Files You Want to Download"
+#~ msgstr "ダウンロードするファイルを選んでください。"
+
+#~ msgid "Text encoding:"
+#~ msgstr "テキストのエンコーディング:"
+
+#~ msgid ""
+#~ "All files in the torrent, you can change them by double clicking on them."
+#~ msgstr ""
+#~ "torrent に含まれるすべてのファイルです。ダブルクリックして変更できます。"
+
+#~ msgid "Select &All"
+#~ msgstr "すべて選択(&A)"
+
+#~ msgid "Select &None"
+#~ msgstr "すべて選択解除(&N)"
+
+#~ msgid "Invert Selection"
+#~ msgstr "選択反転"
+
+#~ msgid "Collapse All"
+#~ msgstr "すべてたたむ"
+
+#~ msgid "Expand All"
+#~ msgstr "すべて展開"
+
+#~ msgid "No existing files are found"
+#~ msgstr "既存のファイルは見つかりません"
+
+#~ msgid "Group:"
+#~ msgstr "グループ:"
+
+#~ msgid "Start torrent"
+#~ msgstr "torrent を開始"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
+#~ "size:8pt; font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">When existing files "
+#~ "have been found, skip the data check and assume that the files are fully "
+#~ "downloaded.</p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600;\">Note: </span>only do this when you are absolutely sure.</"
+#~ "p></body></html>"
+#~ msgstr ""
+#~ "<html><para>既存のファイルが見つかった場合は、データチェックを省略し、ファ"
+#~ "イルが完全にダウンロードされているものと見なします。</para><para><note>こ"
+#~ "れは本当に自信があるときにのみ使用してください。</note></para></html>"
+
+#~ msgid "Skip data check if existing files are found"
+#~ msgstr "既存のファイルが見つかった場合はデータチェックを省略する"
+
+#~ msgid "Disk Space"
+#~ msgstr "ディスク領域"
+
+#~ msgid "Required:"
+#~ msgstr "必要:"
+
+#~ msgid "Available:"
+#~ msgstr "利用可能:"
+
+#~ msgid "After download:"
+#~ msgstr "ダウンロード後:"
+
+#~ msgid "Speed limits for individual torrents (double click to edit):"
+#~ msgstr "個々の torrent の速度制限 (ダブルクリックで編集):"
+
+#~ msgid "Filter:"
+#~ msgstr "フィルタ:"
+
+#~ msgid "Global Limits"
+#~ msgstr "全体の制限"
+
+#~ msgid ""
+#~ "Enter the IP address or hostname and port number of the peer you wish to "
+#~ "add:"
+#~ msgstr "追加するピアの IP アドレスまたはホスト名とポート番号を入力:"
+
+#~ msgid "Peer:"
+#~ msgstr "ピア:"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:9pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">The IP address or "
+#~ "hostname of the peer you want to connect to, should be put here.</p>\n"
+#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+#~ "\"></p>\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+#~ "weight:600;\">Note:</span> We accept both IPv4 and IPv6 addresses</p></"
+#~ "body></html>"
+#~ msgstr ""
+#~ "<html><para>追加するピアの IP アドレスまたはホスト名をここに入力します。</"
+#~ "para><para><note label='注'>IPv4 と IPv6 の両方のアドレスが使えます。</"
+#~ "note></para></html>"
+
+#~ msgid "127.0.0.1"
+#~ msgstr "127.0.0.1"
+
+#~ msgid "Files are missing"
+#~ msgstr "ファイルがありません"
+
+#~ msgid "The following files are missing:"
+#~ msgstr "以下のファイルがありません:"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">They are no longer "
+#~ "there, recreate them.</p></body></html>"
+#~ msgstr "<html>存在しなくなったファイルを作成し直します。</html>"
+
+#~ msgid "Recreate"
+#~ msgstr "作成し直す"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Do not download the "
+#~ "missing files.</p></body></html>"
+#~ msgstr "<html>足りないファイルはダウンロードしません。</html>"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">The files have been "
+#~ "moved to another location, select the new location.</p></body></html>"
+#~ msgstr ""
+#~ "<html>ファイルが他の場所に移動されている場合、新しい場所を選択します。</"
+#~ "html>"
+
+#~ msgid "Select New Location"
+#~ msgstr "新しい場所を選択"
+
+#~ msgid ""
+#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#~ "css\">\n"
+#~ "p, li { white-space: pre-wrap; }\n"
+#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:10pt; "
+#~ "font-weight:400; font-style:normal;\">\n"
+#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Cancel, do not start "
+#~ "the torrent.</p></body></html>"
+#~ msgstr "<html>キャンセルします。torrent を開始しません。</html>"
+
+#~ msgid "Importing ..."
+#~ msgstr "インポート中..."
+
+#~ msgid "Importing torrents from KDE3 version:"
+#~ msgstr "KDE3 のバージョンから torrent をインポート:"
+
+#~ msgid "Import an existing torrent"
+#~ msgstr "既存の torrent をインポート"
+
+#~ msgid "Torrent:"
+#~ msgstr "Torrent:"
+
+#~ msgid "Data:"
+#~ msgstr "データ:"
+
+#~ msgid "Select the torrent file and the data which belongs with it."
+#~ msgstr "torrent ファイルとそれに付随するデータを選択します。"
+
+#~ msgid "&Import"
+#~ msgstr "インポート(&I)"
+
+#~ msgid "Ca&ncel"
+#~ msgstr "キャンセル(&N)"
+
+#~ msgid "&File"
+#~ msgstr "ファイル(&F)"
+
+#~ msgid "&View"
+#~ msgstr "表示(&V)"
+
+#~ msgid "GroupsMenu"
+#~ msgstr "グループメニュー"
+
+#~ msgid "ViewMenu"
+#~ msgstr "表示メニュー"
+
+#~ msgid "Additional Peer Sources"
+#~ msgstr "追加のピア取得先"
+
+#~ msgid "Configure Columns"
+#~ msgstr "カラムの設定"
+
+#~ msgid "Download Toolbar"
+#~ msgstr "ダウンロードツールバー"
+
+#~ msgid "KTorrent Blacklisted Peers"
+#~ msgstr "KTorrent ブラックリストのピア"
+
+#~ msgid "Add peer:"
+#~ msgstr "ピアを追加:"
+
+#, fuzzy
+#~| msgid ""
+#~| "Invalid IP address %1. You must enter an IP address in the format 'XXX."
+#~| "XXX.XXX.XXX'. You can also use wildcards for ranges like '127.0.0.*'."
+#~ msgid ""
+#~ "IP addresses must be in the format 'XXX.XXX.XXX.XXX'.\n"
+#~ "                                        \n"
+#~ "You can also use wildcards like '127.0.0.*' or specify ranges like "
+#~ "'200.10.10.0-200.10.10.40'."
+#~ msgstr ""
+#~ "%1 は無効な IP アドレスです。IP アドレスは “XXX.XXX.XXX.XXX” の形式で入力"
+#~ "してください。範囲には “127.0.0.*” のようにワイルドカードが使えます。"
+
+#~ msgid "Clear"
+#~ msgstr "クリア"
+
+#~ msgid "Open..."
+#~ msgstr "開く..."
+
+#~ msgid "Save As..."
+#~ msgstr "名前を付けて保存..."
+
+#~ msgid "Torrent to display:"
+#~ msgstr "表示する torrent:"
+
+#~ msgid "Maximum number of downloads (0 = no limit)"
+#~ msgstr "ダウンロードの最大数 (0 = 無制限)"
+
+#~ msgid "Maximum number of seeds (0 = no limit)"
+#~ msgstr "シードの最大数 (0 = 無制限)"
+
+#~ msgid "Maximum number of connections per torrent (0 = no limit)"
+#~ msgstr "torrent ごとに許可する最大接続数 (0 = 無制限)"
+
+#~ msgid "Maximum number of connections for all torrents (0 = no limit) "
+#~ msgstr "torrent 全体に許可する最大接続数 (0 = 無制限)"
+
+#~ msgid "Maximum upload speed in KiB/sec (0 = no limit)"
+#~ msgstr "アップロードの最大速度 (KiB/秒, 0 = 無制限)"
+
+#~ msgid "Maximum download speed in KiB/sec (0 = no limit)"
+#~ msgstr "ダウンロードの最大速度 (KiB/秒, 0 = 無制限)"
+
+#~ msgid "Maximum share ratio (0 = no limit)"
+#~ msgstr "最大負担率 (0 = 無制限)"
+
+#~ msgid "Show a system tray icon"
+#~ msgstr "システムトレイにアイコンを表示する"
+
+#~ msgid "Show speed bar in tray icon"
+#~ msgstr "システムトレイアイコンに速度バーを表示する"
+
+#~ msgid "Download bandwidth (in kb/s):"
+#~ msgstr "ダウンロード帯域幅 (kb/秒):"
+
+#~ msgid "Upload bandwidth (in kb/s):"
+#~ msgstr "アップロード帯域幅 (kb/秒):"
+
+#~ msgid "Keep seeding after download has finished"
+#~ msgstr "ダウンロード完了後シードを続ける"
+
+#~ msgid "Folder to store temporary files"
+#~ msgstr "一時ファイルを保存するフォルダ"
+
+#~ msgid "Folder to store downloaded files"
+#~ msgstr "ダウンロードしたファイルを保存するフォルダ"
+
+#~ msgid "Folder to copy .torrent files to"
+#~ msgstr ".torrent ファイルのコピー先フォルダ"
+
+#~ msgid "Whether to use a custom IP to pass to the tracker"
+#~ msgstr "トラッカーにカスタム IP アドレスを送るかどうか"
+
+#~ msgid "IP to pass to the tracker"
+#~ msgstr "トラッカーへ送る IP アドレス"
+
+#~ msgid "GUI update interval"
+#~ msgstr "GUI の更新間隔"
+
+#~ msgid "DHT port"
+#~ msgstr "DHT ポート"
+
+#~ msgid "Number of upload slots"
+#~ msgstr "アップロードスロットの数"
+
+#~ msgid "Algorithm to estimate the time when a torrent is finished"
+#~ msgstr "torrent の完了時間を推測するアルゴリズム"
+
+#~ msgid "Folder to move completed downloaded files to"
+#~ msgstr "ダウンロードを完了したファイルの移動先フォルダ"
+
+#~ msgid "Maximum share ratio limit reached."
+#~ msgstr "最大負担率に達しました。"
+
+#~ msgid "(C) 2005 - 2008 Joris Guisson and Ivan Vasic"
+#~ msgstr "(C) 2005 - 2008 Joris Guisson, Ivan Vasic"
