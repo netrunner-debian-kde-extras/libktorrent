@@ -1,0 +1,3 @@
+usr/include/libktorrent/*
+usr/lib/libktorrent.so
+usr/share/kde4/apps/cmake/modules/FindKTorrent.cmake

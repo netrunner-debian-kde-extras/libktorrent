@@ -1,0 +1,60 @@
+Source: libktorrent
+Section: libs
+Priority: optional
+Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
+Uploaders: Modestas Vainius <modax@debian.org>
+Build-Depends: cmake, debhelper (>= 7.3.16~), pkg-kde-tools (>= 0.6~),
+ kdelibs5-dev (>= 4:4.3), libgmp3-dev, libqca2-dev, libboost-dev,
+ pkg-config, doxygen,
+Standards-Version: 3.8.4
+Homepage: http://ktorrent.org/
+Vcs-Git: git://git.debian.org/git/pkg-kde/kde-extras/libktorrent.git
+Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-extras/libktorrent.git;a=summary
+
+Package: libktorrent1
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: libktorrent-l10n
+Description: the KTorrent library for C++ / Qt 4 / KDE Platform
+ The KTorrent library is a C++ / Qt 4 / KDE Platform based implementation of
+ the BitTorrent protocol (mostly client side).
+ .
+ The library supports connectivity to HTTP and UDP trackers, mainline DHT and
+ the new generation Micro Transport Protocol (uTP). In addition, it provides
+ many powerful BitTorrent network features including but not limited to torrent
+ downloading and seeding, torrent creation and downloaded data verification,
+ magnet links, advanced peer management, IP blocking lists.
+
+Package: libktorrent-dev
+Architecture: any
+Section: libdevel
+Depends: libktorrent1 (= ${binary:Version}), ${misc:Depends},
+ ${sameVersionDep:libqt4-dev}, ${sameVersionDep:kdelibs5-dev}
+Description: development files for the KTorrent Library
+ The KTorrent library is a C++ / Qt 4 / KDE Platform based implementation of
+ the BitTorrent protocol (mostly client side).
+ .
+ This package contains header files, CMake modules and other files needed for
+ developing and compiling/linking which use the KTorrent library.
+
+Package: libktorrent-l10n
+Architecture: all
+Section: localization
+Depends: libktorrent1 (>= ${source:Version}), ${misc:Depends}
+Description: localization files for the KTorrent library
+ The KTorrent library is a C++ / Qt 4 / KDE Platform based implementation of
+ the BitTorrent protocol (mostly client side).
+ .
+ This package contains translations of the KTorrent library.
+
+Package: libktorrent-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends: libktorrent1 (= ${binary:Version}), ${misc:Depends}
+Description: debugging symbols for the KTorrent library
+ The KTorrent library is a C++ / Qt 4 / KDE Platform based implementation of
+ the BitTorrent protocol (mostly client side).
+ .
+ This package contains debugging symbols for the KTorrent library. It is needed
+ to get a useful backtrace when applications using the KTorrent library crash.

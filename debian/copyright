@@ -1,0 +1,251 @@
+This package was debianized by Modestas Vainius <modax@debian.org>
+on Sat, 08 May 2010 16:31:04 +0300 as a member of the
+Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>.
+
+The original source was downloaded from http://ktorrent.org/?q=downloads
+
+Upstream Authors:
+  Joris Guisson <joris.guisson@gmail.com>
+  Ivan Vasic <ivasic@gmail.com>
+
+The original source has been modified to include missing COPYING and
+COPYING-CMAKE-SCRIPTS files. They will shipped by upstream starting with the
+next release.
+
+Copyright: © 2005-2010 Joris Guisson <joris.guisson@gmail.com>
+Copyright: © 2005-2008 Ivan Vasic <ivasic@gmail.com>
+Copyright: © 2006 Juliusz Chroboczek.
+Copyright: © 2006 Dan Kennedy.
+Copyright: © 2007 David Faure <faure@kde.org>
+Copyright: © 2005 Mark Kretschmann <markey@web.de>
+Copyright: © 2006-2007 Tom Albers <tomalbers@kde.nl>
+Copyright: © 2007 Charles Connell <charles@connells.org>
+Copyright: © 2005 Maggioni Marcello <marcello.maggioni@gmail.com>
+
+License for all components unless stated otherwise:
+--
+  GNU General Public License, version 2 or later (GPL-2+)
+
+  |  This program is free software; you can redistribute it and/or modify
+  |  it under the terms of the GNU General Public License as published by
+  |  the Free Software Foundation; either version 2 of the License, or
+  |  (at your option) any later version.
+  |
+  |  This program is distributed in the hope that it will be useful,
+  |  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  |  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  |  GNU General Public License for more details.
+
+  On Debian systems, the complete text of the
+  GNU General Public License version 2 can be found in
+  /usr/share/common-licenses/GPL-2
+--
+
+Other used licenses:
+--
+    + cmake/modules/FindKTorrent.cmake
+
+  | Redistribution and use in source and binary forms, with or without
+  | modification, are permitted provided that the following conditions
+  | are met:
+  |
+  | 1. Redistributions of source code must retain the copyright
+  |    notice, this list of conditions and the following disclaimer.
+  | 2. Redistributions in binary form must reproduce the copyright
+  |    notice, this list of conditions and the following disclaimer in the
+  |    documentation and/or other materials provided with the distribution.
+  | 3. The name of the author may not be used to endorse or promote products
+  |    derived from this software without specific prior written permission.
+  |
+  | THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+  | IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+  | OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+  | IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+  | INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+  | NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+  | THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+--
+
+--
+  GNU Library General Public License, version 2 or later (LGPL-2+)
+    The following file is licensed under this license:
+
+    + src/ktorrent_export.h
+
+  | This library is free software; you can redistribute it and/or modify it under
+  | the terms of the GNU Library General Public License as published by the Free
+  | Software Foundation; either version 2 of the License, or (at your option) any
+  | later version.
+
+  On Debian systems, the complete text of the
+  GNU Library General Public License version 2 can be found in
+  /usr/share/common-licenses/LGPL-2
+--
+
+--
+  MIT-like License (MIT)
+    2 files are licensed under this license:
+
+    + src/util/win32.cpp
+    + src/util/win32.h
+
+  | Permission is hereby granted, free of charge, to any person
+  | obtaining a copy of this software and associated documentation
+  | files (the "Software"), to deal in the Software without
+  | restriction, including without limitation the rights to use,
+  | copy, modify, merge, publish, distribute, sublicense, and/or sell
+  | copies of the Software, and to permit persons to whom the
+  | Software is furnished to do so, subject to the following
+  | conditions:
+  |
+  | The above copyright notice and this permission notice shall be
+  | included in all copies or substantial portions of the Software.
+  |
+  | THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  | EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+  | OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+  | NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+  | HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+  | WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  | FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+  | OTHER DEALINGS IN THE SOFTWARE.
+
+--
+
+Translations:
+
+  Copyright: © 2008-2009 Viesturs Zariņš <viesturs.zarins@mii.lu.lv> <viesturs.zarins@algorego.com>
+  Copyright: © 2008-2009 Ravishankar Shrivastava <raviratlami@yahoo.com> <raviratlami@aol.in>
+  Copyright: © 2006 Xavier Batlle i Pèlach <tevibp@wanadoo.es> <tevi@eltercer.cat>
+  Copyright: © 2006 Canonical Ltd
+  Copyright: © 2007-2008 Spiros Georgaras <sng@hellug.gr> <sngeorgaras@otenet.gr>
+  Copyright: © 2007-2009 Serdar Soytetir <tulliana@gmail.com>
+  Copyright: © 2009 Xosé <xosecalvo@gmail.com> <xosecalvo@edu.xunta.es>
+  Copyright: © 2005-2010 Enrique Matias Sanchez (aka Quique) <cronopios@gmail.com>
+  Copyright: © 2005-2010 Marek Laane <bald@starman.ee> <bald@smail.ee>
+  Copyright: © 2007-2009 Nick Shaforostoff <shaforostoff@kde.ru> <shafff@ukr.net>
+  Copyright: © 2007-2009 mvillarino <mvillarino@users.sourceforge.net> <mvillarino@gmail.com>
+  Copyright: © 2008-2010 Freek de Kruijf <f.de.kruijf@gmail.com> <f.de.kruijf@hetnet.nl>
+  Copyright: © 2009-2010 Tommi Nieminen <tommi.nieminen@legisign.org> <translator@legisign.org>
+  Copyright: © 2002-2010 Free Software Foundation Inc.
+  Copyright: © 2005 Joris Guisson <joris.guisson@gmail.com>
+  Copyright: © 2005-2009 Nicola Ruggero <nixprog.adsl@tiscali.it> <nicola@nxnt.org>
+  Copyright: © 2005, 2009 Lukáš Tinkl <lukas@kde.org> <ltinkl@redhat.com>
+  Copyright: © 2008-2009 Marce Villarino <mvillarino@users.sourceforge.net> <mvillarino@gmail.com>
+  Copyright: © 2006, 2010 Marcos <marcos@euskalgnu.org>
+  Copyright: © 2009-2010 Andrej Dundović <adundovi@gmail.com>
+  Copyright: © 2005-2008 Rinse de Vries <rinsedevries@kde.nl> <rinsedevries@home.nl>
+  Copyright: © 2008-2009 Auk Piseth <piseth_dv@khmeros.info>
+  Copyright: © 2009-2010 Andrew Coles <andrew_coles@yahoo.co.uk>
+  Copyright: © 2010 Dalibor Djuric <daliborddjuric@gmail.com>
+  Copyright: © 2009-2010 Luiz Fernando Ranghetti <elchevive@opensuse.org>
+  Copyright: © 2005 Maarten Rütten <maartenrutten@kde.nl>
+  Copyright: © 2008-2009 Doutor Zero <doutor.zero@gmail.com>
+  Copyright: © 2005 Златко Попов <zlatkopopov@fsa-bg.org>
+  Copyright: © 2008-2009 Jure Repinc <jlp@holodeck1.com>
+  Copyright: © 2007-2009 Jerzy Trzeciak <artusek@wp.pl>
+  Copyright: © 2008 Cristian Tarsoaga <cristian.tarsoaga@gmail.com>
+  Copyright: © 2009 Kristof Bal <kristof.bal@gmail.com>
+  Copyright: ©  Pierre "delroth" Bourdon <delroth@gmail.com>
+  Copyright: © 2007-2008 Andrius Štikonas <stikonas@gmail.com>
+  Copyright: © 2007 Youssef Chahibi <chahibi@gmail.com>
+  Copyright: ©  Quentin "Cygal" Pradet <moi@cygal.info>
+  Copyright: © 2005 Barış Metin <baris@uludag.org.tr>
+  Copyright: © 2008 Maris Nartiss <maris.kde@gmail.com>
+  Copyright: © 2008 Anne-Marie Mahfouf <annemarie.mahfouf@free.fr>
+  Copyright: © 2009-2010 Markus Slopianka <kamikazow@web.de>
+  Copyright: © 2008-2009 Sergiu Bivol <sergiu@ase.md>
+  Copyright: © 2006-2008 Martijn van Vliet <mvanvliet@gmail.com>
+  Copyright: © 2008 Erdal Ronahi <erdal.ronahi@gmail.com>
+  Copyright: © 2009 Marko Dimjasevic <marko@dimjasevic.net>
+  Copyright: © 2007-2009 Toussis Manolis <manolis@koppermind.homelinux.org>
+  Copyright: © 2010 Vít Pelčák <vit@pelcak.org>
+  Copyright: © 2009 Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>
+  Copyright: © 2008-2009 Marta Rybczyńska <kde-i18n@rybczynska.net>
+  Copyright: © 2008-2010 Frank Weng (a.k.a. Franklin) <franklin@goodhorse.idv.tw>
+  Copyright: © 2008-2009 Dobrovolny <dobrovolnyh@seznam.cz>
+  Copyright: © 2008 Nicolas Ternisien <nicolas.ternisien@gmail.com>
+  Copyright: © 2008 Tamas Szanto <tszanto@interware.hu>
+  Copyright: © 2007 Markus Hietaranta <markus.hietaranta@gmail.com>
+  Copyright: © 2005 Arnar Leosson <leosson@frisurf.no>
+  Copyright: © 2005-2006 Patrick Trettenbrein <patrick.trettenbrein@kdemail.net>
+  Copyright: © 2006 Ion Gaztañaga <igaztanaga@gmail.com>
+  Copyright: © 2007, 2009-2010 doutor.zero <doutor.zero@gmail.com>
+  Copyright: © 2009 Iñigo Salvador Azurmendi <xalba@euskalnet.net>
+  Copyright: ©  Simon "asmanur" Castellan <asmanur@gmail.com>
+  Copyright: © 2008 Henrique Marks <henriquemarks@gmail.com>
+  Copyright: © 2008 Goodhorse <franklin@goodhorse.idv.tw>
+  Copyright: © 2010 Joëlle Cornavin <jcornavin@laposte.net>
+  Copyright: © 2008-2009 Khoem Sokhem <khoemsokhem@khmeros.info>
+  Copyright: © 2007 Klára Cihlářová <koty@seznam.cz>
+  Copyright: © 2010 Martin Schlander <mschlander@opensuse.org>
+  Copyright: © 2007-2008 Xavier Batlle Pelach <tevi@eltercer.cat>
+  Copyright: ©  Grégoire "Metzgermeister" Duchêne <duchene.g@gmail.com>
+  Copyright: © 2005-2009 Yukiko Bando <ybando@k6.dion.ne.jp>
+  Copyright: © 2009 Manuel Tortosa <manutortosa@gmail.com>
+  Copyright: © 2007-2008 Cindy McKee <cfmckee@gmail.com>
+  Copyright: ©  Laurențiu Buzdugan <lbuz@rolix.org>
+  Copyright: © 2010 Alexander Potashev <aspotashev@gmail.com>
+  Copyright: © 2007-2008 Yannig Marchegay <yannig@marchegay.org>
+  Copyright: © 2006 Danny Kukawka <danny.kukawka@web.de>
+  Copyright: © 2007 Václav Čermák <vaclav.cermak@gmail.com>
+  Copyright: © 2008 Mickael Sibelle <kimael@gmail.com>
+  Copyright: ©  Najib Zulon Idrissi Katouni <zulonz@gmail.com>
+  Copyright: © 2009-2010 André Marcelo Alvarenga <andrealvarenga@gmx.net>
+  Copyright: © 2009-2010 Csanád Tóth <toth.csanad@kde.hu>
+  Copyright: © 2010 Manfred Wiese <m.j.wiese@web.de>
+  Copyright: © 2006-2010 Jannick Kuhr <opensource@kuhr.org>
+  Copyright: ©  Thomas 'Dark-Side' Refis <refis.thomas@gmail.com>
+  Copyright: © 2007 Brendan Osborne <danborne.kde@gmail.com>
+  Copyright: © 2007-2010 Karl Ove Hufthammer <karl@huftis.org>
+  Copyright: © 2005-2006, 2008 Bram Schoenmakers <bramschoenmakers@kde.nl>
+  Copyright: © 2007-2009 Sébastien Renard <sebastien.renard@digitalfox.org>
+  Copyright: ©  Kevin "Katen" Soltysiak <nightroad.katen@gmail.com>
+  Copyright: © 2008 Evgeniy Ivanov <powerfox@kde.ru>
+  Copyright: © 2010 Stefan Asserhäll <stefan.asserhall@comhem.se>
+  Copyright: © 2009 Kevin Scannell <kscanne@gmail.com>
+  Copyright: © 2008 Franklin Weng <franklin@mail.everfocus.com.tw>
+  Copyright: © 2010 Gama <marcus.gama@gmail.com>
+  Copyright: © 2009-2010 Chusslove Illich <caslav.ilic@gmx.net>
+  Copyright: © 2006 Engin Çağatay <engincagatay@yahoo.com>
+  Copyright: © 2009-2010 Panagiotis Papadopoulos <pano_90@gmx.net>
+  Copyright: © 2008-2009 Vit Pelcak <vit@pelcak.org>
+  Copyright: © 2005-2006 Klara Cihlarova <koty@seznam.cz>
+  Copyright: © 2007-2008 Benoit Verduyn <benoit.verduyn@videotron.ca>
+  Copyright: © 2007 Akın Ömeroğlu <akin@omeroglu.net>
+  Copyright: © 2005 Waldemar Silva Junior <wsjunior@kdemail.net>
+  Copyright: © 2007 Darafei Praliaskouski <komzpa@licei2.com>
+  Copyright: © 2008-2010 Artem Sereda <overmind88@gmail.com>
+  Copyright: © 2009 Milan Baša <minkob@mail.t-com.sk>
+  Copyright: © 2007 Everest Law <tyuuuu2001@yahoo.com.hk>
+  Copyright: © 2007-2010 Slobodan Simic <slsimic@gmail.com>
+  Copyright: © 2007-2008 Jaime Robles <jaime@kde.org>
+  Copyright: © 2007 Donatas Glodenis <dgvirtual@akl.lt>
+  Copyright: © 2005-2007 Zlatko Popov <zlatkopopov@fsa-bg.org>
+  Copyright: © 2010 Yuri Chornoivan <yurchor@ukr.net>
+  Copyright: ©  Gabriel "bluestorm" Scherer <bluestorm.dylc@gmail.com>
+  Copyright: © 2009 Yasen Pramatarov <yasen@lindeas.com>
+  Copyright: © 2008 George Pantsis <gpantsis@gmail.com>
+  Copyright: © 2010 Bjørn Steensrud <bjornst@skogkatt.homelinux.org>
+  Copyright: © 2007-2008 Hu Wei <contact@chaostone.com>
+  Copyright: © 2005-2008, 2010 Thomas Reitelbach <tr@erdfunkstelle.de>
+  Copyright: © 2009 Sveinn í Felli <sveinki@nett.is>
+  Copyright: © 2007 Marek Stopka <marekstopka@gmail.com>
+  Copyright: © 2006, 2008-2010 Josep Ma. Ferrer <txemaq@gmail.com>
+  Copyright: © 2006 Hasso Tepper <hasso@kde.org>
+  Copyright: © 2008-2009 Eirik U. Birkeland <eirbir@gmail.com>
+  Copyright: © 2005 sejishikong <sejishikong@263.net>
+  Copyright: © 2009-2010 Tóth Csanád <toth.csanad@kde.hu>
+  Copyright: © 2009 Petros <pvidalis@gmail.com>
+  Copyright: © 2009 Serhat Demirkol <serhat_demirkol@yahoo.com>
+  Copyright: © 2005 Stephan Johach <hunsum@gmx.de>
+  Copyright: © 2005-09-23 Funda Wang <fundawang@linux.net.cn>
+  Copyright: © 2009 Jiri Eischmann <jiri@eischmann.cz>
+  Copyright: © 2008 Eng Vannak <evannak@khmeros.info>
+  Copyright: © 2005 Pablo de Vicente <pablo.devicente@gmail.com>
+  Copyright: © 2009 Burkhard Lück <lueck@hube-lueck.de>
+  Copyright: © 2008-2009 Ni Hui <shuizhuyuanluo@126.com>
