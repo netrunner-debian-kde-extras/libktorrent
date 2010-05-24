@@ -1,5 +1,6 @@
-libktorrent (1.0~rc1+dfsg.1-2~pre1) UNRELEASED; urgency=low
+libktorrent (1.0.0-0r1) UNRELEASED; urgency=low
 
+  * New upstream release.
   * Add a workaround for #581896 on Linux (patch
     debian_disable_ipv6_only.diff). The bug remains open on kFreeBSD.
 
