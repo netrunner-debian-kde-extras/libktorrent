@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-04-29 04:59+0200\n"
+"POT-Creation-Date: 2010-05-04 01:46+0200\n"
 "PO-Revision-Date: 2010-04-09 09:34+0200\n"
 "Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -471,8 +471,11 @@ msgid "Disk Input/Output"
 msgstr "Diskové I/O"
 
 #: src/util/logsystemmanager.cpp:38
-msgid "UTP"
-msgstr "UTP"
+msgid "µTP"
+msgstr ""
+
+#~ msgid "UTP"
+#~ msgstr "UTP"
 
 #~ msgid "Cannot bind to udp port %1 or the 10 following ports."
 #~ msgstr "Nelze svázat UDP port %1 ani dalších 10 portů."

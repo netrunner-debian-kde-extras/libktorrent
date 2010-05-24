@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KTorrent 3.1\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-04-29 04:59+0200\n"
+"POT-Creation-Date: 2010-05-04 01:46+0200\n"
 "PO-Revision-Date: 2010-04-02 07:54+0200\n"
 "Last-Translator: Csanád Tóth <toth.csanad@kde.hu>\n"
 "Language-Team: Magyar <kde-lista-request@sophia.jpte.hu>\n"
@@ -469,8 +469,11 @@ msgid "Disk Input/Output"
 msgstr "Lemez bemenet/kimenet"
 
 #: src/util/logsystemmanager.cpp:38
-msgid "UTP"
-msgstr "UTP"
+msgid "µTP"
+msgstr "µTP"
+
+#~ msgid "UTP"
+#~ msgstr "UTP"
 
 #~ msgid "Cannot bind to udp port %1 or the 10 following ports."
 #~ msgstr ""
@@ -4578,9 +4581,6 @@ msgstr "UTP"
 #~ msgstr ""
 #~ "A partnerekhez történő kapcsolódás során elsődlegesen használt "
 #~ "adatátviteli protokoll."
-
-#~ msgid "µTP"
-#~ msgstr "µTP"
 
 #~ msgid ""
 #~ "Let KTorrent calculate the recommended settings based upon the bandwidth "

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-04-06 04:52+0200\n"
+"POT-Creation-Date: 2010-05-04 01:46+0200\n"
 "PO-Revision-Date: 2010-04-02 14:10+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
@@ -185,11 +185,6 @@ msgstr "Ugyldig data frå deltakarsentralen"
 msgid "Invalid tracker URL"
 msgstr "Ugyldig nettadresse til deltakarsentral"
 
-#: src/tracker/udptrackersocket.cpp:66
-#, kde-format
-msgid "Cannot bind to udp port %1 or the 10 following ports."
-msgstr "Klarte ikkje binda til UDP-porten %1 og dei ti neste portane."
-
 #: src/torrent/torrentstats.cpp:71
 msgid "Not started"
 msgstr "Ikkje starta"
@@ -270,7 +265,7 @@ msgstr " Klarte ikkje opna torrentfila «%1»: %2"
 msgid "Parse Error"
 msgstr "Tolkingsfeil"
 
-#: src/torrent/torrentcontrol.cpp:534
+#: src/torrent/torrentcontrol.cpp:533
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -279,7 +274,7 @@ msgstr ""
 "Det oppstod ein feil under opninga av torrenten <b>%1</b>:<br/><b>%2</b><br/"
 ">Torrenten er truleg øydelagd eller ugyldig."
 
-#: src/torrent/torrentcontrol.cpp:564
+#: src/torrent/torrentcontrol.cpp:563
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent:<br/><b>%1</b><br/>The torrent "
@@ -288,19 +283,19 @@ msgstr ""
 "Det oppstod ein feil under opninga av torrenten:<br/><b>%1</b><br/>Torrenten "
 "er truleg øydelagd eller ugyldig."
 
-#: src/torrent/torrentcontrol.cpp:575
+#: src/torrent/torrentcontrol.cpp:574
 #, kde-format
 msgid "Unable to create %1 : %2"
 msgstr "Klarte ikkje laga «%1»: %2"
 
-#: src/torrent/torrentcontrol.cpp:590
+#: src/torrent/torrentcontrol.cpp:589
 #, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
 "both torrents have been merged."
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:595
+#: src/torrent/torrentcontrol.cpp:594
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr ""
@@ -476,5 +471,5 @@ msgid "Disk Input/Output"
 msgstr "Diskaktivitet"
 
 #: src/util/logsystemmanager.cpp:38
-msgid "UTP"
+msgid "µTP"
 msgstr ""

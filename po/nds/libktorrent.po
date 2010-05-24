@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-04-29 04:59+0200\n"
-"PO-Revision-Date: 2010-04-06 21:19+0200\n"
+"POT-Creation-Date: 2010-05-04 01:46+0200\n"
+"PO-Revision-Date: 2010-05-09 05:32+0200\n"
 "Last-Translator: Manfred Wiese <m.j.wiese@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -54,18 +54,20 @@ msgstr "\"%1\" lett sik nich schrieven: Bloots leesbor Dateisysteem"
 #: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:439
 #, kde-format
 msgid "Attempting to write beyond the maximum size of %1"
-msgstr ""
+msgstr "Schriefversöök na mehr as de Hööchstgrött vun %1 överweg"
 
 #: src/diskio/cachefile.cpp:131
 #, kde-format
 msgid "Not enough free disk space for %1"
-msgstr ""
+msgstr "Nich noog free Ruum op de Fastplaat för %1"
 
 #: src/diskio/cachefile.cpp:253
 #, kde-format
 msgid ""
 "Cannot expand file %1 : attempting to grow the file beyond the maximum size"
 msgstr ""
+"Datei \"%1\" lett sik nich utpacken: Anners warrt de Datei grötter as "
+"tohööchst tolaten."
 
 #: src/diskio/cachefile.cpp:257
 #, kde-format
@@ -312,16 +314,16 @@ msgstr "Nich tokoppelt"
 #: src/download/httpconnection.cpp:103
 #, kde-format
 msgid "Resolving proxy %1:%2"
-msgstr ""
+msgstr "Proxy \"%1\" warrt nakeken: %2"
 
 #: src/download/httpconnection.cpp:112
 #, kde-format
 msgid "Resolving hostname %1"
-msgstr ""
+msgstr "Reeknernaam \"%1\" warrt nakeken"
 
 #: src/download/httpconnection.cpp:125 src/download/webseed.cpp:321
 msgid "Connection closed"
-msgstr ""
+msgstr "Afkoppelt"
 
 #: src/download/httpconnection.cpp:132
 #, kde-format
@@ -374,12 +376,12 @@ msgstr "Nich bruukt"
 #: src/util/file.cpp:83
 #, kde-format
 msgid "Cannot write to %1 : %2"
-msgstr ""
+msgstr "Datei \"%1\" lett sik nich schrieven: %2"
 
 #: src/util/file.cpp:97
 #, kde-format
 msgid "Cannot read from %1"
-msgstr ""
+msgstr "Datei \"%1\" lett sik nich lesen."
 
 #: src/util/log.cpp:115
 #, kde-format
@@ -470,8 +472,8 @@ msgid "Disk Input/Output"
 msgstr "Fastplaat-In-/Utgaav"
 
 #: src/util/logsystemmanager.cpp:38
-msgid "UTP"
-msgstr ""
+msgid "µTP"
+msgstr "µTP"
 
 #~ msgid "Cannot bind to udp port %1 or the 10 following ports."
 #~ msgstr "UDP-Port %1 un de 10 nakamen Porten laat sik nich bruken."

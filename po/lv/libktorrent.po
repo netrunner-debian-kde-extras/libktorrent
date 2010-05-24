@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-04-29 04:59+0200\n"
+"POT-Creation-Date: 2010-05-04 01:46+0200\n"
 "PO-Revision-Date: 2009-10-23 08:52+0300\n"
 "Last-Translator: Viesturs Zariņš <viesturs.zarins@mii.lu.lv>\n"
 "Language-Team: Latvian <locale@laka.lv>\n"
@@ -486,10 +486,13 @@ msgid "Disk Input/Output"
 msgstr "Diska lasīšana/rakstīšana:"
 
 #: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr ""
+
 #, fuzzy
-#| msgid "UDP"
-msgid "UTP"
-msgstr "UDP"
+#~| msgid "UDP"
+#~ msgid "UTP"
+#~ msgstr "UDP"
 
 #~ msgid "Cannot bind to udp port %1 or the 10 following ports."
 #~ msgstr "Neizdevās pieslēgties ne UDP portam %1, ne kādam no 10 nākamajiem."

@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Jure Repinc <jlp@holodeck1.com>, 2008, 2009.
+# Jure Repinc <jlp@holodeck1.com>, 2008, 2009, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-04-29 04:59+0200\n"
-"PO-Revision-Date: 2009-07-17 13:37+0200\n"
+"POT-Creation-Date: 2010-05-04 01:46+0200\n"
+"PO-Revision-Date: 2010-05-06 21:26+0200\n"
 "Last-Translator: Jure Repinc <jlp@holodeck1.com>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "MIME-Version: 1.0\n"
@@ -36,8 +36,6 @@ msgid "Cannot convert %1 to an int"
 msgstr "Ni moč pretvoriti %1 v celo število"
 
 #: src/bcodec/bdecoder.cpp:252
-#, fuzzy
-#| msgid "Torrent is incomplete!"
 msgid "Torrent is incomplete."
 msgstr "Torrent ni zaključen."
 
@@ -56,19 +54,20 @@ msgstr "Ni moč odpreti %1 za pisanje: datotečni sistem je samo berljiv"
 #: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:439
 #, kde-format
 msgid "Attempting to write beyond the maximum size of %1"
-msgstr ""
+msgstr "Poskus pisanja prek največje velikosti %1"
 
 #: src/diskio/cachefile.cpp:131
-#, fuzzy, kde-format
-#| msgid "Insufficient disk space for %1"
+#, kde-format
 msgid "Not enough free disk space for %1"
-msgstr "Ni dovolj prostora za %1"
+msgstr "Na disku ni dovolj prostora za %1"
 
 #: src/diskio/cachefile.cpp:253
 #, kde-format
 msgid ""
 "Cannot expand file %1 : attempting to grow the file beyond the maximum size"
 msgstr ""
+"Datoteke %1 ni moč razširiti: poskus razširitve datoteke prek največje "
+"velikosti"
 
 #: src/diskio/cachefile.cpp:257
 #, kde-format
@@ -144,10 +143,9 @@ msgid "Announcing"
 msgstr "Najavljanje"
 
 #: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:85
-#, fuzzy, kde-format
-#| msgid "Error: "
+#, kde-format
 msgid "Error: %1"
-msgstr "Napaka: "
+msgstr "Napaka: %1"
 
 #: src/migrate/migrate.cpp:45
 #, kde-format
@@ -159,16 +157,14 @@ msgid "Unknown client"
 msgstr "Neznan odjemalec"
 
 #: src/tracker/httpannouncejob.cpp:140
-#, fuzzy
-#| msgid "Redirected without a new location !"
 msgid "Redirect without a redirect location"
-msgstr "Preusmerjen brez nove lokacije."
+msgstr "Preusmeritev brez nove lokacije"
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
 #: src/tracker/httptracker.cpp:554
 #, kde-format
 msgid "Timeout contacting tracker %1"
-msgstr ""
+msgstr "Čas za povezavo s sledilnikom %1 je potekel"
 
 #: src/tracker/udptracker.cpp:408
 #, kde-format
@@ -201,8 +197,6 @@ msgid "Seeding completed"
 msgstr "Sejanje je zaključeno"
 
 #: src/torrent/torrentstats.cpp:77
-#, fuzzy
-#| msgid "Seeding"
 msgctxt "Status of a torrent file"
 msgid "Seeding"
 msgstr "Sejanje"
@@ -224,16 +218,12 @@ msgid "Allocating diskspace"
 msgstr "Dodeljevanje prostora na disku"
 
 #: src/torrent/torrentstats.cpp:89
-#, fuzzy
-#| msgid "Currently downloading:"
 msgid "Queued for seeding"
-msgstr "Trenutno se prejemajo:"
+msgstr "V vrsti za sejanje"
 
 #: src/torrent/torrentstats.cpp:89
-#, fuzzy
-#| msgid "Currently downloading:"
 msgid "Queued for downloading"
-msgstr "Trenutno se prejemajo:"
+msgstr "V vrsti za prejemanje"
 
 #: src/torrent/torrentstats.cpp:91
 msgid "Checking data"
@@ -262,8 +252,6 @@ msgstr "Ni moč ustvariti indeksne datoteke: %1"
 #: src/torrent/torrent.cpp:194 src/torrent/torrent.cpp:201
 #: src/torrent/torrent.cpp:209 src/torrent/torrent.cpp:213
 #: src/torrent/torrent.cpp:234 src/torrent/torrent.cpp:305
-#, fuzzy
-#| msgid "Corrupted torrent!"
 msgid "Corrupted torrent."
 msgstr "Poškodovan torrent."
 
@@ -300,22 +288,18 @@ msgid "Unable to create %1 : %2"
 msgstr "Ni bilo moč ustvariti %1 : %2"
 
 #: src/torrent/torrentcontrol.cpp:589
-#, fuzzy, kde-format
-#| msgid ""
-#| "You are already downloading this torrent %1, the list of trackers of both "
-#| "torrents has been merged."
+#, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
 "both torrents have been merged."
 msgstr ""
-"Torent %1 že prejemate, seznama sledilnikov iz obeh torrentov sta bila "
-"združena."
+"Torrent <b>%1</b> že prejemate. Seznama sledilnikov iz obeh torrentov sta "
+"bila združena."
 
 #: src/torrent/torrentcontrol.cpp:594
-#, fuzzy, kde-format
-#| msgid "You are already downloading the torrent %1"
+#, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
-msgstr "Torrent %1 že prejemate"
+msgstr "Torrent <b>%1</b> že prejemate."
 
 #: src/datachecker/singledatachecker.cpp:49
 #, kde-format
@@ -375,8 +359,6 @@ msgid "Error: request timed out"
 msgstr "Napaka: čas za zahtevek je potekel"
 
 #: src/download/httpconnection.cpp:391
-#, fuzzy
-#| msgid "Redirected without a new location !"
 msgid "Redirected without a new location."
 msgstr "Preusmerjen brez nove lokacije."
 
@@ -494,10 +476,13 @@ msgid "Disk Input/Output"
 msgstr "Pisanje/branje z diska"
 
 #: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr "µTP"
+
 #, fuzzy
-#| msgid "UDP"
-msgid "UTP"
-msgstr "UDP"
+#~| msgid "UDP"
+#~ msgid "UTP"
+#~ msgstr "UDP"
 
 #~ msgid "Cannot bind to udp port %1 or the 10 following ports."
 #~ msgstr "Ni se moč povezati z vrati UDP %1, ali sledečimi 10 vrati."
