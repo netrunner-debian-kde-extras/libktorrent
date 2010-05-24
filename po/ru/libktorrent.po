@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-04-29 04:59+0200\n"
+"POT-Creation-Date: 2010-05-04 01:46+0200\n"
 "PO-Revision-Date: 2010-04-07 23:26+0300\n"
 "Last-Translator: Artem Sereda <overmind88@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -476,10 +476,13 @@ msgid "Disk Input/Output"
 msgstr "Ввод/вывод диска"
 
 #: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr "µTP"
+
 #, fuzzy
-#| msgid "UDP"
-msgid "UTP"
-msgstr "UDP"
+#~| msgid "UDP"
+#~ msgid "UTP"
+#~ msgstr "UDP"
 
 #~ msgid "Cannot bind to udp port %1 or the 10 following ports."
 #~ msgstr ""
@@ -4428,9 +4431,6 @@ msgstr "UDP"
 
 #~ msgid "Primary transport protocol:"
 #~ msgstr "Основной протокол передачи"
-
-#~ msgid "µTP"
-#~ msgstr "µTP"
 
 #~ msgid ""
 #~ "Let KTorrent calculate the recommended settings based upon the bandwidth "

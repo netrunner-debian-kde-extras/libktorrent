@@ -41,6 +41,7 @@ namespace utp
 	Connection::TransmissionError::TransmissionError(const char* file, int line)
 	{
 		location = QString("TransmissionError in %1 at line %2\n").arg(file).arg(line);
+		Out(SYS_GEN|LOG_DEBUG) << location << endl;
 	}
 	
 	Connection::Connection(bt::Uint16 recv_connection_id, Type type, const net::Address& remote, Transmitter* transmitter) 
@@ -80,7 +81,6 @@ namespace utp
 		
 		connect(this,SIGNAL(doDelayedStartTimer()),this,SLOT(delayedStartTimer()),Qt::QueuedConnection);
 		startTimer();
-		Out(SYS_UTP|LOG_NOTICE) << "UTP: Connection " << recv_connection_id << "|" << stats.send_connection_id << endl;
 	}
 
 	Connection::~Connection()
@@ -595,7 +595,6 @@ namespace utp
 
 	void Connection::handleTimeout()
 	{
-		Out(SYS_UTP|LOG_DEBUG) << "Connection " << stats.recv_connection_id << "|" << stats.send_connection_id << " timeout " << endl;
 		QMutexLocker lock(&mutex);
 		switch (stats.state)
 		{

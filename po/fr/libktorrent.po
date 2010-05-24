@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-04-29 04:59+0200\n"
+"POT-Creation-Date: 2010-05-04 01:46+0200\n"
 "PO-Revision-Date: 2010-04-16 00:08+0200\n"
 "Last-Translator: Joëlle Cornavin <jcornavin@laposte.net>\n"
 "Language-Team: Français <kde-francophone@kde.org>\n"
@@ -536,8 +536,11 @@ msgid "Disk Input/Output"
 msgstr "Entrée/Sortie du disque"
 
 #: src/util/logsystemmanager.cpp:38
-msgid "UTP"
-msgstr "UTP"
+msgid "µTP"
+msgstr ""
+
+#~ msgid "UTP"
+#~ msgstr "UTP"
 
 #~ msgid "Cannot bind to udp port %1 or the 10 following ports."
 #~ msgstr "Impossible de lier le port udp %1 ou les 10 ports suivants."

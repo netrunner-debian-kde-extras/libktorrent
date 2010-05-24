@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-04-29 04:59+0200\n"
+"POT-Creation-Date: 2010-05-04 01:46+0200\n"
 "PO-Revision-Date: 2009-12-27 01:45+0100\n"
 "Last-Translator: Jerzy Trzeciak <artusek@wp.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -475,10 +475,13 @@ msgid "Disk Input/Output"
 msgstr "Operacje dyskowe"
 
 #: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr ""
+
 #, fuzzy
-#| msgid "UDP"
-msgid "UTP"
-msgstr "UDP"
+#~| msgid "UDP"
+#~ msgid "UTP"
+#~ msgstr "UDP"
 
 #~ msgid "Cannot bind to udp port %1 or the 10 following ports."
 #~ msgstr "Nie można powiązać z portem UDP %1 lub z 10 następnymi portami."

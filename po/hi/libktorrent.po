@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-04-29 04:59+0200\n"
+"POT-Creation-Date: 2010-05-04 01:46+0200\n"
 "PO-Revision-Date: 2008-03-30 16:43+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@yahoo.com>\n"
 "Language-Team: Hindi <indlinux-hindi@lists.sourceforge.net>\n"
@@ -516,10 +516,13 @@ msgid "Disk Input/Output"
 msgstr ""
 
 #: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr ""
+
 #, fuzzy
-#| msgid "UDP"
-msgid "UTP"
-msgstr "यूडीपी"
+#~| msgid "UDP"
+#~ msgid "UTP"
+#~ msgstr "यूडीपी"
 
 #, fuzzy
 #~| msgid "Scan Folder"

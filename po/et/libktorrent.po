@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-04-29 04:59+0200\n"
-"PO-Revision-Date: 2010-03-22 17:09+0200\n"
+"POT-Creation-Date: 2010-05-04 01:46+0200\n"
+"PO-Revision-Date: 2010-05-17 17:31+0300\n"
 "Last-Translator: Marek Laane <bald@smail.ee>\n"
 "Language-Team: Estonian <kde-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
@@ -54,7 +54,7 @@ msgstr "%1 avamine kirjutamiseks nurjus: kirjutuskaitstud failisüsteem"
 #: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:439
 #, kde-format
 msgid "Attempting to write beyond the maximum size of %1"
-msgstr ""
+msgstr "Püüti kirjuta üle %1 lubatud maksimumsuuruse"
 
 #: src/diskio/cachefile.cpp:131
 #, kde-format
@@ -66,6 +66,7 @@ msgstr "%1 jaoks napib kettaruumi"
 msgid ""
 "Cannot expand file %1 : attempting to grow the file beyond the maximum size"
 msgstr ""
+"Faili %1 laiendamine nurjus: faili püüti suurendada üle maksimumsuuruse"
 
 #: src/diskio/cachefile.cpp:257
 #, kde-format
@@ -470,10 +471,13 @@ msgid "Disk Input/Output"
 msgstr "Ketta sisedn/väljund"
 
 #: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr "µTP"
+
 #, fuzzy
-#| msgid "UDP"
-msgid "UTP"
-msgstr "UDP"
+#~| msgid "UDP"
+#~ msgid "UTP"
+#~ msgstr "UDP"
 
 #~ msgid "Cannot bind to udp port %1 or the 10 following ports."
 #~ msgstr "Sidumine UDP pordiga %1 ja 10 järgneva pordiga nurjus."
@@ -4598,9 +4602,6 @@ msgstr "UDP"
 #~ msgstr ""
 #~ "Peamine kasutatav transpordiprotokoll, mis valitakse esimesena ühenduse "
 #~ "loomisel partneriga."
-
-#~ msgid "µTP"
-#~ msgstr "µTP"
 
 #~ msgid ""
 #~ "Let KTorrent calculate the recommended settings based upon the bandwidth "
