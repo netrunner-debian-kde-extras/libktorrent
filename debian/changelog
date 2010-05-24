@@ -1,3 +1,8 @@
+libktorrent (1.0~rc1+dfsg.1-2~pre1) UNRELEASED; urgency=low
+
+
+ -- Modestas Vainius <modax@debian.org>  Mon, 24 May 2010 15:02:23 +0300
+
 libktorrent (1.0~rc1+dfsg.1-1) unstable; urgency=low
 
   * Initial release.
