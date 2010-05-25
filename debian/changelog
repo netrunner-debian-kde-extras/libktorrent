@@ -5,6 +5,7 @@ libktorrent (1.0.0-0r1) UNRELEASED; urgency=low
     debian_disable_ipv6_only.diff). The bug remains open on kFreeBSD.
   * License files are in upstream tarball now, remove the respective note from
     debian/copyright.
+  * Add debian/README.source.
 
  -- Modestas Vainius <modax@debian.org>  Mon, 24 May 2010 15:02:23 +0300
 

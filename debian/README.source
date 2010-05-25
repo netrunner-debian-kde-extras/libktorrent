@@ -1,0 +1,49 @@
+Branches in the Git packaging repository
+----------------------------------------
+
+Packaging branches must NOT have any debian/patches/* applied. When diff'ing
+packaging and the respective upstream branch, there must NOT be any changes
+outside debian/ subdirectory.
+
+Repository layout is as follows:
+
+* master               - the main packaging branch (upstream source and
+                         debian directory). Typically targets Debian unstable.
+* upstream             - upstream source code for the master branch.
+* <suitename>          - packaging branch targeting Debian <suite_name>
+* upstream-<suitename> - upstream source code for packaging in <suite_name>
+                         branch.
+* pristine-tar         - a branch with pristine-tar deltas for original
+                       - upstream tarballs.
+* debian/<dversion>    - annotated signed tags for package releases to Debian
+                         (based on master and <suitename> branches. ~ is
+                         replaced with -. Tag message should be of the form
+                         '<dversion>/<suitename>'.
+* upstream/<uversion>  - annotated tags for upstream releases which had at least one
+                         debian package release (based on upstream and
+                         upstream-<suitename> branches). ~ is replaced with -.
+
+General rules for patches in debian/patches
+-------------------------------------------
+
+- Patches are managed with `QUILT_PATCHES=debian/patches quilt`.
+* Highly recommended ~/.quiltrc settings are as follows:
+  -------<--------->--------
+  QUILT_NO_DIFF_INDEX=y
+  QUILT_NO_DIFF_TIMESTAMPS=y
+  QUILT_REFRESH_ARGS="-p ab"
+  QUILT_DIFF_OPTS="-p"
+  -------<--------->--------
+* All patches must have valid DEP-3 [1] headers with at least Description and
+  Author/Origin fields.
+* Patches should follow these naming rules:
+  - Each patch should be prefixed with either "debian_" for Debian specific
+    changes, "general_" for distribution agnostic changes or "backport_" for
+    changes backported from future releases.
+  - Patch name should be rather short and meaningfully reflect nature of the
+    changes. "_" should be used as a word separator.
+  - It is recommended to suffix the patch name with either  "_fix" for patches
+    fixing bugs or with '_feature' for patches introducing new features.
+* All patches should have .diff extension.
+
+1. http://dep.debian.net/deps/dep3/
