@@ -8,11 +8,10 @@ Description: Always bind IPv6 sockets to IPv4 as well
  .
  Unfortunately, this fix is just a workaround and my attempt at damage control.
  According to [1], not all IPv6 stacks support IPv4-mapped addresses (Windows,
- OpenBSD, Debian kFreeBSD do not support them). What is more, as far as I can
- tell, net.ipv6.bindv6only=1 like behaviour is default on *BSD. So KTorrent
- without IPV6_V6ONLY explicitly set to 0 used to bind to IPv6-only addresses on
- these systems. Only Linux and OSX default to net.ipv6.bindv6only=0 like
- behaviour.
+ OpenBSD do not support them). What is more, as far as I can tell,
+ net.ipv6.bindv6only=1 like behaviour is default on *BSD. So KTorrent without
+ IPV6_V6ONLY explicitly set to 0 used to bind to IPv6-only addresses on these
+ systems. Only Linux and OSX default to net.ipv6.bindv6only=0 like behaviour.
  .
  The proper fix would be to open two sockets: one AF_INET6 with IPV6_V6ONLY and
  another AF_INET one. I recommend you to read the thread [2] about bindv6only=1

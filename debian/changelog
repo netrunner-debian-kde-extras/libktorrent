@@ -1,8 +1,9 @@
 libktorrent (1.0.0-0r1) UNRELEASED; urgency=low
 
   * New upstream release.
-  * Add a workaround for #581896 on Linux (patch
-    debian_disable_ipv6_only.diff). The bug remains open on kFreeBSD.
+  * Explicitly disable IPV6_V6ONLY for tcp/udp server sockets
+    (Closes: #581896). The proper solution (2 sockets) will be in the next
+    major upstream release.
   * License files are in upstream tarball now, remove the respective note from
     debian/copyright.
   * Add debian/README.source.
