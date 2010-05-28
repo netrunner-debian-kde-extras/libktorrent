@@ -1,4 +1,4 @@
-libktorrent (1.0.0-0r1) UNRELEASED; urgency=low
+libktorrent (1.0.0-1) unstable; urgency=low
 
   * New upstream release.
   * Explicitly disable IPV6_V6ONLY for tcp/udp server sockets
@@ -8,7 +8,7 @@ libktorrent (1.0.0-0r1) UNRELEASED; urgency=low
     debian/copyright.
   * Add debian/README.source.
 
- -- Modestas Vainius <modax@debian.org>  Mon, 24 May 2010 15:02:23 +0300
+ -- Modestas Vainius <modax@debian.org>  Fri, 28 May 2010 21:06:51 +0300
 
 libktorrent (1.0~rc1+dfsg.1-1) unstable; urgency=low
 
