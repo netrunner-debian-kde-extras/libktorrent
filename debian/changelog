@@ -2,6 +2,7 @@ libktorrent (1.0.1-0r1) UNRELEASED; urgency=low
 
   * New upstream release.
   * Drop general_disable_ipv6_only.diff patch, merged upstream.
+  * Update libktorrent1.symbols for 1.0.1.
 
  -- Modestas Vainius <modax@debian.org>  Tue, 15 Jun 2010 01:05:56 +0300
 
