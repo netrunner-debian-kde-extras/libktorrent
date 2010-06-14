@@ -1,13 +1,13 @@
-# Translation of ktorrent.po into Serbian.
+# Translation of libktorrent.po into Serbian.
 # Slobodan Simic <slsimic@gmail.com>, 2007, 2008, 2009, 2010.
 # Chusslove Illich <caslav.ilic@gmx.net>, 2009, 2010.
 # Dalibor Djuric <daliborddjuric@gmail.com>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: ktorrent\n"
+"Project-Id-Version: libktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2010-05-04 01:46+0200\n"
-"PO-Revision-Date: 2010-03-12 12:38+0100\n"
+"PO-Revision-Date: 2010-05-24 18:11+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
 "Language: sr\n"
@@ -59,11 +59,10 @@ msgstr "Не могу да отворим %1 ради уписа: фајл си�
 #: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:439
 #, kde-format
 msgid "Attempting to write beyond the maximum size of %1"
-msgstr ""
+msgstr "Покушај уписивања преко највеће величине %1"
 
 #: src/diskio/cachefile.cpp:131
-#, fuzzy, kde-format
-#| msgid "Insufficient disk space for %1"
+#, kde-format
 msgid "Not enough free disk space for %1"
 msgstr "Недовољно простора за %1"
 
@@ -72,6 +71,7 @@ msgstr "Недовољно простора за %1"
 msgid ""
 "Cannot expand file %1 : attempting to grow the file beyond the maximum size"
 msgstr ""
+"Не могу да проширим фајл %1: покушај ширења фајла преко највеће величине."
 
 #: src/diskio/cachefile.cpp:257
 #, kde-format
@@ -480,4 +480,4 @@ msgstr "Улаз/излаз диска"
 
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
-msgstr ""
+msgstr "µТП"

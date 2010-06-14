@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-04 01:46+0200\n"
-"PO-Revision-Date: 2010-04-07 23:26+0300\n"
-"Last-Translator: Artem Sereda <overmind88@gmail.com>\n"
+"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"PO-Revision-Date: 2010-05-24 19:25+0400\n"
+"Last-Translator: Alexander Potashev <aspotashev@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -49,55 +49,51 @@ msgstr "Торрент не полный."
 msgid "Cannot open %1 : %2"
 msgstr "Не удалось открыть %1: %2"
 
-#: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:246
-#: src/diskio/cachefile.cpp:433 src/diskio/cachefile.cpp:501
+#: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
+#: src/diskio/cachefile.cpp:435 src/diskio/cachefile.cpp:503
 #, kde-format
 msgid "Cannot open %1 for writing : readonly filesystem"
 msgstr "Не удалось открыть %1 для записи: файловая система только для чтения."
 
-#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:439
+#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:441
 #, kde-format
 msgid "Attempting to write beyond the maximum size of %1"
-msgstr ""
+msgstr "Попытка записи в область за границей максимального размера файла %1"
 
-#: src/diskio/cachefile.cpp:131
-#, fuzzy, kde-format
-#| msgid "Insufficient disk space for %1"
-msgid "Not enough free disk space for %1"
-msgstr "Недостаточно дискового пространства для %1"
-
-#: src/diskio/cachefile.cpp:253
+#: src/diskio/cachefile.cpp:255
 #, kde-format
 msgid ""
 "Cannot expand file %1 : attempting to grow the file beyond the maximum size"
 msgstr ""
+"Не удалось увеличить размер файла %1: попытка расширить файл до размера, "
+"превышающего максимально допустимый размер"
 
-#: src/diskio/cachefile.cpp:257
+#: src/diskio/cachefile.cpp:259
 #, kde-format
 msgid "Cannot expand file %1 : %2"
 msgstr "Не удалось увеличить размер файла %1: %2"
 
-#: src/diskio/cachefile.cpp:399
+#: src/diskio/cachefile.cpp:401
 #, kde-format
 msgid "Error : Reading past the end of the file %1"
 msgstr "Ошибка: Чтение после конца файла %1"
 
-#: src/diskio/cachefile.cpp:404 src/diskio/cachefile.cpp:451
+#: src/diskio/cachefile.cpp:406 src/diskio/cachefile.cpp:453
 #, kde-format
 msgid "Failed to seek file %1 : %2"
 msgstr "Не удалось найти %1: %2"
 
-#: src/diskio/cachefile.cpp:412
+#: src/diskio/cachefile.cpp:414
 #, kde-format
 msgid "Error reading from %1"
 msgstr "Ошибка чтения из %1"
 
-#: src/diskio/cachefile.cpp:455
+#: src/diskio/cachefile.cpp:457
 #, kde-format
 msgid "Failed to write to file %1 : %2"
 msgstr "Не удаётся записать в файл %1 : %2"
 
-#: src/diskio/cachefile.cpp:522
+#: src/diskio/cachefile.cpp:524
 #, kde-format
 msgid "Cannot preallocate diskspace : %1"
 msgstr "Не удалось выделить дисковое пространство: %1"
@@ -478,6 +474,11 @@ msgstr "Ввод/вывод диска"
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
 msgstr "µTP"
+
+#, fuzzy
+#~| msgid "Insufficient disk space for %1"
+#~ msgid "Not enough free disk space for %1"
+#~ msgstr "Недостаточно дискового пространства для %1"
 
 #, fuzzy
 #~| msgid "UDP"

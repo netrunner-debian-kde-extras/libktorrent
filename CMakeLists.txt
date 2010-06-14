@@ -25,7 +25,7 @@ add_definitions( ${KDE4_DEFINITIONS} )
 
 include_directories(${KDE4_INCLUDES} ${LIBKTORRENT_BINARY_DIR}	${LIBKTORRENT_SOURCE_DIR} ${GMP_INCLUDE_DIR} ${Boost_INCLUDE_DIR})
 
-set(LIBKTORRENT_VERSION "1.0.0")
+set(LIBKTORRENT_VERSION "1.0.1")
 
 #XFS prealloc
 CHECK_INCLUDE_FILES(xfs/xfs.h HAVE_XFS_XFS_H)
@@ -50,6 +50,7 @@ check_function_exists(mmap64 HAVE_MMAP64)
 check_function_exists(munmap64 HAVE_MUNMAP64)
 check_function_exists(posix_fallocate64 HAVE_POSIX_FALLOCATE64)
 check_function_exists(posix_fallocate HAVE_POSIX_FALLOCATE)
+check_function_exists(fallocate HAVE_FALLOCATE)
 check_function_exists(statvfs HAVE_STATVFS)
 check_function_exists(statvfs64 HAVE_STATVFS64)
 
@@ -57,7 +58,6 @@ check_function_exists(statvfs64 HAVE_STATVFS64)
 add_subdirectory(src)
 add_subdirectory(cmake)
 add_subdirectory(doc)
-
 find_package(Msgfmt REQUIRED)
 find_package(Gettext REQUIRED)
 add_subdirectory( po )

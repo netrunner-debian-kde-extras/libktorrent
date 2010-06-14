@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-04 01:46+0200\n"
+"POT-Creation-Date: 2010-06-13 01:30+0200\n"
 "PO-Revision-Date: 2009-12-21 14:26+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -55,55 +55,49 @@ msgstr "Torrent មិន​ទាន់​បាន​បញ្ចប់​ន�
 msgid "Cannot open %1 : %2"
 msgstr "មិនអាច​បើក​ %1 ៖​ %2"
 
-#: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:246
-#: src/diskio/cachefile.cpp:433 src/diskio/cachefile.cpp:501
+#: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
+#: src/diskio/cachefile.cpp:435 src/diskio/cachefile.cpp:503
 #, kde-format
 msgid "Cannot open %1 for writing : readonly filesystem"
 msgstr "មិនអាច​បើក​សរសេរ %1 ៖ ប្រព័ន្ធ​ឯកសារ​បាន​តែ​អាន"
 
-#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:439
+#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:441
 #, kde-format
 msgid "Attempting to write beyond the maximum size of %1"
 msgstr ""
 
-#: src/diskio/cachefile.cpp:131
-#, fuzzy, kde-format
-#| msgid "Insufficient disk space for %1"
-msgid "Not enough free disk space for %1"
-msgstr "ទំហំថាស​មិនគ្រប់គ្រាន់​សម្រាប់ %1"
-
-#: src/diskio/cachefile.cpp:253
+#: src/diskio/cachefile.cpp:255
 #, kde-format
 msgid ""
 "Cannot expand file %1 : attempting to grow the file beyond the maximum size"
 msgstr ""
 
-#: src/diskio/cachefile.cpp:257
+#: src/diskio/cachefile.cpp:259
 #, kde-format
 msgid "Cannot expand file %1 : %2"
 msgstr "មិនអាច​ពង្រីក​​ឯកសារ %1 ៖ %2"
 
-#: src/diskio/cachefile.cpp:399
+#: src/diskio/cachefile.cpp:401
 #, kde-format
 msgid "Error : Reading past the end of the file %1"
 msgstr "កំហុស ៖ អាន​ហួស​ចុង​ឯកសារ %1"
 
-#: src/diskio/cachefile.cpp:404 src/diskio/cachefile.cpp:451
+#: src/diskio/cachefile.cpp:406 src/diskio/cachefile.cpp:453
 #, kde-format
 msgid "Failed to seek file %1 : %2"
 msgstr "បរាជ័យ​ក្នុងករា​រកមើល​ឯកសារ %1 ៖ %2"
 
-#: src/diskio/cachefile.cpp:412
+#: src/diskio/cachefile.cpp:414
 #, kde-format
 msgid "Error reading from %1"
 msgstr "កំហុស​ក្នុងការ​អាន​ពី %1"
 
-#: src/diskio/cachefile.cpp:455
+#: src/diskio/cachefile.cpp:457
 #, kde-format
 msgid "Failed to write to file %1 : %2"
 msgstr "បរាជ័យ​ក្នុងការ​សរសេរ​ទៅ​ឯកសារ %1 ៖ %2"
 
-#: src/diskio/cachefile.cpp:522
+#: src/diskio/cachefile.cpp:524
 #, kde-format
 msgid "Cannot preallocate diskspace : %1"
 msgstr "មិនអាច​បម្រុងទុក​ទំហំថាស​ជាមុន​បាន ៖ %1"
@@ -507,6 +501,11 @@ msgstr "ការ​ចេញ/ចូល​របស់​ថាស"
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Insufficient disk space for %1"
+#~ msgid "Not enough free disk space for %1"
+#~ msgstr "ទំហំថាស​មិនគ្រប់គ្រាន់​សម្រាប់ %1"
 
 #, fuzzy
 #~| msgid "UDP"

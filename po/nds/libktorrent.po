@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-04 01:46+0200\n"
+"POT-Creation-Date: 2010-06-13 01:30+0200\n"
 "PO-Revision-Date: 2010-05-09 05:32+0200\n"
 "Last-Translator: Manfred Wiese <m.j.wiese@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-doc@kde.org>\n"
@@ -45,23 +45,18 @@ msgstr "Torrent is nich komplett."
 msgid "Cannot open %1 : %2"
 msgstr "\"%1\" lett sik nich opmaken: %2"
 
-#: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:246
-#: src/diskio/cachefile.cpp:433 src/diskio/cachefile.cpp:501
+#: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
+#: src/diskio/cachefile.cpp:435 src/diskio/cachefile.cpp:503
 #, kde-format
 msgid "Cannot open %1 for writing : readonly filesystem"
 msgstr "\"%1\" lett sik nich schrieven: Bloots leesbor Dateisysteem"
 
-#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:439
+#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:441
 #, kde-format
 msgid "Attempting to write beyond the maximum size of %1"
 msgstr "Schriefversöök na mehr as de Hööchstgrött vun %1 överweg"
 
-#: src/diskio/cachefile.cpp:131
-#, kde-format
-msgid "Not enough free disk space for %1"
-msgstr "Nich noog free Ruum op de Fastplaat för %1"
-
-#: src/diskio/cachefile.cpp:253
+#: src/diskio/cachefile.cpp:255
 #, kde-format
 msgid ""
 "Cannot expand file %1 : attempting to grow the file beyond the maximum size"
@@ -69,32 +64,32 @@ msgstr ""
 "Datei \"%1\" lett sik nich utpacken: Anners warrt de Datei grötter as "
 "tohööchst tolaten."
 
-#: src/diskio/cachefile.cpp:257
+#: src/diskio/cachefile.cpp:259
 #, kde-format
 msgid "Cannot expand file %1 : %2"
 msgstr "Datei \"%1\" lett sik nich utpacken: %2"
 
-#: src/diskio/cachefile.cpp:399
+#: src/diskio/cachefile.cpp:401
 #, kde-format
 msgid "Error : Reading past the end of the file %1"
 msgstr "Fehler: Achter dat Enn vun Datei \"%1\" lett sik nix lesen."
 
-#: src/diskio/cachefile.cpp:404 src/diskio/cachefile.cpp:451
+#: src/diskio/cachefile.cpp:406 src/diskio/cachefile.cpp:453
 #, kde-format
 msgid "Failed to seek file %1 : %2"
 msgstr "Datei \"%1\" lett sik nich finnen: %2"
 
-#: src/diskio/cachefile.cpp:412
+#: src/diskio/cachefile.cpp:414
 #, kde-format
 msgid "Error reading from %1"
 msgstr "Fehler bi't Lesen vun %1"
 
-#: src/diskio/cachefile.cpp:455
+#: src/diskio/cachefile.cpp:457
 #, kde-format
 msgid "Failed to write to file %1 : %2"
 msgstr "\"%1\" lett sik nich schrieven: %2"
 
-#: src/diskio/cachefile.cpp:522
+#: src/diskio/cachefile.cpp:524
 #, kde-format
 msgid "Cannot preallocate diskspace : %1"
 msgstr "Plattenspieker lett sik nich vörweg towiesen: %1"
@@ -474,6 +469,9 @@ msgstr "Fastplaat-In-/Utgaav"
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
 msgstr "µTP"
+
+#~ msgid "Not enough free disk space for %1"
+#~ msgstr "Nich noog free Ruum op de Fastplaat för %1"
 
 #~ msgid "Cannot bind to udp port %1 or the 10 following ports."
 #~ msgstr "UDP-Port %1 un de 10 nakamen Porten laat sik nich bruken."
