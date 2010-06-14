@@ -1,5 +1,6 @@
 # SymbolsHelper-Confirmed: 1.0.1 amd64
 libktorrent.so.1 libktorrent1 #MINVER#
+* Build-Depends-Package: libktorrent-dev
  _ZN2bt10BValueNode14printDebugInfoEv@Base 1.0~rc1
  _ZN2bt10BValueNodeC1ERKNS_5ValueEj@Base 1.0~rc1
  _ZN2bt10BValueNodeC2ERKNS_5ValueEj@Base 1.0~rc1
