@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-04 01:46+0200\n"
+"POT-Creation-Date: 2010-06-13 01:30+0200\n"
 "PO-Revision-Date: 2009-12-09 11:49+0200\n"
 "Last-Translator: Petros <pvidalis@gmail.com>\n"
 "Language-Team: Ελληνικά <i18ngr@lists.hellug.gr>\n"
@@ -51,57 +51,51 @@ msgstr "Το torrent δεν είναι ολοκληρωμένο!"
 msgid "Cannot open %1 : %2"
 msgstr "Αδύνατο το άνοιγμα του αρχείου %1 : %2"
 
-#: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:246
-#: src/diskio/cachefile.cpp:433 src/diskio/cachefile.cpp:501
+#: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
+#: src/diskio/cachefile.cpp:435 src/diskio/cachefile.cpp:503
 #, kde-format
 msgid "Cannot open %1 for writing : readonly filesystem"
 msgstr ""
 "Αδύνατο το άνοιγμα του %1 για εγγραφή. Το σύστημα αρχείων είναι μόνο για "
 "ανάγνωση"
 
-#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:439
+#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:441
 #, kde-format
 msgid "Attempting to write beyond the maximum size of %1"
 msgstr ""
 
-#: src/diskio/cachefile.cpp:131
-#, fuzzy, kde-format
-#| msgid "Insufficient disk space for %1"
-msgid "Not enough free disk space for %1"
-msgstr "Μη επαρκής χώρος στο δίσκο για το %1"
-
-#: src/diskio/cachefile.cpp:253
+#: src/diskio/cachefile.cpp:255
 #, kde-format
 msgid ""
 "Cannot expand file %1 : attempting to grow the file beyond the maximum size"
 msgstr ""
 
-#: src/diskio/cachefile.cpp:257
+#: src/diskio/cachefile.cpp:259
 #, kde-format
 msgid "Cannot expand file %1 : %2"
 msgstr "Αδύνατη η ανάπτυξη του αρχείου: %1 : %2"
 
-#: src/diskio/cachefile.cpp:399
+#: src/diskio/cachefile.cpp:401
 #, kde-format
 msgid "Error : Reading past the end of the file %1"
 msgstr "Σφάλμα: Η ανάγνωση πέρασε το τέλος του αρχείου %1"
 
-#: src/diskio/cachefile.cpp:404 src/diskio/cachefile.cpp:451
+#: src/diskio/cachefile.cpp:406 src/diskio/cachefile.cpp:453
 #, kde-format
 msgid "Failed to seek file %1 : %2"
 msgstr "Αποτυχία η κίνηση αναζήτησης στο αρχείο %1 : %2"
 
-#: src/diskio/cachefile.cpp:412
+#: src/diskio/cachefile.cpp:414
 #, kde-format
 msgid "Error reading from %1"
 msgstr "Σφάλμα ανάγνωσης από το %1"
 
-#: src/diskio/cachefile.cpp:455
+#: src/diskio/cachefile.cpp:457
 #, kde-format
 msgid "Failed to write to file %1 : %2"
 msgstr "Αποτυχία εγγραφής στο αρχείο %1 : %2"
 
-#: src/diskio/cachefile.cpp:522
+#: src/diskio/cachefile.cpp:524
 #, kde-format
 msgid "Cannot preallocate diskspace : %1"
 msgstr "Αδύνατη η κατακράτηση χώρου στο δίσκο : %1"
@@ -506,6 +500,11 @@ msgstr "Χρήση δίσκου Ι/Ο"
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Insufficient disk space for %1"
+#~ msgid "Not enough free disk space for %1"
+#~ msgstr "Μη επαρκής χώρος στο δίσκο για το %1"
 
 #, fuzzy
 #~| msgid "UDP"
