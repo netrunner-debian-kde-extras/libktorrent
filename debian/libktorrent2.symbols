@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 1.0.1 amd64
+# SymbolsHelper-Confirmed: 1.0.2 amd64
 libktorrent.so.2 libktorrent2 #MINVER#
 * Build-Depends-Package: libktorrent-dev
  _ZN2bt10BValueNode14printDebugInfoEv@Base 1.0.2
@@ -1569,6 +1569,7 @@ libktorrent.so.2 libktorrent2 #MINVER#
  _ZN3utp9UTPServer6detachEPNS_9UTPSocketEPNS_10ConnectionE@Base 1.0.2
  _ZN3utp9UTPServer6sendToERK10QByteArrayRKN3net7AddressEt@Base 1.0.2
  _ZN3utp9UTPServer6setTOSEh@Base 1.0.2
+ _ZN3utp9UTPServer7cleanupEv@Base 1.0.2
  _ZN3utp9UTPServer8acceptedEPNS_10ConnectionE@Base 1.0.2
  _ZN3utp9UTPServer9connectToERKN3net7AddressE@Base 1.0.2
  _ZN3utp9UTPServerC1EP7QObject@Base 1.0.2
@@ -1776,6 +1777,7 @@ libktorrent.so.2 libktorrent2 #MINVER#
  (optional=templinst)_ZNSt4listIjSaIjEE4sortIN2bt7RareCmpEEEvT_@Base 1.0.2
  (optional=templinst)_ZNSt4listIjSaIjEE5mergeIN2bt7RareCmpEEEvRS1_T_@Base 1.0.2
  (optional=templinst)_ZNSt5dequeIN3utp11DelayWindow10DelayEntryESaIS2_EE5eraseESt15_Deque_iteratorIS2_RS2_PS2_E@Base 1.0.2
+ (optional=templinst)_ZNSt5dequeIN3utp11DelayWindow10DelayEntryESaIS2_EE5eraseESt15_Deque_iteratorIS2_RS2_PS2_ES8_@Base 1.0.2
  (optional=templinst)_ZNSt6vectorI6pollfdSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_@Base 1.0.2
  (optional=templinst)_ZNSt6vectorIjSaIjEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPjS1_EERKj@Base 1.0.2
  (optional=templinst)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS6_@Base 1.0.2
