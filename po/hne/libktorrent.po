@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2009-03-10 17:56+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -166,7 +166,7 @@ msgid "Redirect without a redirect location"
 msgstr ""
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr ""
@@ -177,7 +177,7 @@ msgid "Unable to resolve hostname %1"
 msgstr ""
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr ""
 
@@ -186,7 +186,7 @@ msgstr ""
 msgid "Invalid data from tracker"
 msgstr "अवैध यूआरएल %1"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 #, fuzzy
 #| msgid "Invalid URL: "
 msgid "Invalid tracker URL"
@@ -501,6 +501,39 @@ msgstr ""
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Pending"
+#~ msgid "Superseeding"
+#~ msgstr "लंबित"
+
+#, fuzzy
+#~| msgid "Free disk space:"
+#~ msgid "Not enough diskspace"
+#~ msgstr "डिस्क मं खाली जगहः"
+
+#, fuzzy
+#~| msgid "Error reading from %1"
+#~ msgid "Error when reading from disk"
+#~ msgstr "%1 से पढ़े मं गलती"
+
+#, fuzzy
+#~| msgid "Failed to create %1 : %2"
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "बना नइ सकिस %1 : %2"
+
+#, fuzzy
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "कनेक्सन बन्द"
+
+#, fuzzy
+#~| msgid "Document to open"
+#~ msgid "Torrent to open"
+#~ msgstr "कागद जऊन ल खोलना हे"
+
+#, fuzzy
+#~ msgid "Port to use"
+#~ msgstr "सूचना"
 
 #, fuzzy
 #~| msgid "UDP"
@@ -1068,13 +1101,6 @@ msgstr ""
 #~| msgid "Joris Guisson"
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "जोरिस गुइसन"
-
-#~ msgid "Document to open"
-#~ msgstr "कागद जऊन ल खोलना हे"
-
-#, fuzzy
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "कनेक्सन बन्द"
 
 #~ msgid "Proxy"
 #~ msgstr "प्राक्सी"
@@ -2285,9 +2311,6 @@ msgstr ""
 
 #~ msgid "Quit"
 #~ msgstr "बाहिर जाव"
-
-#~ msgid "Free disk space:"
-#~ msgstr "डिस्क मं खाली जगहः"
 
 #, fuzzy
 #~| msgid "From:"

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2009-11-17 11:13+0100\n"
 "Last-Translator: Axel Rousseau <axel@esperanto-jeunes.org>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -157,7 +157,7 @@ msgid "Redirect without a redirect location"
 msgstr ""
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr ""
@@ -169,7 +169,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "Ne povas krei %1 : %2"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "Nevalida respondo de servilo"
 
@@ -177,7 +177,7 @@ msgstr "Nevalida respondo de servilo"
 msgid "Invalid data from tracker"
 msgstr "Nevalida datumo de servilo"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "Nevalida servila retadreso"
 
@@ -513,9 +513,45 @@ msgid "µTP"
 msgstr ""
 
 #, fuzzy
+#~| msgid "Seeding"
+#~ msgid "Superseeding"
+#~ msgstr "Fontsendas"
+
+#, fuzzy
 #~| msgid "Insufficient disk space for %1"
-#~ msgid "Not enough free disk space for %1"
+#~ msgid "Not enough diskspace"
 #~ msgstr "Nesufiĉa diskspaco por %1"
+
+#, fuzzy
+#~| msgid "Error reading from %1"
+#~ msgid "Error when reading from disk"
+#~ msgstr "Eraro okazis dum legado de %1"
+
+#, fuzzy
+#~| msgid "Failed to open %1 : %2"
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "Ne povas malfermi %1 : %2"
+
+#, fuzzy
+#~| msgid "Cannot find port forwarding service in the device's description!"
+#~ msgid "Cannot find port forwarding service in the device's description."
+#~ msgstr ""
+#~ "Ne povas trovi alipordan plusendadan servon en la priskribo de la aparato!"
+
+#, fuzzy
+#~| msgid "Connections"
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "Konektoj"
+
+#, fuzzy
+#~| msgid "Document to open"
+#~ msgid "Torrent to open"
+#~ msgstr "La dosiero malfermiĝi"
+
+#, fuzzy
+#~| msgid "Notice"
+#~ msgid "Port to use"
+#~ msgstr "Rimarku"
 
 #, fuzzy
 #~| msgid "UDP"
@@ -1644,25 +1680,6 @@ msgstr ""
 #~| msgid "Joris Guisson"
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "Joris Guisson"
-
-#~ msgid "Document to open"
-#~ msgstr "La dosiero malfermiĝi"
-
-#, fuzzy
-#~| msgid "Failed to open %1 : %2"
-#~ msgid "Failed to download %1 : %2"
-#~ msgstr "Ne povas malfermi %1 : %2"
-
-#, fuzzy
-#~| msgid "Cannot find port forwarding service in the device's description!"
-#~ msgid "Cannot find port forwarding service in the device's description."
-#~ msgstr ""
-#~ "Ne povas trovi alipordan plusendadan servon en la priskribo de la aparato!"
-
-#, fuzzy
-#~| msgid "Connections"
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "Konektoj"
 
 #~ msgid "Proxy"
 #~ msgstr "Prokurilo"

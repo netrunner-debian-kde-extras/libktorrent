@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2010-06-01 15:07+0200\n"
 "Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -154,7 +154,7 @@ msgid "Redirect without a redirect location"
 msgstr "Přesměrování bez umístění přesměrování"
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr ""
@@ -165,7 +165,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "Nelze rozpoznat jméno hostitele %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "Neplatná odpověď od trackeru"
 
@@ -173,7 +173,7 @@ msgstr "Neplatná odpověď od trackeru"
 msgid "Invalid data from tracker"
 msgstr "Neplatná data z trackeru"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "Neplatné URL trackeru"
 
@@ -469,8 +469,53 @@ msgstr "Diskové I/O"
 msgid "µTP"
 msgstr "µTP"
 
-#~ msgid "Not enough free disk space for %1"
+#, fuzzy
+#~| msgctxt "Status of a torrent file"
+#~| msgid "Seeding"
+#~ msgid "Superseeding"
+#~ msgstr "Sdílím"
+
+#, fuzzy
+#~| msgid "Not enough free disk space for %1"
+#~ msgid "Not enough diskspace"
 #~ msgstr "Nedostatek místa na disku pro %1"
+
+#, fuzzy
+#~| msgid "Error reading from %1"
+#~ msgid "Error when reading from disk"
+#~ msgstr "Chyba při čtení z %1"
+
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "Nelze stáhnout %1 : %2"
+
+#~ msgid "Error parsing router description."
+#~ msgstr "Chyba při analýze popisu směrování."
+
+#~ msgid ""
+#~ "Forwarding failed: \n"
+#~ "Device does not have a WANIPConnection or WANPPPConnection."
+#~ msgstr ""
+#~ "Předávání selhalo: \n"
+#~ "Zařízení nemá WANIPConnection nebo WANPPPConnection."
+
+#~ msgid "Cannot find port forwarding service in the device's description."
+#~ msgstr "V popisu zařízení nelze nalézt službu předávání portů."
+
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "Připojení bylo neočekávaně uzavřeno."
+
+#~ msgid "Timeout occurred"
+#~ msgstr "Vypršel časový limit"
+
+#, fuzzy
+#~| msgid "Document to open"
+#~ msgid "Torrent to open"
+#~ msgstr "Dokument k otevření"
+
+#, fuzzy
+#~| msgid "Not in use"
+#~ msgid "Port to use"
+#~ msgstr "Nepoužito"
 
 #~ msgid "UTP"
 #~ msgstr "UTP"
@@ -1616,31 +1661,6 @@ msgstr "µTP"
 #, fuzzy
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "(C) 2009 Joris Guisson"
-
-#~ msgid "Document to open"
-#~ msgstr "Dokument k otevření"
-
-#~ msgid "Failed to download %1 : %2"
-#~ msgstr "Nelze stáhnout %1 : %2"
-
-#~ msgid "Error parsing router description."
-#~ msgstr "Chyba při analýze popisu směrování."
-
-#~ msgid ""
-#~ "Forwarding failed: \n"
-#~ "Device does not have a WANIPConnection or WANPPPConnection."
-#~ msgstr ""
-#~ "Předávání selhalo: \n"
-#~ "Zařízení nemá WANIPConnection nebo WANPPPConnection."
-
-#~ msgid "Cannot find port forwarding service in the device's description."
-#~ msgstr "V popisu zařízení nelze nalézt službu předávání portů."
-
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "Připojení bylo neočekávaně uzavřeno."
-
-#~ msgid "Timeout occurred"
-#~ msgstr "Vypršel časový limit"
 
 #~ msgid "Proxy"
 #~ msgstr "Proxy"

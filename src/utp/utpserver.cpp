@@ -90,10 +90,14 @@ namespace utp
 		delete mtc;
 	}
 	
+	// HACK: to avoid binary incompatibilities, 
+	// relies on the fact that there will only be one  UTPServer instance
+	static QMutex pending_mutex;
+	
 	void UTPServer::handlePendingConnections()
 	{
 		// This should be called from the main thread
-		QMutexLocker lock(&mutex);
+		QMutexLocker lock(&pending_mutex);
 		foreach (mse::StreamSocket* s,pending)
 		{
 			newConnection(s);
@@ -189,8 +193,6 @@ namespace utp
 				Out(SYS_UTP|LOG_NOTICE) << "UTP: " << err.location << endl;
 			}
 		}
-		
-		clearDeadConnections();
 	}
 	
 	void UTPServer::writePacket(int)
@@ -406,7 +408,7 @@ namespace utp
 				i++;
 		}
 	}
-
+	
 	void UTPServer::attach(UTPSocket* socket, Connection* conn)
 	{
 		QMutexLocker lock(&mutex);
@@ -458,9 +460,11 @@ namespace utp
 			s->reset();
 		
 		alive_connections.clear();
+		clearDeadConnections();
+		
+		connections.setAutoDelete(true);
 		connections.clear();
-		qDeleteAll(dead_connections);
-		dead_connections.clear();
+		connections.setAutoDelete(false);
 		
 		// Close the socket
 		if (sock)
@@ -537,7 +541,12 @@ namespace utp
 	{
 		if (create_sockets)
 		{
-			pending.append(new mse::StreamSocket(new UTPSocket(conn)));
+			UTPSocket* utps = new UTPSocket(conn);
+			mse::StreamSocket* ss = new mse::StreamSocket(utps);
+			{
+				QMutexLocker lock(&pending_mutex);
+				pending.append(ss);
+			}
 			handlePendingConnectionsDelayed();
 		}
 	}
@@ -572,4 +581,10 @@ namespace utp
 			}
 		}
 	}
+		
+	void UTPServer::cleanup()
+	{
+		clearDeadConnections();
+	}
+
 }

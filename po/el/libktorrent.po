@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2009-12-09 11:49+0200\n"
 "Last-Translator: Petros <pvidalis@gmail.com>\n"
 "Language-Team: Ελληνικά <i18ngr@lists.hellug.gr>\n"
@@ -165,7 +165,7 @@ msgid "Redirect without a redirect location"
 msgstr "Ανακατεύθυνση χωρίς μια νέα τοποθεσία !"
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr ""
@@ -176,7 +176,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "Αδυναμία επίλυσης ονόματος υπολογιστή %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "Μη έγκυρη απάντηση από ανιχνευτή"
 
@@ -184,7 +184,7 @@ msgstr "Μη έγκυρη απάντηση από ανιχνευτή"
 msgid "Invalid data from tracker"
 msgstr "Μη έγκυρα δεδομένα από τον ανιχνευτή"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "Μη έγκυρο URL ανιχνευτή"
 
@@ -502,9 +502,62 @@ msgid "µTP"
 msgstr ""
 
 #, fuzzy
+#~| msgid "Seeding"
+#~ msgid "Superseeding"
+#~ msgstr "Προσφορά γόνου"
+
+#, fuzzy
 #~| msgid "Insufficient disk space for %1"
-#~ msgid "Not enough free disk space for %1"
+#~ msgid "Not enough diskspace"
 #~ msgstr "Μη επαρκής χώρος στο δίσκο για το %1"
+
+#, fuzzy
+#~| msgid "Error reading from %1"
+#~ msgid "Error when reading from disk"
+#~ msgstr "Σφάλμα ανάγνωσης από το %1"
+
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "Αποτυχία λήψης %1 : %2"
+
+#, fuzzy
+#~| msgid "Error parsing router description !"
+#~ msgid "Error parsing router description."
+#~ msgstr "Σφάλμα ανάλυσης περιγραφής δρομολογητή (router) !"
+
+#, fuzzy
+#~| msgid ""
+#~| "Forwarding failed: \n"
+#~| "Device does not have a WANIPConnection or WANPPPConnection !"
+#~ msgid ""
+#~ "Forwarding failed: \n"
+#~ "Device does not have a WANIPConnection or WANPPPConnection."
+#~ msgstr ""
+#~ "Αποτυχία προώθησης (Forwarding): \n"
+#~ "Η συσκευή δεν έχει διαθέσιμη μια WANIPConnection ή μια WANPPPConnection !"
+
+#, fuzzy
+#~| msgid "Cannot find port forwarding service in the device's description!"
+#~ msgid "Cannot find port forwarding service in the device's description."
+#~ msgstr ""
+#~ "Αδυναμία εύρεσης υπηρεσίας προώθησης θυρών, στην περιγραφή της συσκευής!"
+
+#, fuzzy
+#~| msgid "Connection closed unexpectedly !"
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "Η σύνδεση έκλεισε απροσδόκητα!"
+
+#~ msgid "Timeout occurred"
+#~ msgstr "Λήξη χρονικού ορίου"
+
+#, fuzzy
+#~| msgid "Document to open"
+#~ msgid "Torrent to open"
+#~ msgstr "Έγγραφο για άνοιγμα"
+
+#, fuzzy
+#~| msgid "Notice"
+#~ msgid "Port to use"
+#~ msgstr "Επισημάνσεις"
 
 #, fuzzy
 #~| msgid "UDP"
@@ -1733,42 +1786,6 @@ msgstr ""
 #~| msgid "Joris Guisson"
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "Joris Guisson"
-
-#~ msgid "Document to open"
-#~ msgstr "Έγγραφο για άνοιγμα"
-
-#~ msgid "Failed to download %1 : %2"
-#~ msgstr "Αποτυχία λήψης %1 : %2"
-
-#, fuzzy
-#~| msgid "Error parsing router description !"
-#~ msgid "Error parsing router description."
-#~ msgstr "Σφάλμα ανάλυσης περιγραφής δρομολογητή (router) !"
-
-#, fuzzy
-#~| msgid ""
-#~| "Forwarding failed: \n"
-#~| "Device does not have a WANIPConnection or WANPPPConnection !"
-#~ msgid ""
-#~ "Forwarding failed: \n"
-#~ "Device does not have a WANIPConnection or WANPPPConnection."
-#~ msgstr ""
-#~ "Αποτυχία προώθησης (Forwarding): \n"
-#~ "Η συσκευή δεν έχει διαθέσιμη μια WANIPConnection ή μια WANPPPConnection !"
-
-#, fuzzy
-#~| msgid "Cannot find port forwarding service in the device's description!"
-#~ msgid "Cannot find port forwarding service in the device's description."
-#~ msgstr ""
-#~ "Αδυναμία εύρεσης υπηρεσίας προώθησης θυρών, στην περιγραφή της συσκευής!"
-
-#, fuzzy
-#~| msgid "Connection closed unexpectedly !"
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "Η σύνδεση έκλεισε απροσδόκητα!"
-
-#~ msgid "Timeout occurred"
-#~ msgstr "Λήξη χρονικού ορίου"
 
 #~ msgid "Proxy"
 #~ msgstr "Διαμεσολαβητής"

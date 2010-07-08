@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2010-05-04 20:05+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@comhem.se>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -154,7 +154,7 @@ msgid "Redirect without a redirect location"
 msgstr "Omdirigering utan en omdirigeringsplats"
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Tidsgräns överskriden vid försök att kontakta spåraren %1"
@@ -165,7 +165,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "Misslyckades vid upplösning av värddatornamnet %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "Ogiltigt svar från spårare"
 
@@ -173,7 +173,7 @@ msgstr "Ogiltigt svar från spårare"
 msgid "Invalid data from tracker"
 msgstr "Ogiltig data från spårare"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "Ogiltig webbadress för spårare"
 
@@ -468,8 +468,41 @@ msgstr "Diskinmatning och utmatning"
 msgid "µTP"
 msgstr "µTP"
 
-#~ msgid "Not enough free disk space for %1"
+#, fuzzy
+#~| msgctxt "Status of a torrent file"
+#~| msgid "Seeding"
+#~ msgid "Superseeding"
+#~ msgstr "Erbjuder flödet"
+
+#, fuzzy
+#~| msgid "Not enough free disk space for %1"
+#~ msgid "Not enough diskspace"
 #~ msgstr "Otillräckligt ledigt diskutrymme för %1"
+
+#, fuzzy
+#~| msgid "Error reading from %1"
+#~ msgid "Error when reading from disk"
+#~ msgstr "Fel vid läsning från %1"
+
+#, fuzzy
+#~| msgid "Failed to open %1 : %2"
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "Misslyckades öppna %1: %2"
+
+#, fuzzy
+#~| msgid "Connection closed"
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "Anslutning stängd"
+
+#, fuzzy
+#~| msgid "Torrent is incomplete."
+#~ msgid "Torrent to open"
+#~ msgstr "Dataflödet är inte färdigt."
+
+#, fuzzy
+#~| msgid "Not in use"
+#~ msgid "Port to use"
+#~ msgstr "Används inte"
 
 #~ msgid "UTP"
 #~ msgstr "UTP"

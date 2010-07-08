@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KTorrent 3.1\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2010-04-02 07:54+0200\n"
 "Last-Translator: Csanád Tóth <toth.csanad@kde.hu>\n"
 "Language-Team: Magyar <kde-lista-request@sophia.jpte.hu>\n"
@@ -155,7 +155,7 @@ msgid "Redirect without a redirect location"
 msgstr "Átirányítás új hely nélkül"
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Időtúllépés a követőhöz való kapcsolódás közben: %1"
@@ -166,7 +166,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "%1 hosztnév nem oldható fel"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "Érvénytelen válasz érkezett a követőtől"
 
@@ -174,7 +174,7 @@ msgstr "Érvénytelen válasz érkezett a követőtől"
 msgid "Invalid data from tracker"
 msgstr "Érvénytelen adat érkezett a követőtől"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "Érvénytelen követő-URL"
 
@@ -467,8 +467,54 @@ msgstr "Lemez bemenet/kimenet"
 msgid "µTP"
 msgstr "µTP"
 
-#~ msgid "Not enough free disk space for %1"
+#, fuzzy
+#~| msgctxt "Status of a torrent file"
+#~| msgid "Seeding"
+#~ msgid "Superseeding"
+#~ msgstr "Feltöltés"
+
+#, fuzzy
+#~| msgid "Not enough free disk space for %1"
+#~ msgid "Not enough diskspace"
 #~ msgstr "%1 számára kevés a lemezterület"
+
+#, fuzzy
+#~| msgid "Error reading from %1"
+#~ msgid "Error when reading from disk"
+#~ msgstr "Hiba történt %1 olvasása közben"
+
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "Nem sikerült letölteni: %1. %2"
+
+#~ msgid "Error parsing router description."
+#~ msgstr "Nem sikerült feldolgozni a router leírását."
+
+#~ msgid ""
+#~ "Forwarding failed: \n"
+#~ "Device does not have a WANIPConnection or WANPPPConnection."
+#~ msgstr ""
+#~ "Sikertelen átirányítás: \n"
+#~ "Az eszköz nem rendelkezik WANIPConnection, vagy WANPPPConnection "
+#~ "lehetőségekkel."
+
+#~ msgid "Cannot find port forwarding service in the device's description."
+#~ msgstr "Az eszköz leírásában nem található port-átirányítási szolgáltatás."
+
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "A kapcsolat váratlanul megszakadt."
+
+#~ msgid "Timeout occurred"
+#~ msgstr "Időtúllépés"
+
+#, fuzzy
+#~| msgid "Document to open"
+#~ msgid "Torrent to open"
+#~ msgstr "Megnyitandó dokumentum"
+
+#, fuzzy
+#~| msgid "Not in use"
+#~ msgid "Port to use"
+#~ msgstr "Nem használt"
 
 #~ msgid "UTP"
 #~ msgstr "UTP"
@@ -1610,32 +1656,6 @@ msgstr "µTP"
 
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "(C) 2009 Joris Guisson"
-
-#~ msgid "Document to open"
-#~ msgstr "Megnyitandó dokumentum"
-
-#~ msgid "Failed to download %1 : %2"
-#~ msgstr "Nem sikerült letölteni: %1. %2"
-
-#~ msgid "Error parsing router description."
-#~ msgstr "Nem sikerült feldolgozni a router leírását."
-
-#~ msgid ""
-#~ "Forwarding failed: \n"
-#~ "Device does not have a WANIPConnection or WANPPPConnection."
-#~ msgstr ""
-#~ "Sikertelen átirányítás: \n"
-#~ "Az eszköz nem rendelkezik WANIPConnection, vagy WANPPPConnection "
-#~ "lehetőségekkel."
-
-#~ msgid "Cannot find port forwarding service in the device's description."
-#~ msgstr "Az eszköz leírásában nem található port-átirányítási szolgáltatás."
-
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "A kapcsolat váratlanul megszakadt."
-
-#~ msgid "Timeout occurred"
-#~ msgstr "Időtúllépés"
 
 #~ msgid "Proxy"
 #~ msgstr "Proxy"

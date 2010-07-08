@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
-"PO-Revision-Date: 2010-06-04 20:33+0100\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
+"PO-Revision-Date: 2010-06-22 23:42+0100\n"
 "Last-Translator: Andrew Coles <andrew_coles@yahoo.co.uk>\n"
 "Language-Team: British English <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -156,7 +156,7 @@ msgid "Redirect without a redirect location"
 msgstr "Redirect without a redirect location"
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Timeout contacting tracker %1"
@@ -167,7 +167,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "Unable to resolve hostname %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "Invalid response from tracker"
 
@@ -175,7 +175,7 @@ msgstr "Invalid response from tracker"
 msgid "Invalid data from tracker"
 msgstr "Invalid data from tracker"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "Invalid tracker URL"
 
@@ -470,8 +470,58 @@ msgstr "Disk Input/Output"
 msgid "µTP"
 msgstr "µTP"
 
-#~ msgid "Not enough free disk space for %1"
+#, fuzzy
+#~| msgctxt "Status of a torrent file"
+#~| msgid "Seeding"
+#~ msgid "Superseeding"
+#~ msgstr "Seeding"
+
+#, fuzzy
+#~| msgid "Not enough free disk space for %1"
+#~ msgid "Not enough diskspace"
 #~ msgstr "Not enough free disk space for %1"
+
+#, fuzzy
+#~| msgid "Error writing to %1"
+#~ msgid "Error when writing to disk"
+#~ msgstr "Error writing to %1"
+
+#, fuzzy
+#~| msgid "Error reading from %1"
+#~ msgid "Error when reading from disk"
+#~ msgstr "Error reading from %1"
+
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "Failed to download %1 : %2"
+
+#~ msgid "Error parsing router description."
+#~ msgstr "Error parsing router description."
+
+#~ msgid ""
+#~ "Forwarding failed: \n"
+#~ "Device does not have a WANIPConnection or WANPPPConnection."
+#~ msgstr ""
+#~ "Forwarding failed: \n"
+#~ "Device does not have a WANIPConnection or WANPPPConnection."
+
+#~ msgid "Cannot find port forwarding service in the device's description."
+#~ msgstr "Cannot find port forwarding service in the device's description."
+
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "Connection closed unexpectedly."
+
+#~ msgid "Timeout occurred"
+#~ msgstr "Timeout occurred"
+
+#, fuzzy
+#~| msgid "Document to open"
+#~ msgid "Torrent to open"
+#~ msgstr "Document to open"
+
+#, fuzzy
+#~| msgid "Not in use"
+#~ msgid "Port to use"
+#~ msgstr "Not in use"
 
 #~ msgid "UTP"
 #~ msgstr "UTP"
@@ -1619,31 +1669,6 @@ msgstr "µTP"
 
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "(C) 2009 Joris Guisson"
-
-#~ msgid "Document to open"
-#~ msgstr "Document to open"
-
-#~ msgid "Failed to download %1 : %2"
-#~ msgstr "Failed to download %1 : %2"
-
-#~ msgid "Error parsing router description."
-#~ msgstr "Error parsing router description."
-
-#~ msgid ""
-#~ "Forwarding failed: \n"
-#~ "Device does not have a WANIPConnection or WANPPPConnection."
-#~ msgstr ""
-#~ "Forwarding failed: \n"
-#~ "Device does not have a WANIPConnection or WANPPPConnection."
-
-#~ msgid "Cannot find port forwarding service in the device's description."
-#~ msgstr "Cannot find port forwarding service in the device's description."
-
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "Connection closed unexpectedly."
-
-#~ msgid "Timeout occurred"
-#~ msgstr "Timeout occurred"
 
 #~ msgid "Proxy"
 #~ msgstr "Proxy"
@@ -7508,9 +7533,6 @@ msgstr "µTP"
 
 #~ msgid "Error writing to %1 : %2"
 #~ msgstr "Error writing to %1 : %2"
-
-#~ msgid "Error writing to %1"
-#~ msgstr "Error writing to %1"
 
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"

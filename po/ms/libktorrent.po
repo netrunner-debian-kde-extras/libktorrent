@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2010-05-03 23:38+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -157,7 +157,7 @@ msgid "Redirect without a redirect location"
 msgstr ""
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr ""
@@ -168,7 +168,7 @@ msgid "Unable to resolve hostname %1"
 msgstr ""
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr ""
 
@@ -176,7 +176,7 @@ msgstr ""
 msgid "Invalid data from tracker"
 msgstr ""
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 #, fuzzy
 msgid "Invalid tracker URL"
 msgstr "URL untuk IG"
@@ -482,6 +482,23 @@ msgstr "Masukan/Keluaran Cakera"
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Pending"
+#~ msgid "Superseeding"
+#~ msgstr "Tertangguh"
+
+#, fuzzy
+#~ msgid "Error when reading from disk"
+#~ msgstr "&Lompat ke hiperlink"
+
+#, fuzzy
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "Tidak menjumpai fail comps."
+
+#, fuzzy
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "Sambungan ditutup"
 
 #~ msgid "UTP"
 #~ msgstr "UTP"

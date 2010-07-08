@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2007-12-09 18:13+0200\n"
 "Last-Translator: Darafei Praliaskouski <komzpa@licei2.com>\n"
 "Language-Team: Belarusian <i18n@mova.org>\n"
@@ -160,7 +160,7 @@ msgid "Redirect without a redirect location"
 msgstr ""
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr ""
@@ -171,7 +171,7 @@ msgid "Unable to resolve hostname %1"
 msgstr ""
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr ""
 
@@ -179,7 +179,7 @@ msgstr ""
 msgid "Invalid data from tracker"
 msgstr ""
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 #, fuzzy
 #| msgid "KTorrent"
 msgid "Invalid tracker URL"
@@ -491,6 +491,31 @@ msgstr ""
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Sharing"
+#~ msgid "Superseeding"
+#~ msgstr "Абмен"
+
+#, fuzzy
+#~| msgid "Free disk space:"
+#~ msgid "Not enough diskspace"
+#~ msgstr "Вольнай дыскавай прасторы:"
+
+#, fuzzy
+#~| msgid "Connections"
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "Злучэнні"
+
+#, fuzzy
+#~| msgid "Document to open"
+#~ msgid "Torrent to open"
+#~ msgstr "Адкрыць дакумент"
+
+#, fuzzy
+#~| msgid "Not queued"
+#~ msgid "Port to use"
+#~ msgstr "Не ў чарзе"
 
 #, fuzzy
 #~| msgid "Folders"
@@ -1070,14 +1095,6 @@ msgstr ""
 #~| msgid "Download"
 #~ msgid "KTMagnetDownloader"
 #~ msgstr "Сцягнуць"
-
-#~ msgid "Document to open"
-#~ msgstr "Адкрыць дакумент"
-
-#, fuzzy
-#~| msgid "Connections"
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "Злучэнні"
 
 #, fuzzy
 #~| msgid "Priority"
@@ -2023,9 +2040,6 @@ msgstr ""
 
 #~ msgid "Quit"
 #~ msgstr "Выхад"
-
-#~ msgid "Free disk space:"
-#~ msgstr "Вольнай дыскавай прасторы:"
 
 #, fuzzy
 #~| msgid "Form"
