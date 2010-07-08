@@ -11,7 +11,7 @@ Homepage: http://ktorrent.org/
 Vcs-Git: git://git.debian.org/git/pkg-kde/kde-extras/libktorrent.git
 Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-extras/libktorrent.git;a=summary
 
-Package: libktorrent1
+Package: libktorrent2
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Suggests: libktorrent-l10n
@@ -28,7 +28,7 @@ Description: the KTorrent library for C++ / Qt 4 / KDE Platform
 Package: libktorrent-dev
 Architecture: any
 Section: libdevel
-Depends: libktorrent1 (= ${binary:Version}), ${misc:Depends},
+Depends: libktorrent2 (= ${binary:Version}), ${misc:Depends},
  ${sameVersionDep:libqt4-dev}, ${sameVersionDep:kdelibs5-dev}
 Description: development files for the KTorrent Library
  The KTorrent library is a C++ / Qt 4 / KDE Platform based implementation of
@@ -40,7 +40,7 @@ Description: development files for the KTorrent Library
 Package: libktorrent-l10n
 Architecture: all
 Section: localization
-Depends: libktorrent1 (>= ${source:Version}), ${misc:Depends}
+Depends: libktorrent2 (>= ${source:Version}), ${misc:Depends}
 Description: localization files for the KTorrent library
  The KTorrent library is a C++ / Qt 4 / KDE Platform based implementation of
  the BitTorrent protocol (mostly client side).
@@ -51,7 +51,7 @@ Package: libktorrent-dbg
 Architecture: any
 Section: debug
 Priority: extra
-Depends: libktorrent1 (= ${binary:Version}), ${misc:Depends}
+Depends: libktorrent2 (= ${binary:Version}), ${misc:Depends}
 Description: debugging symbols for the KTorrent library
  The KTorrent library is a C++ / Qt 4 / KDE Platform based implementation of
  the BitTorrent protocol (mostly client side).

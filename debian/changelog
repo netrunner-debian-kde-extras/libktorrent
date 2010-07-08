@@ -1,6 +1,12 @@
 libktorrent (1.0.2-1) UNRELEASED; urgency=low
 
   * New upstream release.
+  * Rename library package to libktorrent2, SONAME has been bumped:
+    - rename references in debian/control;
+    - rename install and symbol files;
+    - bump minver of all symbols to 1.0.2 in the symbol file;
+    - change package name and soname in debian/libktorrent2.symbols;
+    - change file path in debian/libktorrent2.install.
 
  -- Modestas Vainius <modax@debian.org>  Thu, 08 Jul 2010 21:56:46 +0300
 
