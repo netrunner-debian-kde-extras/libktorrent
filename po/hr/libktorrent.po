@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2010-04-16 11:03+0200\n"
 "Last-Translator: Andrej Dundovic <adundovi@gmail.com>\n"
 "Language-Team: Croatian <kde-croatia-list@lists.sourceforge.net>\n"
@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: hr\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 1.0\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
@@ -159,7 +159,7 @@ msgid "Redirect without a redirect location"
 msgstr ""
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr ""
@@ -170,7 +170,7 @@ msgid "Unable to resolve hostname %1"
 msgstr ""
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr ""
 
@@ -178,7 +178,7 @@ msgstr ""
 msgid "Invalid data from tracker"
 msgstr ""
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr ""
 
@@ -475,36 +475,28 @@ msgstr ""
 
 # pmap: =/nom=KTorrent/gen=KTorrenta/dat=KTorrentu/
 # pmap: =/aku=KTorrent/lok=KTorrentu/ins=KTorrentom/_r=m/_b=j/
-#, fuzzy
 #~ msgid "KTorrent"
 #~ msgstr "KTorrent"
 
-#, fuzzy
-#~ msgid "KTMagnetDownloader"
-#~ msgstr "KTMagnetDownloader"
-
-#, fuzzy
 #~ msgid "Document to open"
 #~ msgstr "Dokument za otvoriti"
 
-#, fuzzy
+#~ msgid "KTMagnetDownloader"
+#~ msgstr "KTMagnetDownloader"
+
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"
 #~ msgstr "Andrej Dundović, Marko Dimjašević"
 
-#, fuzzy
 #~ msgctxt "EMAIL OF TRANSLATORS"
 #~ msgid "Your emails"
 #~ msgstr "adundovi@gmail.com, marko@dimjasevic.net"
 
-#, fuzzy
-#~ msgid "Features"
-#~ msgstr "Mogućnosti"
-
-#, fuzzy
 #~ msgid " KiB"
 #~ msgstr " KiB"
 
-#, fuzzy
+#~ msgid "Features"
+#~ msgstr "Mogućnosti"
+
 #~ msgid "Dialog"
 #~ msgstr "Dijalog"

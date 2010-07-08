@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2009-09-22 21:25+0300\n"
 "Last-Translator: Yasen Pramatarov <yasen@lindeas.com>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
@@ -164,7 +164,7 @@ msgid "Redirect without a redirect location"
 msgstr ""
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr ""
@@ -176,7 +176,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "Невъзможно създаване на %1 : %2"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "Невалиден отговор от координиращия сървър"
 
@@ -184,7 +184,7 @@ msgstr "Невалиден отговор от координиращия сър
 msgid "Invalid data from tracker"
 msgstr "Невалидни данни от координиращия сървър"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "Невалиден адрес на координиращия сървър"
 
@@ -521,9 +521,45 @@ msgid "µTP"
 msgstr ""
 
 #, fuzzy
+#~| msgid "Seeding"
+#~ msgid "Superseeding"
+#~ msgstr "Качване"
+
+#, fuzzy
 #~| msgid "Insufficient disk space for %1"
-#~ msgid "Not enough free disk space for %1"
+#~ msgid "Not enough diskspace"
 #~ msgstr "Недостатъчно дисково пространство за %1"
+
+#, fuzzy
+#~| msgid "Error reading from %1"
+#~ msgid "Error when reading from disk"
+#~ msgstr "Грешка при четене от %1"
+
+#, fuzzy
+#~| msgid "Cannot open %1 : %2"
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "Не може да бъде отворен %1: %2"
+
+#, fuzzy
+#~| msgid "Cannot find port forwarding service in the device's description!"
+#~ msgid "Cannot find port forwarding service in the device's description."
+#~ msgstr ""
+#~ "В списъка не може да бъде открито пренасочващо портовете устройство!"
+
+#, fuzzy
+#~| msgid "Connections"
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "Връзки"
+
+#, fuzzy
+#~| msgid "Document to open"
+#~ msgid "Torrent to open"
+#~ msgstr "Документ за отваряне"
+
+#, fuzzy
+#~| msgid "Notice"
+#~ msgid "Port to use"
+#~ msgstr "Бележка"
 
 #~ msgid "Cannot bind to udp port %1 or the 10 following ports."
 #~ msgstr "Няма връзка с UDP порт %1 или следващите 10 порта."
@@ -1625,25 +1661,6 @@ msgstr ""
 #~| msgid "Joris Guisson"
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "Joris Guisson"
-
-#~ msgid "Document to open"
-#~ msgstr "Документ за отваряне"
-
-#, fuzzy
-#~| msgid "Cannot open %1 : %2"
-#~ msgid "Failed to download %1 : %2"
-#~ msgstr "Не може да бъде отворен %1: %2"
-
-#, fuzzy
-#~| msgid "Cannot find port forwarding service in the device's description!"
-#~ msgid "Cannot find port forwarding service in the device's description."
-#~ msgstr ""
-#~ "В списъка не може да бъде открито пренасочващо портовете устройство!"
-
-#, fuzzy
-#~| msgid "Connections"
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "Връзки"
 
 #, fuzzy
 #~| msgid "Port"

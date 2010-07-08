@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2010-01-24 20:25+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: fi <kde-i18n-doc@kde.org>\n"
@@ -154,7 +154,7 @@ msgid "Redirect without a redirect location"
 msgstr "Uudelleenohjaus ilman kohdetta"
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Aikakatkaisu yhdistettäessä seurantapalvelimeen %1"
@@ -165,7 +165,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "Palvelinnimeä %1 ei saatu ratkaistuksi"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "Epäkelpo vastaus seurantapalvelimelta"
 
@@ -173,7 +173,7 @@ msgstr "Epäkelpo vastaus seurantapalvelimelta"
 msgid "Invalid data from tracker"
 msgstr "Epäkelpoa tietoa palvelimelta"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "Epäkelpo palvelimen osoite"
 
@@ -470,9 +470,47 @@ msgid "µTP"
 msgstr ""
 
 #, fuzzy
+#~| msgctxt "Status of a torrent file"
+#~| msgid "Seeding"
+#~ msgid "Superseeding"
+#~ msgstr "Lähetetään"
+
+#, fuzzy
 #~| msgid "Insufficient disk space for %1"
-#~ msgid "Not enough free disk space for %1"
+#~ msgid "Not enough diskspace"
 #~ msgstr "Levytila ei riitä kohteelle %1"
+
+#, fuzzy
+#~| msgid "Error writing to %1"
+#~ msgid "Error when writing to disk"
+#~ msgstr "Virhe kirjoitettaessa kohteeseen %1"
+
+#, fuzzy
+#~| msgid "Error reading from %1"
+#~ msgid "Error when reading from disk"
+#~ msgstr "Virhe luettaessa kohteesta %1"
+
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "Kohteen %1 lataus epäonnistui: %2"
+
+#~ msgid "Cannot find port forwarding service in the device's description."
+#~ msgstr "Portin ohjauspalvelua ei löydy laitteen kuvauksesta."
+
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "Yhteys katkesi odottamatta."
+
+#~ msgid "Timeout occurred"
+#~ msgstr "Tapahtui aikakatkaisu"
+
+#, fuzzy
+#~| msgid "Document to open"
+#~ msgid "Torrent to open"
+#~ msgstr "Avattava asiakirja"
+
+#, fuzzy
+#~| msgid "Not in use"
+#~ msgid "Port to use"
+#~ msgstr "Ei käytössä"
 
 #, fuzzy
 #~| msgid "UDP"
@@ -1606,21 +1644,6 @@ msgstr ""
 
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "(C) 2009 Joris Guisson"
-
-#~ msgid "Document to open"
-#~ msgstr "Avattava asiakirja"
-
-#~ msgid "Failed to download %1 : %2"
-#~ msgstr "Kohteen %1 lataus epäonnistui: %2"
-
-#~ msgid "Cannot find port forwarding service in the device's description."
-#~ msgstr "Portin ohjauspalvelua ei löydy laitteen kuvauksesta."
-
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "Yhteys katkesi odottamatta."
-
-#~ msgid "Timeout occurred"
-#~ msgstr "Tapahtui aikakatkaisu"
 
 #~ msgid "Proxy"
 #~ msgstr "Välityspalvelin"
@@ -6109,9 +6132,6 @@ msgstr ""
 
 #~ msgid "Error writing to %1 : %2"
 #~ msgstr "Virhe kirjoitettaessa kohteeseen %1: %2"
-
-#~ msgid "Error writing to %1"
-#~ msgstr "Virhe kirjoitettaessa kohteeseen %1"
 
 #, fuzzy
 #~ msgid "RSS Plugin"

@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
-"PO-Revision-Date: 2010-05-26 08:40+0300\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
+"PO-Revision-Date: 2010-06-25 14:00+0300\n"
 "Last-Translator: Ozan Çağlayan <ozan@pardus.org.tr>\n"
 "Language-Team: Turkish <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -60,14 +60,14 @@ msgstr "%1 yazmak için açılamadı : Salt okunur dosya sistemi"
 #: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:441
 #, kde-format
 msgid "Attempting to write beyond the maximum size of %1"
-msgstr "%1 dosyasının maksimum boyutunun ötesine  yazılmaya çalışılıyor"
+msgstr "%1'in maksimum boyutunun dışına yazılmaya çalışılıyor"
 
 #: src/diskio/cachefile.cpp:255
 #, kde-format
 msgid ""
 "Cannot expand file %1 : attempting to grow the file beyond the maximum size"
 msgstr ""
-"%1 dosyası genişletilemiyor: dosya maksimum boyutunun ötesine büyütülmeye "
+"%1 dosyası genişletilemiyor: Dosya, maksimum boyutunun dışına büyütülmeye "
 "çalışılıyor"
 
 #: src/diskio/cachefile.cpp:259
@@ -162,7 +162,7 @@ msgid "Redirect without a redirect location"
 msgstr "Bir konum olmadan yeniden yönlendir."
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "%1 izleyicisiyle iletişime geçilirken zaman aşımı"
@@ -173,7 +173,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "%1 makine adı çözümlenemedi"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "İzleyiciden geçersiz yanıt"
 
@@ -181,7 +181,7 @@ msgstr "İzleyiciden geçersiz yanıt"
 msgid "Invalid data from tracker"
 msgstr "İzleyiciden geçersiz veri"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "Geçersiz izleyici adresi"
 
@@ -474,8 +474,43 @@ msgstr "Disk Girişi/Çıkışı"
 msgid "µTP"
 msgstr "µTP"
 
-#~ msgid "Not enough free disk space for %1"
-#~ msgstr "%1 için yetersiz disk alanı"
+#~ msgid "Superseeding"
+#~ msgstr "Superseeding"
+
+#~ msgid "Not enough diskspace"
+#~ msgstr "Yetersiz disk alanı"
+
+#~ msgid "Error when reading from disk"
+#~ msgstr "Diskten okunurken hata oluştu"
+
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "%1 indirilemiyor: %2"
+
+#~ msgid "Error parsing router description."
+#~ msgstr "Yöneltici tanımı ayrıştırma hatası."
+
+#~ msgid ""
+#~ "Forwarding failed: \n"
+#~ "Device does not have a WANIPConnection or WANPPPConnection."
+#~ msgstr ""
+#~ "Yönlendirme başarısız oldu: \n"
+#~ "Aygıt bir WANIPConnection veya WANPPPConnection'a sahip değil."
+
+#~ msgid "Cannot find port forwarding service in the device's description."
+#~ msgstr ""
+#~ "Aygıtın açıklamasında bağlantı kapısı yönlendirme hizmeti bulunamıyor."
+
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "Bağlantı beklenmedik bir biçimde kapatıldı."
+
+#~ msgid "Timeout occurred"
+#~ msgstr "Zamanaşımı oluştu"
+
+#~ msgid "Torrent to open"
+#~ msgstr "Açılacak torrent"
+
+#~ msgid "Port to use"
+#~ msgstr "Kullanılacak port"
 
 #, fuzzy
 #~| msgid "UDP"
@@ -1604,32 +1639,6 @@ msgstr "µTP"
 #~| msgid "Joris Guisson"
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "Joris Guisson"
-
-#~ msgid "Document to open"
-#~ msgstr "Açılacak belge"
-
-#~ msgid "Failed to download %1 : %2"
-#~ msgstr "%1 indirilemiyor: %2"
-
-#~ msgid "Error parsing router description."
-#~ msgstr "Yöneltici tanımı ayrıştırma hatası."
-
-#~ msgid ""
-#~ "Forwarding failed: \n"
-#~ "Device does not have a WANIPConnection or WANPPPConnection."
-#~ msgstr ""
-#~ "Yönlendirme başarısız oldu: \n"
-#~ "Aygıt bir WANIPConnection veya WANPPPConnection'a sahip değil."
-
-#~ msgid "Cannot find port forwarding service in the device's description."
-#~ msgstr ""
-#~ "Aygıtın açıklamasında bağlantı kapısı yönlendirme hizmeti bulunamıyor."
-
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "Bağlantı beklenmedik bir biçimde kapatıldı."
-
-#~ msgid "Timeout occurred"
-#~ msgstr "Zamanaşımı oluştu"
 
 #~ msgid "Proxy"
 #~ msgstr "Vekil Sunucu"
@@ -6482,3 +6491,13 @@ msgstr "µTP"
 
 #~ msgid "Feed %1"
 #~ msgstr "Kaynak %1"
+
+#~ msgid "Error writing to disk, do you have enough diskspace ?"
+#~ msgstr ""
+#~ "Diske yazılamadı, yeterli disk alanına sahip olduğunuzdan emin misiniz?"
+
+#~ msgid "Error when writing to disk"
+#~ msgstr "Diske yazılırken hata oluştu"
+
+#~ msgid "ktcli"
+#~ msgstr "ktcli"

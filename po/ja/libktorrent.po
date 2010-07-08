@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2009-10-31 23:24+0900\n"
 "Last-Translator: Yukiko Bando <ybando@k6.dion.ne.jp>\n"
 "Language-Team: Japanese <Kdeveloper@kde.gr.jp>\n"
@@ -158,7 +158,7 @@ msgid "Redirect without a redirect location"
 msgstr "リダイレクト先なしでリダイレクトされました"
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "トラッカー %1 への接続中にタイムアウト"
@@ -169,7 +169,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "ホスト名 %1 を解決できませんでした"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "トラッカーから無効な応答"
 
@@ -177,7 +177,7 @@ msgstr "トラッカーから無効な応答"
 msgid "Invalid data from tracker"
 msgstr "トラッカーから無効なデータ"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "無効なトラッカー URL"
 
@@ -479,8 +479,3 @@ msgstr "ディスク I/O (入出力)"
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
 msgstr ""
-
-#, fuzzy
-#~| msgid "Insufficient disk space for %1"
-#~ msgid "Not enough free disk space for %1"
-#~ msgstr "<resource>%1</resource> に必要なディスク領域がありません"

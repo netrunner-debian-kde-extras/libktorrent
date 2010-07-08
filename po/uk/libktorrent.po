@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
-"PO-Revision-Date: 2010-05-04 14:00+0300\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
+"PO-Revision-Date: 2010-06-29 08:19+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <translation@linux.org.ua>\n"
 "MIME-Version: 1.0\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n%"
 "10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 1.1\n"
 
 #: src/bcodec/bdecoder.cpp:62
 #, kde-format
@@ -156,7 +156,7 @@ msgid "Redirect without a redirect location"
 msgstr "Переспрямування без зазначення нової адреси"
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Перевищення часу очікування на з’єднання з координатором %1"
@@ -167,7 +167,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "Не вдалося обробити назву вузла %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "Некоректна відповідь координатора"
 
@@ -175,7 +175,7 @@ msgstr "Некоректна відповідь координатора"
 msgid "Invalid data from tracker"
 msgstr "Некоректні дані від координатора"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "Некоректна адреса URL координатора"
 
@@ -476,8 +476,53 @@ msgstr "В/В диска"
 msgid "µTP"
 msgstr "µTP"
 
-#~ msgid "Not enough free disk space for %1"
-#~ msgstr "На диску недостатньо місця для %1"
+#~ msgid "Superseeding"
+#~ msgstr "Суперпоширення"
+
+#~ msgid "Error writing to disk, do you have enough diskspace ?"
+#~ msgstr ""
+#~ "Помилка під час спроби запису на диск. Чи достатньо на ньому вільного "
+#~ "місця?"
+
+#~ msgid "Not enough diskspace"
+#~ msgstr "На диску недостатньо місця"
+
+#~ msgid "Error when writing to disk"
+#~ msgstr "Помилка під час спроби запису на диск"
+
+#~ msgid "Error when reading from disk"
+#~ msgstr "Помилка під час спроби читання з диска"
+
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "Спроба звантаження %1 зазнала невдачі: %2"
+
+#~ msgid "Error parsing router description."
+#~ msgstr "Помилка під час обробки опису маршрутизатора."
+
+#~ msgid ""
+#~ "Forwarding failed: \n"
+#~ "Device does not have a WANIPConnection or WANPPPConnection."
+#~ msgstr ""
+#~ "Спроба переспрямування зазнала невдачі: \n"
+#~ "У пристрою відсутнє WANIPConnection або WANPPPConnection."
+
+#~ msgid "Cannot find port forwarding service in the device's description."
+#~ msgstr "Неможливо знайти службу перенаправлення портів в описі пристрою."
+
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "З'єднання несподівано розірвано."
+
+#~ msgid "Timeout occurred"
+#~ msgstr "Завершився час очікування"
+
+#~ msgid "Torrent to open"
+#~ msgstr "Торент, який слід відкрити"
+
+#~ msgid "Port to use"
+#~ msgstr "Порт, який слід використовувати"
+
+#~ msgid "ktcli"
+#~ msgstr "ktcli"
 
 #~ msgid "UTP"
 #~ msgstr "μTP"

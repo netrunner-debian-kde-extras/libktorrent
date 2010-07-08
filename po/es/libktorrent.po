@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2010-04-29 09:19+0200\n"
 "Last-Translator: Enrique Matias Sanchez (aka Quique) <cronopios@gmail.com>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -161,7 +161,7 @@ msgid "Redirect without a redirect location"
 msgstr "Redirigir sin una ubicación para ello"
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Se superó el tiempo límite para contactar con el localizador %1"
@@ -172,7 +172,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "No fue posible resolver el nombre de máquina %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "Respuesta no válida del localizador"
 
@@ -180,7 +180,7 @@ msgstr "Respuesta no válida del localizador"
 msgid "Invalid data from tracker"
 msgstr "Datos no válidos del localizador"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "URL no válido del localizador"
 
@@ -476,8 +476,55 @@ msgstr "Entrada/Salida de disco"
 msgid "µTP"
 msgstr "µTP"
 
-#~ msgid "Not enough free disk space for %1"
+#, fuzzy
+#~| msgctxt "Status of a torrent file"
+#~| msgid "Seeding"
+#~ msgid "Superseeding"
+#~ msgstr "Sembrando"
+
+#, fuzzy
+#~| msgid "Not enough free disk space for %1"
+#~ msgid "Not enough diskspace"
 #~ msgstr "No hay suficiente espacio en disco para %1"
+
+#, fuzzy
+#~| msgid "Error reading from %1"
+#~ msgid "Error when reading from disk"
+#~ msgstr "Error al leer de %1"
+
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "Fallo al descargar %1: %2"
+
+#~ msgid "Error parsing router description."
+#~ msgstr "Error al analizar la descripción del encaminador."
+
+#~ msgid ""
+#~ "Forwarding failed: \n"
+#~ "Device does not have a WANIPConnection or WANPPPConnection."
+#~ msgstr ""
+#~ "El reenvío ha fallado:\n"
+#~ "El dispositivo no tiene ninguna WANIPConnection ni WANPPPConnection."
+
+#~ msgid "Cannot find port forwarding service in the device's description."
+#~ msgstr ""
+#~ "No es posible encontrar el servicio de redirección de puertos en la "
+#~ "descripción del dispositivo."
+
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "La conexión se ha cerrado inesperadamente."
+
+#~ msgid "Timeout occurred"
+#~ msgstr "Se ha superado el tiempo límite"
+
+#, fuzzy
+#~| msgid "Document to open"
+#~ msgid "Torrent to open"
+#~ msgstr "Documento a abrir"
+
+#, fuzzy
+#~| msgid "Not in use"
+#~ msgid "Port to use"
+#~ msgstr "No en uso"
 
 #~ msgid "UTP"
 #~ msgstr "UTP"
@@ -1638,33 +1685,6 @@ msgstr "µTP"
 
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "(C) 2009 Joris Guisson"
-
-#~ msgid "Document to open"
-#~ msgstr "Documento a abrir"
-
-#~ msgid "Failed to download %1 : %2"
-#~ msgstr "Fallo al descargar %1: %2"
-
-#~ msgid "Error parsing router description."
-#~ msgstr "Error al analizar la descripción del encaminador."
-
-#~ msgid ""
-#~ "Forwarding failed: \n"
-#~ "Device does not have a WANIPConnection or WANPPPConnection."
-#~ msgstr ""
-#~ "El reenvío ha fallado:\n"
-#~ "El dispositivo no tiene ninguna WANIPConnection ni WANPPPConnection."
-
-#~ msgid "Cannot find port forwarding service in the device's description."
-#~ msgstr ""
-#~ "No es posible encontrar el servicio de redirección de puertos en la "
-#~ "descripción del dispositivo."
-
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "La conexión se ha cerrado inesperadamente."
-
-#~ msgid "Timeout occurred"
-#~ msgstr "Se ha superado el tiempo límite"
 
 #~ msgid "Proxy"
 #~ msgstr "Proxy"

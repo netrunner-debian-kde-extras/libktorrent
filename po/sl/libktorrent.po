@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2010-05-06 21:26+0200\n"
 "Last-Translator: Jure Repinc <jlp@holodeck1.com>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -156,7 +156,7 @@ msgid "Redirect without a redirect location"
 msgstr "Preusmeritev brez nove lokacije"
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Čas za povezavo s sledilnikom %1 je potekel"
@@ -167,7 +167,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "Ni moč razrešiti imena gostitelja %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "Neveljaven odziv sledilnika"
 
@@ -175,7 +175,7 @@ msgstr "Neveljaven odziv sledilnika"
 msgid "Invalid data from tracker"
 msgstr "Neveljavni podatki s sledilnika"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "Neveljaven URL sledilnika"
 
@@ -474,8 +474,63 @@ msgstr "Pisanje/branje z diska"
 msgid "µTP"
 msgstr "µTP"
 
-#~ msgid "Not enough free disk space for %1"
+#, fuzzy
+#~| msgctxt "Status of a torrent file"
+#~| msgid "Seeding"
+#~ msgid "Superseeding"
+#~ msgstr "Sejanje"
+
+#, fuzzy
+#~| msgid "Not enough free disk space for %1"
+#~ msgid "Not enough diskspace"
 #~ msgstr "Na disku ni dovolj prostora za %1"
+
+#, fuzzy
+#~| msgid "Error reading from %1"
+#~ msgid "Error when reading from disk"
+#~ msgstr "Napaka pri branju iz %1"
+
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "Ni bilo moč prenesti %1: %2"
+
+#, fuzzy
+#~| msgid "Error parsing router description !"
+#~ msgid "Error parsing router description."
+#~ msgstr "Napaka razčlenjevanja opisa usmerjevalnika."
+
+#, fuzzy
+#~| msgid ""
+#~| "Forwarding failed: \n"
+#~| "Device does not have a WANIPConnection or WANPPPConnection !"
+#~ msgid ""
+#~ "Forwarding failed: \n"
+#~ "Device does not have a WANIPConnection or WANPPPConnection."
+#~ msgstr ""
+#~ "Posredovanje je spodletelo:\n"
+#~ "Naprava nima WANIPConnection ali WANPPPConnection."
+
+#, fuzzy
+#~| msgid "Cannot find port forwarding service in the device's description!"
+#~ msgid "Cannot find port forwarding service in the device's description."
+#~ msgstr "V opisu naprave ni moč najti storitve posredovanja vrat."
+
+#, fuzzy
+#~| msgid "Connection closed unexpectedly !"
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "Povezava je bila nepričakovano prekinjena."
+
+#~ msgid "Timeout occurred"
+#~ msgstr "Čas je potekel"
+
+#, fuzzy
+#~| msgid "Document to open"
+#~ msgid "Torrent to open"
+#~ msgstr "Dokument za odprtje"
+
+#, fuzzy
+#~| msgid "Not in use"
+#~ msgid "Port to use"
+#~ msgstr "Ni v uporabi"
 
 #, fuzzy
 #~| msgid "UDP"
@@ -1694,41 +1749,6 @@ msgstr "µTP"
 #~| msgid "Joris Guisson"
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "Joris Guisson"
-
-#~ msgid "Document to open"
-#~ msgstr "Dokument za odprtje"
-
-#~ msgid "Failed to download %1 : %2"
-#~ msgstr "Ni bilo moč prenesti %1: %2"
-
-#, fuzzy
-#~| msgid "Error parsing router description !"
-#~ msgid "Error parsing router description."
-#~ msgstr "Napaka razčlenjevanja opisa usmerjevalnika."
-
-#, fuzzy
-#~| msgid ""
-#~| "Forwarding failed: \n"
-#~| "Device does not have a WANIPConnection or WANPPPConnection !"
-#~ msgid ""
-#~ "Forwarding failed: \n"
-#~ "Device does not have a WANIPConnection or WANPPPConnection."
-#~ msgstr ""
-#~ "Posredovanje je spodletelo:\n"
-#~ "Naprava nima WANIPConnection ali WANPPPConnection."
-
-#, fuzzy
-#~| msgid "Cannot find port forwarding service in the device's description!"
-#~ msgid "Cannot find port forwarding service in the device's description."
-#~ msgstr "V opisu naprave ni moč najti storitve posredovanja vrat."
-
-#, fuzzy
-#~| msgid "Connection closed unexpectedly !"
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "Povezava je bila nepričakovano prekinjena."
-
-#~ msgid "Timeout occurred"
-#~ msgstr "Čas je potekel"
 
 #~ msgid "Proxy"
 #~ msgstr "Posrednik"

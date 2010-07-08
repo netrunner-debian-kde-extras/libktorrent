@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2009-02-09 13:33+0000\n"
 "Last-Translator: Ni Hui <shuizhuyuanluo@126.com>\n"
 "Language-Team: 简体中文 <kde-china@kde.org>\n"
@@ -162,7 +162,7 @@ msgid "Redirect without a redirect location"
 msgstr "重定向没有新位置！"
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr ""
@@ -173,7 +173,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "无法解析主机名 %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "无效的 tracker 响应"
 
@@ -181,7 +181,7 @@ msgstr "无效的 tracker 响应"
 msgid "Invalid data from tracker"
 msgstr "无效的 tracker 数据"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "无效的 tracker URL"
 
@@ -495,9 +495,61 @@ msgid "µTP"
 msgstr ""
 
 #, fuzzy
+#~| msgid "Seeding"
+#~ msgid "Superseeding"
+#~ msgstr "做种中"
+
+#, fuzzy
 #~| msgid "Insufficient disk space for %1"
-#~ msgid "Not enough free disk space for %1"
+#~ msgid "Not enough diskspace"
 #~ msgstr "可供 %1 使用的磁盘空间不足"
+
+#, fuzzy
+#~| msgid "Error reading from %1"
+#~ msgid "Error when reading from disk"
+#~ msgstr "无法从 %1 读取"
+
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "下载 %1 失败：%2"
+
+#, fuzzy
+#~| msgid "Error parsing router description !"
+#~ msgid "Error parsing router description."
+#~ msgstr "分析路由描述出错！"
+
+#, fuzzy
+#~| msgid ""
+#~| "Forwarding failed: \n"
+#~| "Device does not have a WANIPConnection or WANPPPConnection !"
+#~ msgid ""
+#~ "Forwarding failed: \n"
+#~ "Device does not have a WANIPConnection or WANPPPConnection."
+#~ msgstr ""
+#~ "转发失败：\n"
+#~ "设备没有有线 IP 连接或有线 PPP 连接！"
+
+#, fuzzy
+#~| msgid "Cannot find port forwarding service in the device's description!"
+#~ msgid "Cannot find port forwarding service in the device's description."
+#~ msgstr "无法在设备描述中找到端口转发服务！"
+
+#, fuzzy
+#~| msgid "Connection closed unexpectedly !"
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "未预料的连接关闭！"
+
+#~ msgid "Timeout occurred"
+#~ msgstr "发生超时"
+
+#, fuzzy
+#~| msgid "Document to open"
+#~ msgid "Torrent to open"
+#~ msgstr "要打开的文档"
+
+#, fuzzy
+#~| msgid "Notice"
+#~ msgid "Port to use"
+#~ msgstr "注意"
 
 #, fuzzy
 #~| msgid "UDP"
@@ -1640,41 +1692,6 @@ msgstr ""
 #~| msgid "Joris Guisson"
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "Joris Guisson"
-
-#~ msgid "Document to open"
-#~ msgstr "要打开的文档"
-
-#~ msgid "Failed to download %1 : %2"
-#~ msgstr "下载 %1 失败：%2"
-
-#, fuzzy
-#~| msgid "Error parsing router description !"
-#~ msgid "Error parsing router description."
-#~ msgstr "分析路由描述出错！"
-
-#, fuzzy
-#~| msgid ""
-#~| "Forwarding failed: \n"
-#~| "Device does not have a WANIPConnection or WANPPPConnection !"
-#~ msgid ""
-#~ "Forwarding failed: \n"
-#~ "Device does not have a WANIPConnection or WANPPPConnection."
-#~ msgstr ""
-#~ "转发失败：\n"
-#~ "设备没有有线 IP 连接或有线 PPP 连接！"
-
-#, fuzzy
-#~| msgid "Cannot find port forwarding service in the device's description!"
-#~ msgid "Cannot find port forwarding service in the device's description."
-#~ msgstr "无法在设备描述中找到端口转发服务！"
-
-#, fuzzy
-#~| msgid "Connection closed unexpectedly !"
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "未预料的连接关闭！"
-
-#~ msgid "Timeout occurred"
-#~ msgstr "发生超时"
 
 #~ msgid "Proxy"
 #~ msgstr "代理"

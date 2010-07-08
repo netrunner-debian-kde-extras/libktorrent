@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2009-08-27 22:14+0200\n"
 "Last-Translator: Milan Baša <minkob@mail.t-com.sk>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -163,7 +163,7 @@ msgid "Redirect without a redirect location"
 msgstr "Presmerované bez nového umiestenia !"
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr ""
@@ -174,7 +174,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "Nie je možné rozpoznať meno hostiteľa %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "Neplatná odpoveď od trackeru"
 
@@ -182,7 +182,7 @@ msgstr "Neplatná odpoveď od trackeru"
 msgid "Invalid data from tracker"
 msgstr "Neplatné dáta z trackeru"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "Neplatné URL trackeru"
 
@@ -493,8 +493,3 @@ msgstr "Diskové I/O"
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
 msgstr ""
-
-#, fuzzy
-#~| msgid "Insufficient disk space for %1"
-#~ msgid "Not enough free disk space for %1"
-#~ msgstr "Nedostatek miesta na disku pre %1"

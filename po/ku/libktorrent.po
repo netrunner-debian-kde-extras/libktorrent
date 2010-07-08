@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2008-09-23 17:28+0300\n"
 "Last-Translator: Erdal Ronahi <erdal dot ronahi at gmail dot com>\n"
 "Language-Team: Kurdish <kde-i18n-doc@lists.kde.org>\n"
@@ -173,7 +173,7 @@ msgid "Redirect without a redirect location"
 msgstr ""
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr ""
@@ -184,7 +184,7 @@ msgid "Unable to resolve hostname %1"
 msgstr ""
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr ""
 
@@ -192,7 +192,7 @@ msgstr ""
 msgid "Invalid data from tracker"
 msgstr ""
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr ""
 
@@ -511,6 +511,26 @@ msgid "µTP"
 msgstr ""
 
 #, fuzzy
+#~| msgid "Down Speed"
+#~ msgid "Superseeding"
+#~ msgstr "Leza Daxistinê"
+
+#, fuzzy
+#~| msgid "Cannot read from %1"
+#~ msgid "Error when reading from disk"
+#~ msgstr "Ji %1 nayê xwedin"
+
+#, fuzzy
+#~| msgid "Cannot open %1 : %2"
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "%1 nayê vekirin: %2"
+
+#, fuzzy
+#~| msgid "Document to open"
+#~ msgid "Torrent to open"
+#~ msgstr "Belgeya ku wê vebe"
+
+#, fuzzy
 #~| msgid "Folders"
 #~ msgctxt "plugin name"
 #~ msgid "Scan Folder"
@@ -759,9 +779,6 @@ msgstr ""
 #~| msgid "Downloaded"
 #~ msgid "KTMagnetDownloader"
 #~ msgstr "Hatiye daxistin"
-
-#~ msgid "Document to open"
-#~ msgstr "Belgeya ku wê vebe"
 
 #~ msgid "Network"
 #~ msgstr "Tor"

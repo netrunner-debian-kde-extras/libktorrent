@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent(2)\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2009-07-20 16:52+0300\n"
 "Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -162,7 +162,7 @@ msgid "Redirect without a redirect location"
 msgstr "Redirectare fără o locație nouă ! "
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr ""
@@ -173,7 +173,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "Nu am putut rezolva numele computerului %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "Răspuns invalid de la tracker"
 
@@ -181,7 +181,7 @@ msgstr "Răspuns invalid de la tracker"
 msgid "Invalid data from tracker"
 msgstr "Date invalide de la tracker"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "URL invalid pentru tracker"
 
@@ -499,9 +499,53 @@ msgid "µTP"
 msgstr ""
 
 #, fuzzy
+#~| msgid "Seeding"
+#~ msgid "Superseeding"
+#~ msgstr "Încărcare"
+
+#, fuzzy
 #~| msgid "Insufficient disk space for %1"
-#~ msgid "Not enough free disk space for %1"
+#~ msgid "Not enough diskspace"
 #~ msgstr "Spațiu pe disc insuficient pentru %1"
+
+#, fuzzy
+#~| msgid "Error reading from %1"
+#~ msgid "Error when reading from disk"
+#~ msgstr "Eroare la citirea din %1 "
+
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "Am eșuat la descărcarea %1 : %2"
+
+#~ msgid "Error parsing router description."
+#~ msgstr "Eroare la parcurgerea descrierii ruterului."
+
+#~ msgid ""
+#~ "Forwarding failed: \n"
+#~ "Device does not have a WANIPConnection or WANPPPConnection."
+#~ msgstr ""
+#~ "Eșuare la înaintare: \n"
+#~ "Dispozitivul nu dispune de o conexiune WANIP sau WANPPP."
+
+#~ msgid "Cannot find port forwarding service in the device's description."
+#~ msgstr ""
+#~ "Nu s-a putut găsi serviciul de înaintare porturi în descrierea "
+#~ "dispozitivului."
+
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "Conexiunea s-a închis neașteptat."
+
+#~ msgid "Timeout occurred"
+#~ msgstr "Timpul a expirat"
+
+#, fuzzy
+#~| msgid "Document to open"
+#~ msgid "Torrent to open"
+#~ msgstr "Document de deschis"
+
+#, fuzzy
+#~| msgid "Not in use"
+#~ msgid "Port to use"
+#~ msgstr "Neutilizat"
 
 #, fuzzy
 #~| msgid "UDP"
@@ -1675,33 +1719,6 @@ msgstr ""
 #~| msgid "Joris Guisson"
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "Joris Guisson"
-
-#~ msgid "Document to open"
-#~ msgstr "Document de deschis"
-
-#~ msgid "Failed to download %1 : %2"
-#~ msgstr "Am eșuat la descărcarea %1 : %2"
-
-#~ msgid "Error parsing router description."
-#~ msgstr "Eroare la parcurgerea descrierii ruterului."
-
-#~ msgid ""
-#~ "Forwarding failed: \n"
-#~ "Device does not have a WANIPConnection or WANPPPConnection."
-#~ msgstr ""
-#~ "Eșuare la înaintare: \n"
-#~ "Dispozitivul nu dispune de o conexiune WANIP sau WANPPP."
-
-#~ msgid "Cannot find port forwarding service in the device's description."
-#~ msgstr ""
-#~ "Nu s-a putut găsi serviciul de înaintare porturi în descrierea "
-#~ "dispozitivului."
-
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "Conexiunea s-a închis neașteptat."
-
-#~ msgid "Timeout occurred"
-#~ msgstr "Timpul a expirat"
 
 #~ msgid "Proxy"
 #~ msgstr "Proxy"

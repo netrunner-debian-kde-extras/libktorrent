@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2010-05-06 13:26+0800\n"
 "Last-Translator: Frank Weng (a.k.a. Franklin) <franklin at goodhorse dot idv "
 "dot tw>\n"
@@ -158,7 +158,7 @@ msgid "Redirect without a redirect location"
 msgstr "重新導向，但是沒有給新的位置。"
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "聯繫追蹤器 %1 時發生逾時"
@@ -169,7 +169,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "無法解析主機名稱 %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "追蹤器傳回不合法的回應"
 
@@ -177,7 +177,7 @@ msgstr "追蹤器傳回不合法的回應"
 msgid "Invalid data from tracker"
 msgstr "追蹤器傳回不合法的資料"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "無效的追蹤器 URL"
 
@@ -468,8 +468,53 @@ msgstr "磁碟 I/O"
 msgid "µTP"
 msgstr "µTP"
 
-#~ msgid "Not enough free disk space for %1"
+#, fuzzy
+#~| msgctxt "Status of a torrent file"
+#~| msgid "Seeding"
+#~ msgid "Superseeding"
+#~ msgstr "播種中"
+
+#, fuzzy
+#~| msgid "Not enough free disk space for %1"
+#~ msgid "Not enough diskspace"
 #~ msgstr "%1 上的空間不足夠"
+
+#, fuzzy
+#~| msgid "Error reading from %1"
+#~ msgid "Error when reading from disk"
+#~ msgstr "從 %1 讀取時發生錯誤"
+
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "下載 %1 時失敗：%2"
+
+#~ msgid "Error parsing router description."
+#~ msgstr "剖析路由器描述時發生錯誤。"
+
+#~ msgid ""
+#~ "Forwarding failed: \n"
+#~ "Device does not have a WANIPConnection or WANPPPConnection."
+#~ msgstr ""
+#~ "轉送失敗：\n"
+#~ "裝置沒有 WANIPConnection 或 WANPPPConnection。"
+
+#~ msgid "Cannot find port forwarding service in the device's description."
+#~ msgstr "裝置描述中找不到連接埠轉送服務。"
+
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "連線非預期關閉。"
+
+#~ msgid "Timeout occurred"
+#~ msgstr "發生逾時"
+
+#, fuzzy
+#~| msgid "Document to open"
+#~ msgid "Torrent to open"
+#~ msgstr "要開啟的檔案"
+
+#, fuzzy
+#~| msgid "Not in use"
+#~ msgid "Port to use"
+#~ msgstr "不在使用中"
 
 #~ msgid "UTP"
 #~ msgstr "UTP"
@@ -1591,31 +1636,6 @@ msgstr "µTP"
 
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "(C) 2009 Joris Guisson"
-
-#~ msgid "Document to open"
-#~ msgstr "要開啟的檔案"
-
-#~ msgid "Failed to download %1 : %2"
-#~ msgstr "下載 %1 時失敗：%2"
-
-#~ msgid "Error parsing router description."
-#~ msgstr "剖析路由器描述時發生錯誤。"
-
-#~ msgid ""
-#~ "Forwarding failed: \n"
-#~ "Device does not have a WANIPConnection or WANPPPConnection."
-#~ msgstr ""
-#~ "轉送失敗：\n"
-#~ "裝置沒有 WANIPConnection 或 WANPPPConnection。"
-
-#~ msgid "Cannot find port forwarding service in the device's description."
-#~ msgstr "裝置描述中找不到連接埠轉送服務。"
-
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "連線非預期關閉。"
-
-#~ msgid "Timeout occurred"
-#~ msgstr "發生逾時"
 
 #~ msgid "Proxy"
 #~ msgstr "代理伺服器"

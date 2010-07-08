@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2010-05-14 16:13+0200\n"
 "Last-Translator: Nicola Ruggero <nicola@nxnt.org>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -155,7 +155,7 @@ msgid "Redirect without a redirect location"
 msgstr "Rediretto senza una nuova destinazione"
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Tempo scaduto contattando il server traccia %1"
@@ -166,7 +166,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "Impossibile risolvere il nome host %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "Risposta non valida dal server traccia"
 
@@ -174,7 +174,7 @@ msgstr "Risposta non valida dal server traccia"
 msgid "Invalid data from tracker"
 msgstr "Dati non validi dal server traccia"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "URL del server traccia non valido"
 
@@ -470,8 +470,65 @@ msgstr "Input/Output disco"
 msgid "µTP"
 msgstr "µTP"
 
-#~ msgid "Not enough free disk space for %1"
+#, fuzzy
+#~| msgctxt "Status of a torrent file"
+#~| msgid "Seeding"
+#~ msgid "Superseeding"
+#~ msgstr "Distribuzione seme"
+
+#, fuzzy
+#~| msgid "Not enough free disk space for %1"
+#~ msgid "Not enough diskspace"
 #~ msgstr "Spazio su disco insufficiente per %1"
+
+#, fuzzy
+#~| msgid "Error reading from %1"
+#~ msgid "Error when reading from disk"
+#~ msgstr "Errore durante la lettura di %1"
+
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "Impossibile scaricare %1 : %2"
+
+#, fuzzy
+#~| msgid "Error parsing router description !"
+#~ msgid "Error parsing router description."
+#~ msgstr "Errore durante l'analisi della descrizione del router!"
+
+#, fuzzy
+#~| msgid ""
+#~| "Forwarding failed: \n"
+#~| "Device does not have a WANIPConnection or WANPPPConnection !"
+#~ msgid ""
+#~ "Forwarding failed: \n"
+#~ "Device does not have a WANIPConnection or WANPPPConnection."
+#~ msgstr ""
+#~ "Mappatura non riuscita: \n"
+#~ "Il dispositivo non ha una connessione WAN IP o WAN PPP!"
+
+#, fuzzy
+#~| msgid "Cannot find port forwarding service in the device's description!"
+#~ msgid "Cannot find port forwarding service in the device's description."
+#~ msgstr ""
+#~ "Impossibile trovare il servizio di mappatura porte nella descrizione del "
+#~ "dispositivo!"
+
+#, fuzzy
+#~| msgid "Connection closed unexpectedly !"
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "Connessione chiusa inaspettatamente!"
+
+#~ msgid "Timeout occurred"
+#~ msgstr "Tempo scaduto"
+
+#, fuzzy
+#~| msgid "Document to open"
+#~ msgid "Torrent to open"
+#~ msgstr "Documento da aprire"
+
+#, fuzzy
+#~| msgid "Not in use"
+#~ msgid "Port to use"
+#~ msgstr "Non in uso"
 
 #, fuzzy
 #~| msgid "UDP"
@@ -1685,43 +1742,6 @@ msgstr "µTP"
 #~| msgid "Joris Guisson"
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "Joris Guisson"
-
-#~ msgid "Document to open"
-#~ msgstr "Documento da aprire"
-
-#~ msgid "Failed to download %1 : %2"
-#~ msgstr "Impossibile scaricare %1 : %2"
-
-#, fuzzy
-#~| msgid "Error parsing router description !"
-#~ msgid "Error parsing router description."
-#~ msgstr "Errore durante l'analisi della descrizione del router!"
-
-#, fuzzy
-#~| msgid ""
-#~| "Forwarding failed: \n"
-#~| "Device does not have a WANIPConnection or WANPPPConnection !"
-#~ msgid ""
-#~ "Forwarding failed: \n"
-#~ "Device does not have a WANIPConnection or WANPPPConnection."
-#~ msgstr ""
-#~ "Mappatura non riuscita: \n"
-#~ "Il dispositivo non ha una connessione WAN IP o WAN PPP!"
-
-#, fuzzy
-#~| msgid "Cannot find port forwarding service in the device's description!"
-#~ msgid "Cannot find port forwarding service in the device's description."
-#~ msgstr ""
-#~ "Impossibile trovare il servizio di mappatura porte nella descrizione del "
-#~ "dispositivo!"
-
-#, fuzzy
-#~| msgid "Connection closed unexpectedly !"
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "Connessione chiusa inaspettatamente!"
-
-#~ msgid "Timeout occurred"
-#~ msgstr "Tempo scaduto"
 
 #~ msgid "Proxy"
 #~ msgstr "Proxy"

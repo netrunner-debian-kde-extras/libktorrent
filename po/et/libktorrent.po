@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2010-05-17 17:31+0300\n"
 "Last-Translator: Marek Laane <bald@smail.ee>\n"
 "Language-Team: Estonian <kde-et@linux.ee>\n"
@@ -155,7 +155,7 @@ msgid "Redirect without a redirect location"
 msgstr "Ümbersuunamine ilma uue asukohata"
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Ajaületus ühendumisel tracker'iga %1"
@@ -166,7 +166,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "%1 masinanime lahendamine nurjus"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "Vigane vastus tracker'ist"
 
@@ -174,7 +174,7 @@ msgstr "Vigane vastus tracker'ist"
 msgid "Invalid data from tracker"
 msgstr "Vigased andmed tracker'ist"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "Vigane tracker'i URL"
 
@@ -469,8 +469,53 @@ msgstr "Ketta sisedn/väljund"
 msgid "µTP"
 msgstr "µTP"
 
-#~ msgid "Not enough free disk space for %1"
+#, fuzzy
+#~| msgctxt "Status of a torrent file"
+#~| msgid "Seeding"
+#~ msgid "Superseeding"
+#~ msgstr "Levitamine"
+
+#, fuzzy
+#~| msgid "Not enough free disk space for %1"
+#~ msgid "Not enough diskspace"
 #~ msgstr "%1 jaoks napib kettaruumi"
+
+#, fuzzy
+#~| msgid "Error reading from %1"
+#~ msgid "Error when reading from disk"
+#~ msgstr "Viga %1 lugemisel"
+
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "%1 allalaadimine nurjus: %2"
+
+#~ msgid "Error parsing router description."
+#~ msgstr "Viga ruuteri kirjelduse parsimisel."
+
+#~ msgid ""
+#~ "Forwarding failed: \n"
+#~ "Device does not have a WANIPConnection or WANPPPConnection."
+#~ msgstr ""
+#~ "Edasisuunamine nurjus:\n"
+#~ "Seadmel puudub WANIPConnection või WANPPPConnection."
+
+#~ msgid "Cannot find port forwarding service in the device's description."
+#~ msgstr "Seadme pakutavate teenuste hulgas pole pordi edasisuunamist."
+
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "Ühendus suleti ootamatult."
+
+#~ msgid "Timeout occurred"
+#~ msgstr "Tekkis ajaületus"
+
+#, fuzzy
+#~| msgid "Document to open"
+#~ msgid "Torrent to open"
+#~ msgstr "Avatav dokument"
+
+#, fuzzy
+#~| msgid "Not in use"
+#~ msgid "Port to use"
+#~ msgstr "Pole kasutusel"
 
 #, fuzzy
 #~| msgid "UDP"
@@ -1619,31 +1664,6 @@ msgstr "µTP"
 
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "(C) 2009: Joris Guisson"
-
-#~ msgid "Document to open"
-#~ msgstr "Avatav dokument"
-
-#~ msgid "Failed to download %1 : %2"
-#~ msgstr "%1 allalaadimine nurjus: %2"
-
-#~ msgid "Error parsing router description."
-#~ msgstr "Viga ruuteri kirjelduse parsimisel."
-
-#~ msgid ""
-#~ "Forwarding failed: \n"
-#~ "Device does not have a WANIPConnection or WANPPPConnection."
-#~ msgstr ""
-#~ "Edasisuunamine nurjus:\n"
-#~ "Seadmel puudub WANIPConnection või WANPPPConnection."
-
-#~ msgid "Cannot find port forwarding service in the device's description."
-#~ msgstr "Seadme pakutavate teenuste hulgas pole pordi edasisuunamist."
-
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "Ühendus suleti ootamatult."
-
-#~ msgid "Timeout occurred"
-#~ msgstr "Tekkis ajaületus"
 
 #~ msgid "Proxy"
 #~ msgstr "Puhverserver"

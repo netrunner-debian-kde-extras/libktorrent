@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2008-08-05 22:26+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -157,7 +157,7 @@ msgid "Redirect without a redirect location"
 msgstr ""
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr ""
@@ -168,7 +168,7 @@ msgid "Unable to resolve hostname %1"
 msgstr ""
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr ""
 
@@ -176,7 +176,7 @@ msgstr ""
 msgid "Invalid data from tracker"
 msgstr ""
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 #, fuzzy
 #| msgctxt "Preview available"
 #| msgid "Available"
@@ -491,6 +491,26 @@ msgstr ""
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Speed"
+#~ msgid "Superseeding"
+#~ msgstr "Velocitat"
+
+#, fuzzy
+#~| msgid "Downloaded"
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "Descargat"
+
+#, fuzzy
+#~| msgid "Connections"
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "Connexions"
+
+#, fuzzy
+#~| msgid "Document to open"
+#~ msgid "Torrent to open"
+#~ msgstr "Document a dobrir"
 
 #, fuzzy
 #~| msgid "Folders"
@@ -1015,14 +1035,6 @@ msgstr ""
 #~ msgid "KTMagnetDownloader"
 #~ msgstr "Descargat"
 
-#~ msgid "Document to open"
-#~ msgstr "Document a dobrir"
-
-#, fuzzy
-#~| msgid "Connections"
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "Connexions"
-
 #~ msgid "Proxy"
 #~ msgstr "Proxy"
 
@@ -1542,11 +1554,6 @@ msgstr ""
 #~| msgid "Add Folder"
 #~ msgid "Description:"
 #~ msgstr "Apondre un repertòri"
-
-#, fuzzy
-#~| msgid "Downloaded"
-#~ msgid "File download order for:"
-#~ msgstr "Descargat"
 
 #~ msgid "&Remove"
 #~ msgstr "&Suprimir "

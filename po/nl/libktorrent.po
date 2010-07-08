@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
-"PO-Revision-Date: 2010-05-10 10:21+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
+"PO-Revision-Date: 2010-06-29 22:30+0200\n"
 "Last-Translator: Freek de Kruijf <f.de.kruijf@gmail.com>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -160,7 +160,7 @@ msgid "Redirect without a redirect location"
 msgstr "Verwijzen zonder een verwijzingslocatie"
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Timeout bij contact maken met tracker %1"
@@ -171,7 +171,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "Kon hostnaam %1 niet herleiden"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "Ongeldig antwoord van tracker"
 
@@ -179,7 +179,7 @@ msgstr "Ongeldig antwoord van tracker"
 msgid "Invalid data from tracker"
 msgstr "Onjuiste gegevens verkregen van tracker"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "Ongeldig URL-adres voor tracker"
 
@@ -476,8 +476,59 @@ msgstr "Schijf Invoer/Uitvoer"
 msgid "µTP"
 msgstr "µTP"
 
-#~ msgid "Not enough free disk space for %1"
-#~ msgstr "Onvoldoende vrije schijfruimte voor %1"
+#~| msgctxt "Status of a torrent file"
+#~| msgid "Seeding"
+#~ msgid "Superseeding"
+#~ msgstr "Superseeding"
+
+#~ msgid "Error writing to disk, do you have enough diskspace ?"
+#~ msgstr "Fout bij schrijven naar schijf, hebt u genoeg schijfruimte?"
+
+#~| msgid "Not enough free disk space for %1"
+#~ msgid "Not enough diskspace"
+#~ msgstr "Onvoldoende schijfruimte"
+
+#~ msgid "Error when writing to disk"
+#~ msgstr "Fout bij schrijven naar schijf"
+
+#~| msgid "Error reading from %1"
+#~ msgid "Error when reading from disk"
+#~ msgstr "Fout bij het lezen van schijf"
+
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "Gefaald %1 te downloaden : %2"
+
+#~ msgid "Error parsing router description."
+#~ msgstr "Fout bij het ontleden van de routerbeschrijving."
+
+#~ msgid ""
+#~ "Forwarding failed: \n"
+#~ "Device does not have a WANIPConnection or WANPPPConnection."
+#~ msgstr ""
+#~ "Doorsturen is mislukt: \n"
+#~ "Apparaat heeft geen WANIPConnectie of WANPPPConnectie."
+
+#~ msgid "Cannot find port forwarding service in the device's description."
+#~ msgstr ""
+#~ "Kan geen voorziening voor poortdoorsturing in de apparaatomschrijving "
+#~ "vinden."
+
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "Verbinding onverwacht gesloten."
+
+#~ msgid "Timeout occurred"
+#~ msgstr "Tijdslimiet plaatsgevonden"
+
+#~| msgid "Document to open"
+#~ msgid "Torrent to open"
+#~ msgstr "Te openen torrent"
+
+#~| msgid "Not in use"
+#~ msgid "Port to use"
+#~ msgstr "Te gebruiken poort"
+
+#~ msgid "ktcli"
+#~ msgstr "ktcli"
 
 #~ msgid "UTP"
 #~ msgstr "UTP"
@@ -1668,33 +1719,6 @@ msgstr "µTP"
 #~| msgid "Joris Guisson"
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "Joris Guisson"
-
-#~ msgid "Document to open"
-#~ msgstr "Te openen document"
-
-#~ msgid "Failed to download %1 : %2"
-#~ msgstr "Gefaald %1 te downloaden : %2"
-
-#~ msgid "Error parsing router description."
-#~ msgstr "Fout bij het ontleden van de routerbeschrijving."
-
-#~ msgid ""
-#~ "Forwarding failed: \n"
-#~ "Device does not have a WANIPConnection or WANPPPConnection."
-#~ msgstr ""
-#~ "Doorsturen is mislukt: \n"
-#~ "Apparaat heeft geen WANIPConnectie of WANPPPConnectie."
-
-#~ msgid "Cannot find port forwarding service in the device's description."
-#~ msgstr ""
-#~ "Kan geen voorziening voor poortdoorsturing in de apparaatomschrijving "
-#~ "vinden."
-
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "Verbinding onverwacht gesloten."
-
-#~ msgid "Timeout occurred"
-#~ msgstr "Tijdslimiet plaatsgevonden"
 
 #~ msgid "Proxy"
 #~ msgstr "Proxy"

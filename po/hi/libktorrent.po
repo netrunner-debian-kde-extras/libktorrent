@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2008-03-30 16:43+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@yahoo.com>\n"
 "Language-Team: Hindi <indlinux-hindi@lists.sourceforge.net>\n"
@@ -165,7 +165,7 @@ msgid "Redirect without a redirect location"
 msgstr ""
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr ""
@@ -176,7 +176,7 @@ msgid "Unable to resolve hostname %1"
 msgstr ""
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr ""
 
@@ -186,7 +186,7 @@ msgstr ""
 msgid "Invalid data from tracker"
 msgstr "अवैध यूआरएल: %1"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 #, fuzzy
 #| msgid "Invalid URL: %1"
 msgid "Invalid tracker URL"
@@ -513,6 +513,41 @@ msgstr ""
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Speed"
+#~ msgid "Superseeding"
+#~ msgstr "गति"
+
+#, fuzzy
+#~| msgid "Free disk space:"
+#~ msgid "Not enough diskspace"
+#~ msgstr "डिस्क में खाली जगहः"
+
+#, fuzzy
+#~| msgid "Error reading from %1"
+#~ msgid "Error when reading from disk"
+#~ msgstr "%1 से पढ़ने में त्रुटि"
+
+#, fuzzy
+#~| msgid "Cannot create %1: %2"
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "बना नहीं सकता %1: %2"
+
+#, fuzzy
+#~| msgid "Connections"
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "कनेक्शन्स"
+
+#, fuzzy
+#~| msgid "Document to open"
+#~ msgid "Torrent to open"
+#~ msgstr "दस्तावेज़ जिसे खोलना है"
+
+#, fuzzy
+#~| msgid "Notice"
+#~ msgid "Port to use"
+#~ msgstr "सूचना"
 
 #, fuzzy
 #~| msgid "UDP"
@@ -1056,14 +1091,6 @@ msgstr ""
 #~| msgid "Downloaded:"
 #~ msgid "KTMagnetDownloader"
 #~ msgstr "डाउनलोडेड:"
-
-#~ msgid "Document to open"
-#~ msgstr "दस्तावेज़ जिसे खोलना है"
-
-#, fuzzy
-#~| msgid "Connections"
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "कनेक्शन्स"
 
 #~ msgid "Proxy"
 #~ msgstr "प्रॉक्सी"
@@ -2071,9 +2098,6 @@ msgstr ""
 
 #~ msgid "Quit"
 #~ msgstr "बाहर जाएँ"
-
-#~ msgid "Free disk space:"
-#~ msgstr "डिस्क में खाली जगहः"
 
 #, fuzzy
 #~| msgid "From:"

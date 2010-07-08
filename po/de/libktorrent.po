@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2010-04-10 13:49+0200\n"
 "Last-Translator: Jannick Kuhr <opensource@kuhr.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -162,7 +162,7 @@ msgid "Redirect without a redirect location"
 msgstr "Umleitung ohne Zieladresse"
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Zeitüberschreitung beim Verbinden mit dem Tracker %1"
@@ -173,7 +173,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "Der Rechnername %1 wurde nicht gefunden"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "Ungültige Antwort vom Tracker"
 
@@ -181,7 +181,7 @@ msgstr "Ungültige Antwort vom Tracker"
 msgid "Invalid data from tracker"
 msgstr "Ungültige Daten vom Tracker"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "Ungültige Tracker-Adresse"
 
@@ -479,8 +479,60 @@ msgstr "Disk-Eingabe/Ausgabe"
 msgid "µTP"
 msgstr "µTP"
 
-#~ msgid "Not enough free disk space for %1"
+#, fuzzy
+#~| msgctxt "Status of a torrent file"
+#~| msgid "Seeding"
+#~ msgid "Superseeding"
+#~ msgstr "Hochladen"
+
+#, fuzzy
+#~| msgid "Not enough free disk space for %1"
+#~ msgid "Not enough diskspace"
 #~ msgstr "Nicht ausreichend freier Speicherplatz für %1"
+
+#, fuzzy
+#~| msgid "Error writing to %1"
+#~ msgid "Error when writing to disk"
+#~ msgstr "Fehler beim Schreiben der Datei %1"
+
+#, fuzzy
+#~| msgid "Error reading from %1"
+#~ msgid "Error when reading from disk"
+#~ msgstr "Fehler beim Lesen der Datei %1"
+
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "%1 lässt sich nicht herunterladen: %2"
+
+#~ msgid "Error parsing router description."
+#~ msgstr "Fehler beim Einlesen der Router-Beschreibung."
+
+#~ msgid ""
+#~ "Forwarding failed: \n"
+#~ "Device does not have a WANIPConnection or WANPPPConnection."
+#~ msgstr ""
+#~ "Weiterleitung fehlgeschlagen: \n"
+#~ "Das Gerät hat keine WANIP- oder WANPPP-Verbindung."
+
+#~ msgid "Cannot find port forwarding service in the device's description."
+#~ msgstr ""
+#~ "In der Beschreibung des Geräts kann kein Dienst für das Weiterleiten von "
+#~ "Ports gefunden werden."
+
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "Die Verbindung wurde unerwartet beendet."
+
+#~ msgid "Timeout occurred"
+#~ msgstr "Wartezeit überschritten"
+
+#, fuzzy
+#~| msgid "Document to open"
+#~ msgid "Torrent to open"
+#~ msgstr "Zu öffnendes Dokument"
+
+#, fuzzy
+#~| msgid "Not in use"
+#~ msgid "Port to use"
+#~ msgstr "Nicht in Benutzung"
 
 #~ msgid "UTP"
 #~ msgstr "UTP"
@@ -1656,33 +1708,6 @@ msgstr "µTP"
 
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "Copyright © 2009 Joris Guisson"
-
-#~ msgid "Document to open"
-#~ msgstr "Zu öffnendes Dokument"
-
-#~ msgid "Failed to download %1 : %2"
-#~ msgstr "%1 lässt sich nicht herunterladen: %2"
-
-#~ msgid "Error parsing router description."
-#~ msgstr "Fehler beim Einlesen der Router-Beschreibung."
-
-#~ msgid ""
-#~ "Forwarding failed: \n"
-#~ "Device does not have a WANIPConnection or WANPPPConnection."
-#~ msgstr ""
-#~ "Weiterleitung fehlgeschlagen: \n"
-#~ "Das Gerät hat keine WANIP- oder WANPPP-Verbindung."
-
-#~ msgid "Cannot find port forwarding service in the device's description."
-#~ msgstr ""
-#~ "In der Beschreibung des Geräts kann kein Dienst für das Weiterleiten von "
-#~ "Ports gefunden werden."
-
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "Die Verbindung wurde unerwartet beendet."
-
-#~ msgid "Timeout occurred"
-#~ msgstr "Wartezeit überschritten"
 
 #~ msgid "Proxy"
 #~ msgstr "Proxy"
@@ -7546,9 +7571,6 @@ msgstr "µTP"
 
 #~ msgid "Error writing to %1 : %2"
 #~ msgstr "Fehler beim Schreiben der Datei %1: %2"
-
-#~ msgid "Error writing to %1"
-#~ msgstr "Fehler beim Schreiben der Datei %1"
 
 #~ msgid "No incoming connections (possibly firewalled)"
 #~ msgstr ""

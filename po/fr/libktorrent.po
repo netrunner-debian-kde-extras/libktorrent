@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2010-04-16 00:08+0200\n"
 "Last-Translator: Joëlle Cornavin <jcornavin@laposte.net>\n"
 "Language-Team: Français <kde-francophone@kde.org>\n"
@@ -191,7 +191,7 @@ msgid "Redirect without a redirect location"
 msgstr "Rediriger sans un emplacement de redirection"
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Temps imparti dépassé pour contacter le traqueur %1"
@@ -202,7 +202,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "Impossible de résoudre le nom d'hôte %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "Réponse du traqueur non valable"
 
@@ -210,7 +210,7 @@ msgstr "Réponse du traqueur non valable"
 msgid "Invalid data from tracker"
 msgstr "Données non valables venant du traqueur"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "URL du traqueur mal formée"
 
@@ -534,8 +534,43 @@ msgstr "Entrée/Sortie du disque"
 msgid "µTP"
 msgstr ""
 
-#~ msgid "Not enough free disk space for %1"
+#, fuzzy
+#~| msgctxt "Status of a torrent file"
+#~| msgid "Seeding"
+#~ msgid "Superseeding"
+#~ msgstr "Ensemencement"
+
+#, fuzzy
+#~| msgid "Not enough free disk space for %1"
+#~ msgid "Not enough diskspace"
 #~ msgstr "Pas assez d'espace disque libre pour %1"
+
+#, fuzzy
+#~| msgid "Error reading from %1"
+#~ msgid "Error when reading from disk"
+#~ msgstr "Erreur de lecture depuis %1"
+
+# unreviewed-context
+#, fuzzy
+#~| msgid "Failed to open %1 : %2"
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "Impossible d'ouvrir %1 : %2"
+
+#, fuzzy
+#~| msgid "Connection closed"
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "Connexion fermée"
+
+# unreviewed-context
+#, fuzzy
+#~| msgid "Torrent is incomplete."
+#~ msgid "Torrent to open"
+#~ msgstr "Le torrent est incomplet."
+
+#, fuzzy
+#~| msgid "Not in use"
+#~ msgid "Port to use"
+#~ msgstr "Non utilisé"
 
 #~ msgid "UTP"
 #~ msgstr "UTP"

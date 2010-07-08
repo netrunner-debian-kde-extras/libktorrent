@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extragear-network/ktorrent.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2007-08-07 07:02-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -154,7 +154,7 @@ msgid "Redirect without a redirect location"
 msgstr "Atreorú gan suíomh atreoraithe"
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Thar am ag dul i dteagmháil le lorgaire %1"
@@ -165,7 +165,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "Ní féidir óstainm %1 a réiteach"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "Freagra neamhbhailí ó lorgaire"
 
@@ -173,7 +173,7 @@ msgstr "Freagra neamhbhailí ó lorgaire"
 msgid "Invalid data from tracker"
 msgstr "Sonraí neamhbhailí ó lorgaire"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "URL neamhbhailí ar an lorgaire"
 
@@ -474,8 +474,47 @@ msgstr "Ionchur/Aschur Diosca"
 msgid "µTP"
 msgstr "µTP"
 
-#~ msgid "Not enough free disk space for %1"
+#, fuzzy
+#~| msgctxt "Status of a torrent file"
+#~| msgid "Seeding"
+#~ msgid "Superseeding"
+#~ msgstr "Á Shíolú"
+
+#, fuzzy
+#~| msgid "Not enough free disk space for %1"
+#~ msgid "Not enough diskspace"
 #~ msgstr "Easpa spáis diosca le haghaidh %1"
+
+#, fuzzy
+#~| msgid "Error writing to %1"
+#~ msgid "Error when writing to disk"
+#~ msgstr "Earráid agus %1 á scriobh"
+
+#, fuzzy
+#~| msgid "Error reading from %1"
+#~ msgid "Error when reading from disk"
+#~ msgstr "Earráid agus %1 á léamh"
+
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "Níorbh fhéidir %1 a íosluchtú: %2"
+
+#~ msgid "Cannot find port forwarding service in the device's description."
+#~ msgstr ""
+#~ "Ní féidir seirbhís a chuireann poirt ar aghaidh a aimsiú i gcur síos an "
+#~ "ghléis."
+
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "Dúnadh an ceangal gan súil leis."
+
+#, fuzzy
+#~| msgid "Document to open"
+#~ msgid "Torrent to open"
+#~ msgstr "Cáipéis le hoscailt"
+
+#, fuzzy
+#~| msgid "Not in use"
+#~ msgid "Port to use"
+#~ msgstr "Gan úsáid"
 
 #~ msgid "UTP"
 #~ msgstr "UTP"
@@ -1220,20 +1259,6 @@ msgstr "µTP"
 
 #~ msgid "(C) 2005 - 2007 Joris Guisson and Ivan Vasic"
 #~ msgstr "© 2005 - 2007 Joris Guisson and Ivan Vasic"
-
-#~ msgid "Document to open"
-#~ msgstr "Cáipéis le hoscailt"
-
-#~ msgid "Failed to download %1 : %2"
-#~ msgstr "Níorbh fhéidir %1 a íosluchtú: %2"
-
-#~ msgid "Cannot find port forwarding service in the device's description."
-#~ msgstr ""
-#~ "Ní féidir seirbhís a chuireann poirt ar aghaidh a aimsiú i gcur síos an "
-#~ "ghléis."
-
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "Dúnadh an ceangal gan súil leis."
 
 #~ msgid "Proxy"
 #~ msgstr "Seachfhreastalaí"
@@ -4429,9 +4454,6 @@ msgstr "µTP"
 
 #~ msgid "Error writing to %1 : %2"
 #~ msgstr "Earráid agus %1 á scriobh: %2"
-
-#~ msgid "Error writing to %1"
-#~ msgstr "Earráid agus %1 á scriobh"
 
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"

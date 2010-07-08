@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
 "PO-Revision-Date: 2010-05-24 19:25+0400\n"
 "Last-Translator: Alexander Potashev <aspotashev@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -160,7 +160,7 @@ msgid "Redirect without a redirect location"
 msgstr "Перенаправление без указания расположения."
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Задержка соединения с трекером %1"
@@ -171,7 +171,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "Невозможно определить имя сервера %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "Недопустимый ответ от трекера"
 
@@ -179,7 +179,7 @@ msgstr "Недопустимый ответ от трекера"
 msgid "Invalid data from tracker"
 msgstr "Недопустимые данные от трекера"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "Неправильный URL торрента"
 
@@ -476,9 +476,57 @@ msgid "µTP"
 msgstr "µTP"
 
 #, fuzzy
+#~| msgctxt "Status of a torrent file"
+#~| msgid "Seeding"
+#~ msgid "Superseeding"
+#~ msgstr "Раздача"
+
+#, fuzzy
 #~| msgid "Insufficient disk space for %1"
-#~ msgid "Not enough free disk space for %1"
+#~ msgid "Not enough diskspace"
 #~ msgstr "Недостаточно дискового пространства для %1"
+
+#, fuzzy
+#~| msgid "Error writing to %1"
+#~ msgid "Error when writing to disk"
+#~ msgstr "Ошибка записи в %1"
+
+#, fuzzy
+#~| msgid "Error reading from %1"
+#~ msgid "Error when reading from disk"
+#~ msgstr "Ошибка чтения из %1"
+
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "Не удалось загрузить %1: %2"
+
+#~ msgid "Error parsing router description."
+#~ msgstr "Ошибка обработки описания маршрутизации."
+
+#~ msgid ""
+#~ "Forwarding failed: \n"
+#~ "Device does not have a WANIPConnection or WANPPPConnection."
+#~ msgstr ""
+#~ "Ошибка перенаправления:\n"
+#~ "Устройство не поддерживает соединения WANIP или WANPPP."
+
+#~ msgid "Cannot find port forwarding service in the device's description."
+#~ msgstr "Не удалось найти службу транслирования в описании устройства."
+
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "Соединение было неожиданно закрыто."
+
+#~ msgid "Timeout occurred"
+#~ msgstr "Время истекло"
+
+#, fuzzy
+#~| msgid "Document to open"
+#~ msgid "Torrent to open"
+#~ msgstr "Открываемый документ"
+
+#, fuzzy
+#~| msgid "Not in use"
+#~ msgid "Port to use"
+#~ msgstr "Не используется"
 
 #, fuzzy
 #~| msgid "UDP"
@@ -1626,31 +1674,6 @@ msgstr "µTP"
 
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "© Joris Guisson, 2009"
-
-#~ msgid "Document to open"
-#~ msgstr "Открываемый документ"
-
-#~ msgid "Failed to download %1 : %2"
-#~ msgstr "Не удалось загрузить %1: %2"
-
-#~ msgid "Error parsing router description."
-#~ msgstr "Ошибка обработки описания маршрутизации."
-
-#~ msgid ""
-#~ "Forwarding failed: \n"
-#~ "Device does not have a WANIPConnection or WANPPPConnection."
-#~ msgstr ""
-#~ "Ошибка перенаправления:\n"
-#~ "Устройство не поддерживает соединения WANIP или WANPPP."
-
-#~ msgid "Cannot find port forwarding service in the device's description."
-#~ msgstr "Не удалось найти службу транслирования в описании устройства."
-
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "Соединение было неожиданно закрыто."
-
-#~ msgid "Timeout occurred"
-#~ msgstr "Время истекло"
 
 #~ msgid "Proxy"
 #~ msgstr "Прокси"
@@ -7045,9 +7068,6 @@ msgstr "µTP"
 
 #~ msgid "Error writing to %1 : %2"
 #~ msgstr "Ошибка записи в %1: %2"
-
-#~ msgid "Error writing to %1"
-#~ msgstr "Ошибка записи в %1"
 
 #~ msgid "RSS Plugin"
 #~ msgstr "Модуль RSS"

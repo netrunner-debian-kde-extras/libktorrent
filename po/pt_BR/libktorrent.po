@@ -12,10 +12,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
-"PO-Revision-Date: 2010-05-06 17:46-0500\n"
-"Last-Translator: Marcus Vinícius de Andrade Gama <marcus.gama@gmail.com>\n"
-"Language-Team: Brazilian Portuguese <kde-i18n-pt_br@kde.org>\n"
+"POT-Creation-Date: 2010-06-26 01:27+0200\n"
+"PO-Revision-Date: 2010-06-23 10:05-0300\n"
+"Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
+"Language-Team: Brazilian Portuguese <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -162,7 +162,7 @@ msgid "Redirect without a redirect location"
 msgstr "Redirecionado sem um local para fazê-lo"
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Tempo esgotado ao contatar o rastreador %1"
@@ -173,7 +173,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "Falha ao resolver o nome da máquina %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "Resposta inválida do rastreador"
 
@@ -181,7 +181,7 @@ msgstr "Resposta inválida do rastreador"
 msgid "Invalid data from tracker"
 msgstr "Dados inválidos do rastreador"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "URL do rastreador inválida"
 
@@ -476,8 +476,41 @@ msgstr "Entrada/Saída de Disco"
 msgid "µTP"
 msgstr "µTP"
 
-#~ msgid "Not enough free disk space for %1"
+#, fuzzy
+#~| msgctxt "Status of a torrent file"
+#~| msgid "Seeding"
+#~ msgid "Superseeding"
+#~ msgstr "Semeando"
+
+#, fuzzy
+#~| msgid "Not enough free disk space for %1"
+#~ msgid "Not enough diskspace"
 #~ msgstr "Não há espaço em disco suficiente para %1"
+
+#, fuzzy
+#~| msgid "Error reading from %1"
+#~ msgid "Error when reading from disk"
+#~ msgstr "Erro lendo de %1"
+
+#, fuzzy
+#~| msgid "Failed to open %1 : %2"
+#~ msgid "Failed to download %1 : %2"
+#~ msgstr "Falha ao abrir %1 : %2"
+
+#, fuzzy
+#~| msgid "Connection closed"
+#~ msgid "Connection closed unexpectedly."
+#~ msgstr "Conexão encerrada"
+
+#, fuzzy
+#~| msgid "Torrent is incomplete."
+#~ msgid "Torrent to open"
+#~ msgstr "O torrent está incompleto."
+
+#, fuzzy
+#~| msgid "Not in use"
+#~ msgid "Port to use"
+#~ msgstr "Não está em uso"
 
 #~ msgid "UTP"
 #~ msgstr "UTP"
