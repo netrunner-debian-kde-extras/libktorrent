@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extragear-network/ktorrent.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-26 01:27+0200\n"
+"POT-Creation-Date: 2010-08-09 01:29+0200\n"
 "PO-Revision-Date: 2007-08-07 07:02-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -264,7 +264,7 @@ msgid ""
 "torrent is probably corrupt or is not a valid torrent file."
 msgstr ""
 "Tharla earráid agus torrent <b>%1</b> á luchtú:<br/><b>%2</b><br/>Is dócha "
-"go bhfuil an torrent truaillithe, nó ní comhad torrent é."
+"go bhfuil an torrent truaillithe, nó ní comhad bailí torrent é."
 
 #: src/torrent/torrentcontrol.cpp:563
 #, kde-format
@@ -273,7 +273,7 @@ msgid ""
 "is probably corrupt or is not a valid torrent file."
 msgstr ""
 "Tharla earráid agus torrent á luchtú:<br/><b>%1</b><br/>Is dócha go bhfuil "
-"an torrent truaillithe, nó ní comhad torrent é."
+"an torrent truaillithe, nó ní comhad bailí torrent é."
 
 #: src/torrent/torrentcontrol.cpp:574
 #, kde-format
@@ -379,11 +379,6 @@ msgstr "Ní féidir scríobh i %1: %2"
 msgid "Cannot read from %1"
 msgstr "Ní féidir léamh ó %1"
 
-#: src/util/log.cpp:115
-#, kde-format
-msgid "Cannot open log file %1 : %2"
-msgstr "Ní féidir logchomhad %1 a oscailt: %2"
-
 #: src/util/fileops.cpp:92
 #, kde-format
 msgid "Cannot create directory %1"
@@ -433,7 +428,7 @@ msgstr "Ní féidir an comhad a fhairsingiú: %1"
 #: src/util/fileops.cpp:388
 #, kde-format
 msgid "Cannot seek in file : %1"
-msgstr "Ní féidir lorg i gcomhad : %1"
+msgstr "Ní féidir lorg i gcomhad: %1"
 
 #: src/util/functions.cpp:263
 #, kde-format
@@ -474,26 +469,8 @@ msgstr "Ionchur/Aschur Diosca"
 msgid "µTP"
 msgstr "µTP"
 
-#, fuzzy
-#~| msgctxt "Status of a torrent file"
-#~| msgid "Seeding"
-#~ msgid "Superseeding"
-#~ msgstr "Á Shíolú"
-
-#, fuzzy
-#~| msgid "Not enough free disk space for %1"
-#~ msgid "Not enough diskspace"
-#~ msgstr "Easpa spáis diosca le haghaidh %1"
-
-#, fuzzy
-#~| msgid "Error writing to %1"
-#~ msgid "Error when writing to disk"
-#~ msgstr "Earráid agus %1 á scriobh"
-
-#, fuzzy
-#~| msgid "Error reading from %1"
-#~ msgid "Error when reading from disk"
-#~ msgstr "Earráid agus %1 á léamh"
+#~ msgid "Cannot open log file %1 : %2"
+#~ msgstr "Ní féidir logchomhad %1 a oscailt: %2"
 
 #~ msgid "Failed to download %1 : %2"
 #~ msgstr "Níorbh fhéidir %1 a íosluchtú: %2"
@@ -505,16 +482,6 @@ msgstr "µTP"
 
 #~ msgid "Connection closed unexpectedly."
 #~ msgstr "Dúnadh an ceangal gan súil leis."
-
-#, fuzzy
-#~| msgid "Document to open"
-#~ msgid "Torrent to open"
-#~ msgstr "Cáipéis le hoscailt"
-
-#, fuzzy
-#~| msgid "Not in use"
-#~ msgid "Port to use"
-#~ msgstr "Gan úsáid"
 
 #~ msgid "UTP"
 #~ msgstr "UTP"
@@ -772,9 +739,6 @@ msgstr "µTP"
 
 #~ msgid "Connections charts"
 #~ msgstr "Cairteacha ceangail"
-
-#~ msgid "Display"
-#~ msgstr "Taispeáin"
 
 # "choked", "snubbed" booleans in peerview.cpp
 #~ msgctxt "Choked"
@@ -2154,7 +2118,7 @@ msgstr "µTP"
 
 #~ msgctxt "EMAIL OF TRANSLATORS"
 #~ msgid "Your emails"
-#~ msgstr "kscanne at gmail dot com"
+#~ msgstr "kscanne@gmail.com"
 
 #~ msgid "Folders to scan for torrents:"
 #~ msgstr "Fillteáin le scanadh i gcomhair torrents:"

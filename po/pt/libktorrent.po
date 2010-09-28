@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-26 01:27+0200\n"
+"POT-Creation-Date: 2010-08-09 01:29+0200\n"
 "PO-Revision-Date: 2010-05-04 12:08+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -375,11 +375,6 @@ msgstr "Não é possível escrever em %1 : %2"
 msgid "Cannot read from %1"
 msgstr "Não é possível ler de %1"
 
-#: src/util/log.cpp:115
-#, kde-format
-msgid "Cannot open log file %1 : %2"
-msgstr "Não é possível aceder ao ficheiro de registo %1 : %2"
-
 #: src/util/fileops.cpp:92
 #, kde-format
 msgid "Cannot create directory %1"
@@ -466,6 +461,9 @@ msgstr "Entrada/Saída do Disco"
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
 msgstr "µTP"
+
+#~ msgid "Cannot open log file %1 : %2"
+#~ msgstr "Não é possível aceder ao ficheiro de registo %1 : %2"
 
 #, fuzzy
 #~| msgctxt "Status of a torrent file"

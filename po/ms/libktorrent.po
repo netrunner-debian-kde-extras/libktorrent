@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-26 01:27+0200\n"
+"POT-Creation-Date: 2010-08-09 01:29+0200\n"
 "PO-Revision-Date: 2010-05-03 23:38+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
@@ -390,11 +390,6 @@ msgstr "Tidak dapat cipta %1: %2"
 msgid "Cannot read from %1"
 msgstr "Tidak dapat cipta %1: %2"
 
-#: src/util/log.cpp:115
-#, fuzzy, kde-format
-msgid "Cannot open log file %1 : %2"
-msgstr "Ralat mengimport fail %s"
-
 #: src/util/fileops.cpp:92
 #, fuzzy, kde-format
 msgid "Cannot create directory %1"
@@ -482,6 +477,10 @@ msgstr "Masukan/Keluaran Cakera"
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Cannot open log file %1 : %2"
+#~ msgstr "Ralat mengimport fail %s"
 
 #, fuzzy
 #~| msgid "Pending"

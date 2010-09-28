@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 01:30+0200\n"
+"POT-Creation-Date: 2010-08-09 01:29+0200\n"
 "PO-Revision-Date: 2010-06-13 10:30+0200\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
@@ -157,7 +157,7 @@ msgid "Redirect without a redirect location"
 msgstr "Omdirigert uten ny plassering"
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:554
+#: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Tidsavbrutt ved kontakt med sporer %1"
@@ -168,7 +168,7 @@ msgid "Unable to resolve hostname %1"
 msgstr "Klarte ikke slå opp vertsnavnet %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:340 src/tracker/httptracker.cpp:459
+#: src/tracker/httptracker.cpp:454
 msgid "Invalid response from tracker"
 msgstr "Ugyldig svar fra sporeren"
 
@@ -176,7 +176,7 @@ msgstr "Ugyldig svar fra sporeren"
 msgid "Invalid data from tracker"
 msgstr "Ugyldig data fra sporeren"
 
-#: src/tracker/httptracker.cpp:476
+#: src/tracker/httptracker.cpp:471
 msgid "Invalid tracker URL"
 msgstr "Ugyldig sporer-URL"
 
@@ -378,11 +378,6 @@ msgstr "Klarte ikke skrive til %1: %2"
 #, kde-format
 msgid "Cannot read from %1"
 msgstr "Klarte ikke lese fra %1"
-
-#: src/util/log.cpp:115
-#, kde-format
-msgid "Cannot open log file %1 : %2"
-msgstr "Klarte ikke åpne loggfila %1: %2"
 
 #: src/util/fileops.cpp:92
 #, kde-format
