@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 1.0.2 amd64
+# SymbolsHelper-Confirmed: 1.0.3 amd64
 libktorrent.so.2 libktorrent2 #MINVER#
 * Build-Depends-Package: libktorrent-dev
  _ZN2bt10BValueNode14printDebugInfoEv@Base 1.0.2
@@ -362,6 +362,7 @@ libktorrent.so.2 libktorrent2 #MINVER#
  _ZN2bt13PeerConnector11qt_metacastEPKc@Base 1.0.2
  _ZN2bt13PeerConnector16staticMetaObjectE@Base 1.0.2
  _ZN2bt13PeerConnector22authenticationFinishedEPNS_12AuthenticateEb@Base 1.0.2
+ _ZN2bt13PeerConnector4stopEv@Base 1.0.3
  _ZN2bt13PeerConnector5startENS0_6MethodE@Base 1.0.2
  _ZN2bt13PeerConnector5startEv@Base 1.0.2
  _ZN2bt13PeerConnectorC1ERK7QStringtbPNS_11PeerManagerE@Base 1.0.2
@@ -1002,6 +1003,7 @@ libktorrent.so.2 libktorrent2 #MINVER#
  _ZN2bt5ValueaSEx@Base 1.0.2
  _ZN2bt6BitSet14includesBitSetERKS0_@Base 1.0.2
  _ZN2bt6BitSet15updateNumOnBitsEv@Base 1.0.2
+ (arch=!amd64)_ZN2bt6BitSet3setEjb@Base 1.0.2
  _ZN2bt6BitSet4nullE@Base 1.0.2
  _ZN2bt6BitSet5clearEv@Base 1.0.2
  _ZN2bt6BitSet6invertEv@Base 1.0.2
@@ -1544,6 +1546,7 @@ libktorrent.so.2 libktorrent2 #MINVER#
  _ZN3utp9UTPServer10onAcceptedEPNS_10ConnectionE@Base 1.0.2
  _ZN3utp9UTPServer10readPacketEi@Base 1.0.2
  _ZN3utp9UTPServer10timerEventEP11QTimerEvent@Base 1.0.2
+ _ZN3utp9UTPServer11customEventEP6QEvent@Base 1.0.3
  _ZN3utp9UTPServer11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.0.2
  _ZN3utp9UTPServer11qt_metacastEPKc@Base 1.0.2
  _ZN3utp9UTPServer11writePacketEi@Base 1.0.2
@@ -1784,6 +1787,7 @@ libktorrent.so.2 libktorrent2 #MINVER#
  (optional=templinst)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE16_M_insert_uniqueERKS6_@Base 1.0.2
  (optional=templinst)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS6_ERKS6_@Base 1.0.2
  (optional=templinst)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE8_M_eraseEPSt13_Rb_tree_nodeIS6_E@Base 1.0.2
+ (optional=templinst|arch=!amd64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_N2bt13PotentialPeerEESt10_Select1stIS5_ESt4lessIS0_ESaIS5_EE10_M_insert_EPKSt18_Rb_tree_node_baseSE_RKS5_@Base 1.0.2
  (optional=templinst)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_N2bt13PotentialPeerEESt10_Select1stIS5_ESt4lessIS0_ESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E@Base 1.0.2
  (optional=templinst)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN2bt18DeleteDataFilesJob7DirTreeEESt10_Select1stIS7_ESt4lessIS0_ESaIS7_EE10_M_insert_EPKSt18_Rb_tree_node_baseSG_RKS7_@Base 1.0.2
  (optional=templinst)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN2bt18DeleteDataFilesJob7DirTreeEESt10_Select1stIS7_ESt4lessIS0_ESaIS7_EE16_M_insert_uniqueERKS7_@Base 1.0.2
