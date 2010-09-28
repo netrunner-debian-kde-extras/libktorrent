@@ -2,6 +2,7 @@ libktorrent (1.0.3-1) UNRELEASED; urgency=low
 
   * New upstream release.
   * Update symbol file.
+  * Bump Standards-Version to 3.9.1: no changes needed.
 
  -- Modestas Vainius <modax@debian.org>  Wed, 29 Sep 2010 00:16:46 +0300
 
