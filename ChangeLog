@@ -1,3 +1,18 @@
+Changes in 1.0.3:
+- Fix crash in HTTPAnnounceJob due to abort call (244198)
+- Show KDE progress dialogs when moving files (244023)
+- Fix crash when µTP binding fails (244935)
+- Backport PeerConnector crash fixes (245796)
+- Decrease authentication timeout to 5 seconds
+- Fix crash due to double delete in µTP code
+- Don't throw error when log file cannot be opened, prevents crash (246757)
+- Fix bug causing wrong download running time to be saved when a torrent is running (247384)
+- Fix crash due to monitor not being notified of a chunk download being removed (246483)
+- Fix potential dangling pointer problem in µTP code
+- Fix bug causing timer to be started from wrong thread in µTP code
+- Fix floating point inaccuracy bug causing seeding to hit the max share ratio a little bit to soon
+- Use 2 digit precision when displaying byte sizes
+
 Changes in 1.0.2:
 - Fix subtle bug causing some connections to be dropped prematurely
 - Fix bug causing tracker replies with only IPv6 addresses to be misinterpreted as an invalid reply

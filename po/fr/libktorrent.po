@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-26 01:27+0200\n"
+"POT-Creation-Date: 2010-08-09 01:29+0200\n"
 "PO-Revision-Date: 2010-04-16 00:08+0200\n"
 "Last-Translator: Joëlle Cornavin <jcornavin@laposte.net>\n"
 "Language-Team: Français <kde-francophone@kde.org>\n"
@@ -429,12 +429,6 @@ msgid "Cannot read from %1"
 msgstr "Impossible de lire depuis %1"
 
 # unreviewed-context
-#: src/util/log.cpp:115
-#, kde-format
-msgid "Cannot open log file %1 : %2"
-msgstr "Impossible d'ouvrir le fichier journal %1 : %2"
-
-# unreviewed-context
 #: src/util/fileops.cpp:92
 #, kde-format
 msgid "Cannot create directory %1"
@@ -533,6 +527,10 @@ msgstr "Entrée/Sortie du disque"
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
 msgstr ""
+
+# unreviewed-context
+#~ msgid "Cannot open log file %1 : %2"
+#~ msgstr "Impossible d'ouvrir le fichier journal %1 : %2"
 
 #, fuzzy
 #~| msgctxt "Status of a torrent file"

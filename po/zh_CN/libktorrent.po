@@ -5,20 +5,19 @@
 # QAed by Funda Wang <fundawang@linux.net.cn>, 2005-09-23.
 # Hu Wei <contact@chaostone.com>, 2007, 2008.
 # Ni Hui <shuizhuyuanluo@126.com>, 2008, 2009.
+# Lie Ex <lilith.ex@gmail.com>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-26 01:27+0200\n"
-"PO-Revision-Date: 2009-02-09 13:33+0000\n"
-"Last-Translator: Ni Hui <shuizhuyuanluo@126.com>\n"
+"POT-Creation-Date: 2010-08-09 01:29+0200\n"
+"PO-Revision-Date: 2010-08-26 14:26+0000\n"
+"Last-Translator: Lie Ex <lilith.ex@gmail.com>\n"
 "Language-Team: 简体中文 <kde-china@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: KBabel 1.11.4\n"
 
 #: src/bcodec/bdecoder.cpp:62
 #, kde-format
@@ -39,10 +38,8 @@ msgid "Cannot convert %1 to an int"
 msgstr "无法将 %1 转换为整型"
 
 #: src/bcodec/bdecoder.cpp:252
-#, fuzzy
-#| msgid "Torrent is incomplete!"
 msgid "Torrent is incomplete."
-msgstr "种子不完整！"
+msgstr "种子数据不完整。"
 
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:325
 #: src/util/fileops.cpp:367
@@ -59,13 +56,13 @@ msgstr "无法打开 %1 写入：只读文件系统"
 #: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:441
 #, kde-format
 msgid "Attempting to write beyond the maximum size of %1"
-msgstr ""
+msgstr "正在尝试写入超过最大允许尺寸 %1 的数据"
 
 #: src/diskio/cachefile.cpp:255
 #, kde-format
 msgid ""
 "Cannot expand file %1 : attempting to grow the file beyond the maximum size"
-msgstr ""
+msgstr "无法扩展文件 %1：尝试扩展的文件已超过最大允许尺寸"
 
 #: src/diskio/cachefile.cpp:259
 #, kde-format
@@ -141,10 +138,9 @@ msgid "Announcing"
 msgstr "正在宣告"
 
 #: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:85
-#, fuzzy, kde-format
-#| msgid "Error: "
+#, kde-format
 msgid "Error: %1"
-msgstr "错误："
+msgstr "错误：%1"
 
 #: src/migrate/migrate.cpp:45
 #, kde-format
@@ -156,16 +152,14 @@ msgid "Unknown client"
 msgstr "未知客户端"
 
 #: src/tracker/httpannouncejob.cpp:140
-#, fuzzy
-#| msgid "Redirected without a new location !"
 msgid "Redirect without a redirect location"
-msgstr "重定向没有新位置！"
+msgstr "重定向没有新位置"
 
 #: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
 #: src/tracker/httptracker.cpp:549
 #, kde-format
 msgid "Timeout contacting tracker %1"
-msgstr ""
+msgstr "连接 tracker 服务器 %1 超时"
 
 #: src/tracker/udptracker.cpp:408
 #, kde-format
@@ -198,8 +192,6 @@ msgid "Seeding completed"
 msgstr "做种完成"
 
 #: src/torrent/torrentstats.cpp:77
-#, fuzzy
-#| msgid "Seeding"
 msgctxt "Status of a torrent file"
 msgid "Seeding"
 msgstr "做种中"
@@ -221,16 +213,12 @@ msgid "Allocating diskspace"
 msgstr "正在分配磁盘空间"
 
 #: src/torrent/torrentstats.cpp:89
-#, fuzzy
-#| msgid "Currently downloading:"
 msgid "Queued for seeding"
-msgstr "正在下载："
+msgstr "正在排队做种"
 
 #: src/torrent/torrentstats.cpp:89
-#, fuzzy
-#| msgid "Currently downloading:"
 msgid "Queued for downloading"
-msgstr "正在下载："
+msgstr "正在排队下载"
 
 #: src/torrent/torrentstats.cpp:91
 msgid "Checking data"
@@ -259,10 +247,8 @@ msgstr "无法创建索引文件：%1"
 #: src/torrent/torrent.cpp:194 src/torrent/torrent.cpp:201
 #: src/torrent/torrent.cpp:209 src/torrent/torrent.cpp:213
 #: src/torrent/torrent.cpp:234 src/torrent/torrent.cpp:305
-#, fuzzy
-#| msgid "Corrupted torrent!"
 msgid "Corrupted torrent."
-msgstr "损坏的种子！"
+msgstr "损坏的种子。"
 
 #: src/torrent/torrent.cpp:157
 #, kde-format
@@ -274,28 +260,22 @@ msgid "Parse Error"
 msgstr "语法错误"
 
 #: src/torrent/torrentcontrol.cpp:533
-#, fuzzy, kde-format
-#| msgid ""
-#| "An error occurred while loading the torrent <b>%1</b>\n"
-#| "The torrent is probably corrupt or is not a torrent file."
+#, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
 "torrent is probably corrupt or is not a valid torrent file."
 msgstr ""
-"装入种子 <b>%1</b> 出错。\n"
-"种子文件可能已经损坏，或者根本就不是一个种子文件。"
+"装入种子 <b>%1</b> 出错：<br/><b>%2</b><br/>种子文件可能已经损坏，或者根本就"
+"不是一个种子文件。"
 
 #: src/torrent/torrentcontrol.cpp:563
-#, fuzzy, kde-format
-#| msgid ""
-#| "An error occurred while loading the torrent <b>%1</b>\n"
-#| "The torrent is probably corrupt or is not a torrent file."
+#, kde-format
 msgid ""
 "An error occurred while loading the torrent:<br/><b>%1</b><br/>The torrent "
 "is probably corrupt or is not a valid torrent file."
 msgstr ""
-"装入种子 <b>%1</b> 出错。\n"
-"种子文件可能已经损坏，或者根本就不是一个种子文件。"
+"装入种子时出错：<br/><b>%1</b><br/>种子文件可能已经损坏，或者根本就不是一个种"
+"子文件。"
 
 #: src/torrent/torrentcontrol.cpp:574
 #, kde-format
@@ -303,20 +283,16 @@ msgid "Unable to create %1 : %2"
 msgstr "无法创建 %1：%2"
 
 #: src/torrent/torrentcontrol.cpp:589
-#, fuzzy, kde-format
-#| msgid ""
-#| "You are already downloading this torrent %1, the list of trackers of both "
-#| "torrents has been merged."
+#, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
 "both torrents have been merged."
-msgstr "您已经下载过这个种子 %1，两个种子的 trackers 列表已经被合并。"
+msgstr "您已经下载过这个种子 <b>%1</b>。两个种子的 trackers 列表已经被合并。"
 
 #: src/torrent/torrentcontrol.cpp:594
-#, fuzzy, kde-format
-#| msgid "You are already downloading the torrent %1"
+#, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
-msgstr "您已经下载过这个种子 %1"
+msgstr "您已经下载过这个种子 <b>%1</b>。"
 
 #: src/datachecker/singledatachecker.cpp:49
 #, kde-format
@@ -376,10 +352,8 @@ msgid "Error: request timed out"
 msgstr "错误：请求超时"
 
 #: src/download/httpconnection.cpp:391
-#, fuzzy
-#| msgid "Redirected without a new location !"
 msgid "Redirected without a new location."
-msgstr "重定向没有新位置！"
+msgstr "重定向没有新位置。"
 
 #: src/download/chunkdownload.cpp:373
 #, kde-format
@@ -388,10 +362,8 @@ msgid_plural "%1 peers"
 msgstr[0] "%1 个对等点"
 
 #: src/download/webseed.cpp:303 src/download/webseed.cpp:517
-#, fuzzy
-#| msgid "Notice"
 msgid "Not in use"
-msgstr "注意"
+msgstr "未使用"
 
 #: src/util/file.cpp:83
 #, kde-format
@@ -402,11 +374,6 @@ msgstr "无法写入 %1：%2"
 #, kde-format
 msgid "Cannot read from %1"
 msgstr "无法从 %1 读取"
-
-#: src/util/log.cpp:115
-#, kde-format
-msgid "Cannot open log file %1 : %2"
-msgstr "无法打开日志文件 %1：%2"
 
 #: src/util/fileops.cpp:92
 #, kde-format
@@ -492,7 +459,10 @@ msgstr "磁盘输入/输出"
 
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
-msgstr ""
+msgstr "µTP"
+
+#~ msgid "Cannot open log file %1 : %2"
+#~ msgstr "无法打开日志文件 %1：%2"
 
 #, fuzzy
 #~| msgid "Seeding"

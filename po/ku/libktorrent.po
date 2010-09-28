@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-26 01:27+0200\n"
+"POT-Creation-Date: 2010-08-09 01:29+0200\n"
 "PO-Revision-Date: 2008-09-23 17:28+0300\n"
 "Last-Translator: Erdal Ronahi <erdal dot ronahi at gmail dot com>\n"
 "Language-Team: Kurdish <kde-i18n-doc@lists.kde.org>\n"
@@ -409,12 +409,6 @@ msgstr "Li %1 nayê nivîsandin: %2"
 msgid "Cannot read from %1"
 msgstr "Ji %1 nayê xwedin"
 
-#: src/util/log.cpp:115
-#, fuzzy, kde-format
-#| msgid "Cannot open %1 : %2"
-msgid "Cannot open log file %1 : %2"
-msgstr "%1 nayê vekirin: %2"
-
 #: src/util/fileops.cpp:92
 #, fuzzy, kde-format
 #| msgid "Cannot create directory %1: %2"
@@ -509,6 +503,11 @@ msgstr ""
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Cannot open %1 : %2"
+#~ msgid "Cannot open log file %1 : %2"
+#~ msgstr "%1 nayê vekirin: %2"
 
 #, fuzzy
 #~| msgid "Down Speed"

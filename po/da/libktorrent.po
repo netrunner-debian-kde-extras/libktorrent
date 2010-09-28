@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-26 01:27+0200\n"
+"POT-Creation-Date: 2010-08-09 01:29+0200\n"
 "PO-Revision-Date: 2010-05-05 14:12+0200\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -377,11 +377,6 @@ msgstr "Kan ikke skrive til %1: %2"
 msgid "Cannot read from %1"
 msgstr "Kan ikke læse fra %1"
 
-#: src/util/log.cpp:115
-#, kde-format
-msgid "Cannot open log file %1 : %2"
-msgstr "Kan ikke åbne logfilen %1: %2"
-
 #: src/util/fileops.cpp:92
 #, kde-format
 msgid "Cannot create directory %1"
@@ -468,6 +463,9 @@ msgstr "Input/output for disk"
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
 msgstr "µTP"
+
+#~ msgid "Cannot open log file %1 : %2"
+#~ msgstr "Kan ikke åbne logfilen %1: %2"
 
 #, fuzzy
 #~| msgctxt "Status of a torrent file"

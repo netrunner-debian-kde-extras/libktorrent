@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-26 01:27+0200\n"
+"POT-Creation-Date: 2010-08-09 01:29+0200\n"
 "PO-Revision-Date: 2008-03-30 16:43+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@yahoo.com>\n"
 "Language-Team: Hindi <indlinux-hindi@lists.sourceforge.net>\n"
@@ -410,12 +410,6 @@ msgstr "बना नहीं सकता %1: %2"
 msgid "Cannot read from %1"
 msgstr "बना नहीं सकता %1: %2"
 
-#: src/util/log.cpp:115
-#, fuzzy, kde-format
-#| msgid "Cannot create %1: %2"
-msgid "Cannot open log file %1 : %2"
-msgstr "बना नहीं सकता %1: %2"
-
 #: src/util/fileops.cpp:92
 #, fuzzy, kde-format
 #| msgid "Cannot create %1: %2"
@@ -513,6 +507,11 @@ msgstr ""
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Cannot create %1: %2"
+#~ msgid "Cannot open log file %1 : %2"
+#~ msgstr "बना नहीं सकता %1: %2"
 
 #, fuzzy
 #~| msgid "Speed"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-26 01:27+0200\n"
+"POT-Creation-Date: 2010-08-09 01:29+0200\n"
 "PO-Revision-Date: 2009-09-22 21:25+0300\n"
 "Last-Translator: Yasen Pramatarov <yasen@lindeas.com>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
@@ -419,11 +419,6 @@ msgstr "Невъзможен запис в %1 : %2"
 msgid "Cannot read from %1"
 msgstr "Не може да се чете от %1"
 
-#: src/util/log.cpp:115
-#, kde-format
-msgid "Cannot open log file %1 : %2"
-msgstr "Не може да бъде отворен журнален файл %1 : %2"
-
 #: src/util/fileops.cpp:92
 #, fuzzy, kde-format
 #| msgid "Cannot create directory %1: %2"
@@ -519,6 +514,9 @@ msgstr "Диск - вх/изх:"
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
 msgstr ""
+
+#~ msgid "Cannot open log file %1 : %2"
+#~ msgstr "Не може да бъде отворен журнален файл %1 : %2"
 
 #, fuzzy
 #~| msgid "Seeding"

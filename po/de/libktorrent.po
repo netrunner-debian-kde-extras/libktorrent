@@ -7,19 +7,19 @@
 # Jannick Kuhr <opensource@kuhr.org>, 2006, 2007, 2008, 2009, 2010.
 # Panagiotis Papadopoulos <pano_90@gmx.net>, 2009, 2010.
 # Burkhard Lück <lueck@hube-lueck.de>, 2009.
-# Markus Slopianka <kamikazow@web.de>, 2009, 2010.
+# Markus Slopianka <markus.s@kdemail.net>, 2009, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-26 01:27+0200\n"
-"PO-Revision-Date: 2010-04-10 13:49+0200\n"
-"Last-Translator: Jannick Kuhr <opensource@kuhr.org>\n"
+"POT-Creation-Date: 2010-08-09 01:29+0200\n"
+"PO-Revision-Date: 2010-08-20 01:07+0200\n"
+"Last-Translator: Panagiotis Papadopoulos <pano_90@gmx.net>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 1.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: src/bcodec/bdecoder.cpp:62
@@ -386,11 +386,6 @@ msgstr "Die Datei %1 kann nicht geschrieben werden: %2"
 msgid "Cannot read from %1"
 msgstr "Aus Datei %1 kann nicht gelesen werden"
 
-#: src/util/log.cpp:115
-#, kde-format
-msgid "Cannot open log file %1 : %2"
-msgstr "Die Protokolldatei %1 lässt sich nicht öffnen: %2"
-
 #: src/util/fileops.cpp:92
 #, kde-format
 msgid "Cannot create directory %1"
@@ -478,6 +473,9 @@ msgstr "Disk-Eingabe/Ausgabe"
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
 msgstr "µTP"
+
+#~ msgid "Cannot open log file %1 : %2"
+#~ msgstr "Die Protokolldatei %1 lässt sich nicht öffnen: %2"
 
 #, fuzzy
 #~| msgctxt "Status of a torrent file"
