@@ -1,8 +1,8 @@
-libktorrent (1.0.3-2) UNRELEASED; urgency=low
+libktorrent (1.0.3-2) experimental; urgency=low
 
   * Confirm symbol file on more arches. Fixes FTBFS. (Closes: #598506)
 
- -- Modestas Vainius <modax@debian.org>  Sat, 02 Oct 2010 01:52:08 +0300
+ -- Modestas Vainius <modax@debian.org>  Sat, 02 Oct 2010 01:55:17 +0300
 
 libktorrent (1.0.3-1) experimental; urgency=low
 
