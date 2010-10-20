@@ -474,6 +474,3 @@ msgstr "ディスク I/O (入出力)"
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
 msgstr ""
-
-#~ msgid "Cannot open log file %1 : %2"
-#~ msgstr "ログファイル <filename>%1</filename> を開けません: %2"

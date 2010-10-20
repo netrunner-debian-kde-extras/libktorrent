@@ -8,13 +8,14 @@
 # Viesturs Zariņš <viesturs.zarins@algorego.com>, 2008.
 # Maris Nartiss <maris.kde@gmail.com>, 2008.
 # Viesturs Zariņš <viesturs.zarins@mii.lu.lv>, 2009.
+# Einars Sprugis <einars8@gmail.com>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2010-08-09 01:29+0200\n"
-"PO-Revision-Date: 2009-10-23 08:52+0300\n"
-"Last-Translator: Viesturs Zariņš <viesturs.zarins@mii.lu.lv>\n"
+"PO-Revision-Date: 2010-09-11 19:26+0300\n"
+"Last-Translator: Einars Sprugis <einars8@gmail.com>\n"
 "Language-Team: Latvian <locale@laka.lv>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -57,19 +58,21 @@ msgstr "Neizdevās atvērt %1 : %2"
 #, kde-format
 msgid "Cannot open %1 for writing : readonly filesystem"
 msgstr ""
-"Neizdevās atvērt failu %1 rakstīšanas režīmā : failu sistēma neatbalsta "
+"Neizdevās atvērt failu %1 rakstīšanas režīmā: failu sistēma neatbalsta "
 "rakstīšanu"
 
 #: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:441
 #, kde-format
 msgid "Attempting to write beyond the maximum size of %1"
-msgstr ""
+msgstr "Mēģinājums rakstīt aiz %1 maksimālā izmēra"
 
 #: src/diskio/cachefile.cpp:255
 #, kde-format
 msgid ""
 "Cannot expand file %1 : attempting to grow the file beyond the maximum size"
 msgstr ""
+"Neizdevās paplašināt failu %1: mēģinājums pieaudzēt failu aiz maksimālā "
+"izmēra"
 
 #: src/diskio/cachefile.cpp:259
 #, kde-format
@@ -79,7 +82,7 @@ msgstr "Nevar paplašināt failu %1: %2"
 #: src/diskio/cachefile.cpp:401
 #, kde-format
 msgid "Error : Reading past the end of the file %1"
-msgstr "Kļūda : Lasīts ārpus faila %1beigām"
+msgstr "Kļūda: lasīts ārpus faila %1beigām"
 
 #: src/diskio/cachefile.cpp:406 src/diskio/cachefile.cpp:453
 #, kde-format
@@ -225,7 +228,7 @@ msgstr "Ierindots piedāvāšanai"
 
 #: src/torrent/torrentstats.cpp:89
 msgid "Queued for downloading"
-msgstr "Ierindots lejuipielādei"
+msgstr "Ierindots lejupielādei"
 
 #: src/torrent/torrentstats.cpp:91
 msgid "Checking data"
@@ -272,7 +275,7 @@ msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
 "torrent is probably corrupt or is not a valid torrent file."
 msgstr ""
-"Gadījās kļūda ielādējot torrentu <b>%1</b>>:<br/><b>%2</b><br/>Tas droši "
+"Gadījās kļūda, ielādējot torrentu <b>%1</b>>:<br/><b>%2</b><br/>Tas droši "
 "vien ir bojāts vai nav torrent fails."
 
 #: src/torrent/torrentcontrol.cpp:563
@@ -281,31 +284,27 @@ msgid ""
 "An error occurred while loading the torrent:<br/><b>%1</b><br/>The torrent "
 "is probably corrupt or is not a valid torrent file."
 msgstr ""
-"Gadījās kļūda ielādējot torrentu:<br/><b>%1</b><br/>Tas droši vien ir bojāts "
-"vai nav torrent fails."
+"Gadījās kļūda, ielādējot torrentu:<br/><b>%1</b><br/>Tas droši vien ir "
+"bojāts vai nav torrent fails."
 
 #: src/torrent/torrentcontrol.cpp:574
 #, kde-format
 msgid "Unable to create %1 : %2"
-msgstr "Neizdevās izveidot %1 ; %2"
+msgstr "Neizdevās izveidot %1 : %2"
 
 #: src/torrent/torrentcontrol.cpp:589
-#, fuzzy, kde-format
-#| msgid ""
-#| "You are already downloading this torrent %1, the list of trackers of both "
-#| "torrents has been merged."
+#, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
 "both torrents have been merged."
 msgstr ""
-"Jūs jau ielādējat šo torrentu %1, esošā torrenta trakeru saraksts tika "
-"papildināts no jaunā."
+"Jūs jau ielādējat torrentu <b>%1</b>. Abu torrentu trakeru saraksti tika "
+"apvienoti."
 
 #: src/torrent/torrentcontrol.cpp:594
-#, fuzzy, kde-format
-#| msgid "You are already downloading the torrent %1"
+#, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
-msgstr "Jūs jau ielādējat šo torrentu %1"
+msgstr "Jūs jau ielādējat torrentu <b>%1</b>."
 
 #: src/datachecker/singledatachecker.cpp:49
 #, kde-format
@@ -439,7 +438,7 @@ msgstr "Neizdevās paplašināt failu: %1"
 #: src/util/fileops.cpp:388
 #, kde-format
 msgid "Cannot seek in file : %1"
-msgstr "Neizdevās seek failā : %1"
+msgstr "Neizdevās meklēt failā : %1"
 
 #: src/util/functions.cpp:263
 #, kde-format
@@ -460,7 +459,7 @@ msgstr "Pamata"
 
 #: src/util/logsystemmanager.cpp:34
 msgid "Connections"
-msgstr "Savienojumi:"
+msgstr "Savienojumi"
 
 #: src/util/logsystemmanager.cpp:35
 msgid "Tracker"
@@ -476,7 +475,7 @@ msgstr "Diska lasīšana/rakstīšana:"
 
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
-msgstr ""
+msgstr "µTP"
 
 #~ msgid "Cannot open log file %1 : %2"
 #~ msgstr "Neizdevās atvērt žurnāla failu %1 : %2"
