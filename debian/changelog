@@ -1,9 +1,9 @@
-libktorrent (1.0.4-1) UNRELEASED; urgency=low
+libktorrent (1.0.4-1) experimental; urgency=low
 
   * New upstream release.
   * Confirm symbol file for 1.0.3 on more arches.
 
- -- Modestas Vainius <modax@debian.org>  Wed, 20 Oct 2010 14:32:40 +0300
+ -- Modestas Vainius <modax@debian.org>  Wed, 20 Oct 2010 14:43:22 +0300
 
 libktorrent (1.0.3-2) experimental; urgency=low
 
