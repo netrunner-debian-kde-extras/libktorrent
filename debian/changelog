@@ -1,3 +1,9 @@
+libktorrent (1.0.4-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+
+ -- Modestas Vainius <modax@debian.org>  Wed, 20 Oct 2010 14:32:40 +0300
+
 libktorrent (1.0.3-2) experimental; urgency=low
 
   * Confirm symbol file on more arches. Fixes FTBFS. (Closes: #598506)
