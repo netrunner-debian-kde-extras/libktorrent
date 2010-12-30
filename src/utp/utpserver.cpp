@@ -62,6 +62,7 @@ namespace utp
 	}
 
 	static int start_timer_event_type = 0;
+	static int start_write_notifier_event_type = 0;
 
 	///////////////////////////////////////////////////////////
 
@@ -83,6 +84,7 @@ namespace utp
 		connect(this,SIGNAL(accepted(Connection*)),this,SLOT(onAccepted(Connection*)));
 		poll_pipes.setAutoDelete(true);
 		start_timer_event_type = QEvent::registerEventType();
+		start_write_notifier_event_type = QEvent::registerEventType();
 	}
 
 	UTPServer::~UTPServer()
@@ -99,6 +101,7 @@ namespace utp
 	// HACK: to avoid binary incompatibilities, 
 	// relies on the fact that there will only be one  UTPServer instance
 	static QMutex pending_mutex;
+	static QMutex output_queue_mutex(QMutex::Recursive);
 	
 	void UTPServer::handlePendingConnections()
 	{
@@ -208,7 +211,7 @@ namespace utp
 	
 	void UTPServer::writePacket(int)
 	{
-		QMutexLocker lock(&mutex);
+		QMutexLocker lock(&output_queue_mutex);
 		
 		try
 		{
@@ -222,17 +225,8 @@ namespace utp
 				int ret = sock->sendTo((const bt::Uint8*)data.data(),data.size(),addr);
 				if (ret == net::SEND_WOULD_BLOCK)
 					break;
-				else if (ret == net::SEND_FAILURE)
-				{
-					// Kill the connection of this packet
-					Connection* conn = find(packet.get<2>());
-					if (conn)
-						conn->close();
-					
-					output_queue.pop_front();
-				}
-				else
-					output_queue.pop_front();
+				
+				output_queue.pop_front();
 			}
 		}
 		catch (Connection::TransmissionError & err)
@@ -322,25 +316,23 @@ namespace utp
 
 	bool UTPServer::sendTo(const QByteArray& data, const net::Address& addr,quint16 conn_id)
 	{
-		// if output_queue is not empty append to it, so that packet order is OK
-		// (when they are being sent anyway)
-		if (output_queue.empty())
+		QMutexLocker lock(&output_queue_mutex);
+		output_queue.append(OutputQueueEntry(data,addr,conn_id));
+		if (output_queue.size() == 1)
 		{
-			int ret = sock->sendTo((const bt::Uint8*)data.data(),data.size(),addr);
-			if (ret == net::SEND_WOULD_BLOCK)
-				output_queue.append(OutputQueueEntry(data,addr,conn_id));
-			else if (ret == net::SEND_FAILURE)
-				return false;
+			// Need to start write notifiers
+			if (QThread::currentThread() == utp_thread)
+				write_notifier->setEnabled(true);
+			else
+				QCoreApplication::postEvent(this,new QEvent((QEvent::Type)start_write_notifier_event_type));
 		}
-		else
-			output_queue.append(OutputQueueEntry(data,addr,conn_id));
 		
 		return true;
 	}
 
 	Connection* UTPServer::connectTo(const net::Address& addr)
 	{
-		if (!sock)
+		if (!sock || addr.port() == 0)
 			return 0;
 		
 		QMutexLocker lock(&mutex);
@@ -541,10 +533,14 @@ namespace utp
 		
 		if (mode == net::Poll::INPUT)
 		{
+			if (conn->bytesAvailable() > 0 || conn->connectionState() == CS_CLOSED)
+				pair->read_pipe->wakeUp();
 			pair->read_pipe->prepare(p,conn->receiveConnectionID(),pair->read_pipe);
 		}
 		else
 		{
+			if (conn->isWriteable())
+				pair->write_pipe->wakeUp();
 			pair->write_pipe->prepare(p,conn->receiveConnectionID(),pair->write_pipe);
 		}
 		
@@ -558,6 +554,11 @@ namespace utp
 		if (event->type() == start_timer_event_type)
 		{
 			timer.start(10,this);
+			event->accept();
+		}
+		else if (event->type() == start_write_notifier_event_type)
+		{
+			write_notifier->setEnabled(true);
 			event->accept();
 		}
 	}

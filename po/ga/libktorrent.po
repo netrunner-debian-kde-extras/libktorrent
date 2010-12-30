@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extragear-network/ktorrent.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-09 01:29+0200\n"
+"POT-Creation-Date: 2010-12-05 10:08+0100\n"
 "PO-Revision-Date: 2007-08-07 07:02-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -38,6 +38,11 @@ msgstr "Ní féidir %1 a thiontú go slánuimhir"
 msgid "Torrent is incomplete."
 msgstr "Torrent neamhiomlán."
 
+#: src/datachecker/singledatachecker.cpp:49
+#, kde-format
+msgid "Cannot open file : %1 : %2"
+msgstr "Ní féidir an comhad a oscailt: %1: %2"
+
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:325
 #: src/util/fileops.cpp:367
 #, kde-format
@@ -45,12 +50,12 @@ msgid "Cannot open %1 : %2"
 msgstr "Ní féidir %1 a oscailt: %2"
 
 #: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
-#: src/diskio/cachefile.cpp:435 src/diskio/cachefile.cpp:503
+#: src/diskio/cachefile.cpp:419 src/diskio/cachefile.cpp:487
 #, kde-format
 msgid "Cannot open %1 for writing : readonly filesystem"
 msgstr "Ní féidir %1 a oscailt chun é a scríobh: córas comhad inléite amháin"
 
-#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:441
+#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:425
 #, kde-format
 msgid "Attempting to write beyond the maximum size of %1"
 msgstr "Ag iarraidh scríobh thar uasmhéid %1"
@@ -67,27 +72,27 @@ msgstr ""
 msgid "Cannot expand file %1 : %2"
 msgstr "Ní féidir comhad %1 a fhairsingiú: %2"
 
-#: src/diskio/cachefile.cpp:401
+#: src/diskio/cachefile.cpp:385
 #, kde-format
 msgid "Error : Reading past the end of the file %1"
 msgstr "Earráid: Léamh thar deireadh chomhad %1"
 
-#: src/diskio/cachefile.cpp:406 src/diskio/cachefile.cpp:453
+#: src/diskio/cachefile.cpp:390 src/diskio/cachefile.cpp:437
 #, kde-format
 msgid "Failed to seek file %1 : %2"
 msgstr "Níorbh fhéidir comhad %1 a chuardach: %2"
 
-#: src/diskio/cachefile.cpp:414
+#: src/diskio/cachefile.cpp:398
 #, kde-format
 msgid "Error reading from %1"
 msgstr "Earráid agus %1 á léamh"
 
-#: src/diskio/cachefile.cpp:457
+#: src/diskio/cachefile.cpp:441
 #, kde-format
 msgid "Failed to write to file %1 : %2"
 msgstr "Níorbh fhéidir scríobh i gcomhad %1: %2"
 
-#: src/diskio/cachefile.cpp:524
+#: src/diskio/cachefile.cpp:508
 #, kde-format
 msgid "Cannot preallocate diskspace : %1"
 msgstr "Ní féidir spás diosca a réamhdháileadh: %1"
@@ -96,16 +101,6 @@ msgstr "Ní féidir spás diosca a réamhdháileadh: %1"
 #, kde-format
 msgid "Cannot open index file %1 : %2"
 msgstr "Ní féidir comhad innéacs %1 a oscailt: %2"
-
-#: src/diskio/singlefilecache.cpp:72 src/diskio/multifilecache.cpp:107
-#, kde-format
-msgid "Failed to open %1 : %2"
-msgstr "Níorbh fhéidir %1 a oscailt: %2"
-
-#: src/diskio/singlefilecache.cpp:83 src/diskio/multifilecache.cpp:134
-#, kde-format
-msgid "Failed to create %1 : %2"
-msgstr "Níorbh fhéidir %1 a chruthú: %2"
 
 #: src/diskio/dndfile.cpp:89
 #, kde-format
@@ -122,182 +117,30 @@ msgstr "Níorbh fhéidir an chéad smután a scríobh i gcomhad DND: %1"
 msgid "Failed to write last chunk to DND file : %1"
 msgstr "Níorbh fhéidir an smután deiridh a scríobh i gcomhad DND: %1"
 
+#: src/diskio/multifilecache.cpp:107 src/diskio/singlefilecache.cpp:72
+#, kde-format
+msgid "Failed to open %1 : %2"
+msgstr "Níorbh fhéidir %1 a oscailt: %2"
+
+#: src/diskio/multifilecache.cpp:134 src/diskio/singlefilecache.cpp:83
+#, kde-format
+msgid "Failed to create %1 : %2"
+msgstr "Níorbh fhéidir %1 a chruthú: %2"
+
 #: src/diskio/multifilecache.cpp:725 src/diskio/multifilecache.cpp:764
 #, kde-format
 msgid "Cannot open file %1 : %2"
 msgstr "Ní féidir comhad %1 a oscailt: %2"
 
-#: src/interfaces/trackerinterface.cpp:58
-msgid "OK"
-msgstr "OK"
-
-#: src/interfaces/trackerinterface.cpp:59
-msgid "Announcing"
-msgstr "Fógairt"
-
-#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:85
+#: src/download/chunkdownload.cpp:373
 #, kde-format
-msgid "Error: %1"
-msgstr "Earráid: %1"
-
-#: src/migrate/migrate.cpp:45
-#, kde-format
-msgid "The directory %1 does not exist"
-msgstr "Níl comhadlann %1 ann"
-
-#: src/peer/peerid.cpp:203
-msgid "Unknown client"
-msgstr "Cliant anaithnid"
-
-#: src/tracker/httpannouncejob.cpp:140
-msgid "Redirect without a redirect location"
-msgstr "Atreorú gan suíomh atreoraithe"
-
-#: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:549
-#, kde-format
-msgid "Timeout contacting tracker %1"
-msgstr "Thar am ag dul i dteagmháil le lorgaire %1"
-
-#: src/tracker/udptracker.cpp:408
-#, kde-format
-msgid "Unable to resolve hostname %1"
-msgstr "Ní féidir óstainm %1 a réiteach"
-
-#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:454
-msgid "Invalid response from tracker"
-msgstr "Freagra neamhbhailí ó lorgaire"
-
-#: src/tracker/httptracker.cpp:293
-msgid "Invalid data from tracker"
-msgstr "Sonraí neamhbhailí ó lorgaire"
-
-#: src/tracker/httptracker.cpp:471
-msgid "Invalid tracker URL"
-msgstr "URL neamhbhailí ar an lorgaire"
-
-#: src/torrent/torrentstats.cpp:71
-msgid "Not started"
-msgstr "Gan tosú"
-
-#: src/torrent/torrentstats.cpp:73
-msgid "Download completed"
-msgstr "Íosluchtú curtha i gcrích"
-
-#: src/torrent/torrentstats.cpp:75
-msgid "Seeding completed"
-msgstr "Síolú críochnaithe"
-
-#: src/torrent/torrentstats.cpp:77
-msgctxt "Status of a torrent file"
-msgid "Seeding"
-msgstr "Á Shíolú"
-
-#: src/torrent/torrentstats.cpp:79
-msgid "Downloading"
-msgstr "Á Íosluchtú"
-
-#: src/torrent/torrentstats.cpp:81
-msgid "Stalled"
-msgstr "Ag fanacht"
-
-#: src/torrent/torrentstats.cpp:83
-msgid "Stopped"
-msgstr "Stoptha"
-
-#: src/torrent/torrentstats.cpp:87
-msgid "Allocating diskspace"
-msgstr "Spás diosca á dháileadh"
-
-#: src/torrent/torrentstats.cpp:89
-msgid "Queued for seeding"
-msgstr "Sa chiú le síolú"
-
-#: src/torrent/torrentstats.cpp:89
-msgid "Queued for downloading"
-msgstr "Sa chiú le híosluchtú"
-
-#: src/torrent/torrentstats.cpp:91
-msgid "Checking data"
-msgstr "Sonraí á seiceáil"
-
-#: src/torrent/torrentstats.cpp:93
-msgid "Stopped. No space left on device."
-msgstr "Stoptha. Tá an gléas lán."
-
-#: src/torrent/torrentstats.cpp:95
-msgid "Paused"
-msgstr "Moillithe"
-
-#: src/torrent/torrentcreator.cpp:124 src/torrent/torrentcreator.cpp:255
-#: src/torrent/torrentcreator.cpp:292
-#, kde-format
-msgid "Cannot open file %1: %2"
-msgstr "Ní féidir comhad %1 a oscailt: %2"
-
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "Ní féidir an comhad innéacs a chruthú: %1"
-
-#: src/torrent/torrent.cpp:92 src/torrent/torrent.cpp:166
-#: src/torrent/torrent.cpp:194 src/torrent/torrent.cpp:201
-#: src/torrent/torrent.cpp:209 src/torrent/torrent.cpp:213
-#: src/torrent/torrent.cpp:234 src/torrent/torrent.cpp:305
-msgid "Corrupted torrent."
-msgstr "Torrent truaillithe."
-
-#: src/torrent/torrent.cpp:157
-#, kde-format
-msgid " Unable to open torrent file %1 : %2"
-msgstr " Ní féidir comhad torrent %1 a oscailt: %2"
-
-#: src/torrent/torrent.cpp:287
-msgid "Parse Error"
-msgstr "Earráid Pharsála"
-
-#: src/torrent/torrentcontrol.cpp:533
-#, kde-format
-msgid ""
-"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
-"torrent is probably corrupt or is not a valid torrent file."
-msgstr ""
-"Tharla earráid agus torrent <b>%1</b> á luchtú:<br/><b>%2</b><br/>Is dócha "
-"go bhfuil an torrent truaillithe, nó ní comhad bailí torrent é."
-
-#: src/torrent/torrentcontrol.cpp:563
-#, kde-format
-msgid ""
-"An error occurred while loading the torrent:<br/><b>%1</b><br/>The torrent "
-"is probably corrupt or is not a valid torrent file."
-msgstr ""
-"Tharla earráid agus torrent á luchtú:<br/><b>%1</b><br/>Is dócha go bhfuil "
-"an torrent truaillithe, nó ní comhad bailí torrent é."
-
-#: src/torrent/torrentcontrol.cpp:574
-#, kde-format
-msgid "Unable to create %1 : %2"
-msgstr "Ní féidir %1 a chruthú: %2"
-
-#: src/torrent/torrentcontrol.cpp:589
-#, kde-format
-msgid ""
-"You are already downloading the torrent <b>%1</b>. The tracker lists from "
-"both torrents have been merged."
-msgstr ""
-"Tá torrent <b>%1</b> á íosluchtú cheana. Cumascadh na liostaí lorgaire ón dá "
-"torrent."
-
-#: src/torrent/torrentcontrol.cpp:594
-#, kde-format
-msgid "You are already downloading the torrent <b>%1</b>."
-msgstr "Tá tú ag íosluchtú torrent <b>%1</b> cheana."
-
-#: src/datachecker/singledatachecker.cpp:49
-#, kde-format
-msgid "Cannot open file : %1 : %2"
-msgstr "Ní féidir an comhad a oscailt: %1: %2"
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] "1 chomhghleacaí"
+msgstr[1] "%1 chomhghleacaí"
+msgstr[2] "%1 chomhghleacaí"
+msgstr[3] "%1 gcomhghleacaí"
+msgstr[4] "%1 comhghleacaí"
 
 #: src/download/httpconnection.cpp:37 src/download/webseed.cpp:49
 #: src/download/webseed.cpp:93
@@ -355,19 +198,176 @@ msgstr "Earráid: iarratas thar am"
 msgid "Redirected without a new location."
 msgstr "Atreoraithe gan suíomh nua."
 
-#: src/download/chunkdownload.cpp:373
-#, kde-format
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] "1 chomhghleacaí"
-msgstr[1] "%1 chomhghleacaí"
-msgstr[2] "%1 chomhghleacaí"
-msgstr[3] "%1 gcomhghleacaí"
-msgstr[4] "%1 comhghleacaí"
-
 #: src/download/webseed.cpp:303 src/download/webseed.cpp:517
 msgid "Not in use"
 msgstr "Gan úsáid"
+
+#: src/interfaces/trackerinterface.cpp:58
+msgid "OK"
+msgstr "OK"
+
+#: src/interfaces/trackerinterface.cpp:59
+msgid "Announcing"
+msgstr "Fógairt"
+
+#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:85
+#, kde-format
+msgid "Error: %1"
+msgstr "Earráid: %1"
+
+#: src/migrate/migrate.cpp:45
+#, kde-format
+msgid "The directory %1 does not exist"
+msgstr "Níl comhadlann %1 ann"
+
+#: src/peer/peerid.cpp:228
+msgid "Unknown client"
+msgstr "Cliant anaithnid"
+
+#: src/torrent/torrent.cpp:92 src/torrent/torrent.cpp:166
+#: src/torrent/torrent.cpp:194 src/torrent/torrent.cpp:201
+#: src/torrent/torrent.cpp:209 src/torrent/torrent.cpp:213
+#: src/torrent/torrent.cpp:234 src/torrent/torrent.cpp:305
+msgid "Corrupted torrent."
+msgstr "Torrent truaillithe."
+
+#: src/torrent/torrent.cpp:157
+#, kde-format
+msgid " Unable to open torrent file %1 : %2"
+msgstr " Ní féidir comhad torrent %1 a oscailt: %2"
+
+#: src/torrent/torrent.cpp:287
+msgid "Parse Error"
+msgstr "Earráid Pharsála"
+
+#: src/torrent/torrentcreator.cpp:124 src/torrent/torrentcreator.cpp:255
+#: src/torrent/torrentcreator.cpp:292
+#, kde-format
+msgid "Cannot open file %1: %2"
+msgstr "Ní féidir comhad %1 a oscailt: %2"
+
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "Ní féidir an comhad innéacs a chruthú: %1"
+
+#: src/torrent/torrentstats.cpp:71
+msgid "Not started"
+msgstr "Gan tosú"
+
+#: src/torrent/torrentstats.cpp:73
+msgid "Download completed"
+msgstr "Íosluchtú curtha i gcrích"
+
+#: src/torrent/torrentstats.cpp:75
+msgid "Seeding completed"
+msgstr "Síolú críochnaithe"
+
+#: src/torrent/torrentstats.cpp:77
+msgctxt "Status of a torrent file"
+msgid "Seeding"
+msgstr "Á Shíolú"
+
+#: src/torrent/torrentstats.cpp:79
+msgid "Downloading"
+msgstr "Á Íosluchtú"
+
+#: src/torrent/torrentstats.cpp:81
+msgid "Stalled"
+msgstr "Ag fanacht"
+
+#: src/torrent/torrentstats.cpp:83
+msgid "Stopped"
+msgstr "Stoptha"
+
+#: src/torrent/torrentstats.cpp:87
+msgid "Allocating diskspace"
+msgstr "Spás diosca á dháileadh"
+
+#: src/torrent/torrentstats.cpp:89
+msgid "Queued for seeding"
+msgstr "Sa chiú le síolú"
+
+#: src/torrent/torrentstats.cpp:89
+msgid "Queued for downloading"
+msgstr "Sa chiú le híosluchtú"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Checking data"
+msgstr "Sonraí á seiceáil"
+
+#: src/torrent/torrentstats.cpp:93
+msgid "Stopped. No space left on device."
+msgstr "Stoptha. Tá an gléas lán."
+
+#: src/torrent/torrentstats.cpp:95
+msgid "Paused"
+msgstr "Moillithe"
+
+#: src/torrent/torrentcontrol.cpp:533
+#, kde-format
+msgid ""
+"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
+"torrent is probably corrupt or is not a valid torrent file."
+msgstr ""
+"Tharla earráid agus torrent <b>%1</b> á luchtú:<br/><b>%2</b><br/>Is dócha "
+"go bhfuil an torrent truaillithe, nó ní comhad bailí torrent é."
+
+#: src/torrent/torrentcontrol.cpp:563
+#, kde-format
+msgid ""
+"An error occurred while loading the torrent:<br/><b>%1</b><br/>The torrent "
+"is probably corrupt or is not a valid torrent file."
+msgstr ""
+"Tharla earráid agus torrent á luchtú:<br/><b>%1</b><br/>Is dócha go bhfuil "
+"an torrent truaillithe, nó ní comhad bailí torrent é."
+
+#: src/torrent/torrentcontrol.cpp:575
+#, kde-format
+msgid "Unable to create %1 : %2"
+msgstr "Ní féidir %1 a chruthú: %2"
+
+#: src/torrent/torrentcontrol.cpp:590
+#, kde-format
+msgid ""
+"You are already downloading the torrent <b>%1</b>. The tracker lists from "
+"both torrents have been merged."
+msgstr ""
+"Tá torrent <b>%1</b> á íosluchtú cheana. Cumascadh na liostaí lorgaire ón dá "
+"torrent."
+
+#: src/torrent/torrentcontrol.cpp:595
+#, kde-format
+msgid "You are already downloading the torrent <b>%1</b>."
+msgstr "Tá tú ag íosluchtú torrent <b>%1</b> cheana."
+
+#: src/tracker/httpannouncejob.cpp:140
+msgid "Redirect without a redirect location"
+msgstr "Atreorú gan suíomh atreoraithe"
+
+#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
+#: src/tracker/httptracker.cpp:454
+msgid "Invalid response from tracker"
+msgstr "Freagra neamhbhailí ó lorgaire"
+
+#: src/tracker/httptracker.cpp:293
+msgid "Invalid data from tracker"
+msgstr "Sonraí neamhbhailí ó lorgaire"
+
+#: src/tracker/httptracker.cpp:471
+msgid "Invalid tracker URL"
+msgstr "URL neamhbhailí ar an lorgaire"
+
+#: src/tracker/httptracker.cpp:549 src/tracker/udptracker.cpp:371
+#: src/tracker/udptracker.cpp:381
+#, kde-format
+msgid "Timeout contacting tracker %1"
+msgstr "Thar am ag dul i dteagmháil le lorgaire %1"
+
+#: src/tracker/udptracker.cpp:408
+#, kde-format
+msgid "Unable to resolve hostname %1"
+msgstr "Ní féidir óstainm %1 a réiteach"
 
 #: src/util/file.cpp:83
 #, kde-format

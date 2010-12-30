@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-09 01:29+0200\n"
+"POT-Creation-Date: 2010-12-05 10:08+0100\n"
 "PO-Revision-Date: 2010-05-14 16:13+0200\n"
 "Last-Translator: Nicola Ruggero <nicola@nxnt.org>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -38,6 +38,11 @@ msgstr "Impossibile convertire %1 in un intero"
 msgid "Torrent is incomplete."
 msgstr "Il torrent è incompleto."
 
+#: src/datachecker/singledatachecker.cpp:49
+#, kde-format
+msgid "Cannot open file : %1 : %2"
+msgstr "Impossibile aprire il file: %1: %2"
+
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:325
 #: src/util/fileops.cpp:367
 #, kde-format
@@ -45,12 +50,12 @@ msgid "Cannot open %1 : %2"
 msgstr "Impossibile aprire %1: %2"
 
 #: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
-#: src/diskio/cachefile.cpp:435 src/diskio/cachefile.cpp:503
+#: src/diskio/cachefile.cpp:419 src/diskio/cachefile.cpp:487
 #, kde-format
 msgid "Cannot open %1 for writing : readonly filesystem"
 msgstr "Impossibile aprire %1 in scrittura: filesystem in sola lettura"
 
-#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:441
+#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:425
 #, kde-format
 msgid "Attempting to write beyond the maximum size of %1"
 msgstr "Tentativo di scrittura oltre la dimensione massima di %1"
@@ -68,27 +73,27 @@ msgstr ""
 msgid "Cannot expand file %1 : %2"
 msgstr "Impossibile espandere il file %1: %2"
 
-#: src/diskio/cachefile.cpp:401
+#: src/diskio/cachefile.cpp:385
 #, kde-format
 msgid "Error : Reading past the end of the file %1"
 msgstr "Errore: lettura oltre la fine del file %1"
 
-#: src/diskio/cachefile.cpp:406 src/diskio/cachefile.cpp:453
+#: src/diskio/cachefile.cpp:390 src/diskio/cachefile.cpp:437
 #, kde-format
 msgid "Failed to seek file %1 : %2"
 msgstr "Impossibile scorrere il file %1: %2"
 
-#: src/diskio/cachefile.cpp:414
+#: src/diskio/cachefile.cpp:398
 #, kde-format
 msgid "Error reading from %1"
 msgstr "Errore durante la lettura di %1"
 
-#: src/diskio/cachefile.cpp:457
+#: src/diskio/cachefile.cpp:441
 #, kde-format
 msgid "Failed to write to file %1 : %2"
 msgstr "Impossibile scrivere nel file %1: %2"
 
-#: src/diskio/cachefile.cpp:524
+#: src/diskio/cachefile.cpp:508
 #, kde-format
 msgid "Cannot preallocate diskspace : %1"
 msgstr "Impossibile riservare lo spazio su disco: %1"
@@ -97,16 +102,6 @@ msgstr "Impossibile riservare lo spazio su disco: %1"
 #, kde-format
 msgid "Cannot open index file %1 : %2"
 msgstr "Impossibile aprire il file indice %1: %2"
-
-#: src/diskio/singlefilecache.cpp:72 src/diskio/multifilecache.cpp:107
-#, kde-format
-msgid "Failed to open %1 : %2"
-msgstr "Impossibile aprire %1: %2"
-
-#: src/diskio/singlefilecache.cpp:83 src/diskio/multifilecache.cpp:134
-#, kde-format
-msgid "Failed to create %1 : %2"
-msgstr "Impossibile creare %1 : %2"
 
 #: src/diskio/dndfile.cpp:89
 #, kde-format
@@ -123,183 +118,27 @@ msgstr "Impossibile scrivere la prima parte al file DND: %1"
 msgid "Failed to write last chunk to DND file : %1"
 msgstr "Impossibile scrivere l'ultima parte al file DND: %1"
 
+#: src/diskio/multifilecache.cpp:107 src/diskio/singlefilecache.cpp:72
+#, kde-format
+msgid "Failed to open %1 : %2"
+msgstr "Impossibile aprire %1: %2"
+
+#: src/diskio/multifilecache.cpp:134 src/diskio/singlefilecache.cpp:83
+#, kde-format
+msgid "Failed to create %1 : %2"
+msgstr "Impossibile creare %1 : %2"
+
 #: src/diskio/multifilecache.cpp:725 src/diskio/multifilecache.cpp:764
 #, kde-format
 msgid "Cannot open file %1 : %2"
 msgstr "Impossibile aprire il file %1: %2"
 
-#: src/interfaces/trackerinterface.cpp:58
-msgid "OK"
-msgstr "OK"
-
-#: src/interfaces/trackerinterface.cpp:59
-msgid "Announcing"
-msgstr "Annuncio"
-
-#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:85
+#: src/download/chunkdownload.cpp:373
 #, kde-format
-msgid "Error: %1"
-msgstr "Errore: %1"
-
-#: src/migrate/migrate.cpp:45
-#, kde-format
-msgid "The directory %1 does not exist"
-msgstr "La cartella %1 non esiste"
-
-#: src/peer/peerid.cpp:203
-msgid "Unknown client"
-msgstr "Client sconosciuto"
-
-#: src/tracker/httpannouncejob.cpp:140
-msgid "Redirect without a redirect location"
-msgstr "Rediretto senza una nuova destinazione"
-
-#: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:549
-#, kde-format
-msgid "Timeout contacting tracker %1"
-msgstr "Tempo scaduto contattando il server traccia %1"
-
-#: src/tracker/udptracker.cpp:408
-#, kde-format
-msgid "Unable to resolve hostname %1"
-msgstr "Impossibile risolvere il nome host %1"
-
-#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:454
-msgid "Invalid response from tracker"
-msgstr "Risposta non valida dal server traccia"
-
-#: src/tracker/httptracker.cpp:293
-msgid "Invalid data from tracker"
-msgstr "Dati non validi dal server traccia"
-
-#: src/tracker/httptracker.cpp:471
-msgid "Invalid tracker URL"
-msgstr "URL del server traccia non valido"
-
-#: src/torrent/torrentstats.cpp:71
-msgid "Not started"
-msgstr "Non avviato"
-
-#: src/torrent/torrentstats.cpp:73
-msgid "Download completed"
-msgstr "Scaricamento completato"
-
-#: src/torrent/torrentstats.cpp:75
-msgid "Seeding completed"
-msgstr "Distribuzione seme completata"
-
-#: src/torrent/torrentstats.cpp:77
-msgctxt "Status of a torrent file"
-msgid "Seeding"
-msgstr "Distribuzione seme"
-
-#: src/torrent/torrentstats.cpp:79
-msgid "Downloading"
-msgstr "Scaricamento"
-
-#: src/torrent/torrentstats.cpp:81
-msgid "Stalled"
-msgstr "In stallo"
-
-#: src/torrent/torrentstats.cpp:83
-msgid "Stopped"
-msgstr "Fermato"
-
-#: src/torrent/torrentstats.cpp:87
-msgid "Allocating diskspace"
-msgstr "Riserva spazio su disco in corso"
-
-#: src/torrent/torrentstats.cpp:89
-msgid "Queued for seeding"
-msgstr "In coda per la distribuzione"
-
-#: src/torrent/torrentstats.cpp:89
-msgid "Queued for downloading"
-msgstr "In coda per lo scaricamento"
-
-#: src/torrent/torrentstats.cpp:91
-msgid "Checking data"
-msgstr "Controllo dati"
-
-#: src/torrent/torrentstats.cpp:93
-msgid "Stopped. No space left on device."
-msgstr "Fermato. Non c'è spazio rimanente sul dispositivo."
-
-#: src/torrent/torrentstats.cpp:95
-msgid "Paused"
-msgstr "In pausa"
-
-#: src/torrent/torrentcreator.cpp:124 src/torrent/torrentcreator.cpp:255
-#: src/torrent/torrentcreator.cpp:292
-#, kde-format
-msgid "Cannot open file %1: %2"
-msgstr "Impossibile aprire il file %1: %2"
-
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "Impossibile creare il file indice: %1"
-
-#: src/torrent/torrent.cpp:92 src/torrent/torrent.cpp:166
-#: src/torrent/torrent.cpp:194 src/torrent/torrent.cpp:201
-#: src/torrent/torrent.cpp:209 src/torrent/torrent.cpp:213
-#: src/torrent/torrent.cpp:234 src/torrent/torrent.cpp:305
-msgid "Corrupted torrent."
-msgstr "Torrent danneggiato."
-
-#: src/torrent/torrent.cpp:157
-#, kde-format
-msgid " Unable to open torrent file %1 : %2"
-msgstr "Impossibile aprire il file torrent %1: %2"
-
-#: src/torrent/torrent.cpp:287
-msgid "Parse Error"
-msgstr "Errore di analisi"
-
-#: src/torrent/torrentcontrol.cpp:533
-#, kde-format
-msgid ""
-"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
-"torrent is probably corrupt or is not a valid torrent file."
-msgstr ""
-"Errore durante il caricamento del torrent <b>%1</b>:<br/><b>%2</b><br/"
-">Probabilmente il torrent è danneggiato oppure non è affatto un file torrent "
-"valido."
-
-#: src/torrent/torrentcontrol.cpp:563
-#, kde-format
-msgid ""
-"An error occurred while loading the torrent:<br/><b>%1</b><br/>The torrent "
-"is probably corrupt or is not a valid torrent file."
-msgstr ""
-"Errore durante il caricamento del torrent <br/><b>%1</b><br/>Probabilmente "
-"il torrent è danneggiato oppure non è affatto un file torrent valido."
-
-#: src/torrent/torrentcontrol.cpp:574
-#, kde-format
-msgid "Unable to create %1 : %2"
-msgstr "Impossibile creare %1: %2"
-
-#: src/torrent/torrentcontrol.cpp:589
-#, kde-format
-msgid ""
-"You are already downloading the torrent <b>%1</b>. The tracker lists from "
-"both torrents have been merged."
-msgstr ""
-"Stai già scaricando il torrent <b>%1</b>. La lista dei server traccia di "
-"entrambi i torrent è stata unificata."
-
-#: src/torrent/torrentcontrol.cpp:594
-#, kde-format
-msgid "You are already downloading the torrent <b>%1</b>."
-msgstr "Stai già scaricando il torrent <b>%1</b>."
-
-#: src/datachecker/singledatachecker.cpp:49
-#, kde-format
-msgid "Cannot open file : %1 : %2"
-msgstr "Impossibile aprire il file: %1: %2"
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] "1 nodo"
+msgstr[1] "%1 nodi"
 
 #: src/download/httpconnection.cpp:37 src/download/webseed.cpp:49
 #: src/download/webseed.cpp:93
@@ -357,16 +196,177 @@ msgstr "Errore: richiesta scaduta"
 msgid "Redirected without a new location."
 msgstr "Rediretto senza una nuova destinazione."
 
-#: src/download/chunkdownload.cpp:373
-#, kde-format
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] "1 nodo"
-msgstr[1] "%1 nodi"
-
 #: src/download/webseed.cpp:303 src/download/webseed.cpp:517
 msgid "Not in use"
 msgstr "Non in uso"
+
+#: src/interfaces/trackerinterface.cpp:58
+msgid "OK"
+msgstr "OK"
+
+#: src/interfaces/trackerinterface.cpp:59
+msgid "Announcing"
+msgstr "Annuncio"
+
+#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:85
+#, kde-format
+msgid "Error: %1"
+msgstr "Errore: %1"
+
+#: src/migrate/migrate.cpp:45
+#, kde-format
+msgid "The directory %1 does not exist"
+msgstr "La cartella %1 non esiste"
+
+#: src/peer/peerid.cpp:228
+msgid "Unknown client"
+msgstr "Client sconosciuto"
+
+#: src/torrent/torrent.cpp:92 src/torrent/torrent.cpp:166
+#: src/torrent/torrent.cpp:194 src/torrent/torrent.cpp:201
+#: src/torrent/torrent.cpp:209 src/torrent/torrent.cpp:213
+#: src/torrent/torrent.cpp:234 src/torrent/torrent.cpp:305
+msgid "Corrupted torrent."
+msgstr "Torrent danneggiato."
+
+#: src/torrent/torrent.cpp:157
+#, kde-format
+msgid " Unable to open torrent file %1 : %2"
+msgstr "Impossibile aprire il file torrent %1: %2"
+
+#: src/torrent/torrent.cpp:287
+msgid "Parse Error"
+msgstr "Errore di analisi"
+
+#: src/torrent/torrentcreator.cpp:124 src/torrent/torrentcreator.cpp:255
+#: src/torrent/torrentcreator.cpp:292
+#, kde-format
+msgid "Cannot open file %1: %2"
+msgstr "Impossibile aprire il file %1: %2"
+
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "Impossibile creare il file indice: %1"
+
+#: src/torrent/torrentstats.cpp:71
+msgid "Not started"
+msgstr "Non avviato"
+
+#: src/torrent/torrentstats.cpp:73
+msgid "Download completed"
+msgstr "Scaricamento completato"
+
+#: src/torrent/torrentstats.cpp:75
+msgid "Seeding completed"
+msgstr "Distribuzione seme completata"
+
+#: src/torrent/torrentstats.cpp:77
+msgctxt "Status of a torrent file"
+msgid "Seeding"
+msgstr "Distribuzione seme"
+
+#: src/torrent/torrentstats.cpp:79
+msgid "Downloading"
+msgstr "Scaricamento"
+
+#: src/torrent/torrentstats.cpp:81
+msgid "Stalled"
+msgstr "In stallo"
+
+#: src/torrent/torrentstats.cpp:83
+msgid "Stopped"
+msgstr "Fermato"
+
+#: src/torrent/torrentstats.cpp:87
+msgid "Allocating diskspace"
+msgstr "Riserva spazio su disco in corso"
+
+#: src/torrent/torrentstats.cpp:89
+msgid "Queued for seeding"
+msgstr "In coda per la distribuzione"
+
+#: src/torrent/torrentstats.cpp:89
+msgid "Queued for downloading"
+msgstr "In coda per lo scaricamento"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Checking data"
+msgstr "Controllo dati"
+
+#: src/torrent/torrentstats.cpp:93
+msgid "Stopped. No space left on device."
+msgstr "Fermato. Non c'è spazio rimanente sul dispositivo."
+
+#: src/torrent/torrentstats.cpp:95
+msgid "Paused"
+msgstr "In pausa"
+
+#: src/torrent/torrentcontrol.cpp:533
+#, kde-format
+msgid ""
+"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
+"torrent is probably corrupt or is not a valid torrent file."
+msgstr ""
+"Errore durante il caricamento del torrent <b>%1</b>:<br/><b>%2</b><br/"
+">Probabilmente il torrent è danneggiato oppure non è affatto un file torrent "
+"valido."
+
+#: src/torrent/torrentcontrol.cpp:563
+#, kde-format
+msgid ""
+"An error occurred while loading the torrent:<br/><b>%1</b><br/>The torrent "
+"is probably corrupt or is not a valid torrent file."
+msgstr ""
+"Errore durante il caricamento del torrent <br/><b>%1</b><br/>Probabilmente "
+"il torrent è danneggiato oppure non è affatto un file torrent valido."
+
+#: src/torrent/torrentcontrol.cpp:575
+#, kde-format
+msgid "Unable to create %1 : %2"
+msgstr "Impossibile creare %1: %2"
+
+#: src/torrent/torrentcontrol.cpp:590
+#, kde-format
+msgid ""
+"You are already downloading the torrent <b>%1</b>. The tracker lists from "
+"both torrents have been merged."
+msgstr ""
+"Stai già scaricando il torrent <b>%1</b>. La lista dei server traccia di "
+"entrambi i torrent è stata unificata."
+
+#: src/torrent/torrentcontrol.cpp:595
+#, kde-format
+msgid "You are already downloading the torrent <b>%1</b>."
+msgstr "Stai già scaricando il torrent <b>%1</b>."
+
+#: src/tracker/httpannouncejob.cpp:140
+msgid "Redirect without a redirect location"
+msgstr "Rediretto senza una nuova destinazione"
+
+#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
+#: src/tracker/httptracker.cpp:454
+msgid "Invalid response from tracker"
+msgstr "Risposta non valida dal server traccia"
+
+#: src/tracker/httptracker.cpp:293
+msgid "Invalid data from tracker"
+msgstr "Dati non validi dal server traccia"
+
+#: src/tracker/httptracker.cpp:471
+msgid "Invalid tracker URL"
+msgstr "URL del server traccia non valido"
+
+#: src/tracker/httptracker.cpp:549 src/tracker/udptracker.cpp:371
+#: src/tracker/udptracker.cpp:381
+#, kde-format
+msgid "Timeout contacting tracker %1"
+msgstr "Tempo scaduto contattando il server traccia %1"
+
+#: src/tracker/udptracker.cpp:408
+#, kde-format
+msgid "Unable to resolve hostname %1"
+msgstr "Impossibile risolvere il nome host %1"
 
 #: src/util/file.cpp:83
 #, kde-format
