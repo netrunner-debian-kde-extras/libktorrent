@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-09 01:29+0200\n"
+"POT-Creation-Date: 2010-12-05 10:08+0100\n"
 "PO-Revision-Date: 2009-10-31 23:24+0900\n"
 "Last-Translator: Yukiko Bando <ybando@k6.dion.ne.jp>\n"
 "Language-Team: Japanese <Kdeveloper@kde.gr.jp>\n"
@@ -40,6 +40,11 @@ msgstr "%1 を整数に変換できません"
 msgid "Torrent is incomplete."
 msgstr "torrent が不完全です。"
 
+#: src/datachecker/singledatachecker.cpp:49
+#, kde-format
+msgid "Cannot open file : %1 : %2"
+msgstr "ファイル <filename>%1</filename> を開けません: %2"
+
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:325
 #: src/util/fileops.cpp:367
 #, kde-format
@@ -47,14 +52,14 @@ msgid "Cannot open %1 : %2"
 msgstr "<filename>%1</filename> を開けません: %2"
 
 #: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
-#: src/diskio/cachefile.cpp:435 src/diskio/cachefile.cpp:503
+#: src/diskio/cachefile.cpp:419 src/diskio/cachefile.cpp:487
 #, kde-format
 msgid "Cannot open %1 for writing : readonly filesystem"
 msgstr ""
 "<filename>%1</filename> を書き込みのために開けません: 読み取り専用のファイル"
 "システムです"
 
-#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:441
+#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:425
 #, kde-format
 msgid "Attempting to write beyond the maximum size of %1"
 msgstr ""
@@ -70,28 +75,28 @@ msgstr ""
 msgid "Cannot expand file %1 : %2"
 msgstr "ファイル <filename>%1</filename> を展開できません: %2"
 
-#: src/diskio/cachefile.cpp:401
+#: src/diskio/cachefile.cpp:385
 #, kde-format
 msgid "Error : Reading past the end of the file %1"
 msgstr ""
 "エラー: ファイル <filename>%1</filename> の終端を越えて読むことはできません"
 
-#: src/diskio/cachefile.cpp:406 src/diskio/cachefile.cpp:453
+#: src/diskio/cachefile.cpp:390 src/diskio/cachefile.cpp:437
 #, kde-format
 msgid "Failed to seek file %1 : %2"
 msgstr "ファイル <filename>%1</filename> をシークできませんでした: %2"
 
-#: src/diskio/cachefile.cpp:414
+#: src/diskio/cachefile.cpp:398
 #, kde-format
 msgid "Error reading from %1"
 msgstr "<filename>%1</filename> からの読み取りエラー"
 
-#: src/diskio/cachefile.cpp:457
+#: src/diskio/cachefile.cpp:441
 #, kde-format
 msgid "Failed to write to file %1 : %2"
 msgstr "ファイル <filename>%1</filename> に書き込めませんでした: %2"
 
-#: src/diskio/cachefile.cpp:524
+#: src/diskio/cachefile.cpp:508
 #, kde-format
 msgid "Cannot preallocate diskspace : %1"
 msgstr "ディスク領域の事前割り当てができません: %1"
@@ -100,16 +105,6 @@ msgstr "ディスク領域の事前割り当てができません: %1"
 #, kde-format
 msgid "Cannot open index file %1 : %2"
 msgstr "インデックスファイル <filename>%1</filename> を開けません: %2"
-
-#: src/diskio/singlefilecache.cpp:72 src/diskio/multifilecache.cpp:107
-#, kde-format
-msgid "Failed to open %1 : %2"
-msgstr "<filename>%1</filename> を開けませんでした: %2"
-
-#: src/diskio/singlefilecache.cpp:83 src/diskio/multifilecache.cpp:134
-#, kde-format
-msgid "Failed to create %1 : %2"
-msgstr "<filename>%1</filename> を作成できませんでした: %2"
 
 #: src/diskio/dndfile.cpp:89
 #, kde-format
@@ -126,186 +121,27 @@ msgstr "最初のピースを DND ファイルに書き込めませんでした:
 msgid "Failed to write last chunk to DND file : %1"
 msgstr "最後のピースを DND ファイルに書き込めませんでした: %1"
 
+#: src/diskio/multifilecache.cpp:107 src/diskio/singlefilecache.cpp:72
+#, kde-format
+msgid "Failed to open %1 : %2"
+msgstr "<filename>%1</filename> を開けませんでした: %2"
+
+#: src/diskio/multifilecache.cpp:134 src/diskio/singlefilecache.cpp:83
+#, kde-format
+msgid "Failed to create %1 : %2"
+msgstr "<filename>%1</filename> を作成できませんでした: %2"
+
 #: src/diskio/multifilecache.cpp:725 src/diskio/multifilecache.cpp:764
 #, kde-format
 msgid "Cannot open file %1 : %2"
 msgstr "ファイル <filename>%1</filename> を開けません: %2"
 
-#: src/interfaces/trackerinterface.cpp:58
-msgid "OK"
-msgstr "OK"
-
-#: src/interfaces/trackerinterface.cpp:59
-msgid "Announcing"
-msgstr "アナウンス"
-
-#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:85
+#: src/download/chunkdownload.cpp:373
 #, kde-format
-msgid "Error: %1"
-msgstr "エラー: %1"
-
-#: src/migrate/migrate.cpp:45
-#, kde-format
-msgid "The directory %1 does not exist"
-msgstr "フォルダ <filename>%1</filename> は存在しません"
-
-#: src/peer/peerid.cpp:203
-msgid "Unknown client"
-msgstr "未知のクライアント"
-
-#: src/tracker/httpannouncejob.cpp:140
-msgid "Redirect without a redirect location"
-msgstr "リダイレクト先なしでリダイレクトされました"
-
-#: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:549
-#, kde-format
-msgid "Timeout contacting tracker %1"
-msgstr "トラッカー %1 への接続中にタイムアウト"
-
-#: src/tracker/udptracker.cpp:408
-#, kde-format
-msgid "Unable to resolve hostname %1"
-msgstr "ホスト名 %1 を解決できませんでした"
-
-#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:454
-msgid "Invalid response from tracker"
-msgstr "トラッカーから無効な応答"
-
-#: src/tracker/httptracker.cpp:293
-msgid "Invalid data from tracker"
-msgstr "トラッカーから無効なデータ"
-
-#: src/tracker/httptracker.cpp:471
-msgid "Invalid tracker URL"
-msgstr "無効なトラッカー URL"
-
-#: src/torrent/torrentstats.cpp:71
-msgid "Not started"
-msgstr "開始していません"
-
-#: src/torrent/torrentstats.cpp:73
-msgid "Download completed"
-msgstr "ダウンロード完了"
-
-#: src/torrent/torrentstats.cpp:75
-msgid "Seeding completed"
-msgstr "シード完了"
-
-#: src/torrent/torrentstats.cpp:77
-msgctxt "Status of a torrent file"
-msgid "Seeding"
-msgstr "シード中"
-
-#: src/torrent/torrentstats.cpp:79
-msgid "Downloading"
-msgstr "ダウンロード中"
-
-#: src/torrent/torrentstats.cpp:81
-msgid "Stalled"
-msgstr "ストールしました"
-
-#: src/torrent/torrentstats.cpp:83
-msgid "Stopped"
-msgstr "停止中"
-
-#: src/torrent/torrentstats.cpp:87
-msgid "Allocating diskspace"
-msgstr "ディスク領域を割り当て中"
-
-#: src/torrent/torrentstats.cpp:89
-msgid "Queued for seeding"
-msgstr "シード待ち"
-
-#: src/torrent/torrentstats.cpp:89
-msgid "Queued for downloading"
-msgstr "ダウンロード待ち"
-
-#: src/torrent/torrentstats.cpp:91
-msgid "Checking data"
-msgstr "データをチェック中"
-
-#: src/torrent/torrentstats.cpp:93
-msgid "Stopped. No space left on device."
-msgstr "停止しました。デバイスに空き領域が残っていません。"
-
-#: src/torrent/torrentstats.cpp:95
-msgid "Paused"
-msgstr "一時停止"
-
-#: src/torrent/torrentcreator.cpp:124 src/torrent/torrentcreator.cpp:255
-#: src/torrent/torrentcreator.cpp:292
-#, kde-format
-msgid "Cannot open file %1: %2"
-msgstr "ファイル <filename>%1</filename> を開けません: %2"
-
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "インデックスファイルを作成できません: %1"
-
-#: src/torrent/torrent.cpp:92 src/torrent/torrent.cpp:166
-#: src/torrent/torrent.cpp:194 src/torrent/torrent.cpp:201
-#: src/torrent/torrent.cpp:209 src/torrent/torrent.cpp:213
-#: src/torrent/torrent.cpp:234 src/torrent/torrent.cpp:305
-msgid "Corrupted torrent."
-msgstr "torrent が壊れています。"
-
-#: src/torrent/torrent.cpp:157
-#, kde-format
-msgid " Unable to open torrent file %1 : %2"
-msgstr "torrent ファイル <filename>%1</filename> を開けません: %2"
-
-#: src/torrent/torrent.cpp:287
-msgid "Parse Error"
-msgstr "解析エラー"
-
-#: src/torrent/torrentcontrol.cpp:533
-#, kde-format
-msgid ""
-"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
-"torrent is probably corrupt or is not a valid torrent file."
-msgstr ""
-"torrent <b>%1</b> のロード中にエラーが発生しました:<br/>%2<br/>おそらく "
-"torrent が壊れているか、有効な torrent ファイルではありません。"
-
-#: src/torrent/torrentcontrol.cpp:563
-#, kde-format
-msgid ""
-"An error occurred while loading the torrent:<br/><b>%1</b><br/>The torrent "
-"is probably corrupt or is not a valid torrent file."
-msgstr ""
-"torrent のロード中にエラーが発生しました:<br/>%1<br/>おそらく torrent が壊れ"
-"ているか、有効な torrent ファイルではありません。"
-
-#: src/torrent/torrentcontrol.cpp:574
-#, kde-format
-msgid "Unable to create %1 : %2"
-msgstr "<resource>%1</resource> を作成できません: %2"
-
-#: src/torrent/torrentcontrol.cpp:589
-#, fuzzy, kde-format
-#| msgid ""
-#| "You are already downloading this torrent %1, the list of trackers of both "
-#| "torrents has been merged."
-msgid ""
-"You are already downloading the torrent <b>%1</b>. The tracker lists from "
-"both torrents have been merged."
-msgstr ""
-"torrent <resource>%1</resource> は既にダウンロード中です。両方の torrent のト"
-"ラッカーリストをマージしました。"
-
-#: src/torrent/torrentcontrol.cpp:594
-#, fuzzy, kde-format
-#| msgid "You are already downloading the torrent %1"
-msgid "You are already downloading the torrent <b>%1</b>."
-msgstr "torrent <resource>%1</resource> は既にダウンロード中です"
-
-#: src/datachecker/singledatachecker.cpp:49
-#, kde-format
-msgid "Cannot open file : %1 : %2"
-msgstr "ファイル <filename>%1</filename> を開けません: %2"
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] "1 ピア"
+msgstr[1] "%1 ピア"
 
 #: src/download/httpconnection.cpp:37 src/download/webseed.cpp:49
 #: src/download/webseed.cpp:93
@@ -363,16 +199,180 @@ msgstr "エラー: 要求がタイムアウトしました"
 msgid "Redirected without a new location."
 msgstr "新しい場所なしでリダイレクトされました。"
 
-#: src/download/chunkdownload.cpp:373
-#, kde-format
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] "1 ピア"
-msgstr[1] "%1 ピア"
-
 #: src/download/webseed.cpp:303 src/download/webseed.cpp:517
 msgid "Not in use"
 msgstr "使用されていません"
+
+#: src/interfaces/trackerinterface.cpp:58
+msgid "OK"
+msgstr "OK"
+
+#: src/interfaces/trackerinterface.cpp:59
+msgid "Announcing"
+msgstr "アナウンス"
+
+#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:85
+#, kde-format
+msgid "Error: %1"
+msgstr "エラー: %1"
+
+#: src/migrate/migrate.cpp:45
+#, kde-format
+msgid "The directory %1 does not exist"
+msgstr "フォルダ <filename>%1</filename> は存在しません"
+
+#: src/peer/peerid.cpp:228
+msgid "Unknown client"
+msgstr "未知のクライアント"
+
+#: src/torrent/torrent.cpp:92 src/torrent/torrent.cpp:166
+#: src/torrent/torrent.cpp:194 src/torrent/torrent.cpp:201
+#: src/torrent/torrent.cpp:209 src/torrent/torrent.cpp:213
+#: src/torrent/torrent.cpp:234 src/torrent/torrent.cpp:305
+msgid "Corrupted torrent."
+msgstr "torrent が壊れています。"
+
+#: src/torrent/torrent.cpp:157
+#, kde-format
+msgid " Unable to open torrent file %1 : %2"
+msgstr "torrent ファイル <filename>%1</filename> を開けません: %2"
+
+#: src/torrent/torrent.cpp:287
+msgid "Parse Error"
+msgstr "解析エラー"
+
+#: src/torrent/torrentcreator.cpp:124 src/torrent/torrentcreator.cpp:255
+#: src/torrent/torrentcreator.cpp:292
+#, kde-format
+msgid "Cannot open file %1: %2"
+msgstr "ファイル <filename>%1</filename> を開けません: %2"
+
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "インデックスファイルを作成できません: %1"
+
+#: src/torrent/torrentstats.cpp:71
+msgid "Not started"
+msgstr "開始していません"
+
+#: src/torrent/torrentstats.cpp:73
+msgid "Download completed"
+msgstr "ダウンロード完了"
+
+#: src/torrent/torrentstats.cpp:75
+msgid "Seeding completed"
+msgstr "シード完了"
+
+#: src/torrent/torrentstats.cpp:77
+msgctxt "Status of a torrent file"
+msgid "Seeding"
+msgstr "シード中"
+
+#: src/torrent/torrentstats.cpp:79
+msgid "Downloading"
+msgstr "ダウンロード中"
+
+#: src/torrent/torrentstats.cpp:81
+msgid "Stalled"
+msgstr "ストールしました"
+
+#: src/torrent/torrentstats.cpp:83
+msgid "Stopped"
+msgstr "停止中"
+
+#: src/torrent/torrentstats.cpp:87
+msgid "Allocating diskspace"
+msgstr "ディスク領域を割り当て中"
+
+#: src/torrent/torrentstats.cpp:89
+msgid "Queued for seeding"
+msgstr "シード待ち"
+
+#: src/torrent/torrentstats.cpp:89
+msgid "Queued for downloading"
+msgstr "ダウンロード待ち"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Checking data"
+msgstr "データをチェック中"
+
+#: src/torrent/torrentstats.cpp:93
+msgid "Stopped. No space left on device."
+msgstr "停止しました。デバイスに空き領域が残っていません。"
+
+#: src/torrent/torrentstats.cpp:95
+msgid "Paused"
+msgstr "一時停止"
+
+#: src/torrent/torrentcontrol.cpp:533
+#, kde-format
+msgid ""
+"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
+"torrent is probably corrupt or is not a valid torrent file."
+msgstr ""
+"torrent <b>%1</b> のロード中にエラーが発生しました:<br/>%2<br/>おそらく "
+"torrent が壊れているか、有効な torrent ファイルではありません。"
+
+#: src/torrent/torrentcontrol.cpp:563
+#, kde-format
+msgid ""
+"An error occurred while loading the torrent:<br/><b>%1</b><br/>The torrent "
+"is probably corrupt or is not a valid torrent file."
+msgstr ""
+"torrent のロード中にエラーが発生しました:<br/>%1<br/>おそらく torrent が壊れ"
+"ているか、有効な torrent ファイルではありません。"
+
+#: src/torrent/torrentcontrol.cpp:575
+#, kde-format
+msgid "Unable to create %1 : %2"
+msgstr "<resource>%1</resource> を作成できません: %2"
+
+#: src/torrent/torrentcontrol.cpp:590
+#, fuzzy, kde-format
+#| msgid ""
+#| "You are already downloading this torrent %1, the list of trackers of both "
+#| "torrents has been merged."
+msgid ""
+"You are already downloading the torrent <b>%1</b>. The tracker lists from "
+"both torrents have been merged."
+msgstr ""
+"torrent <resource>%1</resource> は既にダウンロード中です。両方の torrent のト"
+"ラッカーリストをマージしました。"
+
+#: src/torrent/torrentcontrol.cpp:595
+#, fuzzy, kde-format
+#| msgid "You are already downloading the torrent %1"
+msgid "You are already downloading the torrent <b>%1</b>."
+msgstr "torrent <resource>%1</resource> は既にダウンロード中です"
+
+#: src/tracker/httpannouncejob.cpp:140
+msgid "Redirect without a redirect location"
+msgstr "リダイレクト先なしでリダイレクトされました"
+
+#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
+#: src/tracker/httptracker.cpp:454
+msgid "Invalid response from tracker"
+msgstr "トラッカーから無効な応答"
+
+#: src/tracker/httptracker.cpp:293
+msgid "Invalid data from tracker"
+msgstr "トラッカーから無効なデータ"
+
+#: src/tracker/httptracker.cpp:471
+msgid "Invalid tracker URL"
+msgstr "無効なトラッカー URL"
+
+#: src/tracker/httptracker.cpp:549 src/tracker/udptracker.cpp:371
+#: src/tracker/udptracker.cpp:381
+#, kde-format
+msgid "Timeout contacting tracker %1"
+msgstr "トラッカー %1 への接続中にタイムアウト"
+
+#: src/tracker/udptracker.cpp:408
+#, kde-format
+msgid "Unable to resolve hostname %1"
+msgstr "ホスト名 %1 を解決できませんでした"
 
 #: src/util/file.cpp:83
 #, kde-format

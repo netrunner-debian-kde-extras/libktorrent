@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-09 01:29+0200\n"
+"POT-Creation-Date: 2010-12-05 10:08+0100\n"
 "PO-Revision-Date: 2009-11-10 11:27+0000\n"
 "Last-Translator: \n"
 "Language-Team:  <is@li.org>\n"
@@ -44,6 +44,11 @@ msgstr "Gat ekki umbreytt %1 í heiltölu (int)"
 msgid "Torrent is incomplete."
 msgstr "er ókláraður."
 
+#: src/datachecker/singledatachecker.cpp:49
+#, kde-format
+msgid "Cannot open file : %1 : %2"
+msgstr "Gat ekki opnað skrá : %1 : %2"
+
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:325
 #: src/util/fileops.cpp:367
 #, kde-format
@@ -51,12 +56,12 @@ msgid "Cannot open %1 : %2"
 msgstr "Gat ekki opnað %1 : %2"
 
 #: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
-#: src/diskio/cachefile.cpp:435 src/diskio/cachefile.cpp:503
+#: src/diskio/cachefile.cpp:419 src/diskio/cachefile.cpp:487
 #, fuzzy, kde-format
 msgid "Cannot open %1 for writing : readonly filesystem"
 msgstr "Gat ekki opnað %1 til skrifunar : skrifvarið skráakerfi (readonly)"
 
-#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:441
+#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:425
 #, kde-format
 msgid "Attempting to write beyond the maximum size of %1"
 msgstr ""
@@ -72,27 +77,27 @@ msgstr ""
 msgid "Cannot expand file %1 : %2"
 msgstr "Gat ekki afþjappað skrá %1 : %2"
 
-#: src/diskio/cachefile.cpp:401
+#: src/diskio/cachefile.cpp:385
 #, fuzzy, kde-format
 msgid "Error : Reading past the end of the file %1"
 msgstr "Villa : las framyfir enda skráarinnar %1"
 
-#: src/diskio/cachefile.cpp:406 src/diskio/cachefile.cpp:453
+#: src/diskio/cachefile.cpp:390 src/diskio/cachefile.cpp:437
 #, fuzzy, kde-format
 msgid "Failed to seek file %1 : %2"
 msgstr "Gat ekki leitað að skrá %1 : %2"
 
-#: src/diskio/cachefile.cpp:414
+#: src/diskio/cachefile.cpp:398
 #, fuzzy, kde-format
 msgid "Error reading from %1"
 msgstr "Villa við lestur frá %1"
 
-#: src/diskio/cachefile.cpp:457
+#: src/diskio/cachefile.cpp:441
 #, fuzzy, kde-format
 msgid "Failed to write to file %1 : %2"
 msgstr "Gat ekki skrifað í skrá %1 : %2"
 
-#: src/diskio/cachefile.cpp:524
+#: src/diskio/cachefile.cpp:508
 #, fuzzy, kde-format
 msgid "Cannot preallocate diskspace : %1"
 msgstr "Gat ekki tekið frá diskpláss : %1"
@@ -101,16 +106,6 @@ msgstr "Gat ekki tekið frá diskpláss : %1"
 #, fuzzy, kde-format
 msgid "Cannot open index file %1 : %2"
 msgstr "Get ekki opnað yfirlitsskrá %1 : %2"
-
-#: src/diskio/singlefilecache.cpp:72 src/diskio/multifilecache.cpp:107
-#, fuzzy, kde-format
-msgid "Failed to open %1 : %2"
-msgstr "Mistókst að opna %1 : %2"
-
-#: src/diskio/singlefilecache.cpp:83 src/diskio/multifilecache.cpp:134
-#, kde-format
-msgid "Failed to create %1 : %2"
-msgstr "Gat ekki búið til %1 : %2"
 
 #: src/diskio/dndfile.cpp:89
 #, fuzzy, kde-format
@@ -127,10 +122,94 @@ msgstr "Gat ekki skrifað fyrsta bútinn í DND skrá: %1"
 msgid "Failed to write last chunk to DND file : %1"
 msgstr "Gat ekki skrifað síðasta bútinn í DND skrá: %1"
 
+#: src/diskio/multifilecache.cpp:107 src/diskio/singlefilecache.cpp:72
+#, fuzzy, kde-format
+msgid "Failed to open %1 : %2"
+msgstr "Mistókst að opna %1 : %2"
+
+#: src/diskio/multifilecache.cpp:134 src/diskio/singlefilecache.cpp:83
+#, kde-format
+msgid "Failed to create %1 : %2"
+msgstr "Gat ekki búið til %1 : %2"
+
 #: src/diskio/multifilecache.cpp:725 src/diskio/multifilecache.cpp:764
 #, fuzzy, kde-format
 msgid "Cannot open file %1 : %2"
 msgstr "Gat ekki opnað skrá %1 : %2"
+
+#: src/download/chunkdownload.cpp:373
+#, fuzzy, kde-format
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] "1 jafningi"
+msgstr[1] "1 jafningi"
+
+#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:49
+#: src/download/webseed.cpp:93
+msgid "Not connected"
+msgstr "Ótengd(ur)"
+
+#: src/download/httpconnection.cpp:103
+#, fuzzy, kde-format
+msgid "Resolving proxy %1:%2"
+msgstr "Greini milliþjón (proxy) %1:%2"
+
+#: src/download/httpconnection.cpp:112
+#, fuzzy, kde-format
+msgid "Resolving hostname %1"
+msgstr "Greini vélarheiti %1"
+
+#: src/download/httpconnection.cpp:125 src/download/webseed.cpp:321
+#, fuzzy
+msgid "Connection closed"
+msgstr "Tengingu lokað"
+
+#: src/download/httpconnection.cpp:132
+#, fuzzy, kde-format
+msgid "Error: request failed: %1"
+msgstr "Villa: fyrirspurn mistókst: %1"
+
+#: src/download/httpconnection.cpp:149 src/download/httpconnection.cpp:213
+msgid "Connected"
+msgstr "Tengd(ur)"
+
+#: src/download/httpconnection.cpp:155
+#, fuzzy
+msgid "Error: Failed to connect to webseed"
+msgstr "Villa: tókst ekki að tengjast vefsáningu"
+
+#: src/download/httpconnection.cpp:220
+msgid "Connecting"
+msgstr "Tengist"
+
+#: src/download/httpconnection.cpp:231
+#, fuzzy
+msgid "Failed to connect to webseed"
+msgstr "Gat ekki tengst vefsáningu"
+
+#: src/download/httpconnection.cpp:238
+#, fuzzy
+msgid "Failed to resolve hostname of webseed"
+msgstr "Mistókst að greina vélarheiti vefsáningarinnar"
+
+#: src/download/httpconnection.cpp:318
+#, fuzzy
+msgid "Error: failed to connect, server not responding"
+msgstr "Villa: tókst ekki að tengjast, þjónn svarar ekki"
+
+#: src/download/httpconnection.cpp:327
+#, fuzzy
+msgid "Error: request timed out"
+msgstr "Villa: fyrirspurn rann út á tíma"
+
+#: src/download/httpconnection.cpp:391
+#, fuzzy
+msgid "Redirected without a new location."
+msgstr "a nýtt."
+
+#: src/download/webseed.cpp:303 src/download/webseed.cpp:517
+msgid "Not in use"
+msgstr "Ekki í notkun"
 
 #: src/interfaces/trackerinterface.cpp:58
 #, fuzzy
@@ -152,39 +231,39 @@ msgstr "Villa: %1"
 msgid "The directory %1 does not exist"
 msgstr "Mappan %1 er ekki til"
 
-#: src/peer/peerid.cpp:203
+#: src/peer/peerid.cpp:228
 #, fuzzy
 msgid "Unknown client"
 msgstr "Óþekktur biðlari"
 
-#: src/tracker/httpannouncejob.cpp:140
+#: src/torrent/torrent.cpp:92 src/torrent/torrent.cpp:166
+#: src/torrent/torrent.cpp:194 src/torrent/torrent.cpp:201
+#: src/torrent/torrent.cpp:209 src/torrent/torrent.cpp:213
+#: src/torrent/torrent.cpp:234 src/torrent/torrent.cpp:305
 #, fuzzy
-msgid "Redirect without a redirect location"
-msgstr "a nýtt."
+msgid "Corrupted torrent."
+msgstr "Búa til a"
 
-#: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:549
-#, kde-format
-msgid "Timeout contacting tracker %1"
-msgstr ""
+#: src/torrent/torrent.cpp:157
+#, fuzzy, kde-format
+msgid " Unable to open torrent file %1 : %2"
+msgstr "Gat ekki opnað torrent skrá %1 : %2"
 
-#: src/tracker/udptracker.cpp:408
-#, kde-format
-msgid "Unable to resolve hostname %1"
-msgstr "Tókst ekki að greina vélarheiti %1"
+#: src/torrent/torrent.cpp:287
+#, fuzzy
+msgid "Parse Error"
+msgstr "Þáttunarvilla"
 
-#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:454
-msgid "Invalid response from tracker"
-msgstr "Ógilt svar frá skrásetjara (tracker)"
+#: src/torrent/torrentcreator.cpp:124 src/torrent/torrentcreator.cpp:255
+#: src/torrent/torrentcreator.cpp:292
+#, fuzzy, kde-format
+msgid "Cannot open file %1: %2"
+msgstr "Gat ekki opnað skrá %1: %2"
 
-#: src/tracker/httptracker.cpp:293
-msgid "Invalid data from tracker"
-msgstr "Ógild gögn frá skrásetjara (tracker)"
-
-#: src/tracker/httptracker.cpp:471
-msgid "Invalid tracker URL"
-msgstr "Ógild slóð á skrásetjara (tracker)"
+#: src/torrent/torrentcreator.cpp:361
+#, fuzzy, kde-format
+msgid "Cannot create index file: %1"
+msgstr "Gat ekki búið til yfirlitsskrá: %1"
 
 #: src/torrent/torrentstats.cpp:71
 #, fuzzy
@@ -251,35 +330,6 @@ msgstr "Stöðvað. Ekkert pláss eftir á tækinu."
 msgid "Paused"
 msgstr "Í bið"
 
-#: src/torrent/torrentcreator.cpp:124 src/torrent/torrentcreator.cpp:255
-#: src/torrent/torrentcreator.cpp:292
-#, fuzzy, kde-format
-msgid "Cannot open file %1: %2"
-msgstr "Gat ekki opnað skrá %1: %2"
-
-#: src/torrent/torrentcreator.cpp:361
-#, fuzzy, kde-format
-msgid "Cannot create index file: %1"
-msgstr "Gat ekki búið til yfirlitsskrá: %1"
-
-#: src/torrent/torrent.cpp:92 src/torrent/torrent.cpp:166
-#: src/torrent/torrent.cpp:194 src/torrent/torrent.cpp:201
-#: src/torrent/torrent.cpp:209 src/torrent/torrent.cpp:213
-#: src/torrent/torrent.cpp:234 src/torrent/torrent.cpp:305
-#, fuzzy
-msgid "Corrupted torrent."
-msgstr "Búa til a"
-
-#: src/torrent/torrent.cpp:157
-#, fuzzy, kde-format
-msgid " Unable to open torrent file %1 : %2"
-msgstr "Gat ekki opnað torrent skrá %1 : %2"
-
-#: src/torrent/torrent.cpp:287
-#, fuzzy
-msgid "Parse Error"
-msgstr "Þáttunarvilla"
-
 #: src/torrent/torrentcontrol.cpp:533
 #, fuzzy, kde-format
 msgid ""
@@ -298,12 +348,12 @@ msgstr ""
 "Villa kom upp vi að hlaða inn straumnum:<br/><b>%1</b><br/>Torrent "
 "straumurinn er líklega skemmdur eða er ekki gild torrent skrá."
 
-#: src/torrent/torrentcontrol.cpp:574
+#: src/torrent/torrentcontrol.cpp:575
 #, fuzzy, kde-format
 msgid "Unable to create %1 : %2"
 msgstr "Gat ekki búið til %1 : %2"
 
-#: src/torrent/torrentcontrol.cpp:589
+#: src/torrent/torrentcontrol.cpp:590
 #, fuzzy, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
@@ -312,89 +362,39 @@ msgstr ""
 "Þú ert nú þegar að ná í þennan torrent staum %1, listi skrásetjara beggja "
 "straumanna hefur verið sameinaður."
 
-#: src/torrent/torrentcontrol.cpp:594
+#: src/torrent/torrentcontrol.cpp:595
 #, fuzzy, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Þú ert nú þegar að ná í torrent stauminn %1"
 
-#: src/datachecker/singledatachecker.cpp:49
-#, kde-format
-msgid "Cannot open file : %1 : %2"
-msgstr "Gat ekki opnað skrá : %1 : %2"
-
-#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:49
-#: src/download/webseed.cpp:93
-msgid "Not connected"
-msgstr "Ótengd(ur)"
-
-#: src/download/httpconnection.cpp:103
-#, fuzzy, kde-format
-msgid "Resolving proxy %1:%2"
-msgstr "Greini milliþjón (proxy) %1:%2"
-
-#: src/download/httpconnection.cpp:112
-#, fuzzy, kde-format
-msgid "Resolving hostname %1"
-msgstr "Greini vélarheiti %1"
-
-#: src/download/httpconnection.cpp:125 src/download/webseed.cpp:321
+#: src/tracker/httpannouncejob.cpp:140
 #, fuzzy
-msgid "Connection closed"
-msgstr "Tengingu lokað"
-
-#: src/download/httpconnection.cpp:132
-#, fuzzy, kde-format
-msgid "Error: request failed: %1"
-msgstr "Villa: fyrirspurn mistókst: %1"
-
-#: src/download/httpconnection.cpp:149 src/download/httpconnection.cpp:213
-msgid "Connected"
-msgstr "Tengd(ur)"
-
-#: src/download/httpconnection.cpp:155
-#, fuzzy
-msgid "Error: Failed to connect to webseed"
-msgstr "Villa: tókst ekki að tengjast vefsáningu"
-
-#: src/download/httpconnection.cpp:220
-msgid "Connecting"
-msgstr "Tengist"
-
-#: src/download/httpconnection.cpp:231
-#, fuzzy
-msgid "Failed to connect to webseed"
-msgstr "Gat ekki tengst vefsáningu"
-
-#: src/download/httpconnection.cpp:238
-#, fuzzy
-msgid "Failed to resolve hostname of webseed"
-msgstr "Mistókst að greina vélarheiti vefsáningarinnar"
-
-#: src/download/httpconnection.cpp:318
-#, fuzzy
-msgid "Error: failed to connect, server not responding"
-msgstr "Villa: tókst ekki að tengjast, þjónn svarar ekki"
-
-#: src/download/httpconnection.cpp:327
-#, fuzzy
-msgid "Error: request timed out"
-msgstr "Villa: fyrirspurn rann út á tíma"
-
-#: src/download/httpconnection.cpp:391
-#, fuzzy
-msgid "Redirected without a new location."
+msgid "Redirect without a redirect location"
 msgstr "a nýtt."
 
-#: src/download/chunkdownload.cpp:373
-#, fuzzy, kde-format
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] "1 jafningi"
-msgstr[1] "1 jafningi"
+#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
+#: src/tracker/httptracker.cpp:454
+msgid "Invalid response from tracker"
+msgstr "Ógilt svar frá skrásetjara (tracker)"
 
-#: src/download/webseed.cpp:303 src/download/webseed.cpp:517
-msgid "Not in use"
-msgstr "Ekki í notkun"
+#: src/tracker/httptracker.cpp:293
+msgid "Invalid data from tracker"
+msgstr "Ógild gögn frá skrásetjara (tracker)"
+
+#: src/tracker/httptracker.cpp:471
+msgid "Invalid tracker URL"
+msgstr "Ógild slóð á skrásetjara (tracker)"
+
+#: src/tracker/httptracker.cpp:549 src/tracker/udptracker.cpp:371
+#: src/tracker/udptracker.cpp:381
+#, kde-format
+msgid "Timeout contacting tracker %1"
+msgstr ""
+
+#: src/tracker/udptracker.cpp:408
+#, kde-format
+msgid "Unable to resolve hostname %1"
+msgstr "Tókst ekki að greina vélarheiti %1"
 
 #: src/util/file.cpp:83
 #, fuzzy, kde-format

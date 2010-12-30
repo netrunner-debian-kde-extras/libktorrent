@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-09 01:29+0200\n"
+"POT-Creation-Date: 2010-12-05 10:08+0100\n"
 "PO-Revision-Date: 2008-09-23 17:28+0300\n"
 "Last-Translator: Erdal Ronahi <erdal dot ronahi at gmail dot com>\n"
 "Language-Team: Kurdish <kde-i18n-doc@lists.kde.org>\n"
@@ -44,6 +44,12 @@ msgstr "%1 nayê vekirin: %2"
 msgid "Torrent is incomplete."
 msgstr "Pelên Torrent"
 
+#: src/datachecker/singledatachecker.cpp:49
+#, fuzzy, kde-format
+#| msgid "Cannot open %1 : %2"
+msgid "Cannot open file : %1 : %2"
+msgstr "%1 nayê vekirin: %2"
+
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:325
 #: src/util/fileops.cpp:367
 #, kde-format
@@ -51,12 +57,12 @@ msgid "Cannot open %1 : %2"
 msgstr "%1 nayê vekirin: %2"
 
 #: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
-#: src/diskio/cachefile.cpp:435 src/diskio/cachefile.cpp:503
+#: src/diskio/cachefile.cpp:419 src/diskio/cachefile.cpp:487
 #, kde-format
 msgid "Cannot open %1 for writing : readonly filesystem"
 msgstr ""
 
-#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:441
+#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:425
 #, kde-format
 msgid "Attempting to write beyond the maximum size of %1"
 msgstr ""
@@ -73,30 +79,30 @@ msgstr ""
 msgid "Cannot expand file %1 : %2"
 msgstr "%1 nayê vekirin: %2"
 
-#: src/diskio/cachefile.cpp:401
+#: src/diskio/cachefile.cpp:385
 #, kde-format
 msgid "Error : Reading past the end of the file %1"
 msgstr ""
 
-#: src/diskio/cachefile.cpp:406 src/diskio/cachefile.cpp:453
+#: src/diskio/cachefile.cpp:390 src/diskio/cachefile.cpp:437
 #, fuzzy, kde-format
 #| msgid "Cannot create directory %1: %2"
 msgid "Failed to seek file %1 : %2"
 msgstr "Peldanka %1 nayê afirandin: %2"
 
-#: src/diskio/cachefile.cpp:414
+#: src/diskio/cachefile.cpp:398
 #, fuzzy, kde-format
 #| msgid "Cannot read from %1"
 msgid "Error reading from %1"
 msgstr "Ji %1 nayê xwedin"
 
-#: src/diskio/cachefile.cpp:457
+#: src/diskio/cachefile.cpp:441
 #, fuzzy, kde-format
 #| msgid "Cannot create directory %1: %2"
 msgid "Failed to write to file %1 : %2"
 msgstr "Peldanka %1 nayê afirandin: %2"
 
-#: src/diskio/cachefile.cpp:524
+#: src/diskio/cachefile.cpp:508
 #, fuzzy, kde-format
 #| msgid "Cannot create directory %1: %2"
 msgid "Cannot preallocate diskspace : %1"
@@ -107,17 +113,6 @@ msgstr "Peldanka %1 nayê afirandin: %2"
 #| msgid "Cannot open %1 : %2"
 msgid "Cannot open index file %1 : %2"
 msgstr "%1 nayê vekirin: %2"
-
-#: src/diskio/singlefilecache.cpp:72 src/diskio/multifilecache.cpp:107
-#, fuzzy, kde-format
-#| msgid "Cannot open %1 : %2"
-msgid "Failed to open %1 : %2"
-msgstr "%1 nayê vekirin: %2"
-
-#: src/diskio/singlefilecache.cpp:83 src/diskio/multifilecache.cpp:134
-#, kde-format
-msgid "Failed to create %1 : %2"
-msgstr ""
 
 #: src/diskio/dndfile.cpp:89
 #, fuzzy, kde-format
@@ -137,11 +132,93 @@ msgstr "Peldanka %1 nayê afirandin: %2"
 msgid "Failed to write last chunk to DND file : %1"
 msgstr "Peldanka %1 nayê afirandin: %2"
 
+#: src/diskio/multifilecache.cpp:107 src/diskio/singlefilecache.cpp:72
+#, fuzzy, kde-format
+#| msgid "Cannot open %1 : %2"
+msgid "Failed to open %1 : %2"
+msgstr "%1 nayê vekirin: %2"
+
+#: src/diskio/multifilecache.cpp:134 src/diskio/singlefilecache.cpp:83
+#, kde-format
+msgid "Failed to create %1 : %2"
+msgstr ""
+
 #: src/diskio/multifilecache.cpp:725 src/diskio/multifilecache.cpp:764
 #, fuzzy, kde-format
 #| msgid "Cannot open %1 : %2"
 msgid "Cannot open file %1 : %2"
 msgstr "%1 nayê vekirin: %2"
+
+#: src/download/chunkdownload.cpp:373
+#, kde-format
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:49
+#: src/download/webseed.cpp:93
+msgid "Not connected"
+msgstr ""
+
+#: src/download/httpconnection.cpp:103
+#, kde-format
+msgid "Resolving proxy %1:%2"
+msgstr ""
+
+#: src/download/httpconnection.cpp:112
+#, kde-format
+msgid "Resolving hostname %1"
+msgstr ""
+
+#: src/download/httpconnection.cpp:125 src/download/webseed.cpp:321
+msgid "Connection closed"
+msgstr ""
+
+#: src/download/httpconnection.cpp:132
+#, kde-format
+msgid "Error: request failed: %1"
+msgstr ""
+
+#: src/download/httpconnection.cpp:149 src/download/httpconnection.cpp:213
+msgid "Connected"
+msgstr ""
+
+#: src/download/httpconnection.cpp:155
+msgid "Error: Failed to connect to webseed"
+msgstr ""
+
+#: src/download/httpconnection.cpp:220
+#, fuzzy
+#| msgid "Location"
+msgid "Connecting"
+msgstr "Cih"
+
+#: src/download/httpconnection.cpp:231
+msgid "Failed to connect to webseed"
+msgstr ""
+
+#: src/download/httpconnection.cpp:238
+#, fuzzy
+#| msgid "Cannot create directory %1: %2"
+msgid "Failed to resolve hostname of webseed"
+msgstr "Peldanka %1 nayê afirandin: %2"
+
+#: src/download/httpconnection.cpp:318
+msgid "Error: failed to connect, server not responding"
+msgstr ""
+
+#: src/download/httpconnection.cpp:327
+msgid "Error: request timed out"
+msgstr ""
+
+#: src/download/httpconnection.cpp:391
+msgid "Redirected without a new location."
+msgstr ""
+
+#: src/download/webseed.cpp:303 src/download/webseed.cpp:517
+msgid "Not in use"
+msgstr ""
 
 #: src/interfaces/trackerinterface.cpp:58
 #, fuzzy
@@ -164,37 +241,40 @@ msgstr "Çewtî: "
 msgid "The directory %1 does not exist"
 msgstr ""
 
-#: src/peer/peerid.cpp:203
+#: src/peer/peerid.cpp:228
 msgid "Unknown client"
 msgstr ""
 
-#: src/tracker/httpannouncejob.cpp:140
-msgid "Redirect without a redirect location"
+#: src/torrent/torrent.cpp:92 src/torrent/torrent.cpp:166
+#: src/torrent/torrent.cpp:194 src/torrent/torrent.cpp:201
+#: src/torrent/torrent.cpp:209 src/torrent/torrent.cpp:213
+#: src/torrent/torrent.cpp:234 src/torrent/torrent.cpp:305
+#, fuzzy
+#| msgid "Corrupted torrent!"
+msgid "Corrupted torrent."
+msgstr "Torrenta xerab!"
+
+#: src/torrent/torrent.cpp:157
+#, fuzzy, kde-format
+#| msgid "Cannot create directory %1: %2"
+msgid " Unable to open torrent file %1 : %2"
+msgstr "Peldanka %1 nayê afirandin: %2"
+
+#: src/torrent/torrent.cpp:287
+msgid "Parse Error"
 msgstr ""
 
-#: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:549
+#: src/torrent/torrentcreator.cpp:124 src/torrent/torrentcreator.cpp:255
+#: src/torrent/torrentcreator.cpp:292
 #, kde-format
-msgid "Timeout contacting tracker %1"
+msgid "Cannot open file %1: %2"
 msgstr ""
 
-#: src/tracker/udptracker.cpp:408
-#, kde-format
-msgid "Unable to resolve hostname %1"
-msgstr ""
-
-#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:454
-msgid "Invalid response from tracker"
-msgstr ""
-
-#: src/tracker/httptracker.cpp:293
-msgid "Invalid data from tracker"
-msgstr ""
-
-#: src/tracker/httptracker.cpp:471
-msgid "Invalid tracker URL"
-msgstr ""
+#: src/torrent/torrentcreator.cpp:361
+#, fuzzy, kde-format
+#| msgid "Cannot create directory %1: %2"
+msgid "Cannot create index file: %1"
+msgstr "Peldanka %1 nayê afirandin: %2"
 
 #: src/torrent/torrentstats.cpp:71
 msgid "Not started"
@@ -259,37 +339,6 @@ msgstr ""
 msgid "Paused"
 msgstr ""
 
-#: src/torrent/torrentcreator.cpp:124 src/torrent/torrentcreator.cpp:255
-#: src/torrent/torrentcreator.cpp:292
-#, kde-format
-msgid "Cannot open file %1: %2"
-msgstr ""
-
-#: src/torrent/torrentcreator.cpp:361
-#, fuzzy, kde-format
-#| msgid "Cannot create directory %1: %2"
-msgid "Cannot create index file: %1"
-msgstr "Peldanka %1 nayê afirandin: %2"
-
-#: src/torrent/torrent.cpp:92 src/torrent/torrent.cpp:166
-#: src/torrent/torrent.cpp:194 src/torrent/torrent.cpp:201
-#: src/torrent/torrent.cpp:209 src/torrent/torrent.cpp:213
-#: src/torrent/torrent.cpp:234 src/torrent/torrent.cpp:305
-#, fuzzy
-#| msgid "Corrupted torrent!"
-msgid "Corrupted torrent."
-msgstr "Torrenta xerab!"
-
-#: src/torrent/torrent.cpp:157
-#, fuzzy, kde-format
-#| msgid "Cannot create directory %1: %2"
-msgid " Unable to open torrent file %1 : %2"
-msgstr "Peldanka %1 nayê afirandin: %2"
-
-#: src/torrent/torrent.cpp:287
-msgid "Parse Error"
-msgstr ""
-
 #: src/torrent/torrentcontrol.cpp:533
 #, kde-format
 msgid ""
@@ -304,99 +353,50 @@ msgid ""
 "is probably corrupt or is not a valid torrent file."
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:574
+#: src/torrent/torrentcontrol.cpp:575
 #, fuzzy, kde-format
 #| msgid "Cannot create %1: %2"
 msgid "Unable to create %1 : %2"
 msgstr "%1 nayê çêkirin: %2"
 
-#: src/torrent/torrentcontrol.cpp:589
+#: src/torrent/torrentcontrol.cpp:590
 #, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
 "both torrents have been merged."
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:594
+#: src/torrent/torrentcontrol.cpp:595
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr ""
 
-#: src/datachecker/singledatachecker.cpp:49
-#, fuzzy, kde-format
-#| msgid "Cannot open %1 : %2"
-msgid "Cannot open file : %1 : %2"
-msgstr "%1 nayê vekirin: %2"
-
-#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:49
-#: src/download/webseed.cpp:93
-msgid "Not connected"
+#: src/tracker/httpannouncejob.cpp:140
+msgid "Redirect without a redirect location"
 msgstr ""
 
-#: src/download/httpconnection.cpp:103
+#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
+#: src/tracker/httptracker.cpp:454
+msgid "Invalid response from tracker"
+msgstr ""
+
+#: src/tracker/httptracker.cpp:293
+msgid "Invalid data from tracker"
+msgstr ""
+
+#: src/tracker/httptracker.cpp:471
+msgid "Invalid tracker URL"
+msgstr ""
+
+#: src/tracker/httptracker.cpp:549 src/tracker/udptracker.cpp:371
+#: src/tracker/udptracker.cpp:381
 #, kde-format
-msgid "Resolving proxy %1:%2"
+msgid "Timeout contacting tracker %1"
 msgstr ""
 
-#: src/download/httpconnection.cpp:112
+#: src/tracker/udptracker.cpp:408
 #, kde-format
-msgid "Resolving hostname %1"
-msgstr ""
-
-#: src/download/httpconnection.cpp:125 src/download/webseed.cpp:321
-msgid "Connection closed"
-msgstr ""
-
-#: src/download/httpconnection.cpp:132
-#, kde-format
-msgid "Error: request failed: %1"
-msgstr ""
-
-#: src/download/httpconnection.cpp:149 src/download/httpconnection.cpp:213
-msgid "Connected"
-msgstr ""
-
-#: src/download/httpconnection.cpp:155
-msgid "Error: Failed to connect to webseed"
-msgstr ""
-
-#: src/download/httpconnection.cpp:220
-#, fuzzy
-#| msgid "Location"
-msgid "Connecting"
-msgstr "Cih"
-
-#: src/download/httpconnection.cpp:231
-msgid "Failed to connect to webseed"
-msgstr ""
-
-#: src/download/httpconnection.cpp:238
-#, fuzzy
-#| msgid "Cannot create directory %1: %2"
-msgid "Failed to resolve hostname of webseed"
-msgstr "Peldanka %1 nayê afirandin: %2"
-
-#: src/download/httpconnection.cpp:318
-msgid "Error: failed to connect, server not responding"
-msgstr ""
-
-#: src/download/httpconnection.cpp:327
-msgid "Error: request timed out"
-msgstr ""
-
-#: src/download/httpconnection.cpp:391
-msgid "Redirected without a new location."
-msgstr ""
-
-#: src/download/chunkdownload.cpp:373
-#, kde-format
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] ""
-msgstr[1] ""
-
-#: src/download/webseed.cpp:303 src/download/webseed.cpp:517
-msgid "Not in use"
+msgid "Unable to resolve hostname %1"
 msgstr ""
 
 #: src/util/file.cpp:83

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent(2)\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-09 01:29+0200\n"
+"POT-Creation-Date: 2010-12-05 10:08+0100\n"
 "PO-Revision-Date: 2009-07-20 16:52+0300\n"
 "Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -42,6 +42,11 @@ msgstr "Nu se poate converti %1 la un număr întreg"
 msgid "Torrent is incomplete."
 msgstr "Torentul este incomplet!"
 
+#: src/datachecker/singledatachecker.cpp:49
+#, kde-format
+msgid "Cannot open file : %1 : %2"
+msgstr "Nu am putut deschide fișierul:%1:%2"
+
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:325
 #: src/util/fileops.cpp:367
 #, kde-format
@@ -49,14 +54,14 @@ msgid "Cannot open %1 : %2"
 msgstr "Nu am putut deschide %1 : %2"
 
 #: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
-#: src/diskio/cachefile.cpp:435 src/diskio/cachefile.cpp:503
+#: src/diskio/cachefile.cpp:419 src/diskio/cachefile.cpp:487
 #, kde-format
 msgid "Cannot open %1 for writing : readonly filesystem"
 msgstr ""
 "Nu am putut deschide %1 pentru scriere : sistem de fișiere protejat la "
 "scriere."
 
-#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:441
+#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:425
 #, kde-format
 msgid "Attempting to write beyond the maximum size of %1"
 msgstr ""
@@ -72,27 +77,27 @@ msgstr ""
 msgid "Cannot expand file %1 : %2"
 msgstr "Nu am putut expanda fișierul %1 : %2"
 
-#: src/diskio/cachefile.cpp:401
+#: src/diskio/cachefile.cpp:385
 #, kde-format
 msgid "Error : Reading past the end of the file %1"
 msgstr "Eroare: am depășit capătul fișierului %1"
 
-#: src/diskio/cachefile.cpp:406 src/diskio/cachefile.cpp:453
+#: src/diskio/cachefile.cpp:390 src/diskio/cachefile.cpp:437
 #, kde-format
 msgid "Failed to seek file %1 : %2"
 msgstr "Am eșuat la căutarea în fișierul %1 : %2"
 
-#: src/diskio/cachefile.cpp:414
+#: src/diskio/cachefile.cpp:398
 #, kde-format
 msgid "Error reading from %1"
 msgstr "Eroare la citirea din %1 "
 
-#: src/diskio/cachefile.cpp:457
+#: src/diskio/cachefile.cpp:441
 #, kde-format
 msgid "Failed to write to file %1 : %2"
 msgstr "Eroare la scrierea în %1 : %2"
 
-#: src/diskio/cachefile.cpp:524
+#: src/diskio/cachefile.cpp:508
 #, kde-format
 msgid "Cannot preallocate diskspace : %1"
 msgstr "Nu am putut prealoca spațiu pe disc : %1"
@@ -101,16 +106,6 @@ msgstr "Nu am putut prealoca spațiu pe disc : %1"
 #, kde-format
 msgid "Cannot open index file %1 : %2"
 msgstr "Nu am putut deschide fișierul index %1 : %2"
-
-#: src/diskio/singlefilecache.cpp:72 src/diskio/multifilecache.cpp:107
-#, kde-format
-msgid "Failed to open %1 : %2"
-msgstr "Nu am putut deschide %1 : %2"
-
-#: src/diskio/singlefilecache.cpp:83 src/diskio/multifilecache.cpp:134
-#, kde-format
-msgid "Failed to create %1 : %2"
-msgstr "Nu am putut crea %1 : %2"
 
 #: src/diskio/dndfile.cpp:89
 #, kde-format
@@ -127,10 +122,90 @@ msgstr "Nu am putut scrie prima bucată în fișierul DND: %1"
 msgid "Failed to write last chunk to DND file : %1"
 msgstr "Nu am putut scrie ultima bucată în fișierul DND: %1"
 
+#: src/diskio/multifilecache.cpp:107 src/diskio/singlefilecache.cpp:72
+#, kde-format
+msgid "Failed to open %1 : %2"
+msgstr "Nu am putut deschide %1 : %2"
+
+#: src/diskio/multifilecache.cpp:134 src/diskio/singlefilecache.cpp:83
+#, kde-format
+msgid "Failed to create %1 : %2"
+msgstr "Nu am putut crea %1 : %2"
+
 #: src/diskio/multifilecache.cpp:725 src/diskio/multifilecache.cpp:764
 #, kde-format
 msgid "Cannot open file %1 : %2"
 msgstr "Nu am putut deschide fișierul %1 : %2"
+
+#: src/download/chunkdownload.cpp:373
+#, kde-format
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] "1 partener"
+msgstr[1] "%1 parteneri"
+msgstr[2] "%1 de parteneri"
+
+#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:49
+#: src/download/webseed.cpp:93
+msgid "Not connected"
+msgstr "Neconectat"
+
+#: src/download/httpconnection.cpp:103
+#, kde-format
+msgid "Resolving proxy %1:%2"
+msgstr "Se rezolvă proxy-ul %1:%2"
+
+#: src/download/httpconnection.cpp:112
+#, kde-format
+msgid "Resolving hostname %1"
+msgstr "Se rezolvă numele calculatorului %1"
+
+#: src/download/httpconnection.cpp:125 src/download/webseed.cpp:321
+msgid "Connection closed"
+msgstr "Conexiune închisă"
+
+#: src/download/httpconnection.cpp:132
+#, kde-format
+msgid "Error: request failed: %1"
+msgstr "Eroare: cererea a eșuat %1"
+
+#: src/download/httpconnection.cpp:149 src/download/httpconnection.cpp:213
+msgid "Connected"
+msgstr "Conectat"
+
+#: src/download/httpconnection.cpp:155
+msgid "Error: Failed to connect to webseed"
+msgstr "Eroare: conectarea la sămînța web a eșuat"
+
+#: src/download/httpconnection.cpp:220
+msgid "Connecting"
+msgstr "Se conectează"
+
+#: src/download/httpconnection.cpp:231
+msgid "Failed to connect to webseed"
+msgstr "Conectarea la sămînța web a eșuat"
+
+#: src/download/httpconnection.cpp:238
+msgid "Failed to resolve hostname of webseed"
+msgstr "Rezolvarea numelui pentru computerul seminței web a eșuat"
+
+#: src/download/httpconnection.cpp:318
+msgid "Error: failed to connect, server not responding"
+msgstr "Eroare: a eșuat conectarea, serverul nu răspunde"
+
+#: src/download/httpconnection.cpp:327
+msgid "Error: request timed out"
+msgstr "Eroare: cererea a expirat"
+
+#: src/download/httpconnection.cpp:391
+#, fuzzy
+#| msgid "Redirected without a new location !"
+msgid "Redirected without a new location."
+msgstr "Redirectare fără o locație nouă ! "
+
+#: src/download/webseed.cpp:303 src/download/webseed.cpp:517
+msgid "Not in use"
+msgstr "Neutilizat"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
@@ -151,39 +226,38 @@ msgstr "Eroare: "
 msgid "The directory %1 does not exist"
 msgstr "Directorul %1 nu există"
 
-#: src/peer/peerid.cpp:203
+#: src/peer/peerid.cpp:228
 msgid "Unknown client"
 msgstr "Client necunoscut"
 
-#: src/tracker/httpannouncejob.cpp:140
+#: src/torrent/torrent.cpp:92 src/torrent/torrent.cpp:166
+#: src/torrent/torrent.cpp:194 src/torrent/torrent.cpp:201
+#: src/torrent/torrent.cpp:209 src/torrent/torrent.cpp:213
+#: src/torrent/torrent.cpp:234 src/torrent/torrent.cpp:305
 #, fuzzy
-#| msgid "Redirected without a new location !"
-msgid "Redirect without a redirect location"
-msgstr "Redirectare fără o locație nouă ! "
+#| msgid "Corrupted torrent!"
+msgid "Corrupted torrent."
+msgstr "Torent corupt!"
 
-#: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:549
+#: src/torrent/torrent.cpp:157
 #, kde-format
-msgid "Timeout contacting tracker %1"
-msgstr ""
+msgid " Unable to open torrent file %1 : %2"
+msgstr "Nu am putut deschide torentul %1 : %2"
 
-#: src/tracker/udptracker.cpp:408
+#: src/torrent/torrent.cpp:287
+msgid "Parse Error"
+msgstr "Eroare la parcurgere"
+
+#: src/torrent/torrentcreator.cpp:124 src/torrent/torrentcreator.cpp:255
+#: src/torrent/torrentcreator.cpp:292
 #, kde-format
-msgid "Unable to resolve hostname %1"
-msgstr "Nu am putut rezolva numele computerului %1"
+msgid "Cannot open file %1: %2"
+msgstr "Nu am putut deschide fișierul %1: %2"
 
-#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:454
-msgid "Invalid response from tracker"
-msgstr "Răspuns invalid de la tracker"
-
-#: src/tracker/httptracker.cpp:293
-msgid "Invalid data from tracker"
-msgstr "Date invalide de la tracker"
-
-#: src/tracker/httptracker.cpp:471
-msgid "Invalid tracker URL"
-msgstr "URL invalid pentru tracker"
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "Nu am putut crea fișierul index: %1"
 
 #: src/torrent/torrentstats.cpp:71
 msgid "Not started"
@@ -244,35 +318,6 @@ msgstr "Oprit. Nu a mai rămas spațiu pe disc."
 msgid "Paused"
 msgstr "Pauză"
 
-#: src/torrent/torrentcreator.cpp:124 src/torrent/torrentcreator.cpp:255
-#: src/torrent/torrentcreator.cpp:292
-#, kde-format
-msgid "Cannot open file %1: %2"
-msgstr "Nu am putut deschide fișierul %1: %2"
-
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "Nu am putut crea fișierul index: %1"
-
-#: src/torrent/torrent.cpp:92 src/torrent/torrent.cpp:166
-#: src/torrent/torrent.cpp:194 src/torrent/torrent.cpp:201
-#: src/torrent/torrent.cpp:209 src/torrent/torrent.cpp:213
-#: src/torrent/torrent.cpp:234 src/torrent/torrent.cpp:305
-#, fuzzy
-#| msgid "Corrupted torrent!"
-msgid "Corrupted torrent."
-msgstr "Torent corupt!"
-
-#: src/torrent/torrent.cpp:157
-#, kde-format
-msgid " Unable to open torrent file %1 : %2"
-msgstr "Nu am putut deschide torentul %1 : %2"
-
-#: src/torrent/torrent.cpp:287
-msgid "Parse Error"
-msgstr "Eroare la parcurgere"
-
 #: src/torrent/torrentcontrol.cpp:533
 #, fuzzy, kde-format
 #| msgid ""
@@ -297,12 +342,12 @@ msgstr ""
 "A apărut o eroare în timpul ce se încărca torentul <b>%1</b>.\n"
 "Torentul este probabil corupt sau nu este valid."
 
-#: src/torrent/torrentcontrol.cpp:574
+#: src/torrent/torrentcontrol.cpp:575
 #, kde-format
 msgid "Unable to create %1 : %2"
 msgstr "Nu am putut crea %1 : %2"
 
-#: src/torrent/torrentcontrol.cpp:589
+#: src/torrent/torrentcontrol.cpp:590
 #, fuzzy, kde-format
 #| msgid ""
 #| "You are already downloading this torrent %1, the list of trackers of both "
@@ -314,86 +359,41 @@ msgstr ""
 "Deja se descarcă acest torent %1, lista trackerelor celor două torente a "
 "fost unificată"
 
-#: src/torrent/torrentcontrol.cpp:594
+#: src/torrent/torrentcontrol.cpp:595
 #, fuzzy, kde-format
 #| msgid "You are already downloading the torrent %1"
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Acest torent se descarcă deja %1"
 
-#: src/datachecker/singledatachecker.cpp:49
-#, kde-format
-msgid "Cannot open file : %1 : %2"
-msgstr "Nu am putut deschide fișierul:%1:%2"
-
-#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:49
-#: src/download/webseed.cpp:93
-msgid "Not connected"
-msgstr "Neconectat"
-
-#: src/download/httpconnection.cpp:103
-#, kde-format
-msgid "Resolving proxy %1:%2"
-msgstr "Se rezolvă proxy-ul %1:%2"
-
-#: src/download/httpconnection.cpp:112
-#, kde-format
-msgid "Resolving hostname %1"
-msgstr "Se rezolvă numele calculatorului %1"
-
-#: src/download/httpconnection.cpp:125 src/download/webseed.cpp:321
-msgid "Connection closed"
-msgstr "Conexiune închisă"
-
-#: src/download/httpconnection.cpp:132
-#, kde-format
-msgid "Error: request failed: %1"
-msgstr "Eroare: cererea a eșuat %1"
-
-#: src/download/httpconnection.cpp:149 src/download/httpconnection.cpp:213
-msgid "Connected"
-msgstr "Conectat"
-
-#: src/download/httpconnection.cpp:155
-msgid "Error: Failed to connect to webseed"
-msgstr "Eroare: conectarea la sămînța web a eșuat"
-
-#: src/download/httpconnection.cpp:220
-msgid "Connecting"
-msgstr "Se conectează"
-
-#: src/download/httpconnection.cpp:231
-msgid "Failed to connect to webseed"
-msgstr "Conectarea la sămînța web a eșuat"
-
-#: src/download/httpconnection.cpp:238
-msgid "Failed to resolve hostname of webseed"
-msgstr "Rezolvarea numelui pentru computerul seminței web a eșuat"
-
-#: src/download/httpconnection.cpp:318
-msgid "Error: failed to connect, server not responding"
-msgstr "Eroare: a eșuat conectarea, serverul nu răspunde"
-
-#: src/download/httpconnection.cpp:327
-msgid "Error: request timed out"
-msgstr "Eroare: cererea a expirat"
-
-#: src/download/httpconnection.cpp:391
+#: src/tracker/httpannouncejob.cpp:140
 #, fuzzy
 #| msgid "Redirected without a new location !"
-msgid "Redirected without a new location."
+msgid "Redirect without a redirect location"
 msgstr "Redirectare fără o locație nouă ! "
 
-#: src/download/chunkdownload.cpp:373
-#, kde-format
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] "1 partener"
-msgstr[1] "%1 parteneri"
-msgstr[2] "%1 de parteneri"
+#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
+#: src/tracker/httptracker.cpp:454
+msgid "Invalid response from tracker"
+msgstr "Răspuns invalid de la tracker"
 
-#: src/download/webseed.cpp:303 src/download/webseed.cpp:517
-msgid "Not in use"
-msgstr "Neutilizat"
+#: src/tracker/httptracker.cpp:293
+msgid "Invalid data from tracker"
+msgstr "Date invalide de la tracker"
+
+#: src/tracker/httptracker.cpp:471
+msgid "Invalid tracker URL"
+msgstr "URL invalid pentru tracker"
+
+#: src/tracker/httptracker.cpp:549 src/tracker/udptracker.cpp:371
+#: src/tracker/udptracker.cpp:381
+#, kde-format
+msgid "Timeout contacting tracker %1"
+msgstr ""
+
+#: src/tracker/udptracker.cpp:408
+#, kde-format
+msgid "Unable to resolve hostname %1"
+msgstr "Nu am putut rezolva numele computerului %1"
 
 #: src/util/file.cpp:83
 #, kde-format
