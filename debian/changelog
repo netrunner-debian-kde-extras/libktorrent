@@ -1,3 +1,9 @@
+libktorrent (1.0.5-2) unstable; urgency=low
+
+  * Release to unstable.
+
+ -- Modestas Vainius <modax@debian.org>  Tue, 01 Feb 2011 00:43:00 +0200
+
 libktorrent (1.0.5-1) experimental; urgency=low
 
   * New upstream release.
