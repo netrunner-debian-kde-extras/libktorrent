@@ -22,6 +22,9 @@
 #include "chunk.h"
 #include "cache.h"
 #include "piecedata.h"
+#ifndef Q_WS_WIN
+#include <util/signalcatcher.h>
+#endif
 
 namespace bt
 {
@@ -38,25 +41,23 @@ namespace bt
 		
 	bool Chunk::readPiece(Uint32 off,Uint32 len,Uint8* data)
 	{
-		PieceDataPtr d = cache->loadPiece(this,off,len);
-		if (d)
-			memcpy(data,d->data(),len);
-		return d != 0;
+		PieceData::Ptr d = cache->loadPiece(this,off,len);
+		if (d && d->ok())
+			return d->read(data,len) == len;
+		else
+			return false;
 	}
 				
 	bool Chunk::checkHash(const SHA1Hash & h)
 	{
-		if (status == NOT_DOWNLOADED)
+		PieceData::Ptr d = getPiece(0,size,true);
+		if (!d || !d->ok())
 			return false;
-		
-		PieceDataPtr d = getPiece(0,size,true);
-		if (!d)
-			return false;
-		
-		return SHA1Hash::generate(d->data(),size) == h;
+		else
+			return d->generateHash() == h;
 	}
 	
-	PieceDataPtr Chunk::getPiece(Uint32 off,Uint32 len,bool read_only)
+	PieceData::Ptr Chunk::getPiece(Uint32 off,Uint32 len,bool read_only)
 	{
 		if (read_only)
 			return cache->loadPiece(this,off,len);
@@ -64,7 +65,7 @@ namespace bt
 			return cache->preparePiece(this,off,len);
 	}
 	
-	void Chunk::savePiece(PieceDataPtr piece)
+	void Chunk::savePiece(PieceData::Ptr piece)
 	{
 		cache->savePiece(piece);
 	}

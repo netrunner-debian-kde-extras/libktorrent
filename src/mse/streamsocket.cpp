@@ -44,10 +44,8 @@ namespace mse
 {
 	
 	Uint8 StreamSocket::tos = IPTOS_THROUGHPUT;
-	Uint32 StreamSocket::num_connecting = 0;
-	Uint32 StreamSocket::max_connecting = 50;
 
-	StreamSocket::StreamSocket(int ip_version) : sock(0),enc(0),monitored(false)
+	StreamSocket::StreamSocket(int ip_version) : sock(0),enc(0),monitored(false),rdr(0),wrt(0)
 	{
 		sock = new BufferedSocket(true,ip_version);
 		sock->socketDevice()->setBlocking(false);
@@ -55,10 +53,9 @@ namespace mse
 		reinserted_data = 0;
 		reinserted_data_size = 0;
 		reinserted_data_read = 0;
-		
 	}
 
-	StreamSocket::StreamSocket(int fd,int ip_version) : sock(0),enc(0),monitored(false)
+	StreamSocket::StreamSocket(int fd,int ip_version) : sock(0),enc(0),monitored(false),rdr(0),wrt(0)
 	{
 		sock = new BufferedSocket(fd,ip_version);
 		sock->socketDevice()->setBlocking(false);
@@ -68,7 +65,7 @@ namespace mse
 		reinserted_data_read = 0;
 	}
 
-	StreamSocket::StreamSocket(net::SocketDevice* sd)  : sock(0),enc(0),monitored(false)
+	StreamSocket::StreamSocket(net::SocketDevice* sd)  : sock(0),enc(0),monitored(false),rdr(0),wrt(0)
 	{
 		sock = new BufferedSocket(sd);
 		sd->setBlocking(false);
@@ -80,11 +77,9 @@ namespace mse
 
 	StreamSocket::~StreamSocket()
 	{
-		// make sure the number of connecting sockets is updated
-		if (connecting() && num_connecting > 0)
-			num_connecting--;
+		if (monitored)
+			stopMonitoring();
 		
-		SocketMonitor::instance().remove(sock);
 		delete [] reinserted_data;
 		delete enc;
 		delete sock;
@@ -112,6 +107,13 @@ namespace mse
 		}
 	}
 	
+	void StreamSocket::stopMonitoring()
+	{
+		rdr = 0;
+		wrt = 0;
+		SocketMonitor::instance().remove(sock);
+		monitored = false;
+	}
 		
 	Uint32 StreamSocket::sendData(const Uint8* data,Uint32 len)
 	{
@@ -208,13 +210,7 @@ namespace mse
 		sock->socketDevice()->setBlocking(false);
 		sock->socketDevice()->setTOS(tos);
 		if (sock->socketDevice()->connectTo(addr))
-		{
 			return true;
-		}
-		else if (connecting())
-		{
-			num_connecting++;
-		}
 		
 		return false;
 	}
@@ -321,11 +317,7 @@ namespace mse
 	
 	bool StreamSocket::connectSuccesFull() const 
 	{
-		bool ret = sock->socketDevice()->connectSuccesFull();
-		if (num_connecting > 0)
-			num_connecting--;
-		
-		return ret;
+		return sock->socketDevice()->connectSuccesFull();
 	}
 	
 	void StreamSocket::setGroupIDs(Uint32 up,Uint32 down)
@@ -344,5 +336,3 @@ namespace mse
 		sock->updateSpeeds(bt::CurrentTime());
 	}
 }
-
-#include "streamsocket.moc"

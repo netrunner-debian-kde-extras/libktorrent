@@ -27,7 +27,7 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <netdb.h>
-
+#include <gcrypt.h>
 #include <qdatetime.h>
 #include <QNetworkInterface>
 #include <kio/netaccess.h>
@@ -35,6 +35,7 @@
 #include <kmimetype.h>
 #include <kglobal.h>
 #include <interfaces/torrentinterface.h>
+#include <util/signalcatcher.h>
 #include "error.h"
 #include "log.h"
 
@@ -248,7 +249,23 @@ namespace bt
 			return QString();
 		else
 			return addr_list.front().ip().toString();
-	}	
+	}
+	
+	QStringList NetworkInterfaceIPAddresses(const QString& iface)
+	{
+		QNetworkInterface ni = QNetworkInterface::interfaceFromName(iface);
+		if (!ni.isValid())
+			return QStringList();
+		
+		QStringList ips;
+		QList<QNetworkAddressEntry> addr_list = ni.addressEntries();
+		foreach (const QNetworkAddressEntry & entry,addr_list)
+		{
+			ips << entry.ip().toString();
+		}
+		
+		return ips;
+	}
 
 		
 	QString BytesToString(Uint64 bytes)
@@ -304,7 +321,7 @@ namespace bt
 	}
 
 #ifdef Q_WS_WIN
-	bool InitWindowsSocketsAPI()
+	static bool InitWindowsSocketsAPI()
 	{
 		static bool initialized = false;
 		if (initialized)
@@ -320,4 +337,44 @@ namespace bt
 		return true;
 	}
 #endif
+
+	static bool InitGCrypt()
+	{
+		static bool initialized = false;
+		if (initialized)
+			return true;
+		
+		// If already initialized, don't do anything
+		if (gcry_control(GCRYCTL_INITIALIZATION_FINISHED_P))
+		{
+			initialized = true;
+			return true;
+		}
+		
+		if (!gcry_check_version(GCRYPT_VERSION))
+		{
+			Out(SYS_GEN|LOG_NOTICE) << "Failed to initialize libgcrypt" << endl;
+			return false;
+		}
+		/* Disable secure memory. */
+		gcry_control (GCRYCTL_DISABLE_SECMEM, 0);
+		gcry_control (GCRYCTL_INITIALIZATION_FINISHED, 0);
+		initialized = true;
+		return true;
+	}
+	
+	bool InitLibKTorrent()
+	{
+		MaximizeLimits();
+		bool ret = InitGCrypt();
+#ifdef Q_WS_WIN
+		ret = InitWindowsSocketsAPI() && ret;
+#endif
+#ifndef Q_WS_WIN
+		// Install SIGBUS handler
+		InstallBusHandler();
+#endif
+		return ret;
+	}
+
 }

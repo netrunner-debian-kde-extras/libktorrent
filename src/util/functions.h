@@ -79,6 +79,9 @@ namespace bt
 	/// Get the IP address of the network interface
 	KTORRENT_EXPORT QString NetworkInterfaceIPAddress(const QString & iface);
 	
+	/// Get all the IP addresses of the network interface
+	KTORRENT_EXPORT QStringList NetworkInterfaceIPAddresses(const QString & iface);
+	
 	const double TO_KB = 1024.0;
 	const double TO_MEG = (1024.0 * 1024.0);
 	const double TO_GIG = (1024.0 * 1024.0 * 1024.0);
@@ -116,10 +119,11 @@ namespace bt
 			*guard = false;
 		}
 	};
-
-#ifdef Q_WS_WIN
-	KTORRENT_EXPORT bool InitWindowsSocketsAPI();
-#endif
+	
+	/**
+		Global initialization function, should be called, in the applications main function.
+	 */
+	KTORRENT_EXPORT bool InitLibKTorrent();
 }
 
 #endif

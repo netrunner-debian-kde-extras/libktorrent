@@ -21,31 +21,44 @@
 #define BT_DATACHECKERJOB_H
 
 #include <torrent/job.h>
+#include <util/resourcemanager.h>
 
 namespace bt 
 {
 	class DataCheckerThread;
-	class DataCheckerListener;
+
 	
 	/// Job which runs a DataChecker
-	class KTORRENT_EXPORT DataCheckerJob : public bt::Job
+	class KTORRENT_EXPORT DataCheckerJob : public bt::Job, public Resource
 	{
 		Q_OBJECT
 	public:
-		DataCheckerJob(bt::DataCheckerListener* lst,TorrentControl* tc);
+		DataCheckerJob(bool auto_import,TorrentControl* tc);
 		virtual ~DataCheckerJob();
 		
 		virtual void start();
 		virtual void kill(bool quietly = true);
 		virtual TorrentStatus torrentStatus() const {return CHECKING_DATA;}
 		
+		/// Is this an automatic import
+		bool isAutoImport() const {return auto_import;}
+		
+		/// Was the job stopped
+		bool isStopped() const {return killed;}
+		
 	private slots:
-		void finished();
+		void threadFinished();
+		void progress(quint32 num, quint32 total);
+		void status(quint32 num_failed, quint32 num_found, quint32 num_downloaded, quint32 num_not_downloaded);
+		
+	private:
+		virtual void acquired();
 		
 	private:
 		DataCheckerThread* dcheck_thread;
-		DataCheckerListener* listener;
 		bool killed;
+		bool auto_import;
+		bool started;
 	};
 
 }

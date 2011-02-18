@@ -23,7 +23,9 @@
 
 #include <util/sha1hash.h>
 #include <peer/peerid.h>
+#include <peer/peerconnector.h>
 #include "authenticatebase.h"
+
 
 namespace net
 {
@@ -32,9 +34,6 @@ namespace net
 
 namespace bt
 {
-
-	
-	class PeerConnector;
 
 
 	/**
@@ -59,17 +58,9 @@ namespace bt
 		 */
 		Authenticate(const QString & ip,Uint16 port,TransportProtocol proto,
 					 const SHA1Hash & info_hash,const PeerID & peer_id,
-					 PeerConnector* pcon);
+					 PeerConnector::WPtr pcon);
 		
 		virtual ~Authenticate();
-
-		/**
-		 * Get a pointer to the socket, and set it internally
-		 * to NULL. After a succesfull authentication, this is used
-		 * to transfer ownership to a Peer object.
-		 * @return The socket
-		 */
-		mse::StreamSocket* takeSocket();
 		
 		const PeerID & getPeerID() const {return peer_id;}
 
@@ -98,7 +89,7 @@ namespace bt
 		QString host;
 		Uint16 port;
 		bool succes;
-		PeerConnector* pcon;
+		PeerConnector::WPtr pcon;
 		net::Socks* socks;
 	};
 }

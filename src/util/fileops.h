@@ -47,6 +47,14 @@ namespace bt
 	 * @throw Error upon error
 	 */
 	KTORRENT_EXPORT void MakePath(const QString & dir,bool nothrow = false);
+	
+	/**
+	 * Creates the path of a file. 
+	 * @param file The full path of the file
+	 * @param nothrow whether or not we shouldn't throw an Error upon failure
+	 * @throw Error upon error
+	 */
+	KTORRENT_EXPORT void MakeFilePath(const QString & file,bool nothrow = false);
 
 	/**
 	* Create a symbolic link @a link_url which links to @a link_to 
@@ -177,6 +185,9 @@ namespace bt
 	
 	/// Calculate the amount of space a file is taking up (this is not the filesize!)
 	KTORRENT_EXPORT Uint64 DiskUsage(int fd);
+	
+	/// Get the mount point of a path
+	KTORRENT_EXPORT QString MountPoint(const QString & path);
 }
 
 #endif

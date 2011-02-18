@@ -44,8 +44,10 @@ namespace bt
 		std::list<Uint32> chunks;
 		Timer sort_timer;
 	public:
-		ChunkSelector(ChunkManager & cman,Downloader & downer,PeerManager & pman);
+		ChunkSelector();
 		virtual ~ChunkSelector();
+		
+		virtual void init(ChunkManager* cman, Downloader* downer, PeerManager* pman);
 
 		/**
 		 * Select which chunk to download for a PieceDownloader.

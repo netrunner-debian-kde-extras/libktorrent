@@ -19,7 +19,7 @@
  ***************************************************************************/
 
 #include "magnetlink.h"
-#include <KUrl>
+#include <QStringList>
 #include <util/log.h>
 #include <util/error.h>
 
@@ -34,7 +34,9 @@ namespace bt
 	{
 		magnet_string = mlink.magnet_string;
 		info_hash = mlink.info_hash;
-		tracker_url = mlink.tracker_url;
+		tracker_urls = mlink.tracker_urls;
+		torrent_url = mlink.torrent_url;
+		path = mlink.path;
 		name = mlink.name;
 	}
 
@@ -51,7 +53,9 @@ namespace bt
 	{
 		magnet_string = mlink.magnet_string;
 		info_hash = mlink.info_hash;
-		tracker_url = mlink.tracker_url;
+		tracker_urls = mlink.tracker_urls;
+		torrent_url = mlink.torrent_url;
+		path = mlink.path;
 		name = mlink.name;
 		return *this;
 	}
@@ -70,11 +74,25 @@ namespace bt
 			return;
 		}
 		
+		torrent_url = url.queryItem("to");
+
+		// TODO automatically select these files and prefetches from here
+		path = url.queryItem("pt");
+		if ( path.isEmpty() && url.hasPath() && url.path() != "/" ) {
+			// TODO find out why RemoveTrailingSlash does not work
+			path = url.path(KUrl::RemoveTrailingSlash).remove(QRegExp("^/"));
+		}
+
 		QString xt = url.queryItem("xt");
-		if (!xt.startsWith("urn:btih:"))
-		{
-			Out(SYS_GEN|LOG_NOTICE) << "Invalid magnet link " << mlink << endl;
-			return;
+		if ( xt.isEmpty()
+		     || !xt.startsWith("urn:btih:") ) {
+			QRegExp btihHash("([^\\.]+).btih");
+			if ( btihHash.indexIn(url.host()) != -1 ) {
+				xt = "urn:btih:"+btihHash.cap(1);
+			} else {
+				Out(SYS_GEN|LOG_NOTICE) << "Invalid magnet link " << mlink << endl;
+				return;
+			}
 		}
 		
 		QString ih = xt.mid(9);
@@ -99,7 +117,7 @@ namespace bt
 			}
 			
 			info_hash = SHA1Hash(hash);
-			tracker_url = url.queryItem("tr");
+			tracker_urls = url.queryItem("tr").split(",");
 			name = url.queryItem("dn");
 			magnet_string = mlink;
 		}

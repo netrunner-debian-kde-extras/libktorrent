@@ -20,7 +20,6 @@
 #ifndef MSESTREAMSOCKET_H
 #define MSESTREAMSOCKET_H
 
-#include <qobject.h>
 #include <util/constants.h>
 #include <net/bufferedsocket.h>
 #include <ktorrent_export.h>
@@ -51,9 +50,8 @@ namespace mse
 	 * not be used anymore, a SocketReader and SocketWriter should be provided,
 	 * so that reading and writing is controlled from the monitor thread.
 	*/
-	class KTORRENT_EXPORT StreamSocket : public QObject,public net::SocketReader,public net::SocketWriter
+	class KTORRENT_EXPORT StreamSocket : public net::SocketReader,public net::SocketWriter
 	{
-		Q_OBJECT
 	public:
 		StreamSocket(int ip_version);
 		StreamSocket(int fd,int ip_version);
@@ -132,6 +130,9 @@ namespace mse
 		/// Start monitoring of this socket by the monitor thread
 		void startMonitoring(net::SocketReader* rdr,net::SocketWriter* wrt);
 		
+		/// Stop monitoring this socket
+		void stopMonitoring();
+		
 		/// Is this socket connecting to a remote host
 		bool connecting() const;
 		
@@ -158,21 +159,14 @@ namespace mse
 		void setGroupIDs(Uint32 up,Uint32 down);
 		
 		/**
-		 * Check if we are allowed to initiate another outgoing connection.
-		 */
-		static bool canInitiateNewConnection() {return num_connecting < max_connecting;}
-		
-		/**
-		 * Set the maximum number of connecting sockets we are allowed to have.
-		 */
-		static void setMaxConnecting(Uint32 mc) {max_connecting = mc;}
-		
-		/**
 		 * Set the remote address of the socket. Used by Socks to set the actual
 		 * address of the connection.
 		 * @param addr The address
 		 */
 		void setRemoteAddress(const net::Address & addr);
+		
+		typedef QSharedPointer<StreamSocket> Ptr;
+		
 	private:
 		virtual void onDataReady(Uint8* buf,Uint32 size);
 		virtual Uint32 onReadyToWrite(Uint8* data,Uint32 max_to_write);
@@ -189,8 +183,6 @@ namespace mse
 		net::SocketWriter* wrt;
 		
 		static Uint8 tos;
-		static Uint32 num_connecting; // the number of connections we have in SYN_SENT state
-		static Uint32 max_connecting;
 	};
 
 }

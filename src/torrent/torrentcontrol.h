@@ -55,6 +55,7 @@ namespace bt
 	class ChunkSelectorFactoryInterface;
 	class CacheFactory;
 	class JobQueue;
+	class DataCheckerJob;
 	
 	/**
 	 * @author Joris Guisson
@@ -130,6 +131,7 @@ namespace bt
 		virtual bool moveTorrentFiles(const QMap<TorrentFileInterface*,QString> & files);
 		virtual void recreateMissingFiles();
 		virtual void dndMissingFiles();
+		virtual TorrentFileStream::Ptr createTorrentFileStream(bt::Uint32 index,bool streaming_mode,QObject* parent);
 		virtual void addPeerSource(PeerSource* ps);
 		virtual void removePeerSource(PeerSource* ps);
 		virtual const QTextCodec* getTextCodec() const;
@@ -155,7 +157,7 @@ namespace bt
 		virtual void setChunkSelector(ChunkSelectorInterface* csel);
 		virtual void networkUp();
 		virtual bool announceAllowed();
-		virtual void startDataCheck(bt::DataCheckerListener* lst);
+		virtual Job* startDataCheck(bool auto_import);
 		virtual bool hasMissingFiles(QStringList & sl);
 		virtual Uint32 getNumDHTNodes() const;
 		virtual const DHTNode & getDHTNode(Uint32 i) const;
@@ -175,6 +177,7 @@ namespace bt
 		virtual int getETA();
 		virtual void setMoveWhenCompletedDir(const KUrl & dir) {completed_dir = dir; saveStats();}
 		virtual KUrl getMoveWhenCompletedDir() const {return completed_dir;}
+		virtual void setSuperSeeding(bool on);
 		
 		/// Create all the necessary files
 		void createFiles();
@@ -182,7 +185,10 @@ namespace bt
 		/// Get the PeerManager
 		const PeerManager * getPeerMgr() const;
 		
-		/// Set a custom chunk selector factory (needs to be done for init is called)
+		/**
+		 * Set a custom chunk selector factory (needs to be done for init is called)
+		 * Note: TorrentControl does not take ownership
+		 */
 		void setChunkSelectorFactory(ChunkSelectorFactoryInterface* csfi);
 		
 		/// Set a custom Cache factory
@@ -257,7 +263,7 @@ namespace bt
 		
 	protected:
 		/// Called when a data check is finished by DataCheckerJob
-		void afterDataCheck(DataCheckerListener* lst,const BitSet & result,const QString & error);
+		void afterDataCheck(DataCheckerJob* job,const BitSet & result);
 		void beforeDataCheck();
 		void preallocFinished(const QString & error,bool completed);
 		void allJobsDone();
@@ -310,7 +316,6 @@ namespace bt
 		Choker* choke;
 		TimeEstimator* m_eta;
 		MonitorInterface* tmon;
-		ChunkSelectorFactoryInterface* custom_selector_factory;
 		CacheFactory* cache_factory;
 		QString move_data_files_destination_path;
 		Timer choker_update_timer;
@@ -353,6 +358,8 @@ namespace bt
 		
 		InternalStats istats;
 		StatsFile* stats_file;
+		
+		TorrentFileStream::WPtr stream;
 		
 		static bool completed_datacheck;
 		static Uint32 min_diskspace;

@@ -43,7 +43,7 @@ namespace bt
 		delete [] buf;
 	}
 	
-	void MultiDataChecker::check(const QString& path, const Torrent& tor,const QString & dnddir,const BitSet & status)
+	void MultiDataChecker::check(const QString& path, const Torrent& tor,const QString & dnddir,const BitSet & current_status)
 	{
 		Uint32 num_chunks = tor.getNumChunks();
 		// initialize the bitset
@@ -61,14 +61,16 @@ namespace bt
 		Uint32 cur_chunk = 0;
 		buf = new Uint8[chunk_size];
 		
-		for (cur_chunk = 0;cur_chunk < num_chunks;cur_chunk++)
+		TimeStamp last_emitted = bt::Now();
+		for (cur_chunk = 0;cur_chunk < num_chunks && !need_to_stop;cur_chunk++)
 		{
 			Uint32 cs = (cur_chunk == num_chunks - 1) ? tor.getLastChunkSize() : chunk_size;
 			if (cs == 0)
 				cs = chunk_size;
 			if (!loadChunk(cur_chunk,cs,tor))
 			{
-				if (status.get(cur_chunk))
+				//Out(SYS_GEN|LOG_DEBUG) << "Failed to load chunk " << cur_chunk << endl;
+				if (current_status.get(cur_chunk))
 					failed++;
 				else
 					not_downloaded++;
@@ -77,40 +79,25 @@ namespace bt
 			
 			bool ok = (SHA1Hash::generate(buf,cs) == tor.getHash(cur_chunk));
 			result.set(cur_chunk,ok);
-			if (ok && status.get(cur_chunk))
+			if (ok && current_status.get(cur_chunk))
 				downloaded++;
-			else if (!ok && status.get(cur_chunk))
+			else if (!ok && current_status.get(cur_chunk))
 				failed++;
-			else if (!ok && !status.get(cur_chunk))
+			else if (!ok && !current_status.get(cur_chunk))
 				not_downloaded++;
-			else if (ok && !status.get(cur_chunk))
+			else if (ok && !current_status.get(cur_chunk))
 				found++;
 			
-			if (listener)
+			TimeStamp now = Now();
+			if (now - last_emitted > 1000 || cur_chunk == num_chunks - 1) // Emit signals once every second
 			{
-				listener->status(failed,found,downloaded,not_downloaded);
-				listener->progress(cur_chunk,num_chunks);
-				if (listener->needToStop())
-					return;
+				status(failed,found,downloaded,not_downloaded);
+				progress(cur_chunk,num_chunks);
+				last_emitted = now;
 			}
-		}	
-	}
-	
-	static Uint32 ReadFullChunk(Uint32 chunk,Uint32 cs,
-								const TorrentFile & tf,
-								const Torrent & tor,
-								Uint8* buf)
-	{
-		File fptr;
-		if (!fptr.open(tf.getPathOnDisk(), "rb"))
-		{
-			Out(SYS_GEN|LOG_DEBUG) << QString("Warning : Cannot open %1 : %2").arg(tf.getPathOnDisk()).arg(fptr.errorString()) << endl;
-			return 0;
 		}
 		
-		Uint64 off = tf.fileOffset(chunk,tor.getChunkSize());
-		fptr.seek(File::BEGIN,off);
-		return fptr.read(buf,cs);
+		status(failed,found,downloaded,not_downloaded);
 	}
 	
 	bool MultiDataChecker::loadChunk(Uint32 ci,Uint32 cs,const Torrent & tor)
@@ -118,14 +105,20 @@ namespace bt
 		QList<Uint32> tflist;
 		tor.calcChunkPos(ci,tflist);
 		
+		closePastFiles(tflist.first());
+		
 		// one file is simple
 		if (tflist.count() == 1)
 		{
 			const TorrentFile & f = tor.getFile(tflist.first());
 			if (!f.doNotDownload())
 			{
-				ReadFullChunk(ci,cs,f,tor,buf);
-				return true;
+				File::Ptr fptr = open(tor,tflist.first());
+				Uint64 off = f.fileOffset(ci,tor.getChunkSize());
+				if (fptr->seek(File::BEGIN,off) != off)
+					return false;
+				
+				return fptr->read(buf,cs) == cs;
 			}
 			return false;
 		}
@@ -174,24 +167,61 @@ namespace bt
 			}
 			else
 			{
-				if (!bt::Exists(f.getPathOnDisk()) || bt::FileSize(f.getPathOnDisk()) < off)
-					return false;
-				
-				File fptr;
-				if (!fptr.open(f.getPathOnDisk(), "rb"))
+				try
 				{
-					Out(SYS_GEN|LOG_DEBUG) << QString("Warning : Cannot open %1 : %2").arg(f.getPathOnDisk()).arg(fptr.errorString()) << endl;
-					return false;
+					if (!bt::Exists(f.getPathOnDisk()) || bt::FileSize(f.getPathOnDisk()) < off)
+						return false;
+					
+					File::Ptr fptr = open(tor,tflist.at(i));
+					if (fptr->seek(File::BEGIN,off) != off)
+						return false;
+					
+					if (fptr->read(buf+read,to_read) != to_read)
+						return false;
 				}
-				else
+				catch (bt::Error & err)
 				{
-					fptr.seek(File::BEGIN,off);
-					if (fptr.read(buf+read,to_read) != to_read)
-						Out(SYS_GEN|LOG_DEBUG) << "Warning : MultiDataChecker::load ret != to_read" << endl;
+					Out(SYS_GEN|LOG_NOTICE) << err.toString() << endl;
+					return false;
 				}
 			}
 			read += to_read;
 		}
 		return true;
 	}
+	
+	File::Ptr MultiDataChecker::open(const bt::Torrent& tor, Uint32 idx)
+	{
+		QMap<Uint32,File::Ptr>::iterator i = files.find(idx);
+		if (i != files.end())
+			return i.value();
+		
+		const TorrentFile & tf = tor.getFile(idx);
+		File::Ptr fptr(new File());
+		if (!fptr->open(tf.getPathOnDisk(), "rb"))
+		{
+			QString err = i18n("Cannot open file %1: %2", tf.getPathOnDisk(), fptr->errorString());
+			Out(SYS_GEN|LOG_DEBUG) << err << endl;
+			throw Error(err);
+		}
+		else
+		{
+			files.insert(idx,fptr);
+			return fptr;
+		}
+	}
+	
+	void MultiDataChecker::closePastFiles(Uint32 min_idx)
+	{
+		QMap<Uint32,File::Ptr>::iterator i = files.begin();
+		while (i != files.end())
+		{
+			if (i.key() < min_idx)
+				i = files.erase(i);
+			else
+				i++;
+		}
+	}
+
+
 }

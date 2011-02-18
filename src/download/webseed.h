@@ -28,6 +28,7 @@
 #include <interfaces/webseedinterface.h>
 #include <interfaces/chunkdownloadinterface.h>
 #include <diskio/piecedata.h>
+#include <QTimer>
 
 
 namespace bt
@@ -37,7 +38,6 @@ namespace bt
 	class ChunkManager;
 	class Chunk;
 	class WebSeedChunkDownload;
-	
 
 	/**
 		@author Joris Guisson
@@ -84,11 +84,6 @@ namespace bt
 		void chunkDownloaded(Uint32 chunk);
 		
 		/**
-		 * Reset the webseed (kills the connection)
-		 */
-		void reset();
-		
-		/**
 		* Cancel the current download and kill the connection
 		*/
 		void cancel();
@@ -124,8 +119,17 @@ namespace bt
 		
 		virtual void setEnabled(bool on);
 		
+		/// Disable the webseed 
+		void disable(const QString & reason);
+		
 		/// Get the number of failed attempts
 		Uint32 failedAttempts() const {return num_failures;}
+		
+	public slots:
+		/**
+		 * Reset the webseed (kills the connection)
+		 */
+		void reset();
 		
 	signals:
 		/**
@@ -164,6 +168,8 @@ namespace bt
 			Uint64 len;
 		};
 		
+		class AutoDisabled {}; // Exception
+		
 		void fillRangeList(Uint32 chunk);
 		void handleData(const QByteArray & data);
 		void chunkStarted(Uint32 chunk);
@@ -171,6 +177,7 @@ namespace bt
 		void connectToServer();
 		void continueCurChunk();
 		void readData();
+		void retryLater();
 		
 	private:
 		const Torrent & tor;
@@ -187,7 +194,8 @@ namespace bt
 		Uint32 up_gid,down_gid;
 		QList<Range> range_queue;
 		KUrl redirected_url;
-		PieceDataPtr cur_piece;
+		PieceData::Ptr cur_piece;
+		QTimer retry_timer;
 		
 		static QString proxy_host;
 		static Uint16 proxy_port;

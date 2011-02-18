@@ -19,6 +19,7 @@
  ***************************************************************************/
 
 #include "peerconnector.h"
+#include <QSet>
 #include <interfaces/serverinterface.h>
 #include <mse/encryptedauthenticate.h>
 #include <torrent/torrent.h>
@@ -28,64 +29,113 @@
 
 namespace bt
 {
+	static ResourceManager half_open_connections(50);
 	
-	PeerConnector::PeerConnector(const QString & ip,Uint16 port,bool local,PeerManager* pman) 
-		: QObject(pman),ip(ip),port(port),local(local),pman(pman),auth(0),stopping(false)
+	class PeerConnector::Private
+	{
+	public:
+		Private(PeerConnector* p,const QString & ip,Uint16 port,bool local,PeerManager* pman)
+		: p(p),ip(ip),port(port),local(local),pman(pman),auth(0),stopping(false),do_not_start(false)
+		{
+		}
+		
+		~Private()
+		{
+			if (auth)
+			{
+				stopping = true;
+				auth->stop();
+				stopping = false;
+			}
+		}
+		
+		void start(Method method);
+		void authenticationFinished(Authenticate* auth, bool ok);
+		
+	public:
+		PeerConnector* p;
+		QSet<Method> tried_methods;
+		Method current_method;
+		QString ip;
+		Uint16 port;
+		bool local;
+		QWeakPointer<PeerManager> pman;
+		Authenticate* auth;
+		bool stopping;
+		bool do_not_start;
+		PeerConnector::WPtr self;
+	};
+	
+	PeerConnector::PeerConnector(const QString& ip, Uint16 port, bool local, bt::PeerManager* pman) 
+		: Resource(&half_open_connections,pman->getTorrent().getInfoHash().toString()),
+		d(new Private(this,ip,port,local,pman))
 	{
 	}
 
 	PeerConnector::~PeerConnector()
 	{
-		if (auth)
-		{
-			stopping = true;
-			auth->stop();
-			stopping = false;
-		}
+		delete d;
+	}
+	
+	void PeerConnector::setWeakPointer(PeerConnector::WPtr ptr)
+	{
+		d->self = ptr;
+	}
+
+	
+	void PeerConnector::setMaxActive(Uint32 mc)
+	{
+		half_open_connections.setMaxActive(mc);
 	}
 	
 	void PeerConnector::start()
 	{
+		half_open_connections.add(this);
+	}
+	
+	void PeerConnector::acquired()
+	{
+		PeerManager* pm = d->pman.data();
+		if (!pm || !pm->isStarted())
+			return;
+		
 		bool encryption = ServerInterface::isEncryptionEnabled();
 		bool utp = ServerInterface::isUtpEnabled();
 		
 		if (encryption)
 		{
 			if (utp)
-				start(UTP_WITH_ENCRYPTION);
+				d->start(UTP_WITH_ENCRYPTION);
 			else
-				start(TCP_WITH_ENCRYPTION);
+				d->start(TCP_WITH_ENCRYPTION);
 		}
 		else
 		{
 			if (utp)
-				start(UTP_WITHOUT_ENCRYPTION);
+				d->start(UTP_WITHOUT_ENCRYPTION);
 			else
-				start(TCP_WITHOUT_ENCRYPTION);
+				d->start(TCP_WITHOUT_ENCRYPTION);
 		}
 	}
-	
-	void PeerConnector::stop()
-	{
-		if (auth)
-		{
-			stopping = true;
-			auth->stop();
-			stopping = false;
-		}
-	}
-
-
 
 	void PeerConnector::authenticationFinished(Authenticate* auth, bool ok)
+	{
+		d->authenticationFinished(auth,ok);
+	}
+	
+	void PeerConnector::Private::authenticationFinished(Authenticate* auth, bool ok)
 	{
 		this->auth = 0;
 		if (stopping)
 			return;
 		
+		PeerManager* pm = pman.data();
+		if (!pm)
+			return;
+		
 		if (ok)
 		{
-			pman->peerAuthenticated(auth,this,ok);
+			pm->peerAuthenticated(auth,self,ok);
 			return;
 		}
 		
@@ -111,20 +161,24 @@ namespace bt
 			allowed.removeAll(m);
 		
 		if (allowed.isEmpty())
-			pman->peerAuthenticated(auth,this,false);
+			pm->peerAuthenticated(auth,self,false);
 		else
 			start(allowed.front());
 	}
 
-	void PeerConnector::start(PeerConnector::Method method)
+	void PeerConnector::Private::start(PeerConnector::Method method)
 	{
+		PeerManager* pm = pman.data();
+		if (!pm)
+			return;
+		
 		current_method = method;
-		Torrent & tor = pman->getTorrent();
+		const Torrent & tor = pm->getTorrent();
 		TransportProtocol proto = (method == TCP_WITH_ENCRYPTION || method == TCP_WITHOUT_ENCRYPTION) ? TCP : UTP;
 		if (method == TCP_WITH_ENCRYPTION || method == UTP_WITH_ENCRYPTION)
-			auth = new mse::EncryptedAuthenticate(ip,port,proto,tor.getInfoHash(),tor.getPeerID(),this);
+			auth = new mse::EncryptedAuthenticate(ip,port,proto,tor.getInfoHash(),tor.getPeerID(),self);
 		else
-			auth = new Authenticate(ip,port,proto,tor.getInfoHash(),tor.getPeerID(),this);
+			auth = new Authenticate(ip,port,proto,tor.getInfoHash(),tor.getPeerID(),self);
 		
 		if (local)
 			auth->setLocal(true);

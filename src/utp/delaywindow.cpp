@@ -28,7 +28,7 @@ using namespace bt;
 namespace utp
 {
 	
-	DelayWindow::DelayWindow() : lowest(0)
+	DelayWindow::DelayWindow()
 	{
 	}
 	
@@ -65,30 +65,8 @@ namespace utp
 		
 		if (!added)
 			delay_window.push_back(DelayEntry(hdr->timestamp_difference_microseconds,now));
-		
+
 		return delay_window.front().timestamp_difference_microseconds;
 	}
-	
-	DelayWindow::DelayEntry* DelayWindow::findBaseDelay()
-	{
-		bt::Uint32 base_delay = MAX_DELAY;
-		DelayEntryItr found = delay_window.end();
-		DelayEntryItr itr = delay_window.begin();
-		while (itr != delay_window.end())
-		{
-			if (itr->timestamp_difference_microseconds < base_delay)
-			{
-				base_delay = itr->timestamp_difference_microseconds;
-				found = itr;
-			}
-			itr++;
-		}
-		
-		if (found == delay_window.end())
-			return 0;
-		else
-			return &(*found);
-	}
-
 }
 

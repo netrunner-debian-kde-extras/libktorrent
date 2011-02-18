@@ -21,6 +21,7 @@
 #include "version.h"
 #include <QString>
 
+
 namespace bt 
 {
 	static QString g_name = "KTorrent";

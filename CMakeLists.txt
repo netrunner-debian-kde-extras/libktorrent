@@ -1,9 +1,13 @@
 project(LIBKTORRENT)
+
 find_package(KDE4 REQUIRED)
 find_package(KDE4Internal REQUIRED)
 find_package(GMP REQUIRED)
-find_package(QCA2 REQUIRED)
 find_package(Boost REQUIRED)
+find_package(QCA2 REQUIRED)
+
+set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules;${CMAKE_MODULE_PATH}")
+find_package(LibGcrypt REQUIRED)
 
 # set some default settings
 include(KDE4Defaults)
@@ -25,7 +29,7 @@ add_definitions( ${KDE4_DEFINITIONS} )
 
 include_directories(${KDE4_INCLUDES} ${LIBKTORRENT_BINARY_DIR}	${LIBKTORRENT_SOURCE_DIR} ${GMP_INCLUDE_DIR} ${Boost_INCLUDE_DIR})
 
-set(LIBKTORRENT_VERSION "1.0.1")
+set(LIBKTORRENT_VERSION "1.1dev")
 
 #XFS prealloc
 CHECK_INCLUDE_FILES(xfs/xfs.h HAVE_XFS_XFS_H)
@@ -56,8 +60,12 @@ check_function_exists(statvfs64 HAVE_STATVFS64)
 
 
 add_subdirectory(src)
+add_subdirectory(testlib)
+add_subdirectory(examples)
 add_subdirectory(cmake)
 add_subdirectory(doc)
+
+
 find_package(Msgfmt REQUIRED)
 find_package(Gettext REQUIRED)
 add_subdirectory( po )
