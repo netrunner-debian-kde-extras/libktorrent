@@ -1,4 +1,4 @@
-libktorrent (1.1~rc1-1) UNRELEASED; urgency=low
+libktorrent (1.1~rc1-1) experimental; urgency=low
 
   * New upstream release.
   * SONAME was bumped: rename libktorrent2 to libktorrent3.
@@ -7,7 +7,7 @@ libktorrent (1.1~rc1-1) UNRELEASED; urgency=low
   * Build depend on libgcrypt-dev.
   * Update symbol file.
 
- -- Modestas Vainius <modax@debian.org>  Sat, 19 Feb 2011 00:57:08 +0200
+ -- Modestas Vainius <modax@debian.org>  Sat, 19 Feb 2011 01:25:05 +0200
 
 libktorrent (1.0.5-2) unstable; urgency=low
 
