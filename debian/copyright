@@ -8,7 +8,17 @@ Upstream Authors:
   Joris Guisson <joris.guisson@gmail.com>
   Ivan Vasic <ivasic@gmail.com>
 
-Copyright: © 2005-2010 Joris Guisson <joris.guisson@gmail.com>
+Debian packaging (debian/*) is
+
+Copyright: © 2010-2011 Modestas Vainius <modax@debian.org>
+
+and licensed under GNU General Public Licence, version 2 or later (GPL+2). On
+Debian systems, the complete text of the GNU General Public License version 2
+can be found in /usr/share/common-licenses/GPL-2
+
+Licensing of the upstream components can be found below.
+
+Copyright: © 2005-2011 Joris Guisson <joris.guisson@gmail.com>
 Copyright: © 2005-2008 Ivan Vasic <ivasic@gmail.com>
 Copyright: © 2006 Juliusz Chroboczek.
 Copyright: © 2006 Dan Kennedy.
