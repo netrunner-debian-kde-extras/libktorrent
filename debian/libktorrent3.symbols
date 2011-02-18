@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 1.0.3 alpha amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sparc
+# SymbolsHelper-Confirmed: 1.1~rc1 amd64
 libktorrent.so.3 libktorrent3 #MINVER#
 * Build-Depends-Package: libktorrent-dev
  _ZN2bt10BValueNode14printDebugInfoEv@Base 1.1~rc1
@@ -12,7 +12,6 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt10Downloader10onIncludedEjj@Base 1.1~rc1
  _ZN2bt10Downloader10setMonitorEPNS_16MonitorInterfaceE@Base 1.1~rc1
  _ZN2bt10Downloader11dataCheckedERKNS_6BitSetE@Base 1.1~rc1
- _ZN2bt10Downloader11getDownloadEj@Base 1.1~rc1
  _ZN2bt10Downloader11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
  _ZN2bt10Downloader11qt_metacastEPKc@Base 1.1~rc1
  _ZN2bt10Downloader11selectWorstEPNS_15PieceDownloaderE@Base 1.1~rc1
@@ -22,7 +21,6 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt10Downloader12loadWebSeedsERK7QString@Base 1.1~rc1
  _ZN2bt10Downloader12normalUpdateEv@Base 1.1~rc1
  _ZN2bt10Downloader12onChunkReadyEPNS_5ChunkE@Base 1.1~rc1
- _ZN2bt10Downloader12onPeerKilledEPNS_4PeerE@Base 1.1~rc1
  _ZN2bt10Downloader12saveWebSeedsERK7QString@Base 1.1~rc1
  _ZN2bt10Downloader12use_webseedsE@Base 1.1~rc1
  _ZN2bt10Downloader13loadDownloadsERK7QString@Base 1.1~rc1
@@ -37,16 +35,18 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt10Downloader16staticMetaObjectE@Base 1.1~rc1
  _ZN2bt10Downloader17findDownloadForPDEPNS_15PieceDownloaderE@Base 1.1~rc1
  _ZN2bt10Downloader17removeAllWebSeedsEv@Base 1.1~rc1
+ _ZN2bt10Downloader18addPieceDownloaderEPNS_15PieceDownloaderE@Base 1.1~rc1
  _ZN2bt10Downloader20chunkDownloadStartedEPNS_20WebSeedChunkDownloadEj@Base 1.1~rc1
  _ZN2bt10Downloader21chunkDownloadFinishedEPNS_20WebSeedChunkDownloadEj@Base 1.1~rc1
+ _ZN2bt10Downloader21removePieceDownloaderEPNS_15PieceDownloaderE@Base 1.1~rc1
  _ZN2bt10Downloader37getDownloadedBytesOfCurrentChunksFileERK7QString@Base 1.1~rc1
  _ZN2bt10Downloader5pauseEv@Base 1.1~rc1
  _ZN2bt10Downloader6updateEv@Base 1.1~rc1
  _ZN2bt10Downloader7ioErrorERK7QString@Base 1.1~rc1
+ _ZN2bt10Downloader8downloadEj@Base 1.1~rc1
  _ZN2bt10Downloader8finishedEPNS_13ChunkDownloadE@Base 1.1~rc1
  _ZN2bt10Downloader8selectCDEPNS_15PieceDownloaderEj@Base 1.1~rc1
  _ZN2bt10Downloader9corruptedEj@Base 1.1~rc1
- _ZN2bt10Downloader9onNewPeerEPNS_4PeerE@Base 1.1~rc1
  _ZN2bt10DownloaderC1ERNS_7TorrentERNS_11PeerManagerERNS_12ChunkManagerE@Base 1.1~rc1
  _ZN2bt10DownloaderC2ERNS_7TorrentERNS_11PeerManagerERNS_12ChunkManagerE@Base 1.1~rc1
  _ZN2bt10DownloaderD0Ev@Base 1.1~rc1
@@ -66,6 +66,7 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt10MagnetLinkD2Ev@Base 1.1~rc1
  _ZN2bt10MagnetLinkaSERKS0_@Base 1.1~rc1
  _ZN2bt10MagnetLinkeqERKS0_@Base 1.1~rc1
+ _ZN2bt10MountPointERK7QString@Base 1.1~rc1
  _ZN2bt10PeerSource10peersReadyEPS0_@Base 1.1~rc1
  _ZN2bt10PeerSource11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
  _ZN2bt10PeerSource11qt_metacastEPKc@Base 1.1~rc1
@@ -84,6 +85,35 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt10ReadUint16EPKhj@Base 1.1~rc1
  _ZN2bt10ReadUint32EPKhj@Base 1.1~rc1
  _ZN2bt10ReadUint64EPKhy@Base 1.1~rc1
+ _ZN2bt10UPnPRouter10addServiceERKNS_11UPnPServiceE@Base 1.1~rc1
+ _ZN2bt10UPnPRouter10setVerboseEb@Base 1.1~rc1
+ _ZN2bt10UPnPRouter11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
+ _ZN2bt10UPnPRouter11qt_metacastEPKc@Base 1.1~rc1
+ _ZN2bt10UPnPRouter11undoForwardERKN3net4PortEPNS_7WaitJobE@Base 1.1~rc1
+ _ZN2bt10UPnPRouter12stateChangedEv@Base 1.1~rc1
+ _ZN2bt10UPnPRouter13forwardResultEPNS_11HTTPRequestE@Base 1.1~rc1
+ _ZN2bt10UPnPRouter14getDescriptionEv@Base 1.1~rc1
+ _ZN2bt10UPnPRouter15downloadXMLFileEv@Base 1.1~rc1
+ _ZN2bt10UPnPRouter16downloadFinishedEP4KJob@Base 1.1~rc1
+ _ZN2bt10UPnPRouter16staticMetaObjectE@Base 1.1~rc1
+ _ZN2bt10UPnPRouter17UPnPRouterPrivate11undoForwardEPKNS_11UPnPServiceERKN3net4PortEPNS_7WaitJobE@Base 1.1~rc1
+ _ZN2bt10UPnPRouter17UPnPRouterPrivate13getExternalIPEv@Base 1.1~rc1
+ _ZN2bt10UPnPRouter17UPnPRouterPrivate13sendSoapQueryERK7QStringS4_RK4KUrlb@Base 1.1~rc1
+ _ZN2bt10UPnPRouter17UPnPRouterPrivate15httpRequestDoneEPNS_11HTTPRequestEb@Base 1.1~rc1
+ _ZN2bt10UPnPRouter17UPnPRouterPrivate7forwardEPKNS_11UPnPServiceERKN3net4PortE@Base 1.1~rc1
+ _ZN2bt10UPnPRouter17UPnPRouterPrivateC1ERK7QStringRK4KUrlbPS0_@Base 1.1~rc1
+ _ZN2bt10UPnPRouter17UPnPRouterPrivateC2ERK7QStringRK4KUrlbPS0_@Base 1.1~rc1
+ _ZN2bt10UPnPRouter17UPnPRouterPrivateD1Ev@Base 1.1~rc1
+ _ZN2bt10UPnPRouter17UPnPRouterPrivateD2Ev@Base 1.1~rc1
+ _ZN2bt10UPnPRouter17undoForwardResultEPNS_11HTTPRequestE@Base 1.1~rc1
+ _ZN2bt10UPnPRouter17xmlFileDownloadedEPS0_b@Base 1.1~rc1
+ _ZN2bt10UPnPRouter19getExternalIPResultEPNS_11HTTPRequestE@Base 1.1~rc1
+ _ZN2bt10UPnPRouter7forwardERKN3net4PortE@Base 1.1~rc1
+ _ZN2bt10UPnPRouterC1ERK7QStringRK4KUrlb@Base 1.1~rc1
+ _ZN2bt10UPnPRouterC2ERK7QStringRK4KUrlb@Base 1.1~rc1
+ _ZN2bt10UPnPRouterD0Ev@Base 1.1~rc1
+ _ZN2bt10UPnPRouterD1Ev@Base 1.1~rc1
+ _ZN2bt10UPnPRouterD2Ev@Base 1.1~rc1
  _ZN2bt10UTMetaData10sendRejectEi@Base 1.1~rc1
  _ZN2bt10UTMetaData12handlePacketEPKhj@Base 1.1~rc1
  _ZN2bt10UTMetaData23setReportedMetadataSizeEj@Base 1.1~rc1
@@ -99,6 +129,12 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt10WriteInt16EPhjs@Base 1.1~rc1
  _ZN2bt10WriteInt32EPhji@Base 1.1~rc1
  _ZN2bt10WriteInt64EPhjx@Base 1.1~rc1
+ _ZN2bt10sigbus_envE@Base 1.1~rc1
+ _ZN2bt11DataChecker11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
+ _ZN2bt11DataChecker11qt_metacastEPKc@Base 1.1~rc1
+ _ZN2bt11DataChecker16staticMetaObjectE@Base 1.1~rc1
+ _ZN2bt11DataChecker6statusEjjjj@Base 1.1~rc1
+ _ZN2bt11DataChecker8progressEjj@Base 1.1~rc1
  _ZN2bt11DataCheckerC1Ev@Base 1.1~rc1
  _ZN2bt11DataCheckerC2Ev@Base 1.1~rc1
  _ZN2bt11DataCheckerD0Ev@Base 1.1~rc1
@@ -135,10 +171,9 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt11HTTPTrackerD0Ev@Base 1.1~rc1
  _ZN2bt11HTTPTrackerD1Ev@Base 1.1~rc1
  _ZN2bt11HTTPTrackerD2Ev@Base 1.1~rc1
- _ZN2bt11PeerManager10createPeerEPN3mse12StreamSocketERKNS_6PeerIDEjb@Base 1.1~rc1
+ _ZN2bt11PeerManager10allowChunkEPNS_13PeerInterfaceEj@Base 1.1~rc1
  _ZN2bt11PeerManager10peerKilledEPNS_4PeerE@Base 1.1~rc1
  _ZN2bt11PeerManager11connectedToERKNS_6PeerIDE@Base 1.1~rc1
- _ZN2bt11PeerManager11killBadPeerEv@Base 1.1~rc1
  _ZN2bt11PeerManager11killSeedersEv@Base 1.1~rc1
  _ZN2bt11PeerManager11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
  _ZN2bt11PeerManager11qt_metacastEPKc@Base 1.1~rc1
@@ -146,47 +181,57 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt11PeerManager11setGroupIDsEjj@Base 1.1~rc1
  _ZN2bt11PeerManager12loadPeerListERK7QString@Base 1.1~rc1
  _ZN2bt11PeerManager12savePeerListERK7QString@Base 1.1~rc1
- _ZN2bt11PeerManager13newConnectionEPN3mse12StreamSocketERKNS_6PeerIDEj@Base 1.1~rc1
+ _ZN2bt11PeerManager13newConnectionE14QSharedPointerIN3mse12StreamSocketEERKNS_6PeerIDEj@Base 1.1~rc1
  _ZN2bt11PeerManager13pieceReceivedERKNS_5PieceE@Base 1.1~rc1
  _ZN2bt11PeerManager13setPexEnabledEb@Base 1.1~rc1
  _ZN2bt11PeerManager14bitSetReceivedEPNS_4PeerERKNS_6BitSetE@Base 1.1~rc1
  _ZN2bt11PeerManager14clearDeadPeersEv@Base 1.1~rc1
  _ZN2bt11PeerManager14connectToPeersEv@Base 1.1~rc1
  _ZN2bt11PeerManager14killStalePeersEv@Base 1.1~rc1
- _ZN2bt11PeerManager15killChokedPeersEj@Base 1.1~rc1
+ _ZN2bt11PeerManager15getChunkCounterEv@Base 1.1~rc1
  _ZN2bt11PeerManager15max_connectionsE@Base 1.1~rc1
  _ZN2bt11PeerManager15peerSourceReadyEPNS_10PeerSourceE@Base 1.1~rc1
  _ZN2bt11PeerManager15setPieceHandlerEPNS_12PieceHandlerE@Base 1.1~rc1
+ _ZN2bt11PeerManager15setSuperSeedingEbRKNS_6BitSetE@Base 1.1~rc1
  _ZN2bt11PeerManager15setWantedChunksERKNS_6BitSetE@Base 1.1~rc1
  _ZN2bt11PeerManager16addPotentialPeerERKNS_13PotentialPeerE@Base 1.1~rc1
  _ZN2bt11PeerManager16killUninterestedEv@Base 1.1~rc1
  _ZN2bt11PeerManager16staticMetaObjectE@Base 1.1~rc1
  _ZN2bt11PeerManager17onResolverResultsEN8KNetwork16KResolverResultsE@Base 1.1~rc1
- _ZN2bt11PeerManager17peerAuthenticatedEPNS_12AuthenticateEPNS_13PeerConnectorEb@Base 1.1~rc1
+ _ZN2bt11PeerManager17peerAuthenticatedEPNS_12AuthenticateE12QWeakPointerINS_13PeerConnectorEEb@Base 1.1~rc1
  _ZN2bt11PeerManager17setMaxConnectionsEj@Base 1.1~rc1
  _ZN2bt11PeerManager17total_connectionsE@Base 1.1~rc1
  _ZN2bt11PeerManager18portPacketReceivedERK7QStringt@Base 1.1~rc1
  _ZN2bt11PeerManager19closeAllConnectionsEv@Base 1.1~rc1
  _ZN2bt11PeerManager21max_total_connectionsE@Base 1.1~rc1
- _ZN2bt11PeerManager21updateAvailableChunksEv@Base 1.1~rc1
  _ZN2bt11PeerManager22setMaxTotalConnectionsEj@Base 1.1~rc1
  _ZN2bt11PeerManager3pexERK10QByteArray@Base 1.1~rc1
  _ZN2bt11PeerManager4haveEPNS_4PeerEj@Base 1.1~rc1
  _ZN2bt11PeerManager4stopEv@Base 1.1~rc1
  _ZN2bt11PeerManager5pauseEv@Base 1.1~rc1
- _ZN2bt11PeerManager5startEv@Base 1.1~rc1
+ _ZN2bt11PeerManager5startEb@Base 1.1~rc1
+ _ZN2bt11PeerManager5visitERNS0_11PeerVisitorE@Base 1.1~rc1
  _ZN2bt11PeerManager6updateEv@Base 1.1~rc1
+ _ZN2bt11PeerManager7Private10createPeerE14QSharedPointerIN3mse12StreamSocketEERKNS_6PeerIDEjb@Base 1.1~rc1
+ _ZN2bt11PeerManager7Private11killBadPeerEv@Base 1.1~rc1
+ _ZN2bt11PeerManager7Private14connectToPeersEv@Base 1.1~rc1
+ _ZN2bt11PeerManager7Private21updateAvailableChunksEv@Base 1.1~rc1
+ _ZN2bt11PeerManager7Private4haveEPNS_4PeerEj@Base 1.1~rc1
+ _ZN2bt11PeerManager7Private6updateEv@Base 1.1~rc1
+ _ZN2bt11PeerManager7PrivateC1EPS0_RNS_7TorrentE@Base 1.1~rc1
+ _ZN2bt11PeerManager7PrivateC2EPS0_RNS_7TorrentE@Base 1.1~rc1
+ _ZN2bt11PeerManager7PrivateD1Ev@Base 1.1~rc1
+ _ZN2bt11PeerManager7PrivateD2Ev@Base 1.1~rc1
  _ZN2bt11PeerManager7newPeerEPNS_4PeerE@Base 1.1~rc1
- _ZN2bt11PeerManager7stoppedEv@Base 1.1~rc1
  _ZN2bt11PeerManager7unpauseEv@Base 1.1~rc1
  _ZN2bt11PeerManager8findPeerEPNS_15PieceDownloaderE@Base 1.1~rc1
  _ZN2bt11PeerManager8findPeerEj@Base 1.1~rc1
+ _ZN2bt11PeerManager8sendHaveEj@Base 1.1~rc1
  _ZN2bt11PeerManagerC1ERNS_7TorrentE@Base 1.1~rc1
  _ZN2bt11PeerManagerC2ERNS_7TorrentE@Base 1.1~rc1
  _ZN2bt11PeerManagerD0Ev@Base 1.1~rc1
  _ZN2bt11PeerManagerD1Ev@Base 1.1~rc1
  _ZN2bt11PeerManagerD2Ev@Base 1.1~rc1
- _ZN2bt11SHA1HashGen12processChunkEPKh@Base 1.1~rc1
  _ZN2bt11SHA1HashGen3endEv@Base 1.1~rc1
  _ZN2bt11SHA1HashGen5startEv@Base 1.1~rc1
  _ZN2bt11SHA1HashGen6updateEPKhj@Base 1.1~rc1
@@ -195,6 +240,18 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt11SHA1HashGenC2Ev@Base 1.1~rc1
  _ZN2bt11SHA1HashGenD1Ev@Base 1.1~rc1
  _ZN2bt11SHA1HashGenD2Ev@Base 1.1~rc1
+ _ZN2bt11SuperSeeder11peerRemovedEPNS_13PeerInterfaceE@Base 1.1~rc1
+ _ZN2bt11SuperSeeder4dumpEv@Base 1.1~rc1
+ _ZN2bt11SuperSeeder4haveEPNS_13PeerInterfaceEj@Base 1.1~rc1
+ _ZN2bt11SuperSeeder6bitsetEPNS_13PeerInterfaceERKNS_6BitSetE@Base 1.1~rc1
+ _ZN2bt11SuperSeeder7haveAllEPNS_13PeerInterfaceE@Base 1.1~rc1
+ _ZN2bt11SuperSeeder9peerAddedEPNS_13PeerInterfaceE@Base 1.1~rc1
+ _ZN2bt11SuperSeeder9sendChunkEPNS_13PeerInterfaceE@Base 1.1~rc1
+ _ZN2bt11SuperSeederC1EjPNS_17SuperSeederClientE@Base 1.1~rc1
+ _ZN2bt11SuperSeederC2EjPNS_17SuperSeederClientE@Base 1.1~rc1
+ _ZN2bt11SuperSeederD0Ev@Base 1.1~rc1
+ _ZN2bt11SuperSeederD1Ev@Base 1.1~rc1
+ _ZN2bt11SuperSeederD2Ev@Base 1.1~rc1
  _ZN2bt11TorrentFile11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
  _ZN2bt11TorrentFile11qt_metacastEPKc@Base 1.1~rc1
  _ZN2bt11TorrentFile11setPriorityENS_8PriorityE@Base 1.1~rc1
@@ -213,6 +270,13 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt11TorrentFileD1Ev@Base 1.1~rc1
  _ZN2bt11TorrentFileD2Ev@Base 1.1~rc1
  _ZN2bt11TorrentFileaSERKS0_@Base 1.1~rc1
+ _ZN2bt11UPnPService11setPropertyERK7QStringS3_@Base 1.1~rc1
+ _ZN2bt11UPnPService5clearEv@Base 1.1~rc1
+ _ZN2bt11UPnPServiceC1ERKS0_@Base 1.1~rc1
+ _ZN2bt11UPnPServiceC1Ev@Base 1.1~rc1
+ _ZN2bt11UPnPServiceC2ERKS0_@Base 1.1~rc1
+ _ZN2bt11UPnPServiceC2Ev@Base 1.1~rc1
+ _ZN2bt11UPnPServiceaSERKS0_@Base 1.1~rc1
  _ZN2bt11WriteUint16EPhjt@Base 1.1~rc1
  _ZN2bt11WriteUint32EPhjj@Base 1.1~rc1
  _ZN2bt11WriteUint64EPhjy@Base 1.1~rc1
@@ -238,15 +302,11 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt12ChunkManager11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
  _ZN2bt12ChunkManager11qt_metacastEPKc@Base 1.1~rc1
  _ZN2bt12ChunkManager11updateStatsEv@Base 1.1~rc1
- _ZN2bt12ChunkManager12dumpPriorityEPNS_11TorrentFileE@Base 1.1~rc1
- _ZN2bt12ChunkManager12loadFileInfoEv@Base 1.1~rc1
- _ZN2bt12ChunkManager12saveFileInfoEv@Base 1.1~rc1
  _ZN2bt12ChunkManager13changeDataDirERK7QString@Base 1.1~rc1
  _ZN2bt12ChunkManager13do_data_checkE@Base 1.1~rc1
  _ZN2bt12ChunkManager13loadIndexFileEv@Base 1.1~rc1
  _ZN2bt12ChunkManager13moveDataFilesERK4QMapIPNS_20TorrentFileInterfaceE7QStringE@Base 1.1~rc1
  _ZN2bt12ChunkManager13moveDataFilesERK7QString@Base 1.1~rc1
- _ZN2bt12ChunkManager13saveIndexFileEv@Base 1.1~rc1
  _ZN2bt12ChunkManager15chunkDownloadedEj@Base 1.1~rc1
  _ZN2bt12ChunkManager15deleteDataFilesEv@Base 1.1~rc1
  _ZN2bt12ChunkManager15dndMissingFilesEv@Base 1.1~rc1
@@ -254,28 +314,38 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt12ChunkManager15setPreviewSizesEjj@Base 1.1~rc1
  _ZN2bt12ChunkManager16changeOutputPathERK7QString@Base 1.1~rc1
  _ZN2bt12ChunkManager16checkMemoryUsageEv@Base 1.1~rc1
- _ZN2bt12ChunkManager16loadPriorityInfoEv@Base 1.1~rc1
- _ZN2bt12ChunkManager16resetBorderChunkEjPNS_11TorrentFileE@Base 1.1~rc1
- _ZN2bt12ChunkManager16savePriorityInfoEv@Base 1.1~rc1
  _ZN2bt12ChunkManager16staticMetaObjectE@Base 1.1~rc1
- _ZN2bt12ChunkManager17doPreviewPriorityERNS_11TorrentFileE@Base 1.1~rc1
  _ZN2bt12ChunkManager18debugPrintMemUsageEv@Base 1.1~rc1
  _ZN2bt12ChunkManager18preview_size_audioE@Base 1.1~rc1
  _ZN2bt12ChunkManager18preview_size_videoE@Base 1.1~rc1
- _ZN2bt12ChunkManager19writeIndexFileEntryEPNS_5ChunkE@Base 1.1~rc1
- _ZN2bt12ChunkManager20allFilesExistOfChunkEj@Base 1.1~rc1
- _ZN2bt12ChunkManager20createBorderChunkSetEv@Base 1.1~rc1
  _ZN2bt12ChunkManager20preallocateDiskSpaceEPNS_19PreallocationThreadE@Base 1.1~rc1
  _ZN2bt12ChunkManager20recreateMissingFilesEv@Base 1.1~rc1
- _ZN2bt12ChunkManager21downloadStatusChangedEPNS_11TorrentFileEb@Base 1.1~rc1
  _ZN2bt12ChunkManager21moveDataFilesFinishedEPNS_3JobE@Base 1.1~rc1
  _ZN2bt12ChunkManager21moveDataFilesFinishedERK4QMapIPNS_20TorrentFileInterfaceE7QStringEPNS_3JobE@Base 1.1~rc1
- _ZN2bt12ChunkManager22setBorderChunkPriorityEjNS_8PriorityE@Base 1.1~rc1
  _ZN2bt12ChunkManager23downloadPriorityChangedEPNS_11TorrentFileENS_8PriorityES3_@Base 1.1~rc1
  _ZN2bt12ChunkManager29markExistingFilesAsDownloadedEv@Base 1.1~rc1
  _ZN2bt12ChunkManager29max_chunk_size_for_data_checkE@Base 1.1~rc1
  _ZN2bt12ChunkManager4stopEv@Base 1.1~rc1
  _ZN2bt12ChunkManager5startEv@Base 1.1~rc1
+ _ZN2bt12ChunkManager7Private12dumpPriorityEPNS_11TorrentFileE@Base 1.1~rc1
+ _ZN2bt12ChunkManager7Private12loadFileInfoEv@Base 1.1~rc1
+ _ZN2bt12ChunkManager7Private12saveFileInfoEv@Base 1.1~rc1
+ _ZN2bt12ChunkManager7Private13loadIndexFileEv@Base 1.1~rc1
+ _ZN2bt12ChunkManager7Private13saveIndexFileEv@Base 1.1~rc1
+ _ZN2bt12ChunkManager7Private15setupPrioritiesEv@Base 1.1~rc1
+ _ZN2bt12ChunkManager7Private16loadPriorityInfoEv@Base 1.1~rc1
+ _ZN2bt12ChunkManager7Private16resetBorderChunkEjPNS_11TorrentFileE@Base 1.1~rc1
+ _ZN2bt12ChunkManager7Private16savePriorityInfoEv@Base 1.1~rc1
+ _ZN2bt12ChunkManager7Private17doPreviewPriorityERNS_11TorrentFileE@Base 1.1~rc1
+ _ZN2bt12ChunkManager7Private19writeIndexFileEntryEPNS_5ChunkE@Base 1.1~rc1
+ _ZN2bt12ChunkManager7Private20allFilesExistOfChunkEj@Base 1.1~rc1
+ _ZN2bt12ChunkManager7Private20createBorderChunkSetEv@Base 1.1~rc1
+ _ZN2bt12ChunkManager7Private21downloadStatusChangedEPNS_11TorrentFileEb@Base 1.1~rc1
+ _ZN2bt12ChunkManager7Private22setBorderChunkPriorityEjNS_8PriorityE@Base 1.1~rc1
+ _ZN2bt12ChunkManager7PrivateC1EPS0_RNS_7TorrentERK7QStringS7_bPNS_12CacheFactoryE@Base 1.1~rc1
+ _ZN2bt12ChunkManager7PrivateC2EPS0_RNS_7TorrentERK7QStringS7_bPNS_12CacheFactoryE@Base 1.1~rc1
+ _ZN2bt12ChunkManager7PrivateD1Ev@Base 1.1~rc1
+ _ZN2bt12ChunkManager7PrivateD2Ev@Base 1.1~rc1
  _ZN2bt12ChunkManager7excludeEjj@Base 1.1~rc1
  _ZN2bt12ChunkManager7includeEjj@Base 1.1~rc1
  _ZN2bt12ChunkManager8excludedEjj@Base 1.1~rc1
@@ -289,15 +359,9 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt12ChunkManagerD1Ev@Base 1.1~rc1
  _ZN2bt12ChunkManagerD2Ev@Base 1.1~rc1
  _ZN2bt12DirSeparatorEv@Base 1.1~rc1
+ _ZN2bt12MakeFilePathERK7QStringb@Base 1.1~rc1
  _ZN2bt12MaxOpenFilesEv@Base 1.1~rc1
  _ZN2bt12PeerIDPrefixEv@Base 1.1~rc1
- _ZN2bt12PieceDataPtrC1EPNS_9PieceDataE@Base 1.1~rc1
- _ZN2bt12PieceDataPtrC1ERKS0_@Base 1.1~rc1
- _ZN2bt12PieceDataPtrC2EPNS_9PieceDataE@Base 1.1~rc1
- _ZN2bt12PieceDataPtrC2ERKS0_@Base 1.1~rc1
- _ZN2bt12PieceDataPtrD1Ev@Base 1.1~rc1
- _ZN2bt12PieceDataPtrD2Ev@Base 1.1~rc1
- _ZN2bt12PieceDataPtraSERKS0_@Base 1.1~rc1
  _ZN2bt12TorrentStatsC1Ev@Base 1.1~rc1
  _ZN2bt12TorrentStatsC2Ev@Base 1.1~rc1
  _ZN2bt12TrackersList5mergeEPKNS_11TrackerTierE@Base 1.1~rc1
@@ -339,6 +403,7 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt13ChunkDownload6assignEPNS_15PieceDownloaderE@Base 1.1~rc1
  _ZN2bt13ChunkDownload6killedEPNS_15PieceDownloaderE@Base 1.1~rc1
  _ZN2bt13ChunkDownload6updateEv@Base 1.1~rc1
+ _ZN2bt13ChunkDownload7releaseEPNS_15PieceDownloaderE@Base 1.1~rc1
  _ZN2bt13ChunkDownload8getStatsERNS_22ChunkDownloadInterface5StatsE@Base 1.1~rc1
  _ZN2bt13ChunkDownload9bestPieceEPNS_15PieceDownloaderE@Base 1.1~rc1
  _ZN2bt13ChunkDownload9cancelAllEv@Base 1.1~rc1
@@ -358,18 +423,23 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt13ExitOperationD1Ev@Base 1.1~rc1
  _ZN2bt13ExitOperationD2Ev@Base 1.1~rc1
  _ZN2bt13FreeDiskSpaceERK7QStringRy@Base 1.1~rc1
- _ZN2bt13PeerConnector11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
- _ZN2bt13PeerConnector11qt_metacastEPKc@Base 1.1~rc1
- _ZN2bt13PeerConnector16staticMetaObjectE@Base 1.1~rc1
+ _ZN2bt13PeerConnector12setMaxActiveEj@Base 1.1~rc1
+ _ZN2bt13PeerConnector14setWeakPointerE12QWeakPointerIS0_E@Base 1.1~rc1
  _ZN2bt13PeerConnector22authenticationFinishedEPNS_12AuthenticateEb@Base 1.1~rc1
- _ZN2bt13PeerConnector4stopEv@Base 1.1~rc1
- _ZN2bt13PeerConnector5startENS0_6MethodE@Base 1.1~rc1
  _ZN2bt13PeerConnector5startEv@Base 1.1~rc1
+ _ZN2bt13PeerConnector7Private22authenticationFinishedEPNS_12AuthenticateEb@Base 1.1~rc1
+ _ZN2bt13PeerConnector7Private5startENS0_6MethodE@Base 1.1~rc1
+ _ZN2bt13PeerConnector8acquiredEv@Base 1.1~rc1
  _ZN2bt13PeerConnectorC1ERK7QStringtbPNS_11PeerManagerE@Base 1.1~rc1
  _ZN2bt13PeerConnectorC2ERK7QStringtbPNS_11PeerManagerE@Base 1.1~rc1
  _ZN2bt13PeerConnectorD0Ev@Base 1.1~rc1
  _ZN2bt13PeerConnectorD1Ev@Base 1.1~rc1
  _ZN2bt13PeerConnectorD2Ev@Base 1.1~rc1
+ _ZN2bt13PeerInterfaceC1ERKNS_6PeerIDEj@Base 1.1~rc1
+ _ZN2bt13PeerInterfaceC2ERKNS_6PeerIDEj@Base 1.1~rc1
+ _ZN2bt13PeerInterfaceD0Ev@Base 1.1~rc1
+ _ZN2bt13PeerInterfaceD1Ev@Base 1.1~rc1
+ _ZN2bt13PeerInterfaceD2Ev@Base 1.1~rc1
  _ZN2bt13SetClientInfoERK7QStringiiiNS_11VersionTypeES2_@Base 1.1~rc1
  _ZN2bt13TimeEstimator10estimateKTEv@Base 1.1~rc1
  _ZN2bt13TimeEstimator11estimateCSAEv@Base 1.1~rc1
@@ -401,12 +471,15 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt14CompressThreadD2Ev@Base 1.1~rc1
  _ZN2bt14DataCheckerJob11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
  _ZN2bt14DataCheckerJob11qt_metacastEPKc@Base 1.1~rc1
+ _ZN2bt14DataCheckerJob14threadFinishedEv@Base 1.1~rc1
  _ZN2bt14DataCheckerJob16staticMetaObjectE@Base 1.1~rc1
  _ZN2bt14DataCheckerJob4killEb@Base 1.1~rc1
  _ZN2bt14DataCheckerJob5startEv@Base 1.1~rc1
- _ZN2bt14DataCheckerJob8finishedEv@Base 1.1~rc1
- _ZN2bt14DataCheckerJobC1EPNS_19DataCheckerListenerEPNS_14TorrentControlE@Base 1.1~rc1
- _ZN2bt14DataCheckerJobC2EPNS_19DataCheckerListenerEPNS_14TorrentControlE@Base 1.1~rc1
+ _ZN2bt14DataCheckerJob6statusEjjjj@Base 1.1~rc1
+ _ZN2bt14DataCheckerJob8acquiredEv@Base 1.1~rc1
+ _ZN2bt14DataCheckerJob8progressEjj@Base 1.1~rc1
+ _ZN2bt14DataCheckerJobC1EbPNS_14TorrentControlE@Base 1.1~rc1
+ _ZN2bt14DataCheckerJobC2EbPNS_14TorrentControlE@Base 1.1~rc1
  _ZN2bt14DataCheckerJobD0Ev@Base 1.1~rc1
  _ZN2bt14DataCheckerJobD1Ev@Base 1.1~rc1
  _ZN2bt14DataCheckerJobD2Ev@Base 1.1~rc1
@@ -462,13 +535,13 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt14TorrentControl13removeWebSeedERK4KUrl@Base 1.1~rc1
  _ZN2bt14TorrentControl13scrapeTrackerEv@Base 1.1~rc1
  _ZN2bt14TorrentControl13updateTrackerEv@Base 1.1~rc1
- _ZN2bt14TorrentControl14afterDataCheckEPNS_19DataCheckerListenerERKNS_6BitSetERK7QString@Base 1.1~rc1
+ _ZN2bt14TorrentControl14afterDataCheckEPNS_14DataCheckerJobERKNS_6BitSetE@Base 1.1~rc1
  _ZN2bt14TorrentControl14checkDiskSpaceEb@Base 1.1~rc1
  _ZN2bt14TorrentControl14getTorrentFileEj@Base 1.1~rc1
  _ZN2bt14TorrentControl14setDisplayNameERK7QString@Base 1.1~rc1
  _ZN2bt14TorrentControl14setMaxSeedTimeEf@Base 1.1~rc1
  _ZN2bt14TorrentControl14setUploadPropsEjj@Base 1.1~rc1
- _ZN2bt14TorrentControl14startDataCheckEPNS_19DataCheckerListenerE@Base 1.1~rc1
+ _ZN2bt14TorrentControl14startDataCheckEb@Base 1.1~rc1
  _ZN2bt14TorrentControl15announceAllowedEv@Base 1.1~rc1
  _ZN2bt14TorrentControl15beforeDataCheckEv@Base 1.1~rc1
  _ZN2bt14TorrentControl15changeOutputDirERK7QStringi@Base 1.1~rc1
@@ -479,6 +552,7 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt14TorrentControl15hasMissingFilesER11QStringList@Base 1.1~rc1
  _ZN2bt14TorrentControl15overMaxSeedTimeEv@Base 1.1~rc1
  _ZN2bt14TorrentControl15setCacheFactoryEPNS_12CacheFactoryE@Base 1.1~rc1
+ _ZN2bt14TorrentControl15setSuperSeedingEb@Base 1.1~rc1
  _ZN2bt14TorrentControl16getAssuredSpeedsERjS1_@Base 1.1~rc1
  _ZN2bt14TorrentControl16getTrafficLimitsERjS1_@Base 1.1~rc1
  _ZN2bt14TorrentControl16isFeatureEnabledENS_14TorrentFeatureE@Base 1.1~rc1
@@ -499,8 +573,8 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt14TorrentControl19completed_datacheckE@Base 1.1~rc1
  _ZN2bt14TorrentControl20recreateMissingFilesEv@Base 1.1~rc1
  _ZN2bt14TorrentControl21moveDataFilesFinishedEP4KJob@Base 1.1~rc1
+ _ZN2bt14TorrentControl23createTorrentFileStreamEjbP7QObject@Base 1.1~rc1
  _ZN2bt14TorrentControl23downloadPriorityChangedEPNS_11TorrentFileENS_8PriorityES3_@Base 1.1~rc1
- _ZN2bt14TorrentControl23setChunkSelectorFactoryEPNS_29ChunkSelectorFactoryInterfaceE@Base 1.1~rc1
  _ZN2bt14TorrentControl23setUserModifiedFileNameERK7QString@Base 1.1~rc1
  _ZN2bt14TorrentControl25num_corrupted_for_recheckE@Base 1.1~rc1
  _ZN2bt14TorrentControl28moveDataFilesWithMapFinishedEP4KJob@Base 1.1~rc1
@@ -600,11 +674,35 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt15HTTPAnnounceJob5startEv@Base 1.1~rc1
  _ZN2bt15HTTPAnnounceJob8readDataERK19QHttpResponseHeader@Base 1.1~rc1
  _ZN2bt15HTTPAnnounceJob8setProxyERK7QStringi@Base 1.1~rc1
+ _ZN2bt15HTTPAnnounceJob9sslErrorsERK5QListI9QSslErrorE@Base 1.1~rc1
  _ZN2bt15HTTPAnnounceJobC1ERK4KUrl@Base 1.1~rc1
  _ZN2bt15HTTPAnnounceJobC2ERK4KUrl@Base 1.1~rc1
  _ZN2bt15HTTPAnnounceJobD0Ev@Base 1.1~rc1
  _ZN2bt15HTTPAnnounceJobD1Ev@Base 1.1~rc1
  _ZN2bt15HTTPAnnounceJobD2Ev@Base 1.1~rc1
+ _ZN2bt15InitLibKTorrentEv@Base 1.1~rc1
+ _ZN2bt15PieceDownloader11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
+ _ZN2bt15PieceDownloader11qt_metacastEPKc@Base 1.1~rc1
+ _ZN2bt15PieceDownloader16staticMetaObjectE@Base 1.1~rc1
+ _ZN2bt15PieceDownloader4grabEv@Base 1.1~rc1
+ _ZN2bt15PieceDownloader7releaseEv@Base 1.1~rc1
+ _ZN2bt15PieceDownloader8rejectedERKNS_7RequestE@Base 1.1~rc1
+ _ZN2bt15PieceDownloader8timedoutERKNS_7RequestE@Base 1.1~rc1
+ _ZN2bt15PieceDownloaderC1Ev@Base 1.1~rc1
+ _ZN2bt15PieceDownloaderC2Ev@Base 1.1~rc1
+ _ZN2bt15PieceDownloaderD0Ev@Base 1.1~rc1
+ _ZN2bt15PieceDownloaderD1Ev@Base 1.1~rc1
+ _ZN2bt15PieceDownloaderD2Ev@Base 1.1~rc1
+ _ZN2bt15ResourceManager3addEPNS_8ResourceE@Base 1.1~rc1
+ _ZN2bt15ResourceManager6removeEPNS_8ResourceE@Base 1.1~rc1
+ _ZN2bt15ResourceManager6updateEv@Base 1.1~rc1
+ _ZN2bt15ResourceManager7acquireEPNS_8ResourceE@Base 1.1~rc1
+ _ZN2bt15ResourceManager8shutdownEv@Base 1.1~rc1
+ _ZN2bt15ResourceManagerC1Ej@Base 1.1~rc1
+ _ZN2bt15ResourceManagerC2Ej@Base 1.1~rc1
+ _ZN2bt15ResourceManagerD0Ev@Base 1.1~rc1
+ _ZN2bt15ResourceManagerD1Ev@Base 1.1~rc1
+ _ZN2bt15ResourceManagerD2Ev@Base 1.1~rc1
  _ZN2bt15ServerInterface10encryptionE@Base 1.1~rc1
  _ZN2bt15ServerInterface11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
  _ZN2bt15ServerInterface11qt_metacastEPKc@Base 1.1~rc1
@@ -612,7 +710,7 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt15ServerInterface12findInfoHashERKNS_8SHA1HashERS1_@Base 1.1~rc1
  _ZN2bt15ServerInterface12only_use_utpE@Base 1.1~rc1
  _ZN2bt15ServerInterface13bindAddressesEv@Base 1.1~rc1
- _ZN2bt15ServerInterface13newConnectionEPN3mse12StreamSocketE@Base 1.1~rc1
+ _ZN2bt15ServerInterface13newConnectionE14QSharedPointerIN3mse12StreamSocketEE@Base 1.1~rc1
  _ZN2bt15ServerInterface13peer_managersE@Base 1.1~rc1
  _ZN2bt15ServerInterface13setUtpEnabledEbb@Base 1.1~rc1
  _ZN2bt15ServerInterface14addPeerManagerEPNS_11PeerManagerE@Base 1.1~rc1
@@ -632,6 +730,31 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt15ServerInterfaceD2Ev@Base 1.1~rc1
  _ZN2bt15ShortenFileNameERK7QStringi@Base 1.1~rc1
  _ZN2bt15SynchronousWaitEj@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocket10discoveredEPNS_10UPnPRouterE@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocket10findDeviceERK7QString@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocket10setVerboseEb@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocket11loadRoutersERK7QString@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocket11onReadyReadEv@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocket11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocket11qt_metacastEPKc@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocket11saveRoutersERK7QString@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocket16staticMetaObjectE@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocket19onXmlFileDownloadedEPNS_10UPnPRouterEb@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocket22UPnPMCastSocketPrivate10findDeviceERK4KUrl@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocket22UPnPMCastSocketPrivate13parseResponseERK10QByteArray@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocket22UPnPMCastSocketPrivate18joinUPnPMCastGroupEi@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocket22UPnPMCastSocketPrivate19leaveUPnPMCastGroupEi@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocket22UPnPMCastSocketPrivateC1Eb@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocket22UPnPMCastSocketPrivateC2Eb@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocket22UPnPMCastSocketPrivateD1Ev@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocket22UPnPMCastSocketPrivateD2Ev@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocket5errorEN15QAbstractSocket11SocketErrorE@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocket8discoverEv@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocketC1Eb@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocketC2Eb@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocketD0Ev@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocketD1Ev@Base 1.1~rc1
+ _ZN2bt15UPnPMCastSocketD2Ev@Base 1.1~rc1
  _ZN2bt16DecompressThread3runEv@Base 1.1~rc1
  _ZN2bt16DecompressThread6cancelEv@Base 1.1~rc1
  _ZN2bt16DecompressThreadC1ERK7QStringS3_@Base 1.1~rc1
@@ -662,6 +785,7 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt16MagnetDownloader11qt_metacastEPKc@Base 1.1~rc1
  _ZN2bt16MagnetDownloader13foundMetadataEPS0_RK10QByteArray@Base 1.1~rc1
  _ZN2bt16MagnetDownloader16staticMetaObjectE@Base 1.1~rc1
+ _ZN2bt16MagnetDownloader19onTorrentDownloadedEP4KJob@Base 1.1~rc1
  _ZN2bt16MagnetDownloader20onMetadataDownloadedERK10QByteArray@Base 1.1~rc1
  _ZN2bt16MagnetDownloader4stopEv@Base 1.1~rc1
  _ZN2bt16MagnetDownloader5startEv@Base 1.1~rc1
@@ -677,6 +801,8 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt16MonitorInterfaceD0Ev@Base 1.1~rc1
  _ZN2bt16MonitorInterfaceD1Ev@Base 1.1~rc1
  _ZN2bt16MonitorInterfaceD2Ev@Base 1.1~rc1
+ _ZN2bt16MultiDataChecker14closePastFilesEj@Base 1.1~rc1
+ _ZN2bt16MultiDataChecker4openERKNS_7TorrentEj@Base 1.1~rc1
  _ZN2bt16MultiDataChecker5checkERK7QStringRKNS_7TorrentES3_RKNS_6BitSetE@Base 1.1~rc1
  _ZN2bt16MultiDataChecker9loadChunkEjjRKNS_7TorrentE@Base 1.1~rc1
  _ZN2bt16MultiDataCheckerC1Ev@Base 1.1~rc1
@@ -725,14 +851,13 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt16TrackerInterfaceD0Ev@Base 1.1~rc1
  _ZN2bt16TrackerInterfaceD1Ev@Base 1.1~rc1
  _ZN2bt16TrackerInterfaceD2Ev@Base 1.1~rc1
- _ZN2bt16UDPTrackerSocket10sendScrapeEiPKhRKN8KNetwork14KSocketAddressE@Base 1.1~rc1
+ _ZN2bt16UDPTrackerSocket10sendScrapeEiPKhRKN3net7AddressE@Base 1.1~rc1
  _ZN2bt16UDPTrackerSocket11handleErrorERK10QByteArray@Base 1.1~rc1
  _ZN2bt16UDPTrackerSocket11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
  _ZN2bt16UDPTrackerSocket11qt_metacastEPKc@Base 1.1~rc1
- _ZN2bt16UDPTrackerSocket11sendConnectEiRKN8KNetwork14KSocketAddressE@Base 1.1~rc1
- _ZN2bt16UDPTrackerSocket12dataReceivedEv@Base 1.1~rc1
+ _ZN2bt16UDPTrackerSocket11sendConnectEiRKN3net7AddressE@Base 1.1~rc1
  _ZN2bt16UDPTrackerSocket12handleScrapeERK10QByteArray@Base 1.1~rc1
- _ZN2bt16UDPTrackerSocket12sendAnnounceEiPKhRKN8KNetwork14KSocketAddressE@Base 1.1~rc1
+ _ZN2bt16UDPTrackerSocket12sendAnnounceEiPKhRKN3net7AddressE@Base 1.1~rc1
  _ZN2bt16UDPTrackerSocket13handleConnectERK10QByteArray@Base 1.1~rc1
  _ZN2bt16UDPTrackerSocket14handleAnnounceERK10QByteArray@Base 1.1~rc1
  _ZN2bt16UDPTrackerSocket14scrapeReceivedEiRK10QByteArray@Base 1.1~rc1
@@ -756,6 +881,12 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt16WebSeedInterfaceD0Ev@Base 1.1~rc1
  _ZN2bt16WebSeedInterfaceD1Ev@Base 1.1~rc1
  _ZN2bt16WebSeedInterfaceD2Ev@Base 1.1~rc1
+ _ZN2bt17DataCheckerThread3runEv@Base 1.1~rc1
+ _ZN2bt17DataCheckerThreadC1EPNS_11DataCheckerERKNS_6BitSetERK7QStringRKNS_7TorrentES8_@Base 1.1~rc1
+ _ZN2bt17DataCheckerThreadC2EPNS_11DataCheckerERKNS_6BitSetERK7QStringRKNS_7TorrentES8_@Base 1.1~rc1
+ _ZN2bt17DataCheckerThreadD0Ev@Base 1.1~rc1
+ _ZN2bt17DataCheckerThreadD1Ev@Base 1.1~rc1
+ _ZN2bt17DataCheckerThreadD2Ev@Base 1.1~rc1
  _ZN2bt17DecompressFileJob11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
  _ZN2bt17DecompressFileJob11qt_metacastEPKc@Base 1.1~rc1
  _ZN2bt17DecompressFileJob16staticMetaObjectE@Base 1.1~rc1
@@ -767,12 +898,46 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt17DecompressFileJobD0Ev@Base 1.1~rc1
  _ZN2bt17DecompressFileJobD1Ev@Base 1.1~rc1
  _ZN2bt17DecompressFileJobD2Ev@Base 1.1~rc1
+ _ZN2bt17InstallBusHandlerEv@Base 1.1~rc1
  _ZN2bt17SingleDataChecker5checkERK7QStringRKNS_7TorrentES3_RKNS_6BitSetE@Base 1.1~rc1
  _ZN2bt17SingleDataCheckerC1Ev@Base 1.1~rc1
  _ZN2bt17SingleDataCheckerC2Ev@Base 1.1~rc1
  _ZN2bt17SingleDataCheckerD0Ev@Base 1.1~rc1
  _ZN2bt17SingleDataCheckerD1Ev@Base 1.1~rc1
  _ZN2bt17SingleDataCheckerD2Ev@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream11qt_metacastEPKc@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream15chunkDownloadedEPNS_16TorrentInterfaceEj@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream16staticMetaObjectE@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream23emitReadChannelFinishedEv@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream4openE6QFlagsIN9QIODevice12OpenModeFlagEE@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream4seekEx@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream5closeEv@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream5resetEv@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream7Private10firstChunkEv@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream7Private13lastChunkSizeEv@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream7Private16firstChunkOffsetEv@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream7Private16readCurrentChunkEPcx@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream7Private4seekEx@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream7Private5resetEv@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream7Private6updateEv@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream7Private8readDataEPcx@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream7Private9lastChunkEv@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream7PrivateC1EPNS_14TorrentControlEPNS_12ChunkManagerEbPS0_@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream7PrivateC1EPNS_14TorrentControlEjPNS_12ChunkManagerEbPS0_@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream7PrivateC2EPNS_14TorrentControlEPNS_12ChunkManagerEbPS0_@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream7PrivateC2EPNS_14TorrentControlEjPNS_12ChunkManagerEbPS0_@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream7PrivateD1Ev@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream7PrivateD2Ev@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream8readDataEPcx@Base 1.1~rc1
+ _ZN2bt17TorrentFileStream9writeDataEPKcx@Base 1.1~rc1
+ _ZN2bt17TorrentFileStreamC1EPNS_14TorrentControlEPNS_12ChunkManagerEbP7QObject@Base 1.1~rc1
+ _ZN2bt17TorrentFileStreamC1EPNS_14TorrentControlEjPNS_12ChunkManagerEbP7QObject@Base 1.1~rc1
+ _ZN2bt17TorrentFileStreamC2EPNS_14TorrentControlEPNS_12ChunkManagerEbP7QObject@Base 1.1~rc1
+ _ZN2bt17TorrentFileStreamC2EPNS_14TorrentControlEjPNS_12ChunkManagerEbP7QObject@Base 1.1~rc1
+ _ZN2bt17TorrentFileStreamD0Ev@Base 1.1~rc1
+ _ZN2bt17TorrentFileStreamD1Ev@Base 1.1~rc1
+ _ZN2bt17TorrentFileStreamD2Ev@Base 1.1~rc1
  _ZN2bt17UpdateCurrentTimeEv@Base 1.1~rc1
  _ZN2bt17global_time_stampE@Base 1.1~rc1
  _ZN2bt18BEncoderFileOutput5writeEPKcj@Base 1.1~rc1
@@ -784,11 +949,6 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt18BlockListInterfaceD1Ev@Base 1.1~rc1
  _ZN2bt18BlockListInterfaceD2Ev@Base 1.1~rc1
  _ZN2bt19BytesPerSecToStringEd@Base 1.1~rc1
- _ZN2bt19DataCheckerListenerC1Eb@Base 1.1~rc1
- _ZN2bt19DataCheckerListenerC2Eb@Base 1.1~rc1
- _ZN2bt19DataCheckerListenerD0Ev@Base 1.1~rc1
- _ZN2bt19DataCheckerListenerD1Ev@Base 1.1~rc1
- _ZN2bt19DataCheckerListenerD2Ev@Base 1.1~rc1
  _ZN2bt19LogMonitorInterfaceC1Ev@Base 1.1~rc1
  _ZN2bt19LogMonitorInterfaceC2Ev@Base 1.1~rc1
  _ZN2bt19LogMonitorInterfaceD0Ev@Base 1.1~rc1
@@ -814,6 +974,7 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt21AuthenticationMonitor5clearEv@Base 1.1~rc1
  _ZN2bt21AuthenticationMonitor6removeEPNS_16AuthenticateBaseE@Base 1.1~rc1
  _ZN2bt21AuthenticationMonitor6updateEv@Base 1.1~rc1
+ _ZN2bt21AuthenticationMonitor8shutdownEv@Base 1.1~rc1
  _ZN2bt21AuthenticationMonitorC1Ev@Base 1.1~rc1
  _ZN2bt21AuthenticationMonitorC2Ev@Base 1.1~rc1
  _ZN2bt21AuthenticationMonitorD0Ev@Base 1.1~rc1
@@ -834,26 +995,42 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt21QueueManagerInterfaceD0Ev@Base 1.1~rc1
  _ZN2bt21QueueManagerInterfaceD1Ev@Base 1.1~rc1
  _ZN2bt21QueueManagerInterfaceD2Ev@Base 1.1~rc1
+ _ZN2bt21UPnPDeviceDescription11setPropertyERK7QStringS3_@Base 1.1~rc1
  _ZN2bt22BEncoderIODeviceOutput5writeEPKcj@Base 1.1~rc1
  _ZN2bt22BEncoderIODeviceOutputC1EP9QIODevice@Base 1.1~rc1
  _ZN2bt22BEncoderIODeviceOutputC2EP9QIODevice@Base 1.1~rc1
  _ZN2bt22ChunkSelectorInterface11selectRangeERjS1_j@Base 1.1~rc1
- _ZN2bt22ChunkSelectorInterfaceC1ERNS_12ChunkManagerERNS_10DownloaderERNS_11PeerManagerE@Base 1.1~rc1
- _ZN2bt22ChunkSelectorInterfaceC2ERNS_12ChunkManagerERNS_10DownloaderERNS_11PeerManagerE@Base 1.1~rc1
+ _ZN2bt22ChunkSelectorInterface4initEPNS_12ChunkManagerEPNS_10DownloaderEPNS_11PeerManagerE@Base 1.1~rc1
+ _ZN2bt22ChunkSelectorInterfaceC1Ev@Base 1.1~rc1
+ _ZN2bt22ChunkSelectorInterfaceC2Ev@Base 1.1~rc1
  _ZN2bt22ChunkSelectorInterfaceD0Ev@Base 1.1~rc1
  _ZN2bt22ChunkSelectorInterfaceD1Ev@Base 1.1~rc1
  _ZN2bt22ChunkSelectorInterfaceD2Ev@Base 1.1~rc1
+ _ZN2bt22StreamingChunkSelector10reincludedEjj@Base 1.1~rc1
+ _ZN2bt22StreamingChunkSelector11dataCheckedERKNS_6BitSetE@Base 1.1~rc1
+ _ZN2bt22StreamingChunkSelector11selectRangeERjS1_j@Base 1.1~rc1
+ _ZN2bt22StreamingChunkSelector11updateRangeEv@Base 1.1~rc1
+ _ZN2bt22StreamingChunkSelector18setSequentialRangeEjj@Base 1.1~rc1
+ _ZN2bt22StreamingChunkSelector4initEPNS_12ChunkManagerEPNS_10DownloaderEPNS_11PeerManagerE@Base 1.1~rc1
+ _ZN2bt22StreamingChunkSelector6selectEPNS_15PieceDownloaderERj@Base 1.1~rc1
+ _ZN2bt22StreamingChunkSelector8reinsertEj@Base 1.1~rc1
+ _ZN2bt22StreamingChunkSelector9initRangeEv@Base 1.1~rc1
+ _ZN2bt22StreamingChunkSelector9setCursorEj@Base 1.1~rc1
+ _ZN2bt22StreamingChunkSelectorC1Ev@Base 1.1~rc1
+ _ZN2bt22StreamingChunkSelectorC2Ev@Base 1.1~rc1
+ _ZN2bt22StreamingChunkSelectorD0Ev@Base 1.1~rc1
+ _ZN2bt22StreamingChunkSelectorD1Ev@Base 1.1~rc1
+ _ZN2bt22StreamingChunkSelectorD2Ev@Base 1.1~rc1
  _ZN2bt25NetworkInterfaceIPAddressERK7QString@Base 1.1~rc1
- _ZN2bt29ChunkSelectorFactoryInterfaceC1Ev@Base 1.1~rc1
- _ZN2bt29ChunkSelectorFactoryInterfaceC2Ev@Base 1.1~rc1
- _ZN2bt29ChunkSelectorFactoryInterfaceD0Ev@Base 1.1~rc1
- _ZN2bt29ChunkSelectorFactoryInterfaceD1Ev@Base 1.1~rc1
- _ZN2bt29ChunkSelectorFactoryInterfaceD2Ev@Base 1.1~rc1
+ _ZN2bt27NetworkInterfaceIPAddressesERK7QString@Base 1.1~rc1
  _ZN2bt3Job11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
  _ZN2bt3Job11qt_metacastEPKc@Base 1.1~rc1
+ _ZN2bt3Job13setJobTrackerEP20KJobTrackerInterface@Base 1.1~rc1
  _ZN2bt3Job16staticMetaObjectE@Base 1.1~rc1
+ _ZN2bt3Job19registerWithTrackerEv@Base 1.1~rc1
  _ZN2bt3Job4killEb@Base 1.1~rc1
  _ZN2bt3Job5startEv@Base 1.1~rc1
+ _ZN2bt3Job7trackerE@Base 1.1~rc1
  _ZN2bt3JobC1EbPNS_14TorrentControlE@Base 1.1~rc1
  _ZN2bt3JobC2EbPNS_14TorrentControlE@Base 1.1~rc1
  _ZN2bt3JobD0Ev@Base 1.1~rc1
@@ -917,8 +1094,8 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt4Peer8readDataEPhj@Base 1.1~rc1
  _ZN2bt4Peer8resolvedERK7QString@Base 1.1~rc1
  _ZN2bt4Peer8sendDataEPKhj@Base 1.1~rc1
- _ZN2bt4PeerC1EPN3mse12StreamSocketERKNS_6PeerIDEjjjbPNS_11PeerManagerE@Base 1.1~rc1
- _ZN2bt4PeerC2EPN3mse12StreamSocketERKNS_6PeerIDEjjjbPNS_11PeerManagerE@Base 1.1~rc1
+ _ZN2bt4PeerC1E14QSharedPointerIN3mse12StreamSocketEERKNS_6PeerIDEjjjbPNS_11PeerManagerE@Base 1.1~rc1
+ _ZN2bt4PeerC2E14QSharedPointerIN3mse12StreamSocketEERKNS_6PeerIDEjjjbPNS_11PeerManagerE@Base 1.1~rc1
  _ZN2bt4PeerD0Ev@Base 1.1~rc1
  _ZN2bt4PeerD1Ev@Base 1.1~rc1
  _ZN2bt4PeerD2Ev@Base 1.1~rc1
@@ -935,18 +1112,18 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt5BNodeD0Ev@Base 1.1~rc1
  _ZN2bt5BNodeD1Ev@Base 1.1~rc1
  _ZN2bt5BNodeD2Ev@Base 1.1~rc1
- _ZN2bt5Cache10clearPieceEPNS_9PieceDataE@Base 1.1~rc1
  _ZN2bt5Cache11clearPiecesEPNS_5ChunkE@Base 1.1~rc1
- _ZN2bt5Cache11insertPieceEPNS_5ChunkEPNS_9PieceDataE@Base 1.1~rc1
+ _ZN2bt5Cache11insertPieceEPNS_5ChunkE28QExplicitlySharedDataPointerINS_9PieceDataEE@Base 1.1~rc1
  _ZN2bt5Cache12changeTmpDirERK7QString@Base 1.1~rc1
  _ZN2bt5Cache13moveDataFilesERK4QMapIPNS_20TorrentFileInterfaceE7QStringE@Base 1.1~rc1
  _ZN2bt5Cache15clearPieceCacheEv@Base 1.1~rc1
  _ZN2bt5Cache16checkMemoryUsageEv@Base 1.1~rc1
+ _ZN2bt5Cache17cleanupPieceCacheEv@Base 1.1~rc1
  _ZN2bt5Cache17mappedModeAllowedEv@Base 1.1~rc1
  _ZN2bt5Cache17preallocate_filesE@Base 1.1~rc1
  _ZN2bt5Cache17preallocate_fullyE@Base 1.1~rc1
  _ZN2bt5Cache21moveDataFilesFinishedERK4QMapIPNS_20TorrentFileInterfaceE7QStringEPNS_3JobE@Base 1.1~rc1
- _ZN2bt5Cache9findPieceEPNS_5ChunkEjj@Base 1.1~rc1
+ _ZN2bt5Cache9findPieceEPNS_5ChunkEjjb@Base 1.1~rc1
  _ZN2bt5CacheC1ERNS_7TorrentERK7QStringS5_@Base 1.1~rc1
  _ZN2bt5CacheC2ERNS_7TorrentERK7QStringS5_@Base 1.1~rc1
  _ZN2bt5CacheD0Ev@Base 1.1~rc1
@@ -955,7 +1132,7 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt5Chunk8getPieceEjjb@Base 1.1~rc1
  _ZN2bt5Chunk9checkHashERKNS_8SHA1HashE@Base 1.1~rc1
  _ZN2bt5Chunk9readPieceEjjPh@Base 1.1~rc1
- _ZN2bt5Chunk9savePieceENS_12PieceDataPtrE@Base 1.1~rc1
+ _ZN2bt5Chunk9savePieceE28QExplicitlySharedDataPointerINS_9PieceDataEE@Base 1.1~rc1
  _ZN2bt5ChunkC1EjjPNS_5CacheE@Base 1.1~rc1
  _ZN2bt5ChunkC2EjjPNS_5CacheE@Base 1.1~rc1
  _ZN2bt5ChunkD1Ev@Base 1.1~rc1
@@ -978,6 +1155,7 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt5UTPex11encodeFlagsERNS_8BEncoderERKSt3mapIjhSt4lessIjESaISt4pairIKjhEEE@Base 1.1~rc1
  _ZN2bt5UTPex11pex_enabledE@Base 1.1~rc1
  _ZN2bt5UTPex12handlePacketEPKhj@Base 1.1~rc1
+ _ZN2bt5UTPex5visitEPKNS_4PeerE@Base 1.1~rc1
  _ZN2bt5UTPex6encodeERNS_8BEncoderERKSt3mapIjN3net7AddressESt4lessIjESaISt4pairIKjS5_EEE@Base 1.1~rc1
  _ZN2bt5UTPex6updateEv@Base 1.1~rc1
  _ZN2bt5UTPexC1EPNS_4PeerEj@Base 1.1~rc1
@@ -1003,7 +1181,7 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt5ValueaSEx@Base 1.1~rc1
  _ZN2bt6BitSet14includesBitSetERKS0_@Base 1.1~rc1
  _ZN2bt6BitSet15updateNumOnBitsEv@Base 1.1~rc1
- (optional=inline|arch=armel sparc)_ZN2bt6BitSet3setEjb@Base 1.1~rc1
+ (optional=inline|arch=amd64 armel sparc)_ZN2bt6BitSet3setEjb@Base 1.1~rc1
  _ZN2bt6BitSet4nullE@Base 1.1~rc1
  _ZN2bt6BitSet5clearEv@Base 1.1~rc1
  _ZN2bt6BitSet6invertEv@Base 1.1~rc1
@@ -1045,9 +1223,7 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt6Server10changePortEt@Base 1.1~rc1
  _ZN2bt6Server11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
  _ZN2bt6Server11qt_metacastEPKc@Base 1.1~rc1
- _ZN2bt6Server13readyToAcceptEi@Base 1.1~rc1
  _ZN2bt6Server16staticMetaObjectE@Base 1.1~rc1
- _ZN2bt6Server5closeEv@Base 1.1~rc1
  _ZN2bt6ServerC1Ev@Base 1.1~rc1
  _ZN2bt6ServerC2Ev@Base 1.1~rc1
  _ZN2bt6ServerD0Ev@Base 1.1~rc1
@@ -1066,7 +1242,7 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt7GlobalsD0Ev@Base 1.1~rc1
  _ZN2bt7GlobalsD1Ev@Base 1.1~rc1
  _ZN2bt7GlobalsD2Ev@Base 1.1~rc1
- _ZN2bt7InitLogERK7QStringbb@Base 1.1~rc1
+ _ZN2bt7InitLogERK7QStringbbb@Base 1.1~rc1
  _ZN2bt7MakeDirERK7QStringb@Base 1.1~rc1
  _ZN2bt7SymLinkERK7QStringS2_b@Base 1.1~rc1
  _ZN2bt7Torrent10verifyHashERKNS_8SHA1HashEj@Base 1.1~rc1
@@ -1116,6 +1292,7 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt7TrackerD2Ev@Base 1.1~rc1
  _ZN2bt7WaitJob11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
  _ZN2bt7WaitJob11qt_metacastEPKc@Base 1.1~rc1
+ _ZN2bt7WaitJob16addExitOperationEPN3KIO3JobE@Base 1.1~rc1
  _ZN2bt7WaitJob16addExitOperationEPNS_13ExitOperationE@Base 1.1~rc1
  _ZN2bt7WaitJob16staticMetaObjectE@Base 1.1~rc1
  _ZN2bt7WaitJob17operationFinishedEPNS_13ExitOperationE@Base 1.1~rc1
@@ -1138,6 +1315,7 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt7WebSeed10proxy_hostE@Base 1.1~rc1
  _ZN2bt7WebSeed10proxy_portE@Base 1.1~rc1
  _ZN2bt7WebSeed10redirectedERK4KUrl@Base 1.1~rc1
+ _ZN2bt7WebSeed10retryLaterEv@Base 1.1~rc1
  _ZN2bt7WebSeed10setEnabledEb@Base 1.1~rc1
  _ZN2bt7WebSeed11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
  _ZN2bt7WebSeed11qt_metacastEPKc@Base 1.1~rc1
@@ -1156,6 +1334,7 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt7WebSeed5resetEv@Base 1.1~rc1
  _ZN2bt7WebSeed6cancelEv@Base 1.1~rc1
  _ZN2bt7WebSeed6updateEv@Base 1.1~rc1
+ _ZN2bt7WebSeed7disableERK7QString@Base 1.1~rc1
  _ZN2bt7WebSeed8downloadEjj@Base 1.1~rc1
  _ZN2bt7WebSeed8finishedEv@Base 1.1~rc1
  _ZN2bt7WebSeed8readDataEv@Base 1.1~rc1
@@ -1198,6 +1377,11 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt8BEncoderD0Ev@Base 1.1~rc1
  _ZN2bt8BEncoderD1Ev@Base 1.1~rc1
  _ZN2bt8BEncoderD2Ev@Base 1.1~rc1
+ _ZN2bt8BusErrorC1Eb@Base 1.1~rc1
+ _ZN2bt8BusErrorC2Eb@Base 1.1~rc1
+ _ZN2bt8BusErrorD0Ev@Base 1.1~rc1
+ _ZN2bt8BusErrorD1Ev@Base 1.1~rc1
+ _ZN2bt8BusErrorD2Ev@Base 1.1~rc1
  _ZN2bt8CopyFileERK7QStringS2_b@Base 1.1~rc1
  _ZN2bt8FileSizeERK7QString@Base 1.1~rc1
  _ZN2bt8FileSizeEi@Base 1.1~rc1
@@ -1215,6 +1399,12 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt8JobQueueD1Ev@Base 1.1~rc1
  _ZN2bt8JobQueueD2Ev@Base 1.1~rc1
  _ZN2bt8MakePathERK7QStringb@Base 1.1~rc1
+ _ZN2bt8Resource7releaseEv@Base 1.1~rc1
+ _ZN2bt8ResourceC1EPNS_15ResourceManagerERK7QString@Base 1.1~rc1
+ _ZN2bt8ResourceC2EPNS_15ResourceManagerERK7QString@Base 1.1~rc1
+ _ZN2bt8ResourceD0Ev@Base 1.1~rc1
+ _ZN2bt8ResourceD1Ev@Base 1.1~rc1
+ _ZN2bt8ResourceD2Ev@Base 1.1~rc1
  _ZN2bt8SHA1Hash8generateEPKhj@Base 1.1~rc1
  _ZN2bt8SHA1HashC1EPKh@Base 1.1~rc1
  _ZN2bt8SHA1HashC1ERKS0_@Base 1.1~rc1
@@ -1259,10 +1449,15 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN2bt9BListNodeD2Ev@Base 1.1~rc1
  _ZN2bt9DiskUsageERK7QString@Base 1.1~rc1
  _ZN2bt9DiskUsageEi@Base 1.1~rc1
+ _ZN2bt9PieceData10updateHashERNS_11SHA1HashGenE@Base 1.1~rc1
+ _ZN2bt9PieceData11writeToFileERNS_4FileEjj@Base 1.1~rc1
+ _ZN2bt9PieceData12readFromFileERNS_4FileEjj@Base 1.1~rc1
+ _ZN2bt9PieceData4readEPhjj@Base 1.1~rc1
+ _ZN2bt9PieceData5writeEPKhjj@Base 1.1~rc1
  _ZN2bt9PieceData6unloadEv@Base 1.1~rc1
  _ZN2bt9PieceData8unmappedEv@Base 1.1~rc1
- _ZN2bt9PieceDataC1EPNS_5ChunkEjjPhPNS_9CacheFileE@Base 1.1~rc1
- _ZN2bt9PieceDataC2EPNS_5ChunkEjjPhPNS_9CacheFileE@Base 1.1~rc1
+ _ZN2bt9PieceDataC1EPNS_5ChunkEjjPhPNS_9CacheFileEb@Base 1.1~rc1
+ _ZN2bt9PieceDataC2EPNS_5ChunkEjjPhPNS_9CacheFileEb@Base 1.1~rc1
  _ZN2bt9PieceDataD0Ev@Base 1.1~rc1
  _ZN2bt9PieceDataD1Ev@Base 1.1~rc1
  _ZN2bt9PieceDataD2Ev@Base 1.1~rc1
@@ -1303,19 +1498,23 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN3dht13DHTPeerSourceD0Ev@Base 1.1~rc1
  _ZN3dht13DHTPeerSourceD1Ev@Base 1.1~rc1
  _ZN3dht13DHTPeerSourceD2Ev@Base 1.1~rc1
+ _ZN3mse12RC4Encryptor14encryptReplaceEPhj@Base 1.1~rc1
+ _ZN3mse12RC4Encryptor7decryptEPhj@Base 1.1~rc1
+ _ZN3mse12RC4Encryptor7encryptEPKhj@Base 1.1~rc1
+ _ZN3mse12RC4EncryptorC1ERKN2bt8SHA1HashES4_@Base 1.1~rc1
+ _ZN3mse12RC4EncryptorC2ERKN2bt8SHA1HashES4_@Base 1.1~rc1
+ _ZN3mse12RC4EncryptorD0Ev@Base 1.1~rc1
+ _ZN3mse12RC4EncryptorD1Ev@Base 1.1~rc1
+ _ZN3mse12RC4EncryptorD2Ev@Base 1.1~rc1
  _ZN3mse12StreamSocket11onDataReadyEPhj@Base 1.1~rc1
- _ZN3mse12StreamSocket11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
- _ZN3mse12StreamSocket11qt_metacastEPKc@Base 1.1~rc1
  _ZN3mse12StreamSocket11setGroupIDsEjj@Base 1.1~rc1
  _ZN3mse12StreamSocket12disableCryptEv@Base 1.1~rc1
  _ZN3mse12StreamSocket12updateSpeedsEv@Base 1.1~rc1
- _ZN3mse12StreamSocket14max_connectingE@Base 1.1~rc1
- _ZN3mse12StreamSocket14num_connectingE@Base 1.1~rc1
  _ZN3mse12StreamSocket14onReadyToWriteEPhj@Base 1.1~rc1
+ _ZN3mse12StreamSocket14stopMonitoringEv@Base 1.1~rc1
  _ZN3mse12StreamSocket15setRC4EncryptorEPNS_12RC4EncryptorE@Base 1.1~rc1
  _ZN3mse12StreamSocket15startMonitoringEPN3net12SocketReaderEPNS1_12SocketWriterE@Base 1.1~rc1
  _ZN3mse12StreamSocket16setRemoteAddressERKN3net7AddressE@Base 1.1~rc1
- _ZN3mse12StreamSocket16staticMetaObjectE@Base 1.1~rc1
  _ZN3mse12StreamSocket3tosE@Base 1.1~rc1
  _ZN3mse12StreamSocket5closeEv@Base 1.1~rc1
  _ZN3mse12StreamSocket8readDataEPhj@Base 1.1~rc1
@@ -1341,10 +1540,32 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN3net10WakeUpPipeD0Ev@Base 1.1~rc1
  _ZN3net10WakeUpPipeD1Ev@Base 1.1~rc1
  _ZN3net10WakeUpPipeD2Ev@Base 1.1~rc1
+ _ZN3net12ServerSocket11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
+ _ZN3net12ServerSocket11qt_metacastEPKc@Base 1.1~rc1
+ _ZN3net12ServerSocket11readyToReadEi@Base 1.1~rc1
+ _ZN3net12ServerSocket12readyToWriteEi@Base 1.1~rc1
+ _ZN3net12ServerSocket13readyToAcceptEi@Base 1.1~rc1
+ _ZN3net12ServerSocket16staticMetaObjectE@Base 1.1~rc1
+ _ZN3net12ServerSocket27setReadNotificationsEnabledEb@Base 1.1~rc1
+ _ZN3net12ServerSocket28setWriteNotificationsEnabledEb@Base 1.1~rc1
+ _ZN3net12ServerSocket4bindERK7QStringt@Base 1.1~rc1
+ _ZN3net12ServerSocket4bindERKNS_7AddressE@Base 1.1~rc1
+ _ZN3net12ServerSocket6sendToEPKhiRKNS_7AddressE@Base 1.1~rc1
+ _ZN3net12ServerSocket6sendToERK10QByteArrayRKNS_7AddressE@Base 1.1~rc1
+ _ZN3net12ServerSocket6setTOSEh@Base 1.1~rc1
+ _ZN3net12ServerSocketC1EPNS0_11DataHandlerE@Base 1.1~rc1
+ _ZN3net12ServerSocketC1EPNS0_17ConnectionHandlerE@Base 1.1~rc1
+ _ZN3net12ServerSocketC2EPNS0_11DataHandlerE@Base 1.1~rc1
+ _ZN3net12ServerSocketC2EPNS0_17ConnectionHandlerE@Base 1.1~rc1
+ _ZN3net12ServerSocketD0Ev@Base 1.1~rc1
+ _ZN3net12ServerSocketD1Ev@Base 1.1~rc1
+ _ZN3net12ServerSocketD2Ev@Base 1.1~rc1
  _ZN3net13SocketMonitor11removeGroupENS0_9GroupTypeEj@Base 1.1~rc1
+ _ZN3net13SocketMonitor12getUploadCapEv@Base 1.1~rc1
  _ZN3net13SocketMonitor12setSleepTimeEj@Base 1.1~rc1
  _ZN3net13SocketMonitor12setUploadCapEj@Base 1.1~rc1
  _ZN3net13SocketMonitor13setGroupLimitENS0_9GroupTypeEjj@Base 1.1~rc1
+ _ZN3net13SocketMonitor14getDownloadCapEv@Base 1.1~rc1
  _ZN3net13SocketMonitor14setDownloadCapEj@Base 1.1~rc1
  _ZN3net13SocketMonitor17signalPacketReadyEv@Base 1.1~rc1
  _ZN3net13SocketMonitor19setGroupAssuredRateENS0_9GroupTypeEjj@Base 1.1~rc1
@@ -1353,6 +1574,7 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN3net13SocketMonitor4selfE@Base 1.1~rc1
  _ZN3net13SocketMonitor6removeEPNS_14BufferedSocketE@Base 1.1~rc1
  _ZN3net13SocketMonitor6unlockEv@Base 1.1~rc1
+ _ZN3net13SocketMonitor7Private8shutdownEv@Base 1.1~rc1
  _ZN3net13SocketMonitor8newGroupENS0_9GroupTypeEjj@Base 1.1~rc1
  _ZN3net13SocketMonitor8shutdownEv@Base 1.1~rc1
  _ZN3net13SocketMonitorC1Ev@Base 1.1~rc1
@@ -1392,8 +1614,8 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN3net5Socks22setSocksAuthenticationERK7QStringS3_@Base 1.1~rc1
  _ZN3net5Socks27handleUsernamePasswordReplyEv@Base 1.1~rc1
  _ZN3net5Socks5setupEv@Base 1.1~rc1
- _ZN3net5SocksC1EPN3mse12StreamSocketERKNS_7AddressE@Base 1.1~rc1
- _ZN3net5SocksC2EPN3mse12StreamSocketERKNS_7AddressE@Base 1.1~rc1
+ _ZN3net5SocksC1E14QSharedPointerIN3mse12StreamSocketEERKNS_7AddressE@Base 1.1~rc1
+ _ZN3net5SocksC2E14QSharedPointerIN3mse12StreamSocketEERKNS_7AddressE@Base 1.1~rc1
  _ZN3net5SocksD0Ev@Base 1.1~rc1
  _ZN3net5SocksD1Ev@Base 1.1~rc1
  _ZN3net5SocksD2Ev@Base 1.1~rc1
@@ -1439,18 +1661,19 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN3net8PortListD0Ev@Base 1.1~rc1
  _ZN3net8PortListD1Ev@Base 1.1~rc1
  _ZN3net8PortListD2Ev@Base 1.1~rc1
+ _ZN3utp10Connection10checkStateEv@Base 1.1~rc1
  _ZN3utp10Connection10retransmitERK10QByteArrayt@Base 1.1~rc1
  _ZN3utp10Connection10sendPacketEjt@Base 1.1~rc1
  _ZN3utp10Connection10startTimerEv@Base 1.1~rc1
- _ZN3utp10Connection10timerEventEP11QTimerEvent@Base 1.1~rc1
  _ZN3utp10Connection11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
  _ZN3utp10Connection11qt_metacastEPKc@Base 1.1~rc1
  _ZN3utp10Connection11sendPacketsEv@Base 1.1~rc1
- _ZN3utp10Connection11waitForDataEv@Base 1.1~rc1
+ _ZN3utp10Connection11waitForDataEj@Base 1.1~rc1
  _ZN3utp10Connection12handlePacketERKNS_12PacketParserERK10QByteArray@Base 1.1~rc1
  _ZN3utp10Connection13checkIfClosedEv@Base 1.1~rc1
  _ZN3utp10Connection13handleTimeoutEv@Base 1.1~rc1
  _ZN3utp10Connection14sendDataPacketERK10QByteArray@Base 1.1~rc1
+ _ZN3utp10Connection14sendDataPacketERK10QByteArraytRKNS_9TimeValueE@Base 1.1~rc1
  _ZN3utp10Connection15sendStateOrDataEv@Base 1.1~rc1
  _ZN3utp10Connection15startConnectingEv@Base 1.1~rc1
  _ZN3utp10Connection16staticMetaObjectE@Base 1.1~rc1
@@ -1475,7 +1698,6 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN3utp10ConnectionD0Ev@Base 1.1~rc1
  _ZN3utp10ConnectionD1Ev@Base 1.1~rc1
  _ZN3utp10ConnectionD2Ev@Base 1.1~rc1
- _ZN3utp11DelayWindow13findBaseDelayEv@Base 1.1~rc1
  _ZN3utp11DelayWindow6updateEPKNS_6HeaderEy@Base 1.1~rc1
  _ZN3utp11DelayWindowC1Ev@Base 1.1~rc1
  _ZN3utp11DelayWindowC2Ev@Base 1.1~rc1
@@ -1512,15 +1734,6 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN3utp12RemoteWindowD1Ev@Base 1.1~rc1
  _ZN3utp12RemoteWindowD2Ev@Base 1.1~rc1
  _ZN3utp12TypeToStringEh@Base 1.1~rc1
- _ZN3utp14MainThreadCall11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
- _ZN3utp14MainThreadCall11qt_metacastEPKc@Base 1.1~rc1
- _ZN3utp14MainThreadCall16staticMetaObjectE@Base 1.1~rc1
- _ZN3utp14MainThreadCall24handlePendingConnectionsEv@Base 1.1~rc1
- _ZN3utp14MainThreadCallC1EPNS_9UTPServerE@Base 1.1~rc1
- _ZN3utp14MainThreadCallC2EPNS_9UTPServerE@Base 1.1~rc1
- _ZN3utp14MainThreadCallD0Ev@Base 1.1~rc1
- _ZN3utp14MainThreadCallD1Ev@Base 1.1~rc1
- _ZN3utp14MainThreadCallD2Ev@Base 1.1~rc1
  _ZN3utp15UTPServerThread11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
  _ZN3utp15UTPServerThread11qt_metacastEPKc@Base 1.1~rc1
  _ZN3utp15UTPServerThread16staticMetaObjectE@Base 1.1~rc1
@@ -1543,37 +1756,41 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN3utp9TimeValueC2Eyy@Base 1.1~rc1
  _ZN3utp9TimeValueaSERKS0_@Base 1.1~rc1
  _ZN3utp9UTPServer10changePortEt@Base 1.1~rc1
- _ZN3utp9UTPServer10onAcceptedEPNS_10ConnectionE@Base 1.1~rc1
- _ZN3utp9UTPServer10readPacketEi@Base 1.1~rc1
  _ZN3utp9UTPServer10timerEventEP11QTimerEvent@Base 1.1~rc1
+ _ZN3utp9UTPServer11cancelTimerEi@Base 1.1~rc1
  _ZN3utp9UTPServer11customEventEP6QEvent@Base 1.1~rc1
  _ZN3utp9UTPServer11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.1~rc1
  _ZN3utp9UTPServer11qt_metacastEPKc@Base 1.1~rc1
- _ZN3utp9UTPServer11writePacketEi@Base 1.1~rc1
- _ZN3utp9UTPServer12PollPipePair8testReadESt17_Rb_tree_iteratorISt4pairIKtPNS_10ConnectionEEES8_@Base 1.1~rc1
- _ZN3utp9UTPServer12PollPipePair9testWriteESt17_Rb_tree_iteratorISt4pairIKtPNS_10ConnectionEEES8_@Base 1.1~rc1
- _ZN3utp9UTPServer12PollPipePairC1Ev@Base 1.1~rc1
- _ZN3utp9UTPServer12PollPipePairC2Ev@Base 1.1~rc1
  _ZN3utp9UTPServer12handlePacketERK10QByteArrayRKN3net7AddressE@Base 1.1~rc1
+ _ZN3utp9UTPServer12stateChangedE14QSharedPointerINS_10ConnectionEEbb@Base 1.1~rc1
+ _ZN3utp9UTPServer13scheduleTimerE14QSharedPointerINS_10ConnectionEEj@Base 1.1~rc1
  _ZN3utp9UTPServer13threadStartedEv@Base 1.1~rc1
- _ZN3utp9UTPServer14preparePollingEPN3net4PollENS2_4ModeEPNS_10ConnectionE@Base 1.1~rc1
- _ZN3utp9UTPServer15wakeUpPollPipesEv@Base 1.1~rc1
+ _ZN3utp9UTPServer14preparePollingEPN3net4PollENS2_4ModeE14QSharedPointerINS_10ConnectionEE@Base 1.1~rc1
+ _ZN3utp9UTPServer16setCreateSocketsEb@Base 1.1~rc1
  _ZN3utp9UTPServer16staticMetaObjectE@Base 1.1~rc1
- _ZN3utp9UTPServer20clearDeadConnectionsEv@Base 1.1~rc1
+ _ZN3utp9UTPServer18acceptedConnectionEv@Base 1.1~rc1
  _ZN3utp9UTPServer24handlePendingConnectionsEv@Base 1.1~rc1
  _ZN3utp9UTPServer31handlePendingConnectionsDelayedEv@Base 1.1~rc1
- _ZN3utp9UTPServer3synERKNS_12PacketParserERK10QByteArrayRKN3net7AddressE@Base 1.1~rc1
- _ZN3utp9UTPServer4bindERKN3net7AddressE@Base 1.1~rc1
- _ZN3utp9UTPServer4findEt@Base 1.1~rc1
  _ZN3utp9UTPServer4stopEv@Base 1.1~rc1
- _ZN3utp9UTPServer5resetEPKNS_6HeaderE@Base 1.1~rc1
  _ZN3utp9UTPServer5startEv@Base 1.1~rc1
- _ZN3utp9UTPServer6attachEPNS_9UTPSocketEPNS_10ConnectionE@Base 1.1~rc1
- _ZN3utp9UTPServer6detachEPNS_9UTPSocketEPNS_10ConnectionE@Base 1.1~rc1
- _ZN3utp9UTPServer6sendToERK10QByteArrayRKN3net7AddressEt@Base 1.1~rc1
+ _ZN3utp9UTPServer6closedE14QSharedPointerINS_10ConnectionEE@Base 1.1~rc1
+ _ZN3utp9UTPServer6sendToE14QSharedPointerINS_10ConnectionEERK10QByteArray@Base 1.1~rc1
  _ZN3utp9UTPServer6setTOSEh@Base 1.1~rc1
+ _ZN3utp9UTPServer7Private12dataReceivedERK10QByteArrayRKN3net7AddressE@Base 1.1~rc1
+ _ZN3utp9UTPServer7Private12readyToWriteEPN3net12ServerSocketE@Base 1.1~rc1
+ _ZN3utp9UTPServer7Private15wakeUpPollPipesE14QSharedPointerINS_10ConnectionEEbb@Base 1.1~rc1
+ _ZN3utp9UTPServer7Private3synERKNS_12PacketParserERK10QByteArrayRKN3net7AddressE@Base 1.1~rc1
+ _ZN3utp9UTPServer7Private4bindERKN3net7AddressE@Base 1.1~rc1
+ _ZN3utp9UTPServer7Private4findEt@Base 1.1~rc1
+ _ZN3utp9UTPServer7Private4stopEv@Base 1.1~rc1
+ _ZN3utp9UTPServer7Private5resetEPKNS_6HeaderE@Base 1.1~rc1
+ _ZN3utp9UTPServer7PrivateC1EPS0_@Base 1.1~rc1
+ _ZN3utp9UTPServer7PrivateC2EPS0_@Base 1.1~rc1
+ _ZN3utp9UTPServer7PrivateD0Ev@Base 1.1~rc1
+ _ZN3utp9UTPServer7PrivateD1Ev@Base 1.1~rc1
+ _ZN3utp9UTPServer7PrivateD2Ev@Base 1.1~rc1
  _ZN3utp9UTPServer7cleanupEv@Base 1.1~rc1
- _ZN3utp9UTPServer8acceptedEPNS_10ConnectionE@Base 1.1~rc1
+ _ZN3utp9UTPServer8acceptedEv@Base 1.1~rc1
  _ZN3utp9UTPServer9connectToERKN3net7AddressE@Base 1.1~rc1
  _ZN3utp9UTPServerC1EP7QObject@Base 1.1~rc1
  _ZN3utp9UTPServerC2EP7QObject@Base 1.1~rc1
@@ -1589,24 +1806,41 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZN3utp9UTPSocket6setTOSEh@Base 1.1~rc1
  _ZN3utp9UTPSocket7prepareEPN3net4PollENS2_4ModeE@Base 1.1~rc1
  _ZN3utp9UTPSocket9connectToERKN3net7AddressE@Base 1.1~rc1
- _ZN3utp9UTPSocketC1EPNS_10ConnectionE@Base 1.1~rc1
+ _ZN3utp9UTPSocketC1E12QWeakPointerINS_10ConnectionEE@Base 1.1~rc1
  _ZN3utp9UTPSocketC1Ev@Base 1.1~rc1
- _ZN3utp9UTPSocketC2EPNS_10ConnectionE@Base 1.1~rc1
+ _ZN3utp9UTPSocketC2E12QWeakPointerINS_10ConnectionEE@Base 1.1~rc1
  _ZN3utp9UTPSocketC2Ev@Base 1.1~rc1
  _ZN3utp9UTPSocketD0Ev@Base 1.1~rc1
  _ZN3utp9UTPSocketD1Ev@Base 1.1~rc1
  _ZN3utp9UTPSocketD2Ev@Base 1.1~rc1
  _ZNK2bt10Downloader10isFinishedEv@Base 1.1~rc1
  _ZNK2bt10Downloader10metaObjectEv@Base 1.1~rc1
+ _ZNK2bt10Downloader11downloadingEj@Base 1.1~rc1
  _ZNK2bt10Downloader11endgameModeEv@Base 1.1~rc1
  _ZNK2bt10Downloader12downloadRateEv@Base 1.1~rc1
- _ZNK2bt10Downloader16areWeDownloadingEj@Base 1.1~rc1
  _ZNK2bt10Downloader22canDownloadFromWebSeedEj@Base 1.1~rc1
  _ZNK2bt10Downloader22numDownloadersForChunkEj@Base 1.1~rc1
+ _ZNK2bt10Downloader8downloadEj@Base 1.1~rc1
  _ZNK2bt10PeerSource10metaObjectEv@Base 1.1~rc1
+ _ZNK2bt10UPnPRouter10metaObjectEv@Base 1.1~rc1
+ _ZNK2bt10UPnPRouter11getLocationEv@Base 1.1~rc1
+ _ZNK2bt10UPnPRouter13getExternalIPEv@Base 1.1~rc1
+ _ZNK2bt10UPnPRouter14getDescriptionEv@Base 1.1~rc1
+ _ZNK2bt10UPnPRouter5visitEPNS0_7VisitorE@Base 1.1~rc1
+ _ZNK2bt10UPnPRouter8getErrorEv@Base 1.1~rc1
+ _ZNK2bt10UPnPRouter9getServerEv@Base 1.1~rc1
+ _ZNK2bt11DataChecker10metaObjectEv@Base 1.1~rc1
  _ZNK2bt11HTTPTracker10metaObjectEv@Base 1.1~rc1
+ _ZNK2bt11PeerManager10getTorrentEv@Base 1.1~rc1
  _ZNK2bt11PeerManager10metaObjectEv@Base 1.1~rc1
- _ZNK2bt11PeerManager11connectedToERK7QStringt@Base 1.1~rc1
+ _ZNK2bt11PeerManager10uploadRateEv@Base 1.1~rc1
+ _ZNK2bt11PeerManager12isPexEnabledEv@Base 1.1~rc1
+ _ZNK2bt11PeerManager13getNumPendingEv@Base 1.1~rc1
+ _ZNK2bt11PeerManager20getNumConnectedPeersEv@Base 1.1~rc1
+ _ZNK2bt11PeerManager24getAvailableChunksBitSetEv@Base 1.1~rc1
+ _ZNK2bt11PeerManager7Private11connectedToERK7QStringt@Base 1.1~rc1
+ _ZNK2bt11PeerManager8getPeersEv@Base 1.1~rc1
+ _ZNK2bt11PeerManager9isStartedEv@Base 1.1~rc1
  _ZNK2bt11SHA1HashGen3getEv@Base 1.1~rc1
  _ZNK2bt11TorrentFile10fileOffsetEjy@Base 1.1~rc1
  _ZNK2bt11TorrentFile10metaObjectEv@Base 1.1~rc1
@@ -1618,7 +1852,6 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZNK2bt12ChunkManager13bytesExcludedEv@Base 1.1~rc1
  _ZNK2bt12ChunkManager13getOutputPathEv@Base 1.1~rc1
  _ZNK2bt12ChunkManager13haveAllChunksEv@Base 1.1~rc1
- _ZNK2bt12ChunkManager13isBorderChunkEj@Base 1.1~rc1
  _ZNK2bt12ChunkManager14chunksExcludedEv@Base 1.1~rc1
  _ZNK2bt12ChunkManager14onlySeedChunksEv@Base 1.1~rc1
  _ZNK2bt12ChunkManager16chunksDownloadedEv@Base 1.1~rc1
@@ -1638,7 +1871,6 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZNK2bt13ChunkDownload22getPieceDownloaderNameEv@Base 1.1~rc1
  _ZNK2bt13ChunkDownload8isChokedEv@Base 1.1~rc1
  _ZNK2bt13ExitOperation10metaObjectEv@Base 1.1~rc1
- _ZNK2bt13PeerConnector10metaObjectEv@Base 1.1~rc1
  _ZNK2bt13TimeEstimator6sampleEv@Base 1.1~rc1
  _ZNK2bt13TimeEstimator9bytesLeftEv@Base 1.1~rc1
  _ZNK2bt14DataCheckerJob10metaObjectEv@Base 1.1~rc1
@@ -1680,7 +1912,10 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZNK2bt14TrackerManager9bytesLeftEv@Base 1.1~rc1
  _ZNK2bt15CompressFileJob10metaObjectEv@Base 1.1~rc1
  _ZNK2bt15HTTPAnnounceJob10metaObjectEv@Base 1.1~rc1
+ _ZNK2bt15PieceDownloader10metaObjectEv@Base 1.1~rc1
  _ZNK2bt15ServerInterface10metaObjectEv@Base 1.1~rc1
+ _ZNK2bt15UPnPMCastSocket10metaObjectEv@Base 1.1~rc1
+ _ZNK2bt15UPnPMCastSocket23getNumDevicesDiscoveredEv@Base 1.1~rc1
  _ZNK2bt16LogSystemManager10metaObjectEv@Base 1.1~rc1
  _ZNK2bt16MagnetDownloader10metaObjectEv@Base 1.1~rc1
  _ZNK2bt16MagnetDownloader13bytesUploadedEv@Base 1.1~rc1
@@ -1695,6 +1930,14 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZNK2bt16TrackerInterface19trackerStatusStringEv@Base 1.1~rc1
  _ZNK2bt16UDPTrackerSocket10metaObjectEv@Base 1.1~rc1
  _ZNK2bt17DecompressFileJob10metaObjectEv@Base 1.1~rc1
+ _ZNK2bt17TorrentFileStream10metaObjectEv@Base 1.1~rc1
+ _ZNK2bt17TorrentFileStream12chunksBitSetEv@Base 1.1~rc1
+ _ZNK2bt17TorrentFileStream12currentChunkEv@Base 1.1~rc1
+ _ZNK2bt17TorrentFileStream14bytesAvailableEv@Base 1.1~rc1
+ _ZNK2bt17TorrentFileStream3posEv@Base 1.1~rc1
+ _ZNK2bt17TorrentFileStream4pathEv@Base 1.1~rc1
+ _ZNK2bt17TorrentFileStream4sizeEv@Base 1.1~rc1
+ _ZNK2bt17TorrentFileStream5atEndEv@Base 1.1~rc1
  _ZNK2bt20TorrentFileInterface10metaObjectEv@Base 1.1~rc1
  _ZNK2bt20TorrentFileInterface21getDownloadPercentageEv@Base 1.1~rc1
  _ZNK2bt3Job10metaObjectEv@Base 1.1~rc1
@@ -1714,7 +1957,6 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZNK2bt4Peer21getTimeSinceLastPieceEv@Base 1.1~rc1
  _ZNK2bt4Peer7getPortEv@Base 1.1~rc1
  _ZNK2bt4Peer8getStatsEv@Base 1.1~rc1
- _ZNK2bt4Peer8isSeederEv@Base 1.1~rc1
  _ZNK2bt4Peer9isSnubbedEv@Base 1.1~rc1
  _ZNK2bt4Peer9isStalledEv@Base 1.1~rc1
  _ZNK2bt5Timer21getElapsedSinceUpdateEv@Base 1.1~rc1
@@ -1743,10 +1985,10 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZNK2bt8SHA1Hash8toStringEv@Base 1.1~rc1
  _ZNK2bt8SHA1HasheqERKS0_@Base 1.1~rc1
  _ZNK2bt9BDictNode4keysEv@Base 1.1~rc1
+ _ZNK2bt9PieceData12generateHashEv@Base 1.1~rc1
  _ZNK2bt9StatsFile6hasKeyERK7QString@Base 1.1~rc1
  _ZNK3dht13DHTPeerSource10metaObjectEv@Base 1.1~rc1
  _ZNK3mse12StreamSocket10connectingEv@Base 1.1~rc1
- _ZNK3mse12StreamSocket10metaObjectEv@Base 1.1~rc1
  _ZNK3mse12StreamSocket13getRemotePortEv@Base 1.1~rc1
  _ZNK3mse12StreamSocket13getUploadRateEv@Base 1.1~rc1
  _ZNK3mse12StreamSocket14bytesAvailableEv@Base 1.1~rc1
@@ -1756,6 +1998,7 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZNK3mse12StreamSocket17connectSuccesFullEv@Base 1.1~rc1
  _ZNK3mse12StreamSocket18getRemoteIPAddressEv@Base 1.1~rc1
  _ZNK3mse12StreamSocket2okEv@Base 1.1~rc1
+ _ZNK3net12ServerSocket10metaObjectEv@Base 1.1~rc1
  _ZNK3net4Poll5readyEiNS0_4ModeE@Base 1.1~rc1
  _ZNK3net4PorteqERKS0_@Base 1.1~rc1
  _ZNK3net6Socket11getSockNameEv@Base 1.1~rc1
@@ -1767,7 +2010,6 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZNK3utp10Connection14bytesAvailableEv@Base 1.1~rc1
  _ZNK3utp11LocalWindow16selectiveAckBitsEv@Base 1.1~rc1
  _ZNK3utp12PacketParser12selectiveAckEv@Base 1.1~rc1
- _ZNK3utp14MainThreadCall10metaObjectEv@Base 1.1~rc1
  _ZNK3utp15UTPServerThread10metaObjectEv@Base 1.1~rc1
  _ZNK3utp9UTPServer10metaObjectEv@Base 1.1~rc1
  _ZNK3utp9UTPSocket11getPeerNameEv@Base 1.1~rc1
@@ -1776,11 +2018,8 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZNK3utp9UTPSocket2fdEv@Base 1.1~rc1
  _ZNK3utp9UTPSocket2okEv@Base 1.1~rc1
  _ZNK3utp9UTPSocket5readyEPKN3net4PollENS2_4ModeE@Base 1.1~rc1
- (optional=templinst)_ZNSt11_Deque_baseIN3utp11DelayWindow10DelayEntryESaIS2_EED2Ev@Base 1.1~rc1
  (optional=templinst)_ZNSt4listIjSaIjEE4sortIN2bt7RareCmpEEEvT_@Base 1.1~rc1
  (optional=templinst)_ZNSt4listIjSaIjEE5mergeIN2bt7RareCmpEEEvRS1_T_@Base 1.1~rc1
- (optional=templinst)_ZNSt5dequeIN3utp11DelayWindow10DelayEntryESaIS2_EE5eraseESt15_Deque_iteratorIS2_RS2_PS2_E@Base 1.1~rc1
- (optional=templinst)_ZNSt5dequeIN3utp11DelayWindow10DelayEntryESaIS2_EE5eraseESt15_Deque_iteratorIS2_RS2_PS2_ES8_@Base 1.1~rc1
  (optional=templinst)_ZNSt6vectorI6pollfdSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_@Base 1.1~rc1
  (optional=templinst)_ZNSt6vectorIjSaIjEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPjS1_EERKj@Base 1.1~rc1
  (optional=templinst)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS6_@Base 1.1~rc1
@@ -1808,14 +2047,10 @@ libktorrent.so.3 libktorrent3 #MINVER#
  (optional=templinst)_ZNSt8_Rb_treeIPN2bt15PieceDownloaderESt4pairIKS2_PNS0_14DownloadStatusEESt10_Select1stIS7_ESt4lessIS2_ESaIS7_EE16_M_insert_uniqueERKS7_@Base 1.1~rc1
  (optional=templinst)_ZNSt8_Rb_treeIPN2bt15PieceDownloaderESt4pairIKS2_PNS0_14DownloadStatusEESt10_Select1stIS7_ESt4lessIS2_ESaIS7_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS7_ERKS7_@Base 1.1~rc1
  (optional=templinst)_ZNSt8_Rb_treeIPN2bt15PieceDownloaderESt4pairIKS2_PNS0_14DownloadStatusEESt10_Select1stIS7_ESt4lessIS2_ESaIS7_EE8_M_eraseEPSt13_Rb_tree_nodeIS7_E@Base 1.1~rc1
- (optional=templinst)_ZNSt8_Rb_treeIPN3net4PollESt4pairIKS2_PN3utp9UTPServer12PollPipePairEESt10_Select1stIS9_ESt4lessIS2_ESaIS9_EE10_M_insert_EPKSt18_Rb_tree_node_baseSI_RKS9_@Base 1.1~rc1
- (optional=templinst)_ZNSt8_Rb_treeIPN3net4PollESt4pairIKS2_PN3utp9UTPServer12PollPipePairEESt10_Select1stIS9_ESt4lessIS2_ESaIS9_EE16_M_insert_uniqueERKS9_@Base 1.1~rc1
- (optional=templinst)_ZNSt8_Rb_treeIPN3net4PollESt4pairIKS2_PN3utp9UTPServer12PollPipePairEESt10_Select1stIS9_ESt4lessIS2_ESaIS9_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS9_ERKS9_@Base 1.1~rc1
- (optional=templinst)_ZNSt8_Rb_treeIPN3net4PollESt4pairIKS2_PN3utp9UTPServer12PollPipePairEESt10_Select1stIS9_ESt4lessIS2_ESaIS9_EE8_M_eraseEPSt13_Rb_tree_nodeIS9_E@Base 1.1~rc1
- (optional=templinst)_ZNSt8_Rb_treeIPN3utp10ConnectionESt4pairIKS2_PNS0_9UTPSocketEESt10_Select1stIS7_ESt4lessIS2_ESaIS7_EE10_M_insert_EPKSt18_Rb_tree_node_baseSG_RKS7_@Base 1.1~rc1
- (optional=templinst)_ZNSt8_Rb_treeIPN3utp10ConnectionESt4pairIKS2_PNS0_9UTPSocketEESt10_Select1stIS7_ESt4lessIS2_ESaIS7_EE16_M_insert_uniqueERKS7_@Base 1.1~rc1
- (optional=templinst)_ZNSt8_Rb_treeIPN3utp10ConnectionESt4pairIKS2_PNS0_9UTPSocketEESt10_Select1stIS7_ESt4lessIS2_ESaIS7_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS7_ERKS7_@Base 1.1~rc1
- (optional=templinst)_ZNSt8_Rb_treeIPN3utp10ConnectionESt4pairIKS2_PNS0_9UTPSocketEESt10_Select1stIS7_ESt4lessIS2_ESaIS7_EE8_M_eraseEPSt13_Rb_tree_nodeIS7_E@Base 1.1~rc1
+ (optional=templinst)_ZNSt8_Rb_treeIPN3net4PollESt4pairIKS2_PN3utp12PollPipePairEESt10_Select1stIS8_ESt4lessIS2_ESaIS8_EE10_M_insert_EPKSt18_Rb_tree_node_baseSH_RKS8_@Base 1.1~rc1
+ (optional=templinst)_ZNSt8_Rb_treeIPN3net4PollESt4pairIKS2_PN3utp12PollPipePairEESt10_Select1stIS8_ESt4lessIS2_ESaIS8_EE16_M_insert_uniqueERKS8_@Base 1.1~rc1
+ (optional=templinst)_ZNSt8_Rb_treeIPN3net4PollESt4pairIKS2_PN3utp12PollPipePairEESt10_Select1stIS8_ESt4lessIS2_ESaIS8_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS8_ERKS8_@Base 1.1~rc1
+ (optional=templinst)_ZNSt8_Rb_treeIPN3net4PollESt4pairIKS2_PN3utp12PollPipePairEESt10_Select1stIS8_ESt4lessIS2_ESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E@Base 1.1~rc1
  (optional=templinst)_ZNSt8_Rb_treeIhSt4pairIKhPN3dht7RPCCallEESt10_Select1stIS5_ESt4lessIhESaIS5_EE10_M_insert_EPKSt18_Rb_tree_node_baseSE_RKS5_@Base 1.1~rc1
  (optional=templinst)_ZNSt8_Rb_treeIhSt4pairIKhPN3dht7RPCCallEESt10_Select1stIS5_ESt4lessIhESaIS5_EE16_M_insert_uniqueERKS5_@Base 1.1~rc1
  (optional=templinst)_ZNSt8_Rb_treeIhSt4pairIKhPN3dht7RPCCallEESt10_Select1stIS5_ESt4lessIhESaIS5_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS5_ERKS5_@Base 1.1~rc1
@@ -1861,18 +2096,17 @@ libktorrent.so.3 libktorrent3 #MINVER#
  (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjPN3net11SocketGroupEESt10_Select1stIS5_ESt4lessIjESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E@Base 1.1~rc1
  (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjhESt10_Select1stIS2_ESt4lessIjESaIS2_EE10_M_insert_EPKSt18_Rb_tree_node_baseSB_RKS2_@Base 1.1~rc1
  (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjhESt10_Select1stIS2_ESt4lessIjESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E@Base 1.1~rc1
- (optional=templinst)_ZNSt8_Rb_treeItSt4pairIKtPN3utp10ConnectionEESt10_Select1stIS5_ESt4lessItESaIS5_EE10_M_insert_EPKSt18_Rb_tree_node_baseSE_RKS5_@Base 1.1~rc1
- (optional=templinst)_ZNSt8_Rb_treeItSt4pairIKtPN3utp10ConnectionEESt10_Select1stIS5_ESt4lessItESaIS5_EE16_M_insert_uniqueERKS5_@Base 1.1~rc1
- (optional=templinst)_ZNSt8_Rb_treeItSt4pairIKtPN3utp10ConnectionEESt10_Select1stIS5_ESt4lessItESaIS5_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS5_ERKS5_@Base 1.1~rc1
- (optional=templinst)_ZNSt8_Rb_treeItSt4pairIKtPN3utp10ConnectionEESt10_Select1stIS5_ESt4lessItESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E@Base 1.1~rc1
  _ZTIN2bt10BValueNodeE@Base 1.1~rc1
  _ZTIN2bt10DownloaderE@Base 1.1~rc1
  _ZTIN2bt10MagnetLinkE@Base 1.1~rc1
  _ZTIN2bt10PeerSourceE@Base 1.1~rc1
+ _ZTIN2bt10UPnPRouterE@Base 1.1~rc1
  _ZTIN2bt10UTMetaDataE@Base 1.1~rc1
  _ZTIN2bt11DataCheckerE@Base 1.1~rc1
  _ZTIN2bt11HTTPTrackerE@Base 1.1~rc1
+ _ZTIN2bt11PeerManager11PeerVisitorE@Base 1.1~rc1
  _ZTIN2bt11PeerManagerE@Base 1.1~rc1
+ _ZTIN2bt11SuperSeederE@Base 1.1~rc1
  _ZTIN2bt11TorrentFileE@Base 1.1~rc1
  _ZTIN2bt12CacheFactoryE@Base 1.1~rc1
  _ZTIN2bt12ChunkCounterE@Base 1.1~rc1
@@ -1883,6 +2117,7 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZTIN2bt13ChunkDownloadE@Base 1.1~rc1
  _ZTIN2bt13ExitOperationE@Base 1.1~rc1
  _ZTIN2bt13PeerConnectorE@Base 1.1~rc1
+ _ZTIN2bt13PeerInterfaceE@Base 1.1~rc1
  _ZTIN2bt14BEncoderOutputE@Base 1.1~rc1
  _ZTIN2bt14CircularBufferE@Base 1.1~rc1
  _ZTIN2bt14CompressThreadE@Base 1.1~rc1
@@ -1894,7 +2129,10 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZTIN2bt14TrackerManagerE@Base 1.1~rc1
  _ZTIN2bt15CompressFileJobE@Base 1.1~rc1
  _ZTIN2bt15HTTPAnnounceJobE@Base 1.1~rc1
+ _ZTIN2bt15PieceDownloaderE@Base 1.1~rc1
+ _ZTIN2bt15ResourceManagerE@Base 1.1~rc1
  _ZTIN2bt15ServerInterfaceE@Base 1.1~rc1
+ _ZTIN2bt15UPnPMCastSocketE@Base 1.1~rc1
  _ZTIN2bt16DecompressThreadE@Base 1.1~rc1
  _ZTIN2bt16LogSystemManagerE@Base 1.1~rc1
  _ZTIN2bt16MagnetDownloaderE@Base 1.1~rc1
@@ -1903,14 +2141,16 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZTIN2bt16PreallocationJobE@Base 1.1~rc1
  _ZTIN2bt16TorrentInterfaceE@Base 1.1~rc1
  _ZTIN2bt16TrackerInterfaceE@Base 1.1~rc1
+ _ZTIN2bt16UDPTrackerSocket7PrivateE@Base 1.1~rc1
  _ZTIN2bt16UDPTrackerSocketE@Base 1.1~rc1
  _ZTIN2bt16WebSeedInterfaceE@Base 1.1~rc1
+ _ZTIN2bt17DataCheckerThreadE@Base 1.1~rc1
  _ZTIN2bt17DecompressFileJobE@Base 1.1~rc1
  _ZTIN2bt17SingleDataCheckerE@Base 1.1~rc1
+ _ZTIN2bt17TorrentFileStreamE@Base 1.1~rc1
  _ZTIN2bt17TrackerDataSourceE@Base 1.1~rc1
  _ZTIN2bt18BEncoderFileOutputE@Base 1.1~rc1
  _ZTIN2bt18BlockListInterfaceE@Base 1.1~rc1
- _ZTIN2bt19DataCheckerListenerE@Base 1.1~rc1
  _ZTIN2bt19LogMonitorInterfaceE@Base 1.1~rc1
  _ZTIN2bt20BEncoderBufferOutputE@Base 1.1~rc1
  _ZTIN2bt20FilePriorityListenerE@Base 1.1~rc1
@@ -1920,7 +2160,7 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZTIN2bt21QueueManagerInterfaceE@Base 1.1~rc1
  _ZTIN2bt22BEncoderIODeviceOutputE@Base 1.1~rc1
  _ZTIN2bt22ChunkSelectorInterfaceE@Base 1.1~rc1
- _ZTIN2bt29ChunkSelectorFactoryInterfaceE@Base 1.1~rc1
+ _ZTIN2bt22StreamingChunkSelectorE@Base 1.1~rc1
  _ZTIN2bt3JobE@Base 1.1~rc1
  _ZTIN2bt3LogE@Base 1.1~rc1
  _ZTIN2bt4FileE@Base 1.1~rc1
@@ -1934,25 +2174,33 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZTIN2bt6BitSetE@Base 1.1~rc1
  _ZTIN2bt6ChokerE@Base 1.1~rc1
  _ZTIN2bt6PeerIDE@Base 1.1~rc1
+ _ZTIN2bt6Server7PrivateE@Base 1.1~rc1
  _ZTIN2bt6ServerE@Base 1.1~rc1
  _ZTIN2bt7GlobalsE@Base 1.1~rc1
  _ZTIN2bt7TorrentE@Base 1.1~rc1
  _ZTIN2bt7TrackerE@Base 1.1~rc1
  _ZTIN2bt7WaitJobE@Base 1.1~rc1
  _ZTIN2bt7WarningE@Base 1.1~rc1
+ _ZTIN2bt7WebSeed12AutoDisabledE@Base 1.1~rc1
  _ZTIN2bt7WebSeedE@Base 1.1~rc1
  _ZTIN2bt8BDecoderE@Base 1.1~rc1
  _ZTIN2bt8BEncoderE@Base 1.1~rc1
+ _ZTIN2bt8BusErrorE@Base 1.1~rc1
  _ZTIN2bt8JobQueueE@Base 1.1~rc1
+ _ZTIN2bt8ResourceE@Base 1.1~rc1
  _ZTIN2bt8SHA1HashE@Base 1.1~rc1
  _ZTIN2bt9BDictNodeE@Base 1.1~rc1
  _ZTIN2bt9BListNodeE@Base 1.1~rc1
  _ZTIN2bt9PieceDataE@Base 1.1~rc1
  _ZTIN2bt9StatsFileE@Base 1.1~rc1
  _ZTIN3dht13DHTPeerSourceE@Base 1.1~rc1
+ _ZTIN3mse12RC4EncryptorE@Base 1.1~rc1
  _ZTIN3mse12StreamSocketE@Base 1.1~rc1
  _ZTIN3net10PollClientE@Base 1.1~rc1
  _ZTIN3net10WakeUpPipeE@Base 1.1~rc1
+ _ZTIN3net12ServerSocket11DataHandlerE@Base 1.1~rc1
+ _ZTIN3net12ServerSocket17ConnectionHandlerE@Base 1.1~rc1
+ _ZTIN3net12ServerSocketE@Base 1.1~rc1
  _ZTIN3net13SocketMonitorE@Base 1.1~rc1
  _ZTIN3net4PollE@Base 1.1~rc1
  _ZTIN3net5SocksE@Base 1.1~rc1
@@ -1966,8 +2214,8 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZTIN3utp11TransmitterE@Base 1.1~rc1
  _ZTIN3utp12RemoteWindowE@Base 1.1~rc1
  _ZTIN3utp13RetransmitterE@Base 1.1~rc1
- _ZTIN3utp14MainThreadCallE@Base 1.1~rc1
  _ZTIN3utp15UTPServerThreadE@Base 1.1~rc1
+ _ZTIN3utp9UTPServer7PrivateE@Base 1.1~rc1
  _ZTIN3utp9UTPServerE@Base 1.1~rc1
  _ZTIN3utp9UTPSocketE@Base 1.1~rc1
  _ZTISt3setIN3dht12KBucketEntryESt4lessIS1_ESaIS1_EE@Base 1.1~rc1
@@ -1975,10 +2223,13 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZTSN2bt10DownloaderE@Base 1.1~rc1
  _ZTSN2bt10MagnetLinkE@Base 1.1~rc1
  _ZTSN2bt10PeerSourceE@Base 1.1~rc1
+ _ZTSN2bt10UPnPRouterE@Base 1.1~rc1
  _ZTSN2bt10UTMetaDataE@Base 1.1~rc1
  _ZTSN2bt11DataCheckerE@Base 1.1~rc1
  _ZTSN2bt11HTTPTrackerE@Base 1.1~rc1
+ _ZTSN2bt11PeerManager11PeerVisitorE@Base 1.1~rc1
  _ZTSN2bt11PeerManagerE@Base 1.1~rc1
+ _ZTSN2bt11SuperSeederE@Base 1.1~rc1
  _ZTSN2bt11TorrentFileE@Base 1.1~rc1
  _ZTSN2bt12CacheFactoryE@Base 1.1~rc1
  _ZTSN2bt12ChunkCounterE@Base 1.1~rc1
@@ -1989,6 +2240,7 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZTSN2bt13ChunkDownloadE@Base 1.1~rc1
  _ZTSN2bt13ExitOperationE@Base 1.1~rc1
  _ZTSN2bt13PeerConnectorE@Base 1.1~rc1
+ _ZTSN2bt13PeerInterfaceE@Base 1.1~rc1
  _ZTSN2bt14BEncoderOutputE@Base 1.1~rc1
  _ZTSN2bt14CircularBufferE@Base 1.1~rc1
  _ZTSN2bt14CompressThreadE@Base 1.1~rc1
@@ -2000,7 +2252,10 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZTSN2bt14TrackerManagerE@Base 1.1~rc1
  _ZTSN2bt15CompressFileJobE@Base 1.1~rc1
  _ZTSN2bt15HTTPAnnounceJobE@Base 1.1~rc1
+ _ZTSN2bt15PieceDownloaderE@Base 1.1~rc1
+ _ZTSN2bt15ResourceManagerE@Base 1.1~rc1
  _ZTSN2bt15ServerInterfaceE@Base 1.1~rc1
+ _ZTSN2bt15UPnPMCastSocketE@Base 1.1~rc1
  _ZTSN2bt16DecompressThreadE@Base 1.1~rc1
  _ZTSN2bt16LogSystemManagerE@Base 1.1~rc1
  _ZTSN2bt16MagnetDownloaderE@Base 1.1~rc1
@@ -2009,14 +2264,16 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZTSN2bt16PreallocationJobE@Base 1.1~rc1
  _ZTSN2bt16TorrentInterfaceE@Base 1.1~rc1
  _ZTSN2bt16TrackerInterfaceE@Base 1.1~rc1
+ _ZTSN2bt16UDPTrackerSocket7PrivateE@Base 1.1~rc1
  _ZTSN2bt16UDPTrackerSocketE@Base 1.1~rc1
  _ZTSN2bt16WebSeedInterfaceE@Base 1.1~rc1
+ _ZTSN2bt17DataCheckerThreadE@Base 1.1~rc1
  _ZTSN2bt17DecompressFileJobE@Base 1.1~rc1
  _ZTSN2bt17SingleDataCheckerE@Base 1.1~rc1
+ _ZTSN2bt17TorrentFileStreamE@Base 1.1~rc1
  _ZTSN2bt17TrackerDataSourceE@Base 1.1~rc1
  _ZTSN2bt18BEncoderFileOutputE@Base 1.1~rc1
  _ZTSN2bt18BlockListInterfaceE@Base 1.1~rc1
- _ZTSN2bt19DataCheckerListenerE@Base 1.1~rc1
  _ZTSN2bt19LogMonitorInterfaceE@Base 1.1~rc1
  _ZTSN2bt20BEncoderBufferOutputE@Base 1.1~rc1
  _ZTSN2bt20FilePriorityListenerE@Base 1.1~rc1
@@ -2026,7 +2283,7 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZTSN2bt21QueueManagerInterfaceE@Base 1.1~rc1
  _ZTSN2bt22BEncoderIODeviceOutputE@Base 1.1~rc1
  _ZTSN2bt22ChunkSelectorInterfaceE@Base 1.1~rc1
- _ZTSN2bt29ChunkSelectorFactoryInterfaceE@Base 1.1~rc1
+ _ZTSN2bt22StreamingChunkSelectorE@Base 1.1~rc1
  _ZTSN2bt3JobE@Base 1.1~rc1
  _ZTSN2bt3LogE@Base 1.1~rc1
  _ZTSN2bt4FileE@Base 1.1~rc1
@@ -2040,25 +2297,33 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZTSN2bt6BitSetE@Base 1.1~rc1
  _ZTSN2bt6ChokerE@Base 1.1~rc1
  _ZTSN2bt6PeerIDE@Base 1.1~rc1
+ _ZTSN2bt6Server7PrivateE@Base 1.1~rc1
  _ZTSN2bt6ServerE@Base 1.1~rc1
  _ZTSN2bt7GlobalsE@Base 1.1~rc1
  _ZTSN2bt7TorrentE@Base 1.1~rc1
  _ZTSN2bt7TrackerE@Base 1.1~rc1
  _ZTSN2bt7WaitJobE@Base 1.1~rc1
  _ZTSN2bt7WarningE@Base 1.1~rc1
+ _ZTSN2bt7WebSeed12AutoDisabledE@Base 1.1~rc1
  _ZTSN2bt7WebSeedE@Base 1.1~rc1
  _ZTSN2bt8BDecoderE@Base 1.1~rc1
  _ZTSN2bt8BEncoderE@Base 1.1~rc1
+ _ZTSN2bt8BusErrorE@Base 1.1~rc1
  _ZTSN2bt8JobQueueE@Base 1.1~rc1
+ _ZTSN2bt8ResourceE@Base 1.1~rc1
  _ZTSN2bt8SHA1HashE@Base 1.1~rc1
  _ZTSN2bt9BDictNodeE@Base 1.1~rc1
  _ZTSN2bt9BListNodeE@Base 1.1~rc1
  _ZTSN2bt9PieceDataE@Base 1.1~rc1
  _ZTSN2bt9StatsFileE@Base 1.1~rc1
  _ZTSN3dht13DHTPeerSourceE@Base 1.1~rc1
+ _ZTSN3mse12RC4EncryptorE@Base 1.1~rc1
  _ZTSN3mse12StreamSocketE@Base 1.1~rc1
  _ZTSN3net10PollClientE@Base 1.1~rc1
  _ZTSN3net10WakeUpPipeE@Base 1.1~rc1
+ _ZTSN3net12ServerSocket11DataHandlerE@Base 1.1~rc1
+ _ZTSN3net12ServerSocket17ConnectionHandlerE@Base 1.1~rc1
+ _ZTSN3net12ServerSocketE@Base 1.1~rc1
  _ZTSN3net13SocketMonitorE@Base 1.1~rc1
  _ZTSN3net4PollE@Base 1.1~rc1
  _ZTSN3net5SocksE@Base 1.1~rc1
@@ -2072,8 +2337,8 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZTSN3utp11TransmitterE@Base 1.1~rc1
  _ZTSN3utp12RemoteWindowE@Base 1.1~rc1
  _ZTSN3utp13RetransmitterE@Base 1.1~rc1
- _ZTSN3utp14MainThreadCallE@Base 1.1~rc1
  _ZTSN3utp15UTPServerThreadE@Base 1.1~rc1
+ _ZTSN3utp9UTPServer7PrivateE@Base 1.1~rc1
  _ZTSN3utp9UTPServerE@Base 1.1~rc1
  _ZTSN3utp9UTPSocketE@Base 1.1~rc1
  _ZTSSt3setIN3dht12KBucketEntryESt4lessIS1_ESaIS1_EE@Base 1.1~rc1
@@ -2081,10 +2346,13 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZTVN2bt10DownloaderE@Base 1.1~rc1
  _ZTVN2bt10MagnetLinkE@Base 1.1~rc1
  _ZTVN2bt10PeerSourceE@Base 1.1~rc1
+ _ZTVN2bt10UPnPRouterE@Base 1.1~rc1
  _ZTVN2bt10UTMetaDataE@Base 1.1~rc1
  _ZTVN2bt11DataCheckerE@Base 1.1~rc1
  _ZTVN2bt11HTTPTrackerE@Base 1.1~rc1
+ _ZTVN2bt11PeerManager11PeerVisitorE@Base 1.1~rc1
  _ZTVN2bt11PeerManagerE@Base 1.1~rc1
+ _ZTVN2bt11SuperSeederE@Base 1.1~rc1
  _ZTVN2bt11TorrentFileE@Base 1.1~rc1
  _ZTVN2bt12CacheFactoryE@Base 1.1~rc1
  _ZTVN2bt12ChunkCounterE@Base 1.1~rc1
@@ -2095,6 +2363,7 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZTVN2bt13ChunkDownloadE@Base 1.1~rc1
  _ZTVN2bt13ExitOperationE@Base 1.1~rc1
  _ZTVN2bt13PeerConnectorE@Base 1.1~rc1
+ _ZTVN2bt13PeerInterfaceE@Base 1.1~rc1
  _ZTVN2bt14BEncoderOutputE@Base 1.1~rc1
  _ZTVN2bt14CircularBufferE@Base 1.1~rc1
  _ZTVN2bt14CompressThreadE@Base 1.1~rc1
@@ -2106,7 +2375,10 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZTVN2bt14TrackerManagerE@Base 1.1~rc1
  _ZTVN2bt15CompressFileJobE@Base 1.1~rc1
  _ZTVN2bt15HTTPAnnounceJobE@Base 1.1~rc1
+ _ZTVN2bt15PieceDownloaderE@Base 1.1~rc1
+ _ZTVN2bt15ResourceManagerE@Base 1.1~rc1
  _ZTVN2bt15ServerInterfaceE@Base 1.1~rc1
+ _ZTVN2bt15UPnPMCastSocketE@Base 1.1~rc1
  _ZTVN2bt16DecompressThreadE@Base 1.1~rc1
  _ZTVN2bt16LogSystemManagerE@Base 1.1~rc1
  _ZTVN2bt16MagnetDownloaderE@Base 1.1~rc1
@@ -2115,14 +2387,16 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZTVN2bt16PreallocationJobE@Base 1.1~rc1
  _ZTVN2bt16TorrentInterfaceE@Base 1.1~rc1
  _ZTVN2bt16TrackerInterfaceE@Base 1.1~rc1
+ _ZTVN2bt16UDPTrackerSocket7PrivateE@Base 1.1~rc1
  _ZTVN2bt16UDPTrackerSocketE@Base 1.1~rc1
  _ZTVN2bt16WebSeedInterfaceE@Base 1.1~rc1
+ _ZTVN2bt17DataCheckerThreadE@Base 1.1~rc1
  _ZTVN2bt17DecompressFileJobE@Base 1.1~rc1
  _ZTVN2bt17SingleDataCheckerE@Base 1.1~rc1
+ _ZTVN2bt17TorrentFileStreamE@Base 1.1~rc1
  _ZTVN2bt17TrackerDataSourceE@Base 1.1~rc1
  _ZTVN2bt18BEncoderFileOutputE@Base 1.1~rc1
  _ZTVN2bt18BlockListInterfaceE@Base 1.1~rc1
- _ZTVN2bt19DataCheckerListenerE@Base 1.1~rc1
  _ZTVN2bt19LogMonitorInterfaceE@Base 1.1~rc1
  _ZTVN2bt20BEncoderBufferOutputE@Base 1.1~rc1
  _ZTVN2bt20FilePriorityListenerE@Base 1.1~rc1
@@ -2132,7 +2406,7 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZTVN2bt21QueueManagerInterfaceE@Base 1.1~rc1
  _ZTVN2bt22BEncoderIODeviceOutputE@Base 1.1~rc1
  _ZTVN2bt22ChunkSelectorInterfaceE@Base 1.1~rc1
- _ZTVN2bt29ChunkSelectorFactoryInterfaceE@Base 1.1~rc1
+ _ZTVN2bt22StreamingChunkSelectorE@Base 1.1~rc1
  _ZTVN2bt3JobE@Base 1.1~rc1
  _ZTVN2bt3LogE@Base 1.1~rc1
  _ZTVN2bt4FileE@Base 1.1~rc1
@@ -2146,6 +2420,7 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZTVN2bt6BitSetE@Base 1.1~rc1
  _ZTVN2bt6ChokerE@Base 1.1~rc1
  _ZTVN2bt6PeerIDE@Base 1.1~rc1
+ _ZTVN2bt6Server7PrivateE@Base 1.1~rc1
  _ZTVN2bt6ServerE@Base 1.1~rc1
  _ZTVN2bt7GlobalsE@Base 1.1~rc1
  _ZTVN2bt7TorrentE@Base 1.1~rc1
@@ -2155,16 +2430,22 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZTVN2bt7WebSeedE@Base 1.1~rc1
  _ZTVN2bt8BDecoderE@Base 1.1~rc1
  _ZTVN2bt8BEncoderE@Base 1.1~rc1
+ _ZTVN2bt8BusErrorE@Base 1.1~rc1
  _ZTVN2bt8JobQueueE@Base 1.1~rc1
+ _ZTVN2bt8ResourceE@Base 1.1~rc1
  _ZTVN2bt8SHA1HashE@Base 1.1~rc1
  _ZTVN2bt9BDictNodeE@Base 1.1~rc1
  _ZTVN2bt9BListNodeE@Base 1.1~rc1
  _ZTVN2bt9PieceDataE@Base 1.1~rc1
  _ZTVN2bt9StatsFileE@Base 1.1~rc1
  _ZTVN3dht13DHTPeerSourceE@Base 1.1~rc1
+ _ZTVN3mse12RC4EncryptorE@Base 1.1~rc1
  _ZTVN3mse12StreamSocketE@Base 1.1~rc1
  _ZTVN3net10PollClientE@Base 1.1~rc1
  _ZTVN3net10WakeUpPipeE@Base 1.1~rc1
+ _ZTVN3net12ServerSocket11DataHandlerE@Base 1.1~rc1
+ _ZTVN3net12ServerSocket17ConnectionHandlerE@Base 1.1~rc1
+ _ZTVN3net12ServerSocketE@Base 1.1~rc1
  _ZTVN3net13SocketMonitorE@Base 1.1~rc1
  _ZTVN3net4PollE@Base 1.1~rc1
  _ZTVN3net5SocksE@Base 1.1~rc1
@@ -2177,12 +2458,14 @@ libktorrent.so.3 libktorrent3 #MINVER#
  _ZTVN3utp11TransmitterE@Base 1.1~rc1
  _ZTVN3utp12RemoteWindowE@Base 1.1~rc1
  _ZTVN3utp13RetransmitterE@Base 1.1~rc1
- _ZTVN3utp14MainThreadCallE@Base 1.1~rc1
  _ZTVN3utp15UTPServerThreadE@Base 1.1~rc1
+ _ZTVN3utp9UTPServer7PrivateE@Base 1.1~rc1
  _ZTVN3utp9UTPServerE@Base 1.1~rc1
  _ZTVN3utp9UTPSocketE@Base 1.1~rc1
  (c++)"non-virtual thunk to bt::ChunkDownload::getStats(bt::ChunkDownloadInterface::Stats&)@Base" 1.1~rc1
  (c++)"non-virtual thunk to bt::ChunkDownload::~ChunkDownload()@Base" 1.1~rc1
+ (c++)"non-virtual thunk to bt::DataCheckerJob::acquired()@Base" 1.1~rc1
+ (c++)"non-virtual thunk to bt::DataCheckerJob::~DataCheckerJob()@Base" 1.1~rc1
  (c++)"non-virtual thunk to bt::Downloader::pieceReceived(bt::Piece const&)@Base" 1.1~rc1
  (c++)"non-virtual thunk to bt::Downloader::~Downloader()@Base" 1.1~rc1
  (c++)"non-virtual thunk to bt::HTTPTracker::~HTTPTracker()@Base" 1.1~rc1
@@ -2195,6 +2478,8 @@ libktorrent.so.3 libktorrent3 #MINVER#
  (c++)"non-virtual thunk to bt::Peer::getStats() const@Base" 1.1~rc1
  (c++)"non-virtual thunk to bt::Peer::kill()@Base" 1.1~rc1
  (c++)"non-virtual thunk to bt::Peer::~Peer()@Base" 1.1~rc1
+ (c++)"non-virtual thunk to bt::PeerManager::allowChunk(bt::PeerInterface*, unsigned int)@Base" 1.1~rc1
+ (c++)"non-virtual thunk to bt::PeerManager::~PeerManager()@Base" 1.1~rc1
  (c++)"non-virtual thunk to bt::TorrentControl::downloadPriorityChanged(bt::TorrentFile*, bt::Priority, bt::Priority)@Base" 1.1~rc1
  (c++)"non-virtual thunk to bt::TorrentControl::~TorrentControl()@Base" 1.1~rc1
  (c++)"non-virtual thunk to bt::Tracker::~Tracker()@Base" 1.1~rc1
@@ -2214,11 +2499,12 @@ libktorrent.so.3 libktorrent3 #MINVER#
  (c++)"non-virtual thunk to bt::TrackerManager::setCurrentTracker(bt::TrackerInterface*)@Base" 1.1~rc1
  (c++)"non-virtual thunk to bt::TrackerManager::setTrackerEnabled(KUrl const&, bool)@Base" 1.1~rc1
  (c++)"non-virtual thunk to bt::TrackerManager::~TrackerManager()@Base" 1.1~rc1
+ (c++)"non-virtual thunk to bt::UTPex::visit(bt::Peer const*)@Base" 1.1~rc1
+ (c++)"non-virtual thunk to bt::UTPex::~UTPex()@Base" 1.1~rc1
  (c++)"non-virtual thunk to bt::WebSeed::getDownloadRate() const@Base" 1.1~rc1
  (c++)"non-virtual thunk to bt::WebSeed::setEnabled(bool)@Base" 1.1~rc1
  (c++)"non-virtual thunk to bt::WebSeed::~WebSeed()@Base" 1.1~rc1
  (c++)"non-virtual thunk to mse::StreamSocket::hasBytesToWrite() const@Base" 1.1~rc1
- (c++)"non-virtual thunk to mse::StreamSocket::onDataReady(unsigned char*, unsigned int)@Base" 1.1~rc1
  (c++)"non-virtual thunk to mse::StreamSocket::onReadyToWrite(unsigned char*, unsigned int)@Base" 1.1~rc1
  (c++)"non-virtual thunk to mse::StreamSocket::~StreamSocket()@Base" 1.1~rc1
  (c++)"non-virtual thunk to net::WakeUpPipe::handleData()@Base" 1.1~rc1
@@ -2227,5 +2513,9 @@ libktorrent.so.3 libktorrent3 #MINVER#
  (c++)"non-virtual thunk to utp::Connection::retransmit(QByteArray const&, unsigned short)@Base" 1.1~rc1
  (c++)"non-virtual thunk to utp::Connection::updateRTT(utp::Header const*, unsigned int, unsigned int)@Base" 1.1~rc1
  (c++)"non-virtual thunk to utp::Connection::~Connection()@Base" 1.1~rc1
- (c++)"non-virtual thunk to utp::UTPServer::sendTo(QByteArray const&, net::Address const&, unsigned short)@Base" 1.1~rc1
+ (c++)"non-virtual thunk to utp::UTPServer::cancelTimer(int)@Base" 1.1~rc1
+ (c++)"non-virtual thunk to utp::UTPServer::closed(QSharedPointer<utp::Connection>)@Base" 1.1~rc1
+ (c++)"non-virtual thunk to utp::UTPServer::scheduleTimer(QSharedPointer<utp::Connection>, unsigned int)@Base" 1.1~rc1
+ (c++)"non-virtual thunk to utp::UTPServer::sendTo(QSharedPointer<utp::Connection>, QByteArray const&)@Base" 1.1~rc1
+ (c++)"non-virtual thunk to utp::UTPServer::stateChanged(QSharedPointer<utp::Connection>, bool, bool)@Base" 1.1~rc1
  (c++)"non-virtual thunk to utp::UTPServer::~UTPServer()@Base" 1.1~rc1
