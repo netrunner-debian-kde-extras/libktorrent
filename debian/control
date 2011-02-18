@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: Modestas Vainius <modax@debian.org>
 Build-Depends: cmake, debhelper (>= 7.3.16~), pkg-kde-tools (>= 0.6~),
- kdelibs5-dev (>= 4:4.4), libgmp3-dev, libqca2-dev, libboost-dev,
+ kdelibs5-dev (>= 4:4.4), libgmp3-dev, libqca2-dev, libboost-dev, libgcrypt-dev,
  pkg-config, doxygen,
 Standards-Version: 3.9.1
 Homepage: http://ktorrent.org/
