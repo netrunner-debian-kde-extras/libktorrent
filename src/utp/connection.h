@@ -25,34 +25,23 @@
 #include <QMutex>
 #include <QWaitCondition>
 #include <QBasicTimer>
+#include <QSharedPointer>
 #include <ktorrent_export.h>
 #include <net/address.h>
 #include <utp/utpprotocol.h>
 #include <util/circularbuffer.h>
 #include <util/timer.h>
 #include <utp/remotewindow.h>
+#include <boost/concept_check.hpp>
 
 
 
 
 namespace utp
 {
-	class DelayWindow;;
+	class DelayWindow;
 	class LocalWindow;
-	
-	
-	
-	/**
-		Interface class for transmitting packets
-	*/
-	class KTORRENT_EXPORT Transmitter
-	{
-	public:
-		virtual ~Transmitter() {}
-		
-		/// Send a packet to some host
-		virtual bool sendTo(const QByteArray & data,const net::Address & addr,quint16 conn_id) = 0;
-	};
+	class Transmitter;
 
 	/**
 		Keeps track of a single UTP connection
@@ -98,6 +87,9 @@ namespace utp
 			bt::Uint32 packets_sent;
 			bt::Uint64 bytes_lost;
 			bt::Uint32 packets_lost;
+			
+			bool readable;
+			bool writeable;
 		};
 		
 		Connection(bt::Uint16 recv_connection_id,Type type,const net::Address & remote,Transmitter* transmitter);
@@ -142,8 +134,8 @@ namespace utp
 		/// Wait until the connectTo call fails or succeeds
 		bool waitUntilConnected();
 		
-		/// Wait until there is data ready or the socket is closed
-		bool waitForData();
+		/// Wait until there is data ready or the socket is closed or a timeout occurs
+		bool waitForData(bt::Uint32 timeout = 0);
 		
 		/// Close the socket
 		void close();
@@ -163,6 +155,15 @@ namespace utp
 		/// Get the current timeout
 		virtual bt::Uint32 currentTimeout() const {return stats.timeout;}
 		
+		typedef QSharedPointer<Connection> Ptr;
+		typedef QWeakPointer<Connection> WPtr;
+		
+		/// Set a weak pointer to self
+		void setWeakPointer(WPtr ptr) {self = ptr;}
+		
+		/// Handle a timeout
+		void handleTimeout();
+		
 	private:
 		void sendSYN();
 		void sendState();
@@ -173,10 +174,10 @@ namespace utp
 		void sendPackets();
 		void sendPacket(bt::Uint32 type,bt::Uint16 p_ack_nr);
 		void checkIfClosed();
-		int sendDataPacket(const QByteArray & packet);
-		virtual void timerEvent(QTimerEvent* event);
-		void handleTimeout();
+		void sendDataPacket(const QByteArray & packet);
+		void sendDataPacket(const QByteArray & packet, bt::Uint16 seq_nr, const TimeValue & now);
 		void startTimer();
+		void checkState();
 		
 	private slots:
 		void delayedStartTimer();
@@ -197,10 +198,36 @@ namespace utp
 		bool fin_sent;
 		TimeValue last_packet_sent;
 		DelayWindow* delay_window;
-		QBasicTimer timer;
+		Connection::WPtr self;
+		int timer_id;
 		
 		friend class UTPServer;
 	};
+	
+	/**
+		Interface class for transmitting packets and notifying if a connection becomes readable or writeable
+	 */
+	class KTORRENT_EXPORT Transmitter
+	{
+	public:
+		virtual ~Transmitter() {}
+		
+		/// Send a packet of a connection
+		virtual bool sendTo(Connection::Ptr conn,const QByteArray & data) = 0;
+		
+		/// Connection has become readable, writeable or both
+		virtual void stateChanged(Connection::Ptr conn,bool readable,bool writeable) = 0;
+		
+		/// Called when the connection is closed
+		virtual void closed(Connection::Ptr conn) = 0;
+		
+		/// Schedule a timer for a connection
+		virtual int scheduleTimer(Connection::Ptr conn,bt::Uint32 timeout) = 0;
+		
+		/// Kill a previously started timer
+		virtual void cancelTimer(int timer_id) = 0;
+	};
+	
 }
 
 #endif // UTP_CONNECTION_H

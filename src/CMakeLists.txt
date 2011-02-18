@@ -2,7 +2,7 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/config-ktorrent.h.cmake ${CMAKE_BINAR
 
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
-include_directories(${QCA2_INCLUDE_DIR})
+include_directories(${LIBGCRYPT_INCLUDE_DIR} ${QCA2_INCLUDE_DIR})
 remove_definitions(-DQT_NO_HTTP)
 
 set(libktorrent_SRC 
@@ -26,6 +26,7 @@ set(libktorrent_SRC
 	util/logsystemmanager.cpp
 	util/pipe.cpp
 	util/circularbuffer.cpp
+	util/resourcemanager.cpp
 	
 	bcodec/bdecoder.cpp  
 	bcodec/bencoder.cpp  
@@ -47,6 +48,7 @@ set(libktorrent_SRC
 	net/reverseresolver.cpp
 	net/socketdevice.cpp
 	net/poll.cpp
+	net/serversocket.cpp
 	
 	mse/bigint.cpp  
 	mse/functions.cpp  
@@ -73,6 +75,7 @@ set(libktorrent_SRC
 	peer/accessmanager.cpp
 	peer/badpeerslist.cpp
 	peer/peerconnector.cpp
+	peer/superseeder.cpp
 
 	download/piece.cpp
 	download/request.cpp
@@ -82,6 +85,7 @@ set(libktorrent_SRC
 	download/chunkselector.cpp
 	download/downloader.cpp
 	download/httpconnection.cpp
+	download/streamingchunkselector.cpp
 
 	interfaces/piecedownloader.cpp
 	interfaces/peerinterface.cpp
@@ -116,6 +120,7 @@ set(libktorrent_SRC
 	torrent/torrentstats.cpp
 	torrent/jobqueue.cpp
 	torrent/job.cpp
+	torrent/torrentfilestream.cpp 
 
 	dht/announcetask.cpp  
 	dht/dht.cpp                
@@ -158,7 +163,6 @@ set(libktorrent_SRC
 	datachecker/datachecker.cpp          
 	datachecker/datacheckerthread.cpp  
 	datachecker/singledatachecker.cpp
-	datachecker/datacheckerlistener.cpp  
 	datachecker/multidatachecker.cpp
 	datachecker/datacheckerjob.cpp
 	
@@ -180,9 +184,21 @@ set(libktorrent_SRC
 	utp/utpprotocol.cpp
 	utp/pollpipe.cpp
 	utp/delaywindow.cpp
+	utp/outputqueue.cpp 
+	
+	upnp/soap.cpp
+	upnp/upnpmcastsocket.cpp
+	upnp/upnprouter.cpp
+	upnp/upnpdescriptionparser.cpp
+	upnp/httprequest.cpp
 	
 	version.cpp
 )
+
+if(NOT WIN32)
+# Add signalcatcher.cpp for all builds except WIN32
+set(libktorrent_SRC ${libktorrent_SRC} util/signalcatcher.cpp)
+endif(NOT WIN32)
 
 if(WIN32)
 # Compile stuff for windows
@@ -194,22 +210,13 @@ endif(WIN32)
 # kde4_add_kcfg_files(libktorrent_SRC settings.kcfgc)
 kde4_add_library(ktorrent SHARED ${libktorrent_SRC})
 
-target_link_libraries(ktorrent ${KDE4_KIO_LIBS} ${GMP_LIBRARIES} ${QCA2_LIBRARIES})
+target_link_libraries(ktorrent ${KDE4_KIO_LIBS} ${GMP_LIBRARIES} ${KDE4_SOLID_LIBS} ${LIBGCRYPT_LIBRARIES} ${QCA2_LIBRARIES})
 if(WIN32)
 target_link_libraries(ktorrent ws2_32)
 endif(WIN32)
-set_target_properties(ktorrent PROPERTIES VERSION 2.0.4 SOVERSION 2)
+set_target_properties(ktorrent PROPERTIES VERSION 3.0.0 SOVERSION 3)
 install(TARGETS ktorrent  ${INSTALL_TARGETS_DEFAULT_ARGS} )
 
-
-set (mse_HDR 
-	./mse/encryptedserverauthenticate.h
-	./mse/functions.h
-	./mse/rc4encryptor.h
-	./mse/encryptedauthenticate.h
-	./mse/bigint.h
-	./mse/streamsocket.h
-)
 
 set (interfaces_HDR
 	./interfaces/peerinterface.h
@@ -231,38 +238,6 @@ set (interfaces_HDR
 	./interfaces/serverinterface.h
 )
 
-set (peer_HDR
-	./peer/peeruploader.h
-	./peer/packetwriter.h
-	./peer/peer.h
-	./peer/peermanager.h
-	./peer/authenticatebase.h
-	./peer/authenticate.h
-	./peer/peerprotocolextension.h
-	./peer/utpex.h
-	./peer/utmetadata.h
-	./peer/packetreader.h
-	./peer/authenticationmonitor.h
-	./peer/peerid.h
-	./peer/peerdownloader.h
-	./peer/chunkcounter.h
-	./peer/serverauthenticate.h
-	./peer/accessmanager.h
-	./peer/peerconnector.h
-)
-	
-
-	
-set (download_HDR
-	./download/chunkdownload.h
-	./download/downloader.h
-	./download/request.h
-	./download/piece.h
-	./download/packet.h
-	./download/chunkselector.h
-	./download/webseed.h
-)
-
 set (ktorrent_HDR 
 	ktorrent_export.h
 	version.h
@@ -275,41 +250,7 @@ set (bcodec_HDR
 	./bcodec/value.h
 )
 	
-set (diskio_HDR  
-	./diskio/cache.h
-	./diskio/cachefile.h
-	./diskio/singlefilecache.h
-	./diskio/preallocationthread.h
-	./diskio/preallocationjob.h
-	./diskio/movedatafilesjob.h
-	./diskio/deletedatafilesjob.h
-	./diskio/chunkmanager.h
-	./diskio/dndfile.h
-	./diskio/chunk.h
-	./diskio/multifilecache.h
-	./diskio/piecedata.h
-)
-	
 
-	
-set (tracker_HDR
-	./tracker/tracker.h
-	./tracker/udptracker.h
-	./tracker/udptrackersocket.h
-	./tracker/httptracker.h
-	./tracker/trackermanager.h
-	./tracker/httpannouncejob.h
-	./tracker/kioannouncejob.h
-)
-
-set (datachecker_HDR
-	./datachecker/datacheckerthread.h
-	./datachecker/datachecker.h
-	./datachecker/singledatachecker.h
-	./datachecker/datacheckerlistener.h
-	./datachecker/multidatachecker.h
-	./datachecker/datacheckerjob.h
-)
 
 set (dht_HDR
 	./dht/dhtbase.h
@@ -338,20 +279,21 @@ set (migrate_HDR
 
 
 
-install(FILES ${tracker_HDR} DESTINATION ${INCLUDE_INSTALL_DIR}/libktorrent/tracker COMPONENT Devel)
-install(FILES ${diskio_HDR} DESTINATION ${INCLUDE_INSTALL_DIR}/libktorrent/diskio COMPONENT Devel)
 install(FILES ${bcodec_HDR} DESTINATION ${INCLUDE_INSTALL_DIR}/libktorrent/bcodec COMPONENT Devel)
-install(FILES ${mse_HDR} DESTINATION ${INCLUDE_INSTALL_DIR}/libktorrent/mse COMPONENT Devel)
 install(FILES ${interfaces_HDR} DESTINATION ${INCLUDE_INSTALL_DIR}/libktorrent/interfaces COMPONENT Devel)
-install(FILES ${peer_HDR} DESTINATION ${INCLUDE_INSTALL_DIR}/libktorrent/peer COMPONENT Devel)
-install(FILES ${datachecker_HDR} DESTINATION ${INCLUDE_INSTALL_DIR}/libktorrent/datachecker COMPONENT Devel)
 install(FILES ${dht_HDR} DESTINATION ${INCLUDE_INSTALL_DIR}/libktorrent/dht COMPONENT Devel)
 install(FILES ${migrate_HDR} DESTINATION ${INCLUDE_INSTALL_DIR}/libktorrent/migrate COMPONENT Devel)
-install(FILES ${download_HDR} DESTINATION ${INCLUDE_INSTALL_DIR}/libktorrent/download COMPONENT Devel)
 install(FILES ${ktorrent_HDR} DESTINATION ${INCLUDE_INSTALL_DIR}/libktorrent COMPONENT Devel)
 
 add_subdirectory(torrent)
+add_subdirectory(datachecker)
+add_subdirectory(download)
+add_subdirectory(diskio)
+add_subdirectory(peer)
 add_subdirectory(net)
+add_subdirectory(mse)
 add_subdirectory(magnet)
 add_subdirectory(util)
 add_subdirectory(utp)
+add_subdirectory(upnp)
+add_subdirectory(tracker)

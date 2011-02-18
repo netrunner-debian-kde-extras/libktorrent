@@ -50,26 +50,10 @@ namespace bt
 	static Uint64 FileOffset(Uint32 cindex,const TorrentFile & f,Uint64 chunk_size);
 	static void DeleteEmptyDirs(const QString & output_dir,const QString & fpath);
 	
-	static void MakeFilePath(const QString & file)
-	{
-		QStringList sl = file.split(bt::DirSeparator());
-		QString ctmp;
-#ifndef Q_WS_WIN
-		ctmp += bt::DirSeparator();
-#endif
-		
-		for (int i = 0;i < sl.count() - 1;i++)
-		{
-			ctmp += sl[i];
-			if (!bt::Exists(ctmp))
-				MakeDir(ctmp);
-			
-			ctmp += bt::DirSeparator();
-		}
-	}
+
 	
 
-	MultiFileCache::MultiFileCache(Torrent& tor,const QString & tmpdir,const QString & datadir,bool custom_output_name) : Cache(tor, tmpdir,datadir)
+	MultiFileCache::MultiFileCache(Torrent& tor,const QString & tmpdir,const QString & datadir,bool custom_output_name) : Cache(tor, tmpdir,datadir),opened(false)
 	{
 		cache_dir = tmpdir + "cache" + bt::DirSeparator();
 		
@@ -83,7 +67,9 @@ namespace bt
 
 
 	MultiFileCache::~MultiFileCache()
-	{}
+	{
+		cleanupPieceCache();
+	}
 	
 	void MultiFileCache::loadFileMap()
 	{
@@ -104,7 +90,7 @@ namespace bt
 		{
 			QFile fptr(tmpdir + "file_map");
 			if (!fptr.open(QIODevice::ReadOnly))
-				throw Error(i18n("Failed to open %1 : %2",file_map,fptr.errorString()));
+				throw Error(i18n("Failed to open %1: %2",file_map,fptr.errorString()));
 			
 			Uint32 idx = 0;
 			while (!fptr.atEnd() && idx < tor.getNumFiles())
@@ -131,7 +117,7 @@ namespace bt
 		QString file_map = tmpdir + "file_map";
 		QFile fptr(file_map);
 		if (!fptr.open(QIODevice::WriteOnly))
-			throw Error(i18n("Failed to create %1 : %2",file_map,fptr.errorString()));
+			throw Error(i18n("Failed to create %1: %2",file_map,fptr.errorString()));
 			
 		QTextStream out(&fptr);
 		// file map doesn't exist, so create it based upon the output_dir
@@ -159,11 +145,17 @@ namespace bt
 	void MultiFileCache::close()
 	{
 		clearPieceCache();
-		files.clear();
+		if (piece_cache.isEmpty())
+			files.clear();
+		opened = false;
 	}
 	
 	void MultiFileCache::open()
 	{
+		// Check if the cache is not yet open
+		if (opened)
+			return;
+		
 		QString dnd_dir = tmpdir + "dnd" + bt::DirSeparator();
 		// open all files
 		for (Uint32 i = 0;i < tor.getNumFiles();i++)
@@ -209,6 +201,8 @@ namespace bt
 				throw;
 			}
 		}
+		
+		opened = true;
 	}
 
 	void MultiFileCache::changeTmpDir(const QString& ndir)
@@ -412,9 +406,10 @@ namespace bt
 		}
 	}
 	
-	PieceData* MultiFileCache::createPiece(Chunk* c,Uint32 off,Uint32 length,bool read_only)
+	PieceData::Ptr MultiFileCache::createPiece(Chunk* c,Uint32 off,Uint32 length,bool read_only)
 	{
-		PieceData* piece = 0;
+		open();
+		
 		QList<Uint32> tflist;
 		tor.calcChunkPos(c->getIndex(),tflist);
 		
@@ -424,13 +419,13 @@ namespace bt
 			const TorrentFile & f = tor.getFile(tflist.first());
 			CacheFile* fd = files.find(tflist.first());
 			if (!fd)
-				return 0;
+				return PieceData::Ptr();
 			
 			if (Cache::mappedModeAllowed() && mmap_failures < 3)
 			{
 				Uint64 offset = FileOffset(c,f,tor.getChunkSize()) + off;
-				piece = new PieceData(c,off,length,0,fd);
-				Uint8* buf = (Uint8*)fd->map(piece,offset,length,read_only ? CacheFile::READ : CacheFile::RW);
+				PieceData::Ptr piece(new PieceData(c,off,length,0,fd,read_only));
+				Uint8* buf = (Uint8*)fd->map(piece.data(),offset,length,read_only ? CacheFile::READ : CacheFile::RW);
 				if (buf)
 				{
 					piece->setData(buf);
@@ -441,22 +436,19 @@ namespace bt
 				{
 					mmap_failures++;
 				}
-
-				delete piece;
-				piece = 0;
 			}
 		}
 			
 		// mmap failed or there are multiple files, so just do buffered
 		Uint8* buf = new Uint8[length];
-		piece = new PieceData(c,off,length,buf,0);
+		PieceData::Ptr piece(new PieceData(c,off,length,buf,0,read_only));
 		insertPiece(c,piece);
 		return piece;
 	}
 	
-	PieceDataPtr MultiFileCache::preparePiece(Chunk* c,Uint32 off,Uint32 length)
+	PieceData::Ptr MultiFileCache::preparePiece(Chunk* c,Uint32 off,Uint32 length)
 	{
-		PieceDataPtr piece = findPiece(c,off,length);
+		PieceData::Ptr piece = findPiece(c,off,length,false);
 		if (piece)
 			return piece;
 		
@@ -494,9 +486,11 @@ namespace bt
 		}
 	}
 
-	PieceDataPtr MultiFileCache::loadPiece(Chunk* c,Uint32 off,Uint32 length)
+	PieceData::Ptr MultiFileCache::loadPiece(Chunk* c,Uint32 off,Uint32 length)
 	{
-		PieceDataPtr piece = findPiece(c,off,length);
+		open();
+		
+		PieceData::Ptr piece = findPiece(c,off,length,true);
 		if (piece)
 			return piece;
 
@@ -584,8 +578,10 @@ namespace bt
 		return piece;
 	}
 
-	void MultiFileCache::savePiece(PieceDataPtr piece)
+	void MultiFileCache::savePiece(PieceData::Ptr piece)
 	{
+		open();
+		
 		// in mapped mode unload the piece if not in use
 		if (piece->mapped())
 			return;
@@ -689,7 +685,8 @@ namespace bt
 					saveFirstAndLastChunk(tf,tf->getPathOnDisk(),dnd_file);
 				
 				// delete data file
-				bt::Delete(tf->getPathOnDisk(),true);
+				if (bt::Exists(tf->getPathOnDisk()))
+					bt::Delete(tf->getPathOnDisk(),true);
 				
 				files.erase(tf->getIndex());
 				dfd = new DNDFile(dnd_file,tf,tor.getChunkSize());
@@ -722,7 +719,7 @@ namespace bt
 		DNDFile out(dst_file,tf,tor.getChunkSize());
 		File fptr;
 		if (!fptr.open(src_file,"rb"))
-			throw Error(i18n("Cannot open file %1 : %2",src_file,fptr.errorString()));
+			throw Error(i18n("Cannot open file %1: %2",src_file,fptr.errorString()));
 		
 		Uint32 cs = (tf->getFirstChunk() == tor.getNumChunks() - 1) ? tor.getLastChunkSize() : tor.getChunkSize();
 		
@@ -761,7 +758,7 @@ namespace bt
 		
 		File fptr;
 		if (!fptr.open(output_file,"r+b"))
-			throw Error(i18n("Cannot open file %1 : %2",output_file,fptr.errorString()));
+			throw Error(i18n("Cannot open file %1: %2",output_file,fptr.errorString()));
 			
 		
 		Uint32 ts = cs - tf->getFirstChunkOffset() > tf->getLastChunkSize() ? 

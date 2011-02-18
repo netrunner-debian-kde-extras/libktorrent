@@ -52,49 +52,38 @@ namespace bt
 	bool Peer::resolve_hostname = true;
 	
 	
-	Peer::Peer(mse::StreamSocket* sock,const PeerID & peer_id,
+	Peer::Peer(mse::StreamSocket::Ptr sock,const PeerID & peer_id,
 			   Uint32 num_chunks,Uint32 chunk_size,Uint32 support,bool local,PeerManager* pman)
-	: sock(sock),pieces(num_chunks),peer_id(peer_id),pman(pman)
+	: PeerInterface(peer_id,num_chunks),sock(sock),pman(pman)
 	{
 		id = peer_id_counter;
 		peer_id_counter++;
 		ut_pex_id = 0;
-		preader = new PacketReader(this);
-		stats.choked = true;
-		stats.interested = stats.am_interested = false;
-		killed = false;
+		
+		Uint32 max_packet_len = 9 + MAX_PIECE_LEN; // size of piece packet
+		Uint32 bitfield_length = num_chunks / 8 + 1 + (num_chunks % 8 == 0 ? 0 : 1);
+		if (bitfield_length > max_packet_len) // bitfield can be longer
+			max_packet_len = bitfield_length;
+		
+		// to be future proof use 10 times the max packet length, 
+		// in case some extension message comes along which is larger
+		preader = new PacketReader(this,10*max_packet_len);
 		downloader = new PeerDownloader(this,chunk_size);
 		uploader = new PeerUploader(this);
-		
+		pwriter = new PacketWriter(this);
 		
 		stalled_timer.update();
-		pwriter = new PacketWriter(this);
-		time_choked = CurrentTime();
-		time_unchoked = 0;
+		
 		
 		connect_time = QTime::currentTime();
-		//sock->attachPeer(this);
 		stats.client = peer_id.identifyClient();
 		stats.ip_address = getIPAddresss();
-		stats.choked = true;
-		paused = false;
-		stats.interested = false;
-		stats.am_interested = false;
-		stats.download_rate = 0;
-		stats.upload_rate = 0;
-		stats.perc_of_file = 0;
-		stats.snubbed = false;
 		stats.dht_support = support & DHT_SUPPORT;
 		stats.fast_extensions = support & FAST_EXT_SUPPORT;
 		stats.extension_protocol = support & EXT_PROT_SUPPORT;
-		stats.bytes_downloaded = stats.bytes_uploaded = 0;
-		stats.aca_score = 0.0;
-		stats.has_upload_slot = false;
-		stats.num_up_requests = stats.num_down_requests = 0;
 		stats.encrypted = sock->encrypted();
 		stats.local = local;
-		stats.max_request_queue = 0;
-		bytes_downloaded_since_unchoke = 0;
+		stats.transport_protocol = sock->socketDevice()->transportProtocol();
 		
 		if (stats.ip_address == "0.0.0.0")
 		{
@@ -105,6 +94,7 @@ namespace bt
 		{
 			sock->startMonitoring(preader,pwriter);
 		}
+		
 		pex_allowed = stats.extension_protocol;
 		extensions.setAutoDelete(true);
 		
@@ -119,9 +109,12 @@ namespace bt
 
 	Peer::~Peer()
 	{
+		// Seeing that we are going to delete the pwriter and preader object,
+		// call stopMonitoring, in some situations it is possible that the socket
+		// is only deleted later because the authenticate object still has a reference to it
+		sock->stopMonitoring();
 		delete uploader;
 		delete downloader;
-		delete sock;
 		delete pwriter;
 		delete preader;
 	}
@@ -157,7 +150,7 @@ namespace bt
 				
 				if (!stats.choked)
 				{
-					time_choked = CurrentTime();
+					stats.time_choked = CurrentTime();
 				}
 				stats.choked = true;
 				downloader->choked();
@@ -172,7 +165,7 @@ namespace bt
 				
 				if (stats.choked)
 				{
-					time_unchoked = CurrentTime();
+					stats.time_unchoked = CurrentTime();
 					bytes_downloaded_since_unchoke = 0;
 				}
 				
@@ -572,11 +565,6 @@ namespace bt
 	{
 		// 4 minutes
 		return snub_timer.getElapsedSinceUpdate() >= 2*60*1000 && stats.num_down_requests > 0;
-	}
-
-	bool Peer::isSeeder() const
-	{
-		return pieces.allOn();
 	}
 
 	QString Peer::getIPAddresss() const

@@ -20,6 +20,7 @@
 
 #include "serverinterface.h"
 #include <QHostAddress>
+#include <util/log.h>
 #include <util/sha1hash.h>
 #include <util/functions.h>
 #include <peer/peermanager.h>
@@ -111,30 +112,28 @@ namespace bt
 	QStringList ServerInterface::bindAddresses()
 	{
 		QString iface = NetworkInterface();
-		QString ip = NetworkInterfaceIPAddress(iface);
-		QStringList possible;
-		if (!ip.isEmpty())
-			possible << ip;
+		QStringList ips = NetworkInterfaceIPAddresses(iface);
+		if (ips.count() == 0)
+		{
+			// Interface does not exist, so add any adresses
+			ips << QHostAddress(QHostAddress::AnyIPv6).toString() << QHostAddress(QHostAddress::Any).toString();
+		}
 		
-		// If the first address doesn't work try AnyIPv6 and Any
-		possible << QHostAddress(QHostAddress::AnyIPv6).toString() << QHostAddress(QHostAddress::Any).toString();
-		return possible;
+		return ips;
 	}
 	
 	
-	void ServerInterface::newConnection(mse::StreamSocket* s)
+	void ServerInterface::newConnection(mse::StreamSocket::Ptr s)
 	{
 		if (peer_managers.count() == 0)
 		{
 			s->close();
-			delete s;
 		}
 		else
 		{
 			if (!AccessManager::instance().allowed(s->getRemoteAddress()))
 			{
 				Out(SYS_CON|LOG_DEBUG) << "A client with a blocked IP address ("<< s->getRemoteIPAddress() << ") tried to connect !" << endl;
-				delete s;
 				return;
 			}
 			

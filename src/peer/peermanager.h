@@ -21,30 +21,21 @@
 #define BTPEERMANAGER_H
 
 
-#include <QList>
-#include <QSet>
-#include <util/ptrmap.h>
-#include <peer/peer.h>
-#include <peer/peerid.h>
-#include <util/bitset.h>
 #include <interfaces/peersource.h>
 #include <ktorrent_export.h>
-
-namespace mse
-{
-	class StreamSocket;
-}
-
+#include <peer/superseeder.h>
+#include <peer/peerconnector.h>
+#include <mse/streamsocket.h>
 
 namespace KNetwork
 {
 	class KResolverResults;
 }
 
-
 namespace bt
 {
-	class PeerConnector;
+	class Peer;
+	class PeerID;
 	class Piece;
 	class Torrent;
 	class Authenticate;
@@ -52,8 +43,6 @@ namespace bt
 	class PieceDownloader;
 
 	using KNetwork::KResolverResults;
-
-
 	
 	const Uint32 MAX_SIMULTANIOUS_AUTHS = 20;
 	
@@ -73,7 +62,7 @@ namespace bt
 	 * This class manages all Peer objects.
 	 * It can also open connections to other peers.
 	 */
-	class KTORRENT_EXPORT PeerManager : public QObject
+	class KTORRENT_EXPORT PeerManager : public QObject, public SuperSeederClient
 	{
 		Q_OBJECT
 	public:
@@ -108,11 +97,10 @@ namespace bt
 		Uint32 clearDeadPeers();
 
 		/**
-		 * Get the i'th Peer.
-		 * @param index 
-		 * @return Peer or 0 if out of range
+		 * Get a list of all peers.
+		 * @return A QList of Peer's
 		 */
-		Peer* getPeer(Uint32 index) {return peer_list.at(index);}
+		QList<Peer*> getPeers() const;
 
 		/**
 		 * Find a Peer based on it's ID
@@ -142,27 +130,25 @@ namespace bt
 		
 		/**
 		 * Start listening to incoming requests.
+		 * @param superseed Set to true to get superseeding
 		 */
-		void start();
+		void start(bool superseed);
 		
 		/**
 		 * Stop listening to incoming requests.
 		 */
 		void stop();
-
-		/**
-		 * Kill all peers who have been choked longer then @a older_then time.
-		 * @param older_then Time in milliseconds
-		 */
-		void killChokedPeers(Uint32 older_then);
 		
 		/**
 		 * Kill all peers who appear to be stale
 		 */
 		void killStalePeers();
 		
-		Uint32 getNumConnectedPeers() const {return peer_list.count();}
-		Uint32 getNumPending() const {return num_pending;}
+		/// Get the number of connected peers
+		Uint32 getNumConnectedPeers() const;
+		
+		/// Get the number of pending peers we are attempting to connect to
+		Uint32 getNumPending() const;
 		
 		static void setMaxConnections(Uint32 max);
 		static Uint32 getMaxConnections() {return max_connections;}
@@ -173,10 +159,13 @@ namespace bt
 		static Uint32 getTotalConnections() {return total_connections;}
 		
 		/// Is the peer manager started
-		bool isStarted() const {return started;}
+		bool isStarted() const;
 
 		/// Get the Torrent
-		Torrent & getTorrent() {return tor;}
+		const Torrent & getTorrent() const;
+		
+		/// Get the combined upload rate of all peers in bytes per sec
+		Uint32 uploadRate() const;
 
 		/**
 		 * A new connection is ready for this PeerManager.
@@ -184,7 +173,7 @@ namespace bt
 		 * @param peer_id The Peer's ID
 		 * @param support What extensions the peer supports
 		 */
-		void newConnection(mse::StreamSocket* sock,const PeerID & peer_id,Uint32 support);
+		void newConnection(mse::StreamSocket::Ptr sock,const PeerID & peer_id,Uint32 support);
 
 		/**
 		 * Add a potential peer
@@ -206,10 +195,10 @@ namespace bt
 		void killUninterested();
 
 		/// Get a BitSet of all available chunks
-		const BitSet & getAvailableChunksBitSet() const {return available_chunks;}
+		const BitSet & getAvailableChunksBitSet() const;
 		
 		/// Get the chunk counter.
-		ChunkCounter & getChunkCounter() {return *cnt;};
+		ChunkCounter & getChunkCounter();
 	
 		/// Are we connected to a Peer given it's PeerID ?
 		bool connectedTo(const PeerID & peer_id);	
@@ -220,7 +209,7 @@ namespace bt
 		 * @param pcon The PeerConnector
 		 * @param ok Whether or not the attempt was succesfull
 		 */
-		void peerAuthenticated(Authenticate* auth,PeerConnector* pcon,bool ok);
+		void peerAuthenticated(Authenticate* auth,PeerConnector::WPtr pcon,bool ok);
 		
 		/**
 		 * Save the IP's and port numbers of all peers.
@@ -232,13 +221,20 @@ namespace bt
 		 */
 		void loadPeerList(const QString & file);
 		
-		typedef QList<Peer*>::const_iterator CItr;
+		class PeerVisitor
+		{
+		public:
+			virtual ~PeerVisitor() {}
+			
+			/// Called for each Peer
+			virtual void visit(const Peer* p) = 0;
+		};
 		
-		CItr beginPeerList() const {return peer_list.begin();}
-		CItr endPeerList() const {return peer_list.end();}
+		/// Visit all peers
+		void visit(PeerVisitor & visitor);
 		
 		/// Is PEX eanbled
-		bool isPexEnabled() const {return pex_on;}
+		bool isPexEnabled() const;
 		
 		/// Enable or disable PEX
 		void setPexEnabled(bool on);
@@ -266,6 +262,13 @@ namespace bt
 		
 		/// Set the piece handler
 		void setPieceHandler(PieceHandler* ph);
+		
+		/// Enable or disable super seeding
+		void setSuperSeeding(bool on,const BitSet & chunks);
+		
+		/// Send a have message to all peers
+		void sendHave(Uint32 index);
+		
 	public slots:
 		/**
 		 * A PeerSource, has new potential peers.
@@ -274,10 +277,7 @@ namespace bt
 		void peerSourceReady(PeerSource* ps);
 		
 	private:
-		void updateAvailableChunks();
-		bool killBadPeer();
-		void createPeer(mse::StreamSocket* sock,const PeerID & peer_id,Uint32 support,bool local);
-		bool connectedTo(const QString & ip,Uint16 port) const;
+		virtual void allowChunk(PeerInterface* peer, Uint32 chunk);
 
 	private slots:
 		void onResolverResults(KNetwork::KResolverResults res);
@@ -285,30 +285,14 @@ namespace bt
 	signals:
 		void newPeer(Peer* p);
 		void peerKilled(Peer* p);
-		void stopped();
 		
 	private:
-		PtrMap<Uint32,Peer> peer_map;
-		QList<Peer*> peer_list;
-		QList<Peer*> killed;
-		Torrent & tor;
-		bool started;
-		BitSet available_chunks, wanted_chunks;
-		ChunkCounter* cnt;
-		Uint32 num_pending;
-		bool pex_on;
-		bool wanted_changed;
-		PieceHandler* piece_handler;
-		bool paused;
-		QSet<PeerConnector*> connectors;
+		class Private;
+		Private* d;
 		
 		static Uint32 max_connections;
 		static Uint32 max_total_connections;
 		static Uint32 total_connections;
-		
-		std::multimap<QString,PotentialPeer> potential_peers;
-		
-		typedef std::multimap<QString,PotentialPeer>::iterator PPItr;
 	};
 
 }

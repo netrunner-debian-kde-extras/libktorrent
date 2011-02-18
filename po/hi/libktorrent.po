@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-05 10:08+0100\n"
+"POT-Creation-Date: 2011-02-02 03:19+0100\n"
 "PO-Revision-Date: 2008-03-30 16:43+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@yahoo.com>\n"
 "Language-Team: Hindi <indlinux-hindi@lists.sourceforge.net>\n"
@@ -16,6 +16,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: KBabel 1.11.4\n"
+
+#: examples/ktcli/main.cpp:60
+#, fuzzy
+#| msgid "Document to open"
+msgid "Torrent to open"
+msgstr "दस्तावेज़ जिसे खोलना है"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+#, fuzzy
+#| msgid "Notice"
+msgid "Port to use"
+msgstr "सूचना"
+
+#: examples/ktcli/main.cpp:63
+msgid "Whether or not to enable encryption"
+msgstr ""
+
+#: examples/ktcli/main.cpp:64
+msgid "Whether or not to enable peer exchange"
+msgstr ""
+
+#: examples/ktcli/main.cpp:65
+msgid "Whether or not to use utp"
+msgstr ""
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr ""
 
 #: src/bcodec/bdecoder.cpp:62
 #, kde-format
@@ -41,25 +69,40 @@ msgstr ""
 msgid "Torrent is incomplete."
 msgstr "केटोरेंट"
 
-#: src/datachecker/singledatachecker.cpp:49
+#: src/datachecker/datacheckerjob.cpp:82
+msgid "Waiting for other data checks to finish"
+msgstr ""
+
+#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:92
+msgid "Checking data"
+msgstr ""
+
+#: src/datachecker/datacheckerjob.cpp:141
+msgid "Checking Data"
+msgstr ""
+
+#: src/datachecker/multidatachecker.cpp:209
+#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
+#: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
+#: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
+#, kde-format
+msgid "Cannot open file %1: %2"
+msgstr ""
+
+#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
+#: src/util/fileops.cpp:396
 #, fuzzy, kde-format
 #| msgid "Cannot create %1: %2"
-msgid "Cannot open file : %1 : %2"
+msgid "Cannot open %1: %2"
 msgstr "बना नहीं सकता %1: %2"
 
-#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:325
-#: src/util/fileops.cpp:367
-#, kde-format
-msgid "Cannot open %1 : %2"
-msgstr ""
-
 #: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
-#: src/diskio/cachefile.cpp:419 src/diskio/cachefile.cpp:487
+#: src/diskio/cachefile.cpp:412 src/diskio/cachefile.cpp:480
 #, kde-format
-msgid "Cannot open %1 for writing : readonly filesystem"
+msgid "Cannot open %1 for writing: readonly filesystem"
 msgstr ""
 
-#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:425
+#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:418
 #, kde-format
 msgid "Attempting to write beyond the maximum size of %1"
 msgstr ""
@@ -67,160 +110,192 @@ msgstr ""
 #: src/diskio/cachefile.cpp:255
 #, kde-format
 msgid ""
-"Cannot expand file %1 : attempting to grow the file beyond the maximum size"
+"Cannot expand file %1: attempting to grow the file beyond the maximum size"
 msgstr ""
 
 #: src/diskio/cachefile.cpp:259
 #, fuzzy, kde-format
 #| msgid "Cannot create %1: %2"
-msgid "Cannot expand file %1 : %2"
+msgid "Cannot expand file %1: %2"
 msgstr "बना नहीं सकता %1: %2"
 
-#: src/diskio/cachefile.cpp:385
+#: src/diskio/cachefile.cpp:378
 #, kde-format
-msgid "Error : Reading past the end of the file %1"
+msgid "Error: Reading past the end of the file %1"
 msgstr ""
 
-#: src/diskio/cachefile.cpp:390 src/diskio/cachefile.cpp:437
-#, kde-format
-msgid "Failed to seek file %1 : %2"
-msgstr ""
+#: src/diskio/cachefile.cpp:383 src/diskio/cachefile.cpp:430
+#, fuzzy, kde-format
+#| msgid "Cannot create %1: %2"
+msgid "Failed to seek file %1: %2"
+msgstr "बना नहीं सकता %1: %2"
 
-#: src/diskio/cachefile.cpp:398
+#: src/diskio/cachefile.cpp:391
 #, kde-format
 msgid "Error reading from %1"
 msgstr "%1 से पढ़ने में त्रुटि"
 
-#: src/diskio/cachefile.cpp:441
-#, kde-format
-msgid "Failed to write to file %1 : %2"
-msgstr ""
-
-#: src/diskio/cachefile.cpp:508
+#: src/diskio/cachefile.cpp:434
 #, fuzzy, kde-format
 #| msgid "Cannot create %1: %2"
-msgid "Cannot preallocate diskspace : %1"
+msgid "Failed to write to file %1: %2"
 msgstr "बना नहीं सकता %1: %2"
 
-#: src/diskio/chunkmanager.cpp:207 src/diskio/chunkmanager.cpp:322
+#: src/diskio/cachefile.cpp:501
 #, fuzzy, kde-format
 #| msgid "Cannot create %1: %2"
-msgid "Cannot open index file %1 : %2"
+msgid "Cannot preallocate diskspace: %1"
+msgstr "बना नहीं सकता %1: %2"
+
+#: src/diskio/chunkmanager.cpp:933 src/diskio/chunkmanager.cpp:959
+#, fuzzy, kde-format
+#| msgid "Cannot create %1: %2"
+msgid "Cannot open index file %1: %2"
 msgstr "बना नहीं सकता %1: %2"
 
 #: src/diskio/dndfile.cpp:89
 #, fuzzy, kde-format
 #| msgid "Cannot create %1: %2"
-msgid "Cannot create file %1 : %2"
+msgid "Cannot create file %1: %2"
 msgstr "बना नहीं सकता %1: %2"
 
 #: src/diskio/dndfile.cpp:137
 #, kde-format
-msgid "Failed to write first chunk to DND file : %1"
+msgid "Failed to write first chunk to DND file: %1"
 msgstr ""
 
 #: src/diskio/dndfile.cpp:155
 #, kde-format
-msgid "Failed to write last chunk to DND file : %1"
+msgid "Failed to write last chunk to DND file: %1"
 msgstr ""
 
-#: src/diskio/multifilecache.cpp:107 src/diskio/singlefilecache.cpp:72
-#, fuzzy, kde-format
-#| msgid "Cannot create %1: %2"
-msgid "Failed to open %1 : %2"
-msgstr "बना नहीं सकता %1: %2"
-
-#: src/diskio/multifilecache.cpp:134 src/diskio/singlefilecache.cpp:83
-#, kde-format
-msgid "Failed to create %1 : %2"
+#: src/diskio/movedatafilesjob.cpp:140
+msgid "Waiting for other move jobs to finish"
 msgstr ""
 
-#: src/diskio/multifilecache.cpp:725 src/diskio/multifilecache.cpp:764
+#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+#, fuzzy
+#| msgid "Add Folder"
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr "फ़ोल्डर जोड़ें"
+
+#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+#, fuzzy
+#| msgid "Encryption"
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr "एनक्रिप्शन"
+
+#: src/diskio/movedatafilesjob.cpp:180
+msgctxt "@title job"
+msgid "Moving"
+msgstr ""
+
+#: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, fuzzy, kde-format
 #| msgid "Cannot create %1: %2"
-msgid "Cannot open file %1 : %2"
+msgid "Failed to open %1: %2"
 msgstr "बना नहीं सकता %1: %2"
 
-#: src/download/chunkdownload.cpp:373
+#: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
+#, fuzzy, kde-format
+#| msgid "Cannot create %1: %2"
+msgid "Failed to create %1: %2"
+msgstr "बना नहीं सकता %1: %2"
+
+#: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
+msgid "Unable to write to a piece mapped read only"
+msgstr ""
+
+#: src/download/chunkdownload.cpp:382
 #, kde-format
 msgid "1 peer"
 msgid_plural "%1 peers"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:49
-#: src/download/webseed.cpp:93
+#: src/download/downloader.cpp:810
+msgid "Disabled because webseed does not match torrent"
+msgstr ""
+
+#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
+#: src/download/webseed.cpp:98
 #, fuzzy
 #| msgid "Connections"
 msgid "Not connected"
 msgstr "कनेक्शन्स"
 
-#: src/download/httpconnection.cpp:103
+#: src/download/httpconnection.cpp:107
 #, kde-format
 msgid "Resolving proxy %1:%2"
 msgstr ""
 
-#: src/download/httpconnection.cpp:112
+#: src/download/httpconnection.cpp:116
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr ""
 
-#: src/download/httpconnection.cpp:125 src/download/webseed.cpp:321
+#: src/download/httpconnection.cpp:129 src/download/webseed.cpp:336
 #, fuzzy
 #| msgid "Connections"
 msgid "Connection closed"
 msgstr "कनेक्शन्स"
 
-#: src/download/httpconnection.cpp:132
+#: src/download/httpconnection.cpp:136
 #, kde-format
 msgid "Error: request failed: %1"
 msgstr ""
 
-#: src/download/httpconnection.cpp:149 src/download/httpconnection.cpp:213
+#: src/download/httpconnection.cpp:153 src/download/httpconnection.cpp:217
 #, fuzzy
 #| msgid "Connections"
 msgid "Connected"
 msgstr "कनेक्शन्स"
 
-#: src/download/httpconnection.cpp:155
+#: src/download/httpconnection.cpp:159
 msgid "Error: Failed to connect to webseed"
 msgstr ""
 
-#: src/download/httpconnection.cpp:220
+#: src/download/httpconnection.cpp:224
 #, fuzzy
 #| msgid "Connections"
 msgid "Connecting"
 msgstr "कनेक्शन्स"
 
-#: src/download/httpconnection.cpp:231
+#: src/download/httpconnection.cpp:235
 msgid "Failed to connect to webseed"
 msgstr ""
 
-#: src/download/httpconnection.cpp:238
+#: src/download/httpconnection.cpp:242
 msgid "Failed to resolve hostname of webseed"
 msgstr ""
 
-#: src/download/httpconnection.cpp:318
+#: src/download/httpconnection.cpp:322
 msgid "Error: failed to connect, server not responding"
 msgstr ""
 
-#: src/download/httpconnection.cpp:327
+#: src/download/httpconnection.cpp:333
 msgid "Error: request timed out"
 msgstr ""
 
-#: src/download/httpconnection.cpp:391
+#: src/download/httpconnection.cpp:398
 msgid "Redirected without a new location."
 msgstr ""
 
-#: src/download/webseed.cpp:303 src/download/webseed.cpp:517
-#, fuzzy
-#| msgid "Notice"
-msgid "Not in use"
-msgstr "सूचना"
+#: src/download/webseed.cpp:544
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr ""
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr "ठीक"
+
+#: src/interfaces/trackerinterface.cpp:58
+#, kde-format
+msgid "Warning: %1"
+msgstr ""
 
 #: src/interfaces/trackerinterface.cpp:59
 #, fuzzy
@@ -228,7 +303,7 @@ msgstr "ठीक"
 msgid "Announcing"
 msgstr "कनेक्शन्स"
 
-#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:85
+#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:86
 #, fuzzy, kde-format
 #| msgid "Error: "
 msgid "Error: %1"
@@ -243,28 +318,57 @@ msgstr "डिरेक्ट्री %1 मौजूद नहीं है"
 msgid "Unknown client"
 msgstr "अज्ञात क्लाएंट"
 
-#: src/torrent/torrent.cpp:92 src/torrent/torrent.cpp:166
-#: src/torrent/torrent.cpp:194 src/torrent/torrent.cpp:201
-#: src/torrent/torrent.cpp:209 src/torrent/torrent.cpp:213
-#: src/torrent/torrent.cpp:234 src/torrent/torrent.cpp:305
+#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
+#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
+#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
+#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
 #, fuzzy
 #| msgid "KTorrent"
 msgid "Corrupted torrent."
 msgstr "केटोरेंट"
 
-#: src/torrent/torrent.cpp:157
-#, kde-format
-msgid " Unable to open torrent file %1 : %2"
-msgstr ""
+#: src/torrent/torrent.cpp:165
+#, fuzzy, kde-format
+#| msgid "Cannot create %1: %2"
+msgid "Unable to open torrent file %1: %2"
+msgstr "बना नहीं सकता %1: %2"
 
-#: src/torrent/torrent.cpp:287
+#: src/torrent/torrent.cpp:295
 msgid "Parse Error"
 msgstr "व्याख्या त्रुटि"
 
-#: src/torrent/torrentcreator.cpp:124 src/torrent/torrentcreator.cpp:255
-#: src/torrent/torrentcreator.cpp:292
+#: src/torrent/torrentcontrol.cpp:308
+msgid "Error writing to disk, do you have enough diskspace?"
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:545
 #, kde-format
-msgid "Cannot open file %1: %2"
+msgid ""
+"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
+"torrent is probably corrupt or is not a valid torrent file."
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:575
+#, kde-format
+msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:586
+#, fuzzy, kde-format
+#| msgid "Cannot create %1: %2"
+msgid "Unable to create %1: %2"
+msgstr "बना नहीं सकता %1: %2"
+
+#: src/torrent/torrentcontrol.cpp:601
+#, kde-format
+msgid ""
+"You are already downloading the torrent <b>%1</b>. The tracker lists from "
+"both torrents have been merged."
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:606
+#, kde-format
+msgid "You are already downloading the torrent <b>%1</b>."
 msgstr ""
 
 #: src/torrent/torrentcreator.cpp:361
@@ -273,105 +377,75 @@ msgstr ""
 msgid "Cannot create index file: %1"
 msgstr "बना नहीं सकता %1: %2"
 
-#: src/torrent/torrentstats.cpp:71
+#: src/torrent/torrentstats.cpp:72
 msgid "Not started"
 msgstr "प्रारंभ नहीं हुआ"
 
-#: src/torrent/torrentstats.cpp:73
+#: src/torrent/torrentstats.cpp:74
 #, fuzzy
 #| msgid "Downloaded"
 msgid "Download completed"
 msgstr "डाउनलोडेड"
 
-#: src/torrent/torrentstats.cpp:75
+#: src/torrent/torrentstats.cpp:76
 msgid "Seeding completed"
 msgstr ""
 
-#: src/torrent/torrentstats.cpp:77
+#: src/torrent/torrentstats.cpp:78
 #, fuzzy
 #| msgid "Speed"
 msgctxt "Status of a torrent file"
 msgid "Seeding"
 msgstr "गति"
 
-#: src/torrent/torrentstats.cpp:79
+#: src/torrent/torrentstats.cpp:80
 msgid "Downloading"
 msgstr "डाउनलोड किया जा रहा है"
 
-#: src/torrent/torrentstats.cpp:81
+#: src/torrent/torrentstats.cpp:82
 msgid "Stalled"
 msgstr "रुका हुआ"
 
-#: src/torrent/torrentstats.cpp:83
+#: src/torrent/torrentstats.cpp:84
 msgid "Stopped"
 msgstr "रुक गया"
 
-#: src/torrent/torrentstats.cpp:87
+#: src/torrent/torrentstats.cpp:88
 msgid "Allocating diskspace"
 msgstr ""
 
-#: src/torrent/torrentstats.cpp:89
+#: src/torrent/torrentstats.cpp:90
 #, fuzzy
 #| msgid "Downloading"
 msgid "Queued for seeding"
 msgstr "डाउनलोड किया जा रहा है"
 
-#: src/torrent/torrentstats.cpp:89
+#: src/torrent/torrentstats.cpp:90
 #, fuzzy
 #| msgid "Downloading"
 msgid "Queued for downloading"
 msgstr "डाउनलोड किया जा रहा है"
 
-#: src/torrent/torrentstats.cpp:91
-msgid "Checking data"
-msgstr ""
-
-#: src/torrent/torrentstats.cpp:93
+#: src/torrent/torrentstats.cpp:94
 msgid "Stopped. No space left on device."
 msgstr ""
 
-#: src/torrent/torrentstats.cpp:95
+#: src/torrent/torrentstats.cpp:96
 msgid "Paused"
 msgstr "ठहरा"
 
-#: src/torrent/torrentcontrol.cpp:533
-#, kde-format
-msgid ""
-"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
-"torrent is probably corrupt or is not a valid torrent file."
-msgstr ""
+#: src/torrent/torrentstats.cpp:98
+#, fuzzy
+#| msgid "Speed"
+msgid "Superseeding"
+msgstr "गति"
 
-#: src/torrent/torrentcontrol.cpp:563
-#, kde-format
-msgid ""
-"An error occurred while loading the torrent:<br/><b>%1</b><br/>The torrent "
-"is probably corrupt or is not a valid torrent file."
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:575
-#, fuzzy, kde-format
-#| msgid "Cannot create %1: %2"
-msgid "Unable to create %1 : %2"
-msgstr "बना नहीं सकता %1: %2"
-
-#: src/torrent/torrentcontrol.cpp:590
-#, kde-format
-msgid ""
-"You are already downloading the torrent <b>%1</b>. The tracker lists from "
-"both torrents have been merged."
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:595
-#, kde-format
-msgid "You are already downloading the torrent <b>%1</b>."
-msgstr ""
-
-#: src/tracker/httpannouncejob.cpp:140
+#: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr ""
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:454
+#: src/tracker/httptracker.cpp:462
 msgid "Invalid response from tracker"
 msgstr ""
 
@@ -381,102 +455,132 @@ msgstr ""
 msgid "Invalid data from tracker"
 msgstr "अवैध यूआरएल: %1"
 
-#: src/tracker/httptracker.cpp:471
+#: src/tracker/httptracker.cpp:479
 #, fuzzy
 #| msgid "Invalid URL: %1"
 msgid "Invalid tracker URL"
 msgstr "अवैध यूआरएल: %1"
 
-#: src/tracker/httptracker.cpp:549 src/tracker/udptracker.cpp:371
-#: src/tracker/udptracker.cpp:381
+#: src/tracker/httptracker.cpp:557 src/tracker/udptracker.cpp:372
+#: src/tracker/udptracker.cpp:382
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr ""
 
-#: src/tracker/udptracker.cpp:408
+#: src/tracker/udptracker.cpp:409
 #, kde-format
 msgid "Unable to resolve hostname %1"
 msgstr ""
 
-#: src/util/file.cpp:83
+#: src/upnp/httprequest.cpp:96
+#, fuzzy
+#| msgid "Connections"
+msgid "Connection closed unexpectedly"
+msgstr "कनेक्शन्स"
+
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:167
 #, fuzzy, kde-format
 #| msgid "Cannot create %1: %2"
-msgid "Cannot write to %1 : %2"
+msgid "Failed to download %1: %2"
 msgstr "बना नहीं सकता %1: %2"
 
-#: src/util/file.cpp:97
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:216
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:314
+msgid "Cannot find port forwarding service in the device's description."
+msgstr ""
+
+#: src/util/file.cpp:84
+#, fuzzy, kde-format
+#| msgid "Cannot create %1: %2"
+msgid "Cannot write to %1: %2"
+msgstr "बना नहीं सकता %1: %2"
+
+#: src/util/file.cpp:98
 #, fuzzy, kde-format
 #| msgid "Cannot create %1: %2"
 msgid "Cannot read from %1"
 msgstr "बना नहीं सकता %1: %2"
 
-#: src/util/fileops.cpp:92
+#: src/util/fileops.cpp:94
 #, fuzzy, kde-format
 #| msgid "Cannot create %1: %2"
 msgid "Cannot create directory %1"
 msgstr "बना नहीं सकता %1: %2"
 
-#: src/util/fileops.cpp:133
+#: src/util/fileops.cpp:161
 #, fuzzy, kde-format
 #| msgid "Cannot create %1: %2"
 msgid "Cannot symlink %1 to %2: %3"
 msgstr "बना नहीं सकता %1: %2"
 
-#: src/util/fileops.cpp:150
+#: src/util/fileops.cpp:178
 #, fuzzy, kde-format
 #| msgid "Cannot create %1: %2"
 msgid "Cannot move %1 to %2: %3"
 msgstr "बना नहीं सकता %1: %2"
 
-#: src/util/fileops.cpp:166 src/util/fileops.cpp:182
+#: src/util/fileops.cpp:194 src/util/fileops.cpp:210
 #, fuzzy, kde-format
 #| msgid "Cannot create %1: %2"
 msgid "Cannot copy %1 to %2: %3"
 msgstr "बना नहीं सकता %1: %2"
 
-#: src/util/fileops.cpp:247
+#: src/util/fileops.cpp:275
 #, fuzzy, kde-format
 #| msgid "Cannot create %1: %2"
 msgid "Cannot delete %1: %2"
 msgstr "बना नहीं सकता %1: %2"
 
-#: src/util/fileops.cpp:264
+#: src/util/fileops.cpp:293
 #, kde-format
 msgid "Cannot create %1: %2"
 msgstr "बना नहीं सकता %1: %2"
 
-#: src/util/fileops.cpp:282
+#: src/util/fileops.cpp:311
 #, fuzzy, kde-format
 #| msgid "Cannot create %1: %2"
 msgid "Cannot calculate the filesize of %1: %2"
 msgstr "बना नहीं सकता %1: %2"
 
-#: src/util/fileops.cpp:298
+#: src/util/fileops.cpp:327
 #, fuzzy, kde-format
 #| msgid "Cannot create %1: %2"
-msgid "Cannot calculate the filesize : %1"
+msgid "Cannot calculate the filesize: %1"
 msgstr "बना नहीं सकता %1: %2"
 
-#: src/util/fileops.cpp:346 src/util/fileops.cpp:352 src/util/fileops.cpp:355
-#: src/util/fileops.cpp:358
+#: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
+#: src/util/fileops.cpp:387
 #, fuzzy, kde-format
 #| msgid "Cannot create %1: %2"
 msgid "Cannot expand file: %1"
 msgstr "बना नहीं सकता %1: %2"
 
-#: src/util/fileops.cpp:388
+#: src/util/fileops.cpp:417
 #, fuzzy, kde-format
 #| msgid "Cannot create %1: %2"
-msgid "Cannot seek in file : %1"
+msgid "Cannot seek in file: %1"
 msgstr "बना नहीं सकता %1: %2"
 
-#: src/util/functions.cpp:263
+#: src/util/functions.cpp:280
 #, fuzzy, kde-format
 #| msgid "%1 %"
 msgid "%1/s"
 msgstr "%1 %"
 
-#: src/util/functions.cpp:274
+#: src/util/functions.cpp:291
 #, fuzzy, kde-format
 #| msgid "Day:"
 msgid "1 day "
@@ -508,15 +612,20 @@ msgstr ""
 msgid "µTP"
 msgstr ""
 
+#: src/util/signalcatcher.cpp:57
+msgid "Error when writing to disk"
+msgstr ""
+
+#: src/util/signalcatcher.cpp:57
 #, fuzzy
-#~| msgid "Cannot create %1: %2"
-#~ msgid "Cannot open log file %1 : %2"
-#~ msgstr "बना नहीं सकता %1: %2"
+#| msgid "Error reading from %1"
+msgid "Error when reading from disk"
+msgstr "%1 से पढ़ने में त्रुटि"
 
 #, fuzzy
-#~| msgid "Speed"
-#~ msgid "Superseeding"
-#~ msgstr "गति"
+#~| msgid "Notice"
+#~ msgid "Not in use"
+#~ msgstr "सूचना"
 
 #, fuzzy
 #~| msgid "Free disk space:"
@@ -524,29 +633,14 @@ msgstr ""
 #~ msgstr "डिस्क में खाली जगहः"
 
 #, fuzzy
-#~| msgid "Error reading from %1"
-#~ msgid "Error when reading from disk"
-#~ msgstr "%1 से पढ़ने में त्रुटि"
-
-#, fuzzy
 #~| msgid "Cannot create %1: %2"
-#~ msgid "Failed to download %1 : %2"
+#~ msgid "Cannot open file : %1 : %2"
 #~ msgstr "बना नहीं सकता %1: %2"
 
 #, fuzzy
-#~| msgid "Connections"
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "कनेक्शन्स"
-
-#, fuzzy
-#~| msgid "Document to open"
-#~ msgid "Torrent to open"
-#~ msgstr "दस्तावेज़ जिसे खोलना है"
-
-#, fuzzy
-#~| msgid "Notice"
-#~ msgid "Port to use"
-#~ msgstr "सूचना"
+#~| msgid "Cannot create %1: %2"
+#~ msgid "Cannot open log file %1 : %2"
+#~ msgstr "बना नहीं सकता %1: %2"
 
 #, fuzzy
 #~| msgid "UDP"
@@ -1687,11 +1781,6 @@ msgstr ""
 #~ msgstr "सर्वरः"
 
 #, fuzzy
-#~| msgid "Encryption"
-#~ msgid "Destination"
-#~ msgstr "एनक्रिप्शन"
-
-#, fuzzy
 #~| msgid "Add"
 #~ msgid "Add CC:"
 #~ msgstr "जोड़ें"
@@ -2191,11 +2280,6 @@ msgstr ""
 #~| msgid "Remove Group"
 #~ msgid "Remove Expression"
 #~ msgstr "समूह हटाएँ"
-
-#, fuzzy
-#~| msgid "Add Folder"
-#~ msgid "Add Source"
-#~ msgstr "फ़ोल्डर जोड़ें"
 
 #, fuzzy
 #~| msgid "Remove Group"

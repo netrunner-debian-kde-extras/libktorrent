@@ -48,6 +48,14 @@ namespace bt
 		 */
 		TorrentFileInterface(Uint32 index,const QString & path,Uint64 size);
 		virtual ~TorrentFileInterface();
+		
+		enum FileType
+		{
+			UNKNOWN,
+			AUDIO,
+			VIDEO,
+			NORMAL
+		};
 
 		/// Get the index of the file
 		Uint32 getIndex() const {return index;}
@@ -78,6 +86,12 @@ namespace bt
 				
 		/// Get the last chunk of the file
 		Uint32 getLastChunk() const {return last_chunk;}
+		
+		/// Get the offset at which the file starts in the first chunk
+		Uint64 getFirstChunkOffset() const {return first_chunk_off;}
+		
+		/// Get how many bytes the files takes up of the last chunk
+		Uint64 getLastChunkSize() const {return last_chunk_size;}
 
 		/// See if the TorrentFile is null.
 		bool isNull() const {return path.isNull();}
@@ -121,6 +135,12 @@ namespace bt
 		/// Change the text codec
 		void changeTextCodec(QTextCodec* codec);
 		
+		/// Is this a video
+		bool isVideo() const {return filetype == VIDEO;}
+		
+		/// Is this an audio file
+		bool isAudio() const {return filetype == AUDIO;}
+		
 	protected:
 		Uint32 index;
 		QString path;
@@ -135,6 +155,9 @@ namespace bt
 		bool emit_status_changed;
 		bool preview;
 		QList<QByteArray> unencoded_path;
+		Uint64 first_chunk_off;
+		Uint64 last_chunk_size;
+		mutable FileType filetype;
 	};
 
 }

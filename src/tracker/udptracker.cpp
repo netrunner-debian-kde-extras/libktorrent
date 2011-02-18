@@ -52,6 +52,7 @@ namespace bt
 		interval = 0;
 		scrape_transaction_id = 0;
 		todo = NOTHING;
+		failures = 0;
 		
 		conn_timer.setSingleShot(true);
 		connect(&conn_timer,SIGNAL(timeout()),this,SLOT(onConnTimeout()));
@@ -386,7 +387,7 @@ namespace bt
 	{
 		if (res.count() > 0)
 		{
-			address = res.front().address();
+			address = res.front().address().asInet();
 			resolved = true;
 			// continue doing request
 			if (connection_id == 0)

@@ -23,6 +23,7 @@
 #include <util/file.h>
 #include <util/log.h>
 #include <util/array.h>
+#include <util/error.h>
 #include <diskio/chunk.h>
 #include <diskio/piecedata.h>
 #include <download/piece.h>
@@ -78,12 +79,7 @@ namespace bt
 		
 		pieces = BitSet(num);
 		pieces.clear();
-		piece_data = new PieceDataPtr[num]; // array of pointers to the piece data
-		
-		for (Uint32 i = 0;i < num;i++)
-		{
-			piece_data[i] = 0;
-		}
+		piece_data = new PieceData::Ptr[num]; // array of pointers to the piece data
 		
 		dstatus.setAutoDelete(true);
 
@@ -110,12 +106,11 @@ namespace bt
 		if (ds)
 			ds->remove(pp);
 		
-		PieceDataPtr buf = chunk->getPiece(p.getOffset(),p.getLength(),false);
-		if (buf)
-		{ 
+		PieceData::Ptr buf = chunk->getPiece(p.getOffset(),p.getLength(),false);
+		if (buf && buf->write(p.getData(),p.getLength()) == p.getLength())
+		{
 			piece_data[pp] = buf;
 			ok = true;
-			memcpy(buf->data(),p.getData(),p.getLength());	
 			pieces.set(pp,true);
 			piece_providers.insert(p.getPieceDownloader());
 			num_downloaded++;
@@ -165,6 +160,20 @@ namespace bt
 		sendRequests();
 		return true;
 	}
+	
+	void ChunkDownload::release(PieceDownloader* pd)
+	{
+		if (!pdown.contains(pd))
+			return;
+		
+		pd->release();
+		sendCancels(pd);
+		disconnect(pd,SIGNAL(timedout(const bt::Request& )),this,SLOT(onTimeout(const bt::Request& )));
+		disconnect(pd,SIGNAL(rejected( const bt::Request& )),this,SLOT(onRejected( const bt::Request& )));
+		dstatus.erase(pd);
+		pdown.removeAll(pd);
+	}
+
 	
 	void ChunkDownload::notDownloaded(const Request & r,bool reject)
 	{
@@ -399,7 +408,7 @@ namespace bt
 		// save how many PieceHeader structs are to be written
 		Uint32 num_pieces_to_follow = 0;
 		for (Uint32 i = 0;i < hdr.num_bits;i++)
-			if (piece_data[i])
+			if (piece_data[i] && piece_data[i]->ok())
 				num_pieces_to_follow++;
 		
 		file.write(&num_pieces_to_follow,sizeof(Uint32));
@@ -407,10 +416,10 @@ namespace bt
 		// save all buffered pieces
 		for (Uint32 i = 0;i < hdr.num_bits;i++)
 		{
-			if (!piece_data[i])
+			if (!piece_data[i] || !piece_data[i]->ok())
 				continue;
 			
-			PieceDataPtr pd = piece_data[i];
+			PieceData::Ptr pd = piece_data[i];
 			PieceHeader phdr;
 			phdr.piece = i;
 			phdr.size = pd->length();
@@ -418,7 +427,7 @@ namespace bt
 			file.write(&phdr,sizeof(PieceHeader));
 			if (!pd->mapped()) // buffered pieces need to be saved
 			{
-				file.write(pd->data(),pd->length());
+				pd->writeToFile(file,pd->length());
 			}
 		}
 	}
@@ -447,13 +456,13 @@ namespace bt
 			if (phdr.piece >= num)
 				return false;
 			
-			PieceDataPtr p = chunk->getPiece(phdr.piece * MAX_PIECE_LEN,phdr.size,false);
+			PieceData::Ptr p = chunk->getPiece(phdr.piece * MAX_PIECE_LEN,phdr.size,false);
 			if (!p)
 				return false;
 			
 			if (!phdr.mapped)
 			{
-				if (file.read(p->data(),p->length()) != p->length())
+				if (p->readFromFile(file,p->length()) != p->length())
 				{
 					return false;
 				}
@@ -544,15 +553,14 @@ namespace bt
 		
 		for (Uint32 i = num_pieces_in_hash;i < nn;i++)
 		{
-			PieceDataPtr piece = piece_data[i];
+			PieceData::Ptr piece = piece_data[i];
 			Uint32 len = i == num - 1 ? last_size : MAX_PIECE_LEN;
 			if (!piece)
 				piece = chunk->getPiece(i*MAX_PIECE_LEN,len,true);
 			
-			piece_data[i] = 0;
-			if (piece)
+			if (piece && piece->ok())
 			{
-				hash_gen.update(piece->data(),len);
+				piece->updateHash(hash_gen);
 				chunk->savePiece(piece);
 			}
 		}

@@ -44,15 +44,6 @@ namespace bt
 	*/
 	class KTORRENT_EXPORT SHA1HashGen
 	{
-		Uint32 h0;
-		Uint32 h1;
-		Uint32 h2;
-		Uint32 h3;
-		Uint32 h4;
-		Uint8 tmp[64];
-		Uint32 tmp_len;
-		Uint32 total_len;
-		QCA::Hash* hash;
 	public:
 		SHA1HashGen();
 		~SHA1HashGen();
@@ -88,8 +79,10 @@ namespace bt
 		 * Get the hash generated.
 		 */
 		SHA1Hash get() const;
+		
 	private:
-		void processChunk(const Uint8* c);
+		QCA::Hash* h;
+		Uint8 result[20];
 	};
 
 }

@@ -29,15 +29,15 @@ namespace bt
 {
 
 	Authenticate::Authenticate(const QString & ip,Uint16 port,TransportProtocol proto,
-							   const SHA1Hash & info_hash,const PeerID & peer_id,PeerConnector* pcon) 
+							   const SHA1Hash & info_hash,const PeerID & peer_id,PeerConnector::WPtr pcon) 
 	: info_hash(info_hash),our_peer_id(peer_id),pcon(pcon),socks(0)
 	{
 		finished = succes = false;
 		net::Address addr(ip,port);
 		if (proto == TCP)
-			sock = new mse::StreamSocket(addr.ipVersion());
+			sock = mse::StreamSocket::Ptr(new mse::StreamSocket(addr.ipVersion()));
 		else
-			sock = new mse::StreamSocket(new utp::UTPSocket());
+			sock = mse::StreamSocket::Ptr(new mse::StreamSocket(new utp::UTPSocket()));
 		
 		host = ip;
 		this->port = port;
@@ -158,13 +158,12 @@ namespace bt
 		this->succes = succes;
 		
 		if (!succes)
-		{
-			sock->deleteLater();
-			sock = 0;
-		}
+			sock.clear();
+		
 		timer.stop();
-		if (pcon)
-			pcon->authenticationFinished(this,succes);
+		PeerConnector::Ptr pc = pcon.toStrongRef();
+		if (pc)
+			pc->authenticationFinished(this,succes);
 	}
 	
 	void Authenticate::handshakeReceived(bool full)
@@ -202,14 +201,6 @@ namespace bt
 			// only finish when the handshake was fully received
 			onFinish(true);
 		}
-	}
-
-
-	mse::StreamSocket* Authenticate::takeSocket()
-	{
-		mse::StreamSocket* s = sock;
-		sock = 0;
-		return s;
 	}
 	
 	void Authenticate::stop()

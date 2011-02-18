@@ -46,6 +46,7 @@ namespace bt
 		this->file = file;
 		if (fptr)
 			close();
+		
 #ifdef HAVE_FOPEN64
 		fptr = fopen64(QFile::encodeName(file),mode.toAscii().constData());
 #else
@@ -80,7 +81,7 @@ namespace bt
 			if (errno == ENOSPC)
 				Out(SYS_DIO|LOG_IMPORTANT) << "Disk full !" << endl;
 			
-			throw Error(i18n("Cannot write to %1 : %2",file,strerror(errno)));
+			throw Error(i18n("Cannot write to %1: %2",file,strerror(errno)));
 		}
 		return ret;
 	}

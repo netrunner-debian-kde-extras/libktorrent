@@ -59,7 +59,8 @@ using namespace bt;
 namespace net
 {
 
-	Socket::Socket(int fd,int ip_version) : m_fd(fd),m_ip_version(ip_version),r_poll_index(-1),w_poll_index(-1)
+	Socket::Socket(int fd,int ip_version) 
+		: SocketDevice(bt::TCP), m_fd(fd),m_ip_version(ip_version),r_poll_index(-1),w_poll_index(-1)
 	{
 		// check if the IP version is 4 or 6
 		if (m_ip_version != 4 && m_ip_version != 6)
@@ -75,7 +76,8 @@ namespace net
 		cacheAddress();
 	}
 	
-	Socket::Socket(bool tcp,int ip_version) : m_fd(-1),m_ip_version(ip_version),r_poll_index(-1),w_poll_index(-1)
+	Socket::Socket(bool tcp,int ip_version) 
+		: SocketDevice(bt::TCP),m_fd(-1),m_ip_version(ip_version),r_poll_index(-1),w_poll_index(-1)
 	{
 		// check if the IP version is 4 or 6
 		if (m_ip_version != 4 && m_ip_version != 6)
@@ -183,7 +185,7 @@ namespace net
 	
 	bool Socket::bind(const QString & ip,Uint16 port,bool also_listen)
 	{
-		int val = 1, no = 0;
+		int val = 1;
 #ifndef Q_WS_WIN
 		if (setsockopt(m_fd,SOL_SOCKET,SO_REUSEADDR,&val,sizeof(int)) < 0)
 #else
@@ -192,10 +194,6 @@ namespace net
 		{
 			Out(SYS_CON|LOG_NOTICE) << QString("Failed to set the reuseaddr option : %1").arg(strerror(errno)) << endl;
 		}
-		// Bind this socket to IPv4 as well. This is a workaround for systems
-		// which support IPv4-mapped addresses but have them disabled by
-		// default (e.g. net.ipv6.bindv6only=1 on Debian Linux).
-		setsockopt(m_fd,SOL_IPV6,IPV6_V6ONLY,&no,sizeof(no));
 
 		net::Address addr(ip,port);
 		if (::bind(m_fd,addr.address(),addr.length()) != 0)
@@ -225,11 +223,7 @@ namespace net
 		{
 			Out(SYS_CON|LOG_NOTICE) << QString("Failed to set the reuseaddr option : %1").arg(strerror(errno)) << endl;
 		}
-		// Bind this socket to IPv4 as well. This is a workaround for systems
-		// which support IPv4-mapped addresses but have them disabled by
-		// default (e.g. net.ipv6.bindv6only=1 on Debian Linux).
-		setsockopt(m_fd,SOL_IPV6,IPV6_V6ONLY,&no,sizeof(no));
-		
+
 		if (::bind(m_fd,addr.address(),addr.length()) != 0)
 		{
 			Out(SYS_CON|LOG_IMPORTANT) << QString("Cannot bind to port %1:%2 : %3").arg(addr.ipAddress().toString()).arg(addr.port()).arg(strerror(errno)) << endl;

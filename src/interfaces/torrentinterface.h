@@ -25,6 +25,7 @@
 #include <util/constants.h>
 #include <interfaces/trackerslist.h>
 #include <torrent/torrentstats.h>
+#include <torrent/torrentfilestream.h>
 #include <kurl.h>
 
 #ifdef ERROR
@@ -32,8 +33,8 @@
 #endif
 namespace bt
 {
+	class Job;
 	class BitSet;
-	class DataCheckerListener;
 	class SHA1Hash;
 	class WaitJob;
 	class PeerID;
@@ -243,6 +244,17 @@ namespace bt
 		 */
 		virtual bool moveTorrentFiles(const QMap<TorrentFileInterface*,QString> & files) = 0;
 		
+		/**
+			Create a TorrentFileStream object. If the torrent is destroyed this object must also be 
+			destroyed.
+			@param index Index of the file (in case of a single file torrent, this does not matter)
+			@param streaming_mode Set to true if this needs to be streamed 
+				(note that only one streaming_mode per torrent is allowed)
+			@param parent Parent of the TorrentFileStream
+			@return A TorrentFileStream or 0 if index is not valid
+		*/
+		virtual TorrentFileStream::Ptr createTorrentFileStream(bt::Uint32 index,bool streaming_mode,QObject* parent) = 0;
+		
 		///Get a pointer to TrackersList object
 		virtual TrackersList* getTrackersList() = 0;
 		
@@ -285,9 +297,8 @@ namespace bt
 		
 		/**
 		 * Verify the correctness of all data.
-		 * @param lst The listener
 		 */
-		virtual void startDataCheck(bt::DataCheckerListener* lst) = 0;
+		virtual Job* startDataCheck(bool auto_import) = 0;
 		
 		/**
 		 * Test all files and see if they are not missing.
@@ -434,6 +445,11 @@ namespace bt
 		 * Get the move upon completion directory. 
 		 */
 		virtual KUrl getMoveWhenCompletedDir() const = 0;
+		
+		/**
+		 * Enable or disable superseeding mode, does nothing if the torrent is not finished.
+		 */
+		virtual void setSuperSeeding(bool on) = 0;
 
 	signals:
 		/**

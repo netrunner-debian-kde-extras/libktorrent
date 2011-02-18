@@ -28,6 +28,8 @@
 #include <kio/job.h> 
 #include <kio/netaccess.h>
 #include <kio/copyjob.h> 
+#include <solid/device.h>
+#include <solid/storageaccess.h>
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <fcntl.h>
@@ -121,6 +123,32 @@ namespace bt
 				}
 			}
 
+			ctmp += bt::DirSeparator();
+		}
+	}
+	
+	void MakeFilePath(const QString & file,bool nothrow)
+	{
+		QStringList sl = file.split(bt::DirSeparator());
+		QString ctmp;
+#ifndef Q_WS_WIN
+		ctmp += bt::DirSeparator();
+#endif
+		
+		for (int i = 0;i < sl.count() - 1;i++)
+		{
+			ctmp += sl[i];
+			if (!bt::Exists(ctmp)) try
+			{
+				MakeDir(ctmp,false);
+			}
+			catch (...)
+			{
+				if (!nothrow)
+					throw;
+				return;
+			}
+			
 			ctmp += bt::DirSeparator();
 		}
 	}
@@ -257,6 +285,7 @@ namespace bt
 		if (Exists(url))
 			return;
 
+		
 		File fptr;
 		if (!fptr.open(url,"wb"))
 		{
@@ -295,7 +324,7 @@ namespace bt
 		ret = fstat(fd,&sb);
 #endif
 		if (ret < 0)
-			throw Error(i18n("Cannot calculate the filesize : %1",strerror(errno)));
+			throw Error(i18n("Cannot calculate the filesize: %1",strerror(errno)));
 
 		return (Uint64)sb.st_size;
 	}
@@ -322,7 +351,7 @@ namespace bt
 	{
 		int fd = ::open(QFile::encodeName(path), O_RDWR | O_LARGEFILE);
 		if (fd < 0)
-			throw Error(i18n("Cannot open %1 : %2",path,strerror(errno)));
+			throw Error(i18n("Cannot open %1: %2",path,strerror(errno)));
 
 		bool ret = XfsPreallocate(fd,size);
 		close(fd);
@@ -364,7 +393,7 @@ namespace bt
 	{
 		int fd = ::open(QFile::encodeName(path),O_RDWR | O_LARGEFILE);
 		if (fd < 0)
-			throw Error(i18n("Cannot open %1 : %2",path,strerror(errno)));
+			throw Error(i18n("Cannot open %1: %2",path,strerror(errno)));
 
 		try
 		{
@@ -385,7 +414,7 @@ namespace bt
 #else
 		if (lseek(fd,off,whence) == -1)
 #endif
-			throw Error(i18n("Cannot seek in file : %1",strerror(errno)));
+			throw Error(i18n("Cannot seek in file: %1",strerror(errno)));
 	}
 
 	bool FreeDiskSpace(const QString & path,Uint64 & bytes_free)
@@ -585,6 +614,24 @@ namespace bt
 		ret = (info.nFileSizeHigh * MAXDWORD) + info.nFileSizeLow;
 #endif
 		return ret;
+	}
+	
+	QString MountPoint(const QString& path)
+	{
+		QList<Solid::Device> devs = Solid::Device::listFromType(Solid::DeviceInterface::StorageAccess);
+		QString mountpoint;
+		
+		foreach (Solid::Device dev,devs)
+		{
+			Solid::StorageAccess* sa = dev.as<Solid::StorageAccess>();
+			if (path.startsWith(sa->filePath()))
+			{
+				if (mountpoint.isEmpty() || sa->filePath().startsWith(mountpoint))
+					mountpoint = sa->filePath();
+			}
+		}
+		
+		return mountpoint;
 	}
 
 }
