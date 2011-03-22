@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-02 03:19+0100\n"
-"PO-Revision-Date: 2011-02-02 13:20+0200\n"
+"POT-Creation-Date: 2011-03-13 12:17+0100\n"
+"PO-Revision-Date: 2011-02-20 12:09+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <translation@linux.org.ua>\n"
 "MIME-Version: 1.0\n"
@@ -17,30 +17,6 @@ msgstr ""
 "10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Lokalize 1.2\n"
 "Language: uk\n"
-
-#: examples/ktcli/main.cpp:60
-msgid "Torrent to open"
-msgstr "Торент, який слід відкрити"
-
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-msgid "Port to use"
-msgstr "Порт, який слід використовувати"
-
-#: examples/ktcli/main.cpp:63
-msgid "Whether or not to enable encryption"
-msgstr "Визначає, чи слід вмикати шифрування"
-
-#: examples/ktcli/main.cpp:64
-msgid "Whether or not to enable peer exchange"
-msgstr "Визначає, чи слід вмикати обмін даними вузлів"
-
-#: examples/ktcli/main.cpp:65
-msgid "Whether or not to use utp"
-msgstr "Визначає, чи слід використовувати UTP"
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr "ktcli"
 
 #: src/bcodec/bdecoder.cpp:62
 #, kde-format
@@ -64,19 +40,19 @@ msgstr "Не вдалося перетворити %1 в int"
 msgid "Torrent is incomplete."
 msgstr "Торент не повний."
 
-#: src/datachecker/datacheckerjob.cpp:82
+#: src/datachecker/datacheckerjob.cpp:76
 msgid "Waiting for other data checks to finish"
 msgstr "Очікування на завершення інших перевірок даних"
 
-#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
 msgid "Checking data"
 msgstr "Перевірка даних"
 
-#: src/datachecker/datacheckerjob.cpp:141
+#: src/datachecker/datacheckerjob.cpp:135
 msgid "Checking Data"
 msgstr "Перевірка даних"
 
-#: src/datachecker/multidatachecker.cpp:209
+#: src/datachecker/multidatachecker.cpp:203
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
@@ -159,24 +135,20 @@ msgstr "Не вдалося записати перший шматок в фай
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Не вдалося записати останній шматок в файл DND: %1"
 
-#: src/diskio/movedatafilesjob.cpp:140
-msgid "Waiting for other move jobs to finish"
-msgstr "Очікування на завершення інших завдань з пересування"
+#: src/diskio/movedatafilesjob.cpp:166
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Пересування"
 
-#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+#: src/diskio/movedatafilesjob.cpp:167
 msgctxt "The source of a file operation"
 msgid "Source"
 msgstr "Джерело"
 
-#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+#: src/diskio/movedatafilesjob.cpp:168
 msgctxt "The destination of a file operation"
 msgid "Destination"
 msgstr "Призначення"
-
-#: src/diskio/movedatafilesjob.cpp:180
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Пересування"
 
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, kde-format
@@ -193,18 +165,9 @@ msgid "Unable to write to a piece mapped read only"
 msgstr ""
 "Не можна виконувати запис до ділянки пам’яті позначеної лише для читання"
 
-#: src/download/chunkdownload.cpp:382
-#, kde-format
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] "%1 вузол"
-msgstr[1] "%1 вузли"
-msgstr[2] "%1 вузлів"
-msgstr[3] "%1 вузол"
-
 #: src/download/downloader.cpp:810
 msgid "Disabled because webseed does not match torrent"
-msgstr "Вимкнено через те, що веб-поширювач не відповідає торенту"
+msgstr "Вимкнено через те, що вебапоширювач не відповідає торенту"
 
 #: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
 #: src/download/webseed.cpp:98
@@ -269,6 +232,15 @@ msgstr ""
 "Не використовується %1 секунд (занадто багато помилок під час спроби "
 "з’єднання)"
 
+#: src/download/chunkdownload.cpp:383
+#, kde-format
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] "%1 вузол"
+msgstr[1] "%1 вузли"
+msgstr[2] "%1 вузлів"
+msgstr[3] "%1 вузол"
+
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr "Гаразд"
@@ -296,21 +268,10 @@ msgstr "Каталогу %1 не існує"
 msgid "Unknown client"
 msgstr "Невідомий клієнт"
 
-#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
-#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
-#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
-#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
-msgid "Corrupted torrent."
-msgstr "Пошкоджений торент."
-
-#: src/torrent/torrent.cpp:165
+#: src/torrent/torrentcreator.cpp:361
 #, kde-format
-msgid "Unable to open torrent file %1: %2"
-msgstr " Не вдалося відкрити файл торента %1: %2"
-
-#: src/torrent/torrent.cpp:295
-msgid "Parse Error"
-msgstr "Помилка обробки"
+msgid "Cannot create index file: %1"
+msgstr "Не вдалося створити індексний файл: %1"
 
 #: src/torrent/torrentcontrol.cpp:308
 msgid "Error writing to disk, do you have enough diskspace?"
@@ -350,11 +311,6 @@ msgstr ""
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Ви вже звантажуєте торент <b>%1</b>."
-
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "Не вдалося створити індексний файл: %1"
 
 #: src/torrent/torrentstats.cpp:72
 msgid "Not started"
@@ -409,6 +365,18 @@ msgstr "Призупинено"
 msgid "Superseeding"
 msgstr "Суперпоширення"
 
+#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
+#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
+#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
+#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
+msgid "Corrupted torrent."
+msgstr "Пошкоджений торент."
+
+#: src/torrent/torrent.cpp:165
+#, kde-format
+msgid "Unable to open torrent file %1: %2"
+msgstr " Не вдалося відкрити файл торента %1: %2"
+
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "Переспрямування без зазначення нової адреси"
@@ -437,34 +405,29 @@ msgstr "Перевищення часу очікування на з’єдна�
 msgid "Unable to resolve hostname %1"
 msgstr "Не вдалося обробити назву вузла %1"
 
-#: src/upnp/httprequest.cpp:96
-msgid "Connection closed unexpectedly"
-msgstr "З'єднання несподівано розірвано"
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "Загальне"
 
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
-msgstr "Строк очікування на завершення операції перевищено"
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
+msgstr "З'єднання"
 
-#: src/upnp/upnprouter.cpp:167
-#, kde-format
-msgid "Failed to download %1: %2"
-msgstr "Спроба звантаження %1 зазнала невдачі: %2"
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "Координатор"
 
-#: src/upnp/upnprouter.cpp:178
-msgid "Error parsing router description."
-msgstr "Помилка під час обробки опису маршрутизатора."
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
 
-#: src/upnp/upnprouter.cpp:216
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
-"Спроба переспрямування зазнала невдачі:\n"
-"У пристрою відсутнє WANIPConnection або WANPPPConnection."
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
+msgstr "В/В диска"
 
-#: src/upnp/upnprouter.cpp:314
-msgid "Cannot find port forwarding service in the device's description."
-msgstr "Неможливо знайти службу перенаправлення портів в описі пристрою."
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr "µTP"
 
 #: src/util/file.cpp:84
 #, kde-format
@@ -541,37 +504,72 @@ msgstr[1] "%1 дні"
 msgstr[2] "%1 днів "
 msgstr[3] "%1 день "
 
-#: src/util/logsystemmanager.cpp:33
-msgid "General"
-msgstr "Загальне"
-
-#: src/util/logsystemmanager.cpp:34
-msgid "Connections"
-msgstr "З'єднання"
-
-#: src/util/logsystemmanager.cpp:35
-msgid "Tracker"
-msgstr "Координатор"
-
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr "DHT"
-
-#: src/util/logsystemmanager.cpp:37
-msgid "Disk Input/Output"
-msgstr "В/В диска"
-
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
-msgstr "µTP"
-
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 msgid "Error when writing to disk"
 msgstr "Помилка під час спроби запису на диск"
 
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 msgid "Error when reading from disk"
 msgstr "Помилка під час спроби читання з диска"
+
+#: src/upnp/httprequest.cpp:96
+msgid "Connection closed unexpectedly"
+msgstr "З'єднання несподівано розірвано"
+
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr "Строк очікування на завершення операції перевищено"
+
+#: src/upnp/upnprouter.cpp:167
+#, kde-format
+msgid "Failed to download %1: %2"
+msgstr "Спроба звантаження %1 зазнала невдачі: %2"
+
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
+msgstr "Помилка під час обробки опису маршрутизатора."
+
+#: src/upnp/upnprouter.cpp:216
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+"Спроба переспрямування зазнала невдачі:\n"
+"У пристрою відсутнє WANIPConnection або WANPPPConnection."
+
+#: src/upnp/upnprouter.cpp:314
+msgid "Cannot find port forwarding service in the device's description."
+msgstr "Неможливо знайти службу перенаправлення портів в описі пристрою."
+
+#: examples/ktcli/main.cpp:60
+msgid "Torrent to open"
+msgstr "Торент, який слід відкрити"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+msgid "Port to use"
+msgstr "Порт, який слід використовувати"
+
+#: examples/ktcli/main.cpp:63
+msgid "Whether or not to enable encryption"
+msgstr "Визначає, чи слід вмикати шифрування"
+
+#: examples/ktcli/main.cpp:64
+msgid "Whether or not to enable peer exchange"
+msgstr "Визначає, чи слід вмикати обмін даними вузлів"
+
+#: examples/ktcli/main.cpp:65
+msgid "Whether or not to use utp"
+msgstr "Визначає, чи слід використовувати UTP"
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr "ktcli"
+
+#~ msgid "Parse Error"
+#~ msgstr "Помилка обробки"
+
+#~ msgid "Waiting for other move jobs to finish"
+#~ msgstr "Очікування на завершення інших завдань з пересування"
 
 #~ msgid "Not in use"
 #~ msgstr "Не використовується"

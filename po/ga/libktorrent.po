@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extragear-network/ktorrent.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-02 03:19+0100\n"
+"POT-Creation-Date: 2011-03-13 12:17+0100\n"
 "PO-Revision-Date: 2007-08-07 07:02-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -15,37 +15,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n < 11 ? "
 "3 : 4\n"
-
-#: examples/ktcli/main.cpp:60
-#, fuzzy
-msgid "Torrent to open"
-msgstr "Cáipéis le hoscailt"
-
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-#, fuzzy
-msgid "Port to use"
-msgstr "Gan úsáid"
-
-#: examples/ktcli/main.cpp:63
-#, fuzzy
-msgid "Whether or not to enable encryption"
-msgstr "Cé acu a chumasófar ord saincheaptha íosluchtaithe nó nach gcumasófar."
-
-#: examples/ktcli/main.cpp:64
-#, fuzzy
-msgid "Whether or not to enable peer exchange"
-msgstr ""
-"Cé acu a bhainfear úsáid as malairt comhghleacaithe comhoiriúnach do "
-"µTorrent, nó nach mbainfear."
-
-#: examples/ktcli/main.cpp:65
-#, fuzzy
-msgid "Whether or not to use utp"
-msgstr "Cé acu a chumasófar ord saincheaptha íosluchtaithe nó nach gcumasófar."
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr ""
 
 #: src/bcodec/bdecoder.cpp:62
 #, kde-format
@@ -69,20 +38,21 @@ msgstr "Ní féidir %1 a thiontú go slánuimhir"
 msgid "Torrent is incomplete."
 msgstr "Torrent neamhiomlán."
 
-#: src/datachecker/datacheckerjob.cpp:82
+#: src/datachecker/datacheckerjob.cpp:76
 msgid "Waiting for other data checks to finish"
 msgstr ""
 
-#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
 msgid "Checking data"
 msgstr "Sonraí á seiceáil"
 
-#: src/datachecker/datacheckerjob.cpp:141
+#: src/datachecker/datacheckerjob.cpp:135
 #, fuzzy
+#| msgid "Checking data"
 msgid "Checking Data"
 msgstr "Sonraí á seiceáil"
 
-#: src/datachecker/multidatachecker.cpp:209
+#: src/datachecker/multidatachecker.cpp:203
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
@@ -93,12 +63,14 @@ msgstr "Ní féidir comhad %1 a oscailt: %2"
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
 #: src/util/fileops.cpp:396
 #, fuzzy, kde-format
+#| msgid "Cannot open %1 : %2"
 msgid "Cannot open %1: %2"
 msgstr "Ní féidir %1 a oscailt: %2"
 
 #: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
 #: src/diskio/cachefile.cpp:412 src/diskio/cachefile.cpp:480
 #, fuzzy, kde-format
+#| msgid "Cannot open %1 for writing : readonly filesystem"
 msgid "Cannot open %1 for writing: readonly filesystem"
 msgstr "Ní féidir %1 a oscailt chun é a scríobh: córas comhad inléite amháin"
 
@@ -109,6 +81,9 @@ msgstr "Ag iarraidh scríobh thar uasmhéid %1"
 
 #: src/diskio/cachefile.cpp:255
 #, fuzzy, kde-format
+#| msgid ""
+#| "Cannot expand file %1 : attempting to grow the file beyond the maximum "
+#| "size"
 msgid ""
 "Cannot expand file %1: attempting to grow the file beyond the maximum size"
 msgstr ""
@@ -116,16 +91,19 @@ msgstr ""
 
 #: src/diskio/cachefile.cpp:259
 #, fuzzy, kde-format
+#| msgid "Cannot expand file %1 : %2"
 msgid "Cannot expand file %1: %2"
 msgstr "Ní féidir comhad %1 a fhairsingiú: %2"
 
 #: src/diskio/cachefile.cpp:378
 #, fuzzy, kde-format
+#| msgid "Error : Reading past the end of the file %1"
 msgid "Error: Reading past the end of the file %1"
 msgstr "Earráid: Léamh thar deireadh chomhad %1"
 
 #: src/diskio/cachefile.cpp:383 src/diskio/cachefile.cpp:430
 #, fuzzy, kde-format
+#| msgid "Failed to seek file %1 : %2"
 msgid "Failed to seek file %1: %2"
 msgstr "Níorbh fhéidir comhad %1 a chuardach: %2"
 
@@ -136,78 +114,74 @@ msgstr "Earráid agus %1 á léamh"
 
 #: src/diskio/cachefile.cpp:434
 #, fuzzy, kde-format
+#| msgid "Failed to write to file %1 : %2"
 msgid "Failed to write to file %1: %2"
 msgstr "Níorbh fhéidir scríobh i gcomhad %1: %2"
 
 #: src/diskio/cachefile.cpp:501
 #, fuzzy, kde-format
+#| msgid "Cannot preallocate diskspace : %1"
 msgid "Cannot preallocate diskspace: %1"
 msgstr "Ní féidir spás diosca a réamhdháileadh: %1"
 
 #: src/diskio/chunkmanager.cpp:933 src/diskio/chunkmanager.cpp:959
 #, fuzzy, kde-format
+#| msgid "Cannot open index file %1 : %2"
 msgid "Cannot open index file %1: %2"
 msgstr "Ní féidir comhad innéacs %1 a oscailt: %2"
 
 #: src/diskio/dndfile.cpp:89
 #, fuzzy, kde-format
+#| msgid "Cannot create file %1 : %2"
 msgid "Cannot create file %1: %2"
 msgstr "Ní féidir comhad %1 a chruthú: %2"
 
 #: src/diskio/dndfile.cpp:137
 #, fuzzy, kde-format
+#| msgid "Failed to write first chunk to DND file : %1"
 msgid "Failed to write first chunk to DND file: %1"
 msgstr "Níorbh fhéidir an chéad smután a scríobh i gcomhad DND: %1"
 
 #: src/diskio/dndfile.cpp:155
 #, fuzzy, kde-format
+#| msgid "Failed to write last chunk to DND file : %1"
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Níorbh fhéidir an smután deiridh a scríobh i gcomhad DND: %1"
 
-#: src/diskio/movedatafilesjob.cpp:140
-msgid "Waiting for other move jobs to finish"
-msgstr ""
-
-#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
-#, fuzzy
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "Cuir Foinse Leis"
-
-#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
-#, fuzzy
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "Sprioc"
-
-#: src/diskio/movedatafilesjob.cpp:180
+#: src/diskio/movedatafilesjob.cpp:166
 msgctxt "@title job"
 msgid "Moving"
 msgstr ""
 
+#: src/diskio/movedatafilesjob.cpp:167
+#, fuzzy
+#| msgid "Add Source"
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr "Cuir Foinse Leis"
+
+#: src/diskio/movedatafilesjob.cpp:168
+#, fuzzy
+#| msgid "Destination"
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr "Sprioc"
+
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, fuzzy, kde-format
+#| msgid "Failed to open %1 : %2"
 msgid "Failed to open %1: %2"
 msgstr "Níorbh fhéidir %1 a oscailt: %2"
 
 #: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
 #, fuzzy, kde-format
+#| msgid "Failed to create %1 : %2"
 msgid "Failed to create %1: %2"
 msgstr "Níorbh fhéidir %1 a chruthú: %2"
 
 #: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
-
-#: src/download/chunkdownload.cpp:382
-#, kde-format
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] "1 chomhghleacaí"
-msgstr[1] "%1 chomhghleacaí"
-msgstr[2] "%1 chomhghleacaí"
-msgstr[3] "%1 gcomhghleacaí"
-msgstr[4] "%1 comhghleacaí"
 
 #: src/download/downloader.cpp:810
 msgid "Disabled because webseed does not match torrent"
@@ -274,12 +248,23 @@ msgstr "Atreoraithe gan suíomh nua."
 msgid "Unused for %1 seconds (Too many connection failures)"
 msgstr ""
 
+#: src/download/chunkdownload.cpp:383
+#, kde-format
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] "1 chomhghleacaí"
+msgstr[1] "%1 chomhghleacaí"
+msgstr[2] "%1 chomhghleacaí"
+msgstr[3] "%1 gcomhghleacaí"
+msgstr[4] "%1 comhghleacaí"
+
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr "OK"
 
 #: src/interfaces/trackerinterface.cpp:58
 #, fuzzy, kde-format
+#| msgid "Opening %1"
 msgid "Warning: %1"
 msgstr "%1 á oscailt"
 
@@ -301,21 +286,10 @@ msgstr "Níl comhadlann %1 ann"
 msgid "Unknown client"
 msgstr "Cliant anaithnid"
 
-#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
-#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
-#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
-#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
-msgid "Corrupted torrent."
-msgstr "Torrent truaillithe."
-
-#: src/torrent/torrent.cpp:165
-#, fuzzy, kde-format
-msgid "Unable to open torrent file %1: %2"
-msgstr " Ní féidir comhad torrent %1 a oscailt: %2"
-
-#: src/torrent/torrent.cpp:295
-msgid "Parse Error"
-msgstr "Earráid Pharsála"
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "Ní féidir an comhad innéacs a chruthú: %1"
 
 #: src/torrent/torrentcontrol.cpp:308
 msgid "Error writing to disk, do you have enough diskspace?"
@@ -337,6 +311,7 @@ msgstr ""
 
 #: src/torrent/torrentcontrol.cpp:586
 #, fuzzy, kde-format
+#| msgid "Unable to create %1 : %2"
 msgid "Unable to create %1: %2"
 msgstr "Ní féidir %1 a chruthú: %2"
 
@@ -353,11 +328,6 @@ msgstr ""
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Tá tú ag íosluchtú torrent <b>%1</b> cheana."
-
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "Ní féidir an comhad innéacs a chruthú: %1"
 
 #: src/torrent/torrentstats.cpp:72
 msgid "Not started"
@@ -410,8 +380,23 @@ msgstr "Moillithe"
 
 #: src/torrent/torrentstats.cpp:98
 #, fuzzy
+#| msgctxt "Status of a torrent file"
+#| msgid "Seeding"
 msgid "Superseeding"
 msgstr "Á Shíolú"
+
+#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
+#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
+#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
+#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
+msgid "Corrupted torrent."
+msgstr "Torrent truaillithe."
+
+#: src/torrent/torrent.cpp:165
+#, fuzzy, kde-format
+#| msgid " Unable to open torrent file %1 : %2"
+msgid "Unable to open torrent file %1: %2"
+msgstr " Ní féidir comhad torrent %1 a oscailt: %2"
 
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
@@ -441,38 +426,33 @@ msgstr "Thar am ag dul i dteagmháil le lorgaire %1"
 msgid "Unable to resolve hostname %1"
 msgstr "Ní féidir óstainm %1 a réiteach"
 
-#: src/upnp/httprequest.cpp:96
-#, fuzzy
-msgid "Connection closed unexpectedly"
-msgstr "Dúnadh an ceangal gan súil leis."
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "Ginearálta"
 
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
-msgstr ""
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
+msgstr "Ceangail"
 
-#: src/upnp/upnprouter.cpp:167
-#, fuzzy, kde-format
-msgid "Failed to download %1: %2"
-msgstr "Níorbh fhéidir %1 a íosluchtú: %2"
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "Lorgaire"
 
-#: src/upnp/upnprouter.cpp:178
-msgid "Error parsing router description."
-msgstr ""
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
 
-#: src/upnp/upnprouter.cpp:216
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
+msgstr "Ionchur/Aschur Diosca"
 
-#: src/upnp/upnprouter.cpp:314
-msgid "Cannot find port forwarding service in the device's description."
-msgstr ""
-"Ní féidir seirbhís a chuireann poirt ar aghaidh a aimsiú i gcur síos an "
-"ghléis."
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr "µTP"
 
 #: src/util/file.cpp:84
 #, fuzzy, kde-format
+#| msgid "Cannot write to %1 : %2"
 msgid "Cannot write to %1: %2"
 msgstr "Ní féidir scríobh i %1: %2"
 
@@ -518,6 +498,7 @@ msgstr "Ní féidir méid an chomhaid %1 a áireamh: %2"
 
 #: src/util/fileops.cpp:327
 #, fuzzy, kde-format
+#| msgid "Cannot calculate the filesize : %1"
 msgid "Cannot calculate the filesize: %1"
 msgstr "Ní féidir méid an chomhaid a áireamh: %1"
 
@@ -529,8 +510,9 @@ msgstr "Ní féidir an comhad a fhairsingiú: %1"
 
 #: src/util/fileops.cpp:417
 #, fuzzy, kde-format
+#| msgid "Cannot seek in file : %1"
 msgid "Cannot seek in file: %1"
-msgstr "Ní féidir lorg i gcomhad : %1"
+msgstr "Ní féidir lorg i gcomhad: %1"
 
 #: src/util/functions.cpp:280
 #, kde-format
@@ -547,78 +529,113 @@ msgstr[2] "%1 lá "
 msgstr[3] "%1 lá "
 msgstr[4] "%1 lá "
 
-#: src/util/logsystemmanager.cpp:33
-msgid "General"
-msgstr "Ginearálta"
-
-#: src/util/logsystemmanager.cpp:34
-msgid "Connections"
-msgstr "Ceangail"
-
-#: src/util/logsystemmanager.cpp:35
-msgid "Tracker"
-msgstr "Lorgaire"
-
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr "DHT"
-
-#: src/util/logsystemmanager.cpp:37
-msgid "Disk Input/Output"
-msgstr "Ionchur/Aschur Diosca"
-
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
-msgstr "µTP"
-
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 #, fuzzy
+#| msgid "Error writing to %1 : %2"
 msgid "Error when writing to disk"
-msgstr "Earráid agus %1 á scriobh"
+msgstr "Earráid agus %1 á scriobh: %2"
 
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 #, fuzzy
+#| msgid "Error reading from %1"
 msgid "Error when reading from disk"
 msgstr "Earráid agus %1 á léamh"
 
-#~ msgid "Not in use"
-#~ msgstr "Gan úsáid"
-
+#: src/upnp/httprequest.cpp:96
 #, fuzzy
-#~| msgid "Not enough free disk space for %1"
-#~ msgid "Not enough diskspace"
-#~ msgstr "Easpa spáis diosca le haghaidh %1"
+#| msgid "Connection closed unexpectedly."
+msgid "Connection closed unexpectedly"
+msgstr "Dúnadh an ceangal gan súil leis."
 
-#~ msgid "Cannot open file %1 : %2"
-#~ msgstr "Ní féidir comhad %1 a oscailt: %2"
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:167
+#, fuzzy, kde-format
+#| msgid "Failed to download %1 : %2"
+msgid "Failed to download %1: %2"
+msgstr "Níorbh fhéidir %1 a íosluchtú: %2"
+
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:216
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:314
+msgid "Cannot find port forwarding service in the device's description."
+msgstr ""
+"Ní féidir seirbhís a chuireann poirt ar aghaidh a aimsiú i gcur síos an "
+"ghléis."
+
+#: examples/ktcli/main.cpp:60
+#, fuzzy
+#| msgid "Torrent to display:"
+msgid "Torrent to open"
+msgstr "Torrent le taispeáint:"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+#, fuzzy
+#| msgid "Not in use"
+msgid "Port to use"
+msgstr "Gan úsáid"
+
+#: examples/ktcli/main.cpp:63
+#, fuzzy
+#| msgid "Whether or not to enable a custom download order."
+msgid "Whether or not to enable encryption"
+msgstr "Cé acu a chumasófar ord saincheaptha íosluchtaithe nó nach gcumasófar."
+
+#: examples/ktcli/main.cpp:64
+#, fuzzy
+#| msgid "Whether or not to use µTorrent compatible peer exchange."
+msgid "Whether or not to enable peer exchange"
+msgstr ""
+"Cé acu a bhainfear úsáid as malairt comhghleacaithe comhoiriúnach do "
+"µTorrent, nó nach mbainfear."
+
+#: examples/ktcli/main.cpp:65
+#, fuzzy
+#| msgid "Whether or not to show system tray popup messages."
+msgid "Whether or not to use utp"
+msgstr ""
+"Cé acu a thaispeánfar teachtaireachtaí aníos i dtráidire an chórais nó nach "
+"dtaispeánfar."
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr ""
+
+#~ msgid "Parse Error"
+#~ msgstr "Earráid Pharsála"
 
 #~ msgid "Cannot open file : %1 : %2"
 #~ msgstr "Ní féidir an comhad a oscailt: %1: %2"
+
+#~ msgid "Cannot open file %1 : %2"
+#~ msgstr "Ní féidir comhad %1 a oscailt: %2"
 
 #~ msgid ""
 #~ "An error occurred while loading the torrent:<br/><b>%1</b><br/>The "
 #~ "torrent is probably corrupt or is not a valid torrent file."
 #~ msgstr ""
 #~ "Tharla earráid agus torrent á luchtú:<br/><b>%1</b><br/>Is dócha go "
-#~ "bhfuil an torrent truaillithe, nó ní comhad torrent é."
+#~ "bhfuil an torrent truaillithe, nó ní comhad bailí torrent é."
 
 #~ msgid "Cannot open log file %1 : %2"
 #~ msgstr "Ní féidir logchomhad %1 a oscailt: %2"
 
-#, fuzzy
-#~| msgid "UDP"
 #~ msgid "UTP"
-#~ msgstr "UDP"
+#~ msgstr "UTP"
 
 #~ msgid "Cannot bind to udp port %1 or the 10 following ports."
 #~ msgstr ""
 #~ "Ní féidir ceangal le port udp %1, ná leis na deich bport seo a leanas."
-
-#, fuzzy
-#~| msgid "Scan Folder"
-#~ msgctxt "plugin name"
-#~ msgid "Scan Folder"
-#~ msgstr "Scan an Fillteán"
 
 #~ msgid "loaded"
 #~ msgstr "luchtaithe"
@@ -680,11 +697,6 @@ msgstr "Earráid agus %1 á léamh"
 
 #~ msgid "Add/Remove Filters"
 #~ msgstr "Cuir Scagairí Leis/Bain Scagairí"
-
-#, fuzzy
-#~| msgid "username"
-#~ msgid "Rename"
-#~ msgstr "ainm úsáideora"
 
 #~ msgid "Add Filter"
 #~ msgstr "Cuir Scagaire Leis"
@@ -794,23 +806,8 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid "KTorrent is playing a video."
 #~ msgstr "Tá físeán á sheinm ag KTorrent."
 
-#, fuzzy
-#~| msgid "Web interface skin:"
-#~ msgid "Cannot find web interface skins."
-#~ msgstr "Craiceann Comhéadain Gréasáin:"
-
 #~ msgid "Web Interface"
 #~ msgstr "Comhéadan Gréasáin"
-
-#, fuzzy
-#~| msgid "Invalid archive."
-#~ msgid "Invalid data received"
-#~ msgstr "Cartlann neamhbhailí."
-
-#, fuzzy
-#~| msgid "Folder to store temporary files"
-#~ msgid "Failed to open temporary file"
-#~ msgstr "Fillteán ina stóráiltear comhaid shealadacha"
 
 #~ msgid "Unknown"
 #~ msgstr "Anaithnid"
@@ -890,9 +887,6 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid "Connections charts"
 #~ msgstr "Cairteacha ceangail"
 
-#~ msgid "Display"
-#~ msgstr "Taispeáin"
-
 # "choked", "snubbed" booleans in peerview.cpp
 #~ msgctxt "Choked"
 #~ msgid "Yes"
@@ -936,11 +930,6 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgctxt "Not Interesting"
 #~ msgid "No"
 #~ msgstr "Níl"
-
-#, fuzzy
-#~| msgid "IP Address"
-#~ msgid "Address"
-#~ msgstr "Seoladh IP"
 
 #~ msgid "Country"
 #~ msgstr "Tír"
@@ -999,18 +988,6 @@ msgstr "Earráid agus %1 á léamh"
 
 #~ msgid "Info Widget"
 #~ msgstr "Giuirléid Fhaisnéise"
-
-#, fuzzy
-#~| msgid "Status"
-#~ msgctxt "@title:tab"
-#~ msgid "Status"
-#~ msgstr "Stádas"
-
-#, fuzzy
-#~| msgid "Files"
-#~ msgctxt "@title:tab"
-#~ msgid "Files"
-#~ msgstr "Comhaid"
 
 #~ msgid "Shows all the files in a torrent"
 #~ msgstr "Taispeáin gach comhad i dtorrent"
@@ -1091,44 +1068,6 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid "Move File"
 #~ msgstr "Bog Comhad"
 
-#, fuzzy
-#~| msgid "Filter"
-#~ msgid "File Tree"
-#~ msgstr "Scagaire"
-
-#, fuzzy
-#~| msgid "File Exists"
-#~ msgid "File List"
-#~ msgstr "Tá an comhad ann"
-
-#, fuzzy
-#~| msgid "New Filter"
-#~ msgid "Show Filter"
-#~ msgstr "Scagaire Nua"
-
-#, fuzzy
-#~| msgid ""
-#~| "You will lose all data in this file, are you sure you want to do this ?"
-#~ msgid ""
-#~ "You will lose all data in this file, are you sure you want to do this?"
-#~ msgid_plural ""
-#~ "You will lose all data in these files, are you sure you want to do this?"
-#~ msgstr[0] ""
-#~ "Caillfidh tú na sonraí uile sa chomhad seo; an bhfuil tú cinnte is mian "
-#~ "leat é seo a dhéanamh?"
-#~ msgstr[1] ""
-#~ "Caillfidh tú na sonraí uile sa chomhad seo; an bhfuil tú cinnte is mian "
-#~ "leat é seo a dhéanamh?"
-#~ msgstr[2] ""
-#~ "Caillfidh tú na sonraí uile sa chomhad seo; an bhfuil tú cinnte is mian "
-#~ "leat é seo a dhéanamh?"
-#~ msgstr[3] ""
-#~ "Caillfidh tú na sonraí uile sa chomhad seo; an bhfuil tú cinnte is mian "
-#~ "leat é seo a dhéanamh?"
-#~ msgstr[4] ""
-#~ "Caillfidh tú na sonraí uile sa chomhad seo; an bhfuil tú cinnte is mian "
-#~ "leat é seo a dhéanamh?"
-
 #~ msgid "Select a directory to move the data to."
 #~ msgstr "Roghnaigh an chomhadlann ar mian leat bogadh na sonraí inti."
 
@@ -1138,24 +1077,8 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid "Leechers"
 #~ msgstr "Súmairí"
 
-#, fuzzy
-#~| msgid "Time Downloaded"
-#~ msgid "Times Downloaded"
-#~ msgstr "Am Íosluchtaithe"
-
-#, fuzzy
-#~| msgid "Next update:"
-#~ msgid "Next Update"
-#~ msgstr "An chéad nuashonrú eile:"
-
 #~ msgid "Priority"
 #~ msgstr "Tosaíocht"
-
-#, fuzzy
-#~| msgid "Preview"
-#~ msgctxt "@title:column"
-#~ msgid "Preview"
-#~ msgstr "Réamhamharc"
 
 #~ msgctxt "Percent of File Downloaded"
 #~ msgid "% Complete"
@@ -1193,11 +1116,6 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgctxt "Preview available"
 #~ msgid "Available"
 #~ msgstr "Ar Fáil"
-
-#, fuzzy
-#~| msgid "Add Tracker"
-#~ msgid "Add Trackers"
-#~ msgstr "Cuir Lorgaire Leis"
 
 #~ msgid ""
 #~ "<img src=\"available_color\">&nbsp; - Available Chunks<br><img src="
@@ -1284,11 +1202,6 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid "Open in New Tab"
 #~ msgstr "Oscail i gCluaisín Nua"
 
-#, fuzzy
-#~| msgid "Copy Torrent URL"
-#~ msgid "Copy URL"
-#~ msgstr "Cóipeáil URL an Torrent"
-
 #~ msgid "Searching for %1..."
 #~ msgstr "%1 á lorg..."
 
@@ -1297,12 +1210,6 @@ msgstr "Earráid agus %1 á léamh"
 
 #~ msgid "Search finished"
 #~ msgstr "Cuardach críochnaithe"
-
-#, fuzzy
-#~| msgid "Search"
-#~ msgctxt "plugin name"
-#~ msgid "Search"
-#~ msgstr "Cuardaigh"
 
 #~ msgid "Add a Search Engine"
 #~ msgstr "Cuir Inneall Cuardaigh Leis"
@@ -1315,11 +1222,6 @@ msgstr "Earráid agus %1 á léamh"
 
 #~ msgid "KTorrent"
 #~ msgstr "KTorrent"
-
-#, fuzzy
-#~| msgid "Folders to scan for torrents:"
-#~ msgid "Search the web for torrents."
-#~ msgstr "Fillteáin le scanadh i gcomhair torrents:"
 
 #~ msgid "Failed to parse %1"
 #~ msgstr "Níorbh fhéidir %1 a pharsáil"
@@ -1338,11 +1240,6 @@ msgstr "Earráid agus %1 á léamh"
 
 #~ msgid " Engine: "
 #~ msgstr " Inneall: "
-
-#, fuzzy
-#~| msgid "Do you want to download or save the torrent?"
-#~ msgid "Do you want to download this magnet link?"
-#~ msgstr "An bhfuil fonn ort an torrent a íosluchtú nó a shábháil?"
 
 #~ msgid "Do you want to download or save the torrent?"
 #~ msgstr "An bhfuil fonn ort an torrent a íosluchtú nó a shábháil?"
@@ -1394,16 +1291,6 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid "Clear Schedule"
 #~ msgstr "Glan an Sceideal"
 
-#, fuzzy
-#~| msgid "Scheduler:"
-#~ msgid "Scheduler Active"
-#~ msgstr "Sceidealóir:"
-
-#, fuzzy
-#~| msgid "Add a new item to the schedule"
-#~ msgid "Activate or deactivate the scheduler"
-#~ msgstr "Cuir mír nua leis an sceideal"
-
 #~ msgid "KTorrent scheduler files"
 #~ msgstr "Comhaid sceidealóra KTorrent"
 
@@ -1413,33 +1300,8 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgstr ""
 #~ "Tagann an mhír seo salach ar mhír eile sa sceideal; ní féidir é a athrú."
 
-#, fuzzy
-#~| msgid "Current schedule: paused"
-#~ msgid "Current schedule: suspended"
-#~ msgstr "Sceideal reatha: ar shos"
-
-#, fuzzy
-#~| msgid "Current schedule: %1 KiB/s download, %2 KiB/s upload"
-#~ msgid "Current schedule: %1/s download, %2/s upload"
-#~ msgstr "Sceideal reatha: %1 KiB/s íosluchtú, %2 KiB/s uasluchtú"
-
-#, fuzzy
-#~| msgid "Current schedule: unlimited download, %1 KiB/s upload"
-#~ msgid "Current schedule: unlimited download, %1/s upload"
-#~ msgstr "Sceideal reatha: íosluchtú gan teorainn, %1 KiB/s uasluchtú"
-
-#, fuzzy
-#~| msgid "Current schedule: %1 KiB/s download, unlimited upload"
-#~ msgid "Current schedule: %1/s download, unlimited upload"
-#~ msgstr "Sceideal reatha: %1 KiB/s íosluchtú, uasluchtú gan teorainn"
-
 #~ msgid "Current schedule: unlimited upload and download"
 #~ msgstr "Sceideal reatha: íosluchtú agus uasluchtú gan teorainn"
-
-#, fuzzy
-#~| msgid "KTorrent scheduler files"
-#~ msgid " (scheduler disabled)"
-#~ msgstr "Comhaid sceidealóra KTorrent"
 
 #~ msgid "Current schedule:"
 #~ msgstr "Sceideal reatha:"
@@ -1451,11 +1313,6 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgstr ""
 #~ "Tá comhad %1 truaillithe, nó ni comhad sceidil KTorrent é ar chor ar bith."
 
-#, fuzzy
-#~| msgid "Speed"
-#~ msgid "Suspended"
-#~ msgstr "Luas"
-
 #~ msgid "Unlimited"
 #~ msgstr "Gan Teorainn"
 
@@ -1465,12 +1322,6 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgstr ""
 #~ "%1 Síos\n"
 #~ "%2 Suas"
-
-#, fuzzy
-#~| msgid "Configure Shutdown"
-#~ msgctxt "@title:window"
-#~ msgid "Configure Shutdown"
-#~ msgstr "Cumraigh Múchadh"
 
 #~ msgid "Shutdown"
 #~ msgstr "Múchadh"
@@ -1493,16 +1344,6 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid "Converting..."
 #~ msgstr "Á Thiontú..."
 
-#, fuzzy
-#~| msgid "Cannot open file %1: %2"
-#~ msgid "Cannot open zip file %1."
-#~ msgstr "Ní féidir comhad %1 a oscailt: %2"
-
-#, fuzzy
-#~| msgid "Cannot deselect missing files: %1"
-#~ msgid "Cannot find blocklist in zip file %1."
-#~ msgstr "Ní féidir na comhaid ar iarraidh a dhíroghnú: %1"
-
 #~ msgid ""
 #~ "Filter file (level1.dat) already exists, do you want to convert it again?"
 #~ msgstr ""
@@ -1521,11 +1362,6 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid "Status: Not loaded."
 #~ msgstr "Stádas: Gan luchtú."
 
-#, fuzzy
-#~| msgid "Copy Torrent URL"
-#~ msgid "Copy Magnet URI"
-#~ msgstr "Cóipeáil URL an Torrent"
-
 #~ msgid "KTUPnPTest"
 #~ msgstr "KTUPnPTest"
 
@@ -1534,16 +1370,6 @@ msgstr "Earráid agus %1 á léamh"
 
 #~ msgid "(C) 2005 - 2007 Joris Guisson and Ivan Vasic"
 #~ msgstr "© 2005 - 2007 Joris Guisson and Ivan Vasic"
-
-#, fuzzy
-#~| msgid "Time Downloaded"
-#~ msgid "KTMagnetDownloader"
-#~ msgstr "Am Íosluchtaithe"
-
-#, fuzzy
-#~| msgid "Joris Guisson"
-#~ msgid "(C) 2009 Joris Guisson"
-#~ msgstr "Joris Guisson"
 
 #~ msgid "Proxy"
 #~ msgstr "Seachfhreastalaí"
@@ -1556,17 +1382,6 @@ msgstr "Earráid agus %1 á léamh"
 
 #~ msgid "BitTorrent"
 #~ msgstr "BitTorrent"
-
-# after number, so keep singular in form
-#, fuzzy
-#~| msgid " corrupted chunks"
-#~ msgid " corrupted chunk"
-#~ msgid_plural " corrupted chunks"
-#~ msgstr[0] " smután truaillithe"
-#~ msgstr[1] " smután truaillithe"
-#~ msgstr[2] " smután truaillithe"
-#~ msgstr[3] " smután truaillithe"
-#~ msgstr[4] " smután truaillithe"
 
 # after number, so keep singular in form
 #~ msgid " corrupted chunks"
@@ -1602,77 +1417,11 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid "%1"
 #~ msgstr "%1"
 
-#, fuzzy
-#~| msgid "Search"
-#~ msgid "Show Search"
-#~ msgstr "Cuardaigh"
-
-#, fuzzy
-#~| msgid "Move Up"
-#~ msgid "Move Top"
-#~ msgstr "Bog Suas"
-
 #~ msgid "Move Up"
 #~ msgstr "Bog Suas"
 
 #~ msgid "Move Down"
 #~ msgstr "Bog Síos"
-
-#, fuzzy
-#~| msgid "Bottom"
-#~ msgid "Move Bottom"
-#~ msgstr "Bun"
-
-#, fuzzy
-#~| msgid "Start torrent"
-#~ msgid "Start Magnet"
-#~ msgstr "Tosaigh torrent"
-
-#, fuzzy
-#~| msgid "Remove Torrent"
-#~ msgid "Remove Magnet"
-#~ msgstr "Bain an Torrent?"
-
-#, fuzzy
-#~| msgid "Start"
-#~ msgctxt "@action Start all selected torrents in the current tab"
-#~ msgid "Start"
-#~ msgstr "Tosaigh"
-
-#, fuzzy
-#~| msgid "Stop"
-#~ msgctxt "@action Stop all selected torrents in the current tab"
-#~ msgid "Stop"
-#~ msgstr "Stad"
-
-#, fuzzy
-#~| msgid "Pause"
-#~ msgctxt "@action Pause all selected torrents in the current tab"
-#~ msgid "Pause"
-#~ msgstr "Sos"
-
-#, fuzzy
-#~| msgid "Stop all torrents in the current tab"
-#~ msgid "Pause all selected torrents in the current tab"
-#~ msgstr "Stop gach torrent sa chluaisín reatha"
-
-#, fuzzy
-#~| msgid "Remove"
-#~ msgctxt "@action Remove all selected torrents in the current tab"
-#~ msgid "Remove"
-#~ msgstr "Bain"
-
-#, fuzzy
-#~| msgid "Start All"
-#~ msgctxt "@action Start all torrents in the current tab"
-#~ msgid "Start All"
-#~ msgstr "Tosaigh Uile"
-
-#, fuzzy
-#~| msgid "Stop All"
-#~ msgctxt "@action Stop all torrents in the current tab"
-#~ msgid "Stop All"
-#~ msgstr "Stop Uile"
 
 #~ msgid "Stop all torrents in the current tab"
 #~ msgstr "Stop gach torrent sa chluaisín reatha"
@@ -1725,18 +1474,8 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid "Copy Torrent URL"
 #~ msgstr "Cóipeáil URL an Torrent"
 
-#, fuzzy
-#~| msgid "Import Torrent"
-#~ msgid "Export Torrent"
-#~ msgstr "Iompórtáil Torrent"
-
 #~ msgid "Speed Limits"
 #~ msgstr "Teorainneacha Luais"
-
-#, fuzzy
-#~| msgid "Torrent Files (*.torrent)"
-#~ msgid "Torrents (*.torrent)"
-#~ msgstr "Comhaid Torrent (*.torrent)"
 
 #~ msgid "Columns"
 #~ msgstr "Colúin"
@@ -1787,21 +1526,11 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid "Location"
 #~ msgstr "Suíomh"
 
-#, fuzzy
-#~| msgid "Add Feed"
-#~ msgid "Added"
-#~ msgstr "Cuir Fotha Leis"
-
 #~ msgid "Current download speed"
 #~ msgstr "Luas reatha íosluchtaithe"
 
 #~ msgid "Current upload speed"
 #~ msgstr "Luas reatha uasluchtaithe"
-
-#, fuzzy
-#~| msgid "No torrents loaded."
-#~ msgid "When this torrent was added"
-#~ msgstr "Níl aon torrent luchtaithe."
 
 #~ msgid "%1<br>Url: <b>%2</b>"
 #~ msgstr "%1<br>URL: <b>%2</b>"
@@ -1864,51 +1593,6 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid "Choose a file to save the torrent"
 #~ msgstr "Roghnaigh comhad ina sábhálfar an torrent"
 
-#, fuzzy
-#~| msgid "Shows all the files in a torrent"
-#~ msgid "Show a file tree"
-#~ msgstr "Taispeáin gach comhad i dtorrent"
-
-#, fuzzy
-#~| msgid "Choose a file"
-#~ msgid "Show a file list"
-#~ msgstr "Roghnaigh comhad"
-
-#, fuzzy
-#~| msgid ""
-#~| "The torrent <b>%1</b> has not finished downloading, do you want to "
-#~| "delete the incomplete data, too?"
-#~ msgid ""
-#~ "Some files of this torrent have been found in the completed downloads "
-#~ "directory. Do you want to import these files and use the completed "
-#~ "downloads directory as the location?"
-#~ msgstr ""
-#~ "Níor chríochnaigh íosluchtú torrent <b>%1</b>. An bhfuil fonn ort na "
-#~ "sonraí neamhiomlána a scriosadh freisin?"
-
-#, fuzzy
-#~| msgid ""
-#~| "The torrent <b>%1</b> has not finished downloading, do you want to "
-#~| "delete the incomplete data, too?"
-#~ msgid ""
-#~ "All files of this torrent have been found in the completed downloads "
-#~ "directory. Do you want to import these files and use the completed "
-#~ "downloads directory as the location?"
-#~ msgstr ""
-#~ "Níor chríochnaigh íosluchtú torrent <b>%1</b>. An bhfuil fonn ort na "
-#~ "sonraí neamhiomlána a scriosadh freisin?"
-
-#, fuzzy
-#~| msgid ""
-#~| "The torrent <b>%1</b> has not finished downloading, do you want to "
-#~| "delete the incomplete data, too?"
-#~ msgid ""
-#~ "The file <b>%1</b> was found in the completed downloads directory. Do you "
-#~ "want to import this file?"
-#~ msgstr ""
-#~ "Níor chríochnaigh íosluchtú torrent <b>%1</b>. An bhfuil fonn ort na "
-#~ "sonraí neamhiomlána a scriosadh freisin?"
-
 #~ msgid "The directory %1 does not exist, do you want to create it?"
 #~ msgstr "Níl comhadlann %1 ann, an bhfuil fonn ort é a chruthú?"
 
@@ -1930,31 +1614,6 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgctxt "We are %1 bytes short of what we need"
 #~ msgid "%1 short"
 #~ msgstr "%1 beart easpach"
-
-#, fuzzy
-#~| msgid "Title: <b>%1</b>"
-#~ msgid "Existing files: <b>None</b>"
-#~ msgstr "Teideal: <b>%1</b>"
-
-#, fuzzy
-#~| msgid "Title: <b>%1</b>"
-#~ msgid "Existing files: <b>All</b>"
-#~ msgstr "Teideal: <b>%1</b>"
-
-#, fuzzy
-#~| msgid "Title: <b>%1</b><br/>Artist: <b>%2</b>"
-#~ msgid "Existing files: <b>%1</b> of <b>%2</b>"
-#~ msgstr "Teideal: <b>%1</b><br/>Ealaíontóir: <b>%2</b>"
-
-#, fuzzy
-#~| msgid "Title: <b>%1</b>"
-#~ msgid "Existing file: <b>No</b>"
-#~ msgstr "Teideal: <b>%1</b>"
-
-#, fuzzy
-#~| msgid "Title: <b>%1</b>"
-#~ msgid "Existing file: <b>Yes</b>"
-#~ msgstr "Teideal: <b>%1</b>"
 
 #~ msgid " KiB/s"
 #~ msgstr " KiB/s"
@@ -2031,19 +1690,6 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid "DHT: %1 nodes, %2 tasks"
 #~ msgstr "DHT: %1 nód, %2 tasc"
 
-#, fuzzy
-#~| msgid ""
-#~| "Invalid IP address %1. You must enter an IP address in the format 'XXX."
-#~| "XXX.XXX.XXX'. You can also use wildcards for ranges like '127.0.0.*'."
-#~ msgid ""
-#~ "Invalid IP address <b>%1</b>. IP addresses must be in the format 'XXX.XXX."
-#~ "XXX.XXX'.<br/><br/>You can also use wildcards like '127.0.0.*' or specify "
-#~ "ranges like '200.10.10.0-200.10.10.40'."
-#~ msgstr ""
-#~ "Seoladh IP neamhbhailí: %1. Ní mór duit seoltaí IP a iontráil i bhformáid "
-#~ "'XXX.XXX.XXX.XXX'. Is féidir saoróga a úsáid freisin, le haghaidh raonta, "
-#~ "cosúil le '127.0.0.*'."
-
 #~ msgid "Choose a file"
 #~ msgstr "Roghnaigh comhad"
 
@@ -2052,11 +1698,6 @@ msgstr "Earráid agus %1 á léamh"
 
 #~ msgid "Bittorrent client for KDE"
 #~ msgstr "Cliant Bittorrent le haghaidh KDE"
-
-#, fuzzy
-#~| msgid "(C) 2005 - 2007 Joris Guisson and Ivan Vasic"
-#~ msgid "(C) 2005 - 2010 Joris Guisson and Ivan Vasic"
-#~ msgstr "© 2005 - 2007 Joris Guisson and Ivan Vasic"
 
 #~ msgid "Joris Guisson"
 #~ msgstr "Joris Guisson"
@@ -2266,11 +1907,6 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid "Aaron J. Seigo"
 #~ msgstr "Aaron J. Seigo"
 
-#, fuzzy
-#~| msgid "No torrents loaded."
-#~ msgid "Feature which adds the date a torrent was added"
-#~ msgstr "Níl aon torrent luchtaithe."
-
 #~ msgid "Torrent Files"
 #~ msgstr "Comhaid Torrent"
 
@@ -2306,16 +1942,6 @@ msgstr "Earráid agus %1 á léamh"
 
 #~ msgid "Open URL"
 #~ msgstr "Oscail URL"
-
-#, fuzzy
-#~| msgid "Ungrouped Torrents"
-#~ msgid "Suspend KTorrent"
-#~ msgstr "Torrents Gan Ghrúpa"
-
-#, fuzzy
-#~| msgid "Pause all running torrents"
-#~ msgid "Suspend all running torrents"
-#~ msgstr "Stop gach torrent reatha"
 
 #~ msgid "Import Torrent"
 #~ msgstr "Iompórtáil Torrent"
@@ -2439,28 +2065,6 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid "Speed limit in KiB/s"
 #~ msgstr "Teorainn luais, i KiB/s"
 
-#, fuzzy
-#~| msgid ""
-#~| "KTorrent is unable to accept connections because the ports %1 to %2 are "
-#~| "already in use by another program."
-#~ msgid ""
-#~ "KTorrent is unable to accept connections because the TCP ports %1 is "
-#~ "already in use by another program."
-#~ msgstr ""
-#~ "Ní féidir le KTorrent ceangail a ghlacadh toisc go bhfuil poirt ó %1 go %"
-#~ "2 in úsáid cheana ag ríomhchlár eile."
-
-#, fuzzy
-#~| msgid ""
-#~| "KTorrent is unable to accept connections because the ports %1 to %2 are "
-#~| "already in use by another program."
-#~ msgid ""
-#~ "KTorrent is unable to accept connections because the UDP port %1 is "
-#~ "already in use by another program."
-#~ msgstr ""
-#~ "Ní féidir le KTorrent ceangail a ghlacadh toisc go bhfuil poirt ó %1 go %"
-#~ "2 in úsáid cheana ag ríomhchlár eile."
-
 #~ msgid "Cannot create torrent: %1"
 #~ msgstr "Ní féidir torrent a chruthú: %1"
 
@@ -2498,40 +2102,6 @@ msgstr "Earráid agus %1 á léamh"
 
 #~ msgid "Applet"
 #~ msgstr "Feidhmchláirín"
-
-#, fuzzy
-#~| msgid ""
-#~| "<table>\t\t\t\t<tr><td>Download Speed:</td><td>%5 </td><td>Seeders: </"
-#~| "td><td>%1 (%2)</td></tr>\t\t\t\t<tr><td>Upload Speed:</td><td>%6 </"
-#~| "td><td>Leechers: </td><td>%3 (%4)</td></tr>\t\t\t\t<tr><td>Downloaded:</"
-#~| "td><td>%7 / %8 </td><td>Uploaded: </td><td>%9</td></tr>\t\t\t\t</table>"
-#~ msgid ""
-#~ "<table>\t\t\t\t<tr><td>Download Speed:</td><td>%5 </td><td>Seeders: </"
-#~ "td><td>%1 (%2)</td></tr>\t\t\t\t<tr><td>Upload Speed:</td><td>%6 </"
-#~ "td><td>Leechers: </td><td>%3 (%4)</td></tr>"
-#~ msgstr ""
-#~ "<table>\t\t\t\t<tr><td>Luas Íosluchtaithe:</td><td>%5 </"
-#~ "td><td>Síoladóirí: </td><td>%1 (%2)</td></tr>\t\t\t\t<tr><td>Luas "
-#~ "Uasluchtaithe:</td><td>%6 </td><td>Súmairí: </td><td>%3 (%4)</td></tr>\t\t"
-#~ "\t\t<tr><td>Íosluchtaithe:</td><td>%7 / %8 </td><td>Uasluchtaithe: </"
-#~ "td><td>%9</td></tr>\t\t\t\t</table>"
-
-#, fuzzy
-#~| msgid ""
-#~| "<table>\t\t\t\t<tr><td>Download Speed:</td><td>%5 </td><td>Seeders: </"
-#~| "td><td>%1 (%2)</td></tr>\t\t\t\t<tr><td>Upload Speed:</td><td>%6 </"
-#~| "td><td>Leechers: </td><td>%3 (%4)</td></tr>\t\t\t\t<tr><td>Downloaded:</"
-#~| "td><td>%7 / %8 </td><td>Uploaded: </td><td>%9</td></tr>\t\t\t\t</table>"
-#~ msgid ""
-#~ "<tr><td>Downloaded:</td><td>%1 </td><td>Size: </td><td>%2</td></tr>\t\t\t"
-#~ "\t<tr><td>Uploaded:</td><td>%3 </td><td>Complete: </td><td>%4 %</td></tr>"
-#~ "\t\t\t\t</table>"
-#~ msgstr ""
-#~ "<table>\t\t\t\t<tr><td>Luas Íosluchtaithe:</td><td>%5 </"
-#~ "td><td>Síoladóirí: </td><td>%1 (%2)</td></tr>\t\t\t\t<tr><td>Luas "
-#~ "Uasluchtaithe:</td><td>%6 </td><td>Súmairí: </td><td>%3 (%4)</td></tr>\t\t"
-#~ "\t\t<tr><td>Íosluchtaithe:</td><td>%7 / %8 </td><td>Uasluchtaithe: </"
-#~ "td><td>%9</td></tr>\t\t\t\t</table>"
 
 #~ msgid "<b>%1</b><br/>%2 (Share Ratio: <font color=\"%4\">%3</font>)"
 #~ msgstr ""
@@ -2692,7 +2262,7 @@ msgstr "Earráid agus %1 á léamh"
 
 #~ msgctxt "EMAIL OF TRANSLATORS"
 #~ msgid "Your emails"
-#~ msgstr "kscanne at gmail dot com"
+#~ msgstr "kscanne@gmail.com"
 
 #~ msgid "Folders to scan for torrents:"
 #~ msgstr "Fillteáin le scanadh i gcomhair torrents:"
@@ -2847,11 +2417,6 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid "Status:"
 #~ msgstr "Stádas:"
 
-#, fuzzy
-#~| msgid "Refresh"
-#~ msgid "Refresh every:"
-#~ msgstr "Athnuaigh"
-
 #~ msgid " minutes"
 #~ msgstr " nóiméad"
 
@@ -2893,68 +2458,6 @@ msgstr "Earráid agus %1 á léamh"
 
 #~ msgid "Which interface to use."
 #~ msgstr "An comhéadan le húsáid."
-
-#, fuzzy
-#~| msgid ""
-#~| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/"
-#~| "TR/REC-html40/strict.dtd\">\n"
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Scan the folder "
-#~| "recursively for torrents.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;\">Note: "
-#~| "<span style=\" font-weight:400;\">This will not be done for any folder "
-#~| "named loaded.</span></p></body></html>"
-#~ msgid ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">If login required is "
-#~ "enabled, you need to enter a username and a password.</p>\n"
-#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~ "\"></p>\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "weight:600;\">Attention: </span>You should not disable this when the "
-#~ "webinterface is accessible from the internet. It will allow anybody "
-#~ "access to it.</p></body></html>"
-#~ msgstr ""
-#~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-#~ "REC-html40/strict.dtd\">\n"
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
-#~ "font-weight:400; font-style:normal;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Scan an fillteán go "
-#~ "hathchúrsach chun torrents a aimsiú.</p>\n"
-#~ "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~ "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~ "\"></p>\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;\">Nóta: "
-#~ "<span style=\" font-weight:400;\"> Ní dhéanfar é seo i bhfillteán ar bith "
-#~ "darb ainm 'loaded'.</span></p></body></html>"
-
-#, fuzzy
-#~| msgid "Required disk space:"
-#~ msgid "Login required"
-#~ msgstr "Spás diosca de dhíth:"
 
 #~ msgid "Username:"
 #~ msgstr "Ainm úsáideora:"
@@ -3053,95 +2556,6 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid "Use anti aliasing on charts?"
 #~ msgstr "An bhfuil fonn ort frithailiasáil a úsáid ar chairteacha?"
 
-#, fuzzy
-#~| msgid "Speed"
-#~ msgctxt "@title:window"
-#~ msgid "Speed"
-#~ msgstr "Luas"
-
-#~ msgid "Upload"
-#~ msgstr "Uasluchtaigh"
-
-#~ msgid "Colors"
-#~ msgstr "Dathanna"
-
-#~ msgid "Average"
-#~ msgstr "Meán"
-
-#~ msgid "Limit"
-#~ msgstr "Teorainn"
-
-#~ msgid "Seeds  in swarms"
-#~ msgstr "Síolta i saithí"
-
-#~ msgid "Avg. leechers connected per running torr."
-#~ msgstr "Meánlíon na súmairí ceangailte in aghaidh gach torrent gníomhach."
-
-#~ msgid "Avg. seeds connected per running torrent"
-#~ msgstr "Meánlíon na síolta ceangailte in aghaidh gach torrent gníomhach"
-
-#~ msgid "Use anti-aliasing"
-#~ msgstr "Úsáid frithailiasáil"
-
-#~ msgid "Draw background grid"
-#~ msgstr "Dear greille sa chúlra"
-
-#~ msgid "Widget type:"
-#~ msgstr "Cineál na giuirléide:"
-
-#~ msgid "Native"
-#~ msgstr "Dúchasach"
-
-#~ msgid "KDE"
-#~ msgstr "KDE"
-
-#~ msgid "(plugin reload is needed after change)"
-#~ msgstr "(ní mór an breiseán a athluchtú tar éis athraithe)"
-
-#~ msgid "Settings"
-#~ msgstr "Socruithe"
-
-#~ msgid "Update"
-#~ msgstr "Nuashonraigh"
-
-#~ msgid "Update charts every"
-#~ msgstr "Nuashonraigh cairteacha gach"
-
-#~ msgid "GUI updates"
-#~ msgstr "Nuashonruithe an chomhéadain"
-
-#~ msgid "Gather data every"
-#~ msgstr "Bailigh sonraí gach"
-
-#~ msgid "milliseconds"
-#~ msgstr "milleasoicind"
-
-#~ msgid "Maximum"
-#~ msgstr "Uasta"
-
-#~ msgid "Exact"
-#~ msgstr "Beacht"
-
-#~ msgid "Peers connections"
-#~ msgstr "Ceangail na gcomhghleacaithe"
-
-#~ msgid "Show seeds in swarms"
-#~ msgstr "Taispeáin síolta i saithí"
-
-#~ msgid "Show leechers in swarms"
-#~ msgstr "Taispeáin súmairí i saithí"
-
-#~ msgid "Remove Tracker"
-#~ msgstr "Bain Lorgaire"
-
-#~ msgid "Change Tracker"
-#~ msgstr "Athraigh an Lorgaire"
-
-#, fuzzy
-#~| msgid "Update Tracker"
-#~ msgid "Update Trackers"
-#~ msgstr "Nuashonraigh an Lorgaire"
-
 #~ msgid "Restore Defaults"
 #~ msgstr "Athchóirigh na Réamhshocruithe"
 
@@ -3150,11 +2564,6 @@ msgstr "Earráid agus %1 á léamh"
 
 #~ msgid "Average down speed:"
 #~ msgstr "Meánluas íosluchtaithe:"
-
-#, fuzzy
-#~| msgid "Type"
-#~ msgid "Type:"
-#~ msgstr "Cineál"
 
 #~ msgid "Average up speed:"
 #~ msgstr "Meánluas uasluchtaithe:"
@@ -3438,16 +2847,6 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid "Schedule Item color:"
 #~ msgstr "Dath míreanna i sceideal:"
 
-#, fuzzy
-#~| msgid "Schedule Item color:"
-#~ msgid "Suspended schedule item color:"
-#~ msgstr "Dath míreanna i sceideal:"
-
-#, fuzzy
-#~| msgid "Add a new item to the schedule"
-#~ msgid "Color of each suspended item on the schedule."
-#~ msgstr "Cuir mír nua leis an sceideal"
-
 #~ msgid "Time"
 #~ msgstr "Am"
 
@@ -3553,38 +2952,8 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid "C&ancel"
 #~ msgstr "Ce&alaigh"
 
-#, fuzzy
-#~| msgid "Search Preferences"
-#~ msgid "Magnet Generator Preferences"
-#~ msgstr "Sainroghanna Cuardaigh"
-
-#, fuzzy
-#~| msgid "Add Tracker"
-#~ msgid "Add tracker"
-#~ msgstr "Cuir Lorgaire Leis"
-
 #~ msgid "Tracker:"
 #~ msgstr "Lorgaire:"
-
-#, fuzzy
-#~| msgid "Add an item"
-#~ msgid "Add name"
-#~ msgstr "Cuir mír leis"
-
-#, fuzzy
-#~| msgid "Tracker"
-#~ msgid "Toggles tracker"
-#~ msgstr "Lorgaire"
-
-#, fuzzy
-#~| msgid "Use default browser"
-#~ msgid "The default tracker"
-#~ msgstr "Úsáid an brabhsálaí réamhshocraithe"
-
-#, fuzzy
-#~| msgid "Show Feed"
-#~ msgid "Show dn"
-#~ msgstr "Taispeáin Fotha"
 
 #~ msgid "UPnP Test Application"
 #~ msgstr "Feidhmchlár Tástála UPnP"
@@ -3945,16 +3314,6 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid "Window of X"
 #~ msgstr "Fuinneog X"
 
-#, fuzzy
-#~| msgid "Use proxy for tracker connections"
-#~ msgid "Do not use KIO for tracker announces"
-#~ msgstr "Úsáid seachfhreastalaí le haghaidh ceangail lorgaire"
-
-#, fuzzy
-#~| msgid "Resolving hostname %1"
-#~ msgid "Resolve hostnames of peers"
-#~ msgstr "Óstainm %1 á réiteach"
-
 #~ msgid "Folders"
 #~ msgstr "Fillteáin"
 
@@ -4001,11 +3360,6 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid "Show system tray icon"
 #~ msgstr "Taispeáin deilbhín i dtráidire an chórais"
 
-#~ msgid "Whether or not to show system tray popup messages."
-#~ msgstr ""
-#~ "Cé acu a thaispeánfar teachtaireachtaí aníos i dtráidire an chórais nó "
-#~ "nach dtaispeánfar."
-
 #~ msgid "Show system tray popup messages"
 #~ msgstr "Taispeáin teachtaireachtaí aníos i dtráidire an chórais"
 
@@ -4043,22 +3397,11 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid " Minutes"
 #~ msgstr " Nóiméad"
 
-#, fuzzy
-#~| msgid "Seeding"
-#~ msgctxt "@title:group Options regarging Seeding"
-#~ msgid "Seeding"
-#~ msgstr "Á Shíolú"
-
 #~ msgid "Keep seeding after download is finished"
 #~ msgstr "Coinnigh ag síolú nuair atá an t-íosluchtú críochnaithe"
 
 #~ msgid "Number of upload slots:"
 #~ msgstr "Líon na sliotán uasluchtaithe:"
-
-#, fuzzy
-#~| msgid "Maximum share ratio:"
-#~ msgid "Default maximum share ratio:"
-#~ msgstr "Cóimheas uasta comhroinnte:"
 
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -4102,11 +3445,6 @@ msgstr "Earráid agus %1 á léamh"
 #~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 #~ "weight:600;\">Aire: </span>Ní úsáidtear é seo le linn íosluchtaithe, le "
 #~ "linn síolaithe amháin.</p></body></html>"
-
-#, fuzzy
-#~| msgid "Maximum seed time:"
-#~ msgid "Default maximum seed time:"
-#~ msgstr "Tréimhse uasta síolaithe:"
 
 #~ msgid ""
 #~ "The maximum seed time in hours. Once you reach this time, the torrent "
@@ -4334,23 +3672,8 @@ msgstr "Earráid agus %1 á léamh"
 #~ "style=\" font-size:8pt;\">Focal faire le haghaidh seachfhreastalaí SOCKS."
 #~ "</span></p></body></html>"
 
-#, fuzzy
-#~| msgid "Open..."
-#~ msgid "..."
-#~ msgstr "Oscail..."
-
 #~ msgid "0"
 #~ msgstr "0"
-
-#, fuzzy
-#~| msgid "File"
-#~ msgid "Failed:"
-#~ msgstr "Comhad"
-
-#, fuzzy
-#~| msgid "Downloaded:"
-#~ msgid "Not downloaded:"
-#~ msgstr "Íosluchtaithe:"
 
 #~ msgid "Cancel"
 #~ msgstr "Cealaigh"
@@ -4463,30 +3786,8 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid "Disk Space"
 #~ msgstr "Spás Diosca"
 
-#, fuzzy
-#~| msgid "Required disk space:"
-#~ msgid "Required:"
-#~ msgstr "Spás diosca de dhíth:"
-
-#, fuzzy
-#~| msgid "Available"
-#~ msgid "Available:"
-#~ msgstr "Ar Fáil"
-
 #~ msgid "After download:"
 #~ msgstr "Tar éis íosluchtaithe:"
-
-#, fuzzy
-#~| msgid "Speed limits for all torrents (double click to edit):"
-#~ msgid "Speed limits for individual torrents (double click to edit):"
-#~ msgstr ""
-#~ "Teorainneacha luais do gach torrent (cliceáil faoi dhó chun iad a chur in "
-#~ "eagar):"
-
-#, fuzzy
-#~| msgid "Filter"
-#~ msgid "Filter:"
-#~ msgstr "Scagaire"
 
 #~ msgid "Global Limits"
 #~ msgstr "Teorainneacha Comhchoiteanna"
@@ -4652,11 +3953,6 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid "&File"
 #~ msgstr "&Comhad"
 
-#, fuzzy
-#~| msgid "&File"
-#~ msgid "&View"
-#~ msgstr "&Comhad"
-
 #~ msgid "Additional Peer Sources"
 #~ msgstr "Foinsí Comhghleacaí Sa Bhreis"
 
@@ -4669,20 +3965,6 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgid "Add peer:"
 #~ msgstr "Cuir comhghleacaí leis:"
 
-#, fuzzy
-#~| msgid ""
-#~| "Invalid IP address %1. You must enter an IP address in the format 'XXX."
-#~| "XXX.XXX.XXX'. You can also use wildcards for ranges like '127.0.0.*'."
-#~ msgid ""
-#~ "IP addresses must be in the format 'XXX.XXX.XXX.XXX'.\n"
-#~ "                                        \n"
-#~ "You can also use wildcards like '127.0.0.*' or specify ranges like "
-#~ "'200.10.10.0-200.10.10.40'."
-#~ msgstr ""
-#~ "Seoladh IP neamhbhailí: %1. Ní mór duit seoltaí IP a iontráil i bhformáid "
-#~ "'XXX.XXX.XXX.XXX'. Is féidir saoróga a úsáid freisin, le haghaidh raonta, "
-#~ "cosúil le '127.0.0.*'."
-
 #~ msgid "Clear"
 #~ msgstr "Glan"
 
@@ -4691,9 +3973,6 @@ msgstr "Earráid agus %1 á léamh"
 
 #~ msgid "Save As..."
 #~ msgstr "Sábháil Mar..."
-
-#~ msgid "Torrent to display:"
-#~ msgstr "Torrent le taispeáint:"
 
 #~ msgid "Maximum number of downloads (0 = no limit)"
 #~ msgstr "Líon uasta na n-íosluchtuithe (0 = gan teorainn)"
@@ -4751,16 +4030,6 @@ msgstr "Earráid agus %1 á léamh"
 #~ msgstr ""
 #~ "Níl an port sonraithe (%1) ar fáil, nó tá sé in úsáid ag feidhmchlár "
 #~ "eile. Tá KTorrent ceangailte le port %2 anois."
-
-#, fuzzy
-#~| msgid "Resume paused torrents"
-#~ msgid "Resume suspended torrents"
-#~ msgstr "Atosaigh torrents ar shos"
-
-#, fuzzy
-#~| msgid "TextLabel"
-#~ msgid "KSqueezedTextLabel"
-#~ msgstr "Lipéad"
 
 #~ msgid "Creating Torrent"
 #~ msgstr "Torrent á chruthú"
@@ -4878,11 +4147,6 @@ msgstr "Earráid agus %1 á léamh"
 
 #~ msgid "Use a list of files when displaying the files of a torrent"
 #~ msgstr "Úsáid liosta comhad nuair atá na comhaid i dtorrent ar taispeáint"
-
-#, fuzzy
-#~| msgid "Torrent has no announce or nodes field"
-#~ msgid "Torrent has no announce or nodes field."
-#~ msgstr "Níl réimse fógra ná réimse nód sa torrent"
 
 #~ msgid ""
 #~ "An error occurred while loading the torrent.\n"
@@ -5272,9 +4536,6 @@ msgstr "Earráid agus %1 á léamh"
 
 #~ msgid "Cannot expand file %1"
 #~ msgstr "Ní féidir comhad %1 a fhairsingiú"
-
-#~ msgid "Error writing to %1 : %2"
-#~ msgstr "Earráid agus %1 á scriobh: %2"
 
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"

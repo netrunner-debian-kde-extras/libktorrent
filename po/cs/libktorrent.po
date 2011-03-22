@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-02 03:19+0100\n"
+"POT-Creation-Date: 2011-03-13 12:17+0100\n"
 "PO-Revision-Date: 2011-02-02 10:13+0100\n"
 "Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -16,30 +16,6 @@ msgstr ""
 "Language: cs\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Lokalize 1.2\n"
-
-#: examples/ktcli/main.cpp:60
-msgid "Torrent to open"
-msgstr "Torrent k otevření"
-
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-msgid "Port to use"
-msgstr "Port k použití"
-
-#: examples/ktcli/main.cpp:63
-msgid "Whether or not to enable encryption"
-msgstr "Zda povolit šifrování nebo ne"
-
-#: examples/ktcli/main.cpp:64
-msgid "Whether or not to enable peer exchange"
-msgstr "Zda povolit výměnu protějšků nebo ne"
-
-#: examples/ktcli/main.cpp:65
-msgid "Whether or not to use utp"
-msgstr "Zda použít utp nebo ne"
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr ""
 
 #: src/bcodec/bdecoder.cpp:62
 #, kde-format
@@ -63,19 +39,19 @@ msgstr "Nelze převést %1 na celé číslo"
 msgid "Torrent is incomplete."
 msgstr "Torrent je nekompletní."
 
-#: src/datachecker/datacheckerjob.cpp:82
+#: src/datachecker/datacheckerjob.cpp:76
 msgid "Waiting for other data checks to finish"
 msgstr ""
 
-#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
 msgid "Checking data"
 msgstr "Kontroluji data"
 
-#: src/datachecker/datacheckerjob.cpp:141
+#: src/datachecker/datacheckerjob.cpp:135
 msgid "Checking Data"
 msgstr "Kontroluji data"
 
-#: src/datachecker/multidatachecker.cpp:209
+#: src/datachecker/multidatachecker.cpp:203
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
@@ -156,24 +132,20 @@ msgstr "Nelze zapsat první blok do souboru DND: %1"
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Selhalo zapisování posledního bloku do souboru DND: %1"
 
-#: src/diskio/movedatafilesjob.cpp:140
-msgid "Waiting for other move jobs to finish"
-msgstr ""
+#: src/diskio/movedatafilesjob.cpp:166
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Přesouvání"
 
-#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+#: src/diskio/movedatafilesjob.cpp:167
 msgctxt "The source of a file operation"
 msgid "Source"
 msgstr "Zdroj"
 
-#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+#: src/diskio/movedatafilesjob.cpp:168
 msgctxt "The destination of a file operation"
 msgid "Destination"
 msgstr "Cíl"
-
-#: src/diskio/movedatafilesjob.cpp:180
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Přesouvání"
 
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, kde-format
@@ -188,14 +160,6 @@ msgstr "Nelze vytvořit %1: %2"
 #: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
-
-#: src/download/chunkdownload.cpp:382
-#, kde-format
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] "1 protějšek"
-msgstr[1] "%1 protějšky"
-msgstr[2] "%1 protějšků"
 
 #: src/download/downloader.cpp:810
 #, fuzzy
@@ -264,6 +228,14 @@ msgstr "Přesměrováno bez nového umístění."
 msgid "Unused for %1 seconds (Too many connection failures)"
 msgstr ""
 
+#: src/download/chunkdownload.cpp:383
+#, kde-format
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] "1 protějšek"
+msgstr[1] "%1 protějšky"
+msgstr[2] "%1 protějšků"
+
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr "OK"
@@ -291,21 +263,10 @@ msgstr "Adresář %1 neexistuje"
 msgid "Unknown client"
 msgstr "Neznámý klient"
 
-#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
-#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
-#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
-#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
-msgid "Corrupted torrent."
-msgstr "Poškozený torrent."
-
-#: src/torrent/torrent.cpp:165
+#: src/torrent/torrentcreator.cpp:361
 #, kde-format
-msgid "Unable to open torrent file %1: %2"
-msgstr "Nelze otevřít torrent soubor %1: %2"
-
-#: src/torrent/torrent.cpp:295
-msgid "Parse Error"
-msgstr "Chyba analýzy"
+msgid "Cannot create index file: %1"
+msgstr "Nelze vytvořit soubor s indexem: %1"
 
 #: src/torrent/torrentcontrol.cpp:308
 msgid "Error writing to disk, do you have enough diskspace?"
@@ -342,11 +303,6 @@ msgstr ""
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Již stahujete torrent <b>%1</b>."
-
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "Nelze vytvořit soubor s indexem: %1"
 
 #: src/torrent/torrentstats.cpp:72
 msgid "Not started"
@@ -404,6 +360,18 @@ msgstr "Pozastaveno"
 msgid "Superseeding"
 msgstr "Sdílím"
 
+#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
+#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
+#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
+#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
+msgid "Corrupted torrent."
+msgstr "Poškozený torrent."
+
+#: src/torrent/torrent.cpp:165
+#, kde-format
+msgid "Unable to open torrent file %1: %2"
+msgstr "Nelze otevřít torrent soubor %1: %2"
+
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "Přesměrování bez umístění přesměrování"
@@ -432,36 +400,29 @@ msgstr ""
 msgid "Unable to resolve hostname %1"
 msgstr "Nelze rozpoznat jméno hostitele %1"
 
-#: src/upnp/httprequest.cpp:96
-msgid "Connection closed unexpectedly"
-msgstr "Připojení bylo neočekávaně uzavřeno"
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "Obecné"
 
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
-msgstr "Čas pro operaci vypršel"
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
+msgstr "Připojení"
 
-#: src/upnp/upnprouter.cpp:167
-#, kde-format
-msgid "Failed to download %1: %2"
-msgstr "Chyba při stahování %1: %2"
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "Tracker"
 
-#: src/upnp/upnprouter.cpp:178
-msgid "Error parsing router description."
-msgstr "Chyba při analýze popisu směrování."
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
 
-#: src/upnp/upnprouter.cpp:216
-#, fuzzy
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
-"Předávání selhalo: \n"
-"Zařízení nemá WANIPConnection nebo WANPPPConnection."
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
+msgstr "Diskové I/O"
 
-#: src/upnp/upnprouter.cpp:314
-#, fuzzy
-msgid "Cannot find port forwarding service in the device's description."
-msgstr "V popisu zařízení nelze nalézt službu předávání portů."
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr "µTP"
 
 #: src/util/file.cpp:84
 #, kde-format
@@ -537,51 +498,83 @@ msgstr[0] "1 den "
 msgstr[1] "%1 dnů "
 msgstr[2] "%1 "
 
-#: src/util/logsystemmanager.cpp:33
-msgid "General"
-msgstr "Obecné"
-
-#: src/util/logsystemmanager.cpp:34
-msgid "Connections"
-msgstr "Připojení"
-
-#: src/util/logsystemmanager.cpp:35
-msgid "Tracker"
-msgstr "Tracker"
-
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr "DHT"
-
-#: src/util/logsystemmanager.cpp:37
-msgid "Disk Input/Output"
-msgstr "Diskové I/O"
-
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
-msgstr "µTP"
-
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 msgid "Error when writing to disk"
 msgstr "Chyba při zápisu na disk"
 
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 msgid "Error when reading from disk"
 msgstr "Chyba při čtení z disku"
 
-#~ msgid "Not in use"
-#~ msgstr "Nepoužito"
+#: src/upnp/httprequest.cpp:96
+msgid "Connection closed unexpectedly"
+msgstr "Připojení bylo neočekávaně uzavřeno"
 
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr "Čas pro operaci vypršel"
+
+#: src/upnp/upnprouter.cpp:167
+#, kde-format
+msgid "Failed to download %1: %2"
+msgstr "Chyba při stahování %1: %2"
+
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
+msgstr "Chyba při analýze popisu směrování."
+
+#: src/upnp/upnprouter.cpp:216
 #, fuzzy
-#~| msgid "Not enough free disk space for %1"
-#~ msgid "Not enough diskspace"
-#~ msgstr "Nedostatek místa na disku pro %1"
+#| msgid ""
+#| "Forwarding failed: \n"
+#| "Device does not have a WANIPConnection or WANPPPConnection."
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+"Předávání selhalo: \n"
+"Zařízení nemá WANIPConnection nebo WANPPPConnection."
+
+#: src/upnp/upnprouter.cpp:314
+#, fuzzy
+msgid "Cannot find port forwarding service in the device's description."
+msgstr "V popisu zařízení nelze nalézt službu předávání portů."
+
+#: examples/ktcli/main.cpp:60
+msgid "Torrent to open"
+msgstr "Torrent k otevření"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+msgid "Port to use"
+msgstr "Port k použití"
+
+#: examples/ktcli/main.cpp:63
+msgid "Whether or not to enable encryption"
+msgstr "Zda povolit šifrování nebo ne"
+
+#: examples/ktcli/main.cpp:64
+msgid "Whether or not to enable peer exchange"
+msgstr "Zda povolit výměnu protějšků nebo ne"
+
+#: examples/ktcli/main.cpp:65
+msgid "Whether or not to use utp"
+msgstr "Zda použít utp nebo ne"
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr ""
+
+#~ msgid "Parse Error"
+#~ msgstr "Chyba analýzy"
+
+#~ msgid "Cannot open file : %1 : %2"
+#~ msgstr "Nelze otevřít soubor: %1 : %2"
 
 #~ msgid "Cannot open file %1 : %2"
 #~ msgstr "Nelze otevřít soubor %1: %2"
 
-#~ msgid "Cannot open file : %1 : %2"
-#~ msgstr "Nelze otevřít soubor: %1 : %2"
+#~ msgid "Not in use"
+#~ msgstr "Nepoužito"
 
 #~ msgid ""
 #~ "An error occurred while loading the torrent:<br/><b>%1</b><br/>The "
@@ -594,6 +587,10 @@ msgstr "Chyba při čtení z disku"
 #~ msgstr "Nelze otevřít soubor se záznamem %1: %2"
 
 #, fuzzy
+#~| msgid "Not enough free disk space for %1"
+#~ msgid "Not enough diskspace"
+#~ msgstr "Nedostatek místa na disku pro %1"
+
 #~ msgid "Timeout occurred"
 #~ msgstr "Vypršel časový limit"
 
@@ -5046,9 +5043,6 @@ msgstr "Chyba při čtení z disku"
 
 #~ msgid "Show system tray icon"
 #~ msgstr "Zobrazit ikonu v systémovém panelu"
-
-#~ msgid "Whether or not to show system tray popup messages."
-#~ msgstr "Zobrazit vyskakovací zprávy systémového panelu."
 
 #~ msgid "Show system tray popup messages"
 #~ msgstr "Zobrazit vyskakovací zprávy systémového panelu"

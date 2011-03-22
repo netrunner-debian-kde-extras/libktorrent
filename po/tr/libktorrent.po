@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-02 03:19+0100\n"
+"POT-Creation-Date: 2011-03-13 12:17+0100\n"
 "PO-Revision-Date: 2010-06-25 14:00+0300\n"
 "Last-Translator: Ozan Çağlayan <ozan@pardus.org.tr>\n"
 "Language-Team: Turkish <kde-i18n-doc@kde.org>\n"
@@ -22,36 +22,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-
-#: examples/ktcli/main.cpp:60
-msgid "Torrent to open"
-msgstr "Açılacak torrent"
-
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-msgid "Port to use"
-msgstr "Kullanılacak port"
-
-#: examples/ktcli/main.cpp:63
-#, fuzzy
-#| msgid "Whether or not to enable a custom download order."
-msgid "Whether or not to enable encryption"
-msgstr "Özel bir indirme sırası etkinleştir veya iptal et."
-
-#: examples/ktcli/main.cpp:64
-#, fuzzy
-#| msgid "Whether or not to use µTorrent compatible peer exchange."
-msgid "Whether or not to enable peer exchange"
-msgstr "µTorrent uyumlu paylaşımı takası kullanmak veya kullanmamak."
-
-#: examples/ktcli/main.cpp:65
-#, fuzzy
-#| msgid "Whether or not to enable a custom download order."
-msgid "Whether or not to use utp"
-msgstr "Özel bir indirme sırası etkinleştir veya iptal et."
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr "ktcli"
 
 #: src/bcodec/bdecoder.cpp:62
 #, kde-format
@@ -75,21 +45,21 @@ msgstr "%1 bir int'e dönüştürülemiyor"
 msgid "Torrent is incomplete."
 msgstr "Torrent tamamlanmamış."
 
-#: src/datachecker/datacheckerjob.cpp:82
+#: src/datachecker/datacheckerjob.cpp:76
 msgid "Waiting for other data checks to finish"
 msgstr ""
 
-#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
 msgid "Checking data"
 msgstr "Veri denetleniyor"
 
-#: src/datachecker/datacheckerjob.cpp:141
+#: src/datachecker/datacheckerjob.cpp:135
 #, fuzzy
 #| msgid "Checking data"
 msgid "Checking Data"
 msgstr "Veri denetleniyor"
 
-#: src/datachecker/multidatachecker.cpp:209
+#: src/datachecker/multidatachecker.cpp:203
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
@@ -186,30 +156,26 @@ msgstr "İlk parça DND dosyasına yazılamadı : %1"
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Son parça DND dosyasına yazılamadı : %1"
 
-#: src/diskio/movedatafilesjob.cpp:140
-msgid "Waiting for other move jobs to finish"
-msgstr ""
+#: src/diskio/movedatafilesjob.cpp:166
+#, fuzzy
+#| msgid "Moving average"
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Taşıma ortalaması"
 
-#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+#: src/diskio/movedatafilesjob.cpp:167
 #, fuzzy
 #| msgid "Score"
 msgctxt "The source of a file operation"
 msgid "Source"
 msgstr "Puan"
 
-#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+#: src/diskio/movedatafilesjob.cpp:168
 #, fuzzy
 #| msgid "Destination"
 msgctxt "The destination of a file operation"
 msgid "Destination"
 msgstr "Hedef"
-
-#: src/diskio/movedatafilesjob.cpp:180
-#, fuzzy
-#| msgid "Moving average"
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Taşıma ortalaması"
 
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, fuzzy, kde-format
@@ -226,12 +192,6 @@ msgstr "%1 oluşturulamıyor : %2"
 #: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
-
-#: src/download/chunkdownload.cpp:382
-#, kde-format
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] "%1 paylaşımcı"
 
 #: src/download/downloader.cpp:810
 #, fuzzy
@@ -300,6 +260,12 @@ msgstr "Bir konum olmadan yeniden yönlendirildi."
 msgid "Unused for %1 seconds (Too many connection failures)"
 msgstr ""
 
+#: src/download/chunkdownload.cpp:383
+#, kde-format
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] "%1 paylaşımcı"
+
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr "Tamam"
@@ -328,22 +294,10 @@ msgstr "%1 dizini yok"
 msgid "Unknown client"
 msgstr "Bilinmeyen istemci"
 
-#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
-#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
-#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
-#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
-msgid "Corrupted torrent."
-msgstr "Bozuk torrent."
-
-#: src/torrent/torrent.cpp:165
-#, fuzzy, kde-format
-#| msgid " Unable to open torrent file %1 : %2"
-msgid "Unable to open torrent file %1: %2"
-msgstr " %1 torrent dosyası açılamıyor: %2"
-
-#: src/torrent/torrent.cpp:295
-msgid "Parse Error"
-msgstr "Ayrıştırma Hatası"
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "İçerik dosyası oluşturulamıyor: %1"
 
 #: src/torrent/torrentcontrol.cpp:308
 #, fuzzy
@@ -385,11 +339,6 @@ msgstr ""
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "<b>%1</b> torrentini zaten indiriyorsunuz."
-
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "İçerik dosyası oluşturulamıyor: %1"
 
 #: src/torrent/torrentstats.cpp:72
 msgid "Not started"
@@ -444,6 +393,19 @@ msgstr "Duraklatıldı"
 msgid "Superseeding"
 msgstr "Superseeding"
 
+#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
+#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
+#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
+#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
+msgid "Corrupted torrent."
+msgstr "Bozuk torrent."
+
+#: src/torrent/torrent.cpp:165
+#, fuzzy, kde-format
+#| msgid " Unable to open torrent file %1 : %2"
+msgid "Unable to open torrent file %1: %2"
+msgstr " %1 torrent dosyası açılamıyor: %2"
+
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "Bir konum olmadan yeniden yönlendir."
@@ -472,41 +434,29 @@ msgstr "%1 izleyicisiyle iletişime geçilirken zaman aşımı"
 msgid "Unable to resolve hostname %1"
 msgstr "%1 makine adı çözümlenemedi"
 
-#: src/upnp/httprequest.cpp:96
-#, fuzzy
-#| msgid "Connection closed unexpectedly."
-msgid "Connection closed unexpectedly"
-msgstr "Bağlantı beklenmedik bir biçimde kapatıldı."
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "Genel"
 
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
-msgstr ""
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
+msgstr "Bağlantılar"
 
-#: src/upnp/upnprouter.cpp:167
-#, fuzzy, kde-format
-#| msgid "Failed to download %1 : %2"
-msgid "Failed to download %1: %2"
-msgstr "%1 indirilemiyor: %2"
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "İzleyici"
 
-#: src/upnp/upnprouter.cpp:178
-msgid "Error parsing router description."
-msgstr "Yöneltici tanımı ayrıştırma hatası."
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
 
-#: src/upnp/upnprouter.cpp:216
-#, fuzzy
-#| msgid ""
-#| "Forwarding failed: \n"
-#| "Device does not have a WANIPConnection or WANPPPConnection."
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
-"Yönlendirme başarısız oldu: \n"
-"Aygıt bir WANIPConnection veya WANPPPConnection'a sahip değil."
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
+msgstr "Disk Girişi/Çıkışı"
 
-#: src/upnp/upnprouter.cpp:314
-msgid "Cannot find port forwarding service in the device's description."
-msgstr "Aygıtın açıklamasında bağlantı kapısı yönlendirme hizmeti bulunamıyor."
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr "µTP"
 
 #: src/util/file.cpp:84
 #, fuzzy, kde-format
@@ -583,49 +533,91 @@ msgid "1 day "
 msgid_plural "%1 days "
 msgstr[0] "%1 gün"
 
-#: src/util/logsystemmanager.cpp:33
-msgid "General"
-msgstr "Genel"
-
-#: src/util/logsystemmanager.cpp:34
-msgid "Connections"
-msgstr "Bağlantılar"
-
-#: src/util/logsystemmanager.cpp:35
-msgid "Tracker"
-msgstr "İzleyici"
-
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr "DHT"
-
-#: src/util/logsystemmanager.cpp:37
-msgid "Disk Input/Output"
-msgstr "Disk Girişi/Çıkışı"
-
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
-msgstr "µTP"
-
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 msgid "Error when writing to disk"
 msgstr "Diske yazılırken hata oluştu"
 
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 msgid "Error when reading from disk"
 msgstr "Diskten okunurken hata oluştu"
 
-#~ msgid "Not in use"
-#~ msgstr "Kullanımda değil"
+#: src/upnp/httprequest.cpp:96
+#, fuzzy
+#| msgid "Connection closed unexpectedly."
+msgid "Connection closed unexpectedly"
+msgstr "Bağlantı beklenmedik bir biçimde kapatıldı."
 
-#~ msgid "Not enough diskspace"
-#~ msgstr "Yetersiz disk alanı"
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:167
+#, fuzzy, kde-format
+#| msgid "Failed to download %1 : %2"
+msgid "Failed to download %1: %2"
+msgstr "%1 indirilemiyor: %2"
+
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
+msgstr "Yöneltici tanımı ayrıştırma hatası."
+
+#: src/upnp/upnprouter.cpp:216
+#, fuzzy
+#| msgid ""
+#| "Forwarding failed: \n"
+#| "Device does not have a WANIPConnection or WANPPPConnection."
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+"Yönlendirme başarısız oldu: \n"
+"Aygıt bir WANIPConnection veya WANPPPConnection'a sahip değil."
+
+#: src/upnp/upnprouter.cpp:314
+msgid "Cannot find port forwarding service in the device's description."
+msgstr "Aygıtın açıklamasında bağlantı kapısı yönlendirme hizmeti bulunamıyor."
+
+#: examples/ktcli/main.cpp:60
+msgid "Torrent to open"
+msgstr "Açılacak torrent"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+msgid "Port to use"
+msgstr "Kullanılacak port"
+
+#: examples/ktcli/main.cpp:63
+#, fuzzy
+#| msgid "Whether or not to enable a custom download order."
+msgid "Whether or not to enable encryption"
+msgstr "Özel bir indirme sırası etkinleştir veya iptal et."
+
+#: examples/ktcli/main.cpp:64
+#, fuzzy
+#| msgid "Whether or not to use µTorrent compatible peer exchange."
+msgid "Whether or not to enable peer exchange"
+msgstr "µTorrent uyumlu paylaşımı takası kullanmak veya kullanmamak."
+
+#: examples/ktcli/main.cpp:65
+#, fuzzy
+#| msgid "Whether or not to show system tray popup messages."
+msgid "Whether or not to use utp"
+msgstr "Sistem çekmecesi iletilerinin gösterilip gösterilmeyeceği"
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr "ktcli"
+
+#~ msgid "Parse Error"
+#~ msgstr "Ayrıştırma Hatası"
+
+#~ msgid "Cannot open file : %1 : %2"
+#~ msgstr "Dosya açılamıyor: %1 : %2"
 
 #~ msgid "Cannot open file %1 : %2"
 #~ msgstr "%1 dosyası açılamıyor: %2"
 
-#~ msgid "Cannot open file : %1 : %2"
-#~ msgstr "Dosya açılamıyor: %1 : %2"
+#~ msgid "Not in use"
+#~ msgstr "Kullanımda değil"
 
 #~ msgid ""
 #~ "An error occurred while loading the torrent:<br/><b>%1</b><br/>The "
@@ -636,6 +628,9 @@ msgstr "Diskten okunurken hata oluştu"
 
 #~ msgid "Cannot open log file %1 : %2"
 #~ msgstr "%1 günlük dosyası açılamıyor : %2"
+
+#~ msgid "Not enough diskspace"
+#~ msgstr "Yetersiz disk alanı"
 
 #~ msgid "Timeout occurred"
 #~ msgstr "Zamanaşımı oluştu"
@@ -5100,9 +5095,6 @@ msgstr "Diskten okunurken hata oluştu"
 
 #~ msgid "Show system tray icon"
 #~ msgstr "Sistem çekmecesi simgesini göster"
-
-#~ msgid "Whether or not to show system tray popup messages."
-#~ msgstr "Sistem çekmecesi iletilerinin gösterilip gösterilmeyeceği"
 
 #~ msgid "Show system tray popup messages"
 #~ msgstr "Sistem çekmecesi iletilerini göster"

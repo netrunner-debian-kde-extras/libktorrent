@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-02 03:19+0100\n"
+"POT-Creation-Date: 2011-03-13 12:17+0100\n"
 "PO-Revision-Date: 2009-10-31 23:24+0900\n"
 "Last-Translator: Yukiko Bando <ybando@k6.dion.ne.jp>\n"
 "Language-Team: Japanese <Kdeveloper@kde.gr.jp>\n"
@@ -17,34 +17,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
-
-#: examples/ktcli/main.cpp:60
-#, fuzzy
-#| msgid "Torrent is incomplete."
-msgid "Torrent to open"
-msgstr "torrent が不完全です。"
-
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-#, fuzzy
-#| msgid "Not in use"
-msgid "Port to use"
-msgstr "使用されていません"
-
-#: examples/ktcli/main.cpp:63
-msgid "Whether or not to enable encryption"
-msgstr ""
-
-#: examples/ktcli/main.cpp:64
-msgid "Whether or not to enable peer exchange"
-msgstr ""
-
-#: examples/ktcli/main.cpp:65
-msgid "Whether or not to use utp"
-msgstr ""
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr ""
 
 #: src/bcodec/bdecoder.cpp:62
 #, kde-format
@@ -68,21 +40,21 @@ msgstr "%1 を整数に変換できません"
 msgid "Torrent is incomplete."
 msgstr "torrent が不完全です。"
 
-#: src/datachecker/datacheckerjob.cpp:82
+#: src/datachecker/datacheckerjob.cpp:76
 msgid "Waiting for other data checks to finish"
 msgstr ""
 
-#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
 msgid "Checking data"
 msgstr "データをチェック中"
 
-#: src/datachecker/datacheckerjob.cpp:141
+#: src/datachecker/datacheckerjob.cpp:135
 #, fuzzy
 #| msgid "Checking data"
 msgid "Checking Data"
 msgstr "データをチェック中"
 
-#: src/datachecker/multidatachecker.cpp:209
+#: src/datachecker/multidatachecker.cpp:203
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
@@ -177,23 +149,19 @@ msgstr "最初のピースを DND ファイルに書き込めませんでした:
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "最後のピースを DND ファイルに書き込めませんでした: %1"
 
-#: src/diskio/movedatafilesjob.cpp:140
-msgid "Waiting for other move jobs to finish"
+#: src/diskio/movedatafilesjob.cpp:166
+msgctxt "@title job"
+msgid "Moving"
 msgstr ""
 
-#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+#: src/diskio/movedatafilesjob.cpp:167
 msgctxt "The source of a file operation"
 msgid "Source"
 msgstr ""
 
-#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+#: src/diskio/movedatafilesjob.cpp:168
 msgctxt "The destination of a file operation"
 msgid "Destination"
-msgstr ""
-
-#: src/diskio/movedatafilesjob.cpp:180
-msgctxt "@title job"
-msgid "Moving"
 msgstr ""
 
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
@@ -211,13 +179,6 @@ msgstr "<filename>%1</filename> を作成できませんでした: %2"
 #: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
-
-#: src/download/chunkdownload.cpp:382
-#, kde-format
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] "1 ピア"
-msgstr[1] "%1 ピア"
 
 #: src/download/downloader.cpp:810
 msgid "Disabled because webseed does not match torrent"
@@ -284,6 +245,13 @@ msgstr "新しい場所なしでリダイレクトされました。"
 msgid "Unused for %1 seconds (Too many connection failures)"
 msgstr ""
 
+#: src/download/chunkdownload.cpp:383
+#, kde-format
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] "1 ピア"
+msgstr[1] "%1 ピア"
+
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr "OK"
@@ -311,22 +279,10 @@ msgstr "フォルダ <filename>%1</filename> は存在しません"
 msgid "Unknown client"
 msgstr "未知のクライアント"
 
-#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
-#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
-#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
-#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
-msgid "Corrupted torrent."
-msgstr "torrent が壊れています。"
-
-#: src/torrent/torrent.cpp:165
-#, fuzzy, kde-format
-#| msgid " Unable to open torrent file %1 : %2"
-msgid "Unable to open torrent file %1: %2"
-msgstr "torrent ファイル <filename>%1</filename> を開けません: %2"
-
-#: src/torrent/torrent.cpp:295
-msgid "Parse Error"
-msgstr "解析エラー"
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "インデックスファイルを作成できません: %1"
 
 #: src/torrent/torrentcontrol.cpp:308
 msgid "Error writing to disk, do you have enough diskspace?"
@@ -369,11 +325,6 @@ msgstr ""
 #| msgid "You are already downloading the torrent %1"
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "torrent <resource>%1</resource> は既にダウンロード中です"
-
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "インデックスファイルを作成できません: %1"
 
 #: src/torrent/torrentstats.cpp:72
 msgid "Not started"
@@ -431,6 +382,19 @@ msgstr "一時停止"
 msgid "Superseeding"
 msgstr "シード中"
 
+#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
+#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
+#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
+#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
+msgid "Corrupted torrent."
+msgstr "torrent が壊れています。"
+
+#: src/torrent/torrent.cpp:165
+#, fuzzy, kde-format
+#| msgid " Unable to open torrent file %1 : %2"
+msgid "Unable to open torrent file %1: %2"
+msgstr "torrent ファイル <filename>%1</filename> を開けません: %2"
+
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "リダイレクト先なしでリダイレクトされました"
@@ -459,34 +423,28 @@ msgstr "トラッカー %1 への接続中にタイムアウト"
 msgid "Unable to resolve hostname %1"
 msgstr "ホスト名 %1 を解決できませんでした"
 
-#: src/upnp/httprequest.cpp:96
-#, fuzzy
-#| msgid "Connection closed"
-msgid "Connection closed unexpectedly"
-msgstr "接続が閉じられました"
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "全般"
 
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
-msgstr ""
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
+msgstr "接続"
 
-#: src/upnp/upnprouter.cpp:167
-#, fuzzy, kde-format
-#| msgid "Failed to open %1 : %2"
-msgid "Failed to download %1: %2"
-msgstr "<filename>%1</filename> を開けませんでした: %2"
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "トラッカー"
 
-#: src/upnp/upnprouter.cpp:178
-msgid "Error parsing router description."
-msgstr ""
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
 
-#: src/upnp/upnprouter.cpp:216
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
+msgstr "ディスク I/O (入出力)"
 
-#: src/upnp/upnprouter.cpp:314
-msgid "Cannot find port forwarding service in the device's description."
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
 msgstr ""
 
 #: src/util/file.cpp:84
@@ -569,36 +527,73 @@ msgid_plural "%1 days "
 msgstr[0] "1 日"
 msgstr[1] "%1 日"
 
-#: src/util/logsystemmanager.cpp:33
-msgid "General"
-msgstr "全般"
-
-#: src/util/logsystemmanager.cpp:34
-msgid "Connections"
-msgstr "接続"
-
-#: src/util/logsystemmanager.cpp:35
-msgid "Tracker"
-msgstr "トラッカー"
-
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr "DHT"
-
-#: src/util/logsystemmanager.cpp:37
-msgid "Disk Input/Output"
-msgstr "ディスク I/O (入出力)"
-
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
-msgstr ""
-
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 msgid "Error when writing to disk"
 msgstr ""
 
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 #, fuzzy
 #| msgid "Error reading from %1"
 msgid "Error when reading from disk"
 msgstr "<filename>%1</filename> からの読み取りエラー"
+
+#: src/upnp/httprequest.cpp:96
+#, fuzzy
+#| msgid "Connection closed"
+msgid "Connection closed unexpectedly"
+msgstr "接続が閉じられました"
+
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:167
+#, fuzzy, kde-format
+#| msgid "Failed to open %1 : %2"
+msgid "Failed to download %1: %2"
+msgstr "<filename>%1</filename> を開けませんでした: %2"
+
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:216
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:314
+msgid "Cannot find port forwarding service in the device's description."
+msgstr ""
+
+#: examples/ktcli/main.cpp:60
+#, fuzzy
+#| msgid "Torrent is incomplete."
+msgid "Torrent to open"
+msgstr "torrent が不完全です。"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+#, fuzzy
+#| msgid "Not in use"
+msgid "Port to use"
+msgstr "使用されていません"
+
+#: examples/ktcli/main.cpp:63
+msgid "Whether or not to enable encryption"
+msgstr ""
+
+#: examples/ktcli/main.cpp:64
+msgid "Whether or not to enable peer exchange"
+msgstr ""
+
+#: examples/ktcli/main.cpp:65
+msgid "Whether or not to use utp"
+msgstr ""
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr ""
+
+#~ msgid "Parse Error"
+#~ msgstr "解析エラー"

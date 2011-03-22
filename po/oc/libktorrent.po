@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-02 03:19+0100\n"
+"POT-Creation-Date: 2011-03-13 12:17+0100\n"
 "PO-Revision-Date: 2008-08-05 22:26+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -16,32 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: KBabel 1.11.4\n"
-
-#: examples/ktcli/main.cpp:60
-#, fuzzy
-#| msgid "Document to open"
-msgid "Torrent to open"
-msgstr "Document a dobrir"
-
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-msgid "Port to use"
-msgstr ""
-
-#: examples/ktcli/main.cpp:63
-msgid "Whether or not to enable encryption"
-msgstr ""
-
-#: examples/ktcli/main.cpp:64
-msgid "Whether or not to enable peer exchange"
-msgstr ""
-
-#: examples/ktcli/main.cpp:65
-msgid "Whether or not to use utp"
-msgstr ""
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr ""
 
 #: src/bcodec/bdecoder.cpp:62
 #, kde-format
@@ -65,19 +39,19 @@ msgstr ""
 msgid "Torrent is incomplete."
 msgstr ""
 
-#: src/datachecker/datacheckerjob.cpp:82
+#: src/datachecker/datacheckerjob.cpp:76
 msgid "Waiting for other data checks to finish"
 msgstr ""
 
-#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
 msgid "Checking data"
 msgstr ""
 
-#: src/datachecker/datacheckerjob.cpp:141
+#: src/datachecker/datacheckerjob.cpp:135
 msgid "Checking Data"
 msgstr ""
 
-#: src/datachecker/multidatachecker.cpp:209
+#: src/datachecker/multidatachecker.cpp:203
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
@@ -160,28 +134,24 @@ msgstr ""
 msgid "Failed to write last chunk to DND file: %1"
 msgstr ""
 
-#: src/diskio/movedatafilesjob.cpp:140
-msgid "Waiting for other move jobs to finish"
+#: src/diskio/movedatafilesjob.cpp:166
+msgctxt "@title job"
+msgid "Moving"
 msgstr ""
 
-#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+#: src/diskio/movedatafilesjob.cpp:167
 #, fuzzy
 #| msgid "Add Folder"
 msgctxt "The source of a file operation"
 msgid "Source"
 msgstr "Apondre un repertòri"
 
-#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+#: src/diskio/movedatafilesjob.cpp:168
 #, fuzzy
 #| msgid "Add Folder"
 msgctxt "The destination of a file operation"
 msgid "Destination"
 msgstr "Apondre un repertòri"
-
-#: src/diskio/movedatafilesjob.cpp:180
-msgctxt "@title job"
-msgid "Moving"
-msgstr ""
 
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, fuzzy, kde-format
@@ -198,13 +168,6 @@ msgstr "Descargat"
 #: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
-
-#: src/download/chunkdownload.cpp:382
-#, kde-format
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] ""
-msgstr[1] ""
 
 #: src/download/downloader.cpp:810
 msgid "Disabled because webseed does not match torrent"
@@ -277,6 +240,13 @@ msgstr ""
 msgid "Unused for %1 seconds (Too many connection failures)"
 msgstr ""
 
+#: src/download/chunkdownload.cpp:383
+#, kde-format
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] ""
+msgstr[1] ""
+
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr "Validar"
@@ -307,25 +277,10 @@ msgstr ""
 msgid "Unknown client"
 msgstr ""
 
-#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
-#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
-#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
-#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
-#, fuzzy
-#| msgid "Important"
-msgid "Corrupted torrent."
-msgstr "Important"
-
-#: src/torrent/torrent.cpp:165
+#: src/torrent/torrentcreator.cpp:361
 #, kde-format
-msgid "Unable to open torrent file %1: %2"
+msgid "Cannot create index file: %1"
 msgstr ""
-
-#: src/torrent/torrent.cpp:295
-#, fuzzy
-#| msgid "Error"
-msgid "Parse Error"
-msgstr "Error"
 
 #: src/torrent/torrentcontrol.cpp:308
 msgid "Error writing to disk, do you have enough diskspace?"
@@ -359,11 +314,6 @@ msgstr ""
 #: src/torrent/torrentcontrol.cpp:606
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
-msgstr ""
-
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
 msgstr ""
 
 #: src/torrent/torrentstats.cpp:72
@@ -431,6 +381,20 @@ msgstr "En pausa"
 msgid "Superseeding"
 msgstr "Velocitat"
 
+#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
+#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
+#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
+#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
+#, fuzzy
+#| msgid "Important"
+msgid "Corrupted torrent."
+msgstr "Important"
+
+#: src/torrent/torrent.cpp:165
+#, kde-format
+msgid "Unable to open torrent file %1: %2"
+msgstr ""
+
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr ""
@@ -462,34 +426,30 @@ msgstr ""
 msgid "Unable to resolve hostname %1"
 msgstr ""
 
-#: src/upnp/httprequest.cpp:96
+#: src/util/logsystemmanager.cpp:33
 #, fuzzy
-#| msgid "Connections"
-msgid "Connection closed unexpectedly"
+#| msgid "General:"
+msgid "General"
+msgstr "General :"
+
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
 msgstr "Connexions"
 
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "Tracker"
+
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
 msgstr ""
 
-#: src/upnp/upnprouter.cpp:167
-#, fuzzy, kde-format
-#| msgid "Downloaded"
-msgid "Failed to download %1: %2"
-msgstr "Descargat"
-
-#: src/upnp/upnprouter.cpp:178
-msgid "Error parsing router description."
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
 msgstr ""
 
-#: src/upnp/upnprouter.cpp:216
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
-
-#: src/upnp/upnprouter.cpp:314
-msgid "Cannot find port forwarding service in the device's description."
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
 msgstr ""
 
 #: src/util/file.cpp:84
@@ -567,39 +527,76 @@ msgid_plural "%1 days "
 msgstr[0] " jorns"
 msgstr[1] " jorns"
 
-#: src/util/logsystemmanager.cpp:33
-#, fuzzy
-#| msgid "General:"
-msgid "General"
-msgstr "General :"
-
-#: src/util/logsystemmanager.cpp:34
-msgid "Connections"
-msgstr "Connexions"
-
-#: src/util/logsystemmanager.cpp:35
-msgid "Tracker"
-msgstr "Tracker"
-
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr ""
-
-#: src/util/logsystemmanager.cpp:37
-msgid "Disk Input/Output"
-msgstr ""
-
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
-msgstr ""
-
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 msgid "Error when writing to disk"
 msgstr ""
 
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 msgid "Error when reading from disk"
 msgstr ""
+
+#: src/upnp/httprequest.cpp:96
+#, fuzzy
+#| msgid "Connections"
+msgid "Connection closed unexpectedly"
+msgstr "Connexions"
+
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:167
+#, fuzzy, kde-format
+#| msgid "Downloaded"
+msgid "Failed to download %1: %2"
+msgstr "Descargat"
+
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:216
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:314
+msgid "Cannot find port forwarding service in the device's description."
+msgstr ""
+
+#: examples/ktcli/main.cpp:60
+#, fuzzy
+#| msgid "Document to open"
+msgid "Torrent to open"
+msgstr "Document a dobrir"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+#, fuzzy
+#| msgid "Document to open"
+msgid "Port to use"
+msgstr "Document a dobrir"
+
+#: examples/ktcli/main.cpp:63
+msgid "Whether or not to enable encryption"
+msgstr ""
+
+#: examples/ktcli/main.cpp:64
+msgid "Whether or not to enable peer exchange"
+msgstr ""
+
+#: examples/ktcli/main.cpp:65
+msgid "Whether or not to use utp"
+msgstr ""
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr ""
+
+#, fuzzy
+#~| msgid "Error"
+#~ msgid "Parse Error"
+#~ msgstr "Error"
 
 #, fuzzy
 #~| msgid "Folders"

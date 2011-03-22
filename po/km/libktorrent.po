@@ -1,48 +1,29 @@
-# translation of ktorrent.po to Khmer
+# translation of libktorrent.po to Khmer
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# Khoem Sokhem <khoemsokhem@khmeros.info>, 2008, 2009.
+#
+# Khoem Sokhem <khoemsokhem@khmeros.info>, 2008, 2009, 2010.
 # Auk Piseth <piseth_dv@khmeros.info>, 2008, 2009.
 # Eng Vannak <evannak@khmeros.info>, 2008.
-#  Seng Sutha <Sutha@khmeros.info>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: ktorrent\n"
+"Project-Id-Version: libktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-02 03:19+0100\n"
-"PO-Revision-Date: 2011-01-04 04:59+0700\n"
-"Last-Translator:  Seng Sutha <Sutha@khmeros.info>\n"
-"Language-Team: Khmer [km] <Support@khmeros.info>\n"
+"POT-Creation-Date: 2011-03-13 12:17+0100\n"
+"PO-Revision-Date: 2010-07-05 10:24+0700\n"
+"Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
+"Language-Team: Khmer <support@khmeros.info>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: WordForge 0.8 Beta 1\n"
-"X-Language: km_KH\n"
-
-#: examples/ktcli/main.cpp:60
-msgid "Torrent to open"
-msgstr "Torrent ត្រូវ​បើក​"
-
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-msgid "Port to use"
-msgstr "ច្រក​ត្រូវ​ប្រើ​"
-
-#: examples/ktcli/main.cpp:63
-msgid "Whether or not to enable encryption"
-msgstr ""
-
-#: examples/ktcli/main.cpp:64
-msgid "Whether or not to enable peer exchange"
-msgstr ""
-
-#: examples/ktcli/main.cpp:65
-msgid "Whether or not to use utp"
-msgstr ""
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr "ktcli"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: src/bcodec/bdecoder.cpp:62
 #, kde-format
@@ -60,29 +41,27 @@ msgstr "ចុង​បញ្ចប់​ដែល​មិន​បាន​រ
 #: src/bcodec/bdecoder.cpp:213 src/bcodec/bdecoder.cpp:247
 #, kde-format
 msgid "Cannot convert %1 to an int"
-msgstr "មិន​អាច​បង្កើត​​ %1 ទៅជា​ចំនួនគត់​"
+msgstr "មិនអាច​បម្លែង %1 ទៅ​ចំនួន​គត់​បានទេ"
 
 #: src/bcodec/bdecoder.cpp:252
-#, fuzzy
-#| msgid "Torrent is incomplete!"
 msgid "Torrent is incomplete."
-msgstr "Torrent មិន​ពេញ​លេញ​ ។"
+msgstr "Torrent មិន​ទាន់​បាន​បញ្ចប់​នូវឡើយ​ទេ !"
 
-#: src/datachecker/datacheckerjob.cpp:82
+#: src/datachecker/datacheckerjob.cpp:76
 msgid "Waiting for other data checks to finish"
 msgstr ""
 
-#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
 msgid "Checking data"
 msgstr "ពិនិត្យ​ទិន្នន័យ​"
 
-#: src/datachecker/datacheckerjob.cpp:141
+#: src/datachecker/datacheckerjob.cpp:135
 #, fuzzy
 #| msgid "Checking data"
 msgid "Checking Data"
 msgstr "ពិនិត្យ​ទិន្នន័យ​"
 
-#: src/datachecker/multidatachecker.cpp:209
+#: src/datachecker/multidatachecker.cpp:203
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
@@ -107,13 +86,16 @@ msgstr "មិនអាច​បើក​សរសេរ %1 ៖ ប្រព័
 #: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:418
 #, kde-format
 msgid "Attempting to write beyond the maximum size of %1"
-msgstr ""
+msgstr "ប៉ុនប៉ង​សរសេរ​ទំហំ​ឯកសារ​អតិបរមា %1"
 
 #: src/diskio/cachefile.cpp:255
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Cannot expand file %1 : attempting to grow the file beyond the maximum "
+#| "size"
 msgid ""
 "Cannot expand file %1: attempting to grow the file beyond the maximum size"
-msgstr ""
+msgstr "មិនអាច​ពង្រីក​ឯកសារ %1 បាន​ទេ ៖ ប៉ុនប៉ង​ពង្រីក​ឯកសារ​ដល់​ទំហំ​អតិបរមា"
 
 #: src/diskio/cachefile.cpp:259
 #, fuzzy, kde-format
@@ -174,30 +156,20 @@ msgstr "បរាជ័យ​ក្នុង​ការ​សរសេរ​ក
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "បរាជ័យ​ក្នុង​ការ​សរសេរ​កំណាត់​ចុងក្រោយ​ទៅ​ឯកសារ DND ៖ %1"
 
-#: src/diskio/movedatafilesjob.cpp:140
-msgid "Waiting for other move jobs to finish"
-msgstr ""
-
-#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
-#, fuzzy
-#| msgid "Score"
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "ពិន្ទុ"
-
-#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
-#, fuzzy
-#| msgid "Destination"
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "ទិសដៅ"
-
-#: src/diskio/movedatafilesjob.cpp:180
-#, fuzzy
-#| msgid "Moving average"
+#: src/diskio/movedatafilesjob.cpp:166
 msgctxt "@title job"
 msgid "Moving"
-msgstr "មធ្យម​ផ្លាស់ទី"
+msgstr ""
+
+#: src/diskio/movedatafilesjob.cpp:167
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr ""
+
+#: src/diskio/movedatafilesjob.cpp:168
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr ""
 
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, fuzzy, kde-format
@@ -215,17 +187,9 @@ msgstr "បរាជ័យ​ក្នុង​ការ​បង្កើត %1
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
 
-#: src/download/chunkdownload.cpp:382
-#, kde-format
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] "ម៉ាស៊ីន​ដូចគ្នា %1"
-
 #: src/download/downloader.cpp:810
-#, fuzzy
-#| msgid "Displays all the webseeds of a torrent"
 msgid "Disabled because webseed does not match torrent"
-msgstr "បង្ហាញ​ webseeds ទាំងអស់​របស់ torrent"
+msgstr ""
 
 #: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
 #: src/download/webseed.cpp:98
@@ -257,7 +221,7 @@ msgstr "បាន​ត​ភ្ជាប់"
 
 #: src/download/httpconnection.cpp:159
 msgid "Error: Failed to connect to webseed"
-msgstr "កំហុស ៖ បរាជ័យ​ក្នុង​ការ​តភ្ជាប់​ទៅ webseed"
+msgstr "កំហុស ៖ បរាជ័យ​ក្នុងការ​តភ្ជាប់​ទៅ webseed"
 
 #: src/download/httpconnection.cpp:224
 msgid "Connecting"
@@ -265,23 +229,21 @@ msgstr "ការ​ត​ភ្ជាប់"
 
 #: src/download/httpconnection.cpp:235
 msgid "Failed to connect to webseed"
-msgstr "បរាជ័យ​ក្នុង​ការ​តភ្ជាប់​ទៅ webseed"
+msgstr "បរាជ័យ​ក្នុងការ​តភ្ជាប់​ទៅ webseed"
 
 #: src/download/httpconnection.cpp:242
 msgid "Failed to resolve hostname of webseed"
-msgstr "បរាជ័យ​ក្នុង​ការ​ដោះស្រាយ​ឈ្មោះ​ម៉ាស៊ីន​របស់ webseed"
+msgstr "បរាជ័យ​ក្នុងការ​ដោះស្រាយ​ឈ្មោះ​ម៉ាស៊ីន​របស់ webseed"
 
 #: src/download/httpconnection.cpp:322
 msgid "Error: failed to connect, server not responding"
-msgstr "កំហុស ៖ បរាជ័យ​ក្នុង​ការ​តភ្ជាប់ ម៉ាស៊ីន​បម្រើ​មិន​ឆ្លើយតប"
+msgstr "កំហុស ៖ បរាជ័យ​ក្នុងការ​តភ្ជាប់ ម៉ាស៊ីន​បម្រើ​មិន​ឆ្លើយតប"
 
 #: src/download/httpconnection.cpp:333
 msgid "Error: request timed out"
 msgstr "កំហុស ៖ សំណើ​អស់​ពេល"
 
 #: src/download/httpconnection.cpp:398
-#, fuzzy
-#| msgid "Redirected without a new location !"
 msgid "Redirected without a new location."
 msgstr "បាន​បញ្ជូន​បន្ត​ដោយ​គ្មាន​ទីតាំង​ថ្មី !"
 
@@ -290,25 +252,29 @@ msgstr "បាន​បញ្ជូន​បន្ត​ដោយ​គ្មា
 msgid "Unused for %1 seconds (Too many connection failures)"
 msgstr ""
 
+#: src/download/chunkdownload.cpp:383
+#, kde-format
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] "ម៉ាស៊ីន​ដូចគ្នា %1"
+
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr "យល់​​ព្រម​"
 
 #: src/interfaces/trackerinterface.cpp:58
-#, fuzzy, kde-format
-#| msgid "Opening %1"
+#, kde-format
 msgid "Warning: %1"
-msgstr "បើក %1"
+msgstr ""
 
 #: src/interfaces/trackerinterface.cpp:59
 msgid "Announcing"
 msgstr "ការ​ប្រកាស"
 
 #: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:86
-#, fuzzy, kde-format
-#| msgid "Error: "
+#, kde-format
 msgid "Error: %1"
-msgstr "កំហុស ៖ "
+msgstr "កំហុស ៖ %1"
 
 #: src/migrate/migrate.cpp:45
 #, kde-format
@@ -319,40 +285,23 @@ msgstr "ថត ​%1 មិន​ទាន់​មាន​នូវ​ឡើ�
 msgid "Unknown client"
 msgstr "មិន​ស្គាល់​ម៉ាស៊ីន​ភ្ញៀវ"
 
-#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
-#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
-#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
-#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
-#, fuzzy
-#| msgid "Corrupted torrent!"
-msgid "Corrupted torrent."
-msgstr "torrent ខូច !"
-
-#: src/torrent/torrent.cpp:165
-#, fuzzy, kde-format
-#| msgid " Unable to open torrent file %1 : %2"
-msgid "Unable to open torrent file %1: %2"
-msgstr " មិន​អាច​បើក​ឯកសារ​ torrent %1 ៖ %2 បានទេ"
-
-#: src/torrent/torrent.cpp:295
-msgid "Parse Error"
-msgstr "កំហុស​ញែក"
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "មិនអាច​បង្កើត​ឯកសារ​លិបិក្រម ៖ %1"
 
 #: src/torrent/torrentcontrol.cpp:308
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr ""
 
 #: src/torrent/torrentcontrol.cpp:545
-#, fuzzy, kde-format
-#| msgid ""
-#| "An error occurred while loading the torrent <b>%1</b>\n"
-#| "The torrent is probably corrupt or is not a torrent file."
+#, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
 "torrent is probably corrupt or is not a valid torrent file."
 msgstr ""
-"កំហុស​មួយ​កើតឡើង​នៅពេល​ផ្ទុក torrent <b>%1</b> ។\n"
-"torrent ប្រហែល​ជា​ខូច ឬ​មិនមែន​ជា​ឯកសារ torrent ។"
+"កំហុស​មួយ​បានកើត​ឡើង​ខណៈពេល​ផ្ទុក​ torrent <b>%1</b> ៖<br/><b>%2</b><br/> torrent ប្រហែល​"
+"ជា​ខូច ឬ​មិនមែន​ជា​ឯកសារ torrent ត្រឹមត្រូវ​ទេ ។"
 
 #: src/torrent/torrentcontrol.cpp:575
 #, kde-format
@@ -366,27 +315,18 @@ msgid "Unable to create %1: %2"
 msgstr "មិន​អាច​បង្កើត %1 ៖ %2"
 
 #: src/torrent/torrentcontrol.cpp:601
-#, fuzzy, kde-format
-#| msgid ""
-#| "You are already downloading this torrent %1, the list of trackers of both "
-#| "torrents has been merged."
+#, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
 "both torrents have been merged."
 msgstr ""
-"អ្នក​កំពុង​តែ​ទាញ​យក torrent %1 នេះ​រួ​ចហើយ បញ្ជី​របស់​កម្មវិធី​តាមដាន​របស់​ torrents ទាំងពីរ​ត្រូវ​បាន​"
-"បញ្ចូលចូល​គ្នា ។"
+"អ្នក​កំពុង​តែ​ទាញ​យក torrent <b>%1</b> នេះ​រួ​ចហើយ ។ បញ្ជី​របស់​កម្មវិធី​តាមដាន​របស់​ torrents "
+"ទាំងពីរ​ត្រូវ​បាន​បញ្ចូលចូល​គ្នា ។"
 
 #: src/torrent/torrentcontrol.cpp:606
-#, fuzzy, kde-format
-#| msgid "You are already downloading the torrent %1"
-msgid "You are already downloading the torrent <b>%1</b>."
-msgstr "អ្នក​កំពុង​ទាញយក torrent %1 រួចហើយ"
-
-#: src/torrent/torrentcreator.cpp:361
 #, kde-format
-msgid "Cannot create index file: %1"
-msgstr "មិន​អាច​បង្កើត​ឯកសារ​លិបិក្រម ៖ %1"
+msgid "You are already downloading the torrent <b>%1</b>."
+msgstr "អ្នក​កំពុង​ទាញយក torrent <b>%1</b> រួចហើយ ។"
 
 #: src/torrent/torrentstats.cpp:72
 msgid "Not started"
@@ -394,22 +334,20 @@ msgstr "មិន​បាន​ចាប់ផ្ដើម"
 
 #: src/torrent/torrentstats.cpp:74
 msgid "Download completed"
-msgstr "បាន​បញ្ចប់​ការ​ទាញ​យក​ទាំងស្រុង"
+msgstr "បាន​បញ្ចប់​ការ​ទាញយក​ទាំងស្រុង"
 
 #: src/torrent/torrentstats.cpp:76
 msgid "Seeding completed"
 msgstr "បាន​បញ្ចប់​ការ​បណ្ដុះ"
 
 #: src/torrent/torrentstats.cpp:78
-#, fuzzy
-#| msgid "Seeding"
 msgctxt "Status of a torrent file"
 msgid "Seeding"
 msgstr "បណ្ដុះ"
 
 #: src/torrent/torrentstats.cpp:80
 msgid "Downloading"
-msgstr "ការ​ទាញ​យក"
+msgstr "ការ​ទាញយក"
 
 #: src/torrent/torrentstats.cpp:82
 msgid "Stalled"
@@ -424,20 +362,16 @@ msgid "Allocating diskspace"
 msgstr "បម្រុងទុក​ទំហំ​ថាស"
 
 #: src/torrent/torrentstats.cpp:90
-#, fuzzy
-#| msgid "Currently downloading:"
 msgid "Queued for seeding"
-msgstr "ការ​ទាញយក​បច្ចុប្បន្ន​ ៖"
+msgstr "បាន​ដាក់​ជា​ជួរ​សម្រាប់បណ្ដុះ"
 
 #: src/torrent/torrentstats.cpp:90
-#, fuzzy
-#| msgid "Currently downloading:"
 msgid "Queued for downloading"
-msgstr "ការ​ទាញយក​បច្ចុប្បន្ន​ ៖"
+msgstr "បាន​ដាក់​ជាជួរ​សម្រាប់​ទាញយក"
 
 #: src/torrent/torrentstats.cpp:94
 msgid "Stopped. No space left on device."
-msgstr "បាន​បញ្ឈប់ ដោយ​សារ​ឧបករណ៍​មិន​មាន​នៅ​សល់​ទំហំ ។"
+msgstr "បាន​បញ្ឈប់ ដោយ​សារ​ឧបករណ៍​មិនមាន​នៅ​សល់​ទំហំ ។"
 
 #: src/torrent/torrentstats.cpp:96
 msgid "Paused"
@@ -445,15 +379,27 @@ msgstr "បាន​ផ្អាក"
 
 #: src/torrent/torrentstats.cpp:98
 #, fuzzy
+#| msgctxt "Status of a torrent file"
 #| msgid "Seeding"
 msgid "Superseeding"
 msgstr "បណ្ដុះ"
 
+#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
+#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
+#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
+#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
+msgid "Corrupted torrent."
+msgstr "torrent ខូច​ហើយ !"
+
+#: src/torrent/torrent.cpp:165
+#, fuzzy, kde-format
+#| msgid " Unable to open torrent file %1 : %2"
+msgid "Unable to open torrent file %1: %2"
+msgstr " មិន​អាច​បើក​ឯកសារ​ torrent %1 ៖ %2 បានទេ"
+
 #: src/tracker/httpannouncejob.cpp:142
-#, fuzzy
-#| msgid "Redirected without a new location !"
 msgid "Redirect without a redirect location"
-msgstr "បាន​បញ្ជូន​បន្ត​ដោយ​គ្មាន​ទីតាំង​ថ្មី !"
+msgstr "​បញ្ជូន​បន្ត​ដោយ​គ្មានទីតាំង​បញ្ជូន​បន្ត"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
 #: src/tracker/httptracker.cpp:462
@@ -462,7 +408,7 @@ msgstr "ការ​ឆ្លើយ​តប​មិន​ត្រឹមត្
 
 #: src/tracker/httptracker.cpp:293
 msgid "Invalid data from tracker"
-msgstr "ទិន្នន័យ​មិន​ត្រឹម​ត្រូវ​ពី​កម្មវិធី​តាមដាន"
+msgstr "ទិន្នន័យ​មិនត្រឹមត្រូវ​ពី​កម្មវិធី​តាមដាន"
 
 #: src/tracker/httptracker.cpp:479
 msgid "Invalid tracker URL"
@@ -472,52 +418,36 @@ msgstr "URL កម្មវិធី​តាមដាន​បទ​មិន�
 #: src/tracker/udptracker.cpp:382
 #, kde-format
 msgid "Timeout contacting tracker %1"
-msgstr ""
+msgstr "អស់​ពេល​ក្នុងការ​ទាក់ទង​​កម្មវិធី​តាមដាន %1"
 
 #: src/tracker/udptracker.cpp:409
 #, kde-format
 msgid "Unable to resolve hostname %1"
-msgstr "មិន​អាច​ដោះស្រាយ​ឈ្មោះ​ម៉ាស៊ីន %1 បានទេ"
+msgstr "មិនអាច​ដោះស្រាយ​ឈ្មោះ​ម៉ាស៊ីន %1 បានទេ"
 
-#: src/upnp/httprequest.cpp:96
-#, fuzzy
-#| msgid "Connection closed unexpectedly !"
-msgid "Connection closed unexpectedly"
-msgstr "ការ​តភ្ជាប់​បាន​បិទ​ដោយ​មិន​រំពឹង​ទុក !"
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "ទូទៅ"
 
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
-msgstr ""
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
+msgstr "ការ​ត​ភ្ជាប់"
 
-#: src/upnp/upnprouter.cpp:167
-#, fuzzy, kde-format
-#| msgid "Failed to download %1 : %2"
-msgid "Failed to download %1: %2"
-msgstr "បាន​បរាជ័យ​ក្នុងការ​ទាញ​យក %1 ៖ %2"
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "កម្មវិធី​តាម​ដាន​"
 
-#: src/upnp/upnprouter.cpp:178
-#, fuzzy
-#| msgid "Error parsing router description !"
-msgid "Error parsing router description."
-msgstr "កំហុស​ក្នុងការ​ញែក​សេចក្ដី​ពិពណ៌នា​អ្នក​នាំផ្លូវ !"
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
 
-#: src/upnp/upnprouter.cpp:216
-#, fuzzy
-#| msgid ""
-#| "Forwarding failed: \n"
-#| "Device does not have a WANIPConnection or WANPPPConnection !"
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
-"បាន​បរាជ័យ​ក្នុងកា​របញ្ជូន​បន្ត ៖ \n"
-"ឧបករណ៍​មិនមានការ​តភ្ជាប់​ WANIP ឬ​ការ​តភ្ជាប់ WANPPP !"
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
+msgstr "ការ​ចេញ/ចូល​របស់​ថាស"
 
-#: src/upnp/upnprouter.cpp:314
-#, fuzzy
-#| msgid "Cannot find port forwarding service in the device's description!"
-msgid "Cannot find port forwarding service in the device's description."
-msgstr "មិន​អាច​រក​ច្រក​ដែល​បញ្ជូន​បន្ត​សេវា​ក្នុង​ការ​ពិពណ៌នា​របស់​ឧបករណ៍ !"
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr "µTP"
 
 #: src/util/file.cpp:84
 #, fuzzy, kde-format
@@ -531,15 +461,14 @@ msgid "Cannot read from %1"
 msgstr "មិន​អាច​អាន​ពី %1 បានទេ"
 
 #: src/util/fileops.cpp:94
-#, fuzzy, kde-format
-#| msgid "Cannot create directory %1: %2"
+#, kde-format
 msgid "Cannot create directory %1"
-msgstr "មិន​អាច​បង្កើត​ថត​ %1 ៖ %2"
+msgstr "មិនអាច​បង្កើត​ថត %1 បាន​ទេ"
 
 #: src/util/fileops.cpp:161
 #, kde-format
 msgid "Cannot symlink %1 to %2: %3"
-msgstr "មិន​អាច​តភ្ជាប់​ %1 ទៅ %2 ៖ %3"
+msgstr "មិនអាច​តភ្ជាប់​ %1 ទៅ %2 ៖ %3"
 
 #: src/util/fileops.cpp:178
 #, kde-format
@@ -559,7 +488,7 @@ msgstr "មិន​អាច​លុប​ %1 ៖ %2"
 #: src/util/fileops.cpp:293
 #, kde-format
 msgid "Cannot create %1: %2"
-msgstr "មិន​អាច​បង្កើត​ %1 ៖ %2"
+msgstr "មិនអាច​បង្កើត​ %1 ៖ %2"
 
 #: src/util/fileops.cpp:311
 #, kde-format
@@ -595,36 +524,89 @@ msgid "1 day "
 msgid_plural "%1 days "
 msgstr[0] "%1 ថ្ងៃ "
 
-#: src/util/logsystemmanager.cpp:33
-msgid "General"
-msgstr "ទូទៅ"
-
-#: src/util/logsystemmanager.cpp:34
-msgid "Connections"
-msgstr "ការ​ត​ភ្ជាប់"
-
-#: src/util/logsystemmanager.cpp:35
-msgid "Tracker"
-msgstr "កម្មវិធី​តាម​ដាន​"
-
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr "DHT"
-
-#: src/util/logsystemmanager.cpp:37
-msgid "Disk Input/Output"
-msgstr "ការ​ចេញ/ចូល​របស់​ថាស"
-
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
-msgstr ""
-
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 msgid "Error when writing to disk"
 msgstr ""
 
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 #, fuzzy
 #| msgid "Error reading from %1"
 msgid "Error when reading from disk"
 msgstr "កំហុស​ក្នុងការ​អាន​ពី %1"
+
+#: src/upnp/httprequest.cpp:96
+#, fuzzy
+#| msgid "Connection closed"
+msgid "Connection closed unexpectedly"
+msgstr "បាន​បិទ​ការ​តភ្ជាប់"
+
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:167
+#, fuzzy, kde-format
+#| msgid "Failed to open %1 : %2"
+msgid "Failed to download %1: %2"
+msgstr "បរាជ័យ​ក្នុងការ​បើក %1 ៖ %2"
+
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:216
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:314
+msgid "Cannot find port forwarding service in the device's description."
+msgstr ""
+
+#: examples/ktcli/main.cpp:60
+#, fuzzy
+#| msgid "Torrent is incomplete."
+msgid "Torrent to open"
+msgstr "Torrent មិន​ទាន់​បាន​បញ្ចប់​នូវឡើយ​ទេ !"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+#, fuzzy
+#| msgid "Not in use"
+msgid "Port to use"
+msgstr "មិន​កំពុង​ប្រើ​ទេ"
+
+#: examples/ktcli/main.cpp:63
+msgid "Whether or not to enable encryption"
+msgstr ""
+
+#: examples/ktcli/main.cpp:64
+msgid "Whether or not to enable peer exchange"
+msgstr ""
+
+#: examples/ktcli/main.cpp:65
+msgid "Whether or not to use utp"
+msgstr ""
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr ""
+
+#~ msgid "Parse Error"
+#~ msgstr "កំហុស​ញែក"
+
+#~ msgid "Cannot open file : %1 : %2"
+#~ msgstr "មិនអាច​បើក​ឯកសារ ៖ %1 : %2"
+
+#~ msgid "Cannot open file %1 : %2"
+#~ msgstr "មិន​អាច​បើក​ឯកសារ %1 ៖​ %2"
+
+#~ msgid ""
+#~ "An error occurred while loading the torrent:<br/><b>%1</b><br/>The "
+#~ "torrent is probably corrupt or is not a valid torrent file."
+#~ msgstr ""
+#~ "កំហុស​មួយ​កើតឡើង​នៅពេល​ផ្ទុក torrent ៖ <br/><b>%1</b><br/> ។\n"
+#~ "torrent ប្រហែល​ជា​ខូច ឬ​មិនមែន​ជា​ឯកសារ torrent ។"
+
+#~ msgid "Cannot open log file %1 : %2"
+#~ msgstr "មិន​អាច​បើក​ឯកសារ​កំណត់​ហេតុ​ %1 ៖​ %2"

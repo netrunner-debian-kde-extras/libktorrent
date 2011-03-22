@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-02 03:19+0100\n"
+"POT-Creation-Date: 2011-03-13 12:17+0100\n"
 "PO-Revision-Date: 2010-06-11 00:28+0100\n"
 "Last-Translator: Andrius Štikonas <stikonas@gmail.com>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
@@ -14,33 +14,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10==1 && n%100!=11 ? 1 : n%"
 "10>=2 && (n%100<10 || n%100>=20) ? 2 : 3);\n"
-
-#: examples/ktcli/main.cpp:60
-#, fuzzy
-#| msgid "Torrent is incomplete."
-msgid "Torrent to open"
-msgstr "Torentas yra nepilnas."
-
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-#, fuzzy
-msgid "Port to use"
-msgstr "Įvertinkite"
-
-#: examples/ktcli/main.cpp:63
-msgid "Whether or not to enable encryption"
-msgstr ""
-
-#: examples/ktcli/main.cpp:64
-msgid "Whether or not to enable peer exchange"
-msgstr ""
-
-#: examples/ktcli/main.cpp:65
-msgid "Whether or not to use utp"
-msgstr ""
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr ""
 
 #: src/bcodec/bdecoder.cpp:62
 #, kde-format
@@ -64,21 +37,20 @@ msgstr "Nepavyksta konvertuoti %1 į kint."
 msgid "Torrent is incomplete."
 msgstr "Torentas yra nepilnas."
 
-#: src/datachecker/datacheckerjob.cpp:82
+#: src/datachecker/datacheckerjob.cpp:76
 msgid "Waiting for other data checks to finish"
 msgstr ""
 
-#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
 msgid "Checking data"
 msgstr "Tikrinami duomenys"
 
-#: src/datachecker/datacheckerjob.cpp:141
+#: src/datachecker/datacheckerjob.cpp:135
 #, fuzzy
-#| msgid "Checking data"
 msgid "Checking Data"
 msgstr "Tikrinami duomenys"
 
-#: src/datachecker/multidatachecker.cpp:209
+#: src/datachecker/multidatachecker.cpp:203
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
@@ -89,14 +61,12 @@ msgstr "Nepavyko atverti failo %1: %2"
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
 #: src/util/fileops.cpp:396
 #, fuzzy, kde-format
-#| msgid "Cannot open %1 : %2"
 msgid "Cannot open %1: %2"
 msgstr "Nepavyksta atverti %1 : %2"
 
 #: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
 #: src/diskio/cachefile.cpp:412 src/diskio/cachefile.cpp:480
 #, fuzzy, kde-format
-#| msgid "Cannot open %1 for writing : readonly filesystem"
 msgid "Cannot open %1 for writing: readonly filesystem"
 msgstr ""
 "Nepavyko atverti %1 įrašymui: failų sistema prijungta skaitymo veiksena"
@@ -114,19 +84,16 @@ msgstr ""
 
 #: src/diskio/cachefile.cpp:259
 #, fuzzy, kde-format
-#| msgid "Cannot expand file %1 : %2"
 msgid "Cannot expand file %1: %2"
 msgstr "Nepavyko išplėsti failo %1 : %2"
 
 #: src/diskio/cachefile.cpp:378
 #, fuzzy, kde-format
-#| msgid "Error : Reading past the end of the file %1"
 msgid "Error: Reading past the end of the file %1"
 msgstr "Klaida: failas %1 buvo skaitomas už jo pabaigos"
 
 #: src/diskio/cachefile.cpp:383 src/diskio/cachefile.cpp:430
 #, fuzzy, kde-format
-#| msgid "Failed to seek file %1 : %2"
 msgid "Failed to seek file %1: %2"
 msgstr "Nepavyko ieškoti faile %1 : %2"
 
@@ -137,84 +104,62 @@ msgstr "Klaida skaitant iš %1"
 
 #: src/diskio/cachefile.cpp:434
 #, fuzzy, kde-format
-#| msgid "Failed to write to file %1 : %2"
 msgid "Failed to write to file %1: %2"
 msgstr "Nepavyko įrašyti į: %1 : %2"
 
 #: src/diskio/cachefile.cpp:501
 #, fuzzy, kde-format
-#| msgid "Cannot preallocate diskspace : %1"
 msgid "Cannot preallocate diskspace: %1"
 msgstr "Nepavyksta išskirti vietos diske : %1"
 
 #: src/diskio/chunkmanager.cpp:933 src/diskio/chunkmanager.cpp:959
 #, fuzzy, kde-format
-#| msgid "Cannot open index file %1 : %2"
 msgid "Cannot open index file %1: %2"
 msgstr "Nepavyksta atverti indekso failo %1: %2"
 
 #: src/diskio/dndfile.cpp:89
 #, fuzzy, kde-format
-#| msgid "Cannot create file %1 : %2"
 msgid "Cannot create file %1: %2"
 msgstr "Nepavyksta sukurti failo %1: %2"
 
 #: src/diskio/dndfile.cpp:137
 #, fuzzy, kde-format
-#| msgid "Failed to write first chunk to DND file : %1"
 msgid "Failed to write first chunk to DND file: %1"
 msgstr "Nepavyko įrašyti pirmosios dalies į DND failą: %1"
 
 #: src/diskio/dndfile.cpp:155
 #, fuzzy, kde-format
-#| msgid "Failed to write last chunk to DND file : %1"
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Nepavyko įrašyti paskutiniosios dalies į DND failą: %1"
 
-#: src/diskio/movedatafilesjob.cpp:140
-msgid "Waiting for other move jobs to finish"
-msgstr ""
-
-#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr ""
-
-#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr ""
-
-#: src/diskio/movedatafilesjob.cpp:180
+#: src/diskio/movedatafilesjob.cpp:166
 msgctxt "@title job"
 msgid "Moving"
 msgstr ""
 
+#: src/diskio/movedatafilesjob.cpp:167
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr ""
+
+#: src/diskio/movedatafilesjob.cpp:168
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr ""
+
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, fuzzy, kde-format
-#| msgid "Failed to open %1 : %2"
 msgid "Failed to open %1: %2"
 msgstr "Nepavyko atverti %1 : %2"
 
 #: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
 #, fuzzy, kde-format
-#| msgid "Failed to create %1 : %2"
 msgid "Failed to create %1: %2"
 msgstr "Nepavyko sukurti %1 : %2"
 
 #: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
-
-#: src/download/chunkdownload.cpp:382
-#, fuzzy, kde-format
-#| msgid "Add peer:"
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] "Pridėti tašką:"
-msgstr[1] "Pridėti tašką:"
-msgstr[2] "Pridėti tašką:"
-msgstr[3] "Pridėti tašką:"
 
 #: src/download/downloader.cpp:810
 msgid "Disabled because webseed does not match torrent"
@@ -281,6 +226,15 @@ msgstr ""
 msgid "Unused for %1 seconds (Too many connection failures)"
 msgstr ""
 
+#: src/download/chunkdownload.cpp:383
+#, fuzzy, kde-format
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] "Pridėti tašką:"
+msgstr[1] "Pridėti tašką:"
+msgstr[2] "Pridėti tašką:"
+msgstr[3] "Pridėti tašką:"
+
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr "OK"
@@ -308,22 +262,10 @@ msgstr "Aplankas %1 neegzistuoja"
 msgid "Unknown client"
 msgstr "Nežinomas klientas"
 
-#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
-#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
-#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
-#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
-msgid "Corrupted torrent."
-msgstr "Sugadintas torrentas."
-
-#: src/torrent/torrent.cpp:165
-#, fuzzy, kde-format
-#| msgid " Unable to open torrent file %1 : %2"
-msgid "Unable to open torrent file %1: %2"
-msgstr "Nepavyko atverti torent failo %1: %2"
-
-#: src/torrent/torrent.cpp:295
-msgid "Parse Error"
-msgstr "Parse Klaida"
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "Nepavyko sukurti indeksavimo failo: %1"
 
 #: src/torrent/torrentcontrol.cpp:308
 msgid "Error writing to disk, do you have enough diskspace?"
@@ -345,7 +287,6 @@ msgstr ""
 
 #: src/torrent/torrentcontrol.cpp:586
 #, fuzzy, kde-format
-#| msgid "Unable to create %1 : %2"
 msgid "Unable to create %1: %2"
 msgstr " Nepavyksta sukurti %1 : %2"
 
@@ -362,11 +303,6 @@ msgstr ""
 #, fuzzy, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Jūs jau siunčiatės torentą %1"
-
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "Nepavyko sukurti indeksavimo failo: %1"
 
 #: src/torrent/torrentstats.cpp:72
 msgid "Not started"
@@ -421,10 +357,20 @@ msgstr "Pristabdyta"
 
 #: src/torrent/torrentstats.cpp:98
 #, fuzzy
-#| msgctxt "Status of a torrent file"
-#| msgid "Seeding"
 msgid "Superseeding"
 msgstr "Sėjama"
+
+#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
+#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
+#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
+#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
+msgid "Corrupted torrent."
+msgstr "Sugadintas torrentas."
+
+#: src/torrent/torrent.cpp:165
+#, fuzzy, kde-format
+msgid "Unable to open torrent file %1: %2"
+msgstr "Nepavyko atverti torent failo %1: %2"
 
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
@@ -454,39 +400,33 @@ msgstr ""
 msgid "Unable to resolve hostname %1"
 msgstr " Nepavyksta sukurti %1 : %2"
 
-#: src/upnp/httprequest.cpp:96
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "Bendri"
+
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
+msgstr "Prisijungimai"
+
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "Vedlys"
+
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
+
+#: src/util/logsystemmanager.cpp:37
 #, fuzzy
-#| msgid "Connection closed"
-msgid "Connection closed unexpectedly"
-msgstr "Prisijungimas baigtas"
+msgid "Disk Input/Output"
+msgstr "Disko I/O:"
 
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
-msgstr ""
-
-#: src/upnp/upnprouter.cpp:167
-#, fuzzy, kde-format
-#| msgid "Failed to open %1 : %2"
-msgid "Failed to download %1: %2"
-msgstr "Nepavyko atverti %1 : %2"
-
-#: src/upnp/upnprouter.cpp:178
-msgid "Error parsing router description."
-msgstr ""
-
-#: src/upnp/upnprouter.cpp:216
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
-
-#: src/upnp/upnprouter.cpp:314
-msgid "Cannot find port forwarding service in the device's description."
-msgstr ""
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr "µTP"
 
 #: src/util/file.cpp:84
 #, fuzzy, kde-format
-#| msgid "Cannot write to %1 : %2"
 msgid "Cannot write to %1: %2"
 msgstr "Nepavyko įrašyti į %1 : %2"
 
@@ -532,7 +472,6 @@ msgstr "Nepavyksta suskaičiuoti failo %1 dydžio: %2"
 
 #: src/util/fileops.cpp:327
 #, fuzzy, kde-format
-#| msgid "Cannot calculate the filesize : %1"
 msgid "Cannot calculate the filesize: %1"
 msgstr "Nepavyksta suskaičiuoti failo dydžio: %1"
 
@@ -544,7 +483,6 @@ msgstr "Nepavyko išplėsti failo: %1"
 
 #: src/util/fileops.cpp:417
 #, fuzzy, kde-format
-#| msgid "Cannot seek in file : %1"
 msgid "Cannot seek in file: %1"
 msgstr "Nepavyko skaityti failo: %1"
 
@@ -562,40 +500,72 @@ msgstr[1] "%1 diena "
 msgstr[2] "%1 dienos "
 msgstr[3] "%1 dienų "
 
-#: src/util/logsystemmanager.cpp:33
-msgid "General"
-msgstr "Bendri"
-
-#: src/util/logsystemmanager.cpp:34
-msgid "Connections"
-msgstr "Prisijungimai"
-
-#: src/util/logsystemmanager.cpp:35
-msgid "Tracker"
-msgstr "Vedlys"
-
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr "DHT"
-
-#: src/util/logsystemmanager.cpp:37
+#: src/util/signalcatcher.cpp:62
 #, fuzzy
-msgid "Disk Input/Output"
-msgstr "Disko I/O:"
-
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
-msgstr "µTP"
-
-#: src/util/signalcatcher.cpp:57
 msgid "Error when writing to disk"
-msgstr ""
+msgstr "Klaida skaitant iš %1"
 
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 #, fuzzy
-#| msgid "Error reading from %1"
 msgid "Error when reading from disk"
 msgstr "Klaida skaitant iš %1"
+
+#: src/upnp/httprequest.cpp:96
+#, fuzzy
+msgid "Connection closed unexpectedly"
+msgstr "Prisijungimas baigtas"
+
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:167
+#, fuzzy, kde-format
+msgid "Failed to download %1: %2"
+msgstr "Nepavyko atverti %1 : %2"
+
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:216
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:314
+msgid "Cannot find port forwarding service in the device's description."
+msgstr ""
+
+#: examples/ktcli/main.cpp:60
+#, fuzzy
+msgid "Torrent to open"
+msgstr "Torentas yra nepilnas."
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+#, fuzzy
+msgid "Port to use"
+msgstr "Įvertinkite"
+
+#: examples/ktcli/main.cpp:63
+msgid "Whether or not to enable encryption"
+msgstr ""
+
+#: examples/ktcli/main.cpp:64
+msgid "Whether or not to enable peer exchange"
+msgstr ""
+
+#: examples/ktcli/main.cpp:65
+msgid "Whether or not to use utp"
+msgstr ""
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr ""
+
+#~ msgid "Parse Error"
+#~ msgstr "Parse Klaida"
 
 #, fuzzy
 #~ msgid "Not in use"

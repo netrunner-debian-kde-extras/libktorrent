@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-02 03:19+0100\n"
+"POT-Creation-Date: 2011-03-13 12:17+0100\n"
 "PO-Revision-Date: 2010-09-11 19:26+0300\n"
 "Last-Translator: Einars Sprugis <einars8@gmail.com>\n"
 "Language-Team: Latvian <locale@laka.lv>\n"
@@ -24,40 +24,6 @@ msgstr ""
 "2);\n"
 "X-Launchpad-Export-Date: 2008-02-07 18:04+0000\n"
 "X-Generator: Lokalize 1.0\n"
-
-#: examples/ktcli/main.cpp:60
-#, fuzzy
-#| msgid "Document to open"
-msgid "Torrent to open"
-msgstr "Atveramais dokuments"
-
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-#, fuzzy
-#| msgid "Not in use"
-msgid "Port to use"
-msgstr "Netiek lietots"
-
-#: examples/ktcli/main.cpp:63
-#, fuzzy
-#| msgid "Whether or not to enable a custom download order."
-msgid "Whether or not to enable encryption"
-msgstr "Vai ieslēgt vai izslēgt pielāgotu failu lejupielādes kārtību."
-
-#: examples/ktcli/main.cpp:64
-#, fuzzy
-#| msgid "Whether or not to use µTorrent compatible peer exchange."
-msgid "Whether or not to enable peer exchange"
-msgstr "Lietot vai nē ar µTorrent savietojamu dalībnieku apmaiņu."
-
-#: examples/ktcli/main.cpp:65
-#, fuzzy
-#| msgid "Whether or not to show system tray popup messages."
-msgid "Whether or not to use utp"
-msgstr "Vai rādīt izlecošus paziņojumus pie sistēmas ikonu joslas."
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr ""
 
 #: src/bcodec/bdecoder.cpp:62
 #, kde-format
@@ -81,21 +47,21 @@ msgstr "Neizdevās pārveidot %1 par int"
 msgid "Torrent is incomplete."
 msgstr "Torrents ir nepilnīgs."
 
-#: src/datachecker/datacheckerjob.cpp:82
+#: src/datachecker/datacheckerjob.cpp:76
 msgid "Waiting for other data checks to finish"
 msgstr ""
 
-#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
 msgid "Checking data"
 msgstr "Pārbauda datus"
 
-#: src/datachecker/datacheckerjob.cpp:141
+#: src/datachecker/datacheckerjob.cpp:135
 #, fuzzy
 #| msgid "Checking data"
 msgid "Checking Data"
 msgstr "Pārbauda datus"
 
-#: src/datachecker/multidatachecker.cpp:209
+#: src/datachecker/multidatachecker.cpp:203
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
@@ -194,30 +160,26 @@ msgstr "Neizdevās ierakstīt pirmo gabalu DND failā : %1"
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Neizdevās ierakstīt pēdējo gabalu DND failā : %1"
 
-#: src/diskio/movedatafilesjob.cpp:140
-msgid "Waiting for other move jobs to finish"
-msgstr ""
+#: src/diskio/movedatafilesjob.cpp:166
+#, fuzzy
+#| msgid "Moving average"
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Slīdošais vidējais"
 
-#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+#: src/diskio/movedatafilesjob.cpp:167
 #, fuzzy
 #| msgid "Add Source"
 msgctxt "The source of a file operation"
 msgid "Source"
 msgstr "Pievienot avotu"
 
-#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+#: src/diskio/movedatafilesjob.cpp:168
 #, fuzzy
 #| msgid "Destination"
 msgctxt "The destination of a file operation"
 msgid "Destination"
 msgstr "Mērķis"
-
-#: src/diskio/movedatafilesjob.cpp:180
-#, fuzzy
-#| msgid "Moving average"
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Slīdošais vidējais"
 
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, fuzzy, kde-format
@@ -234,14 +196,6 @@ msgstr "Neizdevās izveidot %1: %2"
 #: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
-
-#: src/download/chunkdownload.cpp:382
-#, kde-format
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] "%1 dalībnieks"
-msgstr[1] "%1 dalībnieki"
-msgstr[2] "%1 dalībnieku"
 
 #: src/download/downloader.cpp:810
 #, fuzzy
@@ -310,6 +264,14 @@ msgstr "Pārsūtīts bez jaunas vietas."
 msgid "Unused for %1 seconds (Too many connection failures)"
 msgstr ""
 
+#: src/download/chunkdownload.cpp:383
+#, kde-format
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] "%1 dalībnieks"
+msgstr[1] "%1 dalībnieki"
+msgstr[2] "%1 dalībnieku"
+
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr "Labi"
@@ -338,22 +300,10 @@ msgstr "Mape %1 nepastāv"
 msgid "Unknown client"
 msgstr "Nepazīstama programma"
 
-#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
-#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
-#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
-#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
-msgid "Corrupted torrent."
-msgstr "Bojāts torrents."
-
-#: src/torrent/torrent.cpp:165
-#, fuzzy, kde-format
-#| msgid " Unable to open torrent file %1 : %2"
-msgid "Unable to open torrent file %1: %2"
-msgstr " Neizdevās atvērt torrenta failu %1 : %2"
-
-#: src/torrent/torrent.cpp:295
-msgid "Parse Error"
-msgstr "Parsēšanas kļūda"
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "Nevar izveidot indeksa failu: %1"
 
 #: src/torrent/torrentcontrol.cpp:308
 msgid "Error writing to disk, do you have enough diskspace?"
@@ -392,11 +342,6 @@ msgstr ""
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Jūs jau ielādējat torrentu <b>%1</b>."
-
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "Nevar izveidot indeksa failu: %1"
 
 #: src/torrent/torrentstats.cpp:72
 msgid "Not started"
@@ -454,6 +399,19 @@ msgstr "Pauzēts"
 msgid "Superseeding"
 msgstr "Piedāvā"
 
+#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
+#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
+#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
+#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
+msgid "Corrupted torrent."
+msgstr "Bojāts torrents."
+
+#: src/torrent/torrent.cpp:165
+#, fuzzy, kde-format
+#| msgid " Unable to open torrent file %1 : %2"
+msgid "Unable to open torrent file %1: %2"
+msgstr " Neizdevās atvērt torrenta failu %1 : %2"
+
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "Pārsūtīts bez jaunas vietas"
@@ -482,41 +440,29 @@ msgstr "Noildze sazinoties ar trakeri %1"
 msgid "Unable to resolve hostname %1"
 msgstr "Neizdevās atpazīt datora nosaukumu %1"
 
-#: src/upnp/httprequest.cpp:96
-#, fuzzy
-#| msgid "Connection closed unexpectedly."
-msgid "Connection closed unexpectedly"
-msgstr "Savienojums tika negaidīti aizvērts."
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "Pamata"
 
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
-msgstr ""
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
+msgstr "Savienojumi"
 
-#: src/upnp/upnprouter.cpp:167
-#, fuzzy, kde-format
-#| msgid "Failed to download %1 : %2"
-msgid "Failed to download %1: %2"
-msgstr "Neizdevās lejupielādēt %1 : %2"
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "Trakeris"
 
-#: src/upnp/upnprouter.cpp:178
-msgid "Error parsing router description."
-msgstr "Kļūda analizējot maršutētāja aprakstu."
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
 
-#: src/upnp/upnprouter.cpp:216
-#, fuzzy
-#| msgid ""
-#| "Forwarding failed: \n"
-#| "Device does not have a WANIPConnection or WANPPPConnection."
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
-"Neizdevās pārsūtīt: \n"
-"Ierīcei nav WANIPConnection vai WANPPPConnection."
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
+msgstr "Diska lasīšana/rakstīšana:"
 
-#: src/upnp/upnprouter.cpp:314
-msgid "Cannot find port forwarding service in the device's description."
-msgstr "Neizdevās ierīces aprakstā atrast portu pāradresēšanas servisu."
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr "µTP"
 
 #: src/util/file.cpp:84
 #, fuzzy, kde-format
@@ -595,47 +541,99 @@ msgstr[0] "%1 diena"
 msgstr[1] "%1 dienas"
 msgstr[2] "%1 dienu"
 
-#: src/util/logsystemmanager.cpp:33
-msgid "General"
-msgstr "Pamata"
-
-#: src/util/logsystemmanager.cpp:34
-msgid "Connections"
-msgstr "Savienojumi"
-
-#: src/util/logsystemmanager.cpp:35
-msgid "Tracker"
-msgstr "Trakeris"
-
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr "DHT"
-
-#: src/util/logsystemmanager.cpp:37
-msgid "Disk Input/Output"
-msgstr "Diska lasīšana/rakstīšana:"
-
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
-msgstr "µTP"
-
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 #, fuzzy
 #| msgid "Error reading from %1"
 msgid "Error when writing to disk"
 msgstr "Kļūda lasot no %1"
 
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 #, fuzzy
 #| msgid "Error reading from %1"
 msgid "Error when reading from disk"
 msgstr "Kļūda lasot no %1"
 
-#~ msgid "Not in use"
-#~ msgstr "Netiek lietots"
+#: src/upnp/httprequest.cpp:96
+#, fuzzy
+#| msgid "Connection closed unexpectedly."
+msgid "Connection closed unexpectedly"
+msgstr "Savienojums tika negaidīti aizvērts."
+
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:167
+#, fuzzy, kde-format
+#| msgid "Failed to download %1 : %2"
+msgid "Failed to download %1: %2"
+msgstr "Neizdevās lejupielādēt %1 : %2"
+
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
+msgstr "Kļūda analizējot maršutētāja aprakstu."
+
+#: src/upnp/upnprouter.cpp:216
+#, fuzzy
+#| msgid ""
+#| "Forwarding failed: \n"
+#| "Device does not have a WANIPConnection or WANPPPConnection."
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+"Neizdevās pārsūtīt: \n"
+"Ierīcei nav WANIPConnection vai WANPPPConnection."
+
+#: src/upnp/upnprouter.cpp:314
+msgid "Cannot find port forwarding service in the device's description."
+msgstr "Neizdevās ierīces aprakstā atrast portu pāradresēšanas servisu."
+
+#: examples/ktcli/main.cpp:60
+#, fuzzy
+#| msgid "Document to open"
+msgid "Torrent to open"
+msgstr "Atveramais dokuments"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+#, fuzzy
+#| msgid "Not in use"
+msgid "Port to use"
+msgstr "Netiek lietots"
+
+#: examples/ktcli/main.cpp:63
+#, fuzzy
+#| msgid "Whether or not to enable a custom download order."
+msgid "Whether or not to enable encryption"
+msgstr "Vai ieslēgt vai izslēgt pielāgotu failu lejupielādes kārtību."
+
+#: examples/ktcli/main.cpp:64
+#, fuzzy
+#| msgid "Whether or not to use µTorrent compatible peer exchange."
+msgid "Whether or not to enable peer exchange"
+msgstr "Lietot vai nē ar µTorrent savietojamu dalībnieku apmaiņu."
+
+#: examples/ktcli/main.cpp:65
+#, fuzzy
+#| msgid "Whether or not to show system tray popup messages."
+msgid "Whether or not to use utp"
+msgstr "Vai rādīt izlecošus paziņojumus pie sistēmas ikonu joslas."
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr ""
+
+#~ msgid "Parse Error"
+#~ msgstr "Parsēšanas kļūda"
+
+#~ msgid "Cannot open file : %1 : %2"
+#~ msgstr "Nevar atvērt failu: %1 : %2"
 
 #~ msgid "Cannot open file %1 : %2"
 #~ msgstr "Neizdevās atvērt failu %1 : %2"
+
+#~ msgid "Not in use"
+#~ msgstr "Netiek lietots"
 
 #~ msgid ""
 #~ "An error occurred while loading the torrent:<br/><b>%1</b><br/>The "
@@ -643,9 +641,6 @@ msgstr "Kļūda lasot no %1"
 #~ msgstr ""
 #~ "Gadījās kļūda, ielādējot torrentu:<br/><b>%1</b><br/>Tas droši vien ir "
 #~ "bojāts vai nav torrent fails."
-
-#~ msgid "Cannot open file : %1 : %2"
-#~ msgstr "Nevar atvērt failu: %1 : %2"
 
 #~ msgid "Cannot open log file %1 : %2"
 #~ msgstr "Neizdevās atvērt žurnāla failu %1 : %2"

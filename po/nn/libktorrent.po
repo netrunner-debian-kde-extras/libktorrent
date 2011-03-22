@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-19 02:37+0100\n"
+"POT-Creation-Date: 2011-03-01 13:52+0100\n"
 "PO-Revision-Date: 2010-04-02 14:10+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
@@ -19,30 +19,6 @@ msgstr ""
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
-
-#: examples/ktcli/main.cpp:60
-msgid "Torrent to open"
-msgstr ""
-
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-msgid "Port to use"
-msgstr ""
-
-#: examples/ktcli/main.cpp:63
-msgid "Whether or not to enable encryption"
-msgstr ""
-
-#: examples/ktcli/main.cpp:64
-msgid "Whether or not to enable peer exchange"
-msgstr ""
-
-#: examples/ktcli/main.cpp:65
-msgid "Whether or not to use utp"
-msgstr ""
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr ""
 
 #: src/bcodec/bdecoder.cpp:62
 #, kde-format
@@ -66,19 +42,19 @@ msgstr "Klarer ikkje gjera %1 om til eit heiltal"
 msgid "Torrent is incomplete."
 msgstr "Torrenten er ufullstendig."
 
-#: src/datachecker/datacheckerjob.cpp:82
+#: src/datachecker/datacheckerjob.cpp:76
 msgid "Waiting for other data checks to finish"
 msgstr ""
 
-#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
 msgid "Checking data"
 msgstr "Sjekkar data"
 
-#: src/datachecker/datacheckerjob.cpp:141
+#: src/datachecker/datacheckerjob.cpp:135
 msgid "Checking Data"
 msgstr ""
 
-#: src/datachecker/multidatachecker.cpp:209
+#: src/datachecker/multidatachecker.cpp:203
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
@@ -139,6 +115,11 @@ msgstr ""
 msgid "Cannot preallocate diskspace: %1"
 msgstr ""
 
+#: src/diskio/chunkmanager.cpp:933 src/diskio/chunkmanager.cpp:959
+#, kde-format
+msgid "Cannot open index file %1: %2"
+msgstr ""
+
 #: src/diskio/dndfile.cpp:89
 #, kde-format
 msgid "Cannot create file %1: %2"
@@ -183,11 +164,6 @@ msgstr ""
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
 
-#: src/diskio/chunkmanager.cpp:933 src/diskio/chunkmanager.cpp:959
-#, kde-format
-msgid "Cannot open index file %1: %2"
-msgstr ""
-
 #: src/download/chunkdownload.cpp:382
 #, kde-format
 msgid "1 peer"
@@ -195,23 +171,14 @@ msgid_plural "%1 peers"
 msgstr[0] "1 deltakar"
 msgstr[1] "%1 deltakarar"
 
-#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
-#: src/download/httpconnection.cpp:37
-msgid "Not connected"
-msgstr "Ikkje tilkopla"
-
-#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:129
-msgid "Connection closed"
-msgstr "Tilkoplinga er avslutta"
-
-#: src/download/webseed.cpp:544
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
-
 #: src/download/downloader.cpp:810
 msgid "Disabled because webseed does not match torrent"
 msgstr ""
+
+#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
+#: src/download/webseed.cpp:98
+msgid "Not connected"
+msgstr "Ikkje tilkopla"
 
 #: src/download/httpconnection.cpp:107
 #, kde-format
@@ -222,6 +189,10 @@ msgstr "Gjer namneoppslag på mellomtenaren «%1»: %2"
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr "Gjer namneoppslag på vertsnamnet «%1»"
+
+#: src/download/httpconnection.cpp:129 src/download/webseed.cpp:336
+msgid "Connection closed"
+msgstr "Tilkoplinga er avslutta"
 
 #: src/download/httpconnection.cpp:136
 #, kde-format
@@ -260,6 +231,11 @@ msgstr "Feil: Førespurnaden vart tidsavbroten"
 msgid "Redirected without a new location."
 msgstr "Omdirigert utan ny plassering."
 
+#: src/download/webseed.cpp:544
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr ""
+
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr "OK"
@@ -287,6 +263,11 @@ msgstr "Mappa «%1» finst ikkje"
 msgid "Unknown client"
 msgstr "Ukjend klient"
 
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "Klarte ikkje laga indeksfil: %1"
+
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
@@ -303,10 +284,40 @@ msgstr ""
 msgid "Parse Error"
 msgstr "Tolkingsfeil"
 
-#: src/torrent/torrentcreator.cpp:361
+#: src/torrent/torrentcontrol.cpp:308
+msgid "Error writing to disk, do you have enough diskspace?"
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:545
 #, kde-format
-msgid "Cannot create index file: %1"
-msgstr "Klarte ikkje laga indeksfil: %1"
+msgid ""
+"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
+"torrent is probably corrupt or is not a valid torrent file."
+msgstr ""
+"Det oppstod ein feil under opninga av torrenten <b>%1</b>:<br/><b>%2</b><br/"
+">Torrenten er truleg øydelagd eller ugyldig."
+
+#: src/torrent/torrentcontrol.cpp:575
+#, kde-format
+msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:586
+#, kde-format
+msgid "Unable to create %1: %2"
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:601
+#, kde-format
+msgid ""
+"You are already downloading the torrent <b>%1</b>. The tracker lists from "
+"both torrents have been merged."
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:606
+#, kde-format
+msgid "You are already downloading the torrent <b>%1</b>."
+msgstr ""
 
 #: src/torrent/torrentstats.cpp:72
 msgid "Not started"
@@ -361,41 +372,6 @@ msgstr "Pause"
 msgid "Superseeding"
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:308
-msgid "Error writing to disk, do you have enough diskspace?"
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:545
-#, kde-format
-msgid ""
-"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
-"torrent is probably corrupt or is not a valid torrent file."
-msgstr ""
-"Det oppstod ein feil under opninga av torrenten <b>%1</b>:<br/><b>%2</b><br/"
-">Torrenten er truleg øydelagd eller ugyldig."
-
-#: src/torrent/torrentcontrol.cpp:575
-#, kde-format
-msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:586
-#, kde-format
-msgid "Unable to create %1: %2"
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:601
-#, kde-format
-msgid ""
-"You are already downloading the torrent <b>%1</b>. The tracker lists from "
-"both torrents have been merged."
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:606
-#, kde-format
-msgid "You are already downloading the torrent <b>%1</b>."
-msgstr ""
-
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "Omdirigert utan ny plassering"
@@ -424,34 +400,29 @@ msgstr "Tidsavbrot ved kontakt med deltakarsentralen %1"
 msgid "Unable to resolve hostname %1"
 msgstr "Klarte ikkje gjera namneoppslag på vertsnamnet «%1»"
 
-#: src/upnp/httprequest.cpp:96
-msgid "Connection closed unexpectedly"
-msgstr ""
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "Generelt"
 
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
-msgstr ""
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
+msgstr "Tilkoplingar"
 
-#: src/upnp/upnprouter.cpp:167
-#, kde-format
-msgid "Failed to download %1: %2"
-msgstr ""
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "Deltakarsentral"
 
-#: src/upnp/upnprouter.cpp:178
-msgid "Error parsing router description."
-msgstr "Feil ved tolking av rutarskildring."
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
 
-#: src/upnp/upnprouter.cpp:216
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
+msgstr "Diskaktivitet"
 
-#: src/upnp/upnprouter.cpp:314
-msgid "Cannot find port forwarding service in the device's description."
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
 msgstr ""
-"Klarer ikkje finna tenesta for vidaresending av portar i skildringa til "
-"eininga."
 
 #: src/util/file.cpp:84
 #, kde-format
@@ -514,30 +485,6 @@ msgstr "Klarte ikkje utvida fila: %1"
 msgid "Cannot seek in file: %1"
 msgstr ""
 
-#: src/util/logsystemmanager.cpp:33
-msgid "General"
-msgstr "Generelt"
-
-#: src/util/logsystemmanager.cpp:34
-msgid "Connections"
-msgstr "Tilkoplingar"
-
-#: src/util/logsystemmanager.cpp:35
-msgid "Tracker"
-msgstr "Deltakarsentral"
-
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr "DHT"
-
-#: src/util/logsystemmanager.cpp:37
-msgid "Disk Input/Output"
-msgstr "Diskaktivitet"
-
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
-msgstr ""
-
 #: src/util/functions.cpp:280
 #, kde-format
 msgid "%1/s"
@@ -550,10 +497,63 @@ msgid_plural "%1 days "
 msgstr[0] "1 dag "
 msgstr[1] "%1 dagar "
 
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 msgid "Error when writing to disk"
 msgstr ""
 
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 msgid "Error when reading from disk"
+msgstr ""
+
+#: src/upnp/httprequest.cpp:96
+msgid "Connection closed unexpectedly"
+msgstr ""
+
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:167
+#, kde-format
+msgid "Failed to download %1: %2"
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
+msgstr "Feil ved tolking av rutarskildring."
+
+#: src/upnp/upnprouter.cpp:216
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:314
+msgid "Cannot find port forwarding service in the device's description."
+msgstr ""
+"Klarer ikkje finna tenesta for vidaresending av portar i skildringa til "
+"eininga."
+
+#: examples/ktcli/main.cpp:60
+msgid "Torrent to open"
+msgstr ""
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+msgid "Port to use"
+msgstr ""
+
+#: examples/ktcli/main.cpp:63
+msgid "Whether or not to enable encryption"
+msgstr ""
+
+#: examples/ktcli/main.cpp:64
+msgid "Whether or not to enable peer exchange"
+msgstr ""
+
+#: examples/ktcli/main.cpp:65
+msgid "Whether or not to use utp"
+msgstr ""
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
 msgstr ""
