@@ -3,15 +3,15 @@
 #
 # Nick Shaforostoff <shaforostoff@kde.ru>, 2007, 2008, 2009.
 # Evgeniy Ivanov <powerfox@kde.ru>, 2008.
-# Artem Sereda <overmind88@gmail.com>, 2008, 2009, 2010.
+# Artem Sereda <overmind88@gmail.com>, 2008, 2009, 2010, 2011.
 # Nick Shaforostoff <shafff@ukr.net>, 2008, 2009.
 # Alexander Potashev <aspotashev@gmail.com>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-02 03:19+0100\n"
-"PO-Revision-Date: 2010-12-05 20:14+0200\n"
+"POT-Creation-Date: 2011-03-13 12:17+0100\n"
+"PO-Revision-Date: 2011-02-14 08:50+0200\n"
 "Last-Translator: Artem Sereda <overmind88@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "MIME-Version: 1.0\n"
@@ -24,33 +24,6 @@ msgstr ""
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
-
-#: examples/ktcli/main.cpp:60
-msgid "Torrent to open"
-msgstr "Открываемый  торрент"
-
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-msgid "Port to use"
-msgstr "Используемый порт"
-
-# https://bugs.kde.org/show_bug.cgi?id=254399
-#: examples/ktcli/main.cpp:63
-msgid "Whether or not to enable encryption"
-msgstr "Нужно ли использовать шифрование"
-
-# https://bugs.kde.org/show_bug.cgi?id=254399
-#: examples/ktcli/main.cpp:64
-msgid "Whether or not to enable peer exchange"
-msgstr "Использовать ли обмен списками участников"
-
-# https://bugs.kde.org/show_bug.cgi?id=254399
-#: examples/ktcli/main.cpp:65
-msgid "Whether or not to use utp"
-msgstr "Нужно ли использовать UTP"
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr "ktcli"
 
 #: src/bcodec/bdecoder.cpp:62
 #, kde-format
@@ -74,19 +47,21 @@ msgstr "Не удалось преобразовать %1 в целое"
 msgid "Torrent is incomplete."
 msgstr "Торрент не полный."
 
-#: src/datachecker/datacheckerjob.cpp:82
+#: src/datachecker/datacheckerjob.cpp:76
 msgid "Waiting for other data checks to finish"
 msgstr ""
 
-#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
 msgid "Checking data"
 msgstr "Проверка данных"
 
-#: src/datachecker/datacheckerjob.cpp:141
+#: src/datachecker/datacheckerjob.cpp:135
+#, fuzzy
+#| msgid "Checking data"
 msgid "Checking Data"
 msgstr "Проверка данных"
 
-#: src/datachecker/multidatachecker.cpp:209
+#: src/datachecker/multidatachecker.cpp:203
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
@@ -96,13 +71,15 @@ msgstr "Не удаётся открыть файл %1: %2"
 
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
 #: src/util/fileops.cpp:396
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Cannot open %1 : %2"
 msgid "Cannot open %1: %2"
 msgstr "Не удалось открыть %1: %2"
 
 #: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
 #: src/diskio/cachefile.cpp:412 src/diskio/cachefile.cpp:480
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Cannot open %1 for writing : readonly filesystem"
 msgid "Cannot open %1 for writing: readonly filesystem"
 msgstr "Не удалось открыть %1 для записи: файловая система только для чтения."
 
@@ -112,7 +89,10 @@ msgid "Attempting to write beyond the maximum size of %1"
 msgstr "Попытка записи в область за границей максимального размера файла %1"
 
 #: src/diskio/cachefile.cpp:255
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Cannot expand file %1 : attempting to grow the file beyond the maximum "
+#| "size"
 msgid ""
 "Cannot expand file %1: attempting to grow the file beyond the maximum size"
 msgstr ""
@@ -120,17 +100,20 @@ msgstr ""
 "превышающего максимально допустимый размер"
 
 #: src/diskio/cachefile.cpp:259
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Cannot expand file %1 : %2"
 msgid "Cannot expand file %1: %2"
 msgstr "Не удалось увеличить размер файла %1: %2"
 
 #: src/diskio/cachefile.cpp:378
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Error : Reading past the end of the file %1"
 msgid "Error: Reading past the end of the file %1"
 msgstr "Ошибка: Чтение после конца файла %1"
 
 #: src/diskio/cachefile.cpp:383 src/diskio/cachefile.cpp:430
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to seek file %1 : %2"
 msgid "Failed to seek file %1: %2"
 msgstr "Не удалось найти %1: %2"
 
@@ -140,76 +123,77 @@ msgid "Error reading from %1"
 msgstr "Ошибка чтения из %1"
 
 #: src/diskio/cachefile.cpp:434
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to write to file %1 : %2"
 msgid "Failed to write to file %1: %2"
-msgstr "Не удаётся записать в файл %1: %2"
+msgstr "Не удаётся записать в файл %1 : %2"
 
 #: src/diskio/cachefile.cpp:501
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Cannot preallocate diskspace : %1"
 msgid "Cannot preallocate diskspace: %1"
-msgstr "Не удалось выделить свободное место на диске: %1"
+msgstr "Не удалось выделить дисковое пространство: %1"
 
 #: src/diskio/chunkmanager.cpp:933 src/diskio/chunkmanager.cpp:959
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Cannot open index file %1 : %2"
 msgid "Cannot open index file %1: %2"
 msgstr "Не удалось открыть файл индекса %1: %2"
 
 #: src/diskio/dndfile.cpp:89
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Cannot create file %1 : %2"
 msgid "Cannot create file %1: %2"
 msgstr "Не удалось создать файл %1: %2"
 
 #: src/diskio/dndfile.cpp:137
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to write first chunk to DND file : %1"
 msgid "Failed to write first chunk to DND file: %1"
 msgstr "Не удалось записать первую часть в файл DND: %1"
 
 #: src/diskio/dndfile.cpp:155
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to write last chunk to DND file : %1"
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Не удалось записать последнюю часть в файл DND: %1"
 
-#: src/diskio/movedatafilesjob.cpp:140
-msgid "Waiting for other move jobs to finish"
-msgstr ""
+#: src/diskio/movedatafilesjob.cpp:166
+#, fuzzy
+#| msgid "Moving average"
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Усреднённое перемещение"
 
-#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+#: src/diskio/movedatafilesjob.cpp:167
+#, fuzzy
+#| msgid "Add Source"
 msgctxt "The source of a file operation"
 msgid "Source"
-msgstr "Источник"
+msgstr "Добавить источник"
 
-#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+#: src/diskio/movedatafilesjob.cpp:168
+#, fuzzy
+#| msgid "Destination"
 msgctxt "The destination of a file operation"
 msgid "Destination"
 msgstr "Назначение"
 
-#: src/diskio/movedatafilesjob.cpp:180
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Перемещение"
-
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to open %1 : %2"
 msgid "Failed to open %1: %2"
 msgstr "Не удалось открыть %1: %2"
 
 #: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to create %1 : %2"
 msgid "Failed to create %1: %2"
 msgstr "Не удалось создать %1: %2"
 
 #: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
 msgid "Unable to write to a piece mapped read only"
-msgstr "Не удалось записать в часть, отмеченную только для чтения"
-
-#: src/download/chunkdownload.cpp:382
-#, kde-format
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] "%1 участник"
-msgstr[1] "%1 участника"
-msgstr[2] "%1 участников"
-msgstr[3] "%1 участник"
+msgstr ""
 
 #: src/download/downloader.cpp:810
 #, fuzzy
@@ -277,16 +261,25 @@ msgstr "Перенаправление без указания нового ра
 #, kde-format
 msgid "Unused for %1 seconds (Too many connection failures)"
 msgstr ""
-"Не используется в течение %1 секунд (Слишком много ошибок при соединении)"
+
+#: src/download/chunkdownload.cpp:383
+#, kde-format
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] "%1 участник"
+msgstr[1] "%1 участника"
+msgstr[2] "%1 участников"
+msgstr[3] "%1 участник"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr "ОК"
 
 #: src/interfaces/trackerinterface.cpp:58
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Opening %1"
 msgid "Warning: %1"
-msgstr "Предупреждение: %1"
+msgstr "Открытие %1"
 
 #: src/interfaces/trackerinterface.cpp:59
 msgid "Announcing"
@@ -306,25 +299,14 @@ msgstr "Папка %1 не существует"
 msgid "Unknown client"
 msgstr "Неизвестный клиент"
 
-#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
-#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
-#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
-#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
-msgid "Corrupted torrent."
-msgstr "Торрент повреждён."
-
-#: src/torrent/torrent.cpp:165
+#: src/torrent/torrentcreator.cpp:361
 #, kde-format
-msgid "Unable to open torrent file %1: %2"
-msgstr "Не удалось открыть торрент %1: %2"
-
-#: src/torrent/torrent.cpp:295
-msgid "Parse Error"
-msgstr "Ошибка анализа"
+msgid "Cannot create index file: %1"
+msgstr "Не удаётся создать файл индекса %1"
 
 #: src/torrent/torrentcontrol.cpp:308
 msgid "Error writing to disk, do you have enough diskspace?"
-msgstr "Ошибка записи на диск, не хватает свободного места?"
+msgstr ""
 
 #: src/torrent/torrentcontrol.cpp:545
 #, kde-format
@@ -338,10 +320,11 @@ msgstr ""
 #: src/torrent/torrentcontrol.cpp:575
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
-msgstr "При загрузке <b>%1</b> произошла ошибка:<br/><b>%2</b>"
+msgstr ""
 
 #: src/torrent/torrentcontrol.cpp:586
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Unable to create %1 : %2"
 msgid "Unable to create %1: %2"
 msgstr "Не удалось создать %1: %2"
 
@@ -357,11 +340,6 @@ msgstr ""
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "<b>%1</b> уже загружается."
-
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "Не удаётся создать файл индекса %1"
 
 #: src/torrent/torrentstats.cpp:72
 msgid "Not started"
@@ -413,8 +391,24 @@ msgid "Paused"
 msgstr "Приостановлено"
 
 #: src/torrent/torrentstats.cpp:98
+#, fuzzy
+#| msgctxt "Status of a torrent file"
+#| msgid "Seeding"
 msgid "Superseeding"
-msgstr "Суперсид"
+msgstr "Раздача"
+
+#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
+#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
+#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
+#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
+msgid "Corrupted torrent."
+msgstr "Торрент повреждён."
+
+#: src/torrent/torrent.cpp:165
+#, fuzzy, kde-format
+#| msgid " Unable to open torrent file %1 : %2"
+msgid "Unable to open torrent file %1: %2"
+msgstr " Не удалось открыть торрент %1: %2"
 
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
@@ -444,37 +438,33 @@ msgstr "Задержка соединения с трекером %1"
 msgid "Unable to resolve hostname %1"
 msgstr "Невозможно определить имя сервера %1"
 
-#: src/upnp/httprequest.cpp:96
-msgid "Connection closed unexpectedly"
-msgstr "Соединение было неожиданно закрыто"
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "Основные"
 
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
-msgstr "Истекло время ожидания операции"
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
+msgstr "Соединения"
 
-#: src/upnp/upnprouter.cpp:167
-#, kde-format
-msgid "Failed to download %1: %2"
-msgstr "Не удалось загрузить %1: %2"
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "Трекер"
 
-#: src/upnp/upnprouter.cpp:178
-msgid "Error parsing router description."
-msgstr "Ошибка обработки описания маршрутизации."
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
 
-#: src/upnp/upnprouter.cpp:216
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
-"Ошибка перенаправления:\n"
-"Устройство не поддерживает соединения WANIP или WANPPP."
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
+msgstr "Ввод/вывод диска"
 
-#: src/upnp/upnprouter.cpp:314
-msgid "Cannot find port forwarding service in the device's description."
-msgstr "Не удалось найти службу транслирования в описании устройства."
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr "µTP"
 
 #: src/util/file.cpp:84
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Cannot write to %1 : %2"
 msgid "Cannot write to %1: %2"
 msgstr "Не удалось записать в %1: %2"
 
@@ -519,7 +509,8 @@ msgid "Cannot calculate the filesize of %1: %2"
 msgstr "Не удалось определить размер файла %1: %2"
 
 #: src/util/fileops.cpp:327
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Cannot calculate the filesize : %1"
 msgid "Cannot calculate the filesize: %1"
 msgstr "Не удалось определить размер файла: %1"
 
@@ -530,7 +521,8 @@ msgid "Cannot expand file: %1"
 msgstr "Не удалось увеличить размер файла: %1"
 
 #: src/util/fileops.cpp:417
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Cannot seek in file : %1"
 msgid "Cannot seek in file: %1"
 msgstr "Не удалось выполнить перемещение по файлу: %1"
 
@@ -548,49 +540,99 @@ msgstr[1] "%1 дня "
 msgstr[2] "%1 дней "
 msgstr[3] "%1 день "
 
-#: src/util/logsystemmanager.cpp:33
-msgid "General"
-msgstr "Основные"
-
-#: src/util/logsystemmanager.cpp:34
-msgid "Connections"
-msgstr "Соединения"
-
-#: src/util/logsystemmanager.cpp:35
-msgid "Tracker"
-msgstr "Трекер"
-
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr "DHT"
-
-#: src/util/logsystemmanager.cpp:37
-msgid "Disk Input/Output"
-msgstr "Ввод/вывод диска"
-
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
-msgstr "µTP"
-
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
+#, fuzzy
+#| msgid "Error writing to %1"
 msgid "Error when writing to disk"
-msgstr "Ошибка записи на диск"
+msgstr "Ошибка записи в %1"
 
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
+#, fuzzy
+#| msgid "Error reading from %1"
 msgid "Error when reading from disk"
-msgstr "Ошибка чтения с диска"
+msgstr "Ошибка чтения из %1"
 
-#~ msgid "Not in use"
-#~ msgstr "Не используется"
+#: src/upnp/httprequest.cpp:96
+#, fuzzy
+#| msgid "Connection closed unexpectedly."
+msgid "Connection closed unexpectedly"
+msgstr "Соединение было неожиданно закрыто."
 
-#~ msgid "Not enough diskspace"
-#~ msgstr "Недостаточно места на диске"
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:167
+#, fuzzy, kde-format
+#| msgid "Failed to download %1 : %2"
+msgid "Failed to download %1: %2"
+msgstr "Не удалось загрузить %1: %2"
+
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
+msgstr "Ошибка обработки описания маршрутизации."
+
+#: src/upnp/upnprouter.cpp:216
+#, fuzzy
+#| msgid ""
+#| "Forwarding failed: \n"
+#| "Device does not have a WANIPConnection or WANPPPConnection."
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+"Ошибка перенаправления:\n"
+"Устройство не поддерживает соединения WANIP или WANPPP."
+
+#: src/upnp/upnprouter.cpp:314
+msgid "Cannot find port forwarding service in the device's description."
+msgstr "Не удалось найти службу транслирования в описании устройства."
+
+#: examples/ktcli/main.cpp:60
+#, fuzzy
+#| msgid "Document to open"
+msgid "Torrent to open"
+msgstr "Открываемый документ"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+#, fuzzy
+#| msgid "Not in use"
+msgid "Port to use"
+msgstr "Не используется"
+
+#: examples/ktcli/main.cpp:63
+#, fuzzy
+#| msgid "Whether or not to enable a custom download order."
+msgid "Whether or not to enable encryption"
+msgstr "Нужно ли использовать собственный порядок загрузки файлов."
+
+#: examples/ktcli/main.cpp:64
+#, fuzzy
+#| msgid "Whether or not to use µTorrent compatible peer exchange."
+msgid "Whether or not to enable peer exchange"
+msgstr "Использовать ли обмен списками участников, совместимый с µTorrent."
+
+#: examples/ktcli/main.cpp:65
+#, fuzzy
+#| msgid "Whether or not to show system tray popup messages."
+msgid "Whether or not to use utp"
+msgstr "Показывать уведомления в области системного лотка."
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr ""
+
+#~ msgid "Parse Error"
+#~ msgstr "Ошибка анализа"
+
+#~ msgid "Cannot open file : %1 : %2"
+#~ msgstr "Не удалось открыть файл %1: %2"
 
 #~ msgid "Cannot open file %1 : %2"
 #~ msgstr "Не удалось открыть файл %1: %2"
 
-#~ msgid "Cannot open file : %1 : %2"
-#~ msgstr "Не удалось открыть файл %1: %2"
+#~ msgid "Not in use"
+#~ msgstr "Не используется"
 
 #~ msgid ""
 #~ "An error occurred while loading the torrent:<br/><b>%1</b><br/>The "
@@ -601,6 +643,11 @@ msgstr "Ошибка чтения с диска"
 
 #~ msgid "Cannot open log file %1 : %2"
 #~ msgstr "Не удалось открыть файл журнала %1: %2"
+
+#, fuzzy
+#~| msgid "Insufficient disk space for %1"
+#~ msgid "Not enough diskspace"
+#~ msgstr "Недостаточно дискового пространства для %1"
 
 #~ msgid "Timeout occurred"
 #~ msgstr "Время истекло"
@@ -4988,9 +5035,6 @@ msgstr "Ошибка чтения с диска"
 
 #~ msgid "Show system tray icon"
 #~ msgstr "Значок в системном лотке"
-
-#~ msgid "Whether or not to show system tray popup messages."
-#~ msgstr "Показывать уведомления в области системного лотка."
 
 #~ msgid "Show system tray popup messages"
 #~ msgstr "Показывать уведомления"

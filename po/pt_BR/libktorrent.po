@@ -1,4 +1,6 @@
-# Tradução do libktorrent.po para Brazilian Portuguese
+# tradução do libktorrent.po para Brazilian Portuguese
+# Copyright (C) 2008 This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
 # Waldemar Silva Junior <wsjunior@kdemail.net>, 2005.
 # doutor.zero <doutor.zero@gmail.com>, 2007, 2009, 2010.
 # Henrique Marks <henriquemarks@gmail.com>, 2008.
@@ -6,45 +8,19 @@
 # André Marcelo Alvarenga <andrealvarenga@gmx.net>, 2009, 2010, 2011.
 # Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2009, 2010.
 # Marcus Vinícius de Andrade Gama <marcus.gama@gmail.com>, 2010.
-# Copyright (C) 2008 This_file_is_part_of_KDE
-# This file is distributed under the same license as the PACKAGE package.
 msgid ""
 msgstr ""
 "Project-Id-Version: libktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-02 03:19+0100\n"
-"PO-Revision-Date: 2011-02-02 21:26-0200\n"
+"POT-Creation-Date: 2011-03-13 12:17+0100\n"
+"PO-Revision-Date: 2011-03-06 19:09-0300\n"
 "Last-Translator: André Marcelo Alvarenga <andrealvarenga@gmx.net>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_br@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: KBabel 1.11.4\n"
-
-#: examples/ktcli/main.cpp:60
-msgid "Torrent to open"
-msgstr "Torrent a abrir"
-
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-msgid "Port to use"
-msgstr "Porta a usar"
-
-#: examples/ktcli/main.cpp:63
-msgid "Whether or not to enable encryption"
-msgstr "Se deve ou não habilitar a criptografia"
-
-#: examples/ktcli/main.cpp:64
-msgid "Whether or not to enable peer exchange"
-msgstr "Se deve ou não habilitar a troca de máquinas"
-
-#: examples/ktcli/main.cpp:65
-msgid "Whether or not to use utp"
-msgstr "Se deve ou não usar o utp"
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr "ktcli"
+"X-Generator: Lokalize 1.0\n"
 
 #: src/bcodec/bdecoder.cpp:62
 #, kde-format
@@ -68,19 +44,19 @@ msgstr "Não foi possível converter %1 para um inteiro"
 msgid "Torrent is incomplete."
 msgstr "O torrent está incompleto."
 
-#: src/datachecker/datacheckerjob.cpp:82
+#: src/datachecker/datacheckerjob.cpp:76
 msgid "Waiting for other data checks to finish"
 msgstr "Aguardando a conclusão das outras verificações de dados"
 
-#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
 msgid "Checking data"
 msgstr "Verificando dados"
 
-#: src/datachecker/datacheckerjob.cpp:141
+#: src/datachecker/datacheckerjob.cpp:135
 msgid "Checking Data"
 msgstr "Verificando dados"
 
-#: src/datachecker/multidatachecker.cpp:209
+#: src/datachecker/multidatachecker.cpp:203
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
@@ -165,24 +141,20 @@ msgstr "Falha ao gravar o primeiro bloco no arquivo DND: %1"
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Falha ao gravar o último bloco no arquivo DND: %1"
 
-#: src/diskio/movedatafilesjob.cpp:140
-msgid "Waiting for other move jobs to finish"
-msgstr "Aguardando as outras tarefas serem concluídas"
+#: src/diskio/movedatafilesjob.cpp:166
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Movendo"
 
-#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+#: src/diskio/movedatafilesjob.cpp:167
 msgctxt "The source of a file operation"
 msgid "Source"
 msgstr "Origem"
 
-#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+#: src/diskio/movedatafilesjob.cpp:168
 msgctxt "The destination of a file operation"
 msgid "Destination"
 msgstr "Destino"
-
-#: src/diskio/movedatafilesjob.cpp:180
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Movendo"
 
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, kde-format
@@ -198,13 +170,6 @@ msgstr "Falha ao criar %1: %2"
 msgid "Unable to write to a piece mapped read only"
 msgstr "Não foi possível escrever em um bloco marcado como somente leitura"
 
-#: src/download/chunkdownload.cpp:382
-#, kde-format
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] "1 par"
-msgstr[1] "%1 pares"
-
 #: src/download/downloader.cpp:810
 msgid "Disabled because webseed does not match torrent"
 msgstr "Desabilitado porque a fonte Web não corresponde ao torrent"
@@ -217,7 +182,7 @@ msgstr "Não conectado"
 #: src/download/httpconnection.cpp:107
 #, kde-format
 msgid "Resolving proxy %1:%2"
-msgstr "Resolvendo o proxy %1:%2"
+msgstr "Resolvendo proxy %1:%2"
 
 #: src/download/httpconnection.cpp:116
 #, kde-format
@@ -231,7 +196,7 @@ msgstr "Conexão encerrada"
 #: src/download/httpconnection.cpp:136
 #, kde-format
 msgid "Error: request failed: %1"
-msgstr "Erro: A requisição falhou: %1"
+msgstr "Erro, a requisição falhou: %1"
 
 #: src/download/httpconnection.cpp:153 src/download/httpconnection.cpp:217
 msgid "Connected"
@@ -239,7 +204,7 @@ msgstr "Conectado"
 
 #: src/download/httpconnection.cpp:159
 msgid "Error: Failed to connect to webseed"
-msgstr "Erro: Falha ao conectar-se à fonte Web"
+msgstr "Erro: falha ao conectar-se à fonte Web"
 
 #: src/download/httpconnection.cpp:224
 msgid "Connecting"
@@ -255,11 +220,11 @@ msgstr "Falha ao resolver o nome da máquina do webseed"
 
 #: src/download/httpconnection.cpp:322
 msgid "Error: failed to connect, server not responding"
-msgstr "Erro: Falha ao conectar, o servidor não está respondendo"
+msgstr "Erro: falha ao conectar, o servidor não está respondendo"
 
 #: src/download/httpconnection.cpp:333
 msgid "Error: request timed out"
-msgstr "Erro: Tempo de requisição esgotado"
+msgstr "Erro: tempo de requisição esgotado"
 
 #: src/download/httpconnection.cpp:398
 msgid "Redirected without a new location."
@@ -269,6 +234,13 @@ msgstr "Redirecionado sem uma nova localização."
 #, kde-format
 msgid "Unused for %1 seconds (Too many connection failures)"
 msgstr "Não utilizado por %1 segundos (muitas falhas na conexão)"
+
+#: src/download/chunkdownload.cpp:383
+#, kde-format
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] "1 par"
+msgstr[1] "%1 pares"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
@@ -297,21 +269,10 @@ msgstr "A pasta %1 não existe"
 msgid "Unknown client"
 msgstr "Cliente desconhecido"
 
-#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
-#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
-#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
-#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
-msgid "Corrupted torrent."
-msgstr "Torrent corrompido."
-
-#: src/torrent/torrent.cpp:165
+#: src/torrent/torrentcreator.cpp:361
 #, kde-format
-msgid "Unable to open torrent file %1: %2"
-msgstr "Não foi possível abrir o arquivo torrent %1: %2"
-
-#: src/torrent/torrent.cpp:295
-msgid "Parse Error"
-msgstr "Erro de processamento"
+msgid "Cannot create index file: %1"
+msgstr "Não foi possível criar o arquivo de índice: %1"
 
 #: src/torrent/torrentcontrol.cpp:308
 msgid "Error writing to disk, do you have enough diskspace?"
@@ -324,7 +285,7 @@ msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
 "torrent is probably corrupt or is not a valid torrent file."
 msgstr ""
-"Ocorreu um erro ao carregar o torrent <b>%1</b>:<br/><b>%2</b><br/"
+"Um erro ocorreu ao carregar o torrent <b>%1</b>:<br/><b>%2</b><br/"
 ">Provavelmente o torrent está corrompido, ou não é um arquivo torrent válido."
 
 #: src/torrent/torrentcontrol.cpp:575
@@ -343,18 +304,13 @@ msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
 "both torrents have been merged."
 msgstr ""
-"Você já está baixando o torrent <b>%1</b>. As listas dos rastreadores de "
-"ambos os torrents foram mescladas."
+"Você já está baixando o torrent <b>%1</b>.A lista dos rastreadores de ambos "
+"os torrents foi combinada."
 
 #: src/torrent/torrentcontrol.cpp:606
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Você já está baixando o torrent <b>%1</b>."
-
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "Não foi possível criar o arquivo de índice: %1"
 
 #: src/torrent/torrentstats.cpp:72
 msgid "Not started"
@@ -399,7 +355,7 @@ msgstr "Enfileirado para baixar"
 
 #: src/torrent/torrentstats.cpp:94
 msgid "Stopped. No space left on device."
-msgstr "Parado. Não há mais espaço livre no dispositivo."
+msgstr "Parado. nenhum espaço restando no dispositivo."
 
 #: src/torrent/torrentstats.cpp:96
 msgid "Paused"
@@ -408,6 +364,18 @@ msgstr "Pausada"
 #: src/torrent/torrentstats.cpp:98
 msgid "Superseeding"
 msgstr "Super semear"
+
+#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
+#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
+#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
+#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
+msgid "Corrupted torrent."
+msgstr "Torrent corrompido."
+
+#: src/torrent/torrent.cpp:165
+#, kde-format
+msgid "Unable to open torrent file %1: %2"
+msgstr "Não foi possível abrir o arquivo torrent %1: %2"
 
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
@@ -430,43 +398,36 @@ msgstr "URL do rastreador inválida"
 #: src/tracker/udptracker.cpp:382
 #, kde-format
 msgid "Timeout contacting tracker %1"
-msgstr "Tempo esgotado ao contactar o rastreador %1"
+msgstr "Tempo esgotado ao contatar o rastreador %1"
 
 #: src/tracker/udptracker.cpp:409
 #, kde-format
 msgid "Unable to resolve hostname %1"
 msgstr "Falha ao resolver o nome da máquina %1"
 
-#: src/upnp/httprequest.cpp:96
-msgid "Connection closed unexpectedly"
-msgstr "A conexão foi fechada inesperadamente"
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "Geral"
 
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
-msgstr "Esgotou o tempo de operação"
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
+msgstr "Conexões"
 
-#: src/upnp/upnprouter.cpp:167
-#, kde-format
-msgid "Failed to download %1: %2"
-msgstr "Falha ao baixar %1: %2"
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "Rastreador"
 
-#: src/upnp/upnprouter.cpp:178
-msgid "Error parsing router description."
-msgstr "Erro ao analisar a descrição do roteador."
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
 
-#: src/upnp/upnprouter.cpp:216
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
-"O encaminhamento falhou:\n"
-"O dispositivo não possui uma WANIPConnection ou WANPPPConnection."
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
+msgstr "Entrada/Saída de Disco"
 
-#: src/upnp/upnprouter.cpp:314
-msgid "Cannot find port forwarding service in the device's description."
-msgstr ""
-"Não foi possível encontrar o serviço de encaminhamento de portas na "
-"descrição do dispositivo."
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr "µTP"
 
 #: src/util/file.cpp:84
 #, kde-format
@@ -501,7 +462,7 @@ msgstr "Não foi possível copiar %1 para %2: %3"
 #: src/util/fileops.cpp:275
 #, kde-format
 msgid "Cannot delete %1: %2"
-msgstr "Não foi possível excluir %1: %2"
+msgstr "Não foi possível apagar %1: %2"
 
 #: src/util/fileops.cpp:293
 #, kde-format
@@ -541,34 +502,98 @@ msgid_plural "%1 days "
 msgstr[0] "1 dia "
 msgstr[1] "%1 dias "
 
-#: src/util/logsystemmanager.cpp:33
-msgid "General"
-msgstr "Geral"
-
-#: src/util/logsystemmanager.cpp:34
-msgid "Connections"
-msgstr "Conexões"
-
-#: src/util/logsystemmanager.cpp:35
-msgid "Tracker"
-msgstr "Rastreador"
-
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr "DHT"
-
-#: src/util/logsystemmanager.cpp:37
-msgid "Disk Input/Output"
-msgstr "Entrada/saída do disco"
-
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
-msgstr "µTP"
-
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 msgid "Error when writing to disk"
 msgstr "Ocorreu um erro de gravação no disco"
 
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 msgid "Error when reading from disk"
 msgstr "Ocorreu um erro de leitura do disco"
+
+#: src/upnp/httprequest.cpp:96
+msgid "Connection closed unexpectedly"
+msgstr "A conexão foi fechada inesperadamente"
+
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr "Esgotou o tempo de operação"
+
+#: src/upnp/upnprouter.cpp:167
+#, kde-format
+msgid "Failed to download %1: %2"
+msgstr "Falha ao baixar %1: %2"
+
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
+msgstr "Erro ao analisar a descrição do roteador."
+
+#: src/upnp/upnprouter.cpp:216
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+"O encaminhamento falhou:\n"
+"O dispositivo não possui uma WANIPConnection ou WANPPPConnection."
+
+#: src/upnp/upnprouter.cpp:314
+msgid "Cannot find port forwarding service in the device's description."
+msgstr ""
+"Não foi possível encontrar o serviço de encaminhamento de portas na "
+"descrição do dispositivo."
+
+#: examples/ktcli/main.cpp:60
+msgid "Torrent to open"
+msgstr "Torrent a abrir"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+msgid "Port to use"
+msgstr "Porta a usar"
+
+#: examples/ktcli/main.cpp:63
+msgid "Whether or not to enable encryption"
+msgstr "Se deve ou não habilitar a criptografia"
+
+#: examples/ktcli/main.cpp:64
+msgid "Whether or not to enable peer exchange"
+msgstr "Se deve ou não habilitar a troca de máquinas"
+
+#: examples/ktcli/main.cpp:65
+msgid "Whether or not to use utp"
+msgstr "Se deve ou não usar o utp"
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr "ktcli"
+
+#~ msgid "Parse Error"
+#~ msgstr "Erro de Análise"
+
+#~ msgid "Cannot open file : %1 : %2"
+#~ msgstr "Não foi possível abrir o arquivo: %1 : %2"
+
+#~ msgid "Cannot open file %1 : %2"
+#~ msgstr "Não foi possível abrir o arquivo %1 : %2"
+
+#~ msgid "Not in use"
+#~ msgstr "Não está em uso"
+
+#~ msgid ""
+#~ "An error occurred while loading the torrent:<br/><b>%1</b><br/>The "
+#~ "torrent is probably corrupt or is not a valid torrent file."
+#~ msgstr ""
+#~ "Um erro ocorreu ao carregar o torrent: <br/><b>%1</b><br/>Provavelmente o "
+#~ "torrent está corrompido, ou não é um arquivo torrent válido."
+
+#~ msgid "Cannot open log file %1 : %2"
+#~ msgstr "Não foi possível abrir o arquivo de log %1 : %2"
+
+#, fuzzy
+#~| msgid "Not enough free disk space for %1"
+#~ msgid "Not enough diskspace"
+#~ msgstr "Não há espaço em disco suficiente para %1"
+
+#~ msgid "UTP"
+#~ msgstr "UTP"
+
+#~ msgid "Cannot bind to udp port %1 or the 10 following ports."
+#~ msgstr "Não foi possível vincular à porta udp %1 ou às 10 portas seguintes."

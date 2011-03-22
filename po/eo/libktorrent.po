@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-02 03:19+0100\n"
+"POT-Creation-Date: 2011-03-13 12:17+0100\n"
 "PO-Revision-Date: 2009-11-17 11:13+0100\n"
 "Last-Translator: Axel Rousseau <axel@esperanto-jeunes.org>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -14,40 +14,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-
-#: examples/ktcli/main.cpp:60
-#, fuzzy
-#| msgid "Document to open"
-msgid "Torrent to open"
-msgstr "La dosiero malfermiĝi"
-
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-#, fuzzy
-#| msgid "Notice"
-msgid "Port to use"
-msgstr "Rimarku"
-
-#: examples/ktcli/main.cpp:63
-#, fuzzy
-#| msgid "Use protocol encryption"
-msgid "Whether or not to enable encryption"
-msgstr "Uzi protokolan ĉifradon"
-
-#: examples/ktcli/main.cpp:64
-#, fuzzy
-#| msgid "Use protocol encryption"
-msgid "Whether or not to enable peer exchange"
-msgstr "Uzi protokolan ĉifradon"
-
-#: examples/ktcli/main.cpp:65
-#, fuzzy
-#| msgid "Use protocol encryption"
-msgid "Whether or not to use utp"
-msgstr "Uzi protokolan ĉifradon"
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr ""
 
 #: src/bcodec/bdecoder.cpp:62
 #, kde-format
@@ -73,21 +39,21 @@ msgstr "Ne povas konverti %1 en entjeron"
 msgid "Torrent is incomplete."
 msgstr "Torento estas nekompleta!"
 
-#: src/datachecker/datacheckerjob.cpp:82
+#: src/datachecker/datacheckerjob.cpp:76
 msgid "Waiting for other data checks to finish"
 msgstr ""
 
-#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
 msgid "Checking data"
 msgstr "Kontrolas datumojn"
 
-#: src/datachecker/datacheckerjob.cpp:141
+#: src/datachecker/datacheckerjob.cpp:135
 #, fuzzy
 #| msgid "Checking data"
 msgid "Checking Data"
 msgstr "Kontrolas datumojn"
 
-#: src/datachecker/multidatachecker.cpp:209
+#: src/datachecker/multidatachecker.cpp:203
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
@@ -179,30 +145,26 @@ msgstr "Malsukcesis skribi unuan pecon al DND-dosiero : %1"
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Malsukcesis skribi lastan pecon al DND-dosiero : %1"
 
-#: src/diskio/movedatafilesjob.cpp:140
-msgid "Waiting for other move jobs to finish"
-msgstr ""
+#: src/diskio/movedatafilesjob.cpp:166
+#, fuzzy
+#| msgid "Moving average"
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Movanta averaĝo"
 
-#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+#: src/diskio/movedatafilesjob.cpp:167
 #, fuzzy
 #| msgid "Score"
 msgctxt "The source of a file operation"
 msgid "Source"
 msgstr "Poentoj"
 
-#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+#: src/diskio/movedatafilesjob.cpp:168
 #, fuzzy
 #| msgid "Scrape"
 msgctxt "The destination of a file operation"
 msgid "Destination"
 msgstr "Informpeti"
-
-#: src/diskio/movedatafilesjob.cpp:180
-#, fuzzy
-#| msgid "Moving average"
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Movanta averaĝo"
 
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, fuzzy, kde-format
@@ -219,14 +181,6 @@ msgstr "Ne povas krei %1 : %2"
 #: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
-
-#: src/download/chunkdownload.cpp:382
-#, fuzzy, kde-format
-#| msgid "%1 peers"
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] "%1 kundividantoj"
-msgstr[1] "%1 kundividantoj"
 
 #: src/download/downloader.cpp:810
 msgid "Disabled because webseed does not match torrent"
@@ -304,6 +258,14 @@ msgstr ""
 msgid "Unused for %1 seconds (Too many connection failures)"
 msgstr ""
 
+#: src/download/chunkdownload.cpp:383
+#, fuzzy, kde-format
+#| msgid "%1 peers"
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] "%1 kundividantoj"
+msgstr[1] "%1 kundividantoj"
+
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr "Bone"
@@ -333,24 +295,10 @@ msgstr "La dosierujo %1 ne ekzistas"
 msgid "Unknown client"
 msgstr "Nekonata kliento"
 
-#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
-#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
-#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
-#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
-#, fuzzy
-#| msgid "Corrupted torrent!"
-msgid "Corrupted torrent."
-msgstr "Malbona torento!"
-
-#: src/torrent/torrent.cpp:165
-#, fuzzy, kde-format
-#| msgid " Unable to open torrent file %1 : %2"
-msgid "Unable to open torrent file %1: %2"
-msgstr "Ne povas malfermi torentan dosieron %1 : %2"
-
-#: src/torrent/torrent.cpp:295
-msgid "Parse Error"
-msgstr "Sintaksa eraro"
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "Ne povas krei indekshavan dosieron: %1"
 
 #: src/torrent/torrentcontrol.cpp:308
 msgid "Error writing to disk, do you have enough diskspace?"
@@ -396,11 +344,6 @@ msgstr ""
 #| msgid "You are already downloading the torrent %1"
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Vi jam elŝutas la torenton %1"
-
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "Ne povas krei indekshavan dosieron: %1"
 
 #: src/torrent/torrentstats.cpp:72
 msgid "Not started"
@@ -463,6 +406,21 @@ msgstr "Paŭzita"
 msgid "Superseeding"
 msgstr "Fontsendas"
 
+#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
+#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
+#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
+#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
+#, fuzzy
+#| msgid "Corrupted torrent!"
+msgid "Corrupted torrent."
+msgstr "Malbona torento!"
+
+#: src/torrent/torrent.cpp:165
+#, fuzzy, kde-format
+#| msgid " Unable to open torrent file %1 : %2"
+msgid "Unable to open torrent file %1: %2"
+msgstr "Ne povas malfermi torentan dosieron %1 : %2"
+
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr ""
@@ -492,38 +450,35 @@ msgstr ""
 msgid "Unable to resolve hostname %1"
 msgstr "Ne povas krei %1 : %2"
 
-#: src/upnp/httprequest.cpp:96
+#: src/util/logsystemmanager.cpp:33
 #, fuzzy
-#| msgid "Connections"
-msgid "Connection closed unexpectedly"
+#| msgid "General:"
+msgid "General"
+msgstr "Ĝenerala:"
+
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
 msgstr "Konektoj"
 
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
-msgstr ""
-
-#: src/upnp/upnprouter.cpp:167
-#, fuzzy, kde-format
-#| msgid "Failed to open %1 : %2"
-msgid "Failed to download %1: %2"
-msgstr "Ne povas malfermi %1 : %2"
-
-#: src/upnp/upnprouter.cpp:178
-msgid "Error parsing router description."
-msgstr ""
-
-#: src/upnp/upnprouter.cpp:216
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
-
-#: src/upnp/upnprouter.cpp:314
+#: src/util/logsystemmanager.cpp:35
 #, fuzzy
-#| msgid "Cannot find port forwarding service in the device's description!"
-msgid "Cannot find port forwarding service in the device's description."
+#| msgid "Trackers"
+msgid "Tracker"
+msgstr "Kunordigaj serviloj"
+
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
+
+#: src/util/logsystemmanager.cpp:37
+#, fuzzy
+#| msgid "Disk I/O:"
+msgid "Disk Input/Output"
+msgstr "Diska en/eligo:"
+
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
 msgstr ""
-"Ne povas trovi alipordan plusendadan servon en la priskribo de la aparato!"
 
 #: src/util/file.cpp:84
 #, fuzzy, kde-format
@@ -603,61 +558,98 @@ msgid_plural "%1 days "
 msgstr[0] "1 tago"
 msgstr[1] "%1 tagoj"
 
-#: src/util/logsystemmanager.cpp:33
+#: src/util/signalcatcher.cpp:62
 #, fuzzy
-#| msgid "General:"
-msgid "General"
-msgstr "Ĝenerala:"
-
-#: src/util/logsystemmanager.cpp:34
-msgid "Connections"
-msgstr "Konektoj"
-
-#: src/util/logsystemmanager.cpp:35
-#, fuzzy
-#| msgid "Trackers"
-msgid "Tracker"
-msgstr "Kunordigaj serviloj"
-
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr "DHT"
-
-#: src/util/logsystemmanager.cpp:37
-#, fuzzy
-#| msgid "Disk I/O:"
-msgid "Disk Input/Output"
-msgstr "Diska en/eligo:"
-
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
-msgstr ""
-
-#: src/util/signalcatcher.cpp:57
+#| msgid "Error reading from %1"
 msgid "Error when writing to disk"
-msgstr ""
+msgstr "Eraro okazis dum legado de %1"
 
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 #, fuzzy
 #| msgid "Error reading from %1"
 msgid "Error when reading from disk"
 msgstr "Eraro okazis dum legado de %1"
 
+#: src/upnp/httprequest.cpp:96
 #, fuzzy
-#~| msgid "Notice"
-#~ msgid "Not in use"
-#~ msgstr "Rimarku"
+#| msgid "Connections"
+msgid "Connection closed unexpectedly"
+msgstr "Konektoj"
 
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:167
+#, fuzzy, kde-format
+#| msgid "Failed to open %1 : %2"
+msgid "Failed to download %1: %2"
+msgstr "Ne povas malfermi %1 : %2"
+
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:216
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:314
 #, fuzzy
-#~| msgid "Insufficient disk space for %1"
-#~ msgid "Not enough diskspace"
-#~ msgstr "Nesufiĉa diskspaco por %1"
+#| msgid "Cannot find port forwarding service in the device's description!"
+msgid "Cannot find port forwarding service in the device's description."
+msgstr ""
+"Ne povas trovi alipordan plusendadan servon en la priskribo de la aparato!"
+
+#: examples/ktcli/main.cpp:60
+#, fuzzy
+#| msgid "Document to open"
+msgid "Torrent to open"
+msgstr "La dosiero malfermiĝi"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+#, fuzzy
+#| msgid "Notice"
+msgid "Port to use"
+msgstr "Rimarku"
+
+#: examples/ktcli/main.cpp:63
+#, fuzzy
+#| msgid "Use protocol encryption"
+msgid "Whether or not to enable encryption"
+msgstr "Uzi protokolan ĉifradon"
+
+#: examples/ktcli/main.cpp:64
+#, fuzzy
+#| msgid "Whether or not to show system tray popup messages."
+msgid "Whether or not to enable peer exchange"
+msgstr "Ĉu montri sistempletajn ŝprucmesaĝojn."
+
+#: examples/ktcli/main.cpp:65
+#, fuzzy
+#| msgid "Whether or not to show system tray popup messages."
+msgid "Whether or not to use utp"
+msgstr "Ĉu montri sistempletajn ŝprucmesaĝojn."
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr ""
+
+#~ msgid "Parse Error"
+#~ msgstr "Sintaksa eraro"
+
+#~ msgid "Cannot open file : %1 : %2"
+#~ msgstr "Ne povas malfermi dosieron : %1 : %2"
 
 #~ msgid "Cannot open file %1 : %2"
 #~ msgstr "Ne povas malfermi dosieron %1 : %2"
 
-#~ msgid "Cannot open file : %1 : %2"
-#~ msgstr "Ne povas malfermi dosieron : %1 : %2"
+#, fuzzy
+#~| msgid "Notice"
+#~ msgid "Not in use"
+#~ msgstr "Rimarku"
 
 #, fuzzy
 #~| msgid ""
@@ -672,6 +664,11 @@ msgstr "Eraro okazis dum legado de %1"
 
 #~ msgid "Cannot open log file %1 : %2"
 #~ msgstr "Ne povas malfermi protokolon %1 : %2"
+
+#, fuzzy
+#~| msgid "Insufficient disk space for %1"
+#~ msgid "Not enough diskspace"
+#~ msgstr "Nesufiĉa diskspaco por %1"
 
 #, fuzzy
 #~| msgid "UDP"
@@ -5143,9 +5140,6 @@ msgstr "Eraro okazis dum legado de %1"
 
 #~ msgid "Show system tray icon"
 #~ msgstr "Montri sistempletan piktogramon"
-
-#~ msgid "Whether or not to show system tray popup messages."
-#~ msgstr "Ĉu montri sistempletajn ŝprucmesaĝojn."
 
 #~ msgid "Show system tray popup messages"
 #~ msgstr "Montri sistempletajn ŝprucmesaĝojn"

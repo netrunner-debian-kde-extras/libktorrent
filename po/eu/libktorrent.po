@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-02 03:19+0100\n"
+"POT-Creation-Date: 2011-03-13 12:17+0100\n"
 "PO-Revision-Date: 2009-01-23 23:52+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@euskalnet.net>\n"
 "Language-Team: Basque <itzulpena@euskalgnu.org>\n"
@@ -17,37 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 0.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#: examples/ktcli/main.cpp:60
-#, fuzzy
-#| msgid "Document to open"
-msgid "Torrent to open"
-msgstr "Irekitzeko dokumentua"
-
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-#, fuzzy
-#| msgid "Not loaded"
-msgid "Port to use"
-msgstr "Kargatu gabe"
-
-#: examples/ktcli/main.cpp:63
-#, fuzzy
-msgid "Whether or not to enable encryption"
-msgstr "Erakutsi s&istemaren bandejako ikonoa"
-
-#: examples/ktcli/main.cpp:64
-#, fuzzy
-msgid "Whether or not to enable peer exchange"
-msgstr "Erakutsi s&istemaren bandejako ikonoa"
-
-#: examples/ktcli/main.cpp:65
-#, fuzzy
-msgid "Whether or not to use utp"
-msgstr "Erakutsi s&istemaren bandejako ikonoa"
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr ""
 
 #: src/bcodec/bdecoder.cpp:62
 #, kde-format
@@ -73,23 +42,23 @@ msgstr "Ezin da %1 zenbaki osora bihurtu"
 msgid "Torrent is incomplete."
 msgstr "Uholdea osatu gabe dago!"
 
-#: src/datachecker/datacheckerjob.cpp:82
+#: src/datachecker/datacheckerjob.cpp:76
 msgid "Waiting for other data checks to finish"
 msgstr ""
 
-#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
 #, fuzzy
 #| msgid "Checking Data ..."
 msgid "Checking data"
 msgstr "Datuak egiaztatzen ..."
 
-#: src/datachecker/datacheckerjob.cpp:141
+#: src/datachecker/datacheckerjob.cpp:135
 #, fuzzy
 #| msgid "Checking Data ..."
 msgid "Checking Data"
 msgstr "Datuak egiaztatzen ..."
 
-#: src/datachecker/multidatachecker.cpp:209
+#: src/datachecker/multidatachecker.cpp:203
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
@@ -173,27 +142,23 @@ msgstr " Ezin da %1 uholde fitxategia ireki : %2"
 msgid "Failed to write last chunk to DND file: %1"
 msgstr " Ezin da %1 uholde fitxategia ireki : %2"
 
-#: src/diskio/movedatafilesjob.cpp:140
-msgid "Waiting for other move jobs to finish"
+#: src/diskio/movedatafilesjob.cpp:166
+msgctxt "@title job"
+msgid "Moving"
 msgstr ""
 
-#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+#: src/diskio/movedatafilesjob.cpp:167
 #, fuzzy
 msgctxt "The source of a file operation"
 msgid "Source"
 msgstr "Kontrolatzailea"
 
-#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+#: src/diskio/movedatafilesjob.cpp:168
 #, fuzzy
 #| msgid "Description"
 msgctxt "The destination of a file operation"
 msgid "Destination"
 msgstr "Deskribapena"
-
-#: src/diskio/movedatafilesjob.cpp:180
-msgctxt "@title job"
-msgid "Moving"
-msgstr ""
 
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, fuzzy, kde-format
@@ -210,14 +175,6 @@ msgstr "Ezin %1 sortu : %2"
 #: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
-
-#: src/download/chunkdownload.cpp:382
-#, fuzzy, kde-format
-#| msgid "Peers"
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] "Pareak"
-msgstr[1] "Pareak"
 
 #: src/download/downloader.cpp:810
 msgid "Disabled because webseed does not match torrent"
@@ -291,6 +248,14 @@ msgstr ""
 msgid "Unused for %1 seconds (Too many connection failures)"
 msgstr ""
 
+#: src/download/chunkdownload.cpp:383
+#, fuzzy, kde-format
+#| msgid "Peers"
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] "Pareak"
+msgstr[1] "Pareak"
+
 #: src/interfaces/trackerinterface.cpp:58
 #, fuzzy
 #| msgid "O&K"
@@ -323,24 +288,10 @@ msgstr "%1 direktorio ez da existitzen"
 msgid "Unknown client"
 msgstr "Bezero ezezaguna"
 
-#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
-#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
-#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
-#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
-#, fuzzy
-#| msgid "Corrupted torrent!"
-msgid "Corrupted torrent."
-msgstr "Hondatutako uholdea!"
-
-#: src/torrent/torrent.cpp:165
-#, fuzzy, kde-format
-#| msgid " Unable to open torrent file %1 : %2"
-msgid "Unable to open torrent file %1: %2"
-msgstr " Ezin da %1 uholde fitxategia ireki : %2"
-
-#: src/torrent/torrent.cpp:295
-msgid "Parse Error"
-msgstr "Sintaxi errorea"
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "Ezin da indize-fitxategia sortu: %1"
 
 #: src/torrent/torrentcontrol.cpp:308
 msgid "Error writing to disk, do you have enough diskspace?"
@@ -379,11 +330,6 @@ msgstr "Dagoeneko uholde hau deskargatzen ari zara."
 #, fuzzy, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Dagoeneko uholde hau deskargatzen ari zara."
-
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "Ezin da indize-fitxategia sortu: %1"
 
 #: src/torrent/torrentstats.cpp:72
 msgid "Not started"
@@ -448,6 +394,21 @@ msgstr ""
 msgid "Superseeding"
 msgstr "Ereiten"
 
+#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
+#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
+#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
+#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
+#, fuzzy
+#| msgid "Corrupted torrent!"
+msgid "Corrupted torrent."
+msgstr "Hondatutako uholdea!"
+
+#: src/torrent/torrent.cpp:165
+#, fuzzy, kde-format
+#| msgid " Unable to open torrent file %1 : %2"
+msgid "Unable to open torrent file %1: %2"
+msgstr " Ezin da %1 uholde fitxategia ireki : %2"
+
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr ""
@@ -479,38 +440,29 @@ msgstr ""
 msgid "Unable to resolve hostname %1"
 msgstr " Ezin da %1 uholde fitxategia ireki : %2"
 
-#: src/upnp/httprequest.cpp:96
-#, fuzzy
-#| msgid "Converting..."
-msgid "Connection closed unexpectedly"
-msgstr "Bihurtzen..."
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "Orokorra"
 
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
 msgstr ""
 
-#: src/upnp/upnprouter.cpp:167
-#, fuzzy, kde-format
-#| msgid "Cannot open %1 : %2"
-msgid "Failed to download %1: %2"
-msgstr "Ezin da %1 ireki : %2"
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "Kontrolatzailea"
 
-#: src/upnp/upnprouter.cpp:178
-msgid "Error parsing router description."
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
+
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
 msgstr ""
 
-#: src/upnp/upnprouter.cpp:216
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
 msgstr ""
-
-#: src/upnp/upnprouter.cpp:314
-#, fuzzy
-msgid "Cannot find port forwarding service in the device's description."
-msgstr ""
-"Ezin da ataka birbidalketarako zerbitzua aurkitu dispositiboaren "
-"deskribapenean !"
 
 #: src/util/file.cpp:84
 #, fuzzy, kde-format
@@ -587,56 +539,95 @@ msgid_plural "%1 days "
 msgstr[0] "Datuak"
 msgstr[1] "Datuak"
 
-#: src/util/logsystemmanager.cpp:33
-msgid "General"
-msgstr "Orokorra"
-
-#: src/util/logsystemmanager.cpp:34
-msgid "Connections"
-msgstr ""
-
-#: src/util/logsystemmanager.cpp:35
-msgid "Tracker"
-msgstr "Kontrolatzailea"
-
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr "DHT"
-
-#: src/util/logsystemmanager.cpp:37
-msgid "Disk Input/Output"
-msgstr ""
-
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
-msgstr ""
-
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 #, fuzzy
 #| msgid "Error writing to %1"
 msgid "Error when writing to disk"
 msgstr "Errorea %1 idaztean"
 
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 #, fuzzy
 #| msgid "Error reading from %1"
 msgid "Error when reading from disk"
 msgstr "Errorea %1 irakurtzean"
 
+#: src/upnp/httprequest.cpp:96
 #, fuzzy
-#~| msgid "Not loaded"
-#~ msgid "Not in use"
-#~ msgstr "Kargatu gabe"
+#| msgid "Converting..."
+msgid "Connection closed unexpectedly"
+msgstr "Bihurtzen..."
 
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:167
+#, fuzzy, kde-format
+#| msgid "Cannot open %1 : %2"
+msgid "Failed to download %1: %2"
+msgstr "Ezin da %1 ireki : %2"
+
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:216
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:314
 #, fuzzy
-#~ msgid "Not enough diskspace"
-#~ msgstr "Ezin da indize-fitxategia sortu: %1"
+msgid "Cannot find port forwarding service in the device's description."
+msgstr ""
+"Ezin da ataka birbidalketarako zerbitzua aurkitu dispositiboaren "
+"deskribapenean !"
+
+#: examples/ktcli/main.cpp:60
+#, fuzzy
+#| msgid "Document to open"
+msgid "Torrent to open"
+msgstr "Irekitzeko dokumentua"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+#, fuzzy
+#| msgid "Not loaded"
+msgid "Port to use"
+msgstr "Kargatu gabe"
+
+#: examples/ktcli/main.cpp:63
+#, fuzzy
+msgid "Whether or not to enable encryption"
+msgstr "Erakutsi s&istemaren bandejako ikonoa"
+
+#: examples/ktcli/main.cpp:64
+#, fuzzy
+msgid "Whether or not to enable peer exchange"
+msgstr "Erakutsi s&istemaren bandejako ikonoa"
+
+#: examples/ktcli/main.cpp:65
+#, fuzzy
+msgid "Whether or not to use utp"
+msgstr "Erakutsi s&istemaren bandejako ikonoa"
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr ""
+
+#~ msgid "Parse Error"
+#~ msgstr "Sintaxi errorea"
+
+#~ msgid "Cannot open file : %1 : %2"
+#~ msgstr "Ezin da da fitxategia ireki : %1 : %2"
 
 #~ msgid "Cannot open file %1 : %2"
 #~ msgstr "Ezin da %1 ireki : %2"
 
-#~ msgid "Cannot open file : %1 : %2"
-#~ msgstr "Ezin da da fitxategia ireki : %1 : %2"
+#, fuzzy
+#~| msgid "Not loaded"
+#~ msgid "Not in use"
+#~ msgstr "Kargatu gabe"
 
 #, fuzzy
 #~| msgid ""
@@ -651,6 +642,10 @@ msgstr "Errorea %1 irakurtzean"
 
 #~ msgid "Cannot open log file %1 : %2"
 #~ msgstr "Ezin da %1 egunkari-fitxategia ireki: %2"
+
+#, fuzzy
+#~ msgid "Not enough diskspace"
+#~ msgstr "Ezin da indize-fitxategia sortu: %1"
 
 #~ msgid "Cannot bind to udp port %1 or the 10 following ports."
 #~ msgstr "Ezin da %1 udp atakari edo hurerngo 10 atakei lotu."

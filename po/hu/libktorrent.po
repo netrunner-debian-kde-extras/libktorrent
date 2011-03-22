@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KTorrent 3.1\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-02 03:19+0100\n"
+"POT-Creation-Date: 2011-03-13 12:17+0100\n"
 "PO-Revision-Date: 2010-04-02 07:54+0200\n"
 "Last-Translator: Csanád Tóth <toth.csanad@kde.hu>\n"
 "Language-Team: Magyar <kde-lista-request@sophia.jpte.hu>\n"
@@ -17,40 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.0\n"
-
-#: examples/ktcli/main.cpp:60
-#, fuzzy
-#| msgid "Document to open"
-msgid "Torrent to open"
-msgstr "Megnyitandó dokumentum"
-
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-#, fuzzy
-#| msgid "Not in use"
-msgid "Port to use"
-msgstr "Nem használt"
-
-#: examples/ktcli/main.cpp:63
-#, fuzzy
-#| msgid "Whether or not to enable a custom download order."
-msgid "Whether or not to enable encryption"
-msgstr "Egyéni letöltési sorrend engedélyezése, vagy tiltása."
-
-#: examples/ktcli/main.cpp:64
-#, fuzzy
-#| msgid "Whether or not to use µTorrent compatible peer exchange."
-msgid "Whether or not to enable peer exchange"
-msgstr "µTorrent-kompatibilis partnercsere tiltása, vagy engedélyezése."
-
-#: examples/ktcli/main.cpp:65
-#, fuzzy
-#| msgid "Whether or not to enable a custom download order."
-msgid "Whether or not to use utp"
-msgstr "Egyéni letöltési sorrend engedélyezése, vagy tiltása."
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr ""
 
 #: src/bcodec/bdecoder.cpp:62
 #, kde-format
@@ -74,21 +40,21 @@ msgstr "Nem sikerült egésszé alakítani: %1"
 msgid "Torrent is incomplete."
 msgstr "A torrent nem teljes."
 
-#: src/datachecker/datacheckerjob.cpp:82
+#: src/datachecker/datacheckerjob.cpp:76
 msgid "Waiting for other data checks to finish"
 msgstr ""
 
-#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
 msgid "Checking data"
 msgstr "Adatellenőrzés"
 
-#: src/datachecker/datacheckerjob.cpp:141
+#: src/datachecker/datacheckerjob.cpp:135
 #, fuzzy
 #| msgid "Checking data"
 msgid "Checking Data"
 msgstr "Adatellenőrzés"
 
-#: src/datachecker/multidatachecker.cpp:209
+#: src/datachecker/multidatachecker.cpp:203
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
@@ -180,30 +146,26 @@ msgstr "Nem sikerült kiírni az első fájldarabot a DND-fájlba: %1"
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Nem sikerült kiírni az utolsó fájldarabot a DND-fájlba: %1"
 
-#: src/diskio/movedatafilesjob.cpp:140
-msgid "Waiting for other move jobs to finish"
-msgstr ""
+#: src/diskio/movedatafilesjob.cpp:166
+#, fuzzy
+#| msgid "Moving average"
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Átlagos mozgatás"
 
-#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+#: src/diskio/movedatafilesjob.cpp:167
 #, fuzzy
 #| msgid "Add Source"
 msgctxt "The source of a file operation"
 msgid "Source"
 msgstr "Partnerforrás hozzáadása"
 
-#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+#: src/diskio/movedatafilesjob.cpp:168
 #, fuzzy
 #| msgid "Destination"
 msgctxt "The destination of a file operation"
 msgid "Destination"
 msgstr "Címzett"
-
-#: src/diskio/movedatafilesjob.cpp:180
-#, fuzzy
-#| msgid "Moving average"
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Átlagos mozgatás"
 
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, fuzzy, kde-format
@@ -220,13 +182,6 @@ msgstr "Nem sikerült létrehozni a(z) %1 fájlt: %2"
 #: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
-
-#: src/download/chunkdownload.cpp:382
-#, kde-format
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] "%1 partner"
-msgstr[1] "%1 partner"
 
 #: src/download/downloader.cpp:810
 #, fuzzy
@@ -295,6 +250,13 @@ msgstr "Átirányítva új hely nélkül."
 msgid "Unused for %1 seconds (Too many connection failures)"
 msgstr ""
 
+#: src/download/chunkdownload.cpp:383
+#, kde-format
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] "%1 partner"
+msgstr[1] "%1 partner"
+
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr "OK"
@@ -323,22 +285,10 @@ msgstr "%1 - a könyvtár nem létezik"
 msgid "Unknown client"
 msgstr "Ismeretlen kliens"
 
-#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
-#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
-#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
-#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
-msgid "Corrupted torrent."
-msgstr "Hibás torrent."
-
-#: src/torrent/torrent.cpp:165
-#, fuzzy, kde-format
-#| msgid " Unable to open torrent file %1 : %2"
-msgid "Unable to open torrent file %1: %2"
-msgstr " Nem sikerült megnyitni a torrentfájlt: %1 - %2"
-
-#: src/torrent/torrent.cpp:295
-msgid "Parse Error"
-msgstr "Feldolgozási hiba"
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "Az indexfájl nem hozható létre: %1"
 
 #: src/torrent/torrentcontrol.cpp:308
 msgid "Error writing to disk, do you have enough diskspace?"
@@ -377,11 +327,6 @@ msgstr ""
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "<b>%1</b> torrent letöltése már folyamatban van."
-
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "Az indexfájl nem hozható létre: %1"
 
 #: src/torrent/torrentstats.cpp:72
 msgid "Not started"
@@ -439,6 +384,19 @@ msgstr "Szüneteltetve"
 msgid "Superseeding"
 msgstr "Feltöltés"
 
+#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
+#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
+#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
+#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
+msgid "Corrupted torrent."
+msgstr "Hibás torrent."
+
+#: src/torrent/torrent.cpp:165
+#, fuzzy, kde-format
+#| msgid " Unable to open torrent file %1 : %2"
+msgid "Unable to open torrent file %1: %2"
+msgstr " Nem sikerült megnyitni a torrentfájlt: %1 - %2"
+
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "Átirányítás új hely nélkül"
@@ -467,42 +425,29 @@ msgstr "Időtúllépés a követőhöz való kapcsolódás közben: %1"
 msgid "Unable to resolve hostname %1"
 msgstr "%1 hosztnév nem oldható fel"
 
-#: src/upnp/httprequest.cpp:96
-#, fuzzy
-#| msgid "Connection closed unexpectedly."
-msgid "Connection closed unexpectedly"
-msgstr "A kapcsolat váratlanul megszakadt."
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "Általános"
 
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
-msgstr ""
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
+msgstr "Kapcsolatok"
 
-#: src/upnp/upnprouter.cpp:167
-#, fuzzy, kde-format
-#| msgid "Failed to download %1 : %2"
-msgid "Failed to download %1: %2"
-msgstr "Nem sikerült letölteni: %1. %2"
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "Követő"
 
-#: src/upnp/upnprouter.cpp:178
-msgid "Error parsing router description."
-msgstr "Nem sikerült feldolgozni a router leírását."
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
 
-#: src/upnp/upnprouter.cpp:216
-#, fuzzy
-#| msgid ""
-#| "Forwarding failed: \n"
-#| "Device does not have a WANIPConnection or WANPPPConnection."
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
-"Sikertelen átirányítás: \n"
-"Az eszköz nem rendelkezik WANIPConnection, vagy WANPPPConnection "
-"lehetőségekkel."
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
+msgstr "Lemez bemenet/kimenet"
 
-#: src/upnp/upnprouter.cpp:314
-msgid "Cannot find port forwarding service in the device's description."
-msgstr "Az eszköz leírásában nem található port-átirányítási szolgáltatás."
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr "µTP"
 
 #: src/util/file.cpp:84
 #, fuzzy, kde-format
@@ -580,53 +525,100 @@ msgid_plural "%1 days "
 msgstr[0] "%1 nap "
 msgstr[1] "%1 nap "
 
-#: src/util/logsystemmanager.cpp:33
-msgid "General"
-msgstr "Általános"
-
-#: src/util/logsystemmanager.cpp:34
-msgid "Connections"
-msgstr "Kapcsolatok"
-
-#: src/util/logsystemmanager.cpp:35
-msgid "Tracker"
-msgstr "Követő"
-
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr "DHT"
-
-#: src/util/logsystemmanager.cpp:37
-msgid "Disk Input/Output"
-msgstr "Lemez bemenet/kimenet"
-
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
-msgstr "µTP"
-
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
+#, fuzzy
+#| msgid "Error reading from %1"
 msgid "Error when writing to disk"
-msgstr ""
+msgstr "Hiba történt %1 olvasása közben"
 
-#: src/util/signalcatcher.cpp:57
+#: src/util/signalcatcher.cpp:62
 #, fuzzy
 #| msgid "Error reading from %1"
 msgid "Error when reading from disk"
 msgstr "Hiba történt %1 olvasása közben"
 
-#~ msgid "Not in use"
-#~ msgstr "Nem használt"
-
+#: src/upnp/httprequest.cpp:96
 #, fuzzy
-#~| msgid "Not enough free disk space for %1"
-#~ msgid "Not enough diskspace"
-#~ msgstr "%1 számára kevés a lemezterület"
+#| msgid "Connection closed unexpectedly."
+msgid "Connection closed unexpectedly"
+msgstr "A kapcsolat váratlanul megszakadt."
+
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:167
+#, fuzzy, kde-format
+#| msgid "Failed to download %1 : %2"
+msgid "Failed to download %1: %2"
+msgstr "Nem sikerült letölteni: %1. %2"
+
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
+msgstr "Nem sikerült feldolgozni a router leírását."
+
+#: src/upnp/upnprouter.cpp:216
+#, fuzzy
+#| msgid ""
+#| "Forwarding failed: \n"
+#| "Device does not have a WANIPConnection or WANPPPConnection."
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+"Sikertelen átirányítás: \n"
+"Az eszköz nem rendelkezik WANIPConnection, vagy WANPPPConnection "
+"lehetőségekkel."
+
+#: src/upnp/upnprouter.cpp:314
+msgid "Cannot find port forwarding service in the device's description."
+msgstr "Az eszköz leírásában nem található port-átirányítási szolgáltatás."
+
+#: examples/ktcli/main.cpp:60
+#, fuzzy
+#| msgid "Document to open"
+msgid "Torrent to open"
+msgstr "Megnyitandó dokumentum"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+#, fuzzy
+#| msgid "Not in use"
+msgid "Port to use"
+msgstr "Nem használt"
+
+#: examples/ktcli/main.cpp:63
+#, fuzzy
+#| msgid "Whether or not to enable a custom download order."
+msgid "Whether or not to enable encryption"
+msgstr "Egyéni letöltési sorrend engedélyezése, vagy tiltása."
+
+#: examples/ktcli/main.cpp:64
+#, fuzzy
+#| msgid "Whether or not to use µTorrent compatible peer exchange."
+msgid "Whether or not to enable peer exchange"
+msgstr "µTorrent-kompatibilis partnercsere tiltása, vagy engedélyezése."
+
+#: examples/ktcli/main.cpp:65
+#, fuzzy
+#| msgid "Whether or not to show system tray popup messages."
+msgid "Whether or not to use utp"
+msgstr "Értesítőüzenetek tiltása, vagy engedélyezése"
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr ""
+
+#~ msgid "Parse Error"
+#~ msgstr "Feldolgozási hiba"
+
+#~ msgid "Cannot open file : %1 : %2"
+#~ msgstr "Nem sikerült megnyitni ezt a fájlt: %1. %2"
 
 #~ msgid "Cannot open file %1 : %2"
 #~ msgstr "Nem sikerült megnyitni: %1 - %2"
 
-#~ msgid "Cannot open file : %1 : %2"
-#~ msgstr "Nem sikerült megnyitni ezt a fájlt: %1. %2"
+#~ msgid "Not in use"
+#~ msgstr "Nem használt"
 
 #~ msgid ""
 #~ "An error occurred while loading the torrent:<br/><b>%1</b><br/>The "
@@ -637,6 +629,11 @@ msgstr "Hiba történt %1 olvasása közben"
 
 #~ msgid "Cannot open log file %1 : %2"
 #~ msgstr "Nem nyitható meg ez a naplófájl: %1 : %2"
+
+#, fuzzy
+#~| msgid "Not enough free disk space for %1"
+#~ msgid "Not enough diskspace"
+#~ msgstr "%1 számára kevés a lemezterület"
 
 #~ msgid "Timeout occurred"
 #~ msgstr "Időtúllépés"
@@ -5249,9 +5246,6 @@ msgstr "Hiba történt %1 olvasása közben"
 
 #~ msgid "Show system tray icon"
 #~ msgstr "Ikon megjelenítése a paneltálcán"
-
-#~ msgid "Whether or not to show system tray popup messages."
-#~ msgstr "Értesítőüzenetek tiltása, vagy engedélyezése"
 
 #~ msgid "Show system tray popup messages"
 #~ msgstr "Értesítőüzenetek megjelenítése"
