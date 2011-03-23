@@ -15,7 +15,7 @@ Package: libktorrent3
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Suggests: libktorrent-l10n
-Description: the KTorrent library for C++ / Qt 4 / KDE Platform
+Description: KTorrent library for C++ / Qt 4 / KDE Platform
  The KTorrent library is a C++ / Qt 4 / KDE Platform based implementation of
  the BitTorrent protocol (mostly client side).
  .
