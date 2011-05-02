@@ -11,6 +11,6 @@ override_dh_shlibdeps:
 	dh_sameversiondep
 
 %:
-	dh --parallel --with kde $@ -- --dbg-package=libktorrent-dbg 
+	dh $@ --parallel --with kde -- --dbg-package=libktorrent-dbg 
 
 .PHONY: override_dh_auto_test
