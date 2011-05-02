@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-13 12:17+0100\n"
+"POT-Creation-Date: 2011-04-24 13:28+0200\n"
 "PO-Revision-Date: 2011-03-02 08:50+0800\n"
 "Last-Translator: Franklin Weng <franklin@goodhorse.idv.tw>\n"
 "Language-Team: Chinese Traditional <zh-l10n@linux.org.tw>\n"
@@ -268,41 +268,6 @@ msgstr "不明客戶端"
 msgid "Cannot create index file: %1"
 msgstr "無法建立索引檔：%1"
 
-#: src/torrent/torrentcontrol.cpp:308
-msgid "Error writing to disk, do you have enough diskspace?"
-msgstr "寫入磁碟時發生錯誤。您有足夠的磁碟空間嗎？"
-
-#: src/torrent/torrentcontrol.cpp:545
-#, kde-format
-msgid ""
-"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
-"torrent is probably corrupt or is not a valid torrent file."
-msgstr ""
-"載入 torrent <b>%1</b> 時發生錯誤：<br/> <b>%2</b><br/>此 Torrent 可能已損"
-"毀，或不是一個合法的 torrent 檔。"
-
-#: src/torrent/torrentcontrol.cpp:575
-#, kde-format
-msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
-msgstr "載入 <b>%1</b> 時發生錯誤：<br/><b>%2</b>"
-
-#: src/torrent/torrentcontrol.cpp:586
-#, kde-format
-msgid "Unable to create %1: %2"
-msgstr "無法建立 %1：%2"
-
-#: src/torrent/torrentcontrol.cpp:601
-#, kde-format
-msgid ""
-"You are already downloading the torrent <b>%1</b>. The tracker lists from "
-"both torrents have been merged."
-msgstr "您正在下載 torrent <b>%1</b>。兩個 torrent 的追蹤器清單已被合併。"
-
-#: src/torrent/torrentcontrol.cpp:606
-#, kde-format
-msgid "You are already downloading the torrent <b>%1</b>."
-msgstr "您正在下載 torrent <b>%1</b>。"
-
 #: src/torrent/torrentstats.cpp:72
 msgid "Not started"
 msgstr "未開始"
@@ -368,9 +333,55 @@ msgstr "損壞的 torrent。"
 msgid "Unable to open torrent file %1: %2"
 msgstr "不能開啟 torrent 檔 %1：%2"
 
+#: src/torrent/torrentcontrol.cpp:308
+msgid "Error writing to disk, do you have enough diskspace?"
+msgstr "寫入磁碟時發生錯誤。您有足夠的磁碟空間嗎？"
+
+#: src/torrent/torrentcontrol.cpp:553
+#, kde-format
+msgid ""
+"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
+"torrent is probably corrupt or is not a valid torrent file."
+msgstr ""
+"載入 torrent <b>%1</b> 時發生錯誤：<br/> <b>%2</b><br/>此 Torrent 可能已損"
+"毀，或不是一個合法的 torrent 檔。"
+
+#: src/torrent/torrentcontrol.cpp:583
+#, kde-format
+msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
+msgstr "載入 <b>%1</b> 時發生錯誤：<br/><b>%2</b>"
+
+#: src/torrent/torrentcontrol.cpp:594
+#, kde-format
+msgid "Unable to create %1: %2"
+msgstr "無法建立 %1：%2"
+
+#: src/torrent/torrentcontrol.cpp:609
+#, kde-format
+msgid ""
+"You are already downloading the torrent <b>%1</b>. The tracker lists from "
+"both torrents have been merged."
+msgstr "您正在下載 torrent <b>%1</b>。兩個 torrent 的追蹤器清單已被合併。"
+
+#: src/torrent/torrentcontrol.cpp:614
+#, kde-format
+msgid "You are already downloading the torrent <b>%1</b>."
+msgstr "您正在下載 torrent <b>%1</b>。"
+
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "重新導向，但是沒有給新的位置。"
+
+#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
+#: src/tracker/httptracker.cpp:557
+#, kde-format
+msgid "Timeout contacting tracker %1"
+msgstr "聯繫追蹤器 %1 時發生逾時"
+
+#: src/tracker/udptracker.cpp:409
+#, kde-format
+msgid "Unable to resolve hostname %1"
+msgstr "無法解析主機名稱 %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
 #: src/tracker/httptracker.cpp:462
@@ -384,17 +395,6 @@ msgstr "追蹤器傳回不合法的資料"
 #: src/tracker/httptracker.cpp:479
 msgid "Invalid tracker URL"
 msgstr "無效的追蹤器 URL"
-
-#: src/tracker/httptracker.cpp:557 src/tracker/udptracker.cpp:372
-#: src/tracker/udptracker.cpp:382
-#, kde-format
-msgid "Timeout contacting tracker %1"
-msgstr "聯繫追蹤器 %1 時發生逾時"
-
-#: src/tracker/udptracker.cpp:409
-#, kde-format
-msgid "Unable to resolve hostname %1"
-msgstr "無法解析主機名稱 %1"
 
 #: src/util/logsystemmanager.cpp:33
 msgid "General"

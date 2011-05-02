@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-13 12:17+0100\n"
+"POT-Creation-Date: 2011-04-24 13:28+0200\n"
 "PO-Revision-Date: 2009-11-10 11:27+0000\n"
 "Last-Translator: \n"
 "Language-Team:  <is@li.org>\n"
@@ -289,43 +289,6 @@ msgstr "Óþekktur biðlari"
 msgid "Cannot create index file: %1"
 msgstr "Gat ekki búið til yfirlitsskrá: %1"
 
-#: src/torrent/torrentcontrol.cpp:308
-msgid "Error writing to disk, do you have enough diskspace?"
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:545
-#, fuzzy, kde-format
-msgid ""
-"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
-"torrent is probably corrupt or is not a valid torrent file."
-msgstr ""
-"Villa kom upp vi að hlaða inn straumnum <b>%1</b>:<br/><b>%2</b><br/> "
-"Torrent straumurinn er líklega skemmdur eða er ekki gild torrent skrá."
-
-#: src/torrent/torrentcontrol.cpp:575
-#, kde-format
-msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:586
-#, fuzzy, kde-format
-msgid "Unable to create %1: %2"
-msgstr "Gat ekki búið til %1 : %2"
-
-#: src/torrent/torrentcontrol.cpp:601
-#, fuzzy, kde-format
-msgid ""
-"You are already downloading the torrent <b>%1</b>. The tracker lists from "
-"both torrents have been merged."
-msgstr ""
-"Þú ert nú þegar að ná í þennan torrent staum %1, listi skrásetjara beggja "
-"straumanna hefur verið sameinaður."
-
-#: src/torrent/torrentcontrol.cpp:606
-#, fuzzy, kde-format
-msgid "You are already downloading the torrent <b>%1</b>."
-msgstr "Þú ert nú þegar að ná í torrent stauminn %1"
-
 #: src/torrent/torrentstats.cpp:72
 #, fuzzy
 msgid "Not started"
@@ -404,10 +367,58 @@ msgstr "Búa til a"
 msgid "Unable to open torrent file %1: %2"
 msgstr "Gat ekki opnað torrent skrá %1 : %2"
 
+#: src/torrent/torrentcontrol.cpp:308
+msgid "Error writing to disk, do you have enough diskspace?"
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:553
+#, fuzzy, kde-format
+msgid ""
+"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
+"torrent is probably corrupt or is not a valid torrent file."
+msgstr ""
+"Villa kom upp vi að hlaða inn straumnum <b>%1</b>:<br/><b>%2</b><br/> "
+"Torrent straumurinn er líklega skemmdur eða er ekki gild torrent skrá."
+
+#: src/torrent/torrentcontrol.cpp:583
+#, kde-format
+msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:594
+#, fuzzy, kde-format
+msgid "Unable to create %1: %2"
+msgstr "Gat ekki búið til %1 : %2"
+
+#: src/torrent/torrentcontrol.cpp:609
+#, fuzzy, kde-format
+msgid ""
+"You are already downloading the torrent <b>%1</b>. The tracker lists from "
+"both torrents have been merged."
+msgstr ""
+"Þú ert nú þegar að ná í þennan torrent staum %1, listi skrásetjara beggja "
+"straumanna hefur verið sameinaður."
+
+#: src/torrent/torrentcontrol.cpp:614
+#, fuzzy, kde-format
+msgid "You are already downloading the torrent <b>%1</b>."
+msgstr "Þú ert nú þegar að ná í torrent stauminn %1"
+
 #: src/tracker/httpannouncejob.cpp:142
 #, fuzzy
 msgid "Redirect without a redirect location"
 msgstr "a nýtt."
+
+#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
+#: src/tracker/httptracker.cpp:557
+#, kde-format
+msgid "Timeout contacting tracker %1"
+msgstr ""
+
+#: src/tracker/udptracker.cpp:409
+#, kde-format
+msgid "Unable to resolve hostname %1"
+msgstr "Tókst ekki að greina vélarheiti %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
 #: src/tracker/httptracker.cpp:462
@@ -421,17 +432,6 @@ msgstr "Ógild gögn frá skrásetjara (tracker)"
 #: src/tracker/httptracker.cpp:479
 msgid "Invalid tracker URL"
 msgstr "Ógild slóð á skrásetjara (tracker)"
-
-#: src/tracker/httptracker.cpp:557 src/tracker/udptracker.cpp:372
-#: src/tracker/udptracker.cpp:382
-#, kde-format
-msgid "Timeout contacting tracker %1"
-msgstr ""
-
-#: src/tracker/udptracker.cpp:409
-#, kde-format
-msgid "Unable to resolve hostname %1"
-msgstr "Tókst ekki að greina vélarheiti %1"
 
 #: src/util/logsystemmanager.cpp:33
 msgid "General"

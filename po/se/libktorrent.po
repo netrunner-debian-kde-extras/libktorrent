@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-01 13:52+0100\n"
+"POT-Creation-Date: 2011-03-23 12:35+0100\n"
 "PO-Revision-Date: 2007-09-11 22:44+0200\n"
 "Last-Translator: Northern Sami translation team <i18n-sme@lister.ping.uio."
 "no>\n"
@@ -163,13 +163,6 @@ msgstr ""
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
 
-#: src/download/chunkdownload.cpp:382
-#, kde-format
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] ""
-msgstr[1] ""
-
 #: src/download/downloader.cpp:810
 msgid "Disabled because webseed does not match torrent"
 msgstr ""
@@ -235,6 +228,13 @@ msgstr ""
 msgid "Unused for %1 seconds (Too many connection failures)"
 msgstr ""
 
+#: src/download/chunkdownload.cpp:383
+#, kde-format
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] ""
+msgstr[1] ""
+
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr ""
@@ -265,22 +265,6 @@ msgstr ""
 #: src/torrent/torrentcreator.cpp:361
 #, kde-format
 msgid "Cannot create index file: %1"
-msgstr ""
-
-#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
-#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
-#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
-#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
-msgid "Corrupted torrent."
-msgstr ""
-
-#: src/torrent/torrent.cpp:165
-#, kde-format
-msgid "Unable to open torrent file %1: %2"
-msgstr ""
-
-#: src/torrent/torrent.cpp:295
-msgid "Parse Error"
 msgstr ""
 
 #: src/torrent/torrentcontrol.cpp:308
@@ -369,8 +353,31 @@ msgstr ""
 msgid "Superseeding"
 msgstr ""
 
+#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
+#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
+#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
+#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
+msgid "Corrupted torrent."
+msgstr ""
+
+#: src/torrent/torrent.cpp:165
+#, kde-format
+msgid "Unable to open torrent file %1: %2"
+msgstr ""
+
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
+msgstr ""
+
+#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
+#: src/tracker/httptracker.cpp:557
+#, kde-format
+msgid "Timeout contacting tracker %1"
+msgstr ""
+
+#: src/tracker/udptracker.cpp:409
+#, kde-format
+msgid "Unable to resolve hostname %1"
 msgstr ""
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
@@ -384,17 +391,6 @@ msgstr ""
 
 #: src/tracker/httptracker.cpp:479
 msgid "Invalid tracker URL"
-msgstr ""
-
-#: src/tracker/httptracker.cpp:557 src/tracker/udptracker.cpp:372
-#: src/tracker/udptracker.cpp:382
-#, kde-format
-msgid "Timeout contacting tracker %1"
-msgstr ""
-
-#: src/tracker/udptracker.cpp:409
-#, kde-format
-msgid "Unable to resolve hostname %1"
 msgstr ""
 
 #: src/util/logsystemmanager.cpp:33

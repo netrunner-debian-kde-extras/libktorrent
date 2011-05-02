@@ -17,77 +17,54 @@
  *   Free Software Foundation, Inc.,                                       *
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
-
-#include "outputqueue.h"
-#include <QSet>
+#include <QtTest>
+#include <QObject>
+#include <solid/device.h>
+#include <solid/storageaccess.h>
 #include <util/log.h>
-#include <net/socket.h>
+#include <util/functions.h>
+#include <util/fileops.h>
+#include <util/error.h>
 
 using namespace bt;
 
-namespace utp
+class FileOpsTest : public QObject
 {
-
-	OutputQueue::OutputQueue() : mutex(QMutex::Recursive)
+	Q_OBJECT
+public:
+	
+private slots:	
+	void initTestCase()
 	{
+		bt::InitLog("fileopstest.log");
+		qsrand(bt::Now());
 	}
-
-	OutputQueue::~OutputQueue()
+	
+	void cleanupTestCase()
 	{
 	}
 	
-	int OutputQueue::add(const QByteArray& data, Connection::WPtr conn)
+	void testMountPointDetermination()
 	{
-		QMutexLocker lock(&mutex);
-		queue.append(Entry(data,conn));
-		return queue.size();
-	}
-	
-	void OutputQueue::send(net::ServerSocket* sock)
-	{
-		QList<Connection::WPtr> to_close;
-		QMutexLocker lock(&mutex);
-		try
+		QList<Solid::Device> devs = Solid::Device::listFromType(Solid::DeviceInterface::StorageAccess);
+		QString mountpoint;
+		
+		foreach (Solid::Device dev,devs)
 		{
-			// Keep sending until the output queue is empty or the socket 
-			// can't handle the data anymore
-			while (!queue.empty())
+			Solid::StorageAccess* sa = dev.as<Solid::StorageAccess>();
+			if (sa->isAccessible())
 			{
-				Entry & packet = queue.front();
-				Connection::Ptr conn = packet.conn.toStrongRef();
-				if (!conn)
-				{
-					queue.pop_front();
-					continue;
-				}
-				
-				int ret = sock->sendTo(packet.data,conn->remoteAddress());
-				if (ret == net::SEND_WOULD_BLOCK)
-					break;
-				else if (ret == net::SEND_FAILURE)
-				{
-					// Kill the connection of this packet
-					to_close.append(packet.conn);
-					queue.pop_front();
-				}
-				else
-					queue.pop_front();
+				QVERIFY(bt::MountPoint(sa->filePath()) == sa->filePath());
+			
+				QString path = sa->filePath() + "/some/random/path/test.foobar";
+				Out(SYS_GEN|LOG_DEBUG) << "Testing " << path << endl;
+				QVERIFY(bt::MountPoint(path) == sa->filePath());
 			}
 		}
-		catch (Connection::TransmissionError & err)
-		{
-			Out(SYS_UTP|LOG_NOTICE) << "UTP: " << err.location << endl;
-		}
-		sock->setWriteNotificationsEnabled(!queue.isEmpty());
-		lock.unlock(); // unlock, so we can't get deadlocked in any subsequent close calls
-		
-		foreach (utp::Connection::WPtr conn,to_close)
-		{
-			Connection::Ptr c = conn.toStrongRef();
-			if (c)
-				c->close();
-		}
 	}
+};
 
 
-}
+QTEST_MAIN(FileOpsTest)
+
+#include "fileopstest.moc"
