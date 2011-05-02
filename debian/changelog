@@ -1,6 +1,7 @@
 libktorrent (1.1.1-1) UNRELEASED; urgency=low
 
   * New upstream release.
+  * Bump Standards-Version to 3.9.2: no changes needed.
 
  -- Modestas Vainius <modax@debian.org>  Tue, 03 May 2011 00:09:58 +0300
 
