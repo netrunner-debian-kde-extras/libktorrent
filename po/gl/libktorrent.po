@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-13 12:17+0100\n"
+"POT-Creation-Date: 2011-04-24 13:28+0200\n"
 "PO-Revision-Date: 2009-10-20 19:07+0200\n"
 "Last-Translator: Xosé <xosecalvo@gmail.com>\n"
 "Language-Team: Galego <proxecto@trasno.net>\n"
@@ -295,48 +295,6 @@ msgstr "Cliente descoñecido"
 msgid "Cannot create index file: %1"
 msgstr "Non foi posíbel crear o ficheiro índice : %1"
 
-#: src/torrent/torrentcontrol.cpp:308
-msgid "Error writing to disk, do you have enough diskspace?"
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:545
-#, kde-format
-msgid ""
-"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
-"torrent is probably corrupt or is not a valid torrent file."
-msgstr ""
-"Aconteceu un erro ao cargar o torrente <b>%1</b>:<br/><b>%2</b><br/>Poida "
-"que estea corrompido, ou que non sexa un ficheiro de torrente válido."
-
-#: src/torrent/torrentcontrol.cpp:575
-#, kde-format
-msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:586
-#, fuzzy, kde-format
-#| msgid "Unable to create %1 : %2"
-msgid "Unable to create %1: %2"
-msgstr "Non foi posíbel crear %1: %2"
-
-#: src/torrent/torrentcontrol.cpp:601
-#, fuzzy, kde-format
-#| msgid ""
-#| "You are already downloading this torrent %1, the list of trackers of both "
-#| "torrents has been merged."
-msgid ""
-"You are already downloading the torrent <b>%1</b>. The tracker lists from "
-"both torrents have been merged."
-msgstr ""
-"Xa está a obter este torrente, %1; xuntáronse as listas de localizadores de "
-"ambos os torrentes."
-
-#: src/torrent/torrentcontrol.cpp:606
-#, fuzzy, kde-format
-#| msgid "You are already downloading the torrent %1"
-msgid "You are already downloading the torrent <b>%1</b>."
-msgstr "Xa está a obter o torrente %1"
-
 #: src/torrent/torrentstats.cpp:72
 msgid "Not started"
 msgstr "Non iniciado"
@@ -406,9 +364,62 @@ msgstr "Torrente corrompido."
 msgid "Unable to open torrent file %1: %2"
 msgstr "Non foi posíbel acceder ao ficheiro de torrente %1: %2"
 
+#: src/torrent/torrentcontrol.cpp:308
+msgid "Error writing to disk, do you have enough diskspace?"
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:553
+#, kde-format
+msgid ""
+"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
+"torrent is probably corrupt or is not a valid torrent file."
+msgstr ""
+"Aconteceu un erro ao cargar o torrente <b>%1</b>:<br/><b>%2</b><br/>Poida "
+"que estea corrompido, ou que non sexa un ficheiro de torrente válido."
+
+#: src/torrent/torrentcontrol.cpp:583
+#, kde-format
+msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:594
+#, fuzzy, kde-format
+#| msgid "Unable to create %1 : %2"
+msgid "Unable to create %1: %2"
+msgstr "Non foi posíbel crear %1: %2"
+
+#: src/torrent/torrentcontrol.cpp:609
+#, fuzzy, kde-format
+#| msgid ""
+#| "You are already downloading this torrent %1, the list of trackers of both "
+#| "torrents has been merged."
+msgid ""
+"You are already downloading the torrent <b>%1</b>. The tracker lists from "
+"both torrents have been merged."
+msgstr ""
+"Xa está a obter este torrente, %1; xuntáronse as listas de localizadores de "
+"ambos os torrentes."
+
+#: src/torrent/torrentcontrol.cpp:614
+#, fuzzy, kde-format
+#| msgid "You are already downloading the torrent %1"
+msgid "You are already downloading the torrent <b>%1</b>."
+msgstr "Xa está a obter o torrente %1"
+
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "Redirixido sen unha localización de redirección"
+
+#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
+#: src/tracker/httptracker.cpp:557
+#, kde-format
+msgid "Timeout contacting tracker %1"
+msgstr ""
+
+#: src/tracker/udptracker.cpp:409
+#, kde-format
+msgid "Unable to resolve hostname %1"
+msgstr "Non foi posíbel resolver o nome do servidor %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
 #: src/tracker/httptracker.cpp:462
@@ -422,17 +433,6 @@ msgstr "Os datos do localizador non son válidos"
 #: src/tracker/httptracker.cpp:479
 msgid "Invalid tracker URL"
 msgstr "O URL do localizador non é válido"
-
-#: src/tracker/httptracker.cpp:557 src/tracker/udptracker.cpp:372
-#: src/tracker/udptracker.cpp:382
-#, kde-format
-msgid "Timeout contacting tracker %1"
-msgstr ""
-
-#: src/tracker/udptracker.cpp:409
-#, kde-format
-msgid "Unable to resolve hostname %1"
-msgstr "Non foi posíbel resolver o nome do servidor %1"
 
 #: src/util/logsystemmanager.cpp:33
 msgid "General"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-01 13:52+0100\n"
+"POT-Creation-Date: 2011-03-23 12:35+0100\n"
 "PO-Revision-Date: 2011-01-15 13:07+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -185,15 +185,6 @@ msgstr "Не могу да направим %1: %2"
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
 
-#: src/download/chunkdownload.cpp:382
-#, kde-format
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] "%1 вршњак"
-msgstr[1] "%1 вршњака"
-msgstr[2] "%1 вршњака"
-msgstr[3] "1 вршњак"
-
 #: src/download/downloader.cpp:810
 msgid "Disabled because webseed does not match torrent"
 msgstr ""
@@ -259,6 +250,15 @@ msgstr "Преусмерен без нове локације."
 msgid "Unused for %1 seconds (Too many connection failures)"
 msgstr ""
 
+#: src/download/chunkdownload.cpp:383
+#, kde-format
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] "%1 вршњак"
+msgstr[1] "%1 вршњака"
+msgstr[2] "%1 вршњака"
+msgstr[3] "1 вршњак"
+
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr "У реду"
@@ -290,23 +290,6 @@ msgstr "Непознат клијент"
 #, kde-format
 msgid "Cannot create index file: %1"
 msgstr "Не могу да направим индексни фајл: %1"
-
-#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
-#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
-#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
-#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
-msgid "Corrupted torrent."
-msgstr "Оштећен торент."
-
-#: src/torrent/torrent.cpp:165
-#, fuzzy, kde-format
-#| msgid " Unable to open torrent file %1 : %2"
-msgid "Unable to open torrent file %1: %2"
-msgstr " Не могу да отворим торент фајл %1: %2"
-
-#: src/torrent/torrent.cpp:295
-msgid "Parse Error"
-msgstr "Грешка у рашчлањивању"
 
 #: src/torrent/torrentcontrol.cpp:308
 msgid "Error writing to disk, do you have enough diskspace?"
@@ -401,9 +384,34 @@ msgstr "Паузирано"
 msgid "Superseeding"
 msgstr "Сејем"
 
+#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
+#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
+#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
+#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
+msgid "Corrupted torrent."
+msgstr "Оштећен торент."
+
+#: src/torrent/torrent.cpp:165
+#, fuzzy, kde-format
+#| msgid " Unable to open torrent file %1 : %2"
+msgid "Unable to open torrent file %1: %2"
+msgstr " Не могу да отворим торент фајл %1: %2"
+
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "Преусмерење без локације преусмерења"
+
+# rewrite-msgid: /Timeout/Timed out while/
+#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
+#: src/tracker/httptracker.cpp:557
+#, kde-format
+msgid "Timeout contacting tracker %1"
+msgstr "Истекло време при контактирању пратиоца %1"
+
+#: src/tracker/udptracker.cpp:409
+#, kde-format
+msgid "Unable to resolve hostname %1"
+msgstr "Не могу да разрешим име домаћина %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
 #: src/tracker/httptracker.cpp:462
@@ -417,18 +425,6 @@ msgstr "Неисправни подаци са пратиоца"
 #: src/tracker/httptracker.cpp:479
 msgid "Invalid tracker URL"
 msgstr "Неисправан УРЛ пратиоца"
-
-# rewrite-msgid: /Timeout/Timed out while/
-#: src/tracker/httptracker.cpp:557 src/tracker/udptracker.cpp:372
-#: src/tracker/udptracker.cpp:382
-#, kde-format
-msgid "Timeout contacting tracker %1"
-msgstr "Истекло време при контактирању пратиоца %1"
-
-#: src/tracker/udptracker.cpp:409
-#, kde-format
-msgid "Unable to resolve hostname %1"
-msgstr "Не могу да разрешим име домаћина %1"
 
 #: src/util/logsystemmanager.cpp:33
 msgid "General"

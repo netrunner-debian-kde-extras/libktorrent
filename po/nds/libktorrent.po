@@ -1,14 +1,14 @@
 # translation of libktorrent.po to Low Saxon
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# Manfred Wiese <m.j.wiese@web.de>, 2010.
+# Manfred Wiese <m.j.wiese@web.de>, 2010, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: libktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-13 12:17+0100\n"
-"PO-Revision-Date: 2010-10-25 06:29+0200\n"
+"POT-Creation-Date: 2011-04-24 13:28+0200\n"
+"PO-Revision-Date: 2011-03-19 08:16+0100\n"
 "Last-Translator: Manfred Wiese <m.j.wiese@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -41,15 +41,13 @@ msgstr "Torrent is nich komplett."
 
 #: src/datachecker/datacheckerjob.cpp:76
 msgid "Waiting for other data checks to finish"
-msgstr ""
+msgstr "An't Töven, dat anner Datenpröven afslaten warrt"
 
 #: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
 msgid "Checking data"
 msgstr "Daten warrt pröövt"
 
 #: src/datachecker/datacheckerjob.cpp:135
-#, fuzzy
-#| msgid "Checking data"
 msgid "Checking Data"
 msgstr "Daten warrt pröövt"
 
@@ -139,17 +137,17 @@ msgstr "Lest Block lett sik nich na DND-Datei schrieven: %1"
 #: src/diskio/movedatafilesjob.cpp:166
 msgctxt "@title job"
 msgid "Moving"
-msgstr ""
+msgstr "Verschuven"
 
 #: src/diskio/movedatafilesjob.cpp:167
 msgctxt "The source of a file operation"
 msgid "Source"
-msgstr ""
+msgstr "Born"
 
 #: src/diskio/movedatafilesjob.cpp:168
 msgctxt "The destination of a file operation"
 msgid "Destination"
-msgstr ""
+msgstr "Teel"
 
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, kde-format
@@ -163,11 +161,11 @@ msgstr "\"%1\" lett sik nich opstellen: %2"
 
 #: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
 msgid "Unable to write to a piece mapped read only"
-msgstr ""
+msgstr "Schrieven na en bloots leesbor Stück nich mööglich"
 
 #: src/download/downloader.cpp:810
 msgid "Disabled because webseed does not match torrent"
-msgstr ""
+msgstr "Utmaakt, wiel de Nettverdelen nich to den Torrent passt"
 
 #: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
 #: src/download/webseed.cpp:98
@@ -228,7 +226,7 @@ msgstr "Ahn nieg Teel wiederleddt."
 #: src/download/webseed.cpp:544
 #, kde-format
 msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
+msgstr "Över %1 Sekunnen nich bruukt (to vele Tokoppelfehlers)"
 
 #: src/download/chunkdownload.cpp:383
 #, kde-format
@@ -244,7 +242,7 @@ msgstr "OK"
 #: src/interfaces/trackerinterface.cpp:58
 #, kde-format
 msgid "Warning: %1"
-msgstr ""
+msgstr "Wohrschoen: %1"
 
 #: src/interfaces/trackerinterface.cpp:59
 msgid "Announcing"
@@ -268,44 +266,6 @@ msgstr "Nich begäng Client"
 #, kde-format
 msgid "Cannot create index file: %1"
 msgstr "Indexdatei \"%1\" lett sik nich opstellen."
-
-#: src/torrent/torrentcontrol.cpp:308
-msgid "Error writing to disk, do you have enough diskspace?"
-msgstr ""
-"Fehler bi't Schrieven na de Fastplaat. - Is dor noch noog free Ruum övrig?"
-
-#: src/torrent/torrentcontrol.cpp:545
-#, kde-format
-msgid ""
-"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
-"torrent is probably corrupt or is not a valid torrent file."
-msgstr ""
-"Bi't Laden vun den Torrent <b>%1</b> hett dat en Fehler geven.<br/><b>%2</"
-"b><br/>De Torrent is wull schaadhaftig, oder keen Torrent-Datei."
-
-#: src/torrent/torrentcontrol.cpp:575
-#, kde-format
-msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
-msgstr "Dat geev en Fehler bi't Laden vun <b>%1</b>:<br/><b>%2</b>"
-
-#: src/torrent/torrentcontrol.cpp:586
-#, kde-format
-msgid "Unable to create %1: %2"
-msgstr "\"%1\" lett sik nich opstellen: %2"
-
-#: src/torrent/torrentcontrol.cpp:601
-#, kde-format
-msgid ""
-"You are already downloading the torrent <b>%1</b>. The tracker lists from "
-"both torrents have been merged."
-msgstr ""
-"Du laadst den Torrent <b>%1</b> al daal. De Tracker-List vun beed Torrents "
-"wöör tosamenföhrt."
-
-#: src/torrent/torrentcontrol.cpp:606
-#, kde-format
-msgid "You are already downloading the torrent <b>%1</b>."
-msgstr "Du laadst den Torrent <b>%1</b> al daal."
 
 #: src/torrent/torrentstats.cpp:72
 msgid "Not started"
@@ -372,9 +332,58 @@ msgstr "Torrent is schaadhaftig."
 msgid "Unable to open torrent file %1: %2"
 msgstr "Torrent-Datei \"%1\" lett sik nich opmaken: %2"
 
+#: src/torrent/torrentcontrol.cpp:308
+msgid "Error writing to disk, do you have enough diskspace?"
+msgstr ""
+"Fehler bi't Schrieven na de Fastplaat. - Is dor noch noog free Ruum övrig?"
+
+#: src/torrent/torrentcontrol.cpp:553
+#, kde-format
+msgid ""
+"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
+"torrent is probably corrupt or is not a valid torrent file."
+msgstr ""
+"Bi't Laden vun den Torrent <b>%1</b> hett dat en Fehler geven.<br/><b>%2</"
+"b><br/>De Torrent is wull schaadhaftig, oder keen Torrent-Datei."
+
+#: src/torrent/torrentcontrol.cpp:583
+#, kde-format
+msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
+msgstr "Dat geev en Fehler bi't Laden vun <b>%1</b>:<br/><b>%2</b>"
+
+#: src/torrent/torrentcontrol.cpp:594
+#, kde-format
+msgid "Unable to create %1: %2"
+msgstr "\"%1\" lett sik nich opstellen: %2"
+
+#: src/torrent/torrentcontrol.cpp:609
+#, kde-format
+msgid ""
+"You are already downloading the torrent <b>%1</b>. The tracker lists from "
+"both torrents have been merged."
+msgstr ""
+"Du laadst den Torrent <b>%1</b> al daal. De Tracker-List vun beed Torrents "
+"wöör tosamenföhrt."
+
+#: src/torrent/torrentcontrol.cpp:614
+#, kde-format
+msgid "You are already downloading the torrent <b>%1</b>."
+msgstr "Du laadst den Torrent <b>%1</b> al daal."
+
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "Ahn nieg Teel wiederledden"
+
+#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
+#: src/tracker/httptracker.cpp:557
+#, kde-format
+msgid "Timeout contacting tracker %1"
+msgstr "Tiet för't Ansnacken vun Tracker aflopen %1"
+
+#: src/tracker/udptracker.cpp:409
+#, kde-format
+msgid "Unable to resolve hostname %1"
+msgstr "Reeknernaam \"%1\" lett sik nich oplösen"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
 #: src/tracker/httptracker.cpp:462
@@ -388,17 +397,6 @@ msgstr "Leeg Daten vun Tracker"
 #: src/tracker/httptracker.cpp:479
 msgid "Invalid tracker URL"
 msgstr "Leeg Tracker-Adress"
-
-#: src/tracker/httptracker.cpp:557 src/tracker/udptracker.cpp:372
-#: src/tracker/udptracker.cpp:382
-#, kde-format
-msgid "Timeout contacting tracker %1"
-msgstr "Tiet för't Ansnacken vun Tracker aflopen %1"
-
-#: src/tracker/udptracker.cpp:409
-#, kde-format
-msgid "Unable to resolve hostname %1"
-msgstr "Reeknernaam \"%1\" lett sik nich oplösen"
 
 #: src/util/logsystemmanager.cpp:33
 msgid "General"
@@ -554,7 +552,7 @@ msgstr "Leggt fast, wat Partnertuschen bruukt warrt"
 
 #: examples/ktcli/main.cpp:65
 msgid "Whether or not to use utp"
-msgstr ""
+msgstr "Leggt fast, wat UTP bruukt warrt."
 
 #: examples/ktcli/main.cpp:67
 msgid "ktcli"

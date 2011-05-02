@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-13 12:17+0100\n"
+"POT-Creation-Date: 2011-04-24 13:28+0200\n"
 "PO-Revision-Date: 2010-09-11 19:26+0300\n"
 "Last-Translator: Einars Sprugis <einars8@gmail.com>\n"
 "Language-Team: Latvian <locale@laka.lv>\n"
@@ -305,44 +305,6 @@ msgstr "Nepazīstama programma"
 msgid "Cannot create index file: %1"
 msgstr "Nevar izveidot indeksa failu: %1"
 
-#: src/torrent/torrentcontrol.cpp:308
-msgid "Error writing to disk, do you have enough diskspace?"
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:545
-#, kde-format
-msgid ""
-"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
-"torrent is probably corrupt or is not a valid torrent file."
-msgstr ""
-"Gadījās kļūda, ielādējot torrentu <b>%1</b>>:<br/><b>%2</b><br/>Tas droši "
-"vien ir bojāts vai nav torrent fails."
-
-#: src/torrent/torrentcontrol.cpp:575
-#, kde-format
-msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:586
-#, fuzzy, kde-format
-#| msgid "Unable to create %1 : %2"
-msgid "Unable to create %1: %2"
-msgstr "Neizdevās izveidot %1 : %2"
-
-#: src/torrent/torrentcontrol.cpp:601
-#, kde-format
-msgid ""
-"You are already downloading the torrent <b>%1</b>. The tracker lists from "
-"both torrents have been merged."
-msgstr ""
-"Jūs jau ielādējat torrentu <b>%1</b>. Abu torrentu trakeru saraksti tika "
-"apvienoti."
-
-#: src/torrent/torrentcontrol.cpp:606
-#, kde-format
-msgid "You are already downloading the torrent <b>%1</b>."
-msgstr "Jūs jau ielādējat torrentu <b>%1</b>."
-
 #: src/torrent/torrentstats.cpp:72
 msgid "Not started"
 msgstr "Nav sākts"
@@ -412,9 +374,58 @@ msgstr "Bojāts torrents."
 msgid "Unable to open torrent file %1: %2"
 msgstr " Neizdevās atvērt torrenta failu %1 : %2"
 
+#: src/torrent/torrentcontrol.cpp:308
+msgid "Error writing to disk, do you have enough diskspace?"
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:553
+#, kde-format
+msgid ""
+"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
+"torrent is probably corrupt or is not a valid torrent file."
+msgstr ""
+"Gadījās kļūda, ielādējot torrentu <b>%1</b>>:<br/><b>%2</b><br/>Tas droši "
+"vien ir bojāts vai nav torrent fails."
+
+#: src/torrent/torrentcontrol.cpp:583
+#, kde-format
+msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:594
+#, fuzzy, kde-format
+#| msgid "Unable to create %1 : %2"
+msgid "Unable to create %1: %2"
+msgstr "Neizdevās izveidot %1 : %2"
+
+#: src/torrent/torrentcontrol.cpp:609
+#, kde-format
+msgid ""
+"You are already downloading the torrent <b>%1</b>. The tracker lists from "
+"both torrents have been merged."
+msgstr ""
+"Jūs jau ielādējat torrentu <b>%1</b>. Abu torrentu trakeru saraksti tika "
+"apvienoti."
+
+#: src/torrent/torrentcontrol.cpp:614
+#, kde-format
+msgid "You are already downloading the torrent <b>%1</b>."
+msgstr "Jūs jau ielādējat torrentu <b>%1</b>."
+
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "Pārsūtīts bez jaunas vietas"
+
+#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
+#: src/tracker/httptracker.cpp:557
+#, kde-format
+msgid "Timeout contacting tracker %1"
+msgstr "Noildze sazinoties ar trakeri %1"
+
+#: src/tracker/udptracker.cpp:409
+#, kde-format
+msgid "Unable to resolve hostname %1"
+msgstr "Neizdevās atpazīt datora nosaukumu %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
 #: src/tracker/httptracker.cpp:462
@@ -428,17 +439,6 @@ msgstr "Nederīgi dati no trakera"
 #: src/tracker/httptracker.cpp:479
 msgid "Invalid tracker URL"
 msgstr "Nederīgs trakera URL"
-
-#: src/tracker/httptracker.cpp:557 src/tracker/udptracker.cpp:372
-#: src/tracker/udptracker.cpp:382
-#, kde-format
-msgid "Timeout contacting tracker %1"
-msgstr "Noildze sazinoties ar trakeri %1"
-
-#: src/tracker/udptracker.cpp:409
-#, kde-format
-msgid "Unable to resolve hostname %1"
-msgstr "Neizdevās atpazīt datora nosaukumu %1"
 
 #: src/util/logsystemmanager.cpp:33
 msgid "General"

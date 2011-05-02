@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-13 12:17+0100\n"
+"POT-Creation-Date: 2011-04-24 13:28+0200\n"
 "PO-Revision-Date: 2011-03-03 20:19+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
@@ -271,45 +271,6 @@ msgstr "Onbekende client"
 msgid "Cannot create index file: %1"
 msgstr "Kan indexbestand %1 niet aanmaken"
 
-#: src/torrent/torrentcontrol.cpp:308
-msgid "Error writing to disk, do you have enough diskspace?"
-msgstr "Fout bij schrijven naar schijf, hebt u genoeg schijfruimte?"
-
-#: src/torrent/torrentcontrol.cpp:545
-#, kde-format
-msgid ""
-"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
-"torrent is probably corrupt or is not a valid torrent file."
-msgstr ""
-"Er deed zich een fout voor tijdens het laden van de torrent <b>%1</b>:<br/"
-"><b>%2</b><br/>De torrent is waarschijnlijk beschadigd of is geen geldig "
-"torrent-bestand."
-
-#: src/torrent/torrentcontrol.cpp:575
-#, kde-format
-msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
-msgstr ""
-"Er is een fout opgetreden tijdens het laden van <b>%1</b>:<br/><b>%2</b>"
-
-#: src/torrent/torrentcontrol.cpp:586
-#, kde-format
-msgid "Unable to create %1: %2"
-msgstr "Niet in staat %1 aan te maken: %2"
-
-#: src/torrent/torrentcontrol.cpp:601
-#, kde-format
-msgid ""
-"You are already downloading the torrent <b>%1</b>. The tracker lists from "
-"both torrents have been merged."
-msgstr ""
-"De torrent <b>%1</b> wordt op het moment al gedownload, de lijst met "
-"trackers van beide torrents zijn nu samengevoegd."
-
-#: src/torrent/torrentcontrol.cpp:606
-#, kde-format
-msgid "You are already downloading the torrent <b>%1</b>."
-msgstr "De torrent <b>%1</b> wordt op het moment al gedownload."
-
 #: src/torrent/torrentstats.cpp:72
 msgid "Not started"
 msgstr "Niet gestart"
@@ -375,9 +336,59 @@ msgstr "Torrent is beschadigd."
 msgid "Unable to open torrent file %1: %2"
 msgstr "Niet in staat torrent-bestand %1 te openen: %2"
 
+#: src/torrent/torrentcontrol.cpp:308
+msgid "Error writing to disk, do you have enough diskspace?"
+msgstr "Fout bij schrijven naar schijf, hebt u genoeg schijfruimte?"
+
+#: src/torrent/torrentcontrol.cpp:553
+#, kde-format
+msgid ""
+"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
+"torrent is probably corrupt or is not a valid torrent file."
+msgstr ""
+"Er deed zich een fout voor tijdens het laden van de torrent <b>%1</b>:<br/"
+"><b>%2</b><br/>De torrent is waarschijnlijk beschadigd of is geen geldig "
+"torrent-bestand."
+
+#: src/torrent/torrentcontrol.cpp:583
+#, kde-format
+msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
+msgstr ""
+"Er is een fout opgetreden tijdens het laden van <b>%1</b>:<br/><b>%2</b>"
+
+#: src/torrent/torrentcontrol.cpp:594
+#, kde-format
+msgid "Unable to create %1: %2"
+msgstr "Niet in staat %1 aan te maken: %2"
+
+#: src/torrent/torrentcontrol.cpp:609
+#, kde-format
+msgid ""
+"You are already downloading the torrent <b>%1</b>. The tracker lists from "
+"both torrents have been merged."
+msgstr ""
+"De torrent <b>%1</b> wordt op het moment al gedownload, de lijst met "
+"trackers van beide torrents zijn nu samengevoegd."
+
+#: src/torrent/torrentcontrol.cpp:614
+#, kde-format
+msgid "You are already downloading the torrent <b>%1</b>."
+msgstr "De torrent <b>%1</b> wordt op het moment al gedownload."
+
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "Verwijzen zonder een verwijzingslocatie"
+
+#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
+#: src/tracker/httptracker.cpp:557
+#, kde-format
+msgid "Timeout contacting tracker %1"
+msgstr "Timeout bij contact maken met tracker %1"
+
+#: src/tracker/udptracker.cpp:409
+#, kde-format
+msgid "Unable to resolve hostname %1"
+msgstr "Kon hostnaam %1 niet herleiden"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
 #: src/tracker/httptracker.cpp:462
@@ -391,17 +402,6 @@ msgstr "Onjuiste gegevens verkregen van tracker"
 #: src/tracker/httptracker.cpp:479
 msgid "Invalid tracker URL"
 msgstr "Ongeldig URL-adres voor tracker"
-
-#: src/tracker/httptracker.cpp:557 src/tracker/udptracker.cpp:372
-#: src/tracker/udptracker.cpp:382
-#, kde-format
-msgid "Timeout contacting tracker %1"
-msgstr "Timeout bij contact maken met tracker %1"
-
-#: src/tracker/udptracker.cpp:409
-#, kde-format
-msgid "Unable to resolve hostname %1"
-msgstr "Kon hostnaam %1 niet herleiden"
 
 #: src/util/logsystemmanager.cpp:33
 msgid "General"

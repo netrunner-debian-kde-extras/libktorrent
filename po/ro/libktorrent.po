@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent(2)\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-13 12:17+0100\n"
+"POT-Creation-Date: 2011-04-24 13:28+0200\n"
 "PO-Revision-Date: 2009-07-20 16:52+0300\n"
 "Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -298,51 +298,6 @@ msgstr "Client necunoscut"
 msgid "Cannot create index file: %1"
 msgstr "Nu am putut crea fișierul index: %1"
 
-#: src/torrent/torrentcontrol.cpp:308
-msgid "Error writing to disk, do you have enough diskspace?"
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:545
-#, fuzzy, kde-format
-#| msgid ""
-#| "An error occurred while loading the torrent <b>%1</b>\n"
-#| "The torrent is probably corrupt or is not a torrent file."
-msgid ""
-"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
-"torrent is probably corrupt or is not a valid torrent file."
-msgstr ""
-"A apărut o eroare în timpul ce se încărca torentul <b>%1</b>.\n"
-"Torentul este probabil corupt sau nu este valid."
-
-#: src/torrent/torrentcontrol.cpp:575
-#, kde-format
-msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:586
-#, fuzzy, kde-format
-#| msgid "Unable to create %1 : %2"
-msgid "Unable to create %1: %2"
-msgstr "Nu am putut crea %1 : %2"
-
-#: src/torrent/torrentcontrol.cpp:601
-#, fuzzy, kde-format
-#| msgid ""
-#| "You are already downloading this torrent %1, the list of trackers of both "
-#| "torrents has been merged."
-msgid ""
-"You are already downloading the torrent <b>%1</b>. The tracker lists from "
-"both torrents have been merged."
-msgstr ""
-"Deja se descarcă acest torent %1, lista trackerelor celor două torente a "
-"fost unificată"
-
-#: src/torrent/torrentcontrol.cpp:606
-#, fuzzy, kde-format
-#| msgid "You are already downloading the torrent %1"
-msgid "You are already downloading the torrent <b>%1</b>."
-msgstr "Acest torent se descarcă deja %1"
-
 #: src/torrent/torrentstats.cpp:72
 msgid "Not started"
 msgstr "Nepornit"
@@ -419,11 +374,67 @@ msgstr "Torent corupt!"
 msgid "Unable to open torrent file %1: %2"
 msgstr "Nu am putut deschide torentul %1 : %2"
 
+#: src/torrent/torrentcontrol.cpp:308
+msgid "Error writing to disk, do you have enough diskspace?"
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:553
+#, fuzzy, kde-format
+#| msgid ""
+#| "An error occurred while loading the torrent <b>%1</b>\n"
+#| "The torrent is probably corrupt or is not a torrent file."
+msgid ""
+"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
+"torrent is probably corrupt or is not a valid torrent file."
+msgstr ""
+"A apărut o eroare în timpul ce se încărca torentul <b>%1</b>.\n"
+"Torentul este probabil corupt sau nu este valid."
+
+#: src/torrent/torrentcontrol.cpp:583
+#, kde-format
+msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:594
+#, fuzzy, kde-format
+#| msgid "Unable to create %1 : %2"
+msgid "Unable to create %1: %2"
+msgstr "Nu am putut crea %1 : %2"
+
+#: src/torrent/torrentcontrol.cpp:609
+#, fuzzy, kde-format
+#| msgid ""
+#| "You are already downloading this torrent %1, the list of trackers of both "
+#| "torrents has been merged."
+msgid ""
+"You are already downloading the torrent <b>%1</b>. The tracker lists from "
+"both torrents have been merged."
+msgstr ""
+"Deja se descarcă acest torent %1, lista trackerelor celor două torente a "
+"fost unificată"
+
+#: src/torrent/torrentcontrol.cpp:614
+#, fuzzy, kde-format
+#| msgid "You are already downloading the torrent %1"
+msgid "You are already downloading the torrent <b>%1</b>."
+msgstr "Acest torent se descarcă deja %1"
+
 #: src/tracker/httpannouncejob.cpp:142
 #, fuzzy
 #| msgid "Redirected without a new location !"
 msgid "Redirect without a redirect location"
 msgstr "Redirectare fără o locație nouă ! "
+
+#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
+#: src/tracker/httptracker.cpp:557
+#, kde-format
+msgid "Timeout contacting tracker %1"
+msgstr ""
+
+#: src/tracker/udptracker.cpp:409
+#, kde-format
+msgid "Unable to resolve hostname %1"
+msgstr "Nu am putut rezolva numele computerului %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
 #: src/tracker/httptracker.cpp:462
@@ -437,17 +448,6 @@ msgstr "Date invalide de la tracker"
 #: src/tracker/httptracker.cpp:479
 msgid "Invalid tracker URL"
 msgstr "URL invalid pentru tracker"
-
-#: src/tracker/httptracker.cpp:557 src/tracker/udptracker.cpp:372
-#: src/tracker/udptracker.cpp:382
-#, kde-format
-msgid "Timeout contacting tracker %1"
-msgstr ""
-
-#: src/tracker/udptracker.cpp:409
-#, kde-format
-msgid "Unable to resolve hostname %1"
-msgstr "Nu am putut rezolva numele computerului %1"
 
 #: src/util/logsystemmanager.cpp:33
 msgid "General"

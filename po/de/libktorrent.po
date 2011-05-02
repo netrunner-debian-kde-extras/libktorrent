@@ -8,19 +8,21 @@
 # Panagiotis Papadopoulos <pano_90@gmx.net>, 2009, 2010.
 # Burkhard Lück <lueck@hube-lueck.de>, 2009.
 # Markus Slopianka <markus.s@kdemail.net>, 2009, 2010.
+# Frederik Schwarzer <schwarzerf@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-13 12:17+0100\n"
-"PO-Revision-Date: 2010-08-20 01:07+0200\n"
-"Last-Translator: Panagiotis Papadopoulos <pano_90@gmx.net>\n"
+"POT-Creation-Date: 2011-04-24 13:28+0200\n"
+"PO-Revision-Date: 2011-03-16 12:35+0100\n"
+"Last-Translator: Frederik Schwarzer <schwarzerf@gmail.com>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.1\n"
+"X-Generator: Lokalize 1.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Language: de\n"
 
 #: src/bcodec/bdecoder.cpp:62
 #, kde-format
@@ -53,8 +55,6 @@ msgid "Checking data"
 msgstr "Daten werden geprüft"
 
 #: src/datachecker/datacheckerjob.cpp:135
-#, fuzzy
-#| msgid "Checking data"
 msgid "Checking Data"
 msgstr "Daten werden geprüft"
 
@@ -68,15 +68,13 @@ msgstr "Die Datei %1 lässt sich nicht öffnen: %2"
 
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
 #: src/util/fileops.cpp:396
-#, fuzzy, kde-format
-#| msgid "Cannot open %1 : %2"
+#, kde-format
 msgid "Cannot open %1: %2"
-msgstr "Die Datei %1 lässt sich nicht öffnen: %2"
+msgstr "%1 lässt sich nicht öffnen: %2"
 
 #: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
 #: src/diskio/cachefile.cpp:412 src/diskio/cachefile.cpp:480
-#, fuzzy, kde-format
-#| msgid "Cannot open %1 for writing : readonly filesystem"
+#, kde-format
 msgid "Cannot open %1 for writing: readonly filesystem"
 msgstr "%1 kann nicht zum Schreiben geöffnet werden: Nur-Lesen-Dateisystem"
 
@@ -86,10 +84,7 @@ msgid "Attempting to write beyond the maximum size of %1"
 msgstr "Es wird versucht, über die Maximalgröße von %1 hinaus zu schreiben"
 
 #: src/diskio/cachefile.cpp:255
-#, fuzzy, kde-format
-#| msgid ""
-#| "Cannot expand file %1 : attempting to grow the file beyond the maximum "
-#| "size"
+#, kde-format
 msgid ""
 "Cannot expand file %1: attempting to grow the file beyond the maximum size"
 msgstr ""
@@ -97,20 +92,17 @@ msgstr ""
 "die Maximalgröße hinaus zu vergrößern"
 
 #: src/diskio/cachefile.cpp:259
-#, fuzzy, kde-format
-#| msgid "Cannot expand file %1 : %2"
+#, kde-format
 msgid "Cannot expand file %1: %2"
 msgstr "Die Datei %1 kann nicht expandiert werden: %2"
 
 #: src/diskio/cachefile.cpp:378
-#, fuzzy, kde-format
-#| msgid "Error : Reading past the end of the file %1"
+#, kde-format
 msgid "Error: Reading past the end of the file %1"
 msgstr "Fehler: Das Ende der Datei %1 kann nicht gelesen werden"
 
 #: src/diskio/cachefile.cpp:383 src/diskio/cachefile.cpp:430
-#, fuzzy, kde-format
-#| msgid "Failed to seek file %1 : %2"
+#, kde-format
 msgid "Failed to seek file %1: %2"
 msgstr "Die Datei %1 kann nicht gesucht werden: %2"
 
@@ -120,72 +112,58 @@ msgid "Error reading from %1"
 msgstr "Fehler beim Lesen der Datei %1"
 
 #: src/diskio/cachefile.cpp:434
-#, fuzzy, kde-format
-#| msgid "Failed to write to file %1 : %2"
+#, kde-format
 msgid "Failed to write to file %1: %2"
-msgstr "Die Datei %1 kann nicht geschrieben werden: %2"
+msgstr "In die Datei %1 kann nicht geschrieben werden: %2"
 
 #: src/diskio/cachefile.cpp:501
-#, fuzzy, kde-format
-#| msgid "Cannot preallocate diskspace : %1"
+#, kde-format
 msgid "Cannot preallocate diskspace: %1"
 msgstr ""
-"Der benötigte Speicherplatz kann auf dem Medium nicht reserviert werden: %1"
+"Der benötigte Speicherplatz auf dem Medium kann nicht reserviert werden: %1"
 
 #: src/diskio/chunkmanager.cpp:933 src/diskio/chunkmanager.cpp:959
-#, fuzzy, kde-format
-#| msgid "Cannot open index file %1 : %2"
+#, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr "Indexdatei %1 kann nicht geöffnet werden: %2"
 
 #: src/diskio/dndfile.cpp:89
-#, fuzzy, kde-format
-#| msgid "Cannot create file %1 : %2"
+#, kde-format
 msgid "Cannot create file %1: %2"
 msgstr "Datei %1 kann nicht erstellt werden: %2"
 
 #: src/diskio/dndfile.cpp:137
-#, fuzzy, kde-format
-#| msgid "Failed to write first chunk to DND file : %1"
+#, kde-format
 msgid "Failed to write first chunk to DND file: %1"
 msgstr "Schreiben des ersten Blocks in DND-Datei fehlgeschlagen: %1"
 
 #: src/diskio/dndfile.cpp:155
-#, fuzzy, kde-format
-#| msgid "Failed to write last chunk to DND file : %1"
+#, kde-format
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Schreiben des letzten Blocks in DND-Datei fehlgeschlagen: %1"
 
 #: src/diskio/movedatafilesjob.cpp:166
-#, fuzzy
-#| msgid "Moving average"
 msgctxt "@title job"
 msgid "Moving"
-msgstr "Beweglicher Durchschnitt"
+msgstr "Verschiebevorgang"
 
 #: src/diskio/movedatafilesjob.cpp:167
-#, fuzzy
-#| msgid "Add Source"
 msgctxt "The source of a file operation"
 msgid "Source"
-msgstr "Quelle hinzufügen"
+msgstr "Quelle"
 
 #: src/diskio/movedatafilesjob.cpp:168
-#, fuzzy
-#| msgid "Destination"
 msgctxt "The destination of a file operation"
 msgid "Destination"
 msgstr "Ziel"
 
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
-#, fuzzy, kde-format
-#| msgid "Failed to open %1 : %2"
+#, kde-format
 msgid "Failed to open %1: %2"
-msgstr "Datei %1 lässt sich nicht öffnen: %2"
+msgstr "%1 lässt sich nicht öffnen: %2"
 
 #: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
-#, fuzzy, kde-format
-#| msgid "Failed to create %1 : %2"
+#, kde-format
 msgid "Failed to create %1: %2"
 msgstr "%1 kann nicht erstellt werden: %2"
 
@@ -258,7 +236,7 @@ msgstr "Ohne neue Adresse umgeleitet."
 #: src/download/webseed.cpp:544
 #, kde-format
 msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
+msgstr "Ungenutzt seit %1 Sekunden (zu viele Verbindungsfehler)"
 
 #: src/download/chunkdownload.cpp:383
 #, kde-format
@@ -272,10 +250,9 @@ msgid "OK"
 msgstr "OK"
 
 #: src/interfaces/trackerinterface.cpp:58
-#, fuzzy, kde-format
-#| msgid "Opening %1"
+#, kde-format
 msgid "Warning: %1"
-msgstr "%1 wird geöffnet"
+msgstr "Achtung: %1"
 
 #: src/interfaces/trackerinterface.cpp:59
 msgid "Announcing"
@@ -299,45 +276,6 @@ msgstr "Unbekannter Client"
 #, kde-format
 msgid "Cannot create index file: %1"
 msgstr "Die Indexdatei %1 lässt sich nicht erstellen."
-
-#: src/torrent/torrentcontrol.cpp:308
-msgid "Error writing to disk, do you have enough diskspace?"
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:545
-#, kde-format
-msgid ""
-"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
-"torrent is probably corrupt or is not a valid torrent file."
-msgstr ""
-"Beim Laden des Torrents <b>%1</b> ist ein Fehler aufgetreten:<br/><b>%2</"
-"b><br/>Der Torrent ist möglicherweise beschädigt oder es handelt sich nicht "
-"um eine gültige Torrent-Datei."
-
-#: src/torrent/torrentcontrol.cpp:575
-#, kde-format
-msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:586
-#, fuzzy, kde-format
-#| msgid "Unable to create %1 : %2"
-msgid "Unable to create %1: %2"
-msgstr "%1 kann nicht erstellt werden: %2"
-
-#: src/torrent/torrentcontrol.cpp:601
-#, kde-format
-msgid ""
-"You are already downloading the torrent <b>%1</b>. The tracker lists from "
-"both torrents have been merged."
-msgstr ""
-"Sie laden den Torrent <b>%1</b> bereits herunter. Die Liste der Tracker von "
-"beiden Torrents wurde zusammengeführt."
-
-#: src/torrent/torrentcontrol.cpp:606
-#, kde-format
-msgid "You are already downloading the torrent <b>%1</b>."
-msgstr "Sie laden den Torrent <b>%1</b> bereits herunter."
 
 #: src/torrent/torrentstats.cpp:72
 msgid "Not started"
@@ -403,14 +341,64 @@ msgid "Corrupted torrent."
 msgstr "Die Torrent-Datei ist beschädigt."
 
 #: src/torrent/torrent.cpp:165
-#, fuzzy, kde-format
-#| msgid " Unable to open torrent file %1 : %2"
+#, kde-format
 msgid "Unable to open torrent file %1: %2"
 msgstr "Torrent-Datei %1 kann nicht geöffnet werden: %2"
+
+#: src/torrent/torrentcontrol.cpp:308
+msgid "Error writing to disk, do you have enough diskspace?"
+msgstr ""
+"Fehler beim Schreiben auf den Datenträger. Ist genügend Speicherplatz "
+"vorhanden?"
+
+#: src/torrent/torrentcontrol.cpp:553
+#, kde-format
+msgid ""
+"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
+"torrent is probably corrupt or is not a valid torrent file."
+msgstr ""
+"Beim Laden des Torrents <b>%1</b> ist ein Fehler aufgetreten:<br/><b>%2</"
+"b><br/>Der Torrent ist möglicherweise beschädigt oder es handelt sich nicht "
+"um eine gültige Torrent-Datei."
+
+#: src/torrent/torrentcontrol.cpp:583
+#, kde-format
+msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
+msgstr "Beim Laden von <b>%1</b> ist ein Fehler aufgetreten:<br/><b>%2</b>"
+
+#: src/torrent/torrentcontrol.cpp:594
+#, kde-format
+msgid "Unable to create %1: %2"
+msgstr "%1 kann nicht erstellt werden: %2"
+
+#: src/torrent/torrentcontrol.cpp:609
+#, kde-format
+msgid ""
+"You are already downloading the torrent <b>%1</b>. The tracker lists from "
+"both torrents have been merged."
+msgstr ""
+"Sie laden den Torrent <b>%1</b> bereits herunter. Die Liste der Tracker von "
+"beiden Torrents wurde zusammengeführt."
+
+#: src/torrent/torrentcontrol.cpp:614
+#, kde-format
+msgid "You are already downloading the torrent <b>%1</b>."
+msgstr "Sie laden den Torrent <b>%1</b> bereits herunter."
 
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "Umleitung ohne Zieladresse"
+
+#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
+#: src/tracker/httptracker.cpp:557
+#, kde-format
+msgid "Timeout contacting tracker %1"
+msgstr "Zeitüberschreitung beim Verbinden mit dem Tracker %1"
+
+#: src/tracker/udptracker.cpp:409
+#, kde-format
+msgid "Unable to resolve hostname %1"
+msgstr "Der Rechnername %1 wurde nicht gefunden"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
 #: src/tracker/httptracker.cpp:462
@@ -424,17 +412,6 @@ msgstr "Ungültige Daten vom Tracker"
 #: src/tracker/httptracker.cpp:479
 msgid "Invalid tracker URL"
 msgstr "Ungültige Tracker-Adresse"
-
-#: src/tracker/httptracker.cpp:557 src/tracker/udptracker.cpp:372
-#: src/tracker/udptracker.cpp:382
-#, kde-format
-msgid "Timeout contacting tracker %1"
-msgstr "Zeitüberschreitung beim Verbinden mit dem Tracker %1"
-
-#: src/tracker/udptracker.cpp:409
-#, kde-format
-msgid "Unable to resolve hostname %1"
-msgstr "Der Rechnername %1 wurde nicht gefunden"
 
 #: src/util/logsystemmanager.cpp:33
 msgid "General"
@@ -461,10 +438,9 @@ msgid "µTP"
 msgstr "µTP"
 
 #: src/util/file.cpp:84
-#, fuzzy, kde-format
-#| msgid "Cannot write to %1 : %2"
+#, kde-format
 msgid "Cannot write to %1: %2"
-msgstr "Die Datei %1 kann nicht geschrieben werden: %2"
+msgstr "In die Datei %1 kann nicht geschrieben werden: %2"
 
 #: src/util/file.cpp:98
 #, kde-format
@@ -508,8 +484,7 @@ msgid "Cannot calculate the filesize of %1: %2"
 msgstr "Die Größe der Datei %1 kann nicht berechnet werden: %2"
 
 #: src/util/fileops.cpp:327
-#, fuzzy, kde-format
-#| msgid "Cannot calculate the filesize : %1"
+#, kde-format
 msgid "Cannot calculate the filesize: %1"
 msgstr "Die Dateigröße kann nicht berechnet werden: %1"
 
@@ -520,8 +495,7 @@ msgid "Cannot expand file: %1"
 msgstr "Die Datei kann nicht expandiert werden: %1"
 
 #: src/util/fileops.cpp:417
-#, fuzzy, kde-format
-#| msgid "Cannot seek in file : %1"
+#, kde-format
 msgid "Cannot seek in file: %1"
 msgstr "In der Datei kann nicht gesucht werden: %1"
 
@@ -538,30 +512,23 @@ msgstr[0] "1 Tag "
 msgstr[1] "%1 Tage "
 
 #: src/util/signalcatcher.cpp:62
-#, fuzzy
-#| msgid "Error writing to %1"
 msgid "Error when writing to disk"
-msgstr "Fehler beim Schreiben der Datei %1"
+msgstr "Fehler beim Schreiben auf den Datenträger"
 
 #: src/util/signalcatcher.cpp:62
-#, fuzzy
-#| msgid "Error reading from %1"
 msgid "Error when reading from disk"
-msgstr "Fehler beim Lesen der Datei %1"
+msgstr "Fehler beim Lesen vom Datenträger"
 
 #: src/upnp/httprequest.cpp:96
-#, fuzzy
-#| msgid "Connection closed unexpectedly."
 msgid "Connection closed unexpectedly"
-msgstr "Die Verbindung wurde unerwartet beendet."
+msgstr "Die Verbindung wurde unerwartet beendet"
 
 #: src/upnp/httprequest.cpp:155
 msgid "Operation timed out"
-msgstr ""
+msgstr "Zeitüberschreitung bei dieser Operation"
 
 #: src/upnp/upnprouter.cpp:167
-#, fuzzy, kde-format
-#| msgid "Failed to download %1 : %2"
+#, kde-format
 msgid "Failed to download %1: %2"
 msgstr "%1 lässt sich nicht herunterladen: %2"
 
@@ -570,15 +537,11 @@ msgid "Error parsing router description."
 msgstr "Fehler beim Einlesen der Router-Beschreibung."
 
 #: src/upnp/upnprouter.cpp:216
-#, fuzzy
-#| msgid ""
-#| "Forwarding failed: \n"
-#| "Device does not have a WANIPConnection or WANPPPConnection."
 msgid ""
 "Forwarding failed:\n"
 "Device does not have a WANIPConnection or WANPPPConnection."
 msgstr ""
-"Weiterleitung fehlgeschlagen: \n"
+"Weiterleitung fehlgeschlagen:\n"
 "Das Gerät hat keine WANIP- oder WANPPP-Verbindung."
 
 #: src/upnp/upnprouter.cpp:314
@@ -588,43 +551,28 @@ msgstr ""
 "Ports gefunden werden."
 
 #: examples/ktcli/main.cpp:60
-#, fuzzy
-#| msgid "Document to open"
 msgid "Torrent to open"
-msgstr "Zu öffnendes Dokument"
+msgstr "Zu öffnender Torrent"
 
 #: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-#, fuzzy
-#| msgid "Not in use"
 msgid "Port to use"
-msgstr "Nicht in Benutzung"
+msgstr "Zu verwendender Port"
 
 #: examples/ktcli/main.cpp:63
-#, fuzzy
-#| msgid "Whether or not to enable a custom download order."
 msgid "Whether or not to enable encryption"
-msgstr ""
-"Gibt an, ob eine benutzerdefinierte Download-Reihenfolge verwendet wird."
+msgstr "Gibt an, ob eine Verschlüsselung verwendet wird"
 
 #: examples/ktcli/main.cpp:64
-#, fuzzy
-#| msgid "Whether or not to use µTorrent compatible peer exchange."
 msgid "Whether or not to enable peer exchange"
-msgstr ""
-"Gibt an, ob ein µTorrent-kompatibler Gegenstellenaustausch verwendet werden "
-"soll."
+msgstr "Gibt an, ob ein Gegenstellenaustausch verwendet wird"
 
 #: examples/ktcli/main.cpp:65
-#, fuzzy
-#| msgid "Whether or not to show system tray popup messages."
 msgid "Whether or not to use utp"
-msgstr ""
-"Gibt an, ob Kurzinfo-Fenster im Systemabschnitt der Kontrollleiste angezeigt "
-"werden."
+msgstr "Gibt an, ob UTP verwendet wird"
 
 #: examples/ktcli/main.cpp:67
 msgid "ktcli"
-msgstr ""
+msgstr "ktcli"
 
 #~ msgid "Parse Error"
 #~ msgstr "Verarbeitungsfehler"

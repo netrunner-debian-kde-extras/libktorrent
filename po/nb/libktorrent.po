@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-01 13:52+0100\n"
-"PO-Revision-Date: 2010-11-01 13:55+0100\n"
+"POT-Creation-Date: 2011-03-23 12:35+0100\n"
+"PO-Revision-Date: 2011-02-25 18:38+0100\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -43,7 +43,7 @@ msgstr "Torrenten er ufullstendig."
 
 #: src/datachecker/datacheckerjob.cpp:76
 msgid "Waiting for other data checks to finish"
-msgstr ""
+msgstr "Venter på at andre datakontroller skal bli ferdig"
 
 #: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
 msgid "Checking data"
@@ -51,7 +51,7 @@ msgstr "Kontrollerer data"
 
 #: src/datachecker/datacheckerjob.cpp:135
 msgid "Checking Data"
-msgstr ""
+msgstr "Kontrollerer data"
 
 #: src/datachecker/multidatachecker.cpp:203
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
@@ -65,13 +65,13 @@ msgstr "Kan ikke åpne fila «%1»: %2"
 #: src/util/fileops.cpp:396
 #, kde-format
 msgid "Cannot open %1: %2"
-msgstr ""
+msgstr "Kan ikke åpne %1: %2"
 
 #: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
 #: src/diskio/cachefile.cpp:412 src/diskio/cachefile.cpp:480
 #, kde-format
 msgid "Cannot open %1 for writing: readonly filesystem"
-msgstr ""
+msgstr "Kan ikke åpne %1 med skrivetilgang: filsystemet er skrivebeskyttet"
 
 #: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:418
 #, kde-format
@@ -82,22 +82,22 @@ msgstr "Forsøker å skrive ut over maksimal størrelse på %1"
 #, kde-format
 msgid ""
 "Cannot expand file %1: attempting to grow the file beyond the maximum size"
-msgstr ""
+msgstr "Kan ikke utvide fila %1: forsøker å øke filstørrelsen ut over maksimum"
 
 #: src/diskio/cachefile.cpp:259
 #, kde-format
 msgid "Cannot expand file %1: %2"
-msgstr ""
+msgstr "Klarte ikke utvide fila %1: %2"
 
 #: src/diskio/cachefile.cpp:378
 #, kde-format
 msgid "Error: Reading past the end of the file %1"
-msgstr ""
+msgstr "Feil: Leser forbi slutten av fila %1"
 
 #: src/diskio/cachefile.cpp:383 src/diskio/cachefile.cpp:430
 #, kde-format
 msgid "Failed to seek file %1: %2"
-msgstr ""
+msgstr "Klarte ikke søke i fila %1: %2"
 
 #: src/diskio/cachefile.cpp:391
 #, kde-format
@@ -107,72 +107,65 @@ msgstr "Feil ved lesing fra %1"
 #: src/diskio/cachefile.cpp:434
 #, kde-format
 msgid "Failed to write to file %1: %2"
-msgstr ""
+msgstr "Klarte ikke skrive til fila %1:  %2"
 
 #: src/diskio/cachefile.cpp:501
 #, kde-format
 msgid "Cannot preallocate diskspace: %1"
-msgstr ""
+msgstr "Klarte ikke tildele diskplass på forhånd: %1"
 
 #: src/diskio/chunkmanager.cpp:933 src/diskio/chunkmanager.cpp:959
 #, kde-format
 msgid "Cannot open index file %1: %2"
-msgstr ""
+msgstr "Klarte ikke åpne indeksfila %1:  %2"
 
 #: src/diskio/dndfile.cpp:89
 #, kde-format
 msgid "Cannot create file %1: %2"
-msgstr ""
+msgstr "Klarte ikke opprette fila %1:  %2"
 
 #: src/diskio/dndfile.cpp:137
 #, kde-format
 msgid "Failed to write first chunk to DND file: %1"
-msgstr ""
+msgstr "Klarte ikke skrive første blokk til DND-fil: %1"
 
 #: src/diskio/dndfile.cpp:155
 #, kde-format
 msgid "Failed to write last chunk to DND file: %1"
-msgstr ""
+msgstr "Klarte ikke skrive siste blokk til DND-fil: %1"
 
 #: src/diskio/movedatafilesjob.cpp:166
 msgctxt "@title job"
 msgid "Moving"
-msgstr ""
+msgstr "Flytter"
 
 #: src/diskio/movedatafilesjob.cpp:167
 msgctxt "The source of a file operation"
 msgid "Source"
-msgstr ""
+msgstr "Kilde"
 
 #: src/diskio/movedatafilesjob.cpp:168
 msgctxt "The destination of a file operation"
 msgid "Destination"
-msgstr ""
+msgstr "Mål"
 
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, kde-format
 msgid "Failed to open %1: %2"
-msgstr ""
+msgstr "Klarte ikke åpne %1:  %2"
 
 #: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
 #, kde-format
 msgid "Failed to create %1: %2"
-msgstr ""
+msgstr "Klarte ikke opprette %1: %2"
 
 #: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
 msgid "Unable to write to a piece mapped read only"
-msgstr ""
-
-#: src/download/chunkdownload.cpp:382
-#, kde-format
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] "1 deltaker"
-msgstr[1] "%1 deltakere"
+msgstr "Klarer ikke å skrive til et stykke som er avbildet som skrivebeskyttet"
 
 #: src/download/downloader.cpp:810
 msgid "Disabled because webseed does not match torrent"
-msgstr ""
+msgstr "Slått av fordi nettkilden ikke stemmer med torrenten"
 
 #: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
 #: src/download/webseed.cpp:98
@@ -233,7 +226,14 @@ msgstr "Omdirigert uten nytt sted."
 #: src/download/webseed.cpp:544
 #, kde-format
 msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
+msgstr "Ikke i bruk i %1 sekunder (for mange tilkoblingsfeil)"
+
+#: src/download/chunkdownload.cpp:383
+#, kde-format
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] "1 deltaker"
+msgstr[1] "%1 deltakere"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
@@ -242,7 +242,7 @@ msgstr "OK"
 #: src/interfaces/trackerinterface.cpp:58
 #, kde-format
 msgid "Warning: %1"
-msgstr ""
+msgstr "Advarsel: %1"
 
 #: src/interfaces/trackerinterface.cpp:59
 msgid "Announcing"
@@ -267,25 +267,9 @@ msgstr "Ukjent klient"
 msgid "Cannot create index file: %1"
 msgstr "Klarte ikke lage indeksfil: %1"
 
-#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
-#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
-#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
-#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
-msgid "Corrupted torrent."
-msgstr "Ødelagt torrent."
-
-#: src/torrent/torrent.cpp:165
-#, kde-format
-msgid "Unable to open torrent file %1: %2"
-msgstr ""
-
-#: src/torrent/torrent.cpp:295
-msgid "Parse Error"
-msgstr "Tolkingsfeil"
-
 #: src/torrent/torrentcontrol.cpp:308
 msgid "Error writing to disk, do you have enough diskspace?"
-msgstr ""
+msgstr "Feil ved skriving til disk, har du nok diskplass?"
 
 #: src/torrent/torrentcontrol.cpp:545
 #, kde-format
@@ -299,12 +283,12 @@ msgstr ""
 #: src/torrent/torrentcontrol.cpp:575
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
-msgstr ""
+msgstr "Det oppsto en feil da <b>%1</b> ble lastet inn:<br/> <b>%2</b>"
 
 #: src/torrent/torrentcontrol.cpp:586
 #, kde-format
 msgid "Unable to create %1: %2"
-msgstr ""
+msgstr "Klarte ikke opprette %1: %2"
 
 #: src/torrent/torrentcontrol.cpp:601
 #, kde-format
@@ -371,11 +355,34 @@ msgstr "Pauset"
 
 #: src/torrent/torrentstats.cpp:98
 msgid "Superseeding"
-msgstr ""
+msgstr "Superdeling"
+
+#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
+#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
+#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
+#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
+msgid "Corrupted torrent."
+msgstr "Ødelagt torrent."
+
+#: src/torrent/torrent.cpp:165
+#, kde-format
+msgid "Unable to open torrent file %1: %2"
+msgstr "Klarte ikke åpne torrentfila %1: %2"
 
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "Omdirigert uten ny plassering"
+
+#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
+#: src/tracker/httptracker.cpp:557
+#, kde-format
+msgid "Timeout contacting tracker %1"
+msgstr "Tidsavbrutt ved kontakt med sporer %1"
+
+#: src/tracker/udptracker.cpp:409
+#, kde-format
+msgid "Unable to resolve hostname %1"
+msgstr "Klarte ikke slå opp vertsnavnet %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
 #: src/tracker/httptracker.cpp:462
@@ -389,17 +396,6 @@ msgstr "Ugyldig data fra sporeren"
 #: src/tracker/httptracker.cpp:479
 msgid "Invalid tracker URL"
 msgstr "Ugyldig sporer-URL"
-
-#: src/tracker/httptracker.cpp:557 src/tracker/udptracker.cpp:372
-#: src/tracker/udptracker.cpp:382
-#, kde-format
-msgid "Timeout contacting tracker %1"
-msgstr "Tidsavbrutt ved kontakt med sporer %1"
-
-#: src/tracker/udptracker.cpp:409
-#, kde-format
-msgid "Unable to resolve hostname %1"
-msgstr "Klarte ikke slå opp vertsnavnet %1"
 
 #: src/util/logsystemmanager.cpp:33
 msgid "General"
@@ -428,7 +424,7 @@ msgstr "µTP"
 #: src/util/file.cpp:84
 #, kde-format
 msgid "Cannot write to %1: %2"
-msgstr ""
+msgstr "Klarte ikke skrive til %1: %2"
 
 #: src/util/file.cpp:98
 #, kde-format
@@ -473,7 +469,7 @@ msgstr "Klarte ikke beregne filstørrelsen på %1: %2"
 #: src/util/fileops.cpp:327
 #, kde-format
 msgid "Cannot calculate the filesize: %1"
-msgstr ""
+msgstr "Klarte ikke beregne filstørrelse: %1"
 
 #: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
 #: src/util/fileops.cpp:387
@@ -484,7 +480,7 @@ msgstr "Klarte ikke utvide fil: %1"
 #: src/util/fileops.cpp:417
 #, kde-format
 msgid "Cannot seek in file: %1"
-msgstr ""
+msgstr "Klarte ikke søke i fil: %1"
 
 #: src/util/functions.cpp:280
 #, kde-format
@@ -500,59 +496,63 @@ msgstr[1] "%1 dager "
 
 #: src/util/signalcatcher.cpp:62
 msgid "Error when writing to disk"
-msgstr ""
+msgstr "Feil ved skriving til disk"
 
 #: src/util/signalcatcher.cpp:62
 msgid "Error when reading from disk"
-msgstr ""
+msgstr "Feil ved lesing fra disk"
 
 #: src/upnp/httprequest.cpp:96
 msgid "Connection closed unexpectedly"
-msgstr ""
+msgstr "Tilkoblingen ble uventet avbrutt"
 
 #: src/upnp/httprequest.cpp:155
 msgid "Operation timed out"
-msgstr ""
+msgstr "Handlingen fikk tidsavbrudd"
 
 #: src/upnp/upnprouter.cpp:167
 #, kde-format
 msgid "Failed to download %1: %2"
-msgstr ""
+msgstr "Klarte ikke laste ned %1: %2"
 
 #: src/upnp/upnprouter.cpp:178
 msgid "Error parsing router description."
-msgstr ""
+msgstr "Klarte ikke tolke ruter-beskrivelse."
 
 #: src/upnp/upnprouter.cpp:216
 msgid ""
 "Forwarding failed:\n"
 "Device does not have a WANIPConnection or WANPPPConnection."
 msgstr ""
+"Klarte ikke videresende: \n"
+"Enheten støtter ikke WANIPConnection eller WANPPPConnection."
 
 #: src/upnp/upnprouter.cpp:314
 msgid "Cannot find port forwarding service in the device's description."
 msgstr ""
+"Klarte ikke finne tjenesten for videresending av porter i enhetens "
+"beskrivelse."
 
 #: examples/ktcli/main.cpp:60
 msgid "Torrent to open"
-msgstr ""
+msgstr "Torrent som skal åpnes"
 
 #: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
 msgid "Port to use"
-msgstr ""
+msgstr "Port som skal brukes"
 
 #: examples/ktcli/main.cpp:63
 msgid "Whether or not to enable encryption"
-msgstr ""
+msgstr "Om kryptering skal slås på eller ikke"
 
 #: examples/ktcli/main.cpp:64
 msgid "Whether or not to enable peer exchange"
-msgstr ""
+msgstr "Om deltakerutveksling skal slås på eller ikke"
 
 #: examples/ktcli/main.cpp:65
 msgid "Whether or not to use utp"
-msgstr ""
+msgstr "Om utp skal brukes eller ikke"
 
 #: examples/ktcli/main.cpp:67
 msgid "ktcli"
-msgstr ""
+msgstr "ktcli"
