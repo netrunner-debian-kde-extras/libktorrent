@@ -4,6 +4,7 @@ libktorrent (1.1.1-1) UNRELEASED; urgency=low
   * Bump Standards-Version to 3.9.2: no changes needed.
   * Call dh in compat=8 way.
   * Drop dh_makeshlibs override: do not care about shlibs anymore.
+  * Update symbol file (gcc 4.6 on amd64).
 
  -- Modestas Vainius <modax@debian.org>  Tue, 03 May 2011 00:09:58 +0300
 
