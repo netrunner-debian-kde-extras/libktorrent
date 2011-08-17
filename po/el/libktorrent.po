@@ -8,19 +8,21 @@
 # George Pantsis <gpantsis@gmail.com>, 2008.
 # Petros <pvidalis@gmail.com>, 2009.
 # Christos Kotsaris <christos.kotsaris@gmail.com>, 2010.
+# Dimitrios Glentadakis <dglent@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-04-24 13:28+0200\n"
-"PO-Revision-Date: 2010-10-19 19:11+0300\n"
-"Last-Translator: Christos Kotsaris <christos.kotsaris@gmail.com>\n"
+"POT-Creation-Date: 2011-08-03 07:44+0200\n"
+"PO-Revision-Date: 2011-06-08 07:00+0200\n"
+"Last-Translator: Dimitrios Glentadakis <dglent@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-doc@kde.org>\n"
+"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.1\n"
+"X-Generator: Lokalize 1.2\n"
 
 #: src/bcodec/bdecoder.cpp:62
 #, kde-format
@@ -42,19 +44,17 @@ msgstr "Αδυναμία μετατροπής του %1 σε ακέραιο"
 
 #: src/bcodec/bdecoder.cpp:252
 msgid "Torrent is incomplete."
-msgstr "Το torrent δεν είναι ολοκληρωμένο."
+msgstr "Το torrent δεν είναι ολοκληρωμένο"
 
 #: src/datachecker/datacheckerjob.cpp:76
 msgid "Waiting for other data checks to finish"
-msgstr ""
+msgstr "Αναμονή για ολοκλήρωση άλλων ελέγχων σε δεδομένα"
 
 #: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
 msgid "Checking data"
 msgstr "Έλεγχος δεδομένων"
 
 #: src/datachecker/datacheckerjob.cpp:135
-#, fuzzy
-#| msgid "Checking data"
 msgid "Checking Data"
 msgstr "Έλεγχος δεδομένων"
 
@@ -64,57 +64,48 @@ msgstr "Έλεγχος δεδομένων"
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
 #, kde-format
 msgid "Cannot open file %1: %2"
-msgstr "Αδύνατο το άνοιγμα του αρχείου %1: %2"
+msgstr "Αδυναμία ανοίγματος του αρχείου %1: %2"
 
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
 #: src/util/fileops.cpp:396
-#, fuzzy, kde-format
-#| msgid "Cannot open %1 : %2"
+#, kde-format
 msgid "Cannot open %1: %2"
-msgstr "Αδύνατο το άνοιγμα του αρχείου %1 : %2"
+msgstr "Αδυναμία ανοίγματος του αρχείου %1 : %2"
 
 #: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
 #: src/diskio/cachefile.cpp:412 src/diskio/cachefile.cpp:480
-#, fuzzy, kde-format
-#| msgid "Cannot open %1 for writing : readonly filesystem"
+#, kde-format
 msgid "Cannot open %1 for writing: readonly filesystem"
 msgstr ""
-"Αδύνατο το άνοιγμα του %1 για εγγραφή. Το σύστημα αρχείων είναι μόνο για "
-"ανάγνωση"
+"Αδυναμία ανοίγματος του %1 για εγγραφή: σύστημα αρχείων για ανάγνωση μόνο"
 
 #: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:418
 #, kde-format
 msgid "Attempting to write beyond the maximum size of %1"
-msgstr "Προσπάθεια εγγραφής πέρα από το μέγιστο μέγεθος του %1"
+msgstr "Απόπειρα εγγραφής πέρα από το μέγιστο μέγεθος του %1"
 
 #: src/diskio/cachefile.cpp:255
-#, fuzzy, kde-format
-#| msgid ""
-#| "Cannot expand file %1 : attempting to grow the file beyond the maximum "
-#| "size"
+#, kde-format
 msgid ""
 "Cannot expand file %1: attempting to grow the file beyond the maximum size"
 msgstr ""
-"Αδύνατη η επέκταση του αρχείου %1: προσπάθεια να επεκταθεί το αρχείο πέρα "
-"από το μέγιστο μέγεθος"
+"Αδυναμία επέκτασης αρχείου %1: απόπειρα αύξησης μεγέθους αρχείου πέρα από το "
+"μέγιστο"
 
 #: src/diskio/cachefile.cpp:259
-#, fuzzy, kde-format
-#| msgid "Cannot expand file %1 : %2"
+#, kde-format
 msgid "Cannot expand file %1: %2"
-msgstr "Αδύνατη η ανάπτυξη του αρχείου: %1 : %2"
+msgstr "Αδυναμία επέκτασης του αρχείου: %1: %2"
 
 #: src/diskio/cachefile.cpp:378
-#, fuzzy, kde-format
-#| msgid "Error : Reading past the end of the file %1"
+#, kde-format
 msgid "Error: Reading past the end of the file %1"
 msgstr "Σφάλμα: Η ανάγνωση πέρασε το τέλος του αρχείου %1"
 
 #: src/diskio/cachefile.cpp:383 src/diskio/cachefile.cpp:430
-#, fuzzy, kde-format
-#| msgid "Failed to seek file %1 : %2"
+#, kde-format
 msgid "Failed to seek file %1: %2"
-msgstr "Αποτυχία η κίνηση αναζήτησης στο αρχείο %1 : %2"
+msgstr "Αποτυχία αναζήτησης αρχείου %1: %2"
 
 #: src/diskio/cachefile.cpp:391
 #, kde-format
@@ -122,83 +113,67 @@ msgid "Error reading from %1"
 msgstr "Σφάλμα ανάγνωσης από το %1"
 
 #: src/diskio/cachefile.cpp:434
-#, fuzzy, kde-format
-#| msgid "Failed to write to file %1 : %2"
+#, kde-format
 msgid "Failed to write to file %1: %2"
-msgstr "Αποτυχία εγγραφής στο αρχείο %1 : %2"
+msgstr "Αποτυχία εγγραφής στο αρχείο %1: %2"
 
 #: src/diskio/cachefile.cpp:501
-#, fuzzy, kde-format
-#| msgid "Cannot preallocate diskspace : %1"
+#, kde-format
 msgid "Cannot preallocate diskspace: %1"
-msgstr "Αδύνατη η κατακράτηση χώρου στο δίσκο : %1"
-
-#: src/diskio/chunkmanager.cpp:933 src/diskio/chunkmanager.cpp:959
-#, fuzzy, kde-format
-#| msgid "Cannot open index file %1 : %2"
-msgid "Cannot open index file %1: %2"
-msgstr "Αδύνατο το άνοιγμα του αρχείου ευρετηρίου %1: %2"
+msgstr "Αδυναμία προκράτησης χώρου στο δίσκο: %1"
 
 #: src/diskio/dndfile.cpp:89
-#, fuzzy, kde-format
-#| msgid "Cannot create file %1 : %2"
+#, kde-format
 msgid "Cannot create file %1: %2"
-msgstr "Δεν μπορεί να δημιουργηθεί το %1: %2"
+msgstr "Αδυναμία δημιουργίας αρχείου %1: %2"
 
 #: src/diskio/dndfile.cpp:137
-#, fuzzy, kde-format
-#| msgid "Failed to write first chunk to DND file : %1"
+#, kde-format
 msgid "Failed to write first chunk to DND file: %1"
-msgstr "Απέτυχε η εγγραφή του πρώτου κομματιού του αρχείου DND: %1"
+msgstr "Αποτυχία εγγραφής του πρώτου κομματιού στο αρχείο DND: %1"
 
 #: src/diskio/dndfile.cpp:155
-#, fuzzy, kde-format
-#| msgid "Failed to write last chunk to DND file : %1"
+#, kde-format
 msgid "Failed to write last chunk to DND file: %1"
-msgstr "Απέτυχε η εγγραφή του τελευταίου κομματιού του αρχείου DND: %1"
+msgstr "Αποτυχία εγγραφής του τελευταίου κομματιού στο αρχείο DND: %1"
 
 #: src/diskio/movedatafilesjob.cpp:166
-#, fuzzy
-#| msgid "Moving average"
 msgctxt "@title job"
 msgid "Moving"
-msgstr "Κινούμενος μέσος"
+msgstr "Κινούμενο"
 
 #: src/diskio/movedatafilesjob.cpp:167
-#, fuzzy
-#| msgid "Add Source"
 msgctxt "The source of a file operation"
 msgid "Source"
-msgstr "Προσθήκη πηγής"
+msgstr "Πηγή"
 
 #: src/diskio/movedatafilesjob.cpp:168
-#, fuzzy
-#| msgid "Destination"
 msgctxt "The destination of a file operation"
 msgid "Destination"
 msgstr "Προορισμός"
 
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
-#, fuzzy, kde-format
-#| msgid "Failed to open %1 : %2"
+#, kde-format
 msgid "Failed to open %1: %2"
-msgstr "Αδύνατο το άνοιγμα του %1 : %2"
+msgstr "Αδυναμία ανοίγματος του %1: %2"
 
 #: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
-#, fuzzy, kde-format
-#| msgid "Failed to create %1 : %2"
+#, kde-format
 msgid "Failed to create %1: %2"
-msgstr "Αδύνατη η δημιουργία του %1 : %2"
+msgstr "Αδυναμία δημιουργίας του %1: %2"
 
 #: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
 msgid "Unable to write to a piece mapped read only"
-msgstr ""
+msgstr "Αδυναμία εγγραφής σε κομμάτι για ανάγνωση μόνο"
+
+#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
+#, kde-format
+msgid "Cannot open index file %1: %2"
+msgstr "Αδυναμία ανοίγματος του αρχείου ευρετηρίου %1: %2"
 
 #: src/download/downloader.cpp:810
-#, fuzzy
-#| msgid "Displays all the webseeds of a torrent"
 msgid "Disabled because webseed does not match torrent"
-msgstr "Εμφάνιση όλων των γόνων ιστού ενός torrent"
+msgstr "Απενεργοποιήθηκε γιατί η πηγή ιστού δεν ταιριάζει με το torrent"
 
 #: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
 #: src/download/webseed.cpp:98
@@ -230,7 +205,7 @@ msgstr "Σε σύνδεση"
 
 #: src/download/httpconnection.cpp:159
 msgid "Error: Failed to connect to webseed"
-msgstr "Σφάλμα: αποτυχία σύνδεσης στο γόνο ιστού"
+msgstr "Σφάλμα: αποτυχία σύνδεσης σε πηγή ιστού"
 
 #: src/download/httpconnection.cpp:224
 msgid "Connecting"
@@ -238,11 +213,11 @@ msgstr "Σύνδεση"
 
 #: src/download/httpconnection.cpp:235
 msgid "Failed to connect to webseed"
-msgstr "Αποτυχία σύνδεσης στο γόνο ιστού"
+msgstr "Αποτυχία σύνδεσης σε πηγή ιστού"
 
 #: src/download/httpconnection.cpp:242
 msgid "Failed to resolve hostname of webseed"
-msgstr "Αποτυχία επίλυσης ονόματος υπολογιστή του γόνου ιστού"
+msgstr "Αποτυχία επίλυσης ονόματος υπολογιστή της πηγής ιστού"
 
 #: src/download/httpconnection.cpp:322
 msgid "Error: failed to connect, server not responding"
@@ -259,24 +234,23 @@ msgstr "Ανακατεύθυνση χωρίς μια νέα τοποθεσία."
 #: src/download/webseed.cpp:544
 #, kde-format
 msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
+msgstr "Αχρησιμοποίητο για %1 δευτερόλεπτα (Πάρα πολλές αποτυχίες σύνδεσης)"
 
 #: src/download/chunkdownload.cpp:383
 #, kde-format
 msgid "1 peer"
 msgid_plural "%1 peers"
-msgstr[0] "1 υπολογιστής"
-msgstr[1] "%1 υπολογιστές"
+msgstr[0] "1 ομότιμος κόμβος"
+msgstr[1] "%1 ομότιμοι κόμβοι"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr "Εντάξει"
 
 #: src/interfaces/trackerinterface.cpp:58
-#, fuzzy, kde-format
-#| msgid "Opening %1"
+#, kde-format
 msgid "Warning: %1"
-msgstr "Άνοιγμα %1"
+msgstr "Προειδοποίηση: %1"
 
 #: src/interfaces/trackerinterface.cpp:59
 msgid "Announcing"
@@ -299,11 +273,11 @@ msgstr "Άγνωστος πελάτης"
 #: src/torrent/torrentcreator.cpp:361
 #, kde-format
 msgid "Cannot create index file: %1"
-msgstr "Αδύνατη η δημιουργία αρχείου ευρετηρίου: %1"
+msgstr "Αδυναμία δημιουργίας αρχείου ευρετηρίου: %1"
 
 #: src/torrent/torrentstats.cpp:72
 msgid "Not started"
-msgstr "Δεν εκκινήθηκε"
+msgstr "Δεν ξεκίνησε"
 
 #: src/torrent/torrentstats.cpp:74
 msgid "Download completed"
@@ -311,16 +285,16 @@ msgstr "Η λήψη ολοκληρώθηκε"
 
 #: src/torrent/torrentstats.cpp:76
 msgid "Seeding completed"
-msgstr "Ολοκλήρωση γόνου"
+msgstr "Ολοκλήρωση προσφοράς πηγής"
 
 #: src/torrent/torrentstats.cpp:78
 msgctxt "Status of a torrent file"
 msgid "Seeding"
-msgstr "Μοίρασμα"
+msgstr "Προσφορά πηγής"
 
 #: src/torrent/torrentstats.cpp:80
 msgid "Downloading"
-msgstr "Λήψη αρχείου"
+msgstr "Λήψη"
 
 #: src/torrent/torrentstats.cpp:82
 msgid "Stalled"
@@ -332,11 +306,11 @@ msgstr "Διακόπηκε"
 
 #: src/torrent/torrentstats.cpp:88
 msgid "Allocating diskspace"
-msgstr "Κατακράτηση χώρου στο δίσκο"
+msgstr "Κατανομή χώρου στο δίσκο"
 
 #: src/torrent/torrentstats.cpp:90
 msgid "Queued for seeding"
-msgstr "Σε αναμονή για μοίρασμα"
+msgstr "Σε αναμονή για προσφορά πηγής"
 
 #: src/torrent/torrentstats.cpp:90
 msgid "Queued for downloading"
@@ -344,17 +318,15 @@ msgstr "Σε αναμονή για λήψη"
 
 #: src/torrent/torrentstats.cpp:94
 msgid "Stopped. No space left on device."
-msgstr "Σταματημένο. Δεν υπάρχει ελεύθερος χώρος στη συσκευή."
+msgstr "Διεκόπη. Δεν υπάρχει ελεύθερος χώρος στη συσκευή."
 
 #: src/torrent/torrentstats.cpp:96
 msgid "Paused"
-msgstr "Παύθηκε"
+msgstr "Σε παύση"
 
 #: src/torrent/torrentstats.cpp:98
-#, fuzzy
-#| msgid "Seeding"
 msgid "Superseeding"
-msgstr "Προσφορά γόνου"
+msgstr "Υπερπροσφορά πηγής"
 
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
@@ -364,14 +336,13 @@ msgid "Corrupted torrent."
 msgstr "Κατεστραμμένο torrent."
 
 #: src/torrent/torrent.cpp:165
-#, fuzzy, kde-format
-#| msgid " Unable to open torrent file %1 : %2"
+#, kde-format
 msgid "Unable to open torrent file %1: %2"
-msgstr " Αδύνατο το άνοιγμα του αρχείου torrent %1 : %2"
+msgstr " Αδυναμία ανοίγματος του αρχείου torrent %1: %2"
 
 #: src/torrent/torrentcontrol.cpp:308
 msgid "Error writing to disk, do you have enough diskspace?"
-msgstr ""
+msgstr "Σφάλμα εγγραφής στο δίσκο, έχετε αρκετό χώρο;"
 
 #: src/torrent/torrentcontrol.cpp:553
 #, kde-format
@@ -379,20 +350,18 @@ msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
 "torrent is probably corrupt or is not a valid torrent file."
 msgstr ""
-"Παρουσιάστηκε σφάλμα κατά τη φόρτωση του αρχείου torrent <b>%1</b>:<br/><b>%"
-"2</b><br/> Το αρχείο torrent πιθανότατα είναι κατεστραμμένο ή δεν είναι αρχείο μορφής "
-"torrent."
+"Παρουσιάστηκε σφάλμα κατά τη φόρτωση του torrent <b>%1</b>:<br/><b>%2</b><br/"
+"> Το torrent πιθανότατα είναι κατεστραμμένο, ή δεν είναι έγκυρο αρχείο torrent."
 
 #: src/torrent/torrentcontrol.cpp:583
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
-msgstr ""
+msgstr "Παρουσιάστηκε σφάλμα κατά τη φόρτωση <b>%1</b>:<br/><b>%2</b>"
 
 #: src/torrent/torrentcontrol.cpp:594
-#, fuzzy, kde-format
-#| msgid "Unable to create %1 : %2"
+#, kde-format
 msgid "Unable to create %1: %2"
-msgstr "Αδυναμία δημιουργίας %1 : %2"
+msgstr "Αδυναμία δημιουργίας %1: %2"
 
 #: src/torrent/torrentcontrol.cpp:609
 #, kde-format
@@ -400,23 +369,23 @@ msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
 "both torrents have been merged."
 msgstr ""
-"Ήδη λαμβάνετε αυτό το αρχείο torrent <b>%1</b>. Οι λίστες ανιχνευτών των δύο "
-"αρχείων συγχωνεύτηκε."
+"Ήδη λαμβάνετε το torrent <b>%1</b>. Οι λίστες ιχνηλατών και από τα δύο "
+"torrent συγχωνεύτηκαν."
 
 #: src/torrent/torrentcontrol.cpp:614
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
-msgstr "Ήδη λαμβάνετε αυτό το αρχείο torrent <b>%1</b>"
+msgstr "Ήδη λαμβάνετε αυτό το αρχείο torrent <b>%1</b>."
 
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
-msgstr "Ανακατεύθυνση χωρίς μια τοποθεσία ανακατεύθυνσης"
+msgstr "Ανακατεύθυνση χωρίς τοποθεσία ανακατεύθυνσης"
 
 #: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
 #: src/tracker/httptracker.cpp:557
 #, kde-format
 msgid "Timeout contacting tracker %1"
-msgstr "Λήξη χρόνου πρόσβασης στον tracker %1"
+msgstr "Τέλος χρόνου επαφής με ιχνηλάτη %1"
 
 #: src/tracker/udptracker.cpp:409
 #, kde-format
@@ -426,15 +395,15 @@ msgstr "Αδυναμία επίλυσης ονόματος υπολογιστή 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
 #: src/tracker/httptracker.cpp:462
 msgid "Invalid response from tracker"
-msgstr "Μη έγκυρη απάντηση από ανιχνευτή"
+msgstr "Μη έγκυρη απάντηση από ιχνηλάτη"
 
 #: src/tracker/httptracker.cpp:293
 msgid "Invalid data from tracker"
-msgstr "Μη έγκυρα δεδομένα από τον ανιχνευτή"
+msgstr "Μη έγκυρα δεδομένα από τον ιχνηλάτη"
 
 #: src/tracker/httptracker.cpp:479
 msgid "Invalid tracker URL"
-msgstr "Μη έγκυρο URL ανιχνευτή"
+msgstr "Μη έγκυρο URL ιχνηλάτη"
 
 #: src/util/logsystemmanager.cpp:33
 msgid "General"
@@ -446,7 +415,7 @@ msgstr "Συνδέσεις"
 
 #: src/util/logsystemmanager.cpp:35
 msgid "Tracker"
-msgstr "Ανιχνευτής"
+msgstr "Ιχνηλάτης"
 
 #: src/util/logsystemmanager.cpp:36
 msgid "DHT"
@@ -458,76 +427,73 @@ msgstr "Χρήση δίσκου Ι/Ο"
 
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
-msgstr "μΤΡ"
+msgstr "µTP"
 
 #: src/util/file.cpp:84
-#, fuzzy, kde-format
-#| msgid "Cannot write to %1 : %2"
+#, kde-format
 msgid "Cannot write to %1: %2"
-msgstr "Αδυναμία εγγραφής στο %1 : %2"
+msgstr "Αδυναμία εγγραφής στο %1: %2"
 
 #: src/util/file.cpp:98
 #, kde-format
 msgid "Cannot read from %1"
-msgstr "Αδύνατη η ανάγνωση από το %1"
+msgstr "Αδυναμία ανάγνωσης από το %1"
 
 #: src/util/fileops.cpp:94
 #, kde-format
 msgid "Cannot create directory %1"
-msgstr "Αδύνατη η δημιουργία του καταλόγου %1"
+msgstr "Αδυναμία δημιουργίας του καταλόγου %1"
 
 #: src/util/fileops.cpp:161
 #, kde-format
 msgid "Cannot symlink %1 to %2: %3"
-msgstr "Αδύνατη η δημιουργία συμβολικού δεσμού %1 στο %2: %3"
+msgstr "Αδυναμία δημιουργίας συμβολικού συνδέσμου %1 στο %2: %3"
 
 #: src/util/fileops.cpp:178
 #, kde-format
 msgid "Cannot move %1 to %2: %3"
-msgstr "Αδύνατη η μετακίνηση το %1 στο %2: %3"
+msgstr "Αδυναμία μετακίνησης του %1 στο %2: %3"
 
 #: src/util/fileops.cpp:194 src/util/fileops.cpp:210
 #, kde-format
 msgid "Cannot copy %1 to %2: %3"
-msgstr "Αδύνατη η αντιγραφή του %1 στο %2: %3"
+msgstr "Αδυναμία αντιγραφής του %1 στο %2: %3"
 
 #: src/util/fileops.cpp:275
 #, kde-format
 msgid "Cannot delete %1: %2"
-msgstr "Αδύνατη η διαγραφή του %1: %2"
+msgstr "Αδυναμία διαγραφής του %1: %2"
 
 #: src/util/fileops.cpp:293
 #, kde-format
 msgid "Cannot create %1: %2"
-msgstr "Δεν μπορεί να δημιουργηθεί το %1: %2"
+msgstr "Αδυναμία δημιουργίας του %1: %2"
 
 #: src/util/fileops.cpp:311
 #, kde-format
 msgid "Cannot calculate the filesize of %1: %2"
-msgstr "Αδυναμία υπολογισμού του μεγέθους αρχείου %1 : %2"
+msgstr "Αδυναμία υπολογισμού του μεγέθους αρχείου %1: %2"
 
 #: src/util/fileops.cpp:327
-#, fuzzy, kde-format
-#| msgid "Cannot calculate the filesize : %1"
+#, kde-format
 msgid "Cannot calculate the filesize: %1"
-msgstr "Αδύνατος ο υπολογισμός μεγέθους του αρχείου: %1"
+msgstr "Αδυναμία υπολογισμού του μεγέθους αρχείου: %1"
 
 #: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
 #: src/util/fileops.cpp:387
 #, kde-format
 msgid "Cannot expand file: %1"
-msgstr "Αδύνατη ανάπτυξη του αρχείου: %1"
+msgstr "Αδυναμία επέκτασης του αρχείου: %1"
 
 #: src/util/fileops.cpp:417
-#, fuzzy, kde-format
-#| msgid "Cannot seek in file : %1"
+#, kde-format
 msgid "Cannot seek in file: %1"
-msgstr "Αδύνατη η αναζήτηση στο αρχείο: %1"
+msgstr "Αδυναμία αναζήτησης στο αρχείο: %1"
 
 #: src/util/functions.cpp:280
 #, kde-format
 msgid "%1/s"
-msgstr "%1/δ"
+msgstr "%1/s"
 
 #: src/util/functions.cpp:291
 #, kde-format
@@ -537,92 +503,66 @@ msgstr[0] "1 ημέρα"
 msgstr[1] "%1 ημέρες"
 
 #: src/util/signalcatcher.cpp:62
-#, fuzzy
-#| msgid "Error reading from %1"
 msgid "Error when writing to disk"
-msgstr "Σφάλμα ανάγνωσης από το %1"
+msgstr "Σφάλμα κατά την εγγραφή στο δίσκο"
 
 #: src/util/signalcatcher.cpp:62
-#, fuzzy
-#| msgid "Error reading from %1"
 msgid "Error when reading from disk"
-msgstr "Σφάλμα ανάγνωσης από το %1"
+msgstr "Σφάλμα κατά την ανάγνωση από το δίσκο"
 
 #: src/upnp/httprequest.cpp:96
-#, fuzzy
-#| msgid "Connection closed unexpectedly !"
 msgid "Connection closed unexpectedly"
-msgstr "Η σύνδεση έκλεισε απροσδόκητα!"
+msgstr "Η σύνδεση έκλεισε απροσδόκητα"
 
 #: src/upnp/httprequest.cpp:155
 msgid "Operation timed out"
-msgstr ""
+msgstr "Τέλος χρόνου λειτουργίας"
 
 #: src/upnp/upnprouter.cpp:167
-#, fuzzy, kde-format
-#| msgid "Failed to download %1 : %2"
+#, kde-format
 msgid "Failed to download %1: %2"
-msgstr "Αποτυχία λήψης %1 : %2"
+msgstr "Αποτυχία λήψης %1: %2"
 
 #: src/upnp/upnprouter.cpp:178
-#, fuzzy
-#| msgid "Error parsing router description !"
 msgid "Error parsing router description."
-msgstr "Σφάλμα ανάλυσης περιγραφής δρομολογητή (router) !"
+msgstr "Σφάλμα ανάλυσης περιγραφής δρομολογητή (router)."
 
 #: src/upnp/upnprouter.cpp:216
-#, fuzzy
-#| msgid ""
-#| "Forwarding failed: \n"
-#| "Device does not have a WANIPConnection or WANPPPConnection !"
 msgid ""
 "Forwarding failed:\n"
 "Device does not have a WANIPConnection or WANPPPConnection."
 msgstr ""
-"Αποτυχία προώθησης (Forwarding): \n"
-"Η συσκευή δεν έχει διαθέσιμη μια WANIPConnection ή μια WANPPPConnection !"
+"Αποτυχία προώθησης (Forwarding):\n"
+"Η συσκευή δεν έχει διαθέσιμη μια WANIPConnection ή μια WANPPPConnection."
 
 #: src/upnp/upnprouter.cpp:314
-#, fuzzy
-#| msgid "Cannot find port forwarding service in the device's description!"
 msgid "Cannot find port forwarding service in the device's description."
 msgstr ""
-"Αδυναμία εύρεσης υπηρεσίας προώθησης θυρών, στην περιγραφή της συσκευής!"
+"Αδυναμία εύρεσης υπηρεσίας προώθησης θυρών στην περιγραφή της συσκευής."
 
 #: examples/ktcli/main.cpp:60
-#, fuzzy
-#| msgid "Document to open"
 msgid "Torrent to open"
-msgstr "Έγγραφο για άνοιγμα"
+msgstr "Torrent για άνοιγμα"
 
 #: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-#, fuzzy
-#| msgid "Notice"
 msgid "Port to use"
-msgstr "Επισημάνσεις"
+msgstr "Θύρα για χρήση"
 
 #: examples/ktcli/main.cpp:63
-#, fuzzy
-#| msgid "Whether or not to enable a custom download order."
 msgid "Whether or not to enable encryption"
-msgstr "Αν θα ενεργοποιείται ή όχι μια προσαρμοσμένη σειρά λήψης."
+msgstr "Αν θα ενεργοποιείται ή όχι η κρυπτογράφηση"
 
 #: examples/ktcli/main.cpp:64
-#, fuzzy
-#| msgid "Whether or not to use µTorrent compatible peer exchange."
 msgid "Whether or not to enable peer exchange"
-msgstr "Αν θα γίνει χρήση της συμβατής με το µTorrent ανταλλαγής υπολογιστών."
+msgstr "Αν θα ενεργοποιείται ή όχι η ανταλλαγή ομότιμων κόμβων"
 
 #: examples/ktcli/main.cpp:65
-#, fuzzy
-#| msgid "Whether or not to show system tray popup messages."
 msgid "Whether or not to use utp"
-msgstr ""
-"Αν θα γίνεται ή όχι εμφάνιση αναδυόμενων μηνυμάτων στο πλαισίου συστήματος."
+msgstr "Αν θα γίνεται ή όχι χρήση utp"
 
 #: examples/ktcli/main.cpp:67
 msgid "ktcli"
-msgstr ""
+msgstr "ktcli"
 
 #~ msgid "Parse Error"
 #~ msgstr "Σφάλμα ανάλυσης"

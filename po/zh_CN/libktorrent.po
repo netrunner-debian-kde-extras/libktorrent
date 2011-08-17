@@ -10,10 +10,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-04-24 13:28+0200\n"
+"POT-Creation-Date: 2011-08-03 07:44+0200\n"
 "PO-Revision-Date: 2010-08-26 14:26+0000\n"
 "Last-Translator: Lie Ex <lilith.ex@gmail.com>\n"
 "Language-Team: 简体中文 <kde-china@kde.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -126,12 +127,6 @@ msgstr "写入文件 %1 失败：%2"
 msgid "Cannot preallocate diskspace: %1"
 msgstr "无法预先分配磁盘空间：%1"
 
-#: src/diskio/chunkmanager.cpp:933 src/diskio/chunkmanager.cpp:959
-#, fuzzy, kde-format
-#| msgid "Cannot open index file %1 : %2"
-msgid "Cannot open index file %1: %2"
-msgstr "无法打开索引文件 %1：%2"
-
 #: src/diskio/dndfile.cpp:89
 #, fuzzy, kde-format
 #| msgid "Cannot create file %1 : %2"
@@ -186,6 +181,12 @@ msgstr "创建 %1 失败：%2"
 #: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
+
+#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
+#, fuzzy, kde-format
+#| msgid "Cannot open index file %1 : %2"
+msgid "Cannot open index file %1: %2"
+msgstr "无法打开索引文件 %1：%2"
 
 #: src/download/downloader.cpp:810
 #, fuzzy
@@ -2866,8 +2867,8 @@ msgstr ""
 #~ "td><td>%1 (%2)</td></tr>\t\t\t\t<tr><td>Upload Speed:</td><td>%6 </"
 #~ "td><td>Leechers: </td><td>%3 (%4)</td></tr>"
 #~ msgstr ""
-#~ "<table>\t\t\t\t<tr><td>下载速度：</td><td>%5 </td><td>Seeders: </td><td>%"
-#~ "1 (%2)</td></tr>\t\t\t\t<tr><td>Upload Speed:</td><td>%6 </"
+#~ "<table>\t\t\t\t<tr><td>下载速度：</td><td>%5 </td><td>Seeders: </td><td>"
+#~ "%1 (%2)</td></tr>\t\t\t\t<tr><td>Upload Speed:</td><td>%6 </"
 #~ "td><td>Leechers: </td><td>%3 (%4)</td></tr>\t\t\t\t<tr><td>Downloaded:</"
 #~ "td><td>%7 / %8 </td><td>Uploaded: </td><td>%9</td></tr>\t\t\t\t</table>"
 
@@ -2877,8 +2878,8 @@ msgstr ""
 #~ "\t<tr><td>Uploaded:</td><td>%3 </td><td>Complete: </td><td>%4 %</td></tr>"
 #~ "\t\t\t\t</table>"
 #~ msgstr ""
-#~ "<table>\t\t\t\t<tr><td>下载速度：</td><td>%5 </td><td>Seeders: </td><td>%"
-#~ "1 (%2)</td></tr>\t\t\t\t<tr><td>Upload Speed:</td><td>%6 </"
+#~ "<table>\t\t\t\t<tr><td>下载速度：</td><td>%5 </td><td>Seeders: </td><td>"
+#~ "%1 (%2)</td></tr>\t\t\t\t<tr><td>Upload Speed:</td><td>%6 </"
 #~ "td><td>Leechers: </td><td>%3 (%4)</td></tr>\t\t\t\t<tr><td>Downloaded:</"
 #~ "td><td>%7 / %8 </td><td>Uploaded: </td><td>%9</td></tr>\t\t\t\t</table>"
 
@@ -6303,8 +6304,8 @@ msgstr ""
 #~ "Specified port (%1) is unavailable or in use by another application. "
 #~ "KTorrent is now using port %2."
 #~ msgstr ""
-#~ "指定的端口(%1)不可用，或者已经被其它应用程序使用。 KTorrent 现在使用端口 %"
-#~ "2。"
+#~ "指定的端口(%1)不可用，或者已经被其它应用程序使用。 KTorrent 现在使用端口 "
+#~ "%2。"
 
 #~ msgid "Resume KTorrent"
 #~ msgstr "恢复 KTorrent"

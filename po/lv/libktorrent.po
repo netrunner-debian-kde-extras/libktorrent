@@ -13,10 +13,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-04-24 13:28+0200\n"
+"POT-Creation-Date: 2011-08-03 07:44+0200\n"
 "PO-Revision-Date: 2010-09-11 19:26+0300\n"
 "Last-Translator: Einars Sprugis <einars8@gmail.com>\n"
 "Language-Team: Latvian <locale@laka.lv>\n"
+"Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -136,12 +137,6 @@ msgstr "Neizdevās ierakstīt failā %1: %2"
 msgid "Cannot preallocate diskspace: %1"
 msgstr "Neizdevās rezervēt vietu uz diska : %1"
 
-#: src/diskio/chunkmanager.cpp:933 src/diskio/chunkmanager.cpp:959
-#, fuzzy, kde-format
-#| msgid "Cannot open index file %1 : %2"
-msgid "Cannot open index file %1: %2"
-msgstr "Neizdevās atvērt indeksa failu %1 : %2"
-
 #: src/diskio/dndfile.cpp:89
 #, fuzzy, kde-format
 #| msgid "Cannot create file %1 : %2"
@@ -196,6 +191,12 @@ msgstr "Neizdevās izveidot %1: %2"
 #: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
+
+#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
+#, fuzzy, kde-format
+#| msgid "Cannot open index file %1 : %2"
+msgid "Cannot open index file %1: %2"
+msgstr "Neizdevās atvērt indeksa failu %1 : %2"
 
 #: src/download/downloader.cpp:810
 #, fuzzy
@@ -2984,8 +2985,8 @@ msgstr ""
 #~ "td><td>Leechers: </td><td>%3 (%4)</td></tr>"
 #~ msgstr ""
 #~ "<table>\t\t\t\t<tr><td>Lejupielādes ātrums:</td><td>%5  </td><td>Devēji: "
-#~ "</td><td>%1 (%2)</td></tr>\t\t\t\t<tr><td>Augšupielādes ātrums:</td><td>%"
-#~ "6 </td><td>Ņēmēji: </td><td>%3 (%4)</td></tr>"
+#~ "</td><td>%1 (%2)</td></tr>\t\t\t\t<tr><td>Augšupielādes ātrums:</td><td>"
+#~ "%6 </td><td>Ņēmēji: </td><td>%3 (%4)</td></tr>"
 
 #~ msgid ""
 #~ "<tr><td>Downloaded:</td><td>%1 </td><td>Size: </td><td>%2</td></tr>\t\t\t"
@@ -2993,8 +2994,8 @@ msgstr ""
 #~ "\t\t\t\t</table>"
 #~ msgstr ""
 #~ "<tr><td>Leupielādēts:</td><td>%1 </td><td>Izmērs: </td><td>%2</td></tr>\t"
-#~ "\t\t\t<tr><td>Augušupielādēts:</td><td>%3 </td><td>Pabeigts: </td><td>%4 %"
-#~ "</td></tr>\t\t\t\t</table>"
+#~ "\t\t\t<tr><td>Augušupielādēts:</td><td>%3 </td><td>Pabeigts: </td><td>%4 "
+#~ "%</td></tr>\t\t\t\t</table>"
 
 #~ msgid "<b>%1</b><br/>%2 (Share Ratio: <font color=\"%4\">%3</font>)"
 #~ msgstr "<b>%1</b><br/>%2 (Došanas attiecība: <font color=\"%4\">%3</font>)"

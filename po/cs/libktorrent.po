@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-04-24 13:28+0200\n"
-"PO-Revision-Date: 2011-02-02 10:13+0100\n"
+"POT-Creation-Date: 2011-08-03 07:44+0200\n"
+"PO-Revision-Date: 2011-06-09 16:59+0200\n"
 "Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
+"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: cs\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Lokalize 1.2\n"
 
@@ -41,7 +41,7 @@ msgstr "Torrent je nekompletní."
 
 #: src/datachecker/datacheckerjob.cpp:76
 msgid "Waiting for other data checks to finish"
-msgstr ""
+msgstr "Čekám na dokončení ostatních kontrol dat"
 
 #: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
 msgid "Checking data"
@@ -74,13 +74,13 @@ msgstr "Nemohu otevřít %1 pro zápis: souborový systém je pouze pro čtení"
 #: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:418
 #, kde-format
 msgid "Attempting to write beyond the maximum size of %1"
-msgstr ""
+msgstr "Pokouším se zapsat přes maximální velikost %1"
 
 #: src/diskio/cachefile.cpp:255
 #, kde-format
 msgid ""
 "Cannot expand file %1: attempting to grow the file beyond the maximum size"
-msgstr ""
+msgstr "Nelze rozšířit soubor %1: pokouším se růst přes maximální velikost"
 
 #: src/diskio/cachefile.cpp:259
 #, kde-format
@@ -111,11 +111,6 @@ msgstr "Zápis do souboru %1 selhal: %2"
 #, kde-format
 msgid "Cannot preallocate diskspace: %1"
 msgstr "Nelze předalokovat místo na disku: %1"
-
-#: src/diskio/chunkmanager.cpp:933 src/diskio/chunkmanager.cpp:959
-#, kde-format
-msgid "Cannot open index file %1: %2"
-msgstr "Nelze otevřít index soubor %1: %2"
 
 #: src/diskio/dndfile.cpp:89
 #, kde-format
@@ -159,13 +154,16 @@ msgstr "Nelze vytvořit %1: %2"
 
 #: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
 msgid "Unable to write to a piece mapped read only"
-msgstr ""
+msgstr "Nelze zapisovat do části mapované pouze pro čtení"
+
+#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
+#, kde-format
+msgid "Cannot open index file %1: %2"
+msgstr "Nelze otevřít index soubor %1: %2"
 
 #: src/download/downloader.cpp:810
-#, fuzzy
-#| msgid "Displays all the webseeds of a torrent"
 msgid "Disabled because webseed does not match torrent"
-msgstr "Zobrazuje všechny webové seedy torrentu"
+msgstr "Zakázáno protože webový seed se neshoduje s torrentem"
 
 #: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
 #: src/download/webseed.cpp:98
@@ -226,7 +224,7 @@ msgstr "Přesměrováno bez nového umístění."
 #: src/download/webseed.cpp:544
 #, kde-format
 msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
+msgstr "Nepoužívám po %1 vteřin (příliš mnoho chyb spojení)"
 
 #: src/download/chunkdownload.cpp:383
 #, kde-format
@@ -318,11 +316,8 @@ msgid "Paused"
 msgstr "Pozastaveno"
 
 #: src/torrent/torrentstats.cpp:98
-#, fuzzy
-#| msgctxt "Status of a torrent file"
-#| msgid "Seeding"
 msgid "Superseeding"
-msgstr "Sdílím"
+msgstr "Super-sdílení"
 
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
@@ -338,7 +333,7 @@ msgstr "Nelze otevřít torrent soubor %1: %2"
 
 #: src/torrent/torrentcontrol.cpp:308
 msgid "Error writing to disk, do you have enough diskspace?"
-msgstr ""
+msgstr "Chyba zápisu na disk, máte dostatek místa?"
 
 #: src/torrent/torrentcontrol.cpp:553
 #, kde-format
@@ -352,7 +347,7 @@ msgstr ""
 #: src/torrent/torrentcontrol.cpp:583
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
-msgstr ""
+msgstr "Během načítání <b>%1</b> nastala chyba:<br/><b>%2</b>"
 
 #: src/torrent/torrentcontrol.cpp:594
 #, kde-format
@@ -380,7 +375,7 @@ msgstr "Přesměrování bez umístění přesměrování"
 #: src/tracker/httptracker.cpp:557
 #, kde-format
 msgid "Timeout contacting tracker %1"
-msgstr ""
+msgstr "Vypršel časový limit při kontaktování trackeru %1"
 
 #: src/tracker/udptracker.cpp:409
 #, kde-format
@@ -524,21 +519,16 @@ msgid "Error parsing router description."
 msgstr "Chyba při analýze popisu směrování."
 
 #: src/upnp/upnprouter.cpp:216
-#, fuzzy
-#| msgid ""
-#| "Forwarding failed: \n"
-#| "Device does not have a WANIPConnection or WANPPPConnection."
 msgid ""
 "Forwarding failed:\n"
 "Device does not have a WANIPConnection or WANPPPConnection."
 msgstr ""
-"Předávání selhalo: \n"
+"Přesměrování selhalo:\n"
 "Zařízení nemá WANIPConnection nebo WANPPPConnection."
 
 #: src/upnp/upnprouter.cpp:314
-#, fuzzy
 msgid "Cannot find port forwarding service in the device's description."
-msgstr "V popisu zařízení nelze nalézt službu předávání portů."
+msgstr "Nemohu najít službu přesměrování portů v popisu zařízení."
 
 #: examples/ktcli/main.cpp:60
 msgid "Torrent to open"
@@ -562,7 +552,7 @@ msgstr "Zda použít utp nebo ne"
 
 #: examples/ktcli/main.cpp:67
 msgid "ktcli"
-msgstr ""
+msgstr "ktcli"
 
 #~ msgid "Parse Error"
 #~ msgstr "Chyba analýzy"

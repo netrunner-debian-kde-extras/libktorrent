@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-04-24 13:28+0200\n"
-"PO-Revision-Date: 2011-03-27 06:14+0300\n"
+"POT-Creation-Date: 2011-08-03 07:44+0200\n"
+"PO-Revision-Date: 2011-05-14 05:25+0300\n"
 "Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
+"Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"Language: fi\n"
 
 #: src/bcodec/bdecoder.cpp:62
 #, kde-format
@@ -42,11 +42,11 @@ msgstr "Torrentti on vajaa."
 
 #: src/datachecker/datacheckerjob.cpp:76
 msgid "Waiting for other data checks to finish"
-msgstr ""
+msgstr "Odotetaan muiden datan tarkistusten valmistumista"
 
 #: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
 msgid "Checking data"
-msgstr "Tarkistetaan tietoja"
+msgstr "Tarkistetaan dataa"
 
 #: src/datachecker/datacheckerjob.cpp:135
 msgid "Checking Data"
@@ -58,49 +58,45 @@ msgstr "Tarkistetaan dataa"
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
 #, kde-format
 msgid "Cannot open file %1: %2"
-msgstr "Ei voi avata tiedostoa %1: %2"
+msgstr "Tiedostoa %1 ei voitu avata: %2"
 
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
 #: src/util/fileops.cpp:396
-#, fuzzy, kde-format
-#| msgid "Cannot open %1 : %2"
+#, kde-format
 msgid "Cannot open %1: %2"
-msgstr "Ei voi avata %1 : %2"
+msgstr "Tiedostoa %1 ei voitu avata: %2"
 
 #: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
 #: src/diskio/cachefile.cpp:412 src/diskio/cachefile.cpp:480
-#, fuzzy, kde-format
-#| msgid "Cannot open %1 for writing : readonly filesystem"
+#, kde-format
 msgid "Cannot open %1 for writing: readonly filesystem"
 msgstr ""
-"Ei voitu avata kohdetta %1 kirjoitettavaksi: vain luku -tiedostojärjestelmä"
+"Tiedostoa %1 ei voitu avata kirjoitettavaksi: vain luku -tiedostojärjestelmä"
 
 #: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:418
 #, kde-format
 msgid "Attempting to write beyond the maximum size of %1"
-msgstr ""
+msgstr "Yritettiin kirjoittaa tiedostoon %1 sen enimmäiskoon ohi"
 
 #: src/diskio/cachefile.cpp:255
 #, kde-format
 msgid ""
 "Cannot expand file %1: attempting to grow the file beyond the maximum size"
 msgstr ""
+"Tiedostoa %1 ei voitu suurentaa: yritettiin suurentaa sen enimmäiskoon yli"
 
 #: src/diskio/cachefile.cpp:259
-#, fuzzy, kde-format
-#| msgid "Cannot expand file %1 : %2"
+#, kde-format
 msgid "Cannot expand file %1: %2"
-msgstr "Ei voitu laajentaa tiedostoa %1: %2"
+msgstr "Tiedostoa %1 ei voitu suurentaa: %2"
 
 #: src/diskio/cachefile.cpp:378
-#, fuzzy, kde-format
-#| msgid "Error : Reading past the end of the file %1"
+#, kde-format
 msgid "Error: Reading past the end of the file %1"
-msgstr "Virhe: Yritetään lukea tiedoston %1 lopun jälkeen"
+msgstr "Virhe: Yritettiin lukea tiedoston %1 lopun jälkeen"
 
 #: src/diskio/cachefile.cpp:383 src/diskio/cachefile.cpp:430
-#, fuzzy, kde-format
-#| msgid "Failed to seek file %1 : %2"
+#, kde-format
 msgid "Failed to seek file %1: %2"
 msgstr "Ei voitu navigoida tiedostossa %1: %2"
 
@@ -119,27 +115,20 @@ msgstr "Tiedostoon %1 ei voitu kirjoittaa: %2"
 msgid "Cannot preallocate diskspace: %1"
 msgstr "Ei voitu varata levytilaa: %1"
 
-#: src/diskio/chunkmanager.cpp:933 src/diskio/chunkmanager.cpp:959
-#, kde-format
-msgid "Cannot open index file %1: %2"
-msgstr "Indeksitiedoston %1 avaus ei onnistu: %2"
-
 #: src/diskio/dndfile.cpp:89
 #, kde-format
 msgid "Cannot create file %1: %2"
-msgstr "Ei voi luoda tiedostoa %1: %2"
+msgstr "Tiedostoa %1 ei voitu luoda: %2"
 
 #: src/diskio/dndfile.cpp:137
-#, fuzzy, kde-format
-#| msgid "Failed to write first chunk to DND file : %1"
+#, kde-format
 msgid "Failed to write first chunk to DND file: %1"
-msgstr "Ensimmäisen lohkon kirjoitus epäonnistui DND-tiedostoon: %1"
+msgstr "Ensimmäisen lohkon kirjoitus DND-tiedostoon epäonnistui: %1"
 
 #: src/diskio/dndfile.cpp:155
-#, fuzzy, kde-format
-#| msgid "Failed to write last chunk to DND file : %1"
+#, kde-format
 msgid "Failed to write last chunk to DND file: %1"
-msgstr "Viimeisen lohkon kirjoitus epäonnistui DND-tiedostoon: %1"
+msgstr "Viimeisen lohkon kirjoitus DND-tiedostoon epäonnistui: %1"
 
 #: src/diskio/movedatafilesjob.cpp:166
 msgctxt "@title job"
@@ -157,26 +146,27 @@ msgid "Destination"
 msgstr "Kohde"
 
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
-#, fuzzy, kde-format
-#| msgid "Failed to open %1 : %2"
+#, kde-format
 msgid "Failed to open %1: %2"
-msgstr "Ei voitu avata kohdetta %1: %2"
+msgstr "Kohteen %1 avaaminen epäonnistui: %2"
 
 #: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
-#, fuzzy, kde-format
-#| msgid "Failed to create %1 : %2"
+#, kde-format
 msgid "Failed to create %1: %2"
-msgstr "Ei voitu luoda %1 : %2"
+msgstr "Tiedoston %1 luominen epäonnistui: %2"
 
 #: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
 msgid "Unable to write to a piece mapped read only"
-msgstr ""
+msgstr "Ei voitu kirjoittaa vain luettavaksi määritettyyn osaan"
+
+#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
+#, kde-format
+msgid "Cannot open index file %1: %2"
+msgstr "Indeksitiedoston %1 avaus ei onnistunut: %2"
 
 #: src/download/downloader.cpp:810
-#, fuzzy
-#| msgid "Displays all the webseeds of a torrent"
 msgid "Disabled because webseed does not match torrent"
-msgstr "Näyttää kaikki torrentin web-jaot"
+msgstr "Poissa käytöstä, koska web-jako ei vastaa torrenttia"
 
 #: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
 #: src/download/webseed.cpp:98
@@ -186,12 +176,12 @@ msgstr "Ei yhteyttä"
 #: src/download/httpconnection.cpp:107
 #, kde-format
 msgid "Resolving proxy %1:%2"
-msgstr "Ratkotaan välityspalvelinta %1:%2"
+msgstr "Selvitetään välityspalvelinta %1:%2"
 
 #: src/download/httpconnection.cpp:116
 #, kde-format
 msgid "Resolving hostname %1"
-msgstr "Ratkotaan palvelinnimeä %1"
+msgstr "Selvitetään verkkonimeä %1"
 
 #: src/download/httpconnection.cpp:129 src/download/webseed.cpp:336
 msgid "Connection closed"
@@ -220,7 +210,7 @@ msgstr "Yhteydenotto web-jakoon epäonnistui"
 
 #: src/download/httpconnection.cpp:242
 msgid "Failed to resolve hostname of webseed"
-msgstr "Web-jaon palvelinnimeä ei saatu ratkotuksi"
+msgstr "Web-jaon verkkonimeä ei saatu selvitettyä"
 
 #: src/download/httpconnection.cpp:322
 msgid "Error: failed to connect, server not responding"
@@ -237,7 +227,7 @@ msgstr "Uudelleenohjattu ilman uutta kohdetta."
 #: src/download/webseed.cpp:544
 #, kde-format
 msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
+msgstr "Käyttämättömänä %1 sekuntia (Liian monta yhteysvirhettä)"
 
 #: src/download/chunkdownload.cpp:383
 #, kde-format
@@ -293,11 +283,11 @@ msgstr "Jako valmis"
 #: src/torrent/torrentstats.cpp:78
 msgctxt "Status of a torrent file"
 msgid "Seeding"
-msgstr "Lähetetään"
+msgstr "Jaetaan"
 
 #: src/torrent/torrentstats.cpp:80
 msgid "Downloading"
-msgstr "Lataa"
+msgstr "Ladataan"
 
 #: src/torrent/torrentstats.cpp:82
 msgid "Stalled"
@@ -313,7 +303,7 @@ msgstr "Varataan levytilaa"
 
 #: src/torrent/torrentstats.cpp:90
 msgid "Queued for seeding"
-msgstr "Jonossa lähetettäväksi"
+msgstr "Jonossa jaettavaksi"
 
 #: src/torrent/torrentstats.cpp:90
 msgid "Queued for downloading"
@@ -328,11 +318,8 @@ msgid "Paused"
 msgstr "Keskeytetty"
 
 #: src/torrent/torrentstats.cpp:98
-#, fuzzy
-#| msgctxt "Status of a torrent file"
-#| msgid "Seeding"
 msgid "Superseeding"
-msgstr "Lähetetään"
+msgstr "Alkujaetaan"
 
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
@@ -342,14 +329,13 @@ msgid "Corrupted torrent."
 msgstr "Viallinen torrentti."
 
 #: src/torrent/torrent.cpp:165
-#, fuzzy, kde-format
-#| msgid " Unable to open torrent file %1 : %2"
+#, kde-format
 msgid "Unable to open torrent file %1: %2"
-msgstr "Ei voi avata torrentia %1: %2"
+msgstr "Ei voitu avata torrentia %1: %2"
 
 #: src/torrent/torrentcontrol.cpp:308
 msgid "Error writing to disk, do you have enough diskspace?"
-msgstr ""
+msgstr "Virhe kirjoitettaessa levylle, onko levytilaa tarpeeksi?"
 
 #: src/torrent/torrentcontrol.cpp:553
 #, kde-format
@@ -364,7 +350,7 @@ msgstr ""
 #: src/torrent/torrentcontrol.cpp:583
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
-msgstr ""
+msgstr "Ladattaessa torrenttia <b>%1</b> havaittiin virhe:<br/><b>%2</b>"
 
 #: src/torrent/torrentcontrol.cpp:594
 #, kde-format
@@ -398,7 +384,7 @@ msgstr "Aikakatkaisu yhdistettäessä seurantapalvelimeen %1"
 #: src/tracker/udptracker.cpp:409
 #, kde-format
 msgid "Unable to resolve hostname %1"
-msgstr "Palvelinnimeä %1 ei saatu ratkaistuksi"
+msgstr "Verkkonimeä %1 ei saatu selvitettyä"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
 #: src/tracker/httptracker.cpp:462
@@ -438,15 +424,14 @@ msgid "µTP"
 msgstr "µTP"
 
 #: src/util/file.cpp:84
-#, fuzzy, kde-format
-#| msgid "Cannot write to %1 : %2"
+#, kde-format
 msgid "Cannot write to %1: %2"
-msgstr "Ei voi kirjoittaa %1 : %2"
+msgstr "Ei voitu kirjoittaa %1: %2"
 
 #: src/util/file.cpp:98
 #, kde-format
 msgid "Cannot read from %1"
-msgstr "Ei voi lukea %1"
+msgstr "Ei voitu lukea %1"
 
 #: src/util/fileops.cpp:94
 #, kde-format
@@ -456,7 +441,7 @@ msgstr "Ei voitu luoda kansiota %1"
 #: src/util/fileops.cpp:161
 #, kde-format
 msgid "Cannot symlink %1 to %2: %3"
-msgstr "Ei voi luoda linkkiä %1 - %2: %3"
+msgstr "Ei voitu luoda linkkiä %1 - %2: %3"
 
 #: src/util/fileops.cpp:178
 #, kde-format
@@ -492,11 +477,10 @@ msgstr "Ei voitu laskea tiedostokokoa: %1"
 #: src/util/fileops.cpp:387
 #, kde-format
 msgid "Cannot expand file: %1"
-msgstr "Ei voitu laajentaa tiedostoa: %1"
+msgstr "Ei voitu suurentaa tiedostoa: %1"
 
 #: src/util/fileops.cpp:417
-#, fuzzy, kde-format
-#| msgid "Cannot seek in file : %1"
+#, kde-format
 msgid "Cannot seek in file: %1"
 msgstr "Ei voi hakea tiedostossa: %1"
 
@@ -505,12 +489,13 @@ msgstr "Ei voi hakea tiedostossa: %1"
 msgid "%1/s"
 msgstr "%1/s"
 
+# Lyhyempi muoto mahtuu paremmin.
 #: src/util/functions.cpp:291
 #, kde-format
 msgid "1 day "
 msgid_plural "%1 days "
-msgstr[0] "1 päivä "
-msgstr[1] "%1 päivää "
+msgstr[0] "1 pv "
+msgstr[1] "%1 pv "
 
 #: src/util/signalcatcher.cpp:62
 msgid "Error when writing to disk"
@@ -526,23 +511,24 @@ msgstr "Yhteys katkesi odottamatta"
 
 #: src/upnp/httprequest.cpp:155
 msgid "Operation timed out"
-msgstr ""
+msgstr "Toiminnon aikakatkaisu"
 
 #: src/upnp/upnprouter.cpp:167
-#, fuzzy, kde-format
-#| msgid "Failed to download %1 : %2"
+#, kde-format
 msgid "Failed to download %1: %2"
 msgstr "Kohteen %1 lataus epäonnistui: %2"
 
 #: src/upnp/upnprouter.cpp:178
 msgid "Error parsing router description."
-msgstr ""
+msgstr "Virhe jäsennettäessä reitittimen kuvausta."
 
 #: src/upnp/upnprouter.cpp:216
 msgid ""
 "Forwarding failed:\n"
 "Device does not have a WANIPConnection or WANPPPConnection."
 msgstr ""
+"Ohjaus epäonnistui:\n"
+"Laitteella ei ole WANIPConnection- eikä WANPPPConnection-palvelua."
 
 #: src/upnp/upnprouter.cpp:314
 msgid "Cannot find port forwarding service in the device's description."
@@ -557,22 +543,16 @@ msgid "Port to use"
 msgstr "Käytettävä portti"
 
 #: examples/ktcli/main.cpp:63
-#, fuzzy
-#| msgid "Whether or not to enable a custom download order."
 msgid "Whether or not to enable encryption"
-msgstr "Mukautetaanko latausjärjestystä."
+msgstr "Käytetäänkö salausta"
 
 #: examples/ktcli/main.cpp:64
-#, fuzzy
-#| msgid "Whether or not to use µTorrent compatible peer exchange."
 msgid "Whether or not to enable peer exchange"
-msgstr "Käytetäänkö µTorrent-yhteensopiva käyttäjätietojen vaihtoa."
+msgstr "Käytetäänkö käyttäjätietojen vaihtoa"
 
 #: examples/ktcli/main.cpp:65
-#, fuzzy
-#| msgid "Whether or not to show system tray popup messages."
 msgid "Whether or not to use utp"
-msgstr "Näytetäänkö ilmoitusalueen ponnahdusilmoituksia."
+msgstr "Käytetäänkö utp:tä"
 
 #: examples/ktcli/main.cpp:67
 msgid "ktcli"
