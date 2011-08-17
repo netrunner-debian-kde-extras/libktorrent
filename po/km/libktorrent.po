@@ -1,7 +1,6 @@
 # translation of libktorrent.po to Khmer
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-#
 # Khoem Sokhem <khoemsokhem@khmeros.info>, 2008, 2009, 2010.
 # Auk Piseth <piseth_dv@khmeros.info>, 2008, 2009.
 # Eng Vannak <evannak@khmeros.info>, 2008.
@@ -9,21 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-04-24 13:28+0200\n"
+"POT-Creation-Date: 2011-08-03 07:44+0200\n"
 "PO-Revision-Date: 2010-07-05 10:24+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
 "X-Generator: KBabel 1.11.4\n"
+"X-Language: km-CM\n"
 
 #: src/bcodec/bdecoder.cpp:62
 #, kde-format
@@ -48,18 +43,17 @@ msgid "Torrent is incomplete."
 msgstr "Torrent មិន​ទាន់​បាន​បញ្ចប់​នូវឡើយ​ទេ !"
 
 #: src/datachecker/datacheckerjob.cpp:76
+#, fuzzy
 msgid "Waiting for other data checks to finish"
-msgstr ""
+msgstr "រង់ចាំ​ទិន្នន័យ​ផ្សេង​ទៀត​ត្រូវ​បាន​​ពិនិត្យ​មើល​ដើម្បី​បញ្ចប់​​​"
 
 #: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
 msgid "Checking data"
 msgstr "ពិនិត្យ​ទិន្នន័យ​"
 
 #: src/datachecker/datacheckerjob.cpp:135
-#, fuzzy
-#| msgid "Checking data"
 msgid "Checking Data"
-msgstr "ពិនិត្យ​ទិន្នន័យ​"
+msgstr "ពិនិត្យ​ទិន្នន័យ​​"
 
 #: src/datachecker/multidatachecker.cpp:203
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
@@ -71,17 +65,15 @@ msgstr "មិន​អាច​បើក​ឯកសារ %1 ៖​ %2 បា
 
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
 #: src/util/fileops.cpp:396
-#, fuzzy, kde-format
-#| msgid "Cannot open %1 : %2"
+#, kde-format
 msgid "Cannot open %1: %2"
-msgstr "មិនអាច​បើក​ %1 ៖​ %2"
+msgstr "មិន​អាច​បើក​ %1 ៖ %2"
 
 #: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
 #: src/diskio/cachefile.cpp:412 src/diskio/cachefile.cpp:480
-#, fuzzy, kde-format
-#| msgid "Cannot open %1 for writing : readonly filesystem"
+#, kde-format
 msgid "Cannot open %1 for writing: readonly filesystem"
-msgstr "មិនអាច​បើក​សរសេរ %1 ៖ ប្រព័ន្ធ​ឯកសារ​បាន​តែ​អាន"
+msgstr "មិនអាច​បើក​សរសេរ %1 ៖ ប្រព័ន្ធ​ឯកសារ​បាន​តែ​អាន​"
 
 #: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:418
 #, kde-format
@@ -98,10 +90,9 @@ msgid ""
 msgstr "មិនអាច​ពង្រីក​ឯកសារ %1 បាន​ទេ ៖ ប៉ុនប៉ង​ពង្រីក​ឯកសារ​ដល់​ទំហំ​អតិបរមា"
 
 #: src/diskio/cachefile.cpp:259
-#, fuzzy, kde-format
-#| msgid "Cannot expand file %1 : %2"
+#, kde-format
 msgid "Cannot expand file %1: %2"
-msgstr "មិនអាច​ពង្រីក​​ឯកសារ %1 ៖ %2"
+msgstr "មិនអាច​ពង្រីក​​ឯកសារ %1 ៖ %2​"
 
 #: src/diskio/cachefile.cpp:378
 #, fuzzy, kde-format
@@ -110,10 +101,9 @@ msgid "Error: Reading past the end of the file %1"
 msgstr "កំហុស ៖ អាន​ហួស​ចុង​ឯកសារ %1"
 
 #: src/diskio/cachefile.cpp:383 src/diskio/cachefile.cpp:430
-#, fuzzy, kde-format
-#| msgid "Failed to seek file %1 : %2"
+#, kde-format
 msgid "Failed to seek file %1: %2"
-msgstr "បរាជ័យ​ក្នុងករា​រកមើល​ឯកសារ %1 ៖ %2"
+msgstr "បរាជ័យ​ក្នុង​ការ​​រកមើល​ឯកសារ %1 ៖ %2​​"
 
 #: src/diskio/cachefile.cpp:391
 #, kde-format
@@ -121,10 +111,9 @@ msgid "Error reading from %1"
 msgstr "កំហុស​ក្នុងការ​អាន​ពី %1"
 
 #: src/diskio/cachefile.cpp:434
-#, fuzzy, kde-format
-#| msgid "Failed to write to file %1 : %2"
+#, kde-format
 msgid "Failed to write to file %1: %2"
-msgstr "បរាជ័យ​ក្នុងការ​សរសេរ​ទៅ​ឯកសារ %1 ៖ %2"
+msgstr "បរាជ័យ​ក្នុង​ការ​សរសេរ​ទៅ​ឯកសារ %1 ៖ %2​"
 
 #: src/diskio/cachefile.cpp:501
 #, fuzzy, kde-format
@@ -132,64 +121,59 @@ msgstr "បរាជ័យ​ក្នុងការ​សរសេរ​ទៅ
 msgid "Cannot preallocate diskspace: %1"
 msgstr "មិនអាច​បម្រុងទុក​ទំហំថាស​ជាមុន​បាន ៖ %1"
 
-#: src/diskio/chunkmanager.cpp:933 src/diskio/chunkmanager.cpp:959
-#, fuzzy, kde-format
-#| msgid "Cannot open index file %1 : %2"
-msgid "Cannot open index file %1: %2"
-msgstr "មិន​អាច​បើក​ឯកសារ​លិបិក្រម %1 ៖ %2"
-
 #: src/diskio/dndfile.cpp:89
-#, fuzzy, kde-format
-#| msgid "Cannot create file %1 : %2"
+#, kde-format
 msgid "Cannot create file %1: %2"
-msgstr "មិន​អាច​បង្កើត​ឯកសារ %1 ៖​ %2"
+msgstr "មិន​អាច​បង្កើត​ឯកសារ %1 ៖​ %2"
 
 #: src/diskio/dndfile.cpp:137
-#, fuzzy, kde-format
-#| msgid "Failed to write first chunk to DND file : %1"
+#, kde-format
 msgid "Failed to write first chunk to DND file: %1"
-msgstr "បរាជ័យ​ក្នុង​ការ​សរសេរ​កំណាត់​ទីមួយ​ទៅ​ឯកសារ DND ៖ %1"
+msgstr "បរាជ័យ​ក្នុង​ការ​សរសេរ​កំណាត់​ទី​មួយ​ទៅ​ឯកសារ DND ៖ %1​"
 
 #: src/diskio/dndfile.cpp:155
-#, fuzzy, kde-format
-#| msgid "Failed to write last chunk to DND file : %1"
+#, kde-format
 msgid "Failed to write last chunk to DND file: %1"
-msgstr "បរាជ័យ​ក្នុង​ការ​សរសេរ​កំណាត់​ចុងក្រោយ​ទៅ​ឯកសារ DND ៖ %1"
+msgstr "បរាជ័យ​ក្នុង​ការ​សរសេរ​កំណាត់​ចុងក្រោយ​ទៅ​ឯកសារ DND ៖ %1​"
 
 #: src/diskio/movedatafilesjob.cpp:166
 msgctxt "@title job"
 msgid "Moving"
-msgstr ""
+msgstr "ផ្លាស់ទី"
 
 #: src/diskio/movedatafilesjob.cpp:167
 msgctxt "The source of a file operation"
 msgid "Source"
-msgstr ""
+msgstr "ប្រភព"
 
 #: src/diskio/movedatafilesjob.cpp:168
 msgctxt "The destination of a file operation"
 msgid "Destination"
-msgstr ""
+msgstr "ទិសដៅ"
 
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
-#, fuzzy, kde-format
-#| msgid "Failed to open %1 : %2"
+#, kde-format
 msgid "Failed to open %1: %2"
-msgstr "បរាជ័យ​ក្នុងការ​បើក %1 ៖ %2"
+msgstr "បរាជ័យ​ក្នុង​ការ​បើក​ %1 ៖ %2"
 
 #: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
-#, fuzzy, kde-format
-#| msgid "Failed to create %1 : %2"
+#, kde-format
 msgid "Failed to create %1: %2"
-msgstr "បរាជ័យ​ក្នុង​ការ​បង្កើត %1 ៖ %2"
+msgstr "បរាជ័យ​ក្នុង​ការ​បង្កើត​ %1 ៖ %2"
 
 #: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
+#, fuzzy
 msgid "Unable to write to a piece mapped read only"
-msgstr ""
+msgstr "មិន​អាច​សរសេរ​អំពី​​បំណែង​ចែក​​បាន​តែ​អាន​ដែល​ផ្គូផ្គង​ឡើយ"
+
+#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
+#, kde-format
+msgid "Cannot open index file %1: %2"
+msgstr "មិន​អាច​បើក​ឯកសារ​លិបិក្រម %1 ៖ %2​"
 
 #: src/download/downloader.cpp:810
 msgid "Disabled because webseed does not match torrent"
-msgstr ""
+msgstr "បាន​បិទ​ពីព្រោះ​បណ្ដុះ​បណ្ដាញ​មិន​ផ្គូផ្គង​ torrent ឡើយ​"
 
 #: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
 #: src/download/webseed.cpp:98
@@ -250,7 +234,7 @@ msgstr "បាន​បញ្ជូន​បន្ត​ដោយ​គ្មា
 #: src/download/webseed.cpp:544
 #, kde-format
 msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
+msgstr "មិន​បាន​ប្រើ​វិនាទី​ %1 (បរាជ័យ​ការ​តភ្ជាប់​ជា​ច្រើន​)"
 
 #: src/download/chunkdownload.cpp:383
 #, kde-format
@@ -265,7 +249,7 @@ msgstr "យល់​​ព្រម​"
 #: src/interfaces/trackerinterface.cpp:58
 #, kde-format
 msgid "Warning: %1"
-msgstr ""
+msgstr "ការ​ព្រមាន​ ៖ %1"
 
 #: src/interfaces/trackerinterface.cpp:59
 msgid "Announcing"
@@ -344,7 +328,7 @@ msgstr "បាន​ផ្អាក"
 #| msgctxt "Status of a torrent file"
 #| msgid "Seeding"
 msgid "Superseeding"
-msgstr "បណ្ដុះ"
+msgstr "ការ​បណ្ដុះ​​ដ៏​អស្ចារ្យ​​​"
 
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
@@ -354,14 +338,13 @@ msgid "Corrupted torrent."
 msgstr "torrent ខូច​ហើយ !"
 
 #: src/torrent/torrent.cpp:165
-#, fuzzy, kde-format
-#| msgid " Unable to open torrent file %1 : %2"
+#, kde-format
 msgid "Unable to open torrent file %1: %2"
-msgstr " មិន​អាច​បើក​ឯកសារ​ torrent %1 ៖ %2 បានទេ"
+msgstr " មិន​អាច​បើក​ឯកសារ​ torrent %1 ៖ %2 បានទេ"
 
 #: src/torrent/torrentcontrol.cpp:308
 msgid "Error writing to disk, do you have enough diskspace?"
-msgstr ""
+msgstr "កំហុស​ក្នុង​ការ​សរសេរ​អំពី​ថាស ​តើ​អ្នក​មាន​ទំហំ​ថាស​គ្រប់គ្រាន់​ឬ​ទេ ?​"
 
 #: src/torrent/torrentcontrol.cpp:553
 #, kde-format
@@ -375,13 +358,12 @@ msgstr ""
 #: src/torrent/torrentcontrol.cpp:583
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
-msgstr ""
+msgstr "កំហុស​បាន​កើត​ឡើង​ខណៈ​ពេល​កំពុង​​ផ្ទុក​ <b>%1</b> ៖<br/><b>%2</b>"
 
 #: src/torrent/torrentcontrol.cpp:594
-#, fuzzy, kde-format
-#| msgid "Unable to create %1 : %2"
+#, kde-format
 msgid "Unable to create %1: %2"
-msgstr "មិន​អាច​បង្កើត %1 ៖ %2"
+msgstr "មិន​អាច​បង្កើត %1 ៖ %2​"
 
 #: src/torrent/torrentcontrol.cpp:609
 #, kde-format
@@ -450,10 +432,9 @@ msgid "µTP"
 msgstr "µTP"
 
 #: src/util/file.cpp:84
-#, fuzzy, kde-format
-#| msgid "Cannot write to %1 : %2"
+#, kde-format
 msgid "Cannot write to %1: %2"
-msgstr "មិន​អាច​សរសេរ​ទៅ​កាន់ %1 ៖ %2"
+msgstr "មិន​អាច​សរសេរ​ទៅកាន់​ %1 ៖ %2 បាន​ទេ​"
 
 #: src/util/file.cpp:98
 #, kde-format
@@ -496,10 +477,9 @@ msgid "Cannot calculate the filesize of %1: %2"
 msgstr "មិន​អាច​គណនា​ទំហំ​ឯកសារ​%1 ៖ %2"
 
 #: src/util/fileops.cpp:327
-#, fuzzy, kde-format
-#| msgid "Cannot calculate the filesize : %1"
+#, kde-format
 msgid "Cannot calculate the filesize: %1"
-msgstr "មិនអាច​គណនា​ទំហំ​ឯកសារ ៖ %1"
+msgstr "មិន​អាច​គណនា​ទំហំ​ឯកសារ ៖ %1​"
 
 #: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
 #: src/util/fileops.cpp:387
@@ -508,10 +488,9 @@ msgid "Cannot expand file: %1"
 msgstr "មិន​អាច​ពង្រីក​​ឯកសារ​ ៖​ %1"
 
 #: src/util/fileops.cpp:417
-#, fuzzy, kde-format
-#| msgid "Cannot seek in file : %1"
+#, kde-format
 msgid "Cannot seek in file: %1"
-msgstr "មិន​អាច​ស្វែងរក​ក្នុង​ឯកសារ​ ៖​ %1"
+msgstr "មិន​អាច​ស្វែងរក​ក្នុង​ឯកសារ​ ៖​ %1"
 
 #: src/util/functions.cpp:280
 #, kde-format
@@ -526,71 +505,67 @@ msgstr[0] "%1 ថ្ងៃ "
 
 #: src/util/signalcatcher.cpp:62
 msgid "Error when writing to disk"
-msgstr ""
+msgstr "កំហុស​នៅ​ពេល​សរសេរ​ទៅ​កាន់​ថាស​"
 
 #: src/util/signalcatcher.cpp:62
-#, fuzzy
-#| msgid "Error reading from %1"
 msgid "Error when reading from disk"
-msgstr "កំហុស​ក្នុងការ​អាន​ពី %1"
+msgstr "កំហុស​នៅ​ពេល​កំពុង​អាន​ពី​ថាស​"
 
 #: src/upnp/httprequest.cpp:96
-#, fuzzy
-#| msgid "Connection closed"
 msgid "Connection closed unexpectedly"
-msgstr "បាន​បិទ​ការ​តភ្ជាប់"
+msgstr "បាន​បិទ​ការ​តភ្ជាប់​ដោយ​មិន​បាន​រំពឹង"
 
 #: src/upnp/httprequest.cpp:155
 msgid "Operation timed out"
-msgstr ""
+msgstr "អស់​ពេលវេលា​ប្រតិបត្តិការ​"
 
 #: src/upnp/upnprouter.cpp:167
-#, fuzzy, kde-format
-#| msgid "Failed to open %1 : %2"
+#, kde-format
 msgid "Failed to download %1: %2"
-msgstr "បរាជ័យ​ក្នុងការ​បើក %1 ៖ %2"
+msgstr "ទាញ​យក​បាន​បរាជ័យ​ %1 ៖ %2"
 
 #: src/upnp/upnprouter.cpp:178
+#, fuzzy
 msgid "Error parsing router description."
-msgstr ""
+msgstr "កំហុស​ញែក​​សេចក្ដី​ពិពណ៌នា​អំពី​រ៉ោតទ័រ ។"
 
 #: src/upnp/upnprouter.cpp:216
+#, fuzzy
 msgid ""
 "Forwarding failed:\n"
 "Device does not have a WANIPConnection or WANPPPConnection."
 msgstr ""
+"បាន​បរាជ័យ​បញ្ជូន​​បន្ត​ ៖\n"
+"ឧបករណ៍​មិន​មាន​ការ​តភ្ជាប់​WANIP ឬ​​ការ​តភ្ជាប់​ WANPPP ឡើយ ។"
 
 #: src/upnp/upnprouter.cpp:314
+#, fuzzy
 msgid "Cannot find port forwarding service in the device's description."
-msgstr ""
+msgstr "មិន​អាច​ស្វែងរក​ច្រក​សេវា​បញ្ជូន​បន្ត​នៅ​ក្នុង​សេចក្ដី​ពិពណ៌នា​អំពី​ឧបករណ៍​ឡើយ​ ។"
 
 #: examples/ktcli/main.cpp:60
-#, fuzzy
-#| msgid "Torrent is incomplete."
 msgid "Torrent to open"
-msgstr "Torrent មិន​ទាន់​បាន​បញ្ចប់​នូវឡើយ​ទេ !"
+msgstr "Torrent ត្រូវ​បើក​"
 
 #: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-#, fuzzy
-#| msgid "Not in use"
 msgid "Port to use"
-msgstr "មិន​កំពុង​ប្រើ​ទេ"
+msgstr "ច្រក​ត្រូវ​ប្រើ​"
 
 #: examples/ktcli/main.cpp:63
 msgid "Whether or not to enable encryption"
-msgstr ""
+msgstr "ថា​តើ​បើក​​ ឬ​មិន​បើក​ការ​អ៊ិនគ្រីប​"
 
 #: examples/ktcli/main.cpp:64
 msgid "Whether or not to enable peer exchange"
-msgstr ""
+msgstr "ថា​តើ​បើក ឬ​មិន​បើក​ការ​ផ្លាស់ប្ដូរ​ម៉ាស៊ីន​ដូចគ្នា​​"
 
 #: examples/ktcli/main.cpp:65
 msgid "Whether or not to use utp"
-msgstr ""
+msgstr "ថា​តើ​​ប្រើ​ ​ឬ​​មិន​ប្រើ​ utp"
 
 #: examples/ktcli/main.cpp:67
 msgid "ktcli"
-msgstr ""
+msgstr "ktcli"
 
 #~ msgid "Parse Error"
 #~ msgstr "កំហុស​ញែក"

@@ -6,10 +6,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-04-24 13:28+0200\n"
+"POT-Creation-Date: 2011-08-03 07:44+0200\n"
 "PO-Revision-Date: 2009-12-18 18:26+0100\n"
 "Last-Translator: astur <malditoastur@gmail.com>\n"
 "Language-Team: Asturian <alministradores@softastur.org>\n"
+"Language: ast\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -122,12 +123,6 @@ msgstr "Fallu al escribir nel ficheru %1: %2"
 msgid "Cannot preallocate diskspace: %1"
 msgstr "Nun puede preasignase espaciu en discu: %1"
 
-#: src/diskio/chunkmanager.cpp:933 src/diskio/chunkmanager.cpp:959
-#, fuzzy, kde-format
-#| msgid "Cannot open index file %1 : %2"
-msgid "Cannot open index file %1: %2"
-msgstr "Nun puede abrise'l ficheru índiz %1: %2"
-
 #: src/diskio/dndfile.cpp:89
 #, fuzzy, kde-format
 #| msgid "Cannot create file %1 : %2"
@@ -182,6 +177,12 @@ msgstr "Fallu al criar %1: %2"
 #: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
+
+#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
+#, fuzzy, kde-format
+#| msgid "Cannot open index file %1 : %2"
+msgid "Cannot open index file %1: %2"
+msgstr "Nun puede abrise'l ficheru índiz %1: %2"
 
 #: src/download/downloader.cpp:810
 #, fuzzy
@@ -1391,8 +1392,8 @@ msgstr ""
 #~ "this by the thing you are searching for."
 #~ msgstr ""
 #~ "%1 nun almite Opensearch; tendrás qu'introducir l'URL de gueta "
-#~ "manualmente. L'URL tien de caltener «{searchTerms}», que ktorrent camudará "
-#~ "polo que té guetando."
+#~ "manualmente. L'URL tien de caltener «{searchTerms}», que ktorrent "
+#~ "camudará polo que té guetando."
 
 #~ msgid "The URL %1 does not contain {searchTerms}."
 #~ msgstr "L'URL %1 nun contién {searchTerms}."
@@ -2096,8 +2097,8 @@ msgstr ""
 #~ msgstr ""
 #~ "Direición IP <b>%1</b> non válida. Tienes d'introducir una IP nel formatu "
 #~ "«XXX.XXX.XXX.XXX».<br/><br/> También puedes usar carauteres comodín pa "
-#~ "intervalos, como «127.0.0.*» o especificar rangos como '200.10.10.0-"
-#~ "200.10.10.40'."
+#~ "intervalos, como «127.0.0.*» o especificar rangos como "
+#~ "'200.10.10.0-200.10.10.40'."
 
 #~ msgid "Choose a file"
 #~ msgstr "Escueyi un ficheru"
@@ -5051,8 +5052,8 @@ msgstr ""
 #~ "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
 #~ "font-weight:400; font-style:normal;\">\n"
 #~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Si usar o non el «proxy» "
-#~ "HTTP nes conexones al llocalizador.</p></body></html>"
+#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Si usar o non el "
+#~ "«proxy» HTTP nes conexones al llocalizador.</p></body></html>"
 
 #~ msgid "Use proxy for tracker connections"
 #~ msgstr "Usar el «proxy» nes conexones del llocalizador"

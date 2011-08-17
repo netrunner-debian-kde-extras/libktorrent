@@ -6,10 +6,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-04-24 13:28+0200\n"
+"POT-Creation-Date: 2011-08-03 07:44+0200\n"
 "PO-Revision-Date: 2010-05-14 16:13+0200\n"
 "Last-Translator: Nicola Ruggero <nicola@nxnt.org>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -125,12 +126,6 @@ msgstr "Impossibile scrivere nel file %1: %2"
 msgid "Cannot preallocate diskspace: %1"
 msgstr "Impossibile riservare lo spazio su disco: %1"
 
-#: src/diskio/chunkmanager.cpp:933 src/diskio/chunkmanager.cpp:959
-#, fuzzy, kde-format
-#| msgid "Cannot open index file %1 : %2"
-msgid "Cannot open index file %1: %2"
-msgstr "Impossibile aprire il file indice %1: %2"
-
 #: src/diskio/dndfile.cpp:89
 #, fuzzy, kde-format
 #| msgid "Cannot create file %1 : %2"
@@ -185,6 +180,12 @@ msgstr "Impossibile creare %1 : %2"
 #: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
+
+#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
+#, fuzzy, kde-format
+#| msgid "Cannot open index file %1 : %2"
+msgid "Cannot open index file %1: %2"
+msgstr "Impossibile aprire il file indice %1: %2"
 
 #: src/download/downloader.cpp:810
 #, fuzzy
@@ -2845,8 +2846,8 @@ msgstr ""
 #~ "</b></td><td></td></tr><tr><td>Scaricamento: <font color='#1c9a1c'>%1</"
 #~ "font></td><td>Invio: <font color='#990000'>%2</font></td></"
 #~ "tr><tr><td><b>Trasferimenti:</b></td><td></td></tr><tr><td>Scaricati: "
-#~ "<font color='#1c9a1c'>%3</font></td><td>Inviati: <font color='#990000'>%"
-#~ "4</font></td></tr></table>"
+#~ "<font color='#1c9a1c'>%3</font></td><td>Inviati: <font color='#990000'>"
+#~ "%4</font></td></tr></table>"
 
 #~ msgid ""
 #~ "<b>%1</b> has completed downloading.<br>Average speed: %2 DL / %3 UL."
@@ -3135,8 +3136,8 @@ msgstr ""
 #~ "The torrent \"%1\" has reached its maximum share ratio and its maximum "
 #~ "seed time. Ignore the limit and start seeding anyway?"
 #~ msgstr ""
-#~ "Il torrent «%1» ha raggiunto il livello massimo di condivisione e il tempo "
-#~ "massimo di distribuzione. Ignoro il limite e inizio ugualmente la "
+#~ "Il torrent «%1» ha raggiunto il livello massimo di condivisione e il "
+#~ "tempo massimo di distribuzione. Ignoro il limite e inizio ugualmente la "
 #~ "distribuzione seme?"
 
 #, fuzzy
@@ -3147,8 +3148,8 @@ msgstr ""
 #~ "The torrent \"%1\" has reached its maximum share ratio. Ignore the limit "
 #~ "and start seeding anyway?"
 #~ msgstr ""
-#~ "Il torrent «%1» ha raggiunto il livello massimo di condivisione. Ignoro il "
-#~ "limite e inizio ugualmente la distribuzione seme?"
+#~ "Il torrent «%1» ha raggiunto il livello massimo di condivisione. Ignoro "
+#~ "il limite e inizio ugualmente la distribuzione seme?"
 
 #, fuzzy
 #~| msgid ""
@@ -3542,7 +3543,8 @@ msgstr ""
 #~ "Will download seasons 1, 3, 4, 5, 6 and 9"
 #~ msgstr ""
 #~ "Specifica le stagioni da scaricare, più stagioni possono essere separate "
-#~ "dal carattere «,». Puoi usare anche gli intervalli usando il carattere «-»\n"
+#~ "dal carattere «,». Puoi usare anche gli intervalli usando il carattere "
+#~ "«-»\n"
 #~ "\n"
 #~ "Per esempio: 1, 3-6, 9\n"
 #~ "\n"
@@ -3560,7 +3562,8 @@ msgstr ""
 #~ "Will download episodes 1, 3, 4, 5, 6 and 9"
 #~ msgstr ""
 #~ "Specifica gli episodi da scaricare, più episodi possono essere separati "
-#~ "dal carattere «,». Puoi usare anche gli intervalli usando il carattere «-»\n"
+#~ "dal carattere «,». Puoi usare anche gli intervalli usando il carattere "
+#~ "«-»\n"
 #~ "\n"
 #~ "Per esempio: 1, 3-6, 9\n"
 #~ "\n"

@@ -5,10 +5,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-04-24 13:28+0200\n"
+"POT-Creation-Date: 2011-08-03 07:44+0200\n"
 "PO-Revision-Date: 2009-11-17 11:13+0100\n"
 "Last-Translator: Axel Rousseau <axel@esperanto-jeunes.org>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
+"Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -121,12 +122,6 @@ msgstr "Ne povas krei %1 : %2"
 msgid "Cannot preallocate diskspace: %1"
 msgstr "Ne povas antaŭdisponigi diskspacon : %1"
 
-#: src/diskio/chunkmanager.cpp:933 src/diskio/chunkmanager.cpp:959
-#, fuzzy, kde-format
-#| msgid "Cannot open index file %1 : %2"
-msgid "Cannot open index file %1: %2"
-msgstr "Ne povas malfermi indekshavan dosieron %1 : %2"
-
 #: src/diskio/dndfile.cpp:89
 #, fuzzy, kde-format
 #| msgid "Cannot create file %1 : %2"
@@ -181,6 +176,12 @@ msgstr "Ne povas krei %1 : %2"
 #: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
+
+#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
+#, fuzzy, kde-format
+#| msgid "Cannot open index file %1 : %2"
+msgid "Cannot open index file %1: %2"
+msgstr "Ne povas malfermi indekshavan dosieron %1 : %2"
 
 #: src/download/downloader.cpp:810
 msgid "Disabled because webseed does not match torrent"
@@ -2679,8 +2680,8 @@ msgstr ""
 #~ "<b>%1</b> has reached its maximum share ratio of %2 and has been stopped."
 #~ "<br>Uploaded %3 at an average speed of %4."
 #~ msgstr ""
-#~ "<b>%1</b> atingis maksimuman kunhavan rejŝon de %2 kaj ĉesis.<br>Alŝutis %"
-#~ "3 per averaĝa rapido de %4."
+#~ "<b>%1</b> atingis maksimuman kunhavan rejŝon de %2 kaj ĉesis.<br>Alŝutis "
+#~ "%3 per averaĝa rapido de %4."
 
 #~ msgid ""
 #~ "<b>%1</b> has reached its maximum seed time of %2 hours and has been "
