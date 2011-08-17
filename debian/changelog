@@ -1,6 +1,7 @@
 libktorrent (1.1.2-1) UNRELEASED; urgency=low
 
   * New upstream release.
+  * Update symbol file.
 
  -- Modestas Vainius <modax@debian.org>  Thu, 18 Aug 2011 00:44:19 +0300
 
