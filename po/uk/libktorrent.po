@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-03 07:44+0200\n"
+"POT-Creation-Date: 2011-09-11 11:17+0200\n"
 "PO-Revision-Date: 2011-02-20 12:09+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <translation@linux.org.ua>\n"
@@ -225,13 +225,6 @@ msgstr "Помилка: час очікування результатів за�
 msgid "Redirected without a new location."
 msgstr "Переспрямовано без зазначення нової адреси."
 
-#: src/download/webseed.cpp:544
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
-"Не використовується %1 секунд (занадто багато помилок під час спроби "
-"з’єднання)"
-
 #: src/download/chunkdownload.cpp:383
 #, kde-format
 msgid "1 peer"
@@ -240,6 +233,13 @@ msgstr[0] "%1 вузол"
 msgstr[1] "%1 вузли"
 msgstr[2] "%1 вузлів"
 msgstr[3] "%1 вузол"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr ""
+"Не використовується %1 секунд (занадто багато помилок під час спроби "
+"з’єднання)"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-03 07:44+0200\n"
+"POT-Creation-Date: 2011-09-11 11:17+0200\n"
 "PO-Revision-Date: 2011-03-03 20:19+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
@@ -228,17 +228,17 @@ msgstr "Fout: time-out op verzoek"
 msgid "Redirected without a new location."
 msgstr "Doorgestuurd zonder een nieuwe locatie."
 
-#: src/download/webseed.cpp:544
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr "Ongebruikt voor %1 seconden (Te veel mislukkingen bij een verbinding)"
-
 #: src/download/chunkdownload.cpp:383
 #, kde-format
 msgid "1 peer"
 msgid_plural "%1 peers"
 msgstr[0] "1 peers"
 msgstr[1] "%1 peers"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr "Ongebruikt voor %1 seconden (Te veel mislukkingen bij een verbinding)"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"

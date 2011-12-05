@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KTorrent 3.1\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-03 07:44+0200\n"
+"POT-Creation-Date: 2011-09-11 11:17+0200\n"
 "PO-Revision-Date: 2010-04-02 07:54+0200\n"
 "Last-Translator: Csanád Tóth <toth.csanad@kde.hu>\n"
 "Language-Team: Magyar <kde-lista-request@sophia.jpte.hu>\n"
@@ -246,17 +246,17 @@ msgstr "Hiba történt, időtúllépés"
 msgid "Redirected without a new location."
 msgstr "Átirányítva új hely nélkül."
 
-#: src/download/webseed.cpp:544
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
-
 #: src/download/chunkdownload.cpp:383
 #, kde-format
 msgid "1 peer"
 msgid_plural "%1 peers"
 msgstr[0] "%1 partner"
 msgstr[1] "%1 partner"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr ""
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"

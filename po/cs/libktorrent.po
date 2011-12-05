@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-03 07:44+0200\n"
-"PO-Revision-Date: 2011-06-09 16:59+0200\n"
+"POT-Creation-Date: 2011-09-11 11:17+0200\n"
+"PO-Revision-Date: 2011-11-07 15:57+0100\n"
 "Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -69,7 +69,7 @@ msgstr "Nelze otevřít %1: %2"
 #: src/diskio/cachefile.cpp:412 src/diskio/cachefile.cpp:480
 #, kde-format
 msgid "Cannot open %1 for writing: readonly filesystem"
-msgstr "Nemohu otevřít %1 pro zápis: souborový systém je pouze pro čtení"
+msgstr "Nelze otevřít %1 pro zápis: souborový systém je pouze pro čtení"
 
 #: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:418
 #, kde-format
@@ -178,7 +178,7 @@ msgstr "Zjišťuji proxy %1:%2"
 #: src/download/httpconnection.cpp:116
 #, kde-format
 msgid "Resolving hostname %1"
-msgstr "Zjišťuji jméno počítače %1"
+msgstr "Zjišťuji název počítače %1"
 
 #: src/download/httpconnection.cpp:129 src/download/webseed.cpp:336
 msgid "Connection closed"
@@ -221,11 +221,6 @@ msgstr "Chyba: Vypršel časový limit požadavku"
 msgid "Redirected without a new location."
 msgstr "Přesměrováno bez nového umístění."
 
-#: src/download/webseed.cpp:544
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr "Nepoužívám po %1 vteřin (příliš mnoho chyb spojení)"
-
 #: src/download/chunkdownload.cpp:383
 #, kde-format
 msgid "1 peer"
@@ -233,6 +228,11 @@ msgid_plural "%1 peers"
 msgstr[0] "1 protějšek"
 msgstr[1] "%1 protějšky"
 msgstr[2] "%1 protějšků"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr "Nepoužito po %1 sekund (příliš mnoho chyb spojení)"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
@@ -380,7 +380,7 @@ msgstr "Vypršel časový limit při kontaktování trackeru %1"
 #: src/tracker/udptracker.cpp:409
 #, kde-format
 msgid "Unable to resolve hostname %1"
-msgstr "Nelze rozpoznat jméno hostitele %1"
+msgstr "Nelze rozpoznat název hostitele %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
 #: src/tracker/httptracker.cpp:462
@@ -528,7 +528,7 @@ msgstr ""
 
 #: src/upnp/upnprouter.cpp:314
 msgid "Cannot find port forwarding service in the device's description."
-msgstr "Nemohu najít službu přesměrování portů v popisu zařízení."
+msgstr "Nelze najít službu přesměrování portů v popisu zařízení."
 
 #: examples/ktcli/main.cpp:60
 msgid "Torrent to open"

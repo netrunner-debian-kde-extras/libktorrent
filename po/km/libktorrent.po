@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-03 07:44+0200\n"
+"POT-Creation-Date: 2011-09-11 11:17+0200\n"
 "PO-Revision-Date: 2010-07-05 10:24+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -231,16 +231,16 @@ msgstr "កំហុស ៖ សំណើ​អស់​ពេល"
 msgid "Redirected without a new location."
 msgstr "បាន​បញ្ជូន​បន្ត​ដោយ​គ្មាន​ទីតាំង​ថ្មី !"
 
-#: src/download/webseed.cpp:544
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr "មិន​បាន​ប្រើ​វិនាទី​ %1 (បរាជ័យ​ការ​តភ្ជាប់​ជា​ច្រើន​)"
-
 #: src/download/chunkdownload.cpp:383
 #, kde-format
 msgid "1 peer"
 msgid_plural "%1 peers"
 msgstr[0] "ម៉ាស៊ីន​ដូចគ្នា %1"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr "មិន​បាន​ប្រើ​វិនាទី​ %1 (បរាជ័យ​ការ​តភ្ជាប់​ជា​ច្រើន​)"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
