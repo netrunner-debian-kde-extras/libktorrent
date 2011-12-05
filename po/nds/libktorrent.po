@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-03 07:44+0200\n"
+"POT-Creation-Date: 2011-09-11 11:17+0200\n"
 "PO-Revision-Date: 2011-03-19 08:16+0100\n"
 "Last-Translator: Manfred Wiese <m.j.wiese@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -224,17 +224,17 @@ msgstr "Fehler: Anfraagtiet aflopen"
 msgid "Redirected without a new location."
 msgstr "Ahn nieg Teel wiederleddt."
 
-#: src/download/webseed.cpp:544
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr "Över %1 Sekunnen nich bruukt (to vele Tokoppelfehlers)"
-
 #: src/download/chunkdownload.cpp:383
 #, kde-format
 msgid "1 peer"
 msgid_plural "%1 peers"
 msgstr[0] "1 Partner"
 msgstr[1] "%1 Partners"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr "Över %1 Sekunnen nich bruukt (to vele Tokoppelfehlers)"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"

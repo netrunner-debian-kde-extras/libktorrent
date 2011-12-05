@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-03 07:44+0200\n"
+"POT-Creation-Date: 2011-09-11 11:17+0200\n"
 "PO-Revision-Date: 2011-07-05 14:13+0900\n"
 "Last-Translator: Sahran <sahran@live.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -221,16 +221,16 @@ msgstr ""
 msgid "Redirected without a new location."
 msgstr ""
 
-#: src/download/webseed.cpp:544
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
-
 #: src/download/chunkdownload.cpp:383
 #, kde-format
 msgid "1 peer"
 msgid_plural "%1 peers"
 msgstr[0] ""
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr ""
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
@@ -239,7 +239,7 @@ msgstr "جەزملە"
 #: src/interfaces/trackerinterface.cpp:58
 #, kde-format
 msgid "Warning: %1"
-msgstr ""
+msgstr "ئاگاھلاندۇرۇش: %1"
 
 #: src/interfaces/trackerinterface.cpp:59
 msgid "Announcing"
@@ -253,7 +253,7 @@ msgstr "خاتالىق: %1"
 #: src/migrate/migrate.cpp:45
 #, kde-format
 msgid "The directory %1 does not exist"
-msgstr ""
+msgstr "‹%1› مۇندەرىجە مەۋجۇت ئەمەس"
 
 #: src/peer/peerid.cpp:228
 msgid "Unknown client"
@@ -400,7 +400,7 @@ msgstr "باغلىنىشلار"
 
 #: src/util/logsystemmanager.cpp:35
 msgid "Tracker"
-msgstr ""
+msgstr "ئىزلىغۇچ"
 
 #: src/util/logsystemmanager.cpp:36
 msgid "DHT"

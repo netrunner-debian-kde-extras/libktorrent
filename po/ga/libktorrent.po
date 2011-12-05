@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extragear-network/ktorrent.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-03 07:44+0200\n"
+"POT-Creation-Date: 2011-09-11 11:17+0200\n"
 "PO-Revision-Date: 2007-08-07 07:02-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -244,11 +244,6 @@ msgstr "Earráid: iarratas thar am"
 msgid "Redirected without a new location."
 msgstr "Atreoraithe gan suíomh nua."
 
-#: src/download/webseed.cpp:544
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
-
 #: src/download/chunkdownload.cpp:383
 #, kde-format
 msgid "1 peer"
@@ -258,6 +253,11 @@ msgstr[1] "%1 chomhghleacaí"
 msgstr[2] "%1 chomhghleacaí"
 msgstr[3] "%1 gcomhghleacaí"
 msgstr[4] "%1 comhghleacaí"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr ""
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"

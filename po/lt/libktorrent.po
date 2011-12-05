@@ -1,25 +1,28 @@
 # translation of ktorrent.po to Lithuanian
 # Donatas Glodenis <dgvirtual@akl.lt>, 2007.
 # Andrius Štikonas <stikonas@gmail.com>, 2007, 2008.
+# Liudas Ališauskas <liudas.alisauskas@gmail.com>, 2011.
+# Liudas Alisauskas <liudas@akmc.lt>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-03 07:44+0200\n"
-"PO-Revision-Date: 2010-06-11 00:28+0100\n"
-"Last-Translator: Andrius Štikonas <stikonas@gmail.com>\n"
-"Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
+"POT-Creation-Date: 2011-09-11 11:17+0200\n"
+"PO-Revision-Date: 2011-10-04 17:58+0300\n"
+"Last-Translator: Liudas Alisauskas <liudas@akmc.lt>\n"
+"Language-Team: Lithuanian <kde-i18n-doc@kde.org>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10==1 && n%100!=11 ? 1 : n"
 "%10>=2 && (n%100<10 || n%100>=20) ? 2 : 3);\n"
+"X-Generator: Lokalize 1.2\n"
 
 #: src/bcodec/bdecoder.cpp:62
 #, kde-format
 msgid "Illegal token: %1"
-msgstr "Neįmanomas paėmimas: %1"
+msgstr "Neleistina saugumo priemonė: %1"
 
 #: src/bcodec/bdecoder.cpp:125 src/bcodec/bdecoder.cpp:133
 msgid "Decode error"
@@ -40,14 +43,13 @@ msgstr "Torentas yra nepilnas."
 
 #: src/datachecker/datacheckerjob.cpp:76
 msgid "Waiting for other data checks to finish"
-msgstr ""
+msgstr "Laukiama, kad kitos duomenų patikros baigtųsi"
 
 #: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
 msgid "Checking data"
 msgstr "Tikrinami duomenys"
 
 #: src/datachecker/datacheckerjob.cpp:135
-#, fuzzy
 msgid "Checking Data"
 msgstr "Tikrinami duomenys"
 
@@ -61,30 +63,31 @@ msgstr "Nepavyko atverti failo %1: %2"
 
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
 #: src/util/fileops.cpp:396
-#, fuzzy, kde-format
+#, kde-format
 msgid "Cannot open %1: %2"
 msgstr "Nepavyksta atverti %1 : %2"
 
 #: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
 #: src/diskio/cachefile.cpp:412 src/diskio/cachefile.cpp:480
-#, fuzzy, kde-format
+#, kde-format
 msgid "Cannot open %1 for writing: readonly filesystem"
-msgstr ""
-"Nepavyko atverti %1 įrašymui: failų sistema prijungta skaitymo veiksena"
+msgstr "Nepavyko atverti %1 įrašymui: failų sistema tik skaitymui"
 
 #: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:418
 #, kde-format
 msgid "Attempting to write beyond the maximum size of %1"
-msgstr ""
+msgstr "Mėginama įrašyti daugiau leistino dydžio %1"
 
 #: src/diskio/cachefile.cpp:255
 #, kde-format
 msgid ""
 "Cannot expand file %1: attempting to grow the file beyond the maximum size"
 msgstr ""
+"Nepavyksta išplėsti failo %1: mėginama užauginti failą daugiau nei "
+"didžiausias dydis"
 
 #: src/diskio/cachefile.cpp:259
-#, fuzzy, kde-format
+#, kde-format
 msgid "Cannot expand file %1: %2"
 msgstr "Nepavyko išplėsti failo %1 : %2"
 
@@ -94,9 +97,9 @@ msgid "Error: Reading past the end of the file %1"
 msgstr "Klaida: failas %1 buvo skaitomas už jo pabaigos"
 
 #: src/diskio/cachefile.cpp:383 src/diskio/cachefile.cpp:430
-#, fuzzy, kde-format
+#, kde-format
 msgid "Failed to seek file %1: %2"
-msgstr "Nepavyko ieškoti faile %1 : %2"
+msgstr "Nepavyko susekti failo %1 : %2"
 
 #: src/diskio/cachefile.cpp:391
 #, kde-format
@@ -104,67 +107,67 @@ msgid "Error reading from %1"
 msgstr "Klaida skaitant iš %1"
 
 #: src/diskio/cachefile.cpp:434
-#, fuzzy, kde-format
+#, kde-format
 msgid "Failed to write to file %1: %2"
-msgstr "Nepavyko įrašyti į: %1 : %2"
+msgstr "Nepavyko įrašyti į failą %1: %2"
 
 #: src/diskio/cachefile.cpp:501
-#, fuzzy, kde-format
+#, kde-format
 msgid "Cannot preallocate diskspace: %1"
-msgstr "Nepavyksta išskirti vietos diske : %1"
+msgstr "Nepavyksta iš anksto skirti vietos diske : %1"
 
 #: src/diskio/dndfile.cpp:89
-#, fuzzy, kde-format
+#, kde-format
 msgid "Cannot create file %1: %2"
 msgstr "Nepavyksta sukurti failo %1: %2"
 
 #: src/diskio/dndfile.cpp:137
-#, fuzzy, kde-format
+#, kde-format
 msgid "Failed to write first chunk to DND file: %1"
 msgstr "Nepavyko įrašyti pirmosios dalies į DND failą: %1"
 
 #: src/diskio/dndfile.cpp:155
-#, fuzzy, kde-format
+#, kde-format
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Nepavyko įrašyti paskutiniosios dalies į DND failą: %1"
 
 #: src/diskio/movedatafilesjob.cpp:166
 msgctxt "@title job"
 msgid "Moving"
-msgstr ""
+msgstr "Perkeliama"
 
 #: src/diskio/movedatafilesjob.cpp:167
 msgctxt "The source of a file operation"
 msgid "Source"
-msgstr ""
+msgstr "Šaltinis"
 
 #: src/diskio/movedatafilesjob.cpp:168
 msgctxt "The destination of a file operation"
 msgid "Destination"
-msgstr ""
+msgstr "Tikslas"
 
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
-#, fuzzy, kde-format
+#, kde-format
 msgid "Failed to open %1: %2"
-msgstr "Nepavyko atverti %1 : %2"
+msgstr "Nepavyko atverti %1: %2"
 
 #: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
-#, fuzzy, kde-format
+#, kde-format
 msgid "Failed to create %1: %2"
-msgstr "Nepavyko sukurti %1 : %2"
+msgstr "Nepavyko sukurti %1: %2"
 
 #: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
 msgid "Unable to write to a piece mapped read only"
-msgstr ""
+msgstr "Nepavyksta įrašyti į dalį pažymėtą tik skaitymui"
 
 #: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
-#, fuzzy, kde-format
+#, kde-format
 msgid "Cannot open index file %1: %2"
-msgstr "Nepavyksta atverti indekso failo %1: %2"
+msgstr "Nepavyksta atverti indeksavimo failo %1: %2"
 
 #: src/download/downloader.cpp:810
 msgid "Disabled because webseed does not match torrent"
-msgstr ""
+msgstr "Išjungta nes dalinami failai neatitinka torento"
 
 #: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
 #: src/download/webseed.cpp:98
@@ -220,21 +223,21 @@ msgstr "Klaida: baigėsi užklausai skirtas laikas"
 
 #: src/download/httpconnection.cpp:398
 msgid "Redirected without a new location."
-msgstr ""
-
-#: src/download/webseed.cpp:544
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
+msgstr "Nukreipti be naujos vietos"
 
 #: src/download/chunkdownload.cpp:383
-#, fuzzy, kde-format
+#, kde-format
 msgid "1 peer"
 msgid_plural "%1 peers"
-msgstr[0] "Pridėti tašką:"
-msgstr[1] "Pridėti tašką:"
-msgstr[2] "Pridėti tašką:"
-msgstr[3] "Pridėti tašką:"
+msgstr[0] "1 lygiavertis mazgas"
+msgstr[1] "%1 lygiavertis mazgas"
+msgstr[2] "%1 lygiaverčiai mazgai"
+msgstr[3] "%1 lygiaverčių mazgų"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr "Nenaudota %1 sek. (Per daug sujungimo klaidų)"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
@@ -243,7 +246,7 @@ msgstr "OK"
 #: src/interfaces/trackerinterface.cpp:58
 #, kde-format
 msgid "Warning: %1"
-msgstr ""
+msgstr "Dėmesio: %1"
 
 #: src/interfaces/trackerinterface.cpp:59
 msgid "Announcing"
@@ -302,14 +305,12 @@ msgid "Allocating diskspace"
 msgstr "Apskaičiuojama disko vieta"
 
 #: src/torrent/torrentstats.cpp:90
-#, fuzzy
 msgid "Queued for seeding"
-msgstr "Dabar siunčiama:"
+msgstr "Eilėje sėjimui"
 
 #: src/torrent/torrentstats.cpp:90
-#, fuzzy
 msgid "Queued for downloading"
-msgstr "Dabar siunčiama:"
+msgstr "Eilėje atsisiuntimui"
 
 #: src/torrent/torrentstats.cpp:94
 msgid "Stopped. No space left on device."
@@ -320,9 +321,8 @@ msgid "Paused"
 msgstr "Pristabdyta"
 
 #: src/torrent/torrentstats.cpp:98
-#, fuzzy
 msgid "Superseeding"
-msgstr "Sėjama"
+msgstr "Supersėjimas"
 
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
@@ -332,61 +332,61 @@ msgid "Corrupted torrent."
 msgstr "Sugadintas torrentas."
 
 #: src/torrent/torrent.cpp:165
-#, fuzzy, kde-format
+#, kde-format
 msgid "Unable to open torrent file %1: %2"
-msgstr "Nepavyko atverti torent failo %1: %2"
+msgstr "Nepavyksta atverti torento failo %1: %2"
 
 #: src/torrent/torrentcontrol.cpp:308
 msgid "Error writing to disk, do you have enough diskspace?"
-msgstr ""
+msgstr "Klaida rašant į diską, ar turite pakankamai vietos diske?"
 
 #: src/torrent/torrentcontrol.cpp:553
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
 "torrent is probably corrupt or is not a valid torrent file."
 msgstr ""
-"Atsisiunčiant torrent failą įvyko klaida. Torrentas tikriausiai sugadintas, "
-"arba nėra torrent failas"
+"Įvyko klaida įkeliant torentą <b>%1</b>:<br/><b>%2</b><br/>Torentas "
+"tikriausiai sugadintas arba nėra tinkamas torrent failas."
 
 #: src/torrent/torrentcontrol.cpp:583
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
-msgstr ""
+msgstr "Įvyko klaida įkeliant <b>%1</b>:<br/><b>%2</b>"
 
 #: src/torrent/torrentcontrol.cpp:594
-#, fuzzy, kde-format
+#, kde-format
 msgid "Unable to create %1: %2"
-msgstr " Nepavyksta sukurti %1 : %2"
+msgstr " Nepavyksta sukurti %1: %2"
 
 #: src/torrent/torrentcontrol.cpp:609
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
 "both torrents have been merged."
 msgstr ""
-"Jūs jau siunčiatės šį torentą %1, abiejų torentų vedlių sąrašas yra "
-"suliejamas."
+"Jūs jau siunčiatės šį torentą <b>%1</b>. Vedlių sąrašas iš abiejų torentų "
+"yra sulietas."
 
 #: src/torrent/torrentcontrol.cpp:614
-#, fuzzy, kde-format
+#, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
-msgstr "Jūs jau siunčiatės torentą %1"
+msgstr "Jūs jau siunčiatės torentą <b>%1</b>."
 
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
-msgstr ""
+msgstr "Nukreipti be nukreipimo vietos"
 
 #: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
 #: src/tracker/httptracker.cpp:557
 #, kde-format
 msgid "Timeout contacting tracker %1"
-msgstr ""
+msgstr "Baigėsi laikas kontaktuojant su vedliu %1"
 
 #: src/tracker/udptracker.cpp:409
-#, fuzzy, kde-format
+#, kde-format
 msgid "Unable to resolve hostname %1"
-msgstr " Nepavyksta sukurti %1 : %2"
+msgstr "Nepavyko nustatyti pagrindinio kompiuterio vardo %1"
 
 #: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
 #: src/tracker/httptracker.cpp:462
@@ -418,18 +418,17 @@ msgid "DHT"
 msgstr "DHT"
 
 #: src/util/logsystemmanager.cpp:37
-#, fuzzy
 msgid "Disk Input/Output"
-msgstr "Disko I/O:"
+msgstr "Disko Įvestis/Išvestis:"
 
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
 msgstr "µTP"
 
 #: src/util/file.cpp:84
-#, fuzzy, kde-format
+#, kde-format
 msgid "Cannot write to %1: %2"
-msgstr "Nepavyko įrašyti į %1 : %2"
+msgstr "Nepavyksta įrašyti į %1: %2"
 
 #: src/util/file.cpp:98
 #, kde-format
@@ -437,9 +436,9 @@ msgid "Cannot read from %1"
 msgstr "Nepavyko nuskaityti iš %1"
 
 #: src/util/fileops.cpp:94
-#, fuzzy, kde-format
+#, kde-format
 msgid "Cannot create directory %1"
-msgstr "nepavyksta sukurti aplanko %1: %2"
+msgstr "Nepavyksta sukurti aplanko %1"
 
 #: src/util/fileops.cpp:161
 #, kde-format
@@ -472,9 +471,9 @@ msgid "Cannot calculate the filesize of %1: %2"
 msgstr "Nepavyksta suskaičiuoti failo %1 dydžio: %2"
 
 #: src/util/fileops.cpp:327
-#, fuzzy, kde-format
+#, kde-format
 msgid "Cannot calculate the filesize: %1"
-msgstr "Nepavyksta suskaičiuoti failo dydžio: %1"
+msgstr "Nepavyksta apskaičiuoti failo dydžio: %1"
 
 #: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
 #: src/util/fileops.cpp:387
@@ -483,9 +482,9 @@ msgid "Cannot expand file: %1"
 msgstr "Nepavyko išplėsti failo: %1"
 
 #: src/util/fileops.cpp:417
-#, fuzzy, kde-format
+#, kde-format
 msgid "Cannot seek in file: %1"
-msgstr "Nepavyko skaityti failo: %1"
+msgstr "Nepavyksta ieškoti faile: %1"
 
 #: src/util/functions.cpp:280
 #, kde-format
@@ -502,93 +501,62 @@ msgstr[2] "%1 dienos "
 msgstr[3] "%1 dienų "
 
 #: src/util/signalcatcher.cpp:62
-#, fuzzy
 msgid "Error when writing to disk"
-msgstr "Klaida skaitant iš %1"
+msgstr "Klaida rašant į diską"
 
 #: src/util/signalcatcher.cpp:62
-#, fuzzy
 msgid "Error when reading from disk"
-msgstr "Klaida skaitant iš %1"
+msgstr "Klaida skaitant iš disk"
 
 #: src/upnp/httprequest.cpp:96
-#, fuzzy
 msgid "Connection closed unexpectedly"
-msgstr "Prisijungimas baigtas"
+msgstr "Prisijungimas netikėtai nutrūko"
 
 #: src/upnp/httprequest.cpp:155
 msgid "Operation timed out"
-msgstr ""
+msgstr "Baigėsi operacijos laikas"
 
 #: src/upnp/upnprouter.cpp:167
-#, fuzzy, kde-format
+#, kde-format
 msgid "Failed to download %1: %2"
-msgstr "Nepavyko atverti %1 : %2"
+msgstr "Nepavyko atsiųsti %1: %2"
 
 #: src/upnp/upnprouter.cpp:178
 msgid "Error parsing router description."
-msgstr ""
+msgstr "Klaida analizuojant maršruto parinktuvo aprašymą."
 
 #: src/upnp/upnprouter.cpp:216
 msgid ""
 "Forwarding failed:\n"
 "Device does not have a WANIPConnection or WANPPPConnection."
 msgstr ""
+"Persiuntimas nepavyko:\n"
+"Įrenginys neturi WANIPConnection arba WANPPPConnection."
 
 #: src/upnp/upnprouter.cpp:314
 msgid "Cannot find port forwarding service in the device's description."
-msgstr ""
+msgstr "Nepavyksta rasti prievado persiuntimo paslaugos įrenginio aprašyme."
 
 #: examples/ktcli/main.cpp:60
-#, fuzzy
 msgid "Torrent to open"
-msgstr "Torentas yra nepilnas."
+msgstr "Torentas atvėrimui"
 
 #: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-#, fuzzy
 msgid "Port to use"
-msgstr "Įvertinkite"
+msgstr "Prievadas naudojimui"
 
 #: examples/ktcli/main.cpp:63
 msgid "Whether or not to enable encryption"
-msgstr ""
+msgstr "Įgalinti ar ne šifravimą"
 
 #: examples/ktcli/main.cpp:64
 msgid "Whether or not to enable peer exchange"
-msgstr ""
+msgstr "Įgalinti ar ne šifravimą lygiaverčių mazgų pasikeitimą"
 
 #: examples/ktcli/main.cpp:65
 msgid "Whether or not to use utp"
-msgstr ""
+msgstr "Įgalinti ar ne utp"
 
 #: examples/ktcli/main.cpp:67
 msgid "ktcli"
 msgstr ""
-
-#~ msgid "Parse Error"
-#~ msgstr "Parse Klaida"
-
-#, fuzzy
-#~ msgid "Not in use"
-#~ msgstr "Įvertinkite"
-
-#, fuzzy
-#~ msgid "Not enough diskspace"
-#~ msgstr "Nepakankama vietos diske %1"
-
-#~ msgid "Cannot open file %1 : %2"
-#~ msgstr "Nepavyksta atverti failo %1: %2"
-
-#~ msgid "Cannot open file : %1 : %2"
-#~ msgstr "Nepavyko atverti failo: %1 : %2"
-
-#, fuzzy
-#~ msgid ""
-#~ "An error occurred while loading the torrent:<br/><b>%1</b><br/>The "
-#~ "torrent is probably corrupt or is not a valid torrent file."
-#~ msgstr ""
-#~ "Atsisiunčiant torrent failą įvyko klaida. Torrentas tikriausiai "
-#~ "sugadintas, arba nėra torrent failas"
-
-#~ msgid "Cannot open log file %1 : %2"
-#~ msgstr "Nepavyksta atverti žurnalo failo %1: %2"

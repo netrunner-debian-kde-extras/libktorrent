@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-03 07:44+0200\n"
+"POT-Creation-Date: 2011-09-11 11:17+0200\n"
 "PO-Revision-Date: 2011-06-08 07:00+0200\n"
 "Last-Translator: Dimitrios Glentadakis <dglent@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-doc@kde.org>\n"
@@ -231,17 +231,17 @@ msgstr "Σφάλμα: λήξη χρονικού ορίου αίτησης"
 msgid "Redirected without a new location."
 msgstr "Ανακατεύθυνση χωρίς μια νέα τοποθεσία."
 
-#: src/download/webseed.cpp:544
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr "Αχρησιμοποίητο για %1 δευτερόλεπτα (Πάρα πολλές αποτυχίες σύνδεσης)"
-
 #: src/download/chunkdownload.cpp:383
 #, kde-format
 msgid "1 peer"
 msgid_plural "%1 peers"
 msgstr[0] "1 ομότιμος κόμβος"
 msgstr[1] "%1 ομότιμοι κόμβοι"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr "Αχρησιμοποίητο για %1 δευτερόλεπτα (Πάρα πολλές αποτυχίες σύνδεσης)"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
