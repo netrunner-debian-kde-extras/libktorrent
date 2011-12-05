@@ -4,6 +4,7 @@ libktorrent (1.1.3-1) UNRELEASED; urgency=low
   * Bump debhelper compat level to 9 and require debhelper 8.9.0 in order to
     gain support for transparent dpkg-buildflags handling in dh/dh_auto_*.
   * Update symbol file (for 1.1.2/ia64, 1.1.2/sparc), fixes FTBFSes.
+  * Update symbol file for 1.1.3/amd64, source changes.
 
  -- Modestas Vainius <modax@debian.org>  Tue, 06 Dec 2011 00:19:55 +0200
 
