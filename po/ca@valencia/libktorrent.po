@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-11 11:17+0200\n"
+"POT-Creation-Date: 2012-02-07 18:22+0100\n"
 "PO-Revision-Date: 2011-02-13 13:42+0100\n"
 "Last-Translator: Joan Maspons <joanmaspons@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -22,102 +22,47 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
 
-#: src/bcodec/bdecoder.cpp:62
+#: src/bcodec/bdecoder.cpp:71
 #, kde-format
 msgid "Illegal token: %1"
 msgstr "Símbol il·legal: %1"
 
-#: src/bcodec/bdecoder.cpp:125 src/bcodec/bdecoder.cpp:133
+#: src/bcodec/bdecoder.cpp:133 src/bcodec/bdecoder.cpp:141
 msgid "Decode error"
 msgstr "Error en descodificar"
 
-#: src/bcodec/bdecoder.cpp:193 src/bcodec/bdecoder.cpp:238
+#: src/bcodec/bdecoder.cpp:201 src/bcodec/bdecoder.cpp:246
 msgid "Unexpected end of input"
 msgstr "Final inesperat d'entrada"
 
-#: src/bcodec/bdecoder.cpp:213 src/bcodec/bdecoder.cpp:247
+#: src/bcodec/bdecoder.cpp:221 src/bcodec/bdecoder.cpp:255
 #, kde-format
 msgid "Cannot convert %1 to an int"
 msgstr "No es pot convertir %1 a un sencer"
 
-#: src/bcodec/bdecoder.cpp:252
+#: src/bcodec/bdecoder.cpp:260
 msgid "Torrent is incomplete."
 msgstr "El torrent és incomplet."
 
-#: src/datachecker/datacheckerjob.cpp:76
+#: src/datachecker/datacheckerjob.cpp:82
 msgid "Waiting for other data checks to finish"
 msgstr "S'està esperant que acabe la comprovació d'altres dades"
 
-#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:93
 msgid "Checking data"
 msgstr "S'estan comprovant les dades"
 
-#: src/datachecker/datacheckerjob.cpp:135
+#: src/datachecker/datacheckerjob.cpp:141
 msgid "Checking Data"
 msgstr "S'estan comprovant les dades"
 
-#: src/datachecker/multidatachecker.cpp:203
+#: src/datachecker/multidatachecker.cpp:209
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
 #, kde-format
 msgid "Cannot open file %1: %2"
 msgstr "No es pot obrir el fitxer %1: %2"
-
-#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
-#: src/util/fileops.cpp:396
-#, kde-format
-msgid "Cannot open %1: %2"
-msgstr "No es pot obrir %1: %2"
-
-#: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
-#: src/diskio/cachefile.cpp:412 src/diskio/cachefile.cpp:480
-#, kde-format
-msgid "Cannot open %1 for writing: readonly filesystem"
-msgstr ""
-"No es pot obrir %1 per a escriure-hi: sistema de fitxers només d'escriptura"
-
-#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:418
-#, kde-format
-msgid "Attempting to write beyond the maximum size of %1"
-msgstr "S'està intentant escriure més enllà de la mida màxima de %1"
-
-#: src/diskio/cachefile.cpp:255
-#, kde-format
-msgid ""
-"Cannot expand file %1: attempting to grow the file beyond the maximum size"
-msgstr ""
-"No es pot expandir el fitxer %1: intentava créixer més que la mida màxima"
-
-#: src/diskio/cachefile.cpp:259
-#, kde-format
-msgid "Cannot expand file %1: %2"
-msgstr "No es pot expandir el fitxer %1: %2"
-
-#: src/diskio/cachefile.cpp:378
-#, kde-format
-msgid "Error: Reading past the end of the file %1"
-msgstr "Error: la lectura ha passat el final del fitxer %1"
-
-#: src/diskio/cachefile.cpp:383 src/diskio/cachefile.cpp:430
-#, kde-format
-msgid "Failed to seek file %1: %2"
-msgstr "Ha fallat en cercar el fitxer %1: %2"
-
-#: src/diskio/cachefile.cpp:391
-#, kde-format
-msgid "Error reading from %1"
-msgstr "Error llegint des de %1"
-
-#: src/diskio/cachefile.cpp:434
-#, kde-format
-msgid "Failed to write to file %1: %2"
-msgstr "Ha fallat en escriure el fitxer %1: %2"
-
-#: src/diskio/cachefile.cpp:501
-#, kde-format
-msgid "Cannot preallocate diskspace: %1"
-msgstr "No es pot preassignar espai en disc: %1"
 
 #: src/diskio/dndfile.cpp:89
 #, kde-format
@@ -134,21 +79,6 @@ msgstr "Ha fallat en escriure el primer tros al fitxer DND: %1"
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Ha fallat en escriure l'últim tros en el fitxer DND: %1"
 
-#: src/diskio/movedatafilesjob.cpp:166
-msgctxt "@title job"
-msgid "Moving"
-msgstr "S'està movent"
-
-#: src/diskio/movedatafilesjob.cpp:167
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "Origen"
-
-#: src/diskio/movedatafilesjob.cpp:168
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "Destinació"
-
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, kde-format
 msgid "Failed to open %1: %2"
@@ -163,70 +93,84 @@ msgstr "Ha fallat en crear %1: %2"
 msgid "Unable to write to a piece mapped read only"
 msgstr "No es pot escriure a una part assignada com a només de lectura"
 
-#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
+#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
+#: src/util/fileops.cpp:399
+#, kde-format
+msgid "Cannot open %1: %2"
+msgstr "No es pot obrir %1: %2"
+
+#: src/diskio/cachefile.cpp:122 src/diskio/cachefile.cpp:250
+#: src/diskio/cachefile.cpp:414 src/diskio/cachefile.cpp:482
+#, kde-format
+msgid "Cannot open %1 for writing: readonly filesystem"
+msgstr ""
+"No es pot obrir %1 per a escriure-hi: sistema de fitxers només d'escriptura"
+
+#: src/diskio/cachefile.cpp:129 src/diskio/cachefile.cpp:420
+#, kde-format
+msgid "Attempting to write beyond the maximum size of %1"
+msgstr "S'està intentant escriure més enllà de la mida màxima de %1"
+
+#: src/diskio/cachefile.cpp:257
+#, kde-format
+msgid ""
+"Cannot expand file %1: attempting to grow the file beyond the maximum size"
+msgstr ""
+"No es pot expandir el fitxer %1: intentava créixer més que la mida màxima"
+
+#: src/diskio/cachefile.cpp:261
+#, kde-format
+msgid "Cannot expand file %1: %2"
+msgstr "No es pot expandir el fitxer %1: %2"
+
+#: src/diskio/cachefile.cpp:380
+#, kde-format
+msgid "Error: Reading past the end of the file %1"
+msgstr "Error: la lectura ha passat el final del fitxer %1"
+
+#: src/diskio/cachefile.cpp:385 src/diskio/cachefile.cpp:432
+#, kde-format
+msgid "Failed to seek file %1: %2"
+msgstr "Ha fallat en cercar el fitxer %1: %2"
+
+#: src/diskio/cachefile.cpp:393
+#, kde-format
+msgid "Error reading from %1"
+msgstr "Error llegint des de %1"
+
+#: src/diskio/cachefile.cpp:436
+#, kde-format
+msgid "Failed to write to file %1: %2"
+msgstr "Ha fallat en escriure el fitxer %1: %2"
+
+#: src/diskio/cachefile.cpp:503
+#, kde-format
+msgid "Cannot preallocate diskspace: %1"
+msgstr "No es pot preassignar espai en disc: %1"
+
+#: src/diskio/chunkmanager.cpp:928 src/diskio/chunkmanager.cpp:954
 #, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr "No es pot obrir el fitxer d'índex %1: %2"
 
-#: src/download/downloader.cpp:810
-msgid "Disabled because webseed does not match torrent"
-msgstr "S'ha deshabilitat perquè el sembrador web no coincideix amb el torrent"
+#: src/diskio/movedatafilesjob.cpp:140
+msgid "Waiting for other move jobs to finish"
+msgstr "S'està esperant que acabin altres tasques de moure"
 
-#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
-msgid "Not connected"
-msgstr "Sense connexió"
+#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr "Origen"
 
-#: src/download/httpconnection.cpp:107
-#, kde-format
-msgid "Resolving proxy %1:%2"
-msgstr "Resolent el proxy %1:%2"
+#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr "Destinació"
 
-#: src/download/httpconnection.cpp:116
-#, kde-format
-msgid "Resolving hostname %1"
-msgstr "Resolent el nom de màquina %1"
-
-#: src/download/httpconnection.cpp:129 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "Connexió tancada"
-
-#: src/download/httpconnection.cpp:136
-#, kde-format
-msgid "Error: request failed: %1"
-msgstr "Error: la sol·licitud ha fallat: %1"
-
-#: src/download/httpconnection.cpp:153 src/download/httpconnection.cpp:217
-msgid "Connected"
-msgstr "Connectat"
-
-#: src/download/httpconnection.cpp:159
-msgid "Error: Failed to connect to webseed"
-msgstr "Error: la connexió al sembrador web ha fallat"
-
-#: src/download/httpconnection.cpp:224
-msgid "Connecting"
-msgstr "Connectant"
-
-#: src/download/httpconnection.cpp:235
-msgid "Failed to connect to webseed"
-msgstr "Error en connectar al sembrador web"
-
-#: src/download/httpconnection.cpp:242
-msgid "Failed to resolve hostname of webseed"
-msgstr "Error en la resolució del nom de màquina del sembrador web"
-
-#: src/download/httpconnection.cpp:322
-msgid "Error: failed to connect, server not responding"
-msgstr "Error: la connexió ha fallat, el servidor no respon"
-
-#: src/download/httpconnection.cpp:333
-msgid "Error: request timed out"
-msgstr "Error: s'ha esgotat el temps de sol·licitud"
-
-#: src/download/httpconnection.cpp:398
-msgid "Redirected without a new location."
-msgstr "S'ha redireccionat sense cap ubicació nova."
+#: src/diskio/movedatafilesjob.cpp:180
+msgctxt "@title job"
+msgid "Moving"
+msgstr "S'està movent"
 
 #: src/download/chunkdownload.cpp:383
 #, kde-format
@@ -234,6 +178,70 @@ msgid "1 peer"
 msgid_plural "%1 peers"
 msgstr[0] "1 parell"
 msgstr[1] "%1 parells"
+
+#: src/download/downloader.cpp:808
+msgid "Disabled because webseed does not match torrent"
+msgstr "S'ha deshabilitat perquè el sembrador web no coincideix amb el torrent"
+
+#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
+#: src/download/webseed.cpp:98
+msgid "Not connected"
+msgstr "Sense connexió"
+
+#: src/download/httpconnection.cpp:115
+#, kde-format
+msgid "Resolving proxy %1:%2"
+msgstr "Resolent el proxy %1:%2"
+
+#: src/download/httpconnection.cpp:121 src/download/httpconnection.cpp:139
+msgid "Not enough system resources available"
+msgstr ""
+
+#: src/download/httpconnection.cpp:133
+#, kde-format
+msgid "Resolving hostname %1"
+msgstr "Resolent el nom de màquina %1"
+
+#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
+msgid "Connection closed"
+msgstr "Connexió tancada"
+
+#: src/download/httpconnection.cpp:160
+#, kde-format
+msgid "Error: request failed: %1"
+msgstr "Error: la sol·licitud ha fallat: %1"
+
+#: src/download/httpconnection.cpp:188 src/download/httpconnection.cpp:222
+msgid "Connected"
+msgstr "Connectat"
+
+#: src/download/httpconnection.cpp:199
+msgid "Error: Failed to connect to webseed"
+msgstr "Error: la connexió al sembrador web ha fallat"
+
+#: src/download/httpconnection.cpp:229
+msgid "Connecting"
+msgstr "Connectant"
+
+#: src/download/httpconnection.cpp:240
+msgid "Failed to connect to webseed"
+msgstr "Error en connectar al sembrador web"
+
+#: src/download/httpconnection.cpp:247
+msgid "Failed to resolve hostname of webseed"
+msgstr "Error en la resolució del nom de màquina del sembrador web"
+
+#: src/download/httpconnection.cpp:326
+msgid "Error: failed to connect, server not responding"
+msgstr "Error: la connexió ha fallat, el servidor no respon"
+
+#: src/download/httpconnection.cpp:337
+msgid "Error: request timed out"
+msgstr "Error: s'ha esgotat el temps de sol·licitud"
+
+#: src/download/httpconnection.cpp:402
+msgid "Redirected without a new location."
+msgstr "S'ha redireccionat sense cap ubicació nova."
 
 #: src/download/webseed.cpp:545
 #, kde-format
@@ -253,7 +261,7 @@ msgstr "Atenció: %1"
 msgid "Announcing"
 msgstr "Anunci"
 
-#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:86
+#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:87
 #, kde-format
 msgid "Error: %1"
 msgstr "Error: %1"
@@ -272,59 +280,6 @@ msgstr "Client desconegut"
 msgid "Cannot create index file: %1"
 msgstr "No es pot crear el fitxer índex:%1"
 
-#: src/torrent/torrentstats.cpp:72
-msgid "Not started"
-msgstr "No engegat"
-
-#: src/torrent/torrentstats.cpp:74
-msgid "Download completed"
-msgstr "Baixada finalitzada"
-
-#: src/torrent/torrentstats.cpp:76
-msgid "Seeding completed"
-msgstr "Sembra completada"
-
-#: src/torrent/torrentstats.cpp:78
-msgctxt "Status of a torrent file"
-msgid "Seeding"
-msgstr "S'està sembrant"
-
-#: src/torrent/torrentstats.cpp:80
-msgid "Downloading"
-msgstr "Baixant"
-
-#: src/torrent/torrentstats.cpp:82
-msgid "Stalled"
-msgstr "Encallat"
-
-#: src/torrent/torrentstats.cpp:84
-msgid "Stopped"
-msgstr "S'ha aturat"
-
-#: src/torrent/torrentstats.cpp:88
-msgid "Allocating diskspace"
-msgstr "Reservant espai al disc"
-
-#: src/torrent/torrentstats.cpp:90
-msgid "Queued for seeding"
-msgstr "En cua per sembrar"
-
-#: src/torrent/torrentstats.cpp:90
-msgid "Queued for downloading"
-msgstr "En cua per baixar"
-
-#: src/torrent/torrentstats.cpp:94
-msgid "Stopped. No space left on device."
-msgstr "Aturat. No queda espai al dispositiu."
-
-#: src/torrent/torrentstats.cpp:96
-msgid "Paused"
-msgstr "Pausada"
-
-#: src/torrent/torrentstats.cpp:98
-msgid "Superseeding"
-msgstr "Super sembrat"
-
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
@@ -341,7 +296,7 @@ msgstr " No es pot obrir el fitxer torrent %1: %2"
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr "Error en escriure al disc. Hi ha suficient espai lliure al disc?"
 
-#: src/torrent/torrentcontrol.cpp:553
+#: src/torrent/torrentcontrol.cpp:554
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -350,17 +305,17 @@ msgstr ""
 "Hi ha hagut un error mentre es carregava el torrent<b>%1</b>:<br/><b>%2</"
 "b><br/>Probablement el torrent és corrupte o no és un fitxer torrent vàlid."
 
-#: src/torrent/torrentcontrol.cpp:583
+#: src/torrent/torrentcontrol.cpp:584
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr "Hi ha hagut un error en carregar <b>%1</b>:<br/><b>%2</b>"
 
-#: src/torrent/torrentcontrol.cpp:594
+#: src/torrent/torrentcontrol.cpp:595
 #, kde-format
 msgid "Unable to create %1: %2"
 msgstr "No es pot crear %1: %2"
 
-#: src/torrent/torrentcontrol.cpp:609
+#: src/torrent/torrentcontrol.cpp:610
 #, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
@@ -369,38 +324,91 @@ msgstr ""
 "Ja esteu baixant el torrent <b>%1</b>%1. S'ha fusionat la llista de "
 "seguidors d'ambdós torrents."
 
-#: src/torrent/torrentcontrol.cpp:614
+#: src/torrent/torrentcontrol.cpp:615
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Ja esteu baixant el torrent <b>%1</b>."
+
+#: src/torrent/torrentstats.cpp:73
+msgid "Not started"
+msgstr "No engegat"
+
+#: src/torrent/torrentstats.cpp:75
+msgid "Download completed"
+msgstr "Baixada finalitzada"
+
+#: src/torrent/torrentstats.cpp:77
+msgid "Seeding completed"
+msgstr "Sembra completada"
+
+#: src/torrent/torrentstats.cpp:79
+msgctxt "Status of a torrent file"
+msgid "Seeding"
+msgstr "S'està sembrant"
+
+#: src/torrent/torrentstats.cpp:81
+msgid "Downloading"
+msgstr "Baixant"
+
+#: src/torrent/torrentstats.cpp:83
+msgid "Stalled"
+msgstr "Encallat"
+
+#: src/torrent/torrentstats.cpp:85
+msgid "Stopped"
+msgstr "S'ha aturat"
+
+#: src/torrent/torrentstats.cpp:89
+msgid "Allocating diskspace"
+msgstr "Reservant espai al disc"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Queued for seeding"
+msgstr "En cua per sembrar"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Queued for downloading"
+msgstr "En cua per baixar"
+
+#: src/torrent/torrentstats.cpp:95
+msgid "Stopped. No space left on device."
+msgstr "Aturat. No queda espai al dispositiu."
+
+#: src/torrent/torrentstats.cpp:97
+msgid "Paused"
+msgstr "Pausada"
+
+#: src/torrent/torrentstats.cpp:99
+msgid "Superseeding"
+msgstr "Super sembrat"
 
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "S'ha redireccionat sense cap ubicació nova"
 
-#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
-#: src/tracker/httptracker.cpp:557
+#: src/tracker/httptracker.cpp:287 src/tracker/httptracker.cpp:307
+#: src/tracker/httptracker.cpp:463
+msgid "Invalid response from tracker"
+msgstr "Resposta no vàlida del seguidor"
+
+#: src/tracker/httptracker.cpp:300
+msgid "Invalid data from tracker"
+msgstr "Dades no vàlides des del seguidor"
+
+#: src/tracker/httptracker.cpp:480
+msgid "Invalid tracker URL"
+msgstr "URL no vàlid del seguidor"
+
+#: src/tracker/httptracker.cpp:558 src/tracker/udptracker.cpp:364
+#: src/tracker/udptracker.cpp:374
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Temps exhaurit en connectar amb el seguidor %1"
 
-#: src/tracker/udptracker.cpp:409
+#: src/tracker/udptracker.cpp:401
 #, kde-format
 msgid "Unable to resolve hostname %1"
 msgstr "No s'ha pogut resoldre el nom de màquina %1"
-
-#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:462
-msgid "Invalid response from tracker"
-msgstr "Resposta no vàlida del seguidor"
-
-#: src/tracker/httptracker.cpp:293
-msgid "Invalid data from tracker"
-msgstr "Dades no vàlides des del seguidor"
-
-#: src/tracker/httptracker.cpp:479
-msgid "Invalid tracker URL"
-msgstr "URL no vàlid del seguidor"
 
 #: src/util/logsystemmanager.cpp:33
 msgid "General"
@@ -435,6 +443,14 @@ msgstr "No es pot escriure a %1: %2"
 #, kde-format
 msgid "Cannot read from %1"
 msgstr "No es pot llegir des de %1"
+
+#: src/util/signalcatcher.cpp:78
+msgid "Error when writing to disk"
+msgstr "Error en escriure al disc"
+
+#: src/util/signalcatcher.cpp:78
+msgid "Error when reading from disk"
+msgstr "Error en llegir des del disc"
 
 #: src/util/fileops.cpp:94
 #, kde-format
@@ -477,35 +493,27 @@ msgid "Cannot calculate the filesize: %1"
 msgstr "No es pot calcular la mida de fitxer: %1"
 
 #: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
-#: src/util/fileops.cpp:387
+#: src/util/fileops.cpp:387 src/util/fileops.cpp:390
 #, kde-format
 msgid "Cannot expand file: %1"
 msgstr "No es pot expandir el fitxer: %1"
 
-#: src/util/fileops.cpp:417
+#: src/util/fileops.cpp:420
 #, kde-format
 msgid "Cannot seek in file: %1"
 msgstr "No es pot cercar en el fitxer: %1"
 
-#: src/util/functions.cpp:280
+#: src/util/functions.cpp:234
 #, kde-format
 msgid "%1/s"
 msgstr "%1/s"
 
-#: src/util/functions.cpp:291
+#: src/util/functions.cpp:245
 #, kde-format
 msgid "1 day "
 msgid_plural "%1 days "
 msgstr[0] "1 dia "
 msgstr[1] "%1 dies "
-
-#: src/util/signalcatcher.cpp:62
-msgid "Error when writing to disk"
-msgstr "Error en escriure al disc"
-
-#: src/util/signalcatcher.cpp:62
-msgid "Error when reading from disk"
-msgstr "Error en llegir des del disc"
 
 #: src/upnp/httprequest.cpp:96
 msgid "Connection closed unexpectedly"
@@ -563,9 +571,6 @@ msgstr "ktcli"
 
 #~ msgid "Parse Error"
 #~ msgstr "Error d'interpretació"
-
-#~ msgid "Waiting for other move jobs to finish"
-#~ msgstr "S'està esperant que acabin altres tasques de moure"
 
 #~ msgid "Not in use"
 #~ msgstr "Sense ús"

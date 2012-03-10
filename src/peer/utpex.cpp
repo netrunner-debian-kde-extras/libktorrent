@@ -18,15 +18,15 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.          *
  ***************************************************************************/
 #include "utpex.h"
+
 #include <net/address.h>
 #include <util/functions.h>
 #include <util/log.h>
-#include "peer.h"
-#include "packetwriter.h"
 #include <bcodec/bdecoder.h>
 #include <bcodec/bencoder.h>
 #include <bcodec/bnode.h>
 #include "peermanager.h"
+#include "peer.h"
 
 
 namespace bt
@@ -135,7 +135,7 @@ namespace bt
 			encode(enc,peers);
 			enc.end();
 			
-			peer->getPacketWriter().sendExtProtMsg(id,data);
+			peer->sendExtProtMsg(id,data);
 		}
 
 		peers = npeers;
@@ -161,8 +161,7 @@ namespace bt
 			const net::Address & addr = i->second;
 			if (addr.ipVersion() == 4)
 			{
-				// IPv4 addr is already in network byte order
-				quint32 ip = addr.ipAddress().IPv4Addr();
+				quint32 ip =  htonl(addr.toIPv4Address());
 				memcpy(buf + size,&ip,4);
 				WriteUint16(buf,size + 4,addr.port());
 				size += 6;

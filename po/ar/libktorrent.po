@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-11 11:17+0200\n"
+"POT-Creation-Date: 2012-02-07 18:22+0100\n"
 "PO-Revision-Date: 2007-10-14 15:28+0000\n"
 "Last-Translator: Youssef Chahibi <chahibi@gmail.com>\n"
 "Language-Team:  <en@li.org>\n"
@@ -16,108 +16,54 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
-"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
-"X-Generator: KBabel 1.11.4\n"
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 
-#: src/bcodec/bdecoder.cpp:62
+#: src/bcodec/bdecoder.cpp:71
 #, fuzzy, kde-format
 msgid "Illegal token: %1"
 msgstr "غير شرعي رمز مميز 1"
 
-#: src/bcodec/bdecoder.cpp:125 src/bcodec/bdecoder.cpp:133
+#: src/bcodec/bdecoder.cpp:133 src/bcodec/bdecoder.cpp:141
 #, fuzzy
 msgid "Decode error"
 msgstr "خطأ فك ترميز"
 
-#: src/bcodec/bdecoder.cpp:193 src/bcodec/bdecoder.cpp:238
+#: src/bcodec/bdecoder.cpp:201 src/bcodec/bdecoder.cpp:246
 #, fuzzy
 msgid "Unexpected end of input"
 msgstr "نهاية الإدخال غير متوقعة"
 
-#: src/bcodec/bdecoder.cpp:213 src/bcodec/bdecoder.cpp:247
+#: src/bcodec/bdecoder.cpp:221 src/bcodec/bdecoder.cpp:255
 #, fuzzy, kde-format
 msgid "Cannot convert %1 to an int"
 msgstr "لا يستطيع تحويل إلى int"
 
-#: src/bcodec/bdecoder.cpp:252
+#: src/bcodec/bdecoder.cpp:260
 #, fuzzy
 msgid "Torrent is incomplete."
 msgstr "السيل غير مكتمل !"
 
-#: src/datachecker/datacheckerjob.cpp:76
+#: src/datachecker/datacheckerjob.cpp:82
 msgid "Waiting for other data checks to finish"
 msgstr ""
 
-#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:93
 #, fuzzy
 msgid "Checking data"
 msgstr "جاري فحص البيانات"
 
-#: src/datachecker/datacheckerjob.cpp:135
+#: src/datachecker/datacheckerjob.cpp:141
 #, fuzzy
 msgid "Checking Data"
 msgstr "جاري فحص البيانات"
 
-#: src/datachecker/multidatachecker.cpp:203
+#: src/datachecker/multidatachecker.cpp:209
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
 #, fuzzy, kde-format
 msgid "Cannot open file %1: %2"
 msgstr "لا يستطيع فتح ملفّ 2"
-
-#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
-#: src/util/fileops.cpp:396
-#, fuzzy, kde-format
-msgid "Cannot open %1: %2"
-msgstr "غير قادر على فتح %1 : %2"
-
-#: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
-#: src/diskio/cachefile.cpp:412 src/diskio/cachefile.cpp:480
-#, fuzzy, kde-format
-msgid "Cannot open %1 for writing: readonly filesystem"
-msgstr "لا يستطيع فتح لـ"
-
-#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:418
-#, kde-format
-msgid "Attempting to write beyond the maximum size of %1"
-msgstr ""
-
-#: src/diskio/cachefile.cpp:255
-#, kde-format
-msgid ""
-"Cannot expand file %1: attempting to grow the file beyond the maximum size"
-msgstr ""
-
-#: src/diskio/cachefile.cpp:259
-#, fuzzy, kde-format
-msgid "Cannot expand file %1: %2"
-msgstr "لا يستطيع ابسط ملفّ 2"
-
-#: src/diskio/cachefile.cpp:378
-#, fuzzy, kde-format
-msgid "Error: Reading past the end of the file %1"
-msgstr "خطأ جاري القراءة end من ملفّ 1"
-
-#: src/diskio/cachefile.cpp:383 src/diskio/cachefile.cpp:430
-#, fuzzy, kde-format
-msgid "Failed to seek file %1: %2"
-msgstr "غير قادر على إنشاء %1 : %2"
-
-#: src/diskio/cachefile.cpp:391
-#, fuzzy, kde-format
-msgid "Error reading from %1"
-msgstr "خطأ عند القراءة من %1"
-
-#: src/diskio/cachefile.cpp:434
-#, fuzzy, kde-format
-msgid "Failed to write to file %1: %2"
-msgstr "غير قادر على إنشاء %1 : %2"
-
-#: src/diskio/cachefile.cpp:501
-#, fuzzy, kde-format
-msgid "Cannot preallocate diskspace: %1"
-msgstr "لا يستطيع 1"
 
 #: src/diskio/dndfile.cpp:89
 #, fuzzy, kde-format
@@ -134,23 +80,6 @@ msgstr "فشل إلى كتابة الأوّل إلى ملفّ 1"
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "فشل إلى كتابة الأخير إلى ملفّ 1"
 
-#: src/diskio/movedatafilesjob.cpp:166
-msgctxt "@title job"
-msgid "Moving"
-msgstr ""
-
-#: src/diskio/movedatafilesjob.cpp:167
-#, fuzzy
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "إضافة المقتفي"
-
-#: src/diskio/movedatafilesjob.cpp:168
-#, fuzzy
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "الورطة"
-
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, fuzzy, kde-format
 msgid "Failed to open %1: %2"
@@ -165,74 +94,83 @@ msgstr "غير قادر على إنشاء %1 : %2"
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
 
-#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
+#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
+#: src/util/fileops.cpp:399
+#, fuzzy, kde-format
+msgid "Cannot open %1: %2"
+msgstr "غير قادر على فتح %1 : %2"
+
+#: src/diskio/cachefile.cpp:122 src/diskio/cachefile.cpp:250
+#: src/diskio/cachefile.cpp:414 src/diskio/cachefile.cpp:482
+#, fuzzy, kde-format
+msgid "Cannot open %1 for writing: readonly filesystem"
+msgstr "لا يستطيع فتح لـ"
+
+#: src/diskio/cachefile.cpp:129 src/diskio/cachefile.cpp:420
+#, kde-format
+msgid "Attempting to write beyond the maximum size of %1"
+msgstr ""
+
+#: src/diskio/cachefile.cpp:257
+#, kde-format
+msgid ""
+"Cannot expand file %1: attempting to grow the file beyond the maximum size"
+msgstr ""
+
+#: src/diskio/cachefile.cpp:261
+#, fuzzy, kde-format
+msgid "Cannot expand file %1: %2"
+msgstr "لا يستطيع ابسط ملفّ 2"
+
+#: src/diskio/cachefile.cpp:380
+#, fuzzy, kde-format
+msgid "Error: Reading past the end of the file %1"
+msgstr "خطأ جاري القراءة end من ملفّ 1"
+
+#: src/diskio/cachefile.cpp:385 src/diskio/cachefile.cpp:432
+#, fuzzy, kde-format
+msgid "Failed to seek file %1: %2"
+msgstr "غير قادر على إنشاء %1 : %2"
+
+#: src/diskio/cachefile.cpp:393
+#, fuzzy, kde-format
+msgid "Error reading from %1"
+msgstr "خطأ عند القراءة من %1"
+
+#: src/diskio/cachefile.cpp:436
+#, fuzzy, kde-format
+msgid "Failed to write to file %1: %2"
+msgstr "غير قادر على إنشاء %1 : %2"
+
+#: src/diskio/cachefile.cpp:503
+#, fuzzy, kde-format
+msgid "Cannot preallocate diskspace: %1"
+msgstr "لا يستطيع 1"
+
+#: src/diskio/chunkmanager.cpp:928 src/diskio/chunkmanager.cpp:954
 #, fuzzy, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr "لايمكن فتح ملف الدليل %1 : %2"
 
-#: src/download/downloader.cpp:810
-msgid "Disabled because webseed does not match torrent"
+#: src/diskio/movedatafilesjob.cpp:140
+msgid "Waiting for other move jobs to finish"
 msgstr ""
 
-#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
+#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
 #, fuzzy
-msgid "Not connected"
-msgstr "البذر مكتمل"
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr "إضافة المقتفي"
 
-#: src/download/httpconnection.cpp:107
-#, kde-format
-msgid "Resolving proxy %1:%2"
-msgstr ""
-
-#: src/download/httpconnection.cpp:116
-#, fuzzy, kde-format
-msgid "Resolving hostname %1"
-msgstr "غير قادر على إنشاء %1 : %2"
-
-#: src/download/httpconnection.cpp:129 src/download/webseed.cpp:336
+#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
 #, fuzzy
-msgid "Connection closed"
-msgstr "الإتصالات:"
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr "الورطة"
 
-#: src/download/httpconnection.cpp:136
-#, kde-format
-msgid "Error: request failed: %1"
-msgstr ""
-
-#: src/download/httpconnection.cpp:153 src/download/httpconnection.cpp:217
-#, fuzzy
-msgid "Connected"
-msgstr "الإتصالات:"
-
-#: src/download/httpconnection.cpp:159
-msgid "Error: Failed to connect to webseed"
-msgstr ""
-
-#: src/download/httpconnection.cpp:224
-#, fuzzy
-msgid "Connecting"
-msgstr "الإتصالات:"
-
-#: src/download/httpconnection.cpp:235
-msgid "Failed to connect to webseed"
-msgstr ""
-
-#: src/download/httpconnection.cpp:242
-#, fuzzy
-msgid "Failed to resolve hostname of webseed"
-msgstr "غير قادر على إنشاء %1 : %2"
-
-#: src/download/httpconnection.cpp:322
-msgid "Error: failed to connect, server not responding"
-msgstr ""
-
-#: src/download/httpconnection.cpp:333
-msgid "Error: request timed out"
-msgstr ""
-
-#: src/download/httpconnection.cpp:398
-msgid "Redirected without a new location."
+#: src/diskio/movedatafilesjob.cpp:180
+msgctxt "@title job"
+msgid "Moving"
 msgstr ""
 
 #: src/download/chunkdownload.cpp:383
@@ -245,6 +183,76 @@ msgstr[2] "أضف النظير:"
 msgstr[3] "أضف النظير:"
 msgstr[4] "أضف النظير:"
 msgstr[5] "أضف النظير:"
+
+#: src/download/downloader.cpp:808
+msgid "Disabled because webseed does not match torrent"
+msgstr ""
+
+#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
+#: src/download/webseed.cpp:98
+#, fuzzy
+msgid "Not connected"
+msgstr "البذر مكتمل"
+
+#: src/download/httpconnection.cpp:115
+#, kde-format
+msgid "Resolving proxy %1:%2"
+msgstr ""
+
+#: src/download/httpconnection.cpp:121 src/download/httpconnection.cpp:139
+#, fuzzy
+msgid "Not enough system resources available"
+msgstr "هناك هو ليس متوفّر."
+
+#: src/download/httpconnection.cpp:133
+#, fuzzy, kde-format
+msgid "Resolving hostname %1"
+msgstr "غير قادر على إنشاء %1 : %2"
+
+#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
+#, fuzzy
+msgid "Connection closed"
+msgstr "الإتصالات:"
+
+#: src/download/httpconnection.cpp:160
+#, kde-format
+msgid "Error: request failed: %1"
+msgstr ""
+
+#: src/download/httpconnection.cpp:188 src/download/httpconnection.cpp:222
+#, fuzzy
+msgid "Connected"
+msgstr "الإتصالات:"
+
+#: src/download/httpconnection.cpp:199
+msgid "Error: Failed to connect to webseed"
+msgstr ""
+
+#: src/download/httpconnection.cpp:229
+#, fuzzy
+msgid "Connecting"
+msgstr "الإتصالات:"
+
+#: src/download/httpconnection.cpp:240
+msgid "Failed to connect to webseed"
+msgstr ""
+
+#: src/download/httpconnection.cpp:247
+#, fuzzy
+msgid "Failed to resolve hostname of webseed"
+msgstr "غير قادر على إنشاء %1 : %2"
+
+#: src/download/httpconnection.cpp:326
+msgid "Error: failed to connect, server not responding"
+msgstr ""
+
+#: src/download/httpconnection.cpp:337
+msgid "Error: request timed out"
+msgstr ""
+
+#: src/download/httpconnection.cpp:402
+msgid "Redirected without a new location."
+msgstr ""
 
 #: src/download/webseed.cpp:545
 #, kde-format
@@ -266,7 +274,7 @@ msgstr ""
 msgid "Announcing"
 msgstr "الإعلان"
 
-#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:86
+#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:87
 #, fuzzy, kde-format
 msgid "Error: %1"
 msgstr "خطأ: "
@@ -286,71 +294,6 @@ msgstr "زبون غير معروف"
 msgid "Cannot create index file: %1"
 msgstr "لا يستطيع إ_نشئ فهرس ملفّ 1"
 
-#: src/torrent/torrentstats.cpp:72
-#, fuzzy
-msgid "Not started"
-msgstr "لم يبدأ"
-
-#: src/torrent/torrentstats.cpp:74
-#, fuzzy
-msgid "Download completed"
-msgstr "التنزيل أكتمل"
-
-#: src/torrent/torrentstats.cpp:76
-#, fuzzy
-msgid "Seeding completed"
-msgstr "البذر مكتمل"
-
-#: src/torrent/torrentstats.cpp:78
-#, fuzzy
-msgctxt "Status of a torrent file"
-msgid "Seeding"
-msgstr "البذر"
-
-#: src/torrent/torrentstats.cpp:80
-#, fuzzy
-msgid "Downloading"
-msgstr "يجري التنزيل"
-
-#: src/torrent/torrentstats.cpp:82
-#, fuzzy
-msgid "Stalled"
-msgstr "متوقف"
-
-#: src/torrent/torrentstats.cpp:84
-#, fuzzy
-msgid "Stopped"
-msgstr "أوقٍِفَ"
-
-#: src/torrent/torrentstats.cpp:88
-#, fuzzy
-msgid "Allocating diskspace"
-msgstr "التّخصيص"
-
-#: src/torrent/torrentstats.cpp:90
-#, fuzzy
-msgid "Queued for seeding"
-msgstr "حالياً يجري تنزيل:"
-
-#: src/torrent/torrentstats.cpp:90
-#, fuzzy
-msgid "Queued for downloading"
-msgstr "حالياً يجري تنزيل:"
-
-#: src/torrent/torrentstats.cpp:94
-#, fuzzy
-msgid "Stopped. No space left on device."
-msgstr "أوقٍِفَ لا فراغ يسار يعمل جهاز."
-
-#: src/torrent/torrentstats.cpp:96
-msgid "Paused"
-msgstr ""
-
-#: src/torrent/torrentstats.cpp:98
-#, fuzzy
-msgid "Superseeding"
-msgstr "البذر"
-
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
@@ -368,65 +311,130 @@ msgstr "عاجز إلى فتح ملفّ 2"
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:553
+#: src/torrent/torrentcontrol.cpp:554
 #, fuzzy, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
 "torrent is probably corrupt or is not a valid torrent file."
 msgstr "أداة تعريف خطأ بينما يجري التحميل الـ هو فاسد أو هو ليس a ملفّ."
 
-#: src/torrent/torrentcontrol.cpp:583
+#: src/torrent/torrentcontrol.cpp:584
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:594
+#: src/torrent/torrentcontrol.cpp:595
 #, fuzzy, kde-format
 msgid "Unable to create %1: %2"
 msgstr "غير قادر على إنشاء %1 : %2"
 
-#: src/torrent/torrentcontrol.cpp:609
+#: src/torrent/torrentcontrol.cpp:610
 #, fuzzy, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
 "both torrents have been merged."
 msgstr "أنت قائمة من من."
 
-#: src/torrent/torrentcontrol.cpp:614
+#: src/torrent/torrentcontrol.cpp:615
 #, fuzzy, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "أنت 1"
+
+#: src/torrent/torrentstats.cpp:73
+#, fuzzy
+msgid "Not started"
+msgstr "لم يبدأ"
+
+#: src/torrent/torrentstats.cpp:75
+#, fuzzy
+msgid "Download completed"
+msgstr "التنزيل أكتمل"
+
+#: src/torrent/torrentstats.cpp:77
+#, fuzzy
+msgid "Seeding completed"
+msgstr "البذر مكتمل"
+
+#: src/torrent/torrentstats.cpp:79
+#, fuzzy
+msgctxt "Status of a torrent file"
+msgid "Seeding"
+msgstr "البذر"
+
+#: src/torrent/torrentstats.cpp:81
+#, fuzzy
+msgid "Downloading"
+msgstr "يجري التنزيل"
+
+#: src/torrent/torrentstats.cpp:83
+#, fuzzy
+msgid "Stalled"
+msgstr "متوقف"
+
+#: src/torrent/torrentstats.cpp:85
+#, fuzzy
+msgid "Stopped"
+msgstr "أوقٍِفَ"
+
+#: src/torrent/torrentstats.cpp:89
+#, fuzzy
+msgid "Allocating diskspace"
+msgstr "التّخصيص"
+
+#: src/torrent/torrentstats.cpp:91
+#, fuzzy
+msgid "Queued for seeding"
+msgstr "حالياً يجري تنزيل:"
+
+#: src/torrent/torrentstats.cpp:91
+#, fuzzy
+msgid "Queued for downloading"
+msgstr "حالياً يجري تنزيل:"
+
+#: src/torrent/torrentstats.cpp:95
+#, fuzzy
+msgid "Stopped. No space left on device."
+msgstr "أوقٍِفَ لا فراغ يسار يعمل جهاز."
+
+#: src/torrent/torrentstats.cpp:97
+msgid "Paused"
+msgstr ""
+
+#: src/torrent/torrentstats.cpp:99
+#, fuzzy
+msgid "Superseeding"
+msgstr "البذر"
 
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr ""
 
-#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
-#: src/tracker/httptracker.cpp:557
-#, kde-format
-msgid "Timeout contacting tracker %1"
-msgstr ""
-
-#: src/tracker/udptracker.cpp:409
-#, fuzzy, kde-format
-msgid "Unable to resolve hostname %1"
-msgstr "غير قادر على إنشاء %1 : %2"
-
-#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:462
+#: src/tracker/httptracker.cpp:287 src/tracker/httptracker.cpp:307
+#: src/tracker/httptracker.cpp:463
 #, fuzzy
 msgid "Invalid response from tracker"
 msgstr "غير صحيح إجابة من متتبع"
 
-#: src/tracker/httptracker.cpp:293
+#: src/tracker/httptracker.cpp:300
 #, fuzzy
 msgid "Invalid data from tracker"
 msgstr "غير صحيح البيانات من متتبع"
 
-#: src/tracker/httptracker.cpp:479
+#: src/tracker/httptracker.cpp:480
 #, fuzzy
 msgid "Invalid tracker URL"
 msgstr "غير صحيح متتبع URL"
+
+#: src/tracker/httptracker.cpp:558 src/tracker/udptracker.cpp:364
+#: src/tracker/udptracker.cpp:374
+#, kde-format
+msgid "Timeout contacting tracker %1"
+msgstr ""
+
+#: src/tracker/udptracker.cpp:401
+#, fuzzy, kde-format
+msgid "Unable to resolve hostname %1"
+msgstr "غير قادر على إنشاء %1 : %2"
 
 #: src/util/logsystemmanager.cpp:33
 #, fuzzy
@@ -465,6 +473,16 @@ msgstr "غير قادر على الكتابة إلى %1 : %2"
 #, fuzzy, kde-format
 msgid "Cannot read from %1"
 msgstr "غير قادر على القراءة من %1"
+
+#: src/util/signalcatcher.cpp:78
+#, fuzzy
+msgid "Error when writing to disk"
+msgstr "خطأ عند الكتابة إلى %1"
+
+#: src/util/signalcatcher.cpp:78
+#, fuzzy
+msgid "Error when reading from disk"
+msgstr "خطأ عند القراءة من %1"
 
 #: src/util/fileops.cpp:94
 #, fuzzy, kde-format
@@ -507,22 +525,22 @@ msgid "Cannot calculate the filesize: %1"
 msgstr "لا يستطيع حساب 1"
 
 #: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
-#: src/util/fileops.cpp:387
+#: src/util/fileops.cpp:387 src/util/fileops.cpp:390
 #, fuzzy, kde-format
 msgid "Cannot expand file: %1"
 msgstr "لا يستطيع ابسط ملفّ 1"
 
-#: src/util/fileops.cpp:417
+#: src/util/fileops.cpp:420
 #, fuzzy, kde-format
 msgid "Cannot seek in file: %1"
 msgstr "لا يستطيع استدعاء بوصة ملفّ 1"
 
-#: src/util/functions.cpp:280
+#: src/util/functions.cpp:234
 #, fuzzy, kde-format
 msgid "%1/s"
 msgstr "%1 ك. بايت/ث"
 
-#: src/util/functions.cpp:291
+#: src/util/functions.cpp:245
 #, fuzzy, kde-format
 msgid "1 day "
 msgid_plural "%1 days "
@@ -532,16 +550,6 @@ msgstr[2] ""
 msgstr[3] ""
 msgstr[4] ""
 msgstr[5] ""
-
-#: src/util/signalcatcher.cpp:62
-#, fuzzy
-msgid "Error when writing to disk"
-msgstr "خطأ عند الكتابة إلى %1"
-
-#: src/util/signalcatcher.cpp:62
-#, fuzzy
-msgid "Error when reading from disk"
-msgstr "خطأ عند القراءة من %1"
 
 #: src/upnp/httprequest.cpp:96
 #, fuzzy
@@ -606,16 +614,20 @@ msgstr ""
 #~ msgstr "خطأ إعرابخطأ تحليلأعرب خطأ"
 
 #, fuzzy
-#~ msgid "Cannot open file : %1 : %2"
-#~ msgstr "لا يستطيع فتح ملفّ 2"
+#~ msgid "Not in use"
+#~ msgstr "ملاحظة"
+
+#, fuzzy
+#~ msgid "Not enough diskspace"
+#~ msgstr "غير كافي قرص فراغ لـ 1"
 
 #, fuzzy
 #~ msgid "Cannot open file %1 : %2"
 #~ msgstr "غير قادر على فتح الملف %1 : %2"
 
 #, fuzzy
-#~ msgid "Not in use"
-#~ msgstr "ملاحظة"
+#~ msgid "Cannot open file : %1 : %2"
+#~ msgstr "لا يستطيع فتح ملفّ 2"
 
 #, fuzzy
 #~ msgid ""
@@ -626,10 +638,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Cannot open log file %1 : %2"
 #~ msgstr "غير قادر على فتح ملف سجلّ الوقائع %1 : %2"
-
-#, fuzzy
-#~ msgid "Not enough diskspace"
-#~ msgstr "غير كافي قرص فراغ لـ 1"
 
 #, fuzzy
 #~ msgid "UTP"
@@ -1690,7 +1698,6 @@ msgstr ""
 #~ msgstr "أحذف السيل"
 
 #, fuzzy
-#~| msgid "Start"
 #~ msgctxt "@action Start all selected torrents in the current tab"
 #~ msgid "Start"
 #~ msgstr "ابدأ"
@@ -2443,10 +2450,6 @@ msgstr ""
 #~ msgstr "إذهب إلى خصائص -> إعداد KTorrent, إذا كنت ترغب في تغيير الحدود."
 
 #, fuzzy
-#~ msgid "There is not enough diskspace available."
-#~ msgstr "هناك هو ليس متوفّر."
-
-#, fuzzy
 #~ msgid ""
 #~ "Your disk is running out of space.<br /><b>%1</b> is being downloaded to "
 #~ "'%2'."
@@ -2829,7 +2832,6 @@ msgstr ""
 #~ msgstr "العنوان:"
 
 #, fuzzy
-#~| msgid "Start"
 #~ msgid "Status:"
 #~ msgstr "الحالة:"
 
@@ -4235,6 +4237,10 @@ msgstr ""
 #, fuzzy
 #~ msgid "Show system tray icon"
 #~ msgstr "اعرض نظام أيقونة"
+
+#, fuzzy
+#~ msgid "Whether or not to show system tray popup messages."
+#~ msgstr "اعرض نظام نافذة منبثقة رسائل"
 
 #, fuzzy
 #~ msgid "Show system tray popup messages"

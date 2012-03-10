@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-11 11:17+0200\n"
+"POT-Creation-Date: 2012-02-07 18:22+0100\n"
 "PO-Revision-Date: 2011-06-08 07:00+0200\n"
 "Last-Translator: Dimitrios Glentadakis <dglent@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-doc@kde.org>\n"
@@ -24,103 +24,47 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 1.2\n"
 
-#: src/bcodec/bdecoder.cpp:62
+#: src/bcodec/bdecoder.cpp:71
 #, kde-format
 msgid "Illegal token: %1"
 msgstr "Εσφαλμένο αναγνωριστικό: %1"
 
-#: src/bcodec/bdecoder.cpp:125 src/bcodec/bdecoder.cpp:133
+#: src/bcodec/bdecoder.cpp:133 src/bcodec/bdecoder.cpp:141
 msgid "Decode error"
 msgstr "Σφάλμα αποκωδικοποίησης"
 
-#: src/bcodec/bdecoder.cpp:193 src/bcodec/bdecoder.cpp:238
+#: src/bcodec/bdecoder.cpp:201 src/bcodec/bdecoder.cpp:246
 msgid "Unexpected end of input"
 msgstr "Μη αναμενόμενο τέλος της εισόδου"
 
-#: src/bcodec/bdecoder.cpp:213 src/bcodec/bdecoder.cpp:247
+#: src/bcodec/bdecoder.cpp:221 src/bcodec/bdecoder.cpp:255
 #, kde-format
 msgid "Cannot convert %1 to an int"
 msgstr "Αδυναμία μετατροπής του %1 σε ακέραιο"
 
-#: src/bcodec/bdecoder.cpp:252
+#: src/bcodec/bdecoder.cpp:260
 msgid "Torrent is incomplete."
 msgstr "Το torrent δεν είναι ολοκληρωμένο"
 
-#: src/datachecker/datacheckerjob.cpp:76
+#: src/datachecker/datacheckerjob.cpp:82
 msgid "Waiting for other data checks to finish"
 msgstr "Αναμονή για ολοκλήρωση άλλων ελέγχων σε δεδομένα"
 
-#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:93
 msgid "Checking data"
 msgstr "Έλεγχος δεδομένων"
 
-#: src/datachecker/datacheckerjob.cpp:135
+#: src/datachecker/datacheckerjob.cpp:141
 msgid "Checking Data"
 msgstr "Έλεγχος δεδομένων"
 
-#: src/datachecker/multidatachecker.cpp:203
+#: src/datachecker/multidatachecker.cpp:209
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
 #, kde-format
 msgid "Cannot open file %1: %2"
 msgstr "Αδυναμία ανοίγματος του αρχείου %1: %2"
-
-#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
-#: src/util/fileops.cpp:396
-#, kde-format
-msgid "Cannot open %1: %2"
-msgstr "Αδυναμία ανοίγματος του αρχείου %1 : %2"
-
-#: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
-#: src/diskio/cachefile.cpp:412 src/diskio/cachefile.cpp:480
-#, kde-format
-msgid "Cannot open %1 for writing: readonly filesystem"
-msgstr ""
-"Αδυναμία ανοίγματος του %1 για εγγραφή: σύστημα αρχείων για ανάγνωση μόνο"
-
-#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:418
-#, kde-format
-msgid "Attempting to write beyond the maximum size of %1"
-msgstr "Απόπειρα εγγραφής πέρα από το μέγιστο μέγεθος του %1"
-
-#: src/diskio/cachefile.cpp:255
-#, kde-format
-msgid ""
-"Cannot expand file %1: attempting to grow the file beyond the maximum size"
-msgstr ""
-"Αδυναμία επέκτασης αρχείου %1: απόπειρα αύξησης μεγέθους αρχείου πέρα από το "
-"μέγιστο"
-
-#: src/diskio/cachefile.cpp:259
-#, kde-format
-msgid "Cannot expand file %1: %2"
-msgstr "Αδυναμία επέκτασης του αρχείου: %1: %2"
-
-#: src/diskio/cachefile.cpp:378
-#, kde-format
-msgid "Error: Reading past the end of the file %1"
-msgstr "Σφάλμα: Η ανάγνωση πέρασε το τέλος του αρχείου %1"
-
-#: src/diskio/cachefile.cpp:383 src/diskio/cachefile.cpp:430
-#, kde-format
-msgid "Failed to seek file %1: %2"
-msgstr "Αποτυχία αναζήτησης αρχείου %1: %2"
-
-#: src/diskio/cachefile.cpp:391
-#, kde-format
-msgid "Error reading from %1"
-msgstr "Σφάλμα ανάγνωσης από το %1"
-
-#: src/diskio/cachefile.cpp:434
-#, kde-format
-msgid "Failed to write to file %1: %2"
-msgstr "Αποτυχία εγγραφής στο αρχείο %1: %2"
-
-#: src/diskio/cachefile.cpp:501
-#, kde-format
-msgid "Cannot preallocate diskspace: %1"
-msgstr "Αδυναμία προκράτησης χώρου στο δίσκο: %1"
 
 #: src/diskio/dndfile.cpp:89
 #, kde-format
@@ -137,21 +81,6 @@ msgstr "Αποτυχία εγγραφής του πρώτου κομματιού
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Αποτυχία εγγραφής του τελευταίου κομματιού στο αρχείο DND: %1"
 
-#: src/diskio/movedatafilesjob.cpp:166
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Κινούμενο"
-
-#: src/diskio/movedatafilesjob.cpp:167
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "Πηγή"
-
-#: src/diskio/movedatafilesjob.cpp:168
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "Προορισμός"
-
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, kde-format
 msgid "Failed to open %1: %2"
@@ -166,70 +95,86 @@ msgstr "Αδυναμία δημιουργίας του %1: %2"
 msgid "Unable to write to a piece mapped read only"
 msgstr "Αδυναμία εγγραφής σε κομμάτι για ανάγνωση μόνο"
 
-#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
+#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
+#: src/util/fileops.cpp:399
+#, kde-format
+msgid "Cannot open %1: %2"
+msgstr "Αδυναμία ανοίγματος του αρχείου %1 : %2"
+
+#: src/diskio/cachefile.cpp:122 src/diskio/cachefile.cpp:250
+#: src/diskio/cachefile.cpp:414 src/diskio/cachefile.cpp:482
+#, kde-format
+msgid "Cannot open %1 for writing: readonly filesystem"
+msgstr ""
+"Αδυναμία ανοίγματος του %1 για εγγραφή: σύστημα αρχείων για ανάγνωση μόνο"
+
+#: src/diskio/cachefile.cpp:129 src/diskio/cachefile.cpp:420
+#, kde-format
+msgid "Attempting to write beyond the maximum size of %1"
+msgstr "Απόπειρα εγγραφής πέρα από το μέγιστο μέγεθος του %1"
+
+#: src/diskio/cachefile.cpp:257
+#, kde-format
+msgid ""
+"Cannot expand file %1: attempting to grow the file beyond the maximum size"
+msgstr ""
+"Αδυναμία επέκτασης αρχείου %1: απόπειρα αύξησης μεγέθους αρχείου πέρα από το "
+"μέγιστο"
+
+#: src/diskio/cachefile.cpp:261
+#, kde-format
+msgid "Cannot expand file %1: %2"
+msgstr "Αδυναμία επέκτασης του αρχείου: %1: %2"
+
+#: src/diskio/cachefile.cpp:380
+#, kde-format
+msgid "Error: Reading past the end of the file %1"
+msgstr "Σφάλμα: Η ανάγνωση πέρασε το τέλος του αρχείου %1"
+
+#: src/diskio/cachefile.cpp:385 src/diskio/cachefile.cpp:432
+#, kde-format
+msgid "Failed to seek file %1: %2"
+msgstr "Αποτυχία αναζήτησης αρχείου %1: %2"
+
+#: src/diskio/cachefile.cpp:393
+#, kde-format
+msgid "Error reading from %1"
+msgstr "Σφάλμα ανάγνωσης από το %1"
+
+#: src/diskio/cachefile.cpp:436
+#, kde-format
+msgid "Failed to write to file %1: %2"
+msgstr "Αποτυχία εγγραφής στο αρχείο %1: %2"
+
+#: src/diskio/cachefile.cpp:503
+#, kde-format
+msgid "Cannot preallocate diskspace: %1"
+msgstr "Αδυναμία προκράτησης χώρου στο δίσκο: %1"
+
+#: src/diskio/chunkmanager.cpp:928 src/diskio/chunkmanager.cpp:954
 #, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr "Αδυναμία ανοίγματος του αρχείου ευρετηρίου %1: %2"
 
-#: src/download/downloader.cpp:810
-msgid "Disabled because webseed does not match torrent"
-msgstr "Απενεργοποιήθηκε γιατί η πηγή ιστού δεν ταιριάζει με το torrent"
+#: src/diskio/movedatafilesjob.cpp:140
+#, fuzzy
+msgid "Waiting for other move jobs to finish"
+msgstr "Αναμονή για ολοκλήρωση άλλων ελέγχων σε δεδομένα"
 
-#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
-msgid "Not connected"
-msgstr "Χωρίς σύνδεση"
+#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr "Πηγή"
 
-#: src/download/httpconnection.cpp:107
-#, kde-format
-msgid "Resolving proxy %1:%2"
-msgstr "Επίλυση διαμεσολαβητή %1:%2"
+#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr "Προορισμός"
 
-#: src/download/httpconnection.cpp:116
-#, kde-format
-msgid "Resolving hostname %1"
-msgstr "Επίλυση ονόματος υπολογιστή %1"
-
-#: src/download/httpconnection.cpp:129 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "Η σύνδεση έκλεισε"
-
-#: src/download/httpconnection.cpp:136
-#, kde-format
-msgid "Error: request failed: %1"
-msgstr "Σφάλμα: αποτυχία αίτησης: %1"
-
-#: src/download/httpconnection.cpp:153 src/download/httpconnection.cpp:217
-msgid "Connected"
-msgstr "Σε σύνδεση"
-
-#: src/download/httpconnection.cpp:159
-msgid "Error: Failed to connect to webseed"
-msgstr "Σφάλμα: αποτυχία σύνδεσης σε πηγή ιστού"
-
-#: src/download/httpconnection.cpp:224
-msgid "Connecting"
-msgstr "Σύνδεση"
-
-#: src/download/httpconnection.cpp:235
-msgid "Failed to connect to webseed"
-msgstr "Αποτυχία σύνδεσης σε πηγή ιστού"
-
-#: src/download/httpconnection.cpp:242
-msgid "Failed to resolve hostname of webseed"
-msgstr "Αποτυχία επίλυσης ονόματος υπολογιστή της πηγής ιστού"
-
-#: src/download/httpconnection.cpp:322
-msgid "Error: failed to connect, server not responding"
-msgstr "Σφάλμα: αποτυχία σύνδεσης, ο εξυπηρετητής δεν ανταποκρίνεται"
-
-#: src/download/httpconnection.cpp:333
-msgid "Error: request timed out"
-msgstr "Σφάλμα: λήξη χρονικού ορίου αίτησης"
-
-#: src/download/httpconnection.cpp:398
-msgid "Redirected without a new location."
-msgstr "Ανακατεύθυνση χωρίς μια νέα τοποθεσία."
+#: src/diskio/movedatafilesjob.cpp:180
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Κινούμενο"
 
 #: src/download/chunkdownload.cpp:383
 #, kde-format
@@ -237,6 +182,71 @@ msgid "1 peer"
 msgid_plural "%1 peers"
 msgstr[0] "1 ομότιμος κόμβος"
 msgstr[1] "%1 ομότιμοι κόμβοι"
+
+#: src/download/downloader.cpp:808
+msgid "Disabled because webseed does not match torrent"
+msgstr "Απενεργοποιήθηκε γιατί η πηγή ιστού δεν ταιριάζει με το torrent"
+
+#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
+#: src/download/webseed.cpp:98
+msgid "Not connected"
+msgstr "Χωρίς σύνδεση"
+
+#: src/download/httpconnection.cpp:115
+#, kde-format
+msgid "Resolving proxy %1:%2"
+msgstr "Επίλυση διαμεσολαβητή %1:%2"
+
+#: src/download/httpconnection.cpp:121 src/download/httpconnection.cpp:139
+#, fuzzy
+msgid "Not enough system resources available"
+msgstr "Δεν υπάρχει αρκετός διαθέσιμος χώρος στο δίσκο."
+
+#: src/download/httpconnection.cpp:133
+#, kde-format
+msgid "Resolving hostname %1"
+msgstr "Επίλυση ονόματος υπολογιστή %1"
+
+#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
+msgid "Connection closed"
+msgstr "Η σύνδεση έκλεισε"
+
+#: src/download/httpconnection.cpp:160
+#, kde-format
+msgid "Error: request failed: %1"
+msgstr "Σφάλμα: αποτυχία αίτησης: %1"
+
+#: src/download/httpconnection.cpp:188 src/download/httpconnection.cpp:222
+msgid "Connected"
+msgstr "Σε σύνδεση"
+
+#: src/download/httpconnection.cpp:199
+msgid "Error: Failed to connect to webseed"
+msgstr "Σφάλμα: αποτυχία σύνδεσης σε πηγή ιστού"
+
+#: src/download/httpconnection.cpp:229
+msgid "Connecting"
+msgstr "Σύνδεση"
+
+#: src/download/httpconnection.cpp:240
+msgid "Failed to connect to webseed"
+msgstr "Αποτυχία σύνδεσης σε πηγή ιστού"
+
+#: src/download/httpconnection.cpp:247
+msgid "Failed to resolve hostname of webseed"
+msgstr "Αποτυχία επίλυσης ονόματος υπολογιστή της πηγής ιστού"
+
+#: src/download/httpconnection.cpp:326
+msgid "Error: failed to connect, server not responding"
+msgstr "Σφάλμα: αποτυχία σύνδεσης, ο εξυπηρετητής δεν ανταποκρίνεται"
+
+#: src/download/httpconnection.cpp:337
+msgid "Error: request timed out"
+msgstr "Σφάλμα: λήξη χρονικού ορίου αίτησης"
+
+#: src/download/httpconnection.cpp:402
+msgid "Redirected without a new location."
+msgstr "Ανακατεύθυνση χωρίς μια νέα τοποθεσία."
 
 #: src/download/webseed.cpp:545
 #, kde-format
@@ -256,7 +266,7 @@ msgstr "Προειδοποίηση: %1"
 msgid "Announcing"
 msgstr "Ανακοίνωση"
 
-#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:86
+#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:87
 #, kde-format
 msgid "Error: %1"
 msgstr "Σφάλμα: %1"
@@ -275,59 +285,6 @@ msgstr "Άγνωστος πελάτης"
 msgid "Cannot create index file: %1"
 msgstr "Αδυναμία δημιουργίας αρχείου ευρετηρίου: %1"
 
-#: src/torrent/torrentstats.cpp:72
-msgid "Not started"
-msgstr "Δεν ξεκίνησε"
-
-#: src/torrent/torrentstats.cpp:74
-msgid "Download completed"
-msgstr "Η λήψη ολοκληρώθηκε"
-
-#: src/torrent/torrentstats.cpp:76
-msgid "Seeding completed"
-msgstr "Ολοκλήρωση προσφοράς πηγής"
-
-#: src/torrent/torrentstats.cpp:78
-msgctxt "Status of a torrent file"
-msgid "Seeding"
-msgstr "Προσφορά πηγής"
-
-#: src/torrent/torrentstats.cpp:80
-msgid "Downloading"
-msgstr "Λήψη"
-
-#: src/torrent/torrentstats.cpp:82
-msgid "Stalled"
-msgstr "Σταματημένο"
-
-#: src/torrent/torrentstats.cpp:84
-msgid "Stopped"
-msgstr "Διακόπηκε"
-
-#: src/torrent/torrentstats.cpp:88
-msgid "Allocating diskspace"
-msgstr "Κατανομή χώρου στο δίσκο"
-
-#: src/torrent/torrentstats.cpp:90
-msgid "Queued for seeding"
-msgstr "Σε αναμονή για προσφορά πηγής"
-
-#: src/torrent/torrentstats.cpp:90
-msgid "Queued for downloading"
-msgstr "Σε αναμονή για λήψη"
-
-#: src/torrent/torrentstats.cpp:94
-msgid "Stopped. No space left on device."
-msgstr "Διεκόπη. Δεν υπάρχει ελεύθερος χώρος στη συσκευή."
-
-#: src/torrent/torrentstats.cpp:96
-msgid "Paused"
-msgstr "Σε παύση"
-
-#: src/torrent/torrentstats.cpp:98
-msgid "Superseeding"
-msgstr "Υπερπροσφορά πηγής"
-
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
@@ -344,7 +301,7 @@ msgstr " Αδυναμία ανοίγματος του αρχείου torrent %1:
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr "Σφάλμα εγγραφής στο δίσκο, έχετε αρκετό χώρο;"
 
-#: src/torrent/torrentcontrol.cpp:553
+#: src/torrent/torrentcontrol.cpp:554
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -353,17 +310,17 @@ msgstr ""
 "Παρουσιάστηκε σφάλμα κατά τη φόρτωση του torrent <b>%1</b>:<br/><b>%2</b><br/"
 "> Το torrent πιθανότατα είναι κατεστραμμένο, ή δεν είναι έγκυρο αρχείο torrent."
 
-#: src/torrent/torrentcontrol.cpp:583
+#: src/torrent/torrentcontrol.cpp:584
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr "Παρουσιάστηκε σφάλμα κατά τη φόρτωση <b>%1</b>:<br/><b>%2</b>"
 
-#: src/torrent/torrentcontrol.cpp:594
+#: src/torrent/torrentcontrol.cpp:595
 #, kde-format
 msgid "Unable to create %1: %2"
 msgstr "Αδυναμία δημιουργίας %1: %2"
 
-#: src/torrent/torrentcontrol.cpp:609
+#: src/torrent/torrentcontrol.cpp:610
 #, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
@@ -372,38 +329,91 @@ msgstr ""
 "Ήδη λαμβάνετε το torrent <b>%1</b>. Οι λίστες ιχνηλατών και από τα δύο "
 "torrent συγχωνεύτηκαν."
 
-#: src/torrent/torrentcontrol.cpp:614
+#: src/torrent/torrentcontrol.cpp:615
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Ήδη λαμβάνετε αυτό το αρχείο torrent <b>%1</b>."
+
+#: src/torrent/torrentstats.cpp:73
+msgid "Not started"
+msgstr "Δεν ξεκίνησε"
+
+#: src/torrent/torrentstats.cpp:75
+msgid "Download completed"
+msgstr "Η λήψη ολοκληρώθηκε"
+
+#: src/torrent/torrentstats.cpp:77
+msgid "Seeding completed"
+msgstr "Ολοκλήρωση προσφοράς πηγής"
+
+#: src/torrent/torrentstats.cpp:79
+msgctxt "Status of a torrent file"
+msgid "Seeding"
+msgstr "Προσφορά πηγής"
+
+#: src/torrent/torrentstats.cpp:81
+msgid "Downloading"
+msgstr "Λήψη"
+
+#: src/torrent/torrentstats.cpp:83
+msgid "Stalled"
+msgstr "Σταματημένο"
+
+#: src/torrent/torrentstats.cpp:85
+msgid "Stopped"
+msgstr "Διακόπηκε"
+
+#: src/torrent/torrentstats.cpp:89
+msgid "Allocating diskspace"
+msgstr "Κατανομή χώρου στο δίσκο"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Queued for seeding"
+msgstr "Σε αναμονή για προσφορά πηγής"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Queued for downloading"
+msgstr "Σε αναμονή για λήψη"
+
+#: src/torrent/torrentstats.cpp:95
+msgid "Stopped. No space left on device."
+msgstr "Διεκόπη. Δεν υπάρχει ελεύθερος χώρος στη συσκευή."
+
+#: src/torrent/torrentstats.cpp:97
+msgid "Paused"
+msgstr "Σε παύση"
+
+#: src/torrent/torrentstats.cpp:99
+msgid "Superseeding"
+msgstr "Υπερπροσφορά πηγής"
 
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "Ανακατεύθυνση χωρίς τοποθεσία ανακατεύθυνσης"
 
-#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
-#: src/tracker/httptracker.cpp:557
+#: src/tracker/httptracker.cpp:287 src/tracker/httptracker.cpp:307
+#: src/tracker/httptracker.cpp:463
+msgid "Invalid response from tracker"
+msgstr "Μη έγκυρη απάντηση από ιχνηλάτη"
+
+#: src/tracker/httptracker.cpp:300
+msgid "Invalid data from tracker"
+msgstr "Μη έγκυρα δεδομένα από τον ιχνηλάτη"
+
+#: src/tracker/httptracker.cpp:480
+msgid "Invalid tracker URL"
+msgstr "Μη έγκυρο URL ιχνηλάτη"
+
+#: src/tracker/httptracker.cpp:558 src/tracker/udptracker.cpp:364
+#: src/tracker/udptracker.cpp:374
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Τέλος χρόνου επαφής με ιχνηλάτη %1"
 
-#: src/tracker/udptracker.cpp:409
+#: src/tracker/udptracker.cpp:401
 #, kde-format
 msgid "Unable to resolve hostname %1"
 msgstr "Αδυναμία επίλυσης ονόματος υπολογιστή %1"
-
-#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:462
-msgid "Invalid response from tracker"
-msgstr "Μη έγκυρη απάντηση από ιχνηλάτη"
-
-#: src/tracker/httptracker.cpp:293
-msgid "Invalid data from tracker"
-msgstr "Μη έγκυρα δεδομένα από τον ιχνηλάτη"
-
-#: src/tracker/httptracker.cpp:479
-msgid "Invalid tracker URL"
-msgstr "Μη έγκυρο URL ιχνηλάτη"
 
 #: src/util/logsystemmanager.cpp:33
 msgid "General"
@@ -438,6 +448,14 @@ msgstr "Αδυναμία εγγραφής στο %1: %2"
 #, kde-format
 msgid "Cannot read from %1"
 msgstr "Αδυναμία ανάγνωσης από το %1"
+
+#: src/util/signalcatcher.cpp:78
+msgid "Error when writing to disk"
+msgstr "Σφάλμα κατά την εγγραφή στο δίσκο"
+
+#: src/util/signalcatcher.cpp:78
+msgid "Error when reading from disk"
+msgstr "Σφάλμα κατά την ανάγνωση από το δίσκο"
 
 #: src/util/fileops.cpp:94
 #, kde-format
@@ -480,35 +498,27 @@ msgid "Cannot calculate the filesize: %1"
 msgstr "Αδυναμία υπολογισμού του μεγέθους αρχείου: %1"
 
 #: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
-#: src/util/fileops.cpp:387
+#: src/util/fileops.cpp:387 src/util/fileops.cpp:390
 #, kde-format
 msgid "Cannot expand file: %1"
 msgstr "Αδυναμία επέκτασης του αρχείου: %1"
 
-#: src/util/fileops.cpp:417
+#: src/util/fileops.cpp:420
 #, kde-format
 msgid "Cannot seek in file: %1"
 msgstr "Αδυναμία αναζήτησης στο αρχείο: %1"
 
-#: src/util/functions.cpp:280
+#: src/util/functions.cpp:234
 #, kde-format
 msgid "%1/s"
 msgstr "%1/s"
 
-#: src/util/functions.cpp:291
+#: src/util/functions.cpp:245
 #, kde-format
 msgid "1 day "
 msgid_plural "%1 days "
 msgstr[0] "1 ημέρα"
 msgstr[1] "%1 ημέρες"
-
-#: src/util/signalcatcher.cpp:62
-msgid "Error when writing to disk"
-msgstr "Σφάλμα κατά την εγγραφή στο δίσκο"
-
-#: src/util/signalcatcher.cpp:62
-msgid "Error when reading from disk"
-msgstr "Σφάλμα κατά την ανάγνωση από το δίσκο"
 
 #: src/upnp/httprequest.cpp:96
 msgid "Connection closed unexpectedly"
@@ -567,14 +577,18 @@ msgstr "ktcli"
 #~ msgid "Parse Error"
 #~ msgstr "Σφάλμα ανάλυσης"
 
-#~ msgid "Cannot open file : %1 : %2"
-#~ msgstr "Αδύνατο το άνοιγμα του αρχείου : %1 : %2"
+#~ msgid "Not in use"
+#~ msgstr "Όχι σε χρήση"
+
+#, fuzzy
+#~ msgid "Not enough diskspace"
+#~ msgstr "Μη επαρκής χώρος στο δίσκο για το %1"
 
 #~ msgid "Cannot open file %1 : %2"
 #~ msgstr "Αδύνατο το άνοιγμα του αρχείου %1 : %2"
 
-#~ msgid "Not in use"
-#~ msgstr "Όχι σε χρήση"
+#~ msgid "Cannot open file : %1 : %2"
+#~ msgstr "Αδύνατο το άνοιγμα του αρχείου : %1 : %2"
 
 #~ msgid ""
 #~ "An error occurred while loading the torrent:<br/><b>%1</b><br/>The "
@@ -587,16 +601,10 @@ msgstr "ktcli"
 #~ msgid "Cannot open log file %1 : %2"
 #~ msgstr "Αδύνατο το άνοιγμα του αρχείου καταγραφής %1 : %2"
 
-#, fuzzy
-#~| msgid "Insufficient disk space for %1"
-#~ msgid "Not enough diskspace"
-#~ msgstr "Μη επαρκής χώρος στο δίσκο για το %1"
-
 #~ msgid "Timeout occurred"
 #~ msgstr "Λήξη χρονικού ορίου"
 
 #, fuzzy
-#~| msgid "UDP"
 #~ msgid "UTP"
 #~ msgstr "UDP"
 
@@ -605,7 +613,6 @@ msgstr "ktcli"
 #~ "Αδυναμία σύνδεσης στη θύρα udp %1 ή σε μια από τις ακόλουθες 10 θύρες."
 
 #, fuzzy
-#~| msgid "Scan Folder"
 #~ msgctxt "plugin name"
 #~ msgid "Scan Folder"
 #~ msgstr "Σάρωση φακέλου"
@@ -655,7 +662,6 @@ msgstr "ktcli"
 #~ msgstr "Φορέας (Syndication)"
 
 #, fuzzy
-#~| msgid "Widget to manage RSS and Atom feeds"
 #~ msgid "Manages RSS and Atom feeds"
 #~ msgstr "Συστατικό διαχείρισης ροών RSS και Atom"
 
@@ -666,7 +672,6 @@ msgstr "ktcli"
 #~ msgstr "Παρακαλώ εισάγετε το URL της ροής RSS ή Atom."
 
 #, fuzzy
-#~| msgid "Failed to load feed %1 !"
 #~ msgid "Failed to load feed %1."
 #~ msgstr "Αποτυχία φόρτωσης της ροής %1 !"
 
@@ -692,7 +697,6 @@ msgstr "ktcli"
 #~ msgstr "Προσθήκη/αφαίρεση φίλτρων"
 
 #, fuzzy
-#~| msgid "Username:"
 #~ msgid "Rename"
 #~ msgstr "Όνομα χρήστη:"
 
@@ -721,7 +725,6 @@ msgstr "ktcli"
 #~ msgstr "<b>Γίνεται λήψη</b>"
 
 #, fuzzy
-#~| msgid "Couldn't find a valid link to a torrent on %1"
 #~ msgid "Could not find a valid link to a torrent on %1"
 #~ msgstr "Αδυναμία εύρεσης ενός έγκυρου δεσμού σε ένα torrent στο %1"
 
@@ -735,7 +738,6 @@ msgstr "ktcli"
 #~ msgstr "Torrent"
 
 #, fuzzy
-#~| msgid "There already is a filter named %1, filter names must be unique !"
 #~ msgid "There already is a filter named %1, filter names must be unique."
 #~ msgstr ""
 #~ "Υπάρχει ήδη ένα φίλτρο με το όνομα %1, ενώ θα 'πρεπε το όνομα να είναι "
@@ -754,12 +756,10 @@ msgstr "ktcli"
 #~ msgstr "<b>%1</b><br/>Προεπισκόπηση: %2<br/>Έχει ληφθεί: %3 %"
 
 #, fuzzy
-#~| msgid "Left:"
 #~ msgid "Length"
 #~ msgstr "Διάρκεια"
 
 #, fuzzy
-#~| msgid "Clear"
 #~ msgid "Year"
 #~ msgstr "Καθαρισμός"
 
@@ -773,12 +773,10 @@ msgstr "ktcli"
 #~ msgstr "Ένα αρχείο"
 
 #, fuzzy
-#~| msgid "Play"
 #~ msgid "Playlist"
 #~ msgstr "Αναπαραγωγή"
 
 #, fuzzy
-#~| msgid "Random Files"
 #~ msgid "Random"
 #~ msgstr "Τυχαία αρχεία"
 
@@ -786,7 +784,6 @@ msgstr "ktcli"
 #~ msgstr "Αφαίρεση"
 
 #, fuzzy
-#~| msgid "Add Feed"
 #~ msgid "Add Media"
 #~ msgstr "Προσθήκη ροής"
 
@@ -813,7 +810,6 @@ msgstr "ktcli"
 #~ msgstr "Αναπαραγωγέας πολυμέσων"
 
 #, fuzzy
-#~| msgid "Play"
 #~ msgid "Play List"
 #~ msgstr "Αναπαραγωγή"
 
@@ -839,7 +835,6 @@ msgstr "ktcli"
 #~ msgstr "Αναπαραγωγέας ταινιών"
 
 #, fuzzy
-#~| msgid "Connections"
 #~ msgid "Collection:"
 #~ msgstr "Συνδέσεις"
 
@@ -847,12 +842,10 @@ msgstr "ktcli"
 #~ msgstr "Εναλλαγή πλήρους οθόνης"
 
 #, fuzzy
-#~| msgid "KTorrent is not running !"
 #~ msgid "KTorrent is playing a video."
 #~ msgstr "Το KTorrent δεν εκτελείται!"
 
 #, fuzzy
-#~| msgid "Web interface skin:"
 #~ msgid "Cannot find web interface skins."
 #~ msgstr "Θέμα περιβάλλοντος ιστού:"
 
@@ -860,42 +853,34 @@ msgstr "ktcli"
 #~ msgstr "Περιβάλλον ιστού"
 
 #, fuzzy
-#~| msgid "Invalid tracker URL"
 #~ msgid "Invalid data received"
 #~ msgstr "Μη έγκυρο URL ανιχνευτή"
 
 #, fuzzy
-#~| msgid "Folder to store torrent information:"
 #~ msgid "Failed to open temporary file"
 #~ msgstr "Φάκελος αποθήκευσης πληροφοριών torrent:"
 
 #, fuzzy
-#~| msgid "Unknown client"
 #~ msgid "Unknown"
 #~ msgstr "Άγνωστος πελάτης"
 
 #, fuzzy
-#~| msgid "Rescan"
 #~ msgid "Rescale"
 #~ msgstr "Επανασάρωση"
 
 #, fuzzy
-#~| msgid "Resume"
 #~ msgid "Reset"
 #~ msgstr "Συνέχιση"
 
 #, fuzzy
-#~| msgid " KiB/s"
 #~ msgid "KiB/s"
 #~ msgstr " KiB/δ"
 
 #, fuzzy
-#~| msgid "Statistics Plugin"
 #~ msgid "Statistics"
 #~ msgstr "Πρόσθετο στατιστικών"
 
 #, fuzzy
-#~| msgid "(= %1/s)"
 #~ msgid "(= %1 ms)"
 #~ msgstr "(= %1/δ)"
 
@@ -909,7 +894,6 @@ msgstr "ktcli"
 #~ msgstr "Συνδεδεμένοι γόνοι"
 
 #, fuzzy
-#~| msgid "Seeds  in swarms"
 #~ msgid "Seeds in swarms"
 #~ msgstr "Γόνοι στο σμήνος"
 
@@ -920,12 +904,10 @@ msgstr "ktcli"
 #~ msgstr "Μέση τιμή συνδεδεμένων γόνων ανά torrent"
 
 #, fuzzy
-#~| msgid "Average leechers connected per torrent"
 #~ msgid "Average leechers connected per running torrent"
 #~ msgstr "Μέση τιμών συνδεδεμένων χρηστών ανά torrent"
 
 #, fuzzy
-#~| msgid "Avg. seeds connected per running torrent"
 #~ msgid "Average seeds connected per running torrent"
 #~ msgstr "Μέση τιμή συνδεδεμένων γόνων ανά τρέχον torrent"
 
@@ -942,7 +924,6 @@ msgstr "ktcli"
 #~ msgstr "Μέση ταχύτητα"
 
 #, fuzzy
-#~| msgid "Speed Limits"
 #~ msgid "Speed limit"
 #~ msgstr "Όρια ταχύτητας"
 
@@ -962,17 +943,14 @@ msgstr "ktcli"
 #~ msgstr "Από γόνους"
 
 #, fuzzy
-#~| msgid "Speed Limits"
 #~ msgid "Speed charts"
 #~ msgstr "Όρια ταχύτητας"
 
 #, fuzzy
-#~| msgid "The number of download and upload requests"
 #~ msgid "Displays charts about download and upload speed"
 #~ msgstr "Ο αριθμός αιτήσεων λήψης και αποστολής"
 
 #, fuzzy
-#~| msgid "Connections"
 #~ msgid "Connections charts"
 #~ msgstr "Συνδέσεις"
 
@@ -1012,7 +990,6 @@ msgstr "ktcli"
 #~ msgstr "Όχι"
 
 #, fuzzy
-#~| msgid "IP Address"
 #~ msgid "Address"
 #~ msgstr "Διεύθυνση IP"
 
@@ -1074,9 +1051,6 @@ msgstr "ktcli"
 #~ msgstr "Ταχύτητα αποστολής"
 
 #, fuzzy
-#~| msgid ""
-#~| "Whether or not the peer has choked us, when we are choked the peer will "
-#~| "not send any data to us"
 #~ msgid ""
 #~ "Whether or not the peer has choked us - when we are choked the peer will "
 #~ "not send us any data"
@@ -1085,8 +1059,6 @@ msgstr "ktcli"
 #~ "υπολογιστής δε στέλνει δεδομένα σε εσάς"
 
 #, fuzzy
-#~| msgid ""
-#~| "Snubbed means the peer hasn't sent us any data in the last 2 minutes"
 #~ msgid ""
 #~ "Snubbed means the peer has not sent us any data in the last 2 minutes"
 #~ msgstr ""
@@ -1114,12 +1086,10 @@ msgstr "ktcli"
 #~ msgstr "Ο αριθμός αιτήσεων λήψης και αποστολής"
 
 #, fuzzy
-#~| msgid "How much data we downloaded from this peer"
 #~ msgid "How much data we have downloaded from this peer"
 #~ msgstr "Το πλήθος δεδομένων που έχουν ληφθεί από αυτόν τον υπολογιστή"
 
 #, fuzzy
-#~| msgid "How much data we uploaded to this peer"
 #~ msgid "How much data we have uploaded to this peer"
 #~ msgstr "Το πλήθος δεδομένων που έχουν αποσταλεί σε αυτόν τον υπολογιστή"
 
@@ -1137,7 +1107,6 @@ msgstr "ktcli"
 #~ msgstr "Συστατικό πληροφοριών"
 
 #, fuzzy
-#~| msgid "Status"
 #~ msgctxt "@title:tab"
 #~ msgid "Status"
 #~ msgstr "Κατάσταση"
@@ -1146,7 +1115,6 @@ msgstr "ktcli"
 #~ msgstr "Εμφάνιση πληροφοριών κατάστασης σχετικά με ένα torrent"
 
 #, fuzzy
-#~| msgid "Files"
 #~ msgctxt "@title:tab"
 #~ msgid "Files"
 #~ msgstr "Αρχεία"
@@ -1262,23 +1230,18 @@ msgstr "ktcli"
 #~ msgstr "Ανάπτυξη δέντρου φακέλου"
 
 #, fuzzy
-#~| msgid "Filter"
 #~ msgid "File Tree"
 #~ msgstr "Φίλτρο"
 
 #, fuzzy
-#~| msgid "File Exists"
 #~ msgid "File List"
 #~ msgstr "Υπάρχον αρχείο"
 
 #, fuzzy
-#~| msgid "New Filter"
 #~ msgid "Show Filter"
 #~ msgstr "Νέο φίλτρο"
 
 #, fuzzy
-#~| msgid ""
-#~| "You will lose all data in this file, are you sure you want to do this ?"
 #~ msgid ""
 #~ "You will lose all data in this file, are you sure you want to do this?"
 #~ msgid_plural ""
@@ -1300,12 +1263,10 @@ msgstr "ktcli"
 #~ msgstr "Χρήστες"
 
 #, fuzzy
-#~| msgid "Times Downloaded:"
 #~ msgid "Times Downloaded"
 #~ msgstr "Αριθμός λήψεων:"
 
 #, fuzzy
-#~| msgid "Next update:"
 #~ msgid "Next Update"
 #~ msgstr "Επόμενη ενημέρωση:"
 
@@ -1313,7 +1274,6 @@ msgstr "ktcli"
 #~ msgstr "Προτεραιότητα"
 
 #, fuzzy
-#~| msgid "Preview"
 #~ msgctxt "@title:column"
 #~ msgid "Preview"
 #~ msgstr "Προεπισκόπηση"
@@ -1354,17 +1314,14 @@ msgstr "ktcli"
 #~ msgstr "Διαθέσιμο"
 
 #, fuzzy
-#~| msgid "Add Tracker"
 #~ msgid "Add Trackers"
 #~ msgstr "Προσθήκη ανιχνευτή"
 
 #, fuzzy
-#~| msgid "IP address of the peer"
 #~ msgid "Enter the URL's of the trackers, one per line:"
 #~ msgstr "Διεύθυνση IP του υπολογιστή"
 
 #, fuzzy
-#~| msgid "There already is a tracker named <b>%1</b> !"
 #~ msgid "There already is a tracker named <b>%1</b>."
 #~ msgstr "Υπάρχει ήδη ένας ανιχνευτής με το όνομα <b>%1</b> !"
 
@@ -1412,7 +1369,6 @@ msgstr "ktcli"
 #~ msgstr "Σενάρια"
 
 #, fuzzy
-#~| msgid "KTorrent Blacklisted Peers"
 #~ msgid "KTorrent Script Packages"
 #~ msgstr "Μαύρη λίστα υπολογιστών του KTorrent"
 
@@ -1420,8 +1376,6 @@ msgstr "ktcli"
 #~ msgstr "Όλα τα αρχεία"
 
 #, fuzzy
-#~| msgid ""
-#~| "You will lose all the downloaded data. Are you sure you want to do this?"
 #~ msgid ""
 #~ "Removing these scripts will fully delete them from your disk. Are you "
 #~ "sure you want to do this ?"
@@ -1433,12 +1387,10 @@ msgstr "ktcli"
 #~ msgstr "Ιδιότητες σεναρίου"
 
 #, fuzzy
-#~| msgid "Invalid tracker URL"
 #~ msgid "Invalid archive."
 #~ msgstr "Μη έγκυρο URL ανιχνευτή"
 
 #, fuzzy
-#~| msgid "There already is a tracker named <b>%1</b> !"
 #~ msgid "There is already a script package named %1 installed."
 #~ msgstr "Υπάρχει ήδη ένας ανιχνευτής με το όνομα <b>%1</b> !"
 
@@ -1464,7 +1416,6 @@ msgstr "ktcli"
 #~ msgstr "Κανένα"
 
 #, fuzzy
-#~| msgid "Display the logging output generated by KTorrent"
 #~ msgid "View the logging output generated by KTorrent"
 #~ msgstr "Εμφάνιση καταγραφής εξόδου που δημιουργείται από το KTorrent"
 
@@ -1484,7 +1435,6 @@ msgstr "ktcli"
 #~ msgstr "Άνοιγμα σε νέα καρτέλα"
 
 #, fuzzy
-#~| msgid "Copy Torrent URL"
 #~ msgid "Copy URL"
 #~ msgstr "Αντιγραφή URL του torrent"
 
@@ -1498,7 +1448,6 @@ msgstr "ktcli"
 #~ msgstr "Η αναζήτηση ολοκληρώθηκε"
 
 #, fuzzy
-#~| msgid "Search"
 #~ msgctxt "plugin name"
 #~ msgid "Search"
 #~ msgstr "Αναζήτηση"
@@ -1520,7 +1469,6 @@ msgstr "ktcli"
 #~ "ενώ το  ktorrent θα το αντικαταστήσει με το στοιχείο που αναζητάτε."
 
 #, fuzzy
-#~| msgid "The URL %s, does not contain {searchTerms} !"
 #~ msgid "The URL %1 does not contain {searchTerms}."
 #~ msgstr "Το URL %s, δεν περιέχει το {searchTerms} !"
 
@@ -1534,7 +1482,6 @@ msgstr "ktcli"
 #~ msgstr "KTorrent"
 
 #, fuzzy
-#~| msgid "Folders to scan for torrents:"
 #~ msgid "Search the web for torrents."
 #~ msgstr "Φάκελος σάρωσης torrent:"
 
@@ -1557,7 +1504,6 @@ msgstr "ktcli"
 #~ msgstr " Μηχανή: "
 
 #, fuzzy
-#~| msgid "Do you want to download or save the torrent?"
 #~ msgid "Do you want to download this magnet link?"
 #~ msgstr "Επιθυμείτε τη λήψη ή την αποθήκευση του torrent;"
 
@@ -1574,14 +1520,10 @@ msgstr "ktcli"
 #~ msgstr "Προσθήκη ενός αντικειμένου"
 
 #, fuzzy
-#~| msgid "No day has been selected !"
 #~ msgid "No day has been selected."
 #~ msgstr "Δεν επιλέχθηκε ημέρα !"
 
 #, fuzzy
-#~| msgid ""
-#~| "Failed to add item, because it conflicts with another item on the "
-#~| "schedule !"
 #~ msgid ""
 #~ "Failed to add item, because it conflicts with another item on the "
 #~ "schedule."
@@ -1590,9 +1532,6 @@ msgstr "ktcli"
 #~ "αντικείμενο που υπάρχει στον χρονικό προγραμματισμό !"
 
 #, fuzzy
-#~| msgid ""
-#~| "This item could not be added to all selected days, because it conflicts "
-#~| "with another item on the schedule !"
 #~ msgid ""
 #~ "This item could not be added to all selected days, because it conflicts "
 #~ "with another item on the schedule."
@@ -1602,14 +1541,12 @@ msgstr "ktcli"
 #~ "προγραμματισμό !"
 
 #, fuzzy
-#~| msgid "Bandwidth Schedule"
 #~ msgid ""
 #~ "Bandwidth\n"
 #~ "Schedule"
 #~ msgstr "Προγραμματισμός εύρους δικτύου"
 
 #, fuzzy
-#~| msgid "Tab to edit the bandwidth schedule"
 #~ msgid "Edit the bandwidth schedule"
 #~ msgstr "Καρτέλα επεξεργασίας του προγραμματισμού εύρους δικτύου"
 
@@ -1632,12 +1569,10 @@ msgstr "ktcli"
 #~ msgstr "Καθαρισμός προγραμματισμού"
 
 #, fuzzy
-#~| msgid "Schedule line color:"
 #~ msgid "Scheduler Active"
 #~ msgstr "Χρώμα γραμμής προγραμματισμού:"
 
 #, fuzzy
-#~| msgid "Add a new item to the schedule"
 #~ msgid "Activate or deactivate the scheduler"
 #~ msgstr "Προσθήκη νέου αντικειμένου στον προγραμματισμό"
 
@@ -1645,9 +1580,6 @@ msgstr "ktcli"
 #~ msgstr "Αρχεία προγραμματισμού του KTorrent"
 
 #, fuzzy
-#~| msgid ""
-#~| "This item conflicts with another item in the schedule, we cannot change "
-#~| "it !"
 #~ msgid ""
 #~ "This item conflicts with another item in the schedule, we cannot change "
 #~ "it."
@@ -1656,22 +1588,18 @@ msgstr "ktcli"
 #~ "προγραμματισμό και δεν είναι δυνατή η αλλαγή του!"
 
 #, fuzzy
-#~| msgid "Current schedule: paused"
 #~ msgid "Current schedule: suspended"
 #~ msgstr "Τρέχων προγραμματισμός: παύση"
 
 #, fuzzy
-#~| msgid "Current schedule: %1 KiB/s download, %2 KiB/s upload"
 #~ msgid "Current schedule: %1/s download, %2/s upload"
 #~ msgstr "Τρέχων προγραμματισμός: %1 KiB/δ λήψη, %2 KiB/δ αποστολή"
 
 #, fuzzy
-#~| msgid "Current schedule: unlimited download, %1 KiB/s upload"
 #~ msgid "Current schedule: unlimited download, %1/s upload"
 #~ msgstr "Τρέχων προγραμματισμός: λήψη χωρίς όριο, %1 KiB/δ αποστολή"
 
 #, fuzzy
-#~| msgid "Current schedule: %1 KiB/s download, unlimited upload"
 #~ msgid "Current schedule: %1/s download, unlimited upload"
 #~ msgstr "Τρέχων προγραμματισμός: %1 KiB/δ λήψη, αποστολή χωρίς όριο"
 
@@ -1679,7 +1607,6 @@ msgstr "ktcli"
 #~ msgstr "Τρέχων προγραμματισμός: λήψη και αποστολή χωρίς όριο"
 
 #, fuzzy
-#~| msgid "KTorrent scheduler files"
 #~ msgid " (scheduler disabled)"
 #~ msgstr "Αρχεία προγραμματισμού του KTorrent"
 
@@ -1690,14 +1617,12 @@ msgstr "ktcli"
 #~ msgstr "Επεξεργασία ενός αντικειμένου"
 
 #, fuzzy
-#~| msgid "The file %1 is corrupted or not a proper KTorrent schedule file !"
 #~ msgid "The file %1 is corrupted or not a proper KTorrent schedule file."
 #~ msgstr ""
 #~ "Το αρχείο %1 είναι κατεστραμμένο ή δεν είναι έγκυρο αρχείο "
 #~ "προγραμματισμού του KTorrent!"
 
 #, fuzzy
-#~| msgid "Speed"
 #~ msgid "Suspended"
 #~ msgstr "Ταχύτητα"
 
@@ -1712,34 +1637,28 @@ msgstr "ktcli"
 #~ "%2 πάνω"
 
 #, fuzzy
-#~| msgid "Configure Columns"
 #~ msgctxt "@title:window"
 #~ msgid "Configure Shutdown"
 #~ msgstr "Ρύθμιση στηλών"
 
 #, fuzzy
-#~| msgid "Lucke"
 #~ msgid "Lock"
 #~ msgstr "Lucke"
 
 #, fuzzy
-#~| msgid "Directory to move data to when a torrent has finished downloading."
 #~ msgid "When all torrents finish downloading"
 #~ msgstr ""
 #~ "Κατάλογος μετακίνησης των δεδομένων μόλις η λήψη ενός torrent ολοκληρωθεί."
 
 #, fuzzy
-#~| msgid "Configure Columns"
 #~ msgid "Configure Shutdown"
 #~ msgstr "Ρύθμιση στηλών"
 
 #, fuzzy
-#~| msgid "Downloading"
 #~ msgid "Downloading finishes"
 #~ msgstr "Λήψη αρχείου"
 
 #, fuzzy
-#~| msgid "Search finished"
 #~ msgid "Seeding finishes"
 #~ msgstr "Η αναζήτηση ολοκληρώθηκε"
 
@@ -1753,12 +1672,10 @@ msgstr "ktcli"
 #~ msgstr "Μετατροπή..."
 
 #, fuzzy
-#~| msgid "Cannot open file %1: %2"
 #~ msgid "Cannot open zip file %1."
 #~ msgstr "Αδύνατο το άνοιγμα του αρχείου %1: %2"
 
 #, fuzzy
-#~| msgid "Cannot deselect missing files: %1"
 #~ msgid "Cannot find blocklist in zip file %1."
 #~ msgstr "Αδύνατη η αποεπιλογή των αρχείων που λείπουν: %1"
 
@@ -1784,12 +1701,10 @@ msgstr "ktcli"
 #~ msgstr "Κατάσταση: Λήψη και μετατροπή λίστας νέων τμημάτων..."
 
 #, fuzzy
-#~| msgid "No update done yet!"
 #~ msgid "No update done yet."
 #~ msgstr "Δεν έγινε ενημέρωση ακόμη!"
 
 #, fuzzy
-#~| msgid "%1 (Last update attempt failed!)"
 #~ msgid "%1 (Last update attempt failed.)"
 #~ msgstr "%1 (Αποτυχία τελευταίας προσπάθειας ενημέρωσης!)"
 
@@ -1797,7 +1712,6 @@ msgstr "ktcli"
 #~ msgstr "Ποτέ"
 
 #, fuzzy
-#~| msgid "Copy Torrent URL"
 #~ msgid "Copy Magnet URI"
 #~ msgstr "Αντιγραφή URL του torrent"
 
@@ -1811,12 +1725,10 @@ msgstr "ktcli"
 #~ msgstr "(C) 2005 - 2007 Joris Guisson και Ivan Vasic"
 
 #, fuzzy
-#~| msgid "Time Downloaded"
 #~ msgid "KTMagnetDownloader"
 #~ msgstr "Χρόνος λήψης"
 
 #, fuzzy
-#~| msgid "Joris Guisson"
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "Joris Guisson"
 
@@ -1833,7 +1745,6 @@ msgstr "ktcli"
 #~ msgstr "BitTorrent"
 
 #, fuzzy
-#~| msgid " corrupted chunks"
 #~ msgid " corrupted chunk"
 #~ msgid_plural " corrupted chunks"
 #~ msgstr[0] " κατεστραμμένα κομμάτια"
@@ -1888,12 +1799,10 @@ msgstr "ktcli"
 #~ "στα δεξιά για να τροποποιήσετε τη σειρά."
 
 #, fuzzy
-#~| msgid "Search"
 #~ msgid "Show Search"
 #~ msgstr "Αναζήτηση"
 
 #, fuzzy
-#~| msgid "Move Up"
 #~ msgid "Move Top"
 #~ msgstr "Μετακίνηση πάνω"
 
@@ -1913,7 +1822,6 @@ msgstr "ktcli"
 #~ msgstr "Μετακίνηση ενός torrent προς τα κάτω στη λίστα"
 
 #, fuzzy
-#~| msgid "Move Data"
 #~ msgid "Move Bottom"
 #~ msgstr "Μετακίνηση δεδομένων"
 
@@ -1921,17 +1829,14 @@ msgstr "ktcli"
 #~ msgstr "Μετακίνηση ενός torrent στο τέλος της λίστας"
 
 #, fuzzy
-#~| msgid "Start torrent"
 #~ msgid "Start Magnet"
 #~ msgstr "Εκκίνηση torrent"
 
 #, fuzzy
-#~| msgid "Remove Torrent"
 #~ msgid "Remove Magnet"
 #~ msgstr "Αφαίρεση Torrent"
 
 #, fuzzy
-#~| msgid "Start"
 #~ msgctxt "@action Start all selected torrents in the current tab"
 #~ msgid "Start"
 #~ msgstr "Έναρξη"
@@ -1940,7 +1845,6 @@ msgstr "ktcli"
 #~ msgstr "Έναρξη όλων των επιλεγμένων torrent στην τρέχουσα καρτέλα"
 
 #, fuzzy
-#~| msgid "Stop"
 #~ msgctxt "@action Stop all selected torrents in the current tab"
 #~ msgid "Stop"
 #~ msgstr "Σταμάτημα"
@@ -1949,18 +1853,15 @@ msgstr "ktcli"
 #~ msgstr "Σταμάτημα όλων των επιλεγμένων torrent στην τρέχουσα καρτέλα"
 
 #, fuzzy
-#~| msgid "Pause"
 #~ msgctxt "@action Pause all selected torrents in the current tab"
 #~ msgid "Pause"
 #~ msgstr "Παύση"
 
 #, fuzzy
-#~| msgid "Start all selected torrents in the current tab"
 #~ msgid "Pause all selected torrents in the current tab"
 #~ msgstr "Έναρξη όλων των επιλεγμένων torrent στην τρέχουσα καρτέλα"
 
 #, fuzzy
-#~| msgid "Remove"
 #~ msgctxt "@action Remove all selected torrents in the current tab"
 #~ msgid "Remove"
 #~ msgstr "Αφαίρεση"
@@ -1969,7 +1870,6 @@ msgstr "ktcli"
 #~ msgstr "Αφαίρεση όλων των επιλεγμένων torrent στην τρέχουσα καρτέλα"
 
 #, fuzzy
-#~| msgid "Start All"
 #~ msgctxt "@action Start all torrents in the current tab"
 #~ msgid "Start All"
 #~ msgstr "Έναρξη όλων"
@@ -1978,7 +1878,6 @@ msgstr "ktcli"
 #~ msgstr "Έναρξη όλων των torrent στην τρέχουσα καρτέλα"
 
 #, fuzzy
-#~| msgid "Stop All"
 #~ msgctxt "@action Stop all torrents in the current tab"
 #~ msgid "Stop All"
 #~ msgstr "Σταμάτημα όλων"
@@ -2038,7 +1937,6 @@ msgstr "ktcli"
 #~ msgstr "Αντιγραφή URL του torrent"
 
 #, fuzzy
-#~| msgid "Import Torrent"
 #~ msgid "Export Torrent"
 #~ msgstr "Εισαγωγή torrent"
 
@@ -2049,7 +1947,6 @@ msgstr "ktcli"
 #~ msgstr "Ορισμός των ορίων ταχύτητας ανεξάρτητων torrent"
 
 #, fuzzy
-#~| msgid "Torrent Files (*.torrent)"
 #~ msgid "Torrents (*.torrent)"
 #~ msgstr "Αρχεία torrent (*.torrent)"
 
@@ -2103,7 +2000,6 @@ msgstr "ktcli"
 #~ msgstr "Τοποθεσία"
 
 #, fuzzy
-#~| msgid "Add Feed"
 #~ msgid "Added"
 #~ msgstr "Προσθήκη ροής"
 
@@ -2168,7 +2064,6 @@ msgstr "ktcli"
 #~ msgstr "Η τοποθεσία των δεδομένων του torrent στο δίσκο"
 
 #, fuzzy
-#~| msgid "No torrents loaded !"
 #~ msgid "When this torrent was added"
 #~ msgstr "Δε φορτώθηκε κανένα torrent!"
 
@@ -2224,7 +2119,6 @@ msgstr "ktcli"
 #~ msgstr "Μη έγκυρο url %1"
 
 #, fuzzy
-#~| msgid "Only HTTP is supported for webseeding!"
 #~ msgid "Only HTTP is supported for webseeding."
 #~ msgstr "Υποστηρίζεται μόνο το HTTP για προσφορά γόνου μέσω ιστού!"
 
@@ -2248,20 +2142,14 @@ msgstr "ktcli"
 #~ msgstr "Επιλέξτε ένα αρχείο για την αποθήκευση του torrent"
 
 #, fuzzy
-#~| msgid "Shows all the files in a torrent"
 #~ msgid "Show a file tree"
 #~ msgstr "Εμφάνιση όλων των αρχείων που περιέχονται σε ένα torrent"
 
 #, fuzzy
-#~| msgid "Choose a file"
 #~ msgid "Show a file list"
 #~ msgstr "Επιλέξτε ένα αρχείο"
 
 #, fuzzy
-#~| msgid ""
-#~| "Files of the torrent have been found in the completed downloads "
-#~| "directory. Do you want to use them, and download to the completed "
-#~| "downloads directory ?"
 #~ msgid ""
 #~ "Some files of this torrent have been found in the completed downloads "
 #~ "directory. Do you want to import these files and use the completed "
@@ -2272,10 +2160,6 @@ msgstr "ktcli"
 #~ "λήψεων ;"
 
 #, fuzzy
-#~| msgid ""
-#~| "Files of the torrent have been found in the completed downloads "
-#~| "directory. Do you want to use them, and download to the completed "
-#~| "downloads directory ?"
 #~ msgid ""
 #~ "All files of this torrent have been found in the completed downloads "
 #~ "directory. Do you want to import these files and use the completed "
@@ -2286,10 +2170,6 @@ msgstr "ktcli"
 #~ "λήψεων ;"
 
 #, fuzzy
-#~| msgid ""
-#~| "Files of the torrent have been found in the completed downloads "
-#~| "directory. Do you want to use them, and download to the completed "
-#~| "downloads directory ?"
 #~ msgid ""
 #~ "The file <b>%1</b> was found in the completed downloads directory. Do you "
 #~ "want to import this file?"
@@ -2299,14 +2179,10 @@ msgstr "ktcli"
 #~ "λήψεων ;"
 
 #, fuzzy
-#~| msgid "The directory %1 does not exist, do you want to create it ?"
 #~ msgid "The directory %1 does not exist, do you want to create it?"
 #~ msgstr "Ο κατάλογος %1 δεν υπάρχει, θέλετε να τον δημιουργήσετε;"
 
 #, fuzzy
-#~| msgid ""
-#~| "You have deselected the following existing files. You will lose all data "
-#~| "in these files, are you sure you want to do this ?"
 #~ msgid ""
 #~ "You have deselected the following existing files. You will lose all data "
 #~ "in these files, are you sure you want to do this?"
@@ -2321,33 +2197,27 @@ msgstr "ktcli"
 #~ msgstr "Όχι, διατήρηση των αρχείων"
 
 #, fuzzy
-#~| msgid "%1 short!"
 #~ msgctxt "We are %1 bytes short of what we need"
 #~ msgid "%1 short"
 #~ msgstr "%1 λείπουν!"
 
 #, fuzzy
-#~| msgid "Title: <b>%1</b>"
 #~ msgid "Existing files: <b>None</b>"
 #~ msgstr "Τίτλος: <b>%1</b>"
 
 #, fuzzy
-#~| msgid "Title: <b>%1</b>"
 #~ msgid "Existing files: <b>All</b>"
 #~ msgstr "Τίτλος: <b>%1</b>"
 
 #, fuzzy
-#~| msgid "Title: <b>%1</b><br/>Artist: <b>%2</b>"
 #~ msgid "Existing files: <b>%1</b> of <b>%2</b>"
 #~ msgstr "Τίτλος: <b>%1</b><br/>Καλλιτέχνης: <b>%2</b>"
 
 #, fuzzy
-#~| msgid "Title: <b>%1</b>"
 #~ msgid "Existing file: <b>No</b>"
 #~ msgstr "Τίτλος: <b>%1</b>"
 
 #, fuzzy
-#~| msgid "Title: <b>%1</b>"
 #~ msgid "Existing file: <b>Yes</b>"
 #~ msgstr "Τίτλος: <b>%1</b>"
 
@@ -2358,9 +2228,6 @@ msgstr "ktcli"
 #~ msgstr "Επιλέξτε τον κατάλογο όπου βρίσκονται τώρα τα δεδομένα."
 
 #, fuzzy
-#~| msgid ""
-#~| "The data files are not present in the location you selected! Do you want "
-#~| "to create all the files in the selected directory ?"
 #~ msgid ""
 #~ "The data files are not present in the location you selected. Do you want "
 #~ "to create all the files in the selected directory?"
@@ -2369,9 +2236,6 @@ msgstr "ktcli"
 #~ "Επιθυμείτε τη δημιουργία όλων των αρχείων στον επιλεγμένο κατάλογο;"
 
 #, fuzzy
-#~| msgid ""
-#~| "Not all files were found in the new location; some are still missing! Do "
-#~| "you want to create the missing files in the selected directory ?"
 #~ msgid ""
 #~ "Not all files were found in the new location; some are still missing. Do "
 #~ "you want to create the missing files in the selected directory?"
@@ -2380,9 +2244,6 @@ msgstr "ktcli"
 #~ "Επιθυμείτε τη δημιουργία των αρχείων που λείπουν στον επιλεγμένο κατάλογο;"
 
 #, fuzzy
-#~| msgid ""
-#~| "The data file is not present in the location you selected! Do you want "
-#~| "to create the file in the selected directory ?"
 #~ msgid ""
 #~ "The data file is not present in the location you selected. Do you want to "
 #~ "create the file in the selected directory?"
@@ -2399,12 +2260,10 @@ msgstr "ktcli"
 #~ msgstr "Εισαγωγή <b>%1</b> ..."
 
 #, fuzzy
-#~| msgid "Finished import !"
 #~ msgid "Finished import."
 #~ msgstr "Η εισαγωγή ολοκληρώθηκε !"
 
 #, fuzzy
-#~| msgid "Torrent <b>%1</b> already loaded !"
 #~ msgid "Torrent <b>%1</b> already loaded."
 #~ msgstr "Το torrent <b>%1</b> είναι ήδη φορτωμένο !"
 
@@ -2448,9 +2307,6 @@ msgstr "ktcli"
 #~ msgstr "Φίλτρο λίστας IP"
 
 #, fuzzy
-#~| msgid ""
-#~| "Invalid IP address %1. You must enter an IP address in the format 'XXX."
-#~| "XXX.XXX.XXX'. You can also use wildcards for ranges like '127.0.0.*'."
 #~ msgid ""
 #~ "Invalid IP address <b>%1</b>. IP addresses must be in the format 'XXX.XXX."
 #~ "XXX.XXX'.<br/><br/>You can also use wildcards like '127.0.0.*' or specify "
@@ -2470,7 +2326,6 @@ msgstr "ktcli"
 #~ msgstr "Πελάτης bittorrent για το KDE"
 
 #, fuzzy
-#~| msgid "(C) 2005 - 2007 Joris Guisson and Ivan Vasic"
 #~ msgid "(C) 2005 - 2010 Joris Guisson and Ivan Vasic"
 #~ msgstr "(C) 2005 - 2007 Joris Guisson και Ivan Vasic"
 
@@ -2698,7 +2553,6 @@ msgstr "ktcli"
 #~ msgstr "Διόρθωση καθαρισμού της λίστας προσθέτων"
 
 #, fuzzy
-#~| msgid "No torrents loaded !"
 #~ msgid "Feature which adds the date a torrent was added"
 #~ msgstr "Δε φορτώθηκε κανένα torrent!"
 
@@ -2742,17 +2596,14 @@ msgstr "ktcli"
 #~ msgstr "Άνοιγμα URL"
 
 #, fuzzy
-#~| msgid "Open an URL which points to a torrent"
 #~ msgid "Open a URL which points to a torrent, magnet links are supported"
 #~ msgstr "Άνοιγμα ενός URL το οποίο υποδεικνύει ένα torrent"
 
 #, fuzzy
-#~| msgid "Pause KTorrent"
 #~ msgid "Suspend KTorrent"
 #~ msgstr "Παύση KTorrent"
 
 #, fuzzy
-#~| msgid "Pause all running torrents"
 #~ msgid "Suspend all running torrents"
 #~ msgstr "Παύση όλων των ενεργών torrent"
 
@@ -2775,7 +2626,6 @@ msgstr "ktcli"
 #~ msgstr "Εμφάνιση/Απόκρυψη του KTorrent"
 
 #, fuzzy
-#~| msgid "Torrent"
 #~ msgid "Torrents"
 #~ msgstr "Torrent"
 
@@ -2783,17 +2633,14 @@ msgstr "ktcli"
 #~ msgstr "Συστατικό για τη διαχείριση της σειράς αναμονής torrent"
 
 #, fuzzy
-#~| msgid "Displays all the chunks you are downloading, of a torrent"
 #~ msgid "Displays the currently downloading magnet links"
 #~ msgstr "Εμφάνιση όλων των κομματιών που λαμβάνετε για κάποιο torrent"
 
 #, fuzzy
-#~| msgid "Invalid IP address %1 !"
 #~ msgid "Invalid IP address %1"
 #~ msgstr "Μη έγκυρη διεύθυνση ΙΡ %1!"
 
 #, fuzzy
-#~| msgid "Duplicate IP address %1 !"
 #~ msgid "Duplicate IP address %1"
 #~ msgstr "Διπλή διεύθυνση ΙΡ %1!"
 
@@ -2883,9 +2730,6 @@ msgstr "ktcli"
 #~ "Μεταβείτε στις Ρυθμίσεις -> Ρύθμιση του KTorrent, αν επιθυμείτε την "
 #~ "τροποποίηση των ορίων."
 
-#~ msgid "There is not enough diskspace available."
-#~ msgstr "Δεν υπάρχει αρκετός διαθέσιμος χώρος στο δίσκο."
-
 #~ msgid ""
 #~ "Your disk is running out of space.<br /><b>%1</b> is being downloaded to "
 #~ "'%2'."
@@ -2900,9 +2744,6 @@ msgstr "ktcli"
 #~ msgstr "Όριο ταχύτητας σε KiB/δ"
 
 #, fuzzy
-#~| msgid ""
-#~| "KTorrent is unable to accept connections because the ports %1 to %2 are "
-#~| "already in use by another program."
 #~ msgid ""
 #~ "KTorrent is unable to accept connections because the TCP ports %1 is "
 #~ "already in use by another program."
@@ -2911,9 +2752,6 @@ msgstr "ktcli"
 #~ "χρησιμοποιούνται από κάποια άλλη εφαρμογή."
 
 #, fuzzy
-#~| msgid ""
-#~| "KTorrent is unable to accept connections because the ports %1 to %2 are "
-#~| "already in use by another program."
 #~ msgid ""
 #~ "KTorrent is unable to accept connections because the UDP port %1 is "
 #~ "already in use by another program."
@@ -2958,9 +2796,6 @@ msgstr "ktcli"
 #~ msgstr "Αδύνατη η επαναδημιουργία του αρχείου δεδομένων: %1"
 
 #, fuzzy
-#~| msgid ""
-#~| "KTorrent has found %1 torrents from the KDE3 version of KTorrent, do you "
-#~| "want to import them ?"
 #~ msgid ""
 #~ "KTorrent has found a torrent from the KDE3 version of KTorrent, do you "
 #~ "want to import it?"
@@ -2975,21 +2810,14 @@ msgstr "ktcli"
 #~ "επιθυμείτε την εισαγωγή τους;"
 
 #, fuzzy
-#~| msgid "No torrents from the KDE3 version were found !"
 #~ msgid "No torrents from the KDE3 version were found."
 #~ msgstr "Δε βρέθηκαν torrent από την έκδοση KDE3 !"
 
 #, fuzzy
-#~| msgid "Apply"
 #~ msgid "Applet"
 #~ msgstr "Εφαρμογή"
 
 #, fuzzy
-#~| msgid ""
-#~| "<table>\t\t\t\t<tr><td>Download Speed:</td><td>%5 </td><td>Seeders: </"
-#~| "td><td>%1 (%2)</td></tr>\t\t\t\t<tr><td>Upload Speed:</td><td>%6 </"
-#~| "td><td>Leechers: </td><td>%3 (%4)</td></tr>\t\t\t\t<tr><td>Downloaded:</"
-#~| "td><td>%7 / %8 </td><td>Uploaded: </td><td>%9</td></tr>\t\t\t\t</table>"
 #~ msgid ""
 #~ "<table>\t\t\t\t<tr><td>Download Speed:</td><td>%5 </td><td>Seeders: </"
 #~ "td><td>%1 (%2)</td></tr>\t\t\t\t<tr><td>Upload Speed:</td><td>%6 </"
@@ -3001,11 +2829,6 @@ msgstr "ktcli"
 #~ "td><td>%7 / %8 </td><td>Στάλθηκαν: </td><td>%9</td></tr>\t\t\t\t</table>"
 
 #, fuzzy
-#~| msgid ""
-#~| "<table>\t\t\t\t<tr><td>Download Speed:</td><td>%5 </td><td>Seeders: </"
-#~| "td><td>%1 (%2)</td></tr>\t\t\t\t<tr><td>Upload Speed:</td><td>%6 </"
-#~| "td><td>Leechers: </td><td>%3 (%4)</td></tr>\t\t\t\t<tr><td>Downloaded:</"
-#~| "td><td>%7 / %8 </td><td>Uploaded: </td><td>%9</td></tr>\t\t\t\t</table>"
 #~ msgid ""
 #~ "<tr><td>Downloaded:</td><td>%1 </td><td>Size: </td><td>%2</td></tr>\t\t\t"
 #~ "\t<tr><td>Uploaded:</td><td>%3 </td><td>Complete: </td><td>%4 %</td></tr>"
@@ -3021,12 +2844,10 @@ msgstr "ktcli"
 #~ "<b>%1</b><br/>%2 (Κοινόχρηστη αναλογία: <font color=\"%4\">%3</font>)"
 
 #, fuzzy
-#~| msgid "KTorrent is not running !"
 #~ msgid "KTorrent is not running."
 #~ msgstr "Το KTorrent δεν εκτελείται!"
 
 #, fuzzy
-#~| msgid "No torrents loaded !"
 #~ msgid "No torrents loaded."
 #~ msgstr "Δε φορτώθηκε κανένα torrent!"
 
@@ -3070,13 +2891,10 @@ msgstr "ktcli"
 #~ msgstr "Παθητικές αποστολές"
 
 #, fuzzy
-#~| msgctxt "Download Normal (not as first or last)"
-#~| msgid "Normal"
 #~ msgid "Normal icons"
 #~ msgstr "Κανονικό"
 
 #, fuzzy
-#~| msgid "Text encoding:"
 #~ msgid "Text only"
 #~ msgstr "Κωδικοποίηση κειμένου:"
 
@@ -3087,12 +2905,10 @@ msgstr "ktcli"
 #~ msgstr "Πάνω"
 
 #, fuzzy
-#~| msgid "Maximum share ratio reached !"
 #~ msgid "Maximum share ratio reached."
 #~ msgstr "Όριο της μέγιστης κοινόχρηστης αναλογίας !"
 
 #, fuzzy
-#~| msgid "Maximum seed time reached !"
 #~ msgid "Maximum seed time reached."
 #~ msgstr "Όριο του μέγιστου χρόνου προσφοράς γόνου !"
 
@@ -3100,9 +2916,6 @@ msgstr "ktcli"
 #~ msgstr "Αρχείο"
 
 #, fuzzy
-#~| msgid ""
-#~| "The torrent \"%1\" has reached it's maximum share ratio and it's maximum "
-#~| "seed time. Ignore the limit and start seeding anyway?"
 #~ msgid ""
 #~ "The torrent \"%1\" has reached its maximum share ratio and its maximum "
 #~ "seed time. Ignore the limit and start seeding anyway?"
@@ -3112,9 +2925,6 @@ msgstr "ktcli"
 #~ "προσφορά του ως γόνο;"
 
 #, fuzzy
-#~| msgid ""
-#~| "The torrent \"%1\" has reached it's maximum share ratio. Ignore the "
-#~| "limit and start seeding anyway?"
 #~ msgid ""
 #~ "The torrent \"%1\" has reached its maximum share ratio. Ignore the limit "
 #~ "and start seeding anyway?"
@@ -3123,9 +2933,6 @@ msgstr "ktcli"
 #~ "παραβλεφθεί αυτό το όριο και να ξεκινήσει η προσφορά του ως γόνο;"
 
 #, fuzzy
-#~| msgid ""
-#~| "The torrent \"%1\" has reached it's maximum seed time. Ignore the limit "
-#~| "and start seeding anyway?"
 #~ msgid ""
 #~ "The torrent \"%1\" has reached its maximum seed time. Ignore the limit "
 #~ "and start seeding anyway?"
@@ -3183,7 +2990,6 @@ msgstr "ktcli"
 #~ "\"excluded_color\">&nbsp; - Εξαιρούμενα κομμάτια"
 
 #, fuzzy
-#~| msgid "Cannot write beyond end of the mmap buffer!"
 #~ msgid "Cannot write beyond end of the mmap buffer."
 #~ msgstr "Αδυναμία εγγραφής πέρα από το τέλος της ενδιάμεσης μνήμης mmap!"
 
@@ -3327,7 +3133,6 @@ msgstr "ktcli"
 #~ msgstr "Ομάδα για προσθήκη των torrent."
 
 #, fuzzy
-#~| msgid "Open torrents silently"
 #~ msgid "Whether to open torrent silently or not."
 #~ msgstr "Άνοιγμα torrent σιωπηλά"
 
@@ -3554,7 +3359,6 @@ msgstr "ktcli"
 #~ msgstr "Κατάσταση:"
 
 #, fuzzy
-#~| msgid "Refresh"
 #~ msgid "Refresh every:"
 #~ msgstr "Ανανέωση"
 
@@ -3601,24 +3405,6 @@ msgstr "ktcli"
 #~ msgstr "Η διασύνδεση που θα χρησιμοποιηθεί."
 
 #, fuzzy
-#~| msgid ""
-#~| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/"
-#~| "TR/REC-html40/strict.dtd\">\n"
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Scan the folder "
-#~| "recursively for torrents.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;\">Note: "
-#~| "<span style=\" font-weight:400;\">This will not be done for any folder "
-#~| "named loaded.</span></p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -3659,7 +3445,6 @@ msgstr "ktcli"
 #~ "html>"
 
 #, fuzzy
-#~| msgid "Required disk space:"
 #~ msgid "Login required"
 #~ msgstr "Απαιτούμενος χώρος στο δίσκο:"
 
@@ -3689,25 +3474,6 @@ msgstr "ktcli"
 #~ msgstr "Η θύρα ακρόασης της διασύνδεσης ιστού."
 
 #, fuzzy
-#~| msgid ""
-#~| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/"
-#~| "TR/REC-html40/strict.dtd\">\n"
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">If you are behind a "
-#~| "router and you want to access the webinterface from somewhere on the "
-#~| "internet you need to forward the correct port.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">This checkbox will "
-#~| "ensure that the UPnP plugin automatically forwards the port. The UPnP "
-#~| "plugin needs to be loaded for this to work.</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -3761,72 +3527,58 @@ msgstr "ktcli"
 #~ msgstr " δευτερόλεπτα"
 
 #, fuzzy
-#~| msgid "Forward port"
 #~ msgid "forward Port"
 #~ msgstr "Προώθηση θύρας"
 
 #, fuzzy
-#~| msgid "Web interface skin:"
 #~ msgid "interface skin"
 #~ msgstr "Θέμα περιβάλλοντος ιστού:"
 
 #, fuzzy
-#~| msgid "Username:"
 #~ msgid "username"
 #~ msgstr "Όνομα χρήστη:"
 
 #, fuzzy
-#~| msgid "Password:"
 #~ msgid "password"
 #~ msgstr "Κωδικός πρόσβασης:"
 
 #, fuzzy
-#~| msgid "Update charts every"
 #~ msgid "Update charts every n gui updates"
 #~ msgstr "Ενημέρωση γραφημάτων κάθε"
 
 #, fuzzy
-#~| msgid "Show seeds in swarms"
 #~ msgid "Whether to show seeds in swarms"
 #~ msgstr "Εμφάνιση γόνων στο σμήνος"
 
 #, fuzzy
-#~| msgid "Show leechers in swarms"
 #~ msgid "Whether to show leachers in swarms"
 #~ msgstr "Εμφάνιση χρηστών στο σμήνος"
 
 #, fuzzy
-#~| msgid "Color of the schedule background."
 #~ msgid "Color of the speed on dl chart"
 #~ msgstr "Χρώμα φόντου του προγραμματισμού."
 
 #, fuzzy
-#~| msgid "Color of the schedule background."
 #~ msgid "Color of the seeds on peers chart"
 #~ msgstr "Χρώμα φόντου του προγραμματισμού."
 
 #, fuzzy
-#~| msgid "Color of the schedule background."
 #~ msgid "Color of the speed on upload chart"
 #~ msgstr "Χρώμα φόντου του προγραμματισμού."
 
 #, fuzzy
-#~| msgid "Color of all lines on the schedule."
 #~ msgid "Color of the nodes on DHT chart"
 #~ msgstr "Χρώμα όλων των γραμμών στον προγραμματισμό."
 
 #, fuzzy
-#~| msgid "Use anti-aliasing"
 #~ msgid "Use anti aliasing on charts?"
 #~ msgstr "Χρήση εξομάλυνσης"
 
 #, fuzzy
-#~| msgid "Draw background grid"
 #~ msgid "Draw ugly grey background grid?"
 #~ msgstr "Σχεδίαση καννάβου φόντου"
 
 #, fuzzy
-#~| msgid "Speed"
 #~ msgctxt "@title:window"
 #~ msgid "Speed"
 #~ msgstr "Ταχύτητα"
@@ -3916,7 +3668,6 @@ msgstr "ktcli"
 #~ msgstr "Τροποποίηση ανιχνευτή"
 
 #, fuzzy
-#~| msgid "Update Tracker"
 #~ msgid "Update Trackers"
 #~ msgstr "Ενημέρωση ανιχνευτή"
 
@@ -3930,7 +3681,6 @@ msgstr "ktcli"
 #~ msgstr "Μέση ταχύτητα λήψης:"
 
 #, fuzzy
-#~| msgid "Type"
 #~ msgid "Type:"
 #~ msgstr "Τύπος"
 
@@ -4146,18 +3896,15 @@ msgstr "ktcli"
 #~ msgstr "Ρυθμίσεις αυτόματης συνέχισης"
 
 #, fuzzy
-#~| msgid "Auto resume after:"
 #~ msgid "Auto remove a torrent when:"
 #~ msgstr "Αυτόματη συνέχιση μετά:"
 
 #, fuzzy
-#~| msgid "Directory to move data to when a torrent has finished downloading."
 #~ msgid "The torrent finishes downloading"
 #~ msgstr ""
 #~ "Κατάλογος μετακίνησης των δεδομένων μόλις η λήψη ενός torrent ολοκληρωθεί."
 
 #, fuzzy
-#~| msgid "Directory to move data to when a torrent has finished downloading."
 #~ msgid "The torrent finishes seeding"
 #~ msgstr ""
 #~ "Κατάλογος μετακίνησης των δεδομένων μόλις η λήψη ενός torrent ολοκληρωθεί."
@@ -4187,7 +3934,6 @@ msgstr "ktcli"
 #~ msgstr "Ιστοσελίδα:"
 
 #, fuzzy
-#~| msgid "Use rich text for logging output"
 #~ msgid "Use rich log text"
 #~ msgstr "Χρήση εμπλουτισμένου κειμένου για την έξοδο καταγραφής"
 
@@ -4266,7 +4012,6 @@ msgstr "ktcli"
 #~ msgstr "Χρήση εμπλουτισμένου κειμένου για την έξοδο καταγραφής"
 
 #, fuzzy
-#~| msgid "Torrent Limits"
 #~ msgid "Torrent activity"
 #~ msgstr "Όρια torrent"
 
@@ -4287,7 +4032,6 @@ msgstr "ktcli"
 #~ msgstr "Γραμμή εργαλείων Αναζήτησης"
 
 #, fuzzy
-#~| msgid "Current schedule:"
 #~ msgid "Current search engine"
 #~ msgstr "Τρέχων προγραμματισμός:"
 
@@ -4295,12 +4039,10 @@ msgstr "ktcli"
 #~ msgstr "Χρήση προκαθορισμένου περιηγητή"
 
 #, fuzzy
-#~| msgid "Use a custom browser."
 #~ msgid "Use custom browser"
 #~ msgstr "Χρήση προσαρμοσμένου περιηγητή."
 
 #, fuzzy
-#~| msgid "Custom browser path:"
 #~ msgid "Custom browser executable path"
 #~ msgstr "Διαδρομή προσαρμοσμένου περιηγητή:"
 
@@ -4353,7 +4095,6 @@ msgstr "ktcli"
 #~ msgstr "Προσθήκη &προκαθορισμένου"
 
 #, fuzzy
-#~| msgid "Speed Limits"
 #~ msgid "Special Limits"
 #~ msgstr "Όρια ταχύτητας"
 
@@ -4382,12 +4123,10 @@ msgstr "ktcli"
 #~ msgstr "Χρώμα κάθε κανονικού αντικειμένου στον προγραμματισμό."
 
 #, fuzzy
-#~| msgid "Paused schedule item color:"
 #~ msgid "Suspended schedule item color:"
 #~ msgstr "Χρώμα αντικειμένου σε παύση προγραμματισμού:"
 
 #, fuzzy
-#~| msgid "Color of each paused item on the schedule."
 #~ msgid "Color of each suspended item on the schedule."
 #~ msgstr "Χρώμα κάθε αντικειμένου σε παύση στον προγραμματισμό."
 
@@ -4416,7 +4155,6 @@ msgstr "ktcli"
 #~ msgstr "Όριο αποστολής:"
 
 #, fuzzy
-#~| msgid "Set connection limits"
 #~ msgid "Connection Limits"
 #~ msgstr "Ορισμός ορίων συνδέσεων"
 
@@ -4445,22 +4183,18 @@ msgstr "ktcli"
 #~ msgstr "Σαββατοκύριακο"
 
 #, fuzzy
-#~| msgid "Download Toolbar"
 #~ msgid "Shutdown Toolbar"
 #~ msgstr "Γραμμή εργαλείων λήψεων"
 
 #, fuzzy
-#~| msgid "Auto Resume Settings"
 #~ msgid "Shutdown Settings"
 #~ msgstr "Ρυθμίσεις αυτόματης συνέχισης"
 
 #, fuzzy
-#~| msgid "Remove Filter"
 #~ msgid "Level1 filter url"
 #~ msgstr "Αφαίρεση φίλτρου"
 
 #, fuzzy
-#~| msgid "Use PeerGuardian filter"
 #~ msgid "Use level1 filter?"
 #~ msgstr "Χρήση φίλτρου PeerGuardian"
 
@@ -4530,47 +4264,38 @@ msgstr "ktcli"
 #~ msgstr "Α&κύρωση"
 
 #, fuzzy
-#~| msgid "Search Preferences"
 #~ msgid "Magnet Generator Preferences"
 #~ msgstr "Προτιμήσεις αναζήτησης"
 
 #, fuzzy
-#~| msgid "Add Tracker"
 #~ msgid "Add tracker"
 #~ msgstr "Προσθήκη ανιχνευτή"
 
 #, fuzzy
-#~| msgid "Tracker"
 #~ msgid "Tracker:"
 #~ msgstr "Ανιχνευτής"
 
 #, fuzzy
-#~| msgid "Move a torrent down in the queue"
 #~ msgid "Add the torrent name in the URI"
 #~ msgstr "Μετακίνηση ενός torrent προς τα κάτω στη λίστα"
 
 #, fuzzy
-#~| msgid "Add an item"
 #~ msgid "Add name"
 #~ msgstr "Προσθήκη ενός αντικειμένου"
 
 #, fuzzy
-#~| msgid "Show Video"
 #~ msgid "Show popup"
 #~ msgstr "Εμφάνιση βίντεο"
 
 #, fuzzy
-#~| msgid "Tracker"
 #~ msgid "Toggles tracker"
 #~ msgstr "Ανιχνευτής"
 
 #, fuzzy
-#~| msgid "Use default browser"
 #~ msgid "The default tracker"
 #~ msgstr "Χρήση προκαθορισμένου περιηγητή"
 
 #, fuzzy
-#~| msgid "Show Feed"
 #~ msgid "Show dn"
 #~ msgstr "Εμφάνιση ροής"
 
@@ -4581,7 +4306,6 @@ msgstr "ktcli"
 #~ msgstr "Δρομολογητής:"
 
 #, fuzzy
-#~| msgid "No routers found !"
 #~ msgid "No routers found."
 #~ msgstr "Δε βρέθηκαν δρομολογητές!"
 
@@ -4734,24 +4458,6 @@ msgstr "ktcli"
 #~ msgstr "Διασύνδεση δικτύου:"
 
 #, fuzzy
-#~| msgid ""
-#~| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/"
-#~| "TR/REC-html40/strict.dtd\">\n"
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Which network "
-#~| "interface to use for all network traffic.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
-#~| "font-family:'OpenSymbol';\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'OpenSymbol';"
-#~| "\"><span style=\" font-weight:600;\">Note: </span>Requires a restart to "
-#~| "take effect !</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -4792,7 +4498,6 @@ msgstr "ktcli"
 #~ "με το εύρος που έχετε διαθέσιμο."
 
 #, fuzzy
-#~| msgid "Recommended Settings"
 #~ msgid "Recommended Settings..."
 #~ msgstr "Προτεινόμενες ρυθμίσεις"
 
@@ -4951,7 +4656,6 @@ msgstr "ktcli"
 #~ "από ένα δοσμένο μέγεθος."
 
 #, fuzzy
-#~| msgid "Don't recheck when chunks are bigger than"
 #~ msgid "Do not recheck when chunks are bigger than"
 #~ msgstr "Χωρίς επανέλεγχο για κομμάτια μεγαλύτερα από"
 
@@ -5232,12 +4936,10 @@ msgstr "ktcli"
 #~ "θα δοθεί προτεραιότητα για τη δυνατότητα προεπισκόπησης.</p></body></html>"
 
 #, fuzzy
-#~| msgid "Use proxy for tracker connections"
 #~ msgid "Do not use KIO for tracker announces"
 #~ msgstr "Χρήση διαμεσολαβητή για συνδέσεις ανιχνευτή"
 
 #, fuzzy
-#~| msgid "Resolving hostname %1"
 #~ msgid "Resolve hostnames of peers"
 #~ msgstr "Επίλυση ονόματος υπολογιστή %1"
 
@@ -5287,6 +4989,10 @@ msgstr "ktcli"
 
 #~ msgid "Show system tray icon"
 #~ msgstr "Εμφάνιση εικονιδίου πλαισίου συστήματος"
+
+#, fuzzy
+#~ msgid "Whether or not to show system tray popup messages."
+#~ msgstr "Εμφάνιση αναδυόμενων μηνυμάτων στο πλαισίου συστήματος"
 
 #~ msgid "Show system tray popup messages"
 #~ msgstr "Εμφάνιση αναδυόμενων μηνυμάτων στο πλαισίου συστήματος"
@@ -5468,7 +5174,6 @@ msgstr "ktcli"
 #~ msgstr " λεπτά"
 
 #, fuzzy
-#~| msgid "Seeding"
 #~ msgctxt "@title:group Options regarging Seeding"
 #~ msgid "Seeding"
 #~ msgstr "Προσφορά γόνου"
@@ -5495,7 +5200,6 @@ msgstr "ktcli"
 #~ "ένα torrent."
 
 #, fuzzy
-#~| msgid "Maximum share ratio:"
 #~ msgid "Default maximum share ratio:"
 #~ msgstr "Μέγιστη κοινόχρηστη αναλογία:"
 
@@ -5537,7 +5241,6 @@ msgstr "ktcli"
 #~ " <p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin- right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font- weight:600;\">Προσοχή: </span>Αυτό δεν χρησιμοποιείται κατά τη λήψη αλλά  μόνο κατά την προσφορά γόνου.</p></body></html>"
 
 #, fuzzy
-#~| msgid "Maximum seed time:"
 #~ msgid "Default maximum seed time:"
 #~ msgstr "Μέγιστος χρόνος προσφοράς γόνου:"
 
@@ -5806,7 +5509,6 @@ msgstr "ktcli"
 #~ "διαμεσολάβησης SOCKS.</span></p></ body></html>"
 
 #, fuzzy
-#~| msgid "Open..."
 #~ msgid "..."
 #~ msgstr "Άνοιγμα..."
 
@@ -5833,7 +5535,6 @@ msgstr "ktcli"
 #~ msgstr "0"
 
 #, fuzzy
-#~| msgid "File"
 #~ msgid "Failed:"
 #~ msgstr "Αρχείο"
 
@@ -5857,7 +5558,6 @@ msgstr "ktcli"
 #~ "που έχουν γίνει λήψη, και δεν είναι σωστά.</p></body></html>"
 
 #, fuzzy
-#~| msgid "Downloaded:"
 #~ msgid "Not downloaded:"
 #~ msgstr "Ληφθέντα:"
 
@@ -6142,7 +5842,6 @@ msgstr "ktcli"
 #~ msgstr "Ανάπτυξη όλων"
 
 #, fuzzy
-#~| msgid "Skip data check if existing files are found"
 #~ msgid "No existing files are found"
 #~ msgstr "Παράλειψη ελέγχου δεδομένων αν βρεθούν αρχεία"
 
@@ -6153,23 +5852,6 @@ msgstr "ktcli"
 #~ msgstr "Εκκίνηση torrent"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~| "size:8pt; font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">When existing files "
-#~| "have been found, skip the data check and assume that the files are fully "
-#~| "downloaded.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Note: </span>only do this when you are absolutely sure !</"
-#~| "p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -6212,12 +5894,10 @@ msgstr "ktcli"
 #~ msgstr "Χώρος στο δίσκο"
 
 #, fuzzy
-#~| msgid "Required disk space:"
 #~ msgid "Required:"
 #~ msgstr "Απαιτούμενος χώρος στο δίσκο:"
 
 #, fuzzy
-#~| msgid "Available"
 #~ msgid "Available:"
 #~ msgstr "Διαθέσιμο"
 
@@ -6225,12 +5905,10 @@ msgstr "ktcli"
 #~ msgstr "Μετά τη λήψη:"
 
 #, fuzzy
-#~| msgid "Speed limits for all torrents (double click to edit):"
 #~ msgid "Speed limits for individual torrents (double click to edit):"
 #~ msgstr "Όρια ταχύτητας για όλα τα torrent (διπλό κλικ για επεξεργασία):"
 
 #, fuzzy
-#~| msgid "Filter"
 #~ msgid "Filter:"
 #~ msgstr "Φίλτρο"
 
@@ -6401,7 +6079,6 @@ msgstr "ktcli"
 #~ msgstr "&Αρχείο"
 
 #, fuzzy
-#~| msgid "ViewMenu"
 #~ msgid "&View"
 #~ msgstr "Μενού προβολής"
 
@@ -6427,9 +6104,6 @@ msgstr "ktcli"
 #~ msgstr "Προσθήκη υπολογιστή:"
 
 #, fuzzy
-#~| msgid ""
-#~| "Invalid IP address %1. You must enter an IP address in the format 'XXX."
-#~| "XXX.XXX.XXX'. You can also use wildcards for ranges like '127.0.0.*'."
 #~ msgid ""
 #~ "IP addresses must be in the format 'XXX.XXX.XXX.XXX'.\n"
 #~ "                                        \n"
@@ -6453,105 +6127,85 @@ msgstr "ktcli"
 #~ msgstr "Torrent που θα εμφανιστούν:"
 
 #, fuzzy
-#~| msgid "Maximum number of connection setups:"
 #~ msgid "Maximum number of downloads (0 = no limit)"
 #~ msgstr "Ο μέγιστος αριθμός επιτρεπόμενων συνδέσεων:"
 
 #, fuzzy
-#~| msgid "The maximum number of connections allowed per torrent."
 #~ msgid "Maximum number of connections per torrent (0 = no limit)"
 #~ msgstr "Ο μέγιστος αριθμός επιτρεπόμενων συνδέσεων ανά torrent."
 
 #, fuzzy
-#~| msgid "The maximum number of connections allowed per torrent."
 #~ msgid "Maximum number of connections for all torrents (0 = no limit) "
 #~ msgstr "Ο μέγιστος αριθμός επιτρεπόμενων συνδέσεων ανά torrent."
 
 #, fuzzy
-#~| msgid "The maximum upload speed in KiB/s"
 #~ msgid "Maximum upload speed in KiB/sec (0 = no limit)"
 #~ msgstr "Η μέγιστη ταχύτητα αποστολής σε ΚiΒ/δ"
 
 #, fuzzy
-#~| msgid "The maximum download speed in KiB/s."
 #~ msgid "Maximum download speed in KiB/sec (0 = no limit)"
 #~ msgstr "Η μέγιστη ταχύτητα λήψης σε ΚiΒ/δ."
 
 #, fuzzy
-#~| msgid "Maximum share ratio limit reached."
 #~ msgid "Maximum share ratio (0 = no limit)"
 #~ msgstr "Συμπληρώθηκε η μέγιστη κοινόχρηστη αναλογία."
 
 #, fuzzy
-#~| msgid "Show system tray icon"
 #~ msgid "Show a system tray icon"
 #~ msgstr "Εμφάνιση εικονιδίου πλαισίου συστήματος"
 
 #, fuzzy
-#~| msgid "Show system tray icon"
 #~ msgid "Show speed bar in tray icon"
 #~ msgstr "Εμφάνιση εικονιδίου πλαισίου συστήματος"
 
 #, fuzzy
-#~| msgid "Available download bandwidth:"
 #~ msgid "Download bandwidth (in kb/s):"
 #~ msgstr "Διαθέσιμο εύρος λήψης:"
 
 #, fuzzy
-#~| msgid "Keep seeding after download is finished"
 #~ msgid "Keep seeding after download has finished"
 #~ msgstr "Συνέχιση προσφοράς γόνου μετά το τέλος της λήψης"
 
 #, fuzzy
-#~| msgid "Folder to store torrent information:"
 #~ msgid "Folder to store temporary files"
 #~ msgstr "Φάκελος αποθήκευσης πληροφοριών torrent:"
 
 #, fuzzy
-#~| msgid "Folder to store torrent information:"
 #~ msgid "Folder to store downloaded files"
 #~ msgstr "Φάκελος αποθήκευσης πληροφοριών torrent:"
 
 #, fuzzy
-#~| msgid "Copy torrent files to:"
 #~ msgid "Folder to copy .torrent files to"
 #~ msgstr "Αντιγραφή αρχείων torrent στο:"
 
 #, fuzzy
-#~| msgid "Send the tracker a custom IP address or hostname"
 #~ msgid "Whether to use a custom IP to pass to the tracker"
 #~ msgstr ""
 #~ "Αποστολή μιας προσαρμοσμένης διεύθυνσης IP ή ονόματος υπολογιστή στον "
 #~ "ανιχνευτή"
 
 #, fuzzy
-#~| msgid "IP address of the peer"
 #~ msgid "IP to pass to the tracker"
 #~ msgstr "Διεύθυνση IP του υπολογιστή"
 
 #, fuzzy
-#~| msgid "GUI update interval:"
 #~ msgid "GUI update interval"
 #~ msgstr "Χρονικό διάστημα ενημέρωσης:"
 
 #, fuzzy
-#~| msgid "DHT: off"
 #~ msgid "DHT port"
 #~ msgstr "DHT: κλειστό"
 
 #, fuzzy
-#~| msgid "Number of upload slots:"
 #~ msgid "Number of upload slots"
 #~ msgstr "Αριθμός υποδοχών αποστολής:"
 
 #, fuzzy
-#~| msgid "Directory to move data to when a torrent has finished downloading."
 #~ msgid "Algorithm to estimate the time when a torrent is finished"
 #~ msgstr ""
 #~ "Κατάλογος μετακίνησης των δεδομένων μόλις η λήψη ενός torrent ολοκληρωθεί."
 
 #, fuzzy
-#~| msgid "Move completed downloads to:"
 #~ msgid "Folder to move completed downloaded files to"
 #~ msgstr "Μετακίνηση ολοκληρωμένων λήψεων στο:"
 
@@ -6572,7 +6226,6 @@ msgstr "ktcli"
 #~ msgstr "Συνέχιση KTorrent"
 
 #, fuzzy
-#~| msgid "Resume paused torrents"
 #~ msgid "Resume suspended torrents"
 #~ msgstr "Συνέχιση των torrent σε παύση"
 
@@ -6729,7 +6382,6 @@ msgstr "ktcli"
 #~ msgstr "Χρήση λίστας αρχείων για την εμφάνιση των περιεχομένων των torrent"
 
 #, fuzzy
-#~| msgid "Torrent has no announce or nodes field"
 #~ msgid "Torrent has no announce or nodes field."
 #~ msgstr "Το Torrent δεν περιέχει πεδίο ανακοίνωσης ή κόμβων"
 
@@ -7074,11 +6726,9 @@ msgstr "ktcli"
 #~ msgid "Downloaded: %1 / %2 Uploaded: %3"
 #~ msgstr "Λήφθησαν: %1 / %2 Απεστάλησαν: %3"
 
-#~| msgid "<b>%1</b><br/><br/>%2"
 #~ msgid "<b>%1</b><br/>1 active filter"
 #~ msgstr "<b>%1</b><br/>1 ενεργό φίλτρο"
 
-#~| msgid "<b>%1</b><br/><br/>%2"
 #~ msgid "<b>%1</b><br/>%2 active filters"
 #~ msgstr "<b>%1</b><br/>%2 ενεργά φίλτρα"
 
@@ -7341,7 +6991,6 @@ msgstr "ktcli"
 #~ msgstr "Επιλεγμένοι υπολογιστές"
 
 #, fuzzy
-#~| msgid "Cannot open %1 : %2"
 #~ msgid "Cannot open %s : %s"
 #~ msgstr "Αδύνατο το άνοιγμα του αρχείου %1 : %2"
 
@@ -7358,13 +7007,6 @@ msgstr "ktcli"
 #~ msgstr "Ενημέρωση από το διαδίκτυο"
 
 #, fuzzy
-#~| msgid ""
-#~| "Use your web browser to search for the string %1 (capital letters) on "
-#~| "the search engine you want to add. <br> Then copy the URL in the "
-#~| "addressbar after the search is finished, and paste it here."
-#~| "<br><br>Searching for %1 on Google for example, will result in http://"
-#~| "www.google.com/search?q=FOOBAR&ie=UTF-8&oe=UTF-8. <br> If you add this "
-#~| "URL here, ktorrent can search using ,SGoogle."
 #~ msgid ""
 #~ "Use your web browser to search for the string %1 (capital letters) on the "
 #~ "search engine you want to add. <br> Then copy the URL in the addressbar "

@@ -61,7 +61,7 @@ namespace bt
 		 * Data has been checked, and these chunks are OK.
 		 * @param ok_chunks The ok_chunks
 		 */
-		void dataChecked(const BitSet & ok_chunks);
+		void dataChecked(const bt::BitSet& ok_chunks, bt::Uint32 from, bt::Uint32 to);
 		
 		/**
 		 * A range of chunks has been reincluded.
@@ -77,7 +77,7 @@ namespace bt
 		void reinsert(Uint32 chunk);
 		
 		virtual bool selectRange(Uint32 & from,Uint32 & to,Uint32 max_len);
-	private:
+	protected:
 		Uint32 leastPeers(const std::list<Uint32> & lp,Uint32 alternative,Uint32 max_peers_per_chunk);
 	};
 

@@ -5,119 +5,64 @@
 # Martijn van Vliet <mvanvliet@gmail.com>, 2006, 2007, 2008.
 # Rinse de Vries <RinseDeVries@home.nl>, 2006.
 # Kristof Bal <kristof.bal@gmail.com>, 2009.
-# Freek de Kruijf <freekdekruijf@kde.nl>, 2008, 2009, 2010, 2011.
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2008, 2009, 2010, 2011, 2012.
 # Freek de Kruijf <f.de.kruijf@hetnet.nl>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-11 11:17+0200\n"
-"PO-Revision-Date: 2011-03-03 20:19+0100\n"
+"POT-Creation-Date: 2012-02-07 18:22+0100\n"
+"PO-Revision-Date: 2012-01-10 09:53+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.1\n"
+"X-Generator: Lokalize 1.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: src/bcodec/bdecoder.cpp:62
+#: src/bcodec/bdecoder.cpp:71
 #, kde-format
 msgid "Illegal token: %1"
 msgstr "Ongeldig woord: %1"
 
-#: src/bcodec/bdecoder.cpp:125 src/bcodec/bdecoder.cpp:133
+#: src/bcodec/bdecoder.cpp:133 src/bcodec/bdecoder.cpp:141
 msgid "Decode error"
 msgstr "Decodeerfout"
 
-#: src/bcodec/bdecoder.cpp:193 src/bcodec/bdecoder.cpp:238
+#: src/bcodec/bdecoder.cpp:201 src/bcodec/bdecoder.cpp:246
 msgid "Unexpected end of input"
 msgstr "Onverwacht einde van invoer"
 
-#: src/bcodec/bdecoder.cpp:213 src/bcodec/bdecoder.cpp:247
+#: src/bcodec/bdecoder.cpp:221 src/bcodec/bdecoder.cpp:255
 #, kde-format
 msgid "Cannot convert %1 to an int"
 msgstr "Kan %1 niet converteren naar een integer"
 
-#: src/bcodec/bdecoder.cpp:252
+#: src/bcodec/bdecoder.cpp:260
 msgid "Torrent is incomplete."
 msgstr "Torrent is incompleet."
 
-#: src/datachecker/datacheckerjob.cpp:76
+#: src/datachecker/datacheckerjob.cpp:82
 msgid "Waiting for other data checks to finish"
 msgstr "Wacht op andere gegevenscontroles om gereed te komen"
 
-#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:93
 msgid "Checking data"
 msgstr "Gegevens controleren"
 
-#: src/datachecker/datacheckerjob.cpp:135
+#: src/datachecker/datacheckerjob.cpp:141
 msgid "Checking Data"
 msgstr "Gegevens controleren"
 
-#: src/datachecker/multidatachecker.cpp:203
+#: src/datachecker/multidatachecker.cpp:209
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
 #, kde-format
 msgid "Cannot open file %1: %2"
 msgstr "Kan bestand %1 niet openen: %2"
-
-#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
-#: src/util/fileops.cpp:396
-#, kde-format
-msgid "Cannot open %1: %2"
-msgstr "Kan %1 niet openen: %2"
-
-#: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
-#: src/diskio/cachefile.cpp:412 src/diskio/cachefile.cpp:480
-#, kde-format
-msgid "Cannot open %1 for writing: readonly filesystem"
-msgstr "Kan %1 niet openen om weg te schrijven: alleen-lezen bestandssysteem."
-
-#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:418
-#, kde-format
-msgid "Attempting to write beyond the maximum size of %1"
-msgstr "Poging om te schrijven boven de maximum grootte van %1"
-
-#: src/diskio/cachefile.cpp:255
-#, kde-format
-msgid ""
-"Cannot expand file %1: attempting to grow the file beyond the maximum size"
-msgstr ""
-"Vergroten van bestand %1 lukt niet : poging om te vergroten boven de maximum "
-"grootte"
-
-#: src/diskio/cachefile.cpp:259
-#, kde-format
-msgid "Cannot expand file %1: %2"
-msgstr "Kan bestand %1 niet uitbreiden: %2"
-
-#: src/diskio/cachefile.cpp:378
-#, kde-format
-msgid "Error: Reading past the end of the file %1"
-msgstr "Fout: Lezen buiten het bereik van bestand %1"
-
-#: src/diskio/cachefile.cpp:383 src/diskio/cachefile.cpp:430
-#, kde-format
-msgid "Failed to seek file %1: %2"
-msgstr "Een 'seek' in bestand %1 lukt niet: %2"
-
-#: src/diskio/cachefile.cpp:391
-#, kde-format
-msgid "Error reading from %1"
-msgstr "Fout bij het lezen van %1"
-
-#: src/diskio/cachefile.cpp:434
-#, kde-format
-msgid "Failed to write to file %1: %2"
-msgstr "Niet in staat om naar bestand %1 te schrijven: %2"
-
-#: src/diskio/cachefile.cpp:501
-#, kde-format
-msgid "Cannot preallocate diskspace: %1"
-msgstr "Kan geen schijfruimte toewijzen: %1"
 
 #: src/diskio/dndfile.cpp:89
 #, kde-format
@@ -134,21 +79,6 @@ msgstr "Kan de eerste chunk niet wegschrijven naar het DND-bestand: %1"
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Kan de laatste chunk niet wegschrijven naar het DND-bestand: %1"
 
-#: src/diskio/movedatafilesjob.cpp:166
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Verplaatsen"
-
-#: src/diskio/movedatafilesjob.cpp:167
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "Bron"
-
-#: src/diskio/movedatafilesjob.cpp:168
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "Bestemming"
-
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, kde-format
 msgid "Failed to open %1: %2"
@@ -163,70 +93,84 @@ msgstr "Niet in staat %1 aan te maken: %2"
 msgid "Unable to write to a piece mapped read only"
 msgstr "Schrijven naar een stuk dat alleen-lezen is gekoppeld kan niet"
 
-#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
+#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
+#: src/util/fileops.cpp:399
+#, kde-format
+msgid "Cannot open %1: %2"
+msgstr "Kan %1 niet openen: %2"
+
+#: src/diskio/cachefile.cpp:122 src/diskio/cachefile.cpp:250
+#: src/diskio/cachefile.cpp:414 src/diskio/cachefile.cpp:482
+#, kde-format
+msgid "Cannot open %1 for writing: readonly filesystem"
+msgstr "Kan %1 niet openen om weg te schrijven: alleen-lezen bestandssysteem."
+
+#: src/diskio/cachefile.cpp:129 src/diskio/cachefile.cpp:420
+#, kde-format
+msgid "Attempting to write beyond the maximum size of %1"
+msgstr "Poging om te schrijven boven de maximum grootte van %1"
+
+#: src/diskio/cachefile.cpp:257
+#, kde-format
+msgid ""
+"Cannot expand file %1: attempting to grow the file beyond the maximum size"
+msgstr ""
+"Vergroten van bestand %1 lukt niet : poging om te vergroten boven de maximum "
+"grootte"
+
+#: src/diskio/cachefile.cpp:261
+#, kde-format
+msgid "Cannot expand file %1: %2"
+msgstr "Kan bestand %1 niet uitbreiden: %2"
+
+#: src/diskio/cachefile.cpp:380
+#, kde-format
+msgid "Error: Reading past the end of the file %1"
+msgstr "Fout: Lezen buiten het bereik van bestand %1"
+
+#: src/diskio/cachefile.cpp:385 src/diskio/cachefile.cpp:432
+#, kde-format
+msgid "Failed to seek file %1: %2"
+msgstr "Een 'seek' in bestand %1 lukt niet: %2"
+
+#: src/diskio/cachefile.cpp:393
+#, kde-format
+msgid "Error reading from %1"
+msgstr "Fout bij het lezen van %1"
+
+#: src/diskio/cachefile.cpp:436
+#, kde-format
+msgid "Failed to write to file %1: %2"
+msgstr "Niet in staat om naar bestand %1 te schrijven: %2"
+
+#: src/diskio/cachefile.cpp:503
+#, kde-format
+msgid "Cannot preallocate diskspace: %1"
+msgstr "Kan geen schijfruimte toewijzen: %1"
+
+#: src/diskio/chunkmanager.cpp:928 src/diskio/chunkmanager.cpp:954
 #, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr "Kan indexbestand %1 niet openen: %2"
 
-#: src/download/downloader.cpp:810
-msgid "Disabled because webseed does not match torrent"
-msgstr "Uitgeschakeld omdat de webseed niet overeenkomt met de torrent"
+#: src/diskio/movedatafilesjob.cpp:140
+msgid "Waiting for other move jobs to finish"
+msgstr "Wachten totdat andere taken met verplaatsingen klaar zijn"
 
-#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
-msgid "Not connected"
-msgstr "Niet verbonden"
+#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr "Bron"
 
-#: src/download/httpconnection.cpp:107
-#, kde-format
-msgid "Resolving proxy %1:%2"
-msgstr "Proxy herleiden %1:%2"
+#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr "Bestemming"
 
-#: src/download/httpconnection.cpp:116
-#, kde-format
-msgid "Resolving hostname %1"
-msgstr "Hostnaam herleiden %1"
-
-#: src/download/httpconnection.cpp:129 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "Verbinding gesloten"
-
-#: src/download/httpconnection.cpp:136
-#, kde-format
-msgid "Error: request failed: %1"
-msgstr "Fout: verzoek gefaald: %1"
-
-#: src/download/httpconnection.cpp:153 src/download/httpconnection.cpp:217
-msgid "Connected"
-msgstr "Verbonden"
-
-#: src/download/httpconnection.cpp:159
-msgid "Error: Failed to connect to webseed"
-msgstr "Fout: Kon niet verbinden naar webseed"
-
-#: src/download/httpconnection.cpp:224
-msgid "Connecting"
-msgstr "Verbinding maken"
-
-#: src/download/httpconnection.cpp:235
-msgid "Failed to connect to webseed"
-msgstr "Kon niet verbinden naar webseed"
-
-#: src/download/httpconnection.cpp:242
-msgid "Failed to resolve hostname of webseed"
-msgstr "Kon de hostnaam van de webseed niet herleiden"
-
-#: src/download/httpconnection.cpp:322
-msgid "Error: failed to connect, server not responding"
-msgstr "Fout: kon niet verbinden, server reageerde niet"
-
-#: src/download/httpconnection.cpp:333
-msgid "Error: request timed out"
-msgstr "Fout: time-out op verzoek"
-
-#: src/download/httpconnection.cpp:398
-msgid "Redirected without a new location."
-msgstr "Doorgestuurd zonder een nieuwe locatie."
+#: src/diskio/movedatafilesjob.cpp:180
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Verplaatsen"
 
 #: src/download/chunkdownload.cpp:383
 #, kde-format
@@ -234,6 +178,70 @@ msgid "1 peer"
 msgid_plural "%1 peers"
 msgstr[0] "1 peers"
 msgstr[1] "%1 peers"
+
+#: src/download/downloader.cpp:808
+msgid "Disabled because webseed does not match torrent"
+msgstr "Uitgeschakeld omdat de webseed niet overeenkomt met de torrent"
+
+#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
+#: src/download/webseed.cpp:98
+msgid "Not connected"
+msgstr "Niet verbonden"
+
+#: src/download/httpconnection.cpp:115
+#, kde-format
+msgid "Resolving proxy %1:%2"
+msgstr "Proxy herleiden %1:%2"
+
+#: src/download/httpconnection.cpp:121 src/download/httpconnection.cpp:139
+msgid "Not enough system resources available"
+msgstr "Er zijn niet genoeg hulpbronnen beschikbaar"
+
+#: src/download/httpconnection.cpp:133
+#, kde-format
+msgid "Resolving hostname %1"
+msgstr "Hostnaam herleiden %1"
+
+#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
+msgid "Connection closed"
+msgstr "Verbinding gesloten"
+
+#: src/download/httpconnection.cpp:160
+#, kde-format
+msgid "Error: request failed: %1"
+msgstr "Fout: verzoek gefaald: %1"
+
+#: src/download/httpconnection.cpp:188 src/download/httpconnection.cpp:222
+msgid "Connected"
+msgstr "Verbonden"
+
+#: src/download/httpconnection.cpp:199
+msgid "Error: Failed to connect to webseed"
+msgstr "Fout: Kon niet verbinden naar webseed"
+
+#: src/download/httpconnection.cpp:229
+msgid "Connecting"
+msgstr "Verbinding maken"
+
+#: src/download/httpconnection.cpp:240
+msgid "Failed to connect to webseed"
+msgstr "Kon niet verbinden naar webseed"
+
+#: src/download/httpconnection.cpp:247
+msgid "Failed to resolve hostname of webseed"
+msgstr "Kon de hostnaam van de webseed niet herleiden"
+
+#: src/download/httpconnection.cpp:326
+msgid "Error: failed to connect, server not responding"
+msgstr "Fout: kon niet verbinden, server reageerde niet"
+
+#: src/download/httpconnection.cpp:337
+msgid "Error: request timed out"
+msgstr "Fout: time-out op verzoek"
+
+#: src/download/httpconnection.cpp:402
+msgid "Redirected without a new location."
+msgstr "Doorgestuurd zonder een nieuwe locatie."
 
 #: src/download/webseed.cpp:545
 #, kde-format
@@ -253,7 +261,7 @@ msgstr "Waarschuwing: %1"
 msgid "Announcing"
 msgstr "Aankondigen"
 
-#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:86
+#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:87
 #, kde-format
 msgid "Error: %1"
 msgstr "Fout: %1"
@@ -272,59 +280,6 @@ msgstr "Onbekende client"
 msgid "Cannot create index file: %1"
 msgstr "Kan indexbestand %1 niet aanmaken"
 
-#: src/torrent/torrentstats.cpp:72
-msgid "Not started"
-msgstr "Niet gestart"
-
-#: src/torrent/torrentstats.cpp:74
-msgid "Download completed"
-msgstr "Download voltooid"
-
-#: src/torrent/torrentstats.cpp:76
-msgid "Seeding completed"
-msgstr "Seeden voltooid"
-
-#: src/torrent/torrentstats.cpp:78
-msgctxt "Status of a torrent file"
-msgid "Seeding"
-msgstr "Seeden"
-
-#: src/torrent/torrentstats.cpp:80
-msgid "Downloading"
-msgstr "Downloaden"
-
-#: src/torrent/torrentstats.cpp:82
-msgid "Stalled"
-msgstr "Onderbroken"
-
-#: src/torrent/torrentstats.cpp:84
-msgid "Stopped"
-msgstr "Gestopt"
-
-#: src/torrent/torrentstats.cpp:88
-msgid "Allocating diskspace"
-msgstr "Schijfruimte toewijzen"
-
-#: src/torrent/torrentstats.cpp:90
-msgid "Queued for seeding"
-msgstr "In wachtrij voor seeden"
-
-#: src/torrent/torrentstats.cpp:90
-msgid "Queued for downloading"
-msgstr "In wachtrij voor downloaden"
-
-#: src/torrent/torrentstats.cpp:94
-msgid "Stopped. No space left on device."
-msgstr "Gestopt. Geen schijfruimte over op apparaat."
-
-#: src/torrent/torrentstats.cpp:96
-msgid "Paused"
-msgstr "Gepauzeerd"
-
-#: src/torrent/torrentstats.cpp:98
-msgid "Superseeding"
-msgstr "Superseeding"
-
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
@@ -341,7 +296,7 @@ msgstr "Niet in staat torrent-bestand %1 te openen: %2"
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr "Fout bij schrijven naar schijf, hebt u genoeg schijfruimte?"
 
-#: src/torrent/torrentcontrol.cpp:553
+#: src/torrent/torrentcontrol.cpp:554
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -351,18 +306,18 @@ msgstr ""
 "><b>%2</b><br/>De torrent is waarschijnlijk beschadigd of is geen geldig "
 "torrent-bestand."
 
-#: src/torrent/torrentcontrol.cpp:583
+#: src/torrent/torrentcontrol.cpp:584
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr ""
 "Er is een fout opgetreden tijdens het laden van <b>%1</b>:<br/><b>%2</b>"
 
-#: src/torrent/torrentcontrol.cpp:594
+#: src/torrent/torrentcontrol.cpp:595
 #, kde-format
 msgid "Unable to create %1: %2"
 msgstr "Niet in staat %1 aan te maken: %2"
 
-#: src/torrent/torrentcontrol.cpp:609
+#: src/torrent/torrentcontrol.cpp:610
 #, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
@@ -371,38 +326,91 @@ msgstr ""
 "De torrent <b>%1</b> wordt op het moment al gedownload, de lijst met "
 "trackers van beide torrents zijn nu samengevoegd."
 
-#: src/torrent/torrentcontrol.cpp:614
+#: src/torrent/torrentcontrol.cpp:615
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "De torrent <b>%1</b> wordt op het moment al gedownload."
+
+#: src/torrent/torrentstats.cpp:73
+msgid "Not started"
+msgstr "Niet gestart"
+
+#: src/torrent/torrentstats.cpp:75
+msgid "Download completed"
+msgstr "Download voltooid"
+
+#: src/torrent/torrentstats.cpp:77
+msgid "Seeding completed"
+msgstr "Seeden voltooid"
+
+#: src/torrent/torrentstats.cpp:79
+msgctxt "Status of a torrent file"
+msgid "Seeding"
+msgstr "Seeden"
+
+#: src/torrent/torrentstats.cpp:81
+msgid "Downloading"
+msgstr "Downloaden"
+
+#: src/torrent/torrentstats.cpp:83
+msgid "Stalled"
+msgstr "Onderbroken"
+
+#: src/torrent/torrentstats.cpp:85
+msgid "Stopped"
+msgstr "Gestopt"
+
+#: src/torrent/torrentstats.cpp:89
+msgid "Allocating diskspace"
+msgstr "Schijfruimte toewijzen"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Queued for seeding"
+msgstr "In wachtrij voor seeden"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Queued for downloading"
+msgstr "In wachtrij voor downloaden"
+
+#: src/torrent/torrentstats.cpp:95
+msgid "Stopped. No space left on device."
+msgstr "Gestopt. Geen schijfruimte over op apparaat."
+
+#: src/torrent/torrentstats.cpp:97
+msgid "Paused"
+msgstr "Gepauzeerd"
+
+#: src/torrent/torrentstats.cpp:99
+msgid "Superseeding"
+msgstr "Superseeding"
 
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "Verwijzen zonder een verwijzingslocatie"
 
-#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
-#: src/tracker/httptracker.cpp:557
+#: src/tracker/httptracker.cpp:287 src/tracker/httptracker.cpp:307
+#: src/tracker/httptracker.cpp:463
+msgid "Invalid response from tracker"
+msgstr "Ongeldig antwoord van tracker"
+
+#: src/tracker/httptracker.cpp:300
+msgid "Invalid data from tracker"
+msgstr "Onjuiste gegevens verkregen van tracker"
+
+#: src/tracker/httptracker.cpp:480
+msgid "Invalid tracker URL"
+msgstr "Ongeldig URL-adres voor tracker"
+
+#: src/tracker/httptracker.cpp:558 src/tracker/udptracker.cpp:364
+#: src/tracker/udptracker.cpp:374
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Timeout bij contact maken met tracker %1"
 
-#: src/tracker/udptracker.cpp:409
+#: src/tracker/udptracker.cpp:401
 #, kde-format
 msgid "Unable to resolve hostname %1"
 msgstr "Kon hostnaam %1 niet herleiden"
-
-#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:462
-msgid "Invalid response from tracker"
-msgstr "Ongeldig antwoord van tracker"
-
-#: src/tracker/httptracker.cpp:293
-msgid "Invalid data from tracker"
-msgstr "Onjuiste gegevens verkregen van tracker"
-
-#: src/tracker/httptracker.cpp:479
-msgid "Invalid tracker URL"
-msgstr "Ongeldig URL-adres voor tracker"
 
 #: src/util/logsystemmanager.cpp:33
 msgid "General"
@@ -437,6 +445,14 @@ msgstr "Kan niet schrijven naar %1: %2"
 #, kde-format
 msgid "Cannot read from %1"
 msgstr "Kan niet lezen van %1"
+
+#: src/util/signalcatcher.cpp:78
+msgid "Error when writing to disk"
+msgstr "Fout bij schrijven naar schijf"
+
+#: src/util/signalcatcher.cpp:78
+msgid "Error when reading from disk"
+msgstr "Fout bij het lezen van schijf"
 
 #: src/util/fileops.cpp:94
 #, kde-format
@@ -479,35 +495,27 @@ msgid "Cannot calculate the filesize: %1"
 msgstr "Kan de bestandsgrootte niet berekenen: %1"
 
 #: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
-#: src/util/fileops.cpp:387
+#: src/util/fileops.cpp:387 src/util/fileops.cpp:390
 #, kde-format
 msgid "Cannot expand file: %1"
 msgstr "Kan geen gegevens toevoegen aan bestand: %1"
 
-#: src/util/fileops.cpp:417
+#: src/util/fileops.cpp:420
 #, kde-format
 msgid "Cannot seek in file: %1"
 msgstr "Kan geen 'seek' doen in bestand: %1"
 
-#: src/util/functions.cpp:280
+#: src/util/functions.cpp:234
 #, kde-format
 msgid "%1/s"
 msgstr "%1/s"
 
-#: src/util/functions.cpp:291
+#: src/util/functions.cpp:245
 #, kde-format
 msgid "1 day "
 msgid_plural "%1 days "
 msgstr[0] "1 dag "
 msgstr[1] "%1 dagen "
-
-#: src/util/signalcatcher.cpp:62
-msgid "Error when writing to disk"
-msgstr "Fout bij schrijven naar schijf"
-
-#: src/util/signalcatcher.cpp:62
-msgid "Error when reading from disk"
-msgstr "Fout bij het lezen van schijf"
 
 #: src/upnp/httprequest.cpp:96
 msgid "Connection closed unexpectedly"
@@ -566,14 +574,17 @@ msgstr "ktcli"
 #~ msgid "Parse Error"
 #~ msgstr "Ontleedfout"
 
-#~ msgid "Cannot open file : %1 : %2"
-#~ msgstr "Kan bestand %1 niet openen: %2"
+#~ msgid "Not in use"
+#~ msgstr "Niet in gebruik"
+
+#~ msgid "Not enough diskspace"
+#~ msgstr "Onvoldoende schijfruimte"
 
 #~ msgid "Cannot open file %1 : %2"
 #~ msgstr "Kan bestand %1 niet openen: %2"
 
-#~ msgid "Not in use"
-#~ msgstr "Niet in gebruik"
+#~ msgid "Cannot open file : %1 : %2"
+#~ msgstr "Kan bestand %1 niet openen: %2"
 
 #~ msgid ""
 #~ "An error occurred while loading the torrent:<br/><b>%1</b><br/>The "
@@ -586,10 +597,6 @@ msgstr "ktcli"
 #~ msgid "Cannot open log file %1 : %2"
 #~ msgstr "Kan logbestand %1 niet openen: %2"
 
-#~| msgid "Not enough free disk space for %1"
-#~ msgid "Not enough diskspace"
-#~ msgstr "Onvoldoende schijfruimte"
-
 #~ msgid "Timeout occurred"
 #~ msgstr "Tijdslimiet plaatsgevonden"
 
@@ -600,7 +607,6 @@ msgstr "ktcli"
 #~ msgstr "Kan niet aan UDP-poort %1 of één van de 10 volgende poorten binden."
 
 #, fuzzy
-#~| msgid "Scan Folder"
 #~ msgctxt "plugin name"
 #~ msgid "Scan Folder"
 #~ msgstr "Map doorzoeken"
@@ -830,7 +836,6 @@ msgstr "ktcli"
 #~ msgstr "KTorrent speelt een video af."
 
 #, fuzzy
-#~| msgid "Cannot find webinterface skins!"
 #~ msgid "Cannot find web interface skins."
 #~ msgstr "Webinterfaceuiterlijken zijn niet te vinden!"
 
@@ -1107,7 +1112,6 @@ msgstr "ktcli"
 #~ msgstr "Infowidget"
 
 #, fuzzy
-#~| msgid "Status"
 #~ msgctxt "@title:tab"
 #~ msgid "Status"
 #~ msgstr "Status"
@@ -1116,7 +1120,6 @@ msgstr "ktcli"
 #~ msgstr "Toont de statusinformatie van de torrent"
 
 #, fuzzy
-#~| msgid "Files"
 #~ msgctxt "@title:tab"
 #~ msgid "Files"
 #~ msgstr "Bestanden"
@@ -1274,7 +1277,6 @@ msgstr "ktcli"
 #~ msgstr "Prioriteit"
 
 #, fuzzy
-#~| msgid "Preview"
 #~ msgctxt "@title:column"
 #~ msgid "Preview"
 #~ msgstr "Voorbeeld"
@@ -1315,12 +1317,10 @@ msgstr "ktcli"
 #~ msgstr "Beschikbaar"
 
 #, fuzzy
-#~| msgid "Add Tracker"
 #~ msgid "Add Trackers"
 #~ msgstr "Tracker toevoegen"
 
 #, fuzzy
-#~| msgid "Enter the URL of the tracker:"
 #~ msgid "Enter the URL's of the trackers, one per line:"
 #~ msgstr "Voer de URL van de tracker in:"
 
@@ -1457,7 +1457,6 @@ msgstr "ktcli"
 #~ msgstr "In nieuw tabblad openen"
 
 #, fuzzy
-#~| msgid "Copy Torrent URL"
 #~ msgid "Copy URL"
 #~ msgstr "Kopieer een torrent-URL"
 
@@ -1471,7 +1470,6 @@ msgstr "ktcli"
 #~ msgstr "Zoekopdracht voltooid"
 
 #, fuzzy
-#~| msgid "Search"
 #~ msgctxt "plugin name"
 #~ msgid "Search"
 #~ msgstr "Zoeken"
@@ -1534,7 +1532,6 @@ msgstr "ktcli"
 #~ msgstr "Machine:"
 
 #, fuzzy
-#~| msgid "Do you want to download or save the torrent?"
 #~ msgid "Do you want to download this magnet link?"
 #~ msgstr "Wilt u de torrent downloaden of opslaan?"
 
@@ -1596,12 +1593,10 @@ msgstr "ktcli"
 #~ msgstr "Planning wissen"
 
 #, fuzzy
-#~| msgid "Schedule line color:"
 #~ msgid "Scheduler Active"
 #~ msgstr "Planner lijnskleur:"
 
 #, fuzzy
-#~| msgid "Add a new item to the schedule"
 #~ msgid "Activate or deactivate the scheduler"
 #~ msgstr "Voeg een nieuw item aan de planning toe"
 
@@ -1616,22 +1611,18 @@ msgstr "ktcli"
 #~ "worden gewijzigd."
 
 #, fuzzy
-#~| msgid "Current schedule: paused"
 #~ msgid "Current schedule: suspended"
 #~ msgstr "Huidige planning: gepauzeerd"
 
 #, fuzzy
-#~| msgid "Current schedule: %1 KiB/s download, %2 KiB/s upload"
 #~ msgid "Current schedule: %1/s download, %2/s upload"
 #~ msgstr "Huidige planning: %1 KiB/s download, %2 KiB/s upload"
 
 #, fuzzy
-#~| msgid "Current schedule: unlimited download, %1 KiB/s upload"
 #~ msgid "Current schedule: unlimited download, %1/s upload"
 #~ msgstr "Huidige planning: onbeperkte download, %1 KiB/s upload"
 
 #, fuzzy
-#~| msgid "Current schedule: %1 KiB/s download, unlimited upload"
 #~ msgid "Current schedule: %1/s download, unlimited upload"
 #~ msgstr "Huidige planning: %1 KiB/s download, onbeperkte upload"
 
@@ -1639,7 +1630,6 @@ msgstr "ktcli"
 #~ msgstr "Huidige planning: onbeperkte download en upload"
 
 #, fuzzy
-#~| msgid "KTorrent scheduler files"
 #~ msgid " (scheduler disabled)"
 #~ msgstr "KTorrent-plannerbestanden"
 
@@ -1653,7 +1643,6 @@ msgstr "ktcli"
 #~ msgstr "Het bestand %1 is corrupt of geen goed KTorrent-planningsbestand."
 
 #, fuzzy
-#~| msgid "Speed"
 #~ msgid "Suspended"
 #~ msgstr "Snelheid"
 
@@ -1668,7 +1657,6 @@ msgstr "ktcli"
 #~ "%2 up"
 
 #, fuzzy
-#~| msgid "Configure Shutdown"
 #~ msgctxt "@title:window"
 #~ msgid "Configure Shutdown"
 #~ msgstr "Afsluiten configureren"
@@ -1757,7 +1745,6 @@ msgstr "ktcli"
 #~ msgstr "Nooit"
 
 #, fuzzy
-#~| msgid "Copy Torrent URL"
 #~ msgid "Copy Magnet URI"
 #~ msgstr "Kopieer een torrent-URL"
 
@@ -1771,12 +1758,10 @@ msgstr "ktcli"
 #~ msgstr "(C) 2005 - 2007 Joris Guisson en Ivan Vasic"
 
 #, fuzzy
-#~| msgid "Time Downloaded"
 #~ msgid "KTMagnetDownloader"
 #~ msgstr "Downloadtijd"
 
 #, fuzzy
-#~| msgid "Joris Guisson"
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "Joris Guisson"
 
@@ -1846,17 +1831,14 @@ msgstr "ktcli"
 #~ "de rechterkant om de volgorde aan te passen."
 
 #, fuzzy
-#~| msgid "Search"
 #~ msgid "Show Search"
 #~ msgstr "Zoeken"
 
 #, fuzzy
-#~| msgid "Show or hide the group view"
 #~ msgid "Show or hide the search bar"
 #~ msgstr "Groepsbeeld tonen of verbergen"
 
 #, fuzzy
-#~| msgid "Move Up"
 #~ msgid "Move Top"
 #~ msgstr "Omhoog"
 
@@ -1876,7 +1858,6 @@ msgstr "ktcli"
 #~ msgstr "Verplaats een torrent omlaag in de wachtrij"
 
 #, fuzzy
-#~| msgid "Bottom"
 #~ msgid "Move Bottom"
 #~ msgstr "Onder"
 
@@ -1884,12 +1865,10 @@ msgstr "ktcli"
 #~ msgstr "Verplaats een torrent naar het einde van de wachtrij"
 
 #, fuzzy
-#~| msgid "Start torrent"
 #~ msgid "Start Magnet"
 #~ msgstr "Uploaden van torrent &starten"
 
 #, fuzzy
-#~| msgid "Remove Torrent"
 #~ msgid "Remove Magnet"
 #~ msgstr "Torrent verwijderen"
 
@@ -1897,7 +1876,6 @@ msgstr "ktcli"
 #~ msgstr "%v van %m chunks gecontroleerd"
 
 #, fuzzy
-#~| msgid "Start"
 #~ msgctxt "@action Start all selected torrents in the current tab"
 #~ msgid "Start"
 #~ msgstr "Starten"
@@ -1906,7 +1884,6 @@ msgstr "ktcli"
 #~ msgstr "Start alle geselecteerde torrents in de huidige tab"
 
 #, fuzzy
-#~| msgid "Stop"
 #~ msgctxt "@action Stop all selected torrents in the current tab"
 #~ msgid "Stop"
 #~ msgstr "Stoppen"
@@ -1915,18 +1892,15 @@ msgstr "ktcli"
 #~ msgstr "Stop alle geselecteerde torrents in de huidige tab"
 
 #, fuzzy
-#~| msgid "Pause"
 #~ msgctxt "@action Pause all selected torrents in the current tab"
 #~ msgid "Pause"
 #~ msgstr "Pauze"
 
 #, fuzzy
-#~| msgid "Start all selected torrents in the current tab"
 #~ msgid "Pause all selected torrents in the current tab"
 #~ msgstr "Start alle geselecteerde torrents in de huidige tab"
 
 #, fuzzy
-#~| msgid "Remove"
 #~ msgctxt "@action Remove all selected torrents in the current tab"
 #~ msgid "Remove"
 #~ msgstr "Verwijderen"
@@ -1935,7 +1909,6 @@ msgstr "ktcli"
 #~ msgstr "Verwijder alle geselecteerde torrents in de huidige tab"
 
 #, fuzzy
-#~| msgid "Start All"
 #~ msgctxt "@action Start all torrents in the current tab"
 #~ msgid "Start All"
 #~ msgstr "Alles starten"
@@ -1944,7 +1917,6 @@ msgstr "ktcli"
 #~ msgstr "Start alle torrents in de huidige tab"
 
 #, fuzzy
-#~| msgid "Stop All"
 #~ msgctxt "@action Stop all torrents in the current tab"
 #~ msgid "Stop All"
 #~ msgstr "Alles stoppen"
@@ -2065,7 +2037,6 @@ msgstr "ktcli"
 #~ msgstr "Locatie"
 
 #, fuzzy
-#~| msgid "Add Feed"
 #~ msgid "Added"
 #~ msgstr "Feed toevoegen"
 
@@ -2131,12 +2102,10 @@ msgstr "ktcli"
 #~ msgstr "De locatie van de data van de torrent op de schijf"
 
 #, fuzzy
-#~| msgid "When all torrents finish seeding"
 #~ msgid "When this torrent was added"
 #~ msgstr "Wanneer alle torrents het seeden beëindigen"
 
 #, fuzzy
-#~| msgid "Timeout contacting tracker %1"
 #~ msgid "Unable to contact a tracker."
 #~ msgstr "Timeout bij contact maken met tracker %1"
 
@@ -2218,10 +2187,6 @@ msgstr "ktcli"
 #~ msgstr "Een bestandenlijst tonen"
 
 #, fuzzy
-#~| msgid ""
-#~| "Some files of this torrent have been found in the completed downloads "
-#~| "directory. Do you want to import these files and use the completed "
-#~| "downloads directory as the location ?"
 #~ msgid ""
 #~ "Some files of this torrent have been found in the completed downloads "
 #~ "directory. Do you want to import these files and use the completed "
@@ -2232,10 +2197,6 @@ msgstr "ktcli"
 #~ "downloads?"
 
 #, fuzzy
-#~| msgid ""
-#~| "All files of this torrent have been found in the completed downloads "
-#~| "directory. Do you want to import these files and use the completed "
-#~| "downloads directory as the location ?"
 #~ msgid ""
 #~ "All files of this torrent have been found in the completed downloads "
 #~ "directory. Do you want to import these files and use the completed "
@@ -2246,9 +2207,6 @@ msgstr "ktcli"
 #~ "downloads?"
 
 #, fuzzy
-#~| msgid ""
-#~| "The file <b>%1</b> was found in the completed downloads directory. Do "
-#~| "you want to import this file ?"
 #~ msgid ""
 #~ "The file <b>%1</b> was found in the completed downloads directory. Do you "
 #~ "want to import this file?"
@@ -2372,9 +2330,6 @@ msgstr "ktcli"
 #~ msgstr "IP-filterlijst"
 
 #, fuzzy
-#~| msgid ""
-#~| "Invalid IP address %1. You must enter an IP address in the format 'XXX."
-#~| "XXX.XXX.XXX'. You can also use wildcards for ranges like '127.0.0.*'."
 #~ msgid ""
 #~ "Invalid IP address <b>%1</b>. IP addresses must be in the format 'XXX.XXX."
 #~ "XXX.XXX'.<br/><br/>You can also use wildcards like '127.0.0.*' or specify "
@@ -2394,7 +2349,6 @@ msgstr "ktcli"
 #~ msgstr "BitTorrent-programma voor KDE"
 
 #, fuzzy
-#~| msgid "(C) 2005 - 2007 Joris Guisson and Ivan Vasic"
 #~ msgid "(C) 2005 - 2010 Joris Guisson and Ivan Vasic"
 #~ msgstr "(C) 2005 - 2007 Joris Guisson en Ivan Vasic"
 
@@ -2671,17 +2625,14 @@ msgstr "ktcli"
 #~ msgstr "URL-adres openen"
 
 #, fuzzy
-#~| msgid "Open a URL which points to a torrent"
 #~ msgid "Open a URL which points to a torrent, magnet links are supported"
 #~ msgstr "Open een URL die naar een torrent wijst"
 
 #, fuzzy
-#~| msgid "Pause KTorrent"
 #~ msgid "Suspend KTorrent"
 #~ msgstr "Pauzeer KTorrent"
 
 #, fuzzy
-#~| msgid "Pause all running torrents"
 #~ msgid "Suspend all running torrents"
 #~ msgstr "Alle draaiende torrents pauzeren"
 
@@ -2716,7 +2667,6 @@ msgstr "ktcli"
 #~ msgstr "Widget voor het beheren van de torrentwachtrij"
 
 #, fuzzy
-#~| msgid "Displays all the chunks you are downloading, of a torrent"
 #~ msgid "Displays the currently downloading magnet links"
 #~ msgstr "Toont alle chunks van een torrent die u aan het downloaden bent"
 
@@ -2812,9 +2762,6 @@ msgstr "ktcli"
 #~ "Ga naar Instellingen -> KTorrent instellen - indien u deze limieten wilt "
 #~ "veranderen."
 
-#~ msgid "There is not enough diskspace available."
-#~ msgstr "Er is een te kort aan schijfruimte."
-
 #~ msgid ""
 #~ "Your disk is running out of space.<br /><b>%1</b> is being downloaded to "
 #~ "'%2'."
@@ -2827,9 +2774,6 @@ msgstr "ktcli"
 #~ msgstr "Snelheidslimiet in KiB/s"
 
 #, fuzzy
-#~| msgid ""
-#~| "KTorrent is unable to accept connections because the ports %1 to %2 are "
-#~| "already in use by another program."
 #~ msgid ""
 #~ "KTorrent is unable to accept connections because the TCP ports %1 is "
 #~ "already in use by another program."
@@ -2838,9 +2782,6 @@ msgstr "ktcli"
 #~ "poorten %1 tot %2 zijn reeds in gebruik door een ander programma."
 
 #, fuzzy
-#~| msgid ""
-#~| "KTorrent is unable to accept connections because the ports %1 to %2 are "
-#~| "already in use by another program."
 #~ msgid ""
 #~ "KTorrent is unable to accept connections because the UDP port %1 is "
 #~ "already in use by another program."
@@ -3520,24 +3461,6 @@ msgstr "ktcli"
 #~ msgstr "Welke interface gebruikt zal worden."
 
 #, fuzzy
-#~| msgid ""
-#~| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/"
-#~| "TR/REC-html40/strict.dtd\">\n"
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Scan the folder "
-#~| "recursively for torrents.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;\">Note: "
-#~| "<span style=\" font-weight:400;\">This will not be done for any folder "
-#~| "named loaded.</span></p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -3577,7 +3500,6 @@ msgstr "ktcli"
 #~ "gedaan bij mappen met de naam 'loaded'.</span></p></body></html>"
 
 #, fuzzy
-#~| msgid "Required:"
 #~ msgid "Login required"
 #~ msgstr "Vereist:"
 
@@ -3681,7 +3603,6 @@ msgstr "ktcli"
 #~ msgstr "Grafieken bijwerken elke n gui-bijwerkingen"
 
 #, fuzzy
-#~| msgid "Interval in miliseconds between data gathering"
 #~ msgid "Interval in milliseconds between data gathering"
 #~ msgstr "Interval in milliseconden tussen gegevensverzamelen"
 
@@ -3791,7 +3712,6 @@ msgstr "ktcli"
 #~ msgstr "Type gebruikte widget voor het maken van de grafiek"
 
 #, fuzzy
-#~| msgid "Speed"
 #~ msgctxt "@title:window"
 #~ msgid "Speed"
 #~ msgstr "Snelheid"
@@ -4363,12 +4283,10 @@ msgstr "ktcli"
 #~ msgstr "Kleur van elk normaal item in de planning."
 
 #, fuzzy
-#~| msgid "Paused schedule item color:"
 #~ msgid "Suspended schedule item color:"
 #~ msgstr "Planningkleur voor pauze:"
 
 #, fuzzy
-#~| msgid "Color of each paused item on the schedule."
 #~ msgid "Color of each suspended item on the schedule."
 #~ msgstr "Kleur van elk gepauzeerd item in de planning."
 
@@ -4508,47 +4426,38 @@ msgstr "ktcli"
 #~ msgstr "&Annuleren"
 
 #, fuzzy
-#~| msgid "Search Preferences"
 #~ msgid "Magnet Generator Preferences"
 #~ msgstr "Zoekinstellingen"
 
 #, fuzzy
-#~| msgid "Add Tracker"
 #~ msgid "Add tracker"
 #~ msgstr "Tracker toevoegen"
 
 #, fuzzy
-#~| msgid "Tracker"
 #~ msgid "Tracker:"
 #~ msgstr "Tracker"
 
 #, fuzzy
-#~| msgid "Move a torrent down in the queue"
 #~ msgid "Add the torrent name in the URI"
 #~ msgstr "Verplaats een torrent omlaag in de wachtrij"
 
 #, fuzzy
-#~| msgid "Add an item"
 #~ msgid "Add name"
 #~ msgstr "Een item toevoegen"
 
 #, fuzzy
-#~| msgid "Show Video"
 #~ msgid "Show popup"
 #~ msgstr "Laat video zien"
 
 #, fuzzy
-#~| msgid "Tracker"
 #~ msgid "Toggles tracker"
 #~ msgstr "Tracker"
 
 #, fuzzy
-#~| msgid "Use default browser"
 #~ msgid "The default tracker"
 #~ msgstr "Standaardbrowser gebruiken"
 
 #, fuzzy
-#~| msgid "Show Feed"
 #~ msgid "Show dn"
 #~ msgstr "Feed tonen"
 
@@ -4776,7 +4685,6 @@ msgstr "ktcli"
 #~ "bandbreedte die u beschikbaar hebt."
 
 #, fuzzy
-#~| msgid "Recommended Settings"
 #~ msgid "Recommended Settings..."
 #~ msgstr "Aanbevolen instellingen"
 
@@ -5310,6 +5218,10 @@ msgstr "ktcli"
 
 #~ msgid "Show system tray icon"
 #~ msgstr "Pictogram in systeemvak plaatsen"
+
+#, fuzzy
+#~ msgid "Whether or not to show system tray popup messages."
+#~ msgstr "Notificatieberichten boven systeemvak tonen"
 
 #~ msgid "Show system tray popup messages"
 #~ msgstr "Notificatieberichten boven systeemvak tonen"
@@ -6434,9 +6346,6 @@ msgstr "ktcli"
 #~ msgstr "Peer toevoegen:"
 
 #, fuzzy
-#~| msgid ""
-#~| "Invalid IP address %1. You must enter an IP address in the format 'XXX."
-#~| "XXX.XXX.XXX'. You can also use wildcards for ranges like '127.0.0.*'."
 #~ msgid ""
 #~ "IP addresses must be in the format 'XXX.XXX.XXX.XXX'.\n"
 #~ "                                        \n"
@@ -6743,7 +6652,6 @@ msgstr "ktcli"
 #~ "een torrent"
 
 #, fuzzy
-#~| msgid "Torrent has no announce or nodes field"
 #~ msgid "Torrent has no announce or nodes field."
 #~ msgstr "Torrent mist invoervelden voor aankondigingen of nodes"
 
@@ -7011,16 +6919,6 @@ msgstr "ktcli"
 #~ msgstr "Uploads@gebruiker"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~| "size:8pt; font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Time used for the "
-#~| "stall timer. When a torrent is stalled longer than this, it's priority "
-#~| "will be decreased.</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -7045,30 +6943,6 @@ msgstr "ktcli"
 #~ "onderbroken, zal haar prioriteit worden verlaagd.</p></body></html>"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Which method to use "
-#~| "for reserving diskspace.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Basic: </span>Will work on all filesystems, but is slow.</"
-#~| "p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Filesystem Specific: </span>Will use special methods "
-#~| "provided by some filesystems, which are faster then the basic method.</"
-#~| "p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"

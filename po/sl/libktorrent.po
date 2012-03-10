@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-11 11:17+0200\n"
+"POT-Creation-Date: 2012-02-07 18:22+0100\n"
 "PO-Revision-Date: 2010-05-06 21:26+0200\n"
 "Last-Translator: Jure Repinc <jlp@holodeck1.com>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -18,43 +18,42 @@ msgstr ""
 "%100==4 ? 3 : 0);\n"
 "X-Generator: Lokalize 1.0\n"
 
-#: src/bcodec/bdecoder.cpp:62
+#: src/bcodec/bdecoder.cpp:71
 #, kde-format
 msgid "Illegal token: %1"
 msgstr "Neveljaven žeton: %1"
 
-#: src/bcodec/bdecoder.cpp:125 src/bcodec/bdecoder.cpp:133
+#: src/bcodec/bdecoder.cpp:133 src/bcodec/bdecoder.cpp:141
 msgid "Decode error"
 msgstr "Napaka pri dekodiranju"
 
-#: src/bcodec/bdecoder.cpp:193 src/bcodec/bdecoder.cpp:238
+#: src/bcodec/bdecoder.cpp:201 src/bcodec/bdecoder.cpp:246
 msgid "Unexpected end of input"
 msgstr "Nepričakovan konec vnosa"
 
-#: src/bcodec/bdecoder.cpp:213 src/bcodec/bdecoder.cpp:247
+#: src/bcodec/bdecoder.cpp:221 src/bcodec/bdecoder.cpp:255
 #, kde-format
 msgid "Cannot convert %1 to an int"
 msgstr "Ni moč pretvoriti %1 v celo število"
 
-#: src/bcodec/bdecoder.cpp:252
+#: src/bcodec/bdecoder.cpp:260
 msgid "Torrent is incomplete."
 msgstr "Torrent ni zaključen."
 
-#: src/datachecker/datacheckerjob.cpp:76
+#: src/datachecker/datacheckerjob.cpp:82
 msgid "Waiting for other data checks to finish"
 msgstr ""
 
-#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:93
 msgid "Checking data"
 msgstr "Preverjanje podatkov"
 
-#: src/datachecker/datacheckerjob.cpp:135
+#: src/datachecker/datacheckerjob.cpp:141
 #, fuzzy
-#| msgid "Checking data"
 msgid "Checking Data"
 msgstr "Preverjanje podatkov"
 
-#: src/datachecker/multidatachecker.cpp:203
+#: src/datachecker/multidatachecker.cpp:209
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
@@ -62,119 +61,28 @@ msgstr "Preverjanje podatkov"
 msgid "Cannot open file %1: %2"
 msgstr "Ni moč odpreti datoteke %1: %2"
 
-#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
-#: src/util/fileops.cpp:396
-#, fuzzy, kde-format
-#| msgid "Cannot open %1 : %2"
-msgid "Cannot open %1: %2"
-msgstr "Ni moč odpreti %1: %2"
-
-#: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
-#: src/diskio/cachefile.cpp:412 src/diskio/cachefile.cpp:480
-#, fuzzy, kde-format
-#| msgid "Cannot open %1 for writing : readonly filesystem"
-msgid "Cannot open %1 for writing: readonly filesystem"
-msgstr "Ni moč odpreti %1 za pisanje: datotečni sistem je samo berljiv"
-
-#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:418
-#, kde-format
-msgid "Attempting to write beyond the maximum size of %1"
-msgstr "Poskus pisanja prek največje velikosti %1"
-
-#: src/diskio/cachefile.cpp:255
-#, fuzzy, kde-format
-#| msgid ""
-#| "Cannot expand file %1 : attempting to grow the file beyond the maximum "
-#| "size"
-msgid ""
-"Cannot expand file %1: attempting to grow the file beyond the maximum size"
-msgstr ""
-"Datoteke %1 ni moč razširiti: poskus razširitve datoteke prek največje "
-"velikosti"
-
-#: src/diskio/cachefile.cpp:259
-#, fuzzy, kde-format
-#| msgid "Cannot expand file %1 : %2"
-msgid "Cannot expand file %1: %2"
-msgstr "Ni moč razširiti datoteke %1: %2"
-
-#: src/diskio/cachefile.cpp:378
-#, fuzzy, kde-format
-#| msgid "Error : Reading past the end of the file %1"
-msgid "Error: Reading past the end of the file %1"
-msgstr "Napaka: branje za koncem datoteke %1"
-
-#: src/diskio/cachefile.cpp:383 src/diskio/cachefile.cpp:430
-#, fuzzy, kde-format
-#| msgid "Failed to seek file %1 : %2"
-msgid "Failed to seek file %1: %2"
-msgstr "Ni moč iskati v datoteki %1: %2"
-
-#: src/diskio/cachefile.cpp:391
-#, kde-format
-msgid "Error reading from %1"
-msgstr "Napaka pri branju iz %1"
-
-#: src/diskio/cachefile.cpp:434
-#, fuzzy, kde-format
-#| msgid "Failed to write to file %1 : %2"
-msgid "Failed to write to file %1: %2"
-msgstr "Ni bilo moč pisati v datoteko %1 : %2"
-
-#: src/diskio/cachefile.cpp:501
-#, fuzzy, kde-format
-#| msgid "Cannot preallocate diskspace : %1"
-msgid "Cannot preallocate diskspace: %1"
-msgstr "Ni moč v naprej dodeliti prostora na disku: %1"
-
 #: src/diskio/dndfile.cpp:89
 #, fuzzy, kde-format
-#| msgid "Cannot create file %1 : %2"
 msgid "Cannot create file %1: %2"
 msgstr "Ni moč ustvariti datoteke %1: %2"
 
 #: src/diskio/dndfile.cpp:137
 #, fuzzy, kde-format
-#| msgid "Failed to write first chunk to DND file : %1"
 msgid "Failed to write first chunk to DND file: %1"
 msgstr "Zapis prvega delčka v datoteko DND ni uspel: %1"
 
 #: src/diskio/dndfile.cpp:155
 #, fuzzy, kde-format
-#| msgid "Failed to write last chunk to DND file : %1"
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Zapis zadnjega delčka v datoteko DND ni uspel: %1"
 
-#: src/diskio/movedatafilesjob.cpp:166
-#, fuzzy
-#| msgid "Moving average"
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Drseče povprečje"
-
-#: src/diskio/movedatafilesjob.cpp:167
-#, fuzzy
-#| msgid "Add Source"
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "Dodaj vir"
-
-#: src/diskio/movedatafilesjob.cpp:168
-#, fuzzy
-#| msgid "Destination"
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "Cilj"
-
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, fuzzy, kde-format
-#| msgid "Failed to open %1 : %2"
 msgid "Failed to open %1: %2"
 msgstr "Ni moč odpreti %1: %2"
 
 #: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
 #, fuzzy, kde-format
-#| msgid "Failed to create %1 : %2"
 msgid "Failed to create %1: %2"
 msgstr "Ni moč ustvariti %1: %2"
 
@@ -182,73 +90,87 @@ msgstr "Ni moč ustvariti %1: %2"
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
 
-#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
+#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
+#: src/util/fileops.cpp:399
 #, fuzzy, kde-format
-#| msgid "Cannot open index file %1 : %2"
+msgid "Cannot open %1: %2"
+msgstr "Ni moč odpreti %1: %2"
+
+#: src/diskio/cachefile.cpp:122 src/diskio/cachefile.cpp:250
+#: src/diskio/cachefile.cpp:414 src/diskio/cachefile.cpp:482
+#, fuzzy, kde-format
+msgid "Cannot open %1 for writing: readonly filesystem"
+msgstr "Ni moč odpreti %1 za pisanje: datotečni sistem je samo berljiv"
+
+#: src/diskio/cachefile.cpp:129 src/diskio/cachefile.cpp:420
+#, kde-format
+msgid "Attempting to write beyond the maximum size of %1"
+msgstr "Poskus pisanja prek največje velikosti %1"
+
+#: src/diskio/cachefile.cpp:257
+#, fuzzy, kde-format
+msgid ""
+"Cannot expand file %1: attempting to grow the file beyond the maximum size"
+msgstr ""
+"Datoteke %1 ni moč razširiti: poskus razširitve datoteke prek največje "
+"velikosti"
+
+#: src/diskio/cachefile.cpp:261
+#, fuzzy, kde-format
+msgid "Cannot expand file %1: %2"
+msgstr "Ni moč razširiti datoteke %1: %2"
+
+#: src/diskio/cachefile.cpp:380
+#, fuzzy, kde-format
+msgid "Error: Reading past the end of the file %1"
+msgstr "Napaka: branje za koncem datoteke %1"
+
+#: src/diskio/cachefile.cpp:385 src/diskio/cachefile.cpp:432
+#, fuzzy, kde-format
+msgid "Failed to seek file %1: %2"
+msgstr "Ni moč iskati v datoteki %1: %2"
+
+#: src/diskio/cachefile.cpp:393
+#, kde-format
+msgid "Error reading from %1"
+msgstr "Napaka pri branju iz %1"
+
+#: src/diskio/cachefile.cpp:436
+#, fuzzy, kde-format
+msgid "Failed to write to file %1: %2"
+msgstr "Ni bilo moč pisati v datoteko %1 : %2"
+
+#: src/diskio/cachefile.cpp:503
+#, fuzzy, kde-format
+msgid "Cannot preallocate diskspace: %1"
+msgstr "Ni moč v naprej dodeliti prostora na disku: %1"
+
+#: src/diskio/chunkmanager.cpp:928 src/diskio/chunkmanager.cpp:954
+#, fuzzy, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr "Ni moč odpreti indeksne datoteke %1: %2"
 
-#: src/download/downloader.cpp:810
+#: src/diskio/movedatafilesjob.cpp:140
+msgid "Waiting for other move jobs to finish"
+msgstr ""
+
+#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
 #, fuzzy
-#| msgid "Displays all the webseeds of a torrent"
-msgid "Disabled because webseed does not match torrent"
-msgstr "Prikazuje vsa spletna semena za torrent"
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr "Dodaj vir"
 
-#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
-msgid "Not connected"
-msgstr "Brez povezave"
+#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+#, fuzzy
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr "Cilj"
 
-#: src/download/httpconnection.cpp:107
-#, kde-format
-msgid "Resolving proxy %1:%2"
-msgstr "Razreševanje posrednika %1:%2"
-
-#: src/download/httpconnection.cpp:116
-#, kde-format
-msgid "Resolving hostname %1"
-msgstr "Razreševanje gostitelja %1"
-
-#: src/download/httpconnection.cpp:129 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "Povezava prekinjena"
-
-#: src/download/httpconnection.cpp:136
-#, kde-format
-msgid "Error: request failed: %1"
-msgstr "Napaka: zahtevek ni uspel: %1"
-
-#: src/download/httpconnection.cpp:153 src/download/httpconnection.cpp:217
-msgid "Connected"
-msgstr "Povezan"
-
-#: src/download/httpconnection.cpp:159
-msgid "Error: Failed to connect to webseed"
-msgstr "Napaka: povezava s spletnim semenom ni uspela"
-
-#: src/download/httpconnection.cpp:224
-msgid "Connecting"
-msgstr "Povezovanje"
-
-#: src/download/httpconnection.cpp:235
-msgid "Failed to connect to webseed"
-msgstr "Povezava s spletnim semenom ni uspela"
-
-#: src/download/httpconnection.cpp:242
-msgid "Failed to resolve hostname of webseed"
-msgstr "Razreševanje imena gostitelja spletnega semena ni uspelo"
-
-#: src/download/httpconnection.cpp:322
-msgid "Error: failed to connect, server not responding"
-msgstr "Napaka: napaka pri povezovanju, strežnik se ne odziva"
-
-#: src/download/httpconnection.cpp:333
-msgid "Error: request timed out"
-msgstr "Napaka: čas za zahtevek je potekel"
-
-#: src/download/httpconnection.cpp:398
-msgid "Redirected without a new location."
-msgstr "Preusmerjen brez nove lokacije."
+#: src/diskio/movedatafilesjob.cpp:180
+#, fuzzy
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Drseče povprečje"
 
 #: src/download/chunkdownload.cpp:383
 #, kde-format
@@ -258,6 +180,72 @@ msgstr[0] "%1 vrstnikov"
 msgstr[1] "%1 vrstnik"
 msgstr[2] "%1 vrstnika"
 msgstr[3] "%1 vrstniki"
+
+#: src/download/downloader.cpp:808
+#, fuzzy
+msgid "Disabled because webseed does not match torrent"
+msgstr "Prikazuje vsa spletna semena za torrent"
+
+#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
+#: src/download/webseed.cpp:98
+msgid "Not connected"
+msgstr "Brez povezave"
+
+#: src/download/httpconnection.cpp:115
+#, kde-format
+msgid "Resolving proxy %1:%2"
+msgstr "Razreševanje posrednika %1:%2"
+
+#: src/download/httpconnection.cpp:121 src/download/httpconnection.cpp:139
+#, fuzzy
+msgid "Not enough system resources available"
+msgstr "Na voljo ni dovolj prostora na na disku."
+
+#: src/download/httpconnection.cpp:133
+#, kde-format
+msgid "Resolving hostname %1"
+msgstr "Razreševanje gostitelja %1"
+
+#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
+msgid "Connection closed"
+msgstr "Povezava prekinjena"
+
+#: src/download/httpconnection.cpp:160
+#, kde-format
+msgid "Error: request failed: %1"
+msgstr "Napaka: zahtevek ni uspel: %1"
+
+#: src/download/httpconnection.cpp:188 src/download/httpconnection.cpp:222
+msgid "Connected"
+msgstr "Povezan"
+
+#: src/download/httpconnection.cpp:199
+msgid "Error: Failed to connect to webseed"
+msgstr "Napaka: povezava s spletnim semenom ni uspela"
+
+#: src/download/httpconnection.cpp:229
+msgid "Connecting"
+msgstr "Povezovanje"
+
+#: src/download/httpconnection.cpp:240
+msgid "Failed to connect to webseed"
+msgstr "Povezava s spletnim semenom ni uspela"
+
+#: src/download/httpconnection.cpp:247
+msgid "Failed to resolve hostname of webseed"
+msgstr "Razreševanje imena gostitelja spletnega semena ni uspelo"
+
+#: src/download/httpconnection.cpp:326
+msgid "Error: failed to connect, server not responding"
+msgstr "Napaka: napaka pri povezovanju, strežnik se ne odziva"
+
+#: src/download/httpconnection.cpp:337
+msgid "Error: request timed out"
+msgstr "Napaka: čas za zahtevek je potekel"
+
+#: src/download/httpconnection.cpp:402
+msgid "Redirected without a new location."
+msgstr "Preusmerjen brez nove lokacije."
 
 #: src/download/webseed.cpp:545
 #, kde-format
@@ -270,7 +258,6 @@ msgstr "V redu"
 
 #: src/interfaces/trackerinterface.cpp:58
 #, fuzzy, kde-format
-#| msgid "Opening %1"
 msgid "Warning: %1"
 msgstr "Odpiranje %1"
 
@@ -278,7 +265,7 @@ msgstr "Odpiranje %1"
 msgid "Announcing"
 msgstr "Najavljanje"
 
-#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:86
+#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:87
 #, kde-format
 msgid "Error: %1"
 msgstr "Napaka: %1"
@@ -297,62 +284,6 @@ msgstr "Neznan odjemalec"
 msgid "Cannot create index file: %1"
 msgstr "Ni moč ustvariti indeksne datoteke: %1"
 
-#: src/torrent/torrentstats.cpp:72
-msgid "Not started"
-msgstr "Ni zagnan"
-
-#: src/torrent/torrentstats.cpp:74
-msgid "Download completed"
-msgstr "Prejemanje zaključeno"
-
-#: src/torrent/torrentstats.cpp:76
-msgid "Seeding completed"
-msgstr "Sejanje je zaključeno"
-
-#: src/torrent/torrentstats.cpp:78
-msgctxt "Status of a torrent file"
-msgid "Seeding"
-msgstr "Sejanje"
-
-#: src/torrent/torrentstats.cpp:80
-msgid "Downloading"
-msgstr "Prejemanje"
-
-#: src/torrent/torrentstats.cpp:82
-msgid "Stalled"
-msgstr "Obtičal"
-
-#: src/torrent/torrentstats.cpp:84
-msgid "Stopped"
-msgstr "Ustavljen"
-
-#: src/torrent/torrentstats.cpp:88
-msgid "Allocating diskspace"
-msgstr "Dodeljevanje prostora na disku"
-
-#: src/torrent/torrentstats.cpp:90
-msgid "Queued for seeding"
-msgstr "V vrsti za sejanje"
-
-#: src/torrent/torrentstats.cpp:90
-msgid "Queued for downloading"
-msgstr "V vrsti za prejemanje"
-
-#: src/torrent/torrentstats.cpp:94
-msgid "Stopped. No space left on device."
-msgstr "Ustavljeno. Na napravi ni prostora."
-
-#: src/torrent/torrentstats.cpp:96
-msgid "Paused"
-msgstr "Prekinjeno"
-
-#: src/torrent/torrentstats.cpp:98
-#, fuzzy
-#| msgctxt "Status of a torrent file"
-#| msgid "Seeding"
-msgid "Superseeding"
-msgstr "Sejanje"
-
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
@@ -362,7 +293,6 @@ msgstr "Poškodovan torrent."
 
 #: src/torrent/torrent.cpp:165
 #, fuzzy, kde-format
-#| msgid " Unable to open torrent file %1 : %2"
 msgid "Unable to open torrent file %1: %2"
 msgstr " Ni moč odpreti torrenta %1: %2"
 
@@ -370,7 +300,7 @@ msgstr " Ni moč odpreti torrenta %1: %2"
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:553
+#: src/torrent/torrentcontrol.cpp:554
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -379,18 +309,17 @@ msgstr ""
 "Prišlo je do napake pri nalaganju torrenta <b>%1</b>:<br/><b>%2</b><br/"
 ">Torrent je verjetno poškodovan, ali pa to ni veljavna datoteka torrent."
 
-#: src/torrent/torrentcontrol.cpp:583
+#: src/torrent/torrentcontrol.cpp:584
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:594
+#: src/torrent/torrentcontrol.cpp:595
 #, fuzzy, kde-format
-#| msgid "Unable to create %1 : %2"
 msgid "Unable to create %1: %2"
 msgstr "Ni bilo moč ustvariti %1 : %2"
 
-#: src/torrent/torrentcontrol.cpp:609
+#: src/torrent/torrentcontrol.cpp:610
 #, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
@@ -399,38 +328,92 @@ msgstr ""
 "Torrent <b>%1</b> že prejemate. Seznama sledilnikov iz obeh torrentov sta "
 "bila združena."
 
-#: src/torrent/torrentcontrol.cpp:614
+#: src/torrent/torrentcontrol.cpp:615
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Torrent <b>%1</b> že prejemate."
+
+#: src/torrent/torrentstats.cpp:73
+msgid "Not started"
+msgstr "Ni zagnan"
+
+#: src/torrent/torrentstats.cpp:75
+msgid "Download completed"
+msgstr "Prejemanje zaključeno"
+
+#: src/torrent/torrentstats.cpp:77
+msgid "Seeding completed"
+msgstr "Sejanje je zaključeno"
+
+#: src/torrent/torrentstats.cpp:79
+msgctxt "Status of a torrent file"
+msgid "Seeding"
+msgstr "Sejanje"
+
+#: src/torrent/torrentstats.cpp:81
+msgid "Downloading"
+msgstr "Prejemanje"
+
+#: src/torrent/torrentstats.cpp:83
+msgid "Stalled"
+msgstr "Obtičal"
+
+#: src/torrent/torrentstats.cpp:85
+msgid "Stopped"
+msgstr "Ustavljen"
+
+#: src/torrent/torrentstats.cpp:89
+msgid "Allocating diskspace"
+msgstr "Dodeljevanje prostora na disku"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Queued for seeding"
+msgstr "V vrsti za sejanje"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Queued for downloading"
+msgstr "V vrsti za prejemanje"
+
+#: src/torrent/torrentstats.cpp:95
+msgid "Stopped. No space left on device."
+msgstr "Ustavljeno. Na napravi ni prostora."
+
+#: src/torrent/torrentstats.cpp:97
+msgid "Paused"
+msgstr "Prekinjeno"
+
+#: src/torrent/torrentstats.cpp:99
+#, fuzzy
+msgid "Superseeding"
+msgstr "Sejanje"
 
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "Preusmeritev brez nove lokacije"
 
-#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
-#: src/tracker/httptracker.cpp:557
+#: src/tracker/httptracker.cpp:287 src/tracker/httptracker.cpp:307
+#: src/tracker/httptracker.cpp:463
+msgid "Invalid response from tracker"
+msgstr "Neveljaven odziv sledilnika"
+
+#: src/tracker/httptracker.cpp:300
+msgid "Invalid data from tracker"
+msgstr "Neveljavni podatki s sledilnika"
+
+#: src/tracker/httptracker.cpp:480
+msgid "Invalid tracker URL"
+msgstr "Neveljaven URL sledilnika"
+
+#: src/tracker/httptracker.cpp:558 src/tracker/udptracker.cpp:364
+#: src/tracker/udptracker.cpp:374
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Čas za povezavo s sledilnikom %1 je potekel"
 
-#: src/tracker/udptracker.cpp:409
+#: src/tracker/udptracker.cpp:401
 #, kde-format
 msgid "Unable to resolve hostname %1"
 msgstr "Ni moč razrešiti imena gostitelja %1"
-
-#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:462
-msgid "Invalid response from tracker"
-msgstr "Neveljaven odziv sledilnika"
-
-#: src/tracker/httptracker.cpp:293
-msgid "Invalid data from tracker"
-msgstr "Neveljavni podatki s sledilnika"
-
-#: src/tracker/httptracker.cpp:479
-msgid "Invalid tracker URL"
-msgstr "Neveljaven URL sledilnika"
 
 #: src/util/logsystemmanager.cpp:33
 msgid "General"
@@ -458,7 +441,6 @@ msgstr "µTP"
 
 #: src/util/file.cpp:84
 #, fuzzy, kde-format
-#| msgid "Cannot write to %1 : %2"
 msgid "Cannot write to %1: %2"
 msgstr "Ni moč pisati v %1: %2"
 
@@ -466,6 +448,16 @@ msgstr "Ni moč pisati v %1: %2"
 #, kde-format
 msgid "Cannot read from %1"
 msgstr "Ni moč brati iz %1"
+
+#: src/util/signalcatcher.cpp:78
+#, fuzzy
+msgid "Error when writing to disk"
+msgstr "Napaka pri branju iz %1"
+
+#: src/util/signalcatcher.cpp:78
+#, fuzzy
+msgid "Error when reading from disk"
+msgstr "Napaka pri branju iz %1"
 
 #: src/util/fileops.cpp:94
 #, kde-format
@@ -504,28 +496,26 @@ msgstr "Ni moč izračunati velikosti datoteke %1: %2"
 
 #: src/util/fileops.cpp:327
 #, fuzzy, kde-format
-#| msgid "Cannot calculate the filesize : %1"
 msgid "Cannot calculate the filesize: %1"
 msgstr "Ni moč izračunati velikosti datoteke: %1"
 
 #: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
-#: src/util/fileops.cpp:387
+#: src/util/fileops.cpp:387 src/util/fileops.cpp:390
 #, kde-format
 msgid "Cannot expand file: %1"
 msgstr "Ni moč razširiti datoteke: %1"
 
-#: src/util/fileops.cpp:417
+#: src/util/fileops.cpp:420
 #, fuzzy, kde-format
-#| msgid "Cannot seek in file : %1"
 msgid "Cannot seek in file: %1"
 msgstr "Ni moč iskati v datoteki: %1"
 
-#: src/util/functions.cpp:280
+#: src/util/functions.cpp:234
 #, kde-format
 msgid "%1/s"
 msgstr "%1/s"
 
-#: src/util/functions.cpp:291
+#: src/util/functions.cpp:245
 #, kde-format
 msgid "1 day "
 msgid_plural "%1 days "
@@ -534,21 +524,8 @@ msgstr[1] "%1 dan "
 msgstr[2] "%1 dneva "
 msgstr[3] "%1 dni "
 
-#: src/util/signalcatcher.cpp:62
-#, fuzzy
-#| msgid "Error reading from %1"
-msgid "Error when writing to disk"
-msgstr "Napaka pri branju iz %1"
-
-#: src/util/signalcatcher.cpp:62
-#, fuzzy
-#| msgid "Error reading from %1"
-msgid "Error when reading from disk"
-msgstr "Napaka pri branju iz %1"
-
 #: src/upnp/httprequest.cpp:96
 #, fuzzy
-#| msgid "Connection closed unexpectedly !"
 msgid "Connection closed unexpectedly"
 msgstr "Povezava je bila nepričakovano prekinjena."
 
@@ -558,21 +535,16 @@ msgstr ""
 
 #: src/upnp/upnprouter.cpp:167
 #, fuzzy, kde-format
-#| msgid "Failed to download %1 : %2"
 msgid "Failed to download %1: %2"
 msgstr "Ni bilo moč prenesti %1: %2"
 
 #: src/upnp/upnprouter.cpp:178
 #, fuzzy
-#| msgid "Error parsing router description !"
 msgid "Error parsing router description."
 msgstr "Napaka razčlenjevanja opisa usmerjevalnika."
 
 #: src/upnp/upnprouter.cpp:216
 #, fuzzy
-#| msgid ""
-#| "Forwarding failed: \n"
-#| "Device does not have a WANIPConnection or WANPPPConnection !"
 msgid ""
 "Forwarding failed:\n"
 "Device does not have a WANIPConnection or WANPPPConnection."
@@ -582,37 +554,31 @@ msgstr ""
 
 #: src/upnp/upnprouter.cpp:314
 #, fuzzy
-#| msgid "Cannot find port forwarding service in the device's description!"
 msgid "Cannot find port forwarding service in the device's description."
 msgstr "V opisu naprave ni moč najti storitve posredovanja vrat."
 
 #: examples/ktcli/main.cpp:60
 #, fuzzy
-#| msgid "Document to open"
 msgid "Torrent to open"
 msgstr "Dokument za odprtje"
 
 #: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
 #, fuzzy
-#| msgid "Not in use"
 msgid "Port to use"
 msgstr "Ni v uporabi"
 
 #: examples/ktcli/main.cpp:63
 #, fuzzy
-#| msgid "Whether or not to enable a custom download order."
 msgid "Whether or not to enable encryption"
 msgstr "Ali naj bo omogočen vrstni red prejemanja po meri."
 
 #: examples/ktcli/main.cpp:64
 #, fuzzy
-#| msgid "Whether or not to use µTorrent compatible peer exchange."
 msgid "Whether or not to enable peer exchange"
 msgstr "Ali naj se uporabi izmenjava vrstnikov, združljiva z µTorrent."
 
 #: examples/ktcli/main.cpp:65
 #, fuzzy
-#| msgid "Whether or not to show system tray popup messages."
 msgid "Whether or not to use utp"
 msgstr "Ali naj ikona v sistemski vrstici prikazuje pojavna obvestila."
 
@@ -623,14 +589,18 @@ msgstr ""
 #~ msgid "Parse Error"
 #~ msgstr "Napaka pri razčlenjevanju"
 
-#~ msgid "Cannot open file : %1 : %2"
-#~ msgstr "Ni moč odpreti datoteke: %1: %2"
+#~ msgid "Not in use"
+#~ msgstr "Ni v uporabi"
+
+#, fuzzy
+#~ msgid "Not enough diskspace"
+#~ msgstr "Na disku ni dovolj prostora za %1"
 
 #~ msgid "Cannot open file %1 : %2"
 #~ msgstr "Ni moč odpreti datoteke %1: %2"
 
-#~ msgid "Not in use"
-#~ msgstr "Ni v uporabi"
+#~ msgid "Cannot open file : %1 : %2"
+#~ msgstr "Ni moč odpreti datoteke: %1: %2"
 
 #~ msgid ""
 #~ "An error occurred while loading the torrent:<br/><b>%1</b><br/>The "
@@ -642,16 +612,10 @@ msgstr ""
 #~ msgid "Cannot open log file %1 : %2"
 #~ msgstr "Ni moč odpreti dnevnika %1: %2"
 
-#, fuzzy
-#~| msgid "Not enough free disk space for %1"
-#~ msgid "Not enough diskspace"
-#~ msgstr "Na disku ni dovolj prostora za %1"
-
 #~ msgid "Timeout occurred"
 #~ msgstr "Čas je potekel"
 
 #, fuzzy
-#~| msgid "UDP"
 #~ msgid "UTP"
 #~ msgstr "UDP"
 
@@ -659,7 +623,6 @@ msgstr ""
 #~ msgstr "Ni se moč povezati z vrati UDP %1, ali sledečimi 10 vrati."
 
 #, fuzzy
-#~| msgid "Scan Folder"
 #~ msgctxt "plugin name"
 #~ msgid "Scan Folder"
 #~ msgstr "Preglej mapo"
@@ -715,7 +678,6 @@ msgstr ""
 #~ msgstr "Zbiranje"
 
 #, fuzzy
-#~| msgid "Widget to manage RSS and Atom feeds"
 #~ msgid "Manages RSS and Atom feeds"
 #~ msgstr "Gradnik za upravljanje virov RSS in Atom"
 
@@ -726,7 +688,6 @@ msgstr ""
 #~ msgstr "Vnesite lokacijo vira RSS ali Atom."
 
 #, fuzzy
-#~| msgid "Failed to load feed %1 !"
 #~ msgid "Failed to load feed %1."
 #~ msgstr "Ni bilo moč naložiti vira %1."
 
@@ -752,7 +713,6 @@ msgstr ""
 #~ msgstr "Dodaj/odstrani filtre"
 
 #, fuzzy
-#~| msgid "Username:"
 #~ msgid "Rename"
 #~ msgstr "Uporabniško ime:"
 
@@ -781,7 +741,6 @@ msgstr ""
 #~ msgstr "<b>Prejemanje</b>"
 
 #, fuzzy
-#~| msgid "Couldn't find a valid link to a torrent on %1"
 #~ msgid "Could not find a valid link to a torrent on %1"
 #~ msgstr "Na %1 ni moč najti veljavne povezave do torrenta"
 
@@ -795,7 +754,6 @@ msgstr ""
 #~ msgstr "Torrent"
 
 #, fuzzy
-#~| msgid "There already is a filter named %1, filter names must be unique !"
 #~ msgid "There already is a filter named %1, filter names must be unique."
 #~ msgstr ""
 #~ "Filter z imenom %1 že obstaja. Imena filtrov morajo biti edinstvena."
@@ -813,12 +771,10 @@ msgstr ""
 #~ msgstr "<b>%1</b><br/>Ogled: %2<br/>Prejeto: %3 %"
 
 #, fuzzy
-#~| msgid "Left:"
 #~ msgid "Length"
 #~ msgstr "Preostali:"
 
 #, fuzzy
-#~| msgid "Clear"
 #~ msgid "Year"
 #~ msgstr "Počisti"
 
@@ -832,12 +788,10 @@ msgstr ""
 #~ msgstr "Enojna datoteka"
 
 #, fuzzy
-#~| msgid "Play"
 #~ msgid "Playlist"
 #~ msgstr "Predvajaj"
 
 #, fuzzy
-#~| msgid "Random Files"
 #~ msgid "Random"
 #~ msgstr "Naključne datoteke"
 
@@ -845,7 +799,6 @@ msgstr ""
 #~ msgstr "Odstrani"
 
 #, fuzzy
-#~| msgid "Add Feed"
 #~ msgid "Add Media"
 #~ msgstr "Dodaj vir"
 
@@ -872,7 +825,6 @@ msgstr ""
 #~ msgstr "Večpredstavnostni predvajalnik"
 
 #, fuzzy
-#~| msgid "Play"
 #~ msgid "Play List"
 #~ msgstr "Predvajaj"
 
@@ -898,7 +850,6 @@ msgstr ""
 #~ msgstr "Predvajalnik filmov"
 
 #, fuzzy
-#~| msgid "Connections"
 #~ msgid "Collection:"
 #~ msgstr "Povezave"
 
@@ -906,12 +857,10 @@ msgstr ""
 #~ msgstr "Preklopi celozaslonski način"
 
 #, fuzzy
-#~| msgid "KTorrent is not running !"
 #~ msgid "KTorrent is playing a video."
 #~ msgstr "KTorrent ne teče"
 
 #, fuzzy
-#~| msgid "Web interface skin:"
 #~ msgid "Cannot find web interface skins."
 #~ msgstr "Tema spletnega vmesnika:"
 
@@ -919,12 +868,10 @@ msgstr ""
 #~ msgstr "Spletni vmesnik"
 
 #, fuzzy
-#~| msgid "Invalid tracker URL"
 #~ msgid "Invalid data received"
 #~ msgstr "Neveljaven URL sledilnika"
 
 #, fuzzy
-#~| msgid "Folder to store torrent information:"
 #~ msgid "Failed to open temporary file"
 #~ msgstr "Shranjevanje podatkov o torrentih:"
 
@@ -1068,7 +1015,6 @@ msgstr ""
 #~ msgstr "Ne"
 
 #, fuzzy
-#~| msgid "IP Address"
 #~ msgid "Address"
 #~ msgstr "Naslov IP"
 
@@ -1130,9 +1076,6 @@ msgstr ""
 #~ msgstr "Hitrost pošiljanja"
 
 #, fuzzy
-#~| msgid ""
-#~| "Whether or not the peer has choked us, when we are choked the peer will "
-#~| "not send any data to us"
 #~ msgid ""
 #~ "Whether or not the peer has choked us - when we are choked the peer will "
 #~ "not send us any data"
@@ -1141,8 +1084,6 @@ msgstr ""
 #~ "nič."
 
 #, fuzzy
-#~| msgid ""
-#~| "Snubbed means the peer hasn't sent us any data in the last 2 minutes"
 #~ msgid ""
 #~ "Snubbed means the peer has not sent us any data in the last 2 minutes"
 #~ msgstr ""
@@ -1166,12 +1107,10 @@ msgstr ""
 #~ msgstr "Število zahtevkov za prejemanje in pošiljanje"
 
 #, fuzzy
-#~| msgid "How much data we downloaded from this peer"
 #~ msgid "How much data we have downloaded from this peer"
 #~ msgstr "Koliko podatkov smo prejeli od tega vrstnika"
 
 #, fuzzy
-#~| msgid "How much data we uploaded to this peer"
 #~ msgid "How much data we have uploaded to this peer"
 #~ msgstr "Koliko podatkov smo poslali temu vrstniku"
 
@@ -1188,7 +1127,6 @@ msgstr ""
 #~ msgstr "Podatkovni gradnik"
 
 #, fuzzy
-#~| msgid "Status"
 #~ msgctxt "@title:tab"
 #~ msgid "Status"
 #~ msgstr "Stanje"
@@ -1197,7 +1135,6 @@ msgstr ""
 #~ msgstr "Prikazuje podatke stanja o torrentu"
 
 #, fuzzy
-#~| msgid "Files"
 #~ msgctxt "@title:tab"
 #~ msgid "Files"
 #~ msgstr "Datoteke"
@@ -1310,23 +1247,18 @@ msgstr ""
 #~ msgstr "Razširi drevo mape"
 
 #, fuzzy
-#~| msgid "Filter"
 #~ msgid "File Tree"
 #~ msgstr "Filter"
 
 #, fuzzy
-#~| msgid "File Exists"
 #~ msgid "File List"
 #~ msgstr "Datoteka obstaja"
 
 #, fuzzy
-#~| msgid "New Filter"
 #~ msgid "Show Filter"
 #~ msgstr "Nov filter"
 
 #, fuzzy
-#~| msgid ""
-#~| "You will lose all data in this file, are you sure you want to do this ?"
 #~ msgid ""
 #~ "You will lose all data in this file, are you sure you want to do this?"
 #~ msgid_plural ""
@@ -1350,12 +1282,10 @@ msgstr ""
 #~ msgstr "Pijavke"
 
 #, fuzzy
-#~| msgid "Times Downloaded:"
 #~ msgid "Times Downloaded"
 #~ msgstr "Število prenosov:"
 
 #, fuzzy
-#~| msgid "Next update:"
 #~ msgid "Next Update"
 #~ msgstr "Naslednja posodobitev:"
 
@@ -1363,7 +1293,6 @@ msgstr ""
 #~ msgstr "Prednost"
 
 #, fuzzy
-#~| msgid "Preview"
 #~ msgctxt "@title:column"
 #~ msgid "Preview"
 #~ msgstr "Ogled"
@@ -1404,17 +1333,14 @@ msgstr ""
 #~ msgstr "Na voljo"
 
 #, fuzzy
-#~| msgid "Add Tracker"
 #~ msgid "Add Trackers"
 #~ msgstr "Dodaj sledilnik"
 
 #, fuzzy
-#~| msgid "IP address of the peer"
 #~ msgid "Enter the URL's of the trackers, one per line:"
 #~ msgstr "Naslov IP vrstnika"
 
 #, fuzzy
-#~| msgid "There already is a tracker named <b>%1</b> !"
 #~ msgid "There already is a tracker named <b>%1</b>."
 #~ msgstr "Sledilnik z imenom <b>%1</b> že obstaja."
 
@@ -1462,7 +1388,6 @@ msgstr ""
 #~ msgstr "Skriptanje"
 
 #, fuzzy
-#~| msgid "KTorrent Blacklisted Peers"
 #~ msgid "KTorrent Script Packages"
 #~ msgstr "Vrstniki na seznamu prepovedanih"
 
@@ -1470,8 +1395,6 @@ msgstr ""
 #~ msgstr "Vse datoteke"
 
 #, fuzzy
-#~| msgid ""
-#~| "You will lose all the downloaded data. Are you sure you want to do this?"
 #~ msgid ""
 #~ "Removing these scripts will fully delete them from your disk. Are you "
 #~ "sure you want to do this ?"
@@ -1481,12 +1404,10 @@ msgstr ""
 #~ msgstr "Lastnosti skripta"
 
 #, fuzzy
-#~| msgid "Invalid tracker URL"
 #~ msgid "Invalid archive."
 #~ msgstr "Neveljaven URL sledilnika"
 
 #, fuzzy
-#~| msgid "There already is a tracker named <b>%1</b> !"
 #~ msgid "There is already a script package named %1 installed."
 #~ msgstr "Sledilnik z imenom <b>%1</b> že obstaja."
 
@@ -1512,7 +1433,6 @@ msgstr ""
 #~ msgstr "Nič"
 
 #, fuzzy
-#~| msgid "Display the logging output generated by KTorrent"
 #~ msgid "View the logging output generated by KTorrent"
 #~ msgstr "Prikaži KTorrentov izpis beleženja v dnevnik"
 
@@ -1532,7 +1452,6 @@ msgstr ""
 #~ msgstr "Odpri v novem zavihku"
 
 #, fuzzy
-#~| msgid "Copy Torrent URL"
 #~ msgid "Copy URL"
 #~ msgstr "Skopiraj lokacijo torrenta"
 
@@ -1546,7 +1465,6 @@ msgstr ""
 #~ msgstr "Iskanje zaključeno"
 
 #, fuzzy
-#~| msgid "Search"
 #~ msgctxt "plugin name"
 #~ msgid "Search"
 #~ msgstr "Iskanje"
@@ -1568,7 +1486,6 @@ msgstr ""
 #~ "za iskanje."
 
 #, fuzzy
-#~| msgid "The URL %s, does not contain {searchTerms} !"
 #~ msgid "The URL %1 does not contain {searchTerms}."
 #~ msgstr "Lokacija %s ne vsebuje {searchTerms}."
 
@@ -1582,7 +1499,6 @@ msgstr ""
 #~ msgstr "KTorrent"
 
 #, fuzzy
-#~| msgid "Folders to scan for torrents:"
 #~ msgid "Search the web for torrents."
 #~ msgstr "Mape, ki bodo pregledane za torrente:"
 
@@ -1605,7 +1521,6 @@ msgstr ""
 #~ msgstr " Iskalnik: "
 
 #, fuzzy
-#~| msgid "Do you want to download or save the torrent?"
 #~ msgid "Do you want to download this magnet link?"
 #~ msgstr "Ali želite prenesti, ali shraniti torrent?"
 
@@ -1622,23 +1537,16 @@ msgstr ""
 #~ msgstr "Dodaj postavko"
 
 #, fuzzy
-#~| msgid "No day has been selected !"
 #~ msgid "No day has been selected."
 #~ msgstr "Izbran ni bil noben dan."
 
 #, fuzzy
-#~| msgid ""
-#~| "Failed to add item, because it conflicts with another item on the "
-#~| "schedule !"
 #~ msgid ""
 #~ "Failed to add item, because it conflicts with another item on the "
 #~ "schedule."
 #~ msgstr "Ni bilo moč dodati postavke, ker je v sporu z drugo na urniku."
 
 #, fuzzy
-#~| msgid ""
-#~| "This item could not be added to all selected days, because it conflicts "
-#~| "with another item on the schedule !"
 #~ msgid ""
 #~ "This item could not be added to all selected days, because it conflicts "
 #~ "with another item on the schedule."
@@ -1647,14 +1555,12 @@ msgstr ""
 #~ "postavko na urniku."
 
 #, fuzzy
-#~| msgid "Bandwidth Schedule"
 #~ msgid ""
 #~ "Bandwidth\n"
 #~ "Schedule"
 #~ msgstr "Urnik hitrosti"
 
 #, fuzzy
-#~| msgid "Tab to edit the bandwidth schedule"
 #~ msgid "Edit the bandwidth schedule"
 #~ msgstr "Pritisnite tabulator da uredite urnik hitrosti"
 
@@ -1677,12 +1583,10 @@ msgstr ""
 #~ msgstr "Počisti urnik"
 
 #, fuzzy
-#~| msgid "Schedule line color:"
 #~ msgid "Scheduler Active"
 #~ msgstr "Barva črt na urniku:"
 
 #, fuzzy
-#~| msgid "Add a new item to the schedule"
 #~ msgid "Activate or deactivate the scheduler"
 #~ msgstr "Dodaj novo postavko na urnik"
 
@@ -1690,31 +1594,24 @@ msgstr ""
 #~ msgstr "Datoteke urnika za KTorrent"
 
 #, fuzzy
-#~| msgid ""
-#~| "This item conflicts with another item in the schedule, we cannot change "
-#~| "it !"
 #~ msgid ""
 #~ "This item conflicts with another item in the schedule, we cannot change "
 #~ "it."
 #~ msgstr "Ta postavka je v sporu z drugo na urniku in je ni moč spremeniti."
 
 #, fuzzy
-#~| msgid "Current schedule: paused"
 #~ msgid "Current schedule: suspended"
 #~ msgstr "Trenutni urnik: prekinjeno"
 
 #, fuzzy
-#~| msgid "Current schedule: %1 KiB/s download, %2 KiB/s upload"
 #~ msgid "Current schedule: %1/s download, %2/s upload"
 #~ msgstr "Trenutni urnik: %1 KiB/s prejemanje, %2 KiB/s pošiljanje"
 
 #, fuzzy
-#~| msgid "Current schedule: unlimited download, %1 KiB/s upload"
 #~ msgid "Current schedule: unlimited download, %1/s upload"
 #~ msgstr "Trenutni urnik: neomejeno prejemanje, %1 KiB/s pošiljanje"
 
 #, fuzzy
-#~| msgid "Current schedule: %1 KiB/s download, unlimited upload"
 #~ msgid "Current schedule: %1/s download, unlimited upload"
 #~ msgstr "Trenutni urnik: %1 KiB/s prejemanje, neomejeno pošiljanje"
 
@@ -1722,7 +1619,6 @@ msgstr ""
 #~ msgstr "Trenutni urnik: neomejeno pošiljanje in prejemanje"
 
 #, fuzzy
-#~| msgid "KTorrent scheduler files"
 #~ msgid " (scheduler disabled)"
 #~ msgstr "Datoteke urnika za KTorrent"
 
@@ -1733,13 +1629,11 @@ msgstr ""
 #~ msgstr "Uredi postavko"
 
 #, fuzzy
-#~| msgid "The file %1 is corrupted or not a proper KTorrent schedule file !"
 #~ msgid "The file %1 is corrupted or not a proper KTorrent schedule file."
 #~ msgstr ""
 #~ "Datoteka %1 je poškodovana, ali pa ni datoteka z urnikom za KTorrent."
 
 #, fuzzy
-#~| msgid "Speed"
 #~ msgid "Suspended"
 #~ msgstr "Hitrost"
 
@@ -1754,35 +1648,29 @@ msgstr ""
 #~ "%2 gor"
 
 #, fuzzy
-#~| msgid "Configure Columns"
 #~ msgctxt "@title:window"
 #~ msgid "Configure Shutdown"
 #~ msgstr "Nastavi stolpce"
 
 #, fuzzy
-#~| msgid "Lucke"
 #~ msgid "Lock"
 #~ msgstr "Lucke"
 
 #, fuzzy
-#~| msgid "Directory to move data to when a torrent has finished downloading."
 #~ msgid "When all torrents finish downloading"
 #~ msgstr ""
 #~ "Mapa, v katero bodo premaknjeni podatki, ko se zaključi prenašanje "
 #~ "torrenta."
 
 #, fuzzy
-#~| msgid "Configure Columns"
 #~ msgid "Configure Shutdown"
 #~ msgstr "Nastavi stolpce"
 
 #, fuzzy
-#~| msgid "Downloading"
 #~ msgid "Downloading finishes"
 #~ msgstr "Prejemanje"
 
 #, fuzzy
-#~| msgid "Search finished"
 #~ msgid "Seeding finishes"
 #~ msgstr "Iskanje zaključeno"
 
@@ -1796,12 +1684,10 @@ msgstr ""
 #~ msgstr "Pretvarjanje ..."
 
 #, fuzzy
-#~| msgid "Cannot open file %1: %2"
 #~ msgid "Cannot open zip file %1."
 #~ msgstr "Ni moč odpreti datoteke %1: %2"
 
 #, fuzzy
-#~| msgid "Cannot deselect missing files: %1"
 #~ msgid "Cannot find blocklist in zip file %1."
 #~ msgstr "Ni moč odizbrati manjkajočih datotek: %1"
 
@@ -1824,17 +1710,14 @@ msgstr ""
 #~ msgstr "Stanje: ni naloženo."
 
 #, fuzzy
-#~| msgid "Status: Downloading and converting new block list ..."
 #~ msgid "Status: Downloading and converting new block list..."
 #~ msgstr "Stanje: pridobivanje in pretvarjanje seznama za blokiranje ..."
 
 #, fuzzy
-#~| msgid "No update done yet !"
 #~ msgid "No update done yet."
 #~ msgstr "Posodobitve še ni bilo."
 
 #, fuzzy
-#~| msgid "%1 (Last update attempt failed !)"
 #~ msgid "%1 (Last update attempt failed.)"
 #~ msgstr "%1 (zadnja posodobitev ni uspela)"
 
@@ -1842,7 +1725,6 @@ msgstr ""
 #~ msgstr "Nikoli"
 
 #, fuzzy
-#~| msgid "Copy Torrent URL"
 #~ msgid "Copy Magnet URI"
 #~ msgstr "Skopiraj lokacijo torrenta"
 
@@ -1856,12 +1738,10 @@ msgstr ""
 #~ msgstr "© 2005 - 2007 Joris Guisson and Ivan Vasic"
 
 #, fuzzy
-#~| msgid "Time Downloaded"
 #~ msgid "KTMagnetDownloader"
 #~ msgstr "Čas prejemanja"
 
 #, fuzzy
-#~| msgid "Joris Guisson"
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "Joris Guisson"
 
@@ -1878,7 +1758,6 @@ msgstr ""
 #~ msgstr "BitTorrent"
 
 #, fuzzy
-#~| msgid " corrupted chunks"
 #~ msgid " corrupted chunk"
 #~ msgid_plural " corrupted chunks"
 #~ msgstr[0] " poškodovanih delčkov"
@@ -1935,12 +1814,10 @@ msgstr ""
 #~ "desni."
 
 #, fuzzy
-#~| msgid "Search"
 #~ msgid "Show Search"
 #~ msgstr "Iskanje"
 
 #, fuzzy
-#~| msgid "Move Up"
 #~ msgid "Move Top"
 #~ msgstr "Premakni gor"
 
@@ -1960,7 +1837,6 @@ msgstr ""
 #~ msgstr "Premakni torrent dol po vrsti"
 
 #, fuzzy
-#~| msgid "Move Data"
 #~ msgid "Move Bottom"
 #~ msgstr "Premakni podatke"
 
@@ -1968,17 +1844,14 @@ msgstr ""
 #~ msgstr "Premakni torrent na dno vrste"
 
 #, fuzzy
-#~| msgid "Start torrent"
 #~ msgid "Start Magnet"
 #~ msgstr "Zaženi torrent"
 
 #, fuzzy
-#~| msgid "Remove Torrent"
 #~ msgid "Remove Magnet"
 #~ msgstr "Odstrani torrent"
 
 #, fuzzy
-#~| msgid "Start"
 #~ msgctxt "@action Start all selected torrents in the current tab"
 #~ msgid "Start"
 #~ msgstr "Zaženi"
@@ -1987,7 +1860,6 @@ msgstr ""
 #~ msgstr "Zaženi vse izbrane torrente iz trenutnega zavihka"
 
 #, fuzzy
-#~| msgid "Stop"
 #~ msgctxt "@action Stop all selected torrents in the current tab"
 #~ msgid "Stop"
 #~ msgstr "Ustavi"
@@ -1996,18 +1868,15 @@ msgstr ""
 #~ msgstr "Ustavi vse izbrane torrente iz trenutnega zavihka"
 
 #, fuzzy
-#~| msgid "Pause"
 #~ msgctxt "@action Pause all selected torrents in the current tab"
 #~ msgid "Pause"
 #~ msgstr "Premor"
 
 #, fuzzy
-#~| msgid "Start all selected torrents in the current tab"
 #~ msgid "Pause all selected torrents in the current tab"
 #~ msgstr "Zaženi vse izbrane torrente iz trenutnega zavihka"
 
 #, fuzzy
-#~| msgid "Remove"
 #~ msgctxt "@action Remove all selected torrents in the current tab"
 #~ msgid "Remove"
 #~ msgstr "Odstrani"
@@ -2016,7 +1885,6 @@ msgstr ""
 #~ msgstr "Odstrani vse izbrane torrente iz trenutnega zavihka"
 
 #, fuzzy
-#~| msgid "Start All"
 #~ msgctxt "@action Start all torrents in the current tab"
 #~ msgid "Start All"
 #~ msgstr "Zaženi vse"
@@ -2025,7 +1893,6 @@ msgstr ""
 #~ msgstr "Zaženi vse torrente iz trenutnega zavihka"
 
 #, fuzzy
-#~| msgid "Stop All"
 #~ msgctxt "@action Stop all torrents in the current tab"
 #~ msgid "Stop All"
 #~ msgstr "Ustavi vse"
@@ -2085,7 +1952,6 @@ msgstr ""
 #~ msgstr "Skopiraj lokacijo torrenta"
 
 #, fuzzy
-#~| msgid "Import Torrent"
 #~ msgid "Export Torrent"
 #~ msgstr "Uvozi torrent"
 
@@ -2096,7 +1962,6 @@ msgstr ""
 #~ msgstr "Nastavi omejitve hitrosti za posamezne torrente"
 
 #, fuzzy
-#~| msgid "Torrent Files (*.torrent)"
 #~ msgid "Torrents (*.torrent)"
 #~ msgstr "Datoteke torrent (*.torrent)"
 
@@ -2148,7 +2013,6 @@ msgstr ""
 #~ msgstr "Lokacija"
 
 #, fuzzy
-#~| msgid "Add Feed"
 #~ msgid "Added"
 #~ msgstr "Dodaj vir"
 
@@ -2212,7 +2076,6 @@ msgstr ""
 #~ msgstr "Lokacija podatkov torrenta na disku"
 
 #, fuzzy
-#~| msgid "No torrents loaded."
 #~ msgid "When this torrent was added"
 #~ msgstr "Naloženega ni nobenega torrenta."
 
@@ -2268,7 +2131,6 @@ msgstr ""
 #~ msgstr "Neveljaven URL %1"
 
 #, fuzzy
-#~| msgid "Only HTTP is supported for webseeding!"
 #~ msgid "Only HTTP is supported for webseeding."
 #~ msgstr "Za spletno sejanje je podprt le HTTP."
 
@@ -2291,19 +2153,14 @@ msgstr ""
 #~ msgstr "Izberite datoteko za shranitev torrenta"
 
 #, fuzzy
-#~| msgid "Shows all the files in a torrent"
 #~ msgid "Show a file tree"
 #~ msgstr "Prikazuje vse datoteke v torrentu"
 
 #, fuzzy
-#~| msgid "Choose a file"
 #~ msgid "Show a file list"
 #~ msgstr "Izberite datoteko"
 
 #, fuzzy
-#~| msgid ""
-#~| "The torrent <b>%1</b> has not finished downloading, do you want to "
-#~| "delete the incomplete data, too?"
 #~ msgid ""
 #~ "Some files of this torrent have been found in the completed downloads "
 #~ "directory. Do you want to import these files and use the completed "
@@ -2313,9 +2170,6 @@ msgstr ""
 #~ "tudi nedokončane podatke?"
 
 #, fuzzy
-#~| msgid ""
-#~| "The torrent <b>%1</b> has not finished downloading, do you want to "
-#~| "delete the incomplete data, too?"
 #~ msgid ""
 #~ "All files of this torrent have been found in the completed downloads "
 #~ "directory. Do you want to import these files and use the completed "
@@ -2325,9 +2179,6 @@ msgstr ""
 #~ "tudi nedokončane podatke?"
 
 #, fuzzy
-#~| msgid ""
-#~| "The torrent <b>%1</b> has not finished downloading, do you want to "
-#~| "delete the incomplete data, too?"
 #~ msgid ""
 #~ "The file <b>%1</b> was found in the completed downloads directory. Do you "
 #~ "want to import this file?"
@@ -2336,14 +2187,10 @@ msgstr ""
 #~ "tudi nedokončane podatke?"
 
 #, fuzzy
-#~| msgid "The directory %1 does not exist, do you want to create it ?"
 #~ msgid "The directory %1 does not exist, do you want to create it?"
 #~ msgstr "Mapa %1 ne obstaja. Ali jo želite ustvariti?"
 
 #, fuzzy
-#~| msgid ""
-#~| "You have deselected the following existing files. You will lose all data "
-#~| "in these files, are you sure you want to do this ?"
 #~ msgid ""
 #~ "You have deselected the following existing files. You will lose all data "
 #~ "in these files, are you sure you want to do this?"
@@ -2358,33 +2205,27 @@ msgstr ""
 #~ msgstr "Ne, obdrži datoteke"
 
 #, fuzzy
-#~| msgid "%1 short!"
 #~ msgctxt "We are %1 bytes short of what we need"
 #~ msgid "%1 short"
 #~ msgstr "%1 je prekratek."
 
 #, fuzzy
-#~| msgid "Title: <b>%1</b>"
 #~ msgid "Existing files: <b>None</b>"
 #~ msgstr "Naslov: <b>%1</b>"
 
 #, fuzzy
-#~| msgid "Title: <b>%1</b>"
 #~ msgid "Existing files: <b>All</b>"
 #~ msgstr "Naslov: <b>%1</b>"
 
 #, fuzzy
-#~| msgid "Title: <b>%1</b><br/>Artist: <b>%2</b>"
 #~ msgid "Existing files: <b>%1</b> of <b>%2</b>"
 #~ msgstr "Naslov: <b>%1</b><br/>Izvajalec: <b>%2</b>"
 
 #, fuzzy
-#~| msgid "Title: <b>%1</b>"
 #~ msgid "Existing file: <b>No</b>"
 #~ msgstr "Naslov: <b>%1</b>"
 
 #, fuzzy
-#~| msgid "Title: <b>%1</b>"
 #~ msgid "Existing file: <b>Yes</b>"
 #~ msgstr "Naslov: <b>%1</b>"
 
@@ -2395,9 +2236,6 @@ msgstr ""
 #~ msgstr "Izberite mapo, kjer so podatki sedaj."
 
 #, fuzzy
-#~| msgid ""
-#~| "The data files are not present in the location you selected! Do you want "
-#~| "to create all the files in the selected directory ?"
 #~ msgid ""
 #~ "The data files are not present in the location you selected. Do you want "
 #~ "to create all the files in the selected directory?"
@@ -2406,9 +2244,6 @@ msgstr ""
 #~ "vse datoteke?"
 
 #, fuzzy
-#~| msgid ""
-#~| "Not all files were found in the new location; some are still missing! Do "
-#~| "you want to create the missing files in the selected directory ?"
 #~ msgid ""
 #~ "Not all files were found in the new location; some are still missing. Do "
 #~ "you want to create the missing files in the selected directory?"
@@ -2417,9 +2252,6 @@ msgstr ""
 #~ "želite v izbrani mapi ustvariti manjkajoče datoteke?"
 
 #, fuzzy
-#~| msgid ""
-#~| "The data file is not present in the location you selected! Do you want "
-#~| "to create the file in the selected directory ?"
 #~ msgid ""
 #~ "The data file is not present in the location you selected. Do you want to "
 #~ "create the file in the selected directory?"
@@ -2438,12 +2270,10 @@ msgstr ""
 #~ msgstr "Uvažanje <b>%1</b> ..."
 
 #, fuzzy
-#~| msgid "Finished import !"
 #~ msgid "Finished import."
 #~ msgstr "Uvažanje zaključeno."
 
 #, fuzzy
-#~| msgid "Torrent <b>%1</b> already loaded !"
 #~ msgid "Torrent <b>%1</b> already loaded."
 #~ msgstr "Torrent <b>%1</b> je že naložen."
 
@@ -2487,9 +2317,6 @@ msgstr ""
 #~ msgstr "Seznam filtriranih IP-jev"
 
 #, fuzzy
-#~| msgid ""
-#~| "Invalid IP address %1. You must enter an IP address in the format 'XXX."
-#~| "XXX.XXX.XXX'. You can also use wildcards for ranges like '127.0.0.*'."
 #~ msgid ""
 #~ "Invalid IP address <b>%1</b>. IP addresses must be in the format 'XXX.XXX."
 #~ "XXX.XXX'.<br/><br/>You can also use wildcards like '127.0.0.*' or specify "
@@ -2508,7 +2335,6 @@ msgstr ""
 #~ msgstr "KDE-jev odjemalec za BitTorrent"
 
 #, fuzzy
-#~| msgid "(C) 2005 - 2007 Joris Guisson and Ivan Vasic"
 #~ msgid "(C) 2005 - 2010 Joris Guisson and Ivan Vasic"
 #~ msgstr "© 2005 - 2007 Joris Guisson and Ivan Vasic"
 
@@ -2733,7 +2559,6 @@ msgstr ""
 #~ msgstr "Popravek, ki gradnik za Plasmo spremeni v pojavni gradnik"
 
 #, fuzzy
-#~| msgid "No torrents loaded."
 #~ msgid "Feature which adds the date a torrent was added"
 #~ msgstr "Naloženega ni nobenega torrenta."
 
@@ -2777,17 +2602,14 @@ msgstr ""
 #~ msgstr "Odpri URL"
 
 #, fuzzy
-#~| msgid "Open an URL which points to a torrent"
 #~ msgid "Open a URL which points to a torrent, magnet links are supported"
 #~ msgstr "Odpri lokacijo, ki kaže na torrent"
 
 #, fuzzy
-#~| msgid "Pause KTorrent"
 #~ msgid "Suspend KTorrent"
 #~ msgstr "Prekini KTorrent"
 
 #, fuzzy
-#~| msgid "Pause all running torrents"
 #~ msgid "Suspend all running torrents"
 #~ msgstr "Prekini vse prenose torrentov"
 
@@ -2810,7 +2632,6 @@ msgstr ""
 #~ msgstr "Skrij/prikaži KTorrent"
 
 #, fuzzy
-#~| msgid "Torrent"
 #~ msgid "Torrents"
 #~ msgstr "Torrent"
 
@@ -2818,17 +2639,14 @@ msgstr ""
 #~ msgstr "Gradnik za upravljanje s čakalno vrsto torrentov"
 
 #, fuzzy
-#~| msgid "Displays all the chunks you are downloading, of a torrent"
 #~ msgid "Displays the currently downloading magnet links"
 #~ msgstr "Prikazuje vse delčke torrenta, ki jih prejemate"
 
 #, fuzzy
-#~| msgid "Invalid IP address %1 !"
 #~ msgid "Invalid IP address %1"
 #~ msgstr "Neveljaven naslov IP %1"
 
 #, fuzzy
-#~| msgid "Duplicate IP address %1 !"
 #~ msgid "Duplicate IP address %1"
 #~ msgstr "Podvojen naslov IP %1"
 
@@ -2919,9 +2737,6 @@ msgstr ""
 #~ "Go to Settings -> Configure KTorrent, if you want to change the limits."
 #~ msgstr "Za spremembo omejitev pojdite na Nastavitve→Nastavi KTorrent."
 
-#~ msgid "There is not enough diskspace available."
-#~ msgstr "Na voljo ni dovolj prostora na na disku."
-
 #~ msgid ""
 #~ "Your disk is running out of space.<br /><b>%1</b> is being downloaded to "
 #~ "'%2'."
@@ -2934,9 +2749,6 @@ msgstr ""
 #~ msgstr "Omejitev hitrosti v KiB/s"
 
 #, fuzzy
-#~| msgid ""
-#~| "KTorrent is unable to accept connections because the ports %1 to %2 are "
-#~| "already in use by another program."
 #~ msgid ""
 #~ "KTorrent is unable to accept connections because the TCP ports %1 is "
 #~ "already in use by another program."
@@ -2945,9 +2757,6 @@ msgstr ""
 #~ "drug program."
 
 #, fuzzy
-#~| msgid ""
-#~| "KTorrent is unable to accept connections because the ports %1 to %2 are "
-#~| "already in use by another program."
 #~ msgid ""
 #~ "KTorrent is unable to accept connections because the UDP port %1 is "
 #~ "already in use by another program."
@@ -2991,9 +2800,6 @@ msgstr ""
 #~ msgstr "Ni moč poustvariti datoteke: %1"
 
 #, fuzzy
-#~| msgid ""
-#~| "KTorrent has found %1 torrents from the KDE3 version of KTorrent, do you "
-#~| "want to import them ?"
 #~ msgid ""
 #~ "KTorrent has found a torrent from the KDE3 version of KTorrent, do you "
 #~ "want to import it?"
@@ -3014,21 +2820,14 @@ msgstr ""
 #~ "želite uvoziti?"
 
 #, fuzzy
-#~| msgid "No torrents from the KDE3 version were found !"
 #~ msgid "No torrents from the KDE3 version were found."
 #~ msgstr "Ni bilo moč najti nobenega torrenta iz stare različice."
 
 #, fuzzy
-#~| msgid "Apply"
 #~ msgid "Applet"
 #~ msgstr "Uveljavi"
 
 #, fuzzy
-#~| msgid ""
-#~| "<table>\t\t\t\t<tr><td>Download Speed:</td><td>%5 </td><td>Seeders: </"
-#~| "td><td>%1 (%2)</td></tr>\t\t\t\t<tr><td>Upload Speed:</td><td>%6 </"
-#~| "td><td>Leechers: </td><td>%3 (%4)</td></tr>\t\t\t\t<tr><td>Downloaded:</"
-#~| "td><td>%7 / %8 </td><td>Uploaded: </td><td>%9</td></tr>\t\t\t\t</table>"
 #~ msgid ""
 #~ "<table>\t\t\t\t<tr><td>Download Speed:</td><td>%5 </td><td>Seeders: </"
 #~ "td><td>%1 (%2)</td></tr>\t\t\t\t<tr><td>Upload Speed:</td><td>%6 </"
@@ -3040,11 +2839,6 @@ msgstr ""
 #~ "td><td>%7 / %8 </td><td>Poslano: </td><td>%9</td></tr>\t\t\t\t</table>"
 
 #, fuzzy
-#~| msgid ""
-#~| "<table>\t\t\t\t<tr><td>Download Speed:</td><td>%5 </td><td>Seeders: </"
-#~| "td><td>%1 (%2)</td></tr>\t\t\t\t<tr><td>Upload Speed:</td><td>%6 </"
-#~| "td><td>Leechers: </td><td>%3 (%4)</td></tr>\t\t\t\t<tr><td>Downloaded:</"
-#~| "td><td>%7 / %8 </td><td>Uploaded: </td><td>%9</td></tr>\t\t\t\t</table>"
 #~ msgid ""
 #~ "<tr><td>Downloaded:</td><td>%1 </td><td>Size: </td><td>%2</td></tr>\t\t\t"
 #~ "\t<tr><td>Uploaded:</td><td>%3 </td><td>Complete: </td><td>%4 %</td></tr>"
@@ -3104,18 +2898,14 @@ msgstr ""
 #~ msgstr "Pasivna pošiljanja"
 
 #, fuzzy
-#~| msgctxt "Download Normal (not as first or last)"
-#~| msgid "Normal"
 #~ msgid "Normal icons"
 #~ msgstr "Običajno"
 
 #, fuzzy
-#~| msgid "Text encoding:"
 #~ msgid "Text only"
 #~ msgstr "Kodni nabor besedila:"
 
 #, fuzzy
-#~| msgid "Left:"
 #~ msgid "Left"
 #~ msgstr "Preostali:"
 
@@ -3123,12 +2913,10 @@ msgstr ""
 #~ msgstr "Vrh"
 
 #, fuzzy
-#~| msgid "Maximum share ratio reached !"
 #~ msgid "Maximum share ratio reached."
 #~ msgstr "Doseženo največje delitveno razmerje."
 
 #, fuzzy
-#~| msgid "Maximum seed time reached !"
 #~ msgid "Maximum seed time reached."
 #~ msgstr "Dosežen najdaljši čas sejanja."
 
@@ -3136,9 +2924,6 @@ msgstr ""
 #~ msgstr "Datoteka"
 
 #, fuzzy
-#~| msgid ""
-#~| "The torrent \"%1\" has reached it's maximum share ratio and it's maximum "
-#~| "seed time. Ignore the limit and start seeding anyway?"
 #~ msgid ""
 #~ "The torrent \"%1\" has reached its maximum share ratio and its maximum "
 #~ "seed time. Ignore the limit and start seeding anyway?"
@@ -3147,9 +2932,6 @@ msgstr ""
 #~ "sejanja. Ali naj spregledam omejitve in vseeno začnem sejanje?"
 
 #, fuzzy
-#~| msgid ""
-#~| "The torrent \"%1\" has reached it's maximum share ratio. Ignore the "
-#~| "limit and start seeding anyway?"
 #~ msgid ""
 #~ "The torrent \"%1\" has reached its maximum share ratio. Ignore the limit "
 #~ "and start seeding anyway?"
@@ -3158,9 +2940,6 @@ msgstr ""
 #~ "omejitev in vseeno začnem sejanje?"
 
 #, fuzzy
-#~| msgid ""
-#~| "The torrent \"%1\" has reached it's maximum seed time. Ignore the limit "
-#~| "and start seeding anyway?"
 #~ msgid ""
 #~ "The torrent \"%1\" has reached its maximum seed time. Ignore the limit "
 #~ "and start seeding anyway?"
@@ -3218,7 +2997,6 @@ msgstr ""
 #~ "\"excluded_color\">&nbsp; - Izvzeti delčki"
 
 #, fuzzy
-#~| msgid "Cannot write beyond end of the mmap buffer!"
 #~ msgid "Cannot write beyond end of the mmap buffer."
 #~ msgstr "Ni moč pisati za koncem medpomnilnika mmap."
 
@@ -3360,7 +3138,6 @@ msgstr ""
 #~ msgstr "Skupina, v katero bo dodan torrent."
 
 #, fuzzy
-#~| msgid "Open torrents silently"
 #~ msgid "Whether to open torrent silently or not."
 #~ msgstr "Torrente odpri potiho"
 
@@ -3599,7 +3376,6 @@ msgstr ""
 #~ msgstr "Stanje:"
 
 #, fuzzy
-#~| msgid "Refresh"
 #~ msgid "Refresh every:"
 #~ msgstr "Osveži"
 
@@ -3646,24 +3422,6 @@ msgstr ""
 #~ msgstr "Kateri vmesnik naj se uporabi."
 
 #, fuzzy
-#~| msgid ""
-#~| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/"
-#~| "TR/REC-html40/strict.dtd\">\n"
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Scan the folder "
-#~| "recursively for torrents.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;\">Note: "
-#~| "<span style=\" font-weight:400;\">This will not be done for any folder "
-#~| "named loaded.</span></p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -3703,7 +3461,6 @@ msgstr ""
 #~ "»loaded«, ne bo pregledana.</span></p></body></html>"
 
 #, fuzzy
-#~| msgid "Required disk space:"
 #~ msgid "Login required"
 #~ msgstr "Potreben prostor:"
 
@@ -3734,25 +3491,6 @@ msgstr ""
 #~ msgstr "Vrata, na katerih posluša spletni vmesnik."
 
 #, fuzzy
-#~| msgid ""
-#~| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/"
-#~| "TR/REC-html40/strict.dtd\">\n"
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">If you are behind a "
-#~| "router and you want to access the webinterface from somewhere on the "
-#~| "internet you need to forward the correct port.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">This checkbox will "
-#~| "ensure that the UPnP plugin automatically forwards the port. The UPnP "
-#~| "plugin needs to be loaded for this to work.</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -3805,72 +3543,58 @@ msgstr ""
 #~ msgstr " s"
 
 #, fuzzy
-#~| msgid "Forward port"
 #~ msgid "forward Port"
 #~ msgstr "Posreduj vrata"
 
 #, fuzzy
-#~| msgid "Web interface skin:"
 #~ msgid "interface skin"
 #~ msgstr "Tema spletnega vmesnika:"
 
 #, fuzzy
-#~| msgid "Username:"
 #~ msgid "username"
 #~ msgstr "Uporabniško ime:"
 
 #, fuzzy
-#~| msgid "Password:"
 #~ msgid "password"
 #~ msgstr "Geslo:"
 
 #, fuzzy
-#~| msgid "Update charts every"
 #~ msgid "Update charts every n gui updates"
 #~ msgstr "Posodobi graf vsakih"
 
 #, fuzzy
-#~| msgid "Show seeds in swarms"
 #~ msgid "Whether to show seeds in swarms"
 #~ msgstr "Prikaži sejalce v rojih"
 
 #, fuzzy
-#~| msgid "Show leechers in swarms"
 #~ msgid "Whether to show leachers in swarms"
 #~ msgstr "Prikaži pijavke v rojih"
 
 #, fuzzy
-#~| msgid "Color of the schedule background."
 #~ msgid "Color of the speed on dl chart"
 #~ msgstr "Barva ozadja urnika."
 
 #, fuzzy
-#~| msgid "Color of the schedule background."
 #~ msgid "Color of the seeds on peers chart"
 #~ msgstr "Barva ozadja urnika."
 
 #, fuzzy
-#~| msgid "Color of the schedule background."
 #~ msgid "Color of the speed on upload chart"
 #~ msgstr "Barva ozadja urnika."
 
 #, fuzzy
-#~| msgid "Color of all lines on the schedule."
 #~ msgid "Color of the nodes on DHT chart"
 #~ msgstr "Barva vseh črt na urniku."
 
 #, fuzzy
-#~| msgid "Use anti-aliasing"
 #~ msgid "Use anti aliasing on charts?"
 #~ msgstr "Uporabi glajenje robov"
 
 #, fuzzy
-#~| msgid "Draw background grid"
 #~ msgid "Draw ugly grey background grid?"
 #~ msgstr "Izriši mrežo v ozadju"
 
 #, fuzzy
-#~| msgid "Speed"
 #~ msgctxt "@title:window"
 #~ msgid "Speed"
 #~ msgstr "Hitrost"
@@ -3960,7 +3684,6 @@ msgstr ""
 #~ msgstr "Spremeni sledilnik"
 
 #, fuzzy
-#~| msgid "Trackers"
 #~ msgid "Update Trackers"
 #~ msgstr "Sledilniki"
 
@@ -3974,7 +3697,6 @@ msgstr ""
 #~ msgstr "Povprečna hitrost prejemanja:"
 
 #, fuzzy
-#~| msgid "Type"
 #~ msgid "Type:"
 #~ msgstr "Vrsta"
 
@@ -4045,7 +3767,6 @@ msgstr ""
 #~ msgstr "Odstrani spletno seme"
 
 #, fuzzy
-#~| msgid "Expand All"
 #~ msgid "Enable All"
 #~ msgstr "Razširi vse"
 
@@ -4182,19 +3903,16 @@ msgstr ""
 #~ msgstr "Nastavitve samodejnega nadaljevanja"
 
 #, fuzzy
-#~| msgid "Auto resume after:"
 #~ msgid "Auto remove a torrent when:"
 #~ msgstr "Samodejno nadaljuj po:"
 
 #, fuzzy
-#~| msgid "Directory to move data to when a torrent has finished downloading."
 #~ msgid "The torrent finishes downloading"
 #~ msgstr ""
 #~ "Mapa, v katero bodo premaknjeni podatki, ko se zaključi prenašanje "
 #~ "torrenta."
 
 #, fuzzy
-#~| msgid "Directory to move data to when a torrent has finished downloading."
 #~ msgid "The torrent finishes seeding"
 #~ msgstr ""
 #~ "Mapa, v katero bodo premaknjeni podatki, ko se zaključi prenašanje "
@@ -4225,7 +3943,6 @@ msgstr ""
 #~ msgstr "Spletna stran:"
 
 #, fuzzy
-#~| msgid "Use rich text for logging output"
 #~ msgid "Use rich log text"
 #~ msgstr "Za izpis beleženja uporabljaj bogato besedilo"
 
@@ -4303,7 +4020,6 @@ msgstr ""
 #~ msgstr "Za izpis beleženja uporabljaj bogato besedilo"
 
 #, fuzzy
-#~| msgid "Torrent Limits"
 #~ msgid "Torrent activity"
 #~ msgstr "Omejitve za torrente"
 
@@ -4324,7 +4040,6 @@ msgstr ""
 #~ msgstr "Orodjarna za iskanje"
 
 #, fuzzy
-#~| msgid "Current schedule:"
 #~ msgid "Current search engine"
 #~ msgstr "Trenutni urnik:"
 
@@ -4332,12 +4047,10 @@ msgstr ""
 #~ msgstr "Uporabi privzeti brskalnik"
 
 #, fuzzy
-#~| msgid "Use a custom browser."
 #~ msgid "Use custom browser"
 #~ msgstr "Uporabi brskalnik po meri."
 
 #, fuzzy
-#~| msgid "Custom browser path:"
 #~ msgid "Custom browser executable path"
 #~ msgstr "Pot do brskalnika po meri:"
 
@@ -4390,7 +4103,6 @@ msgstr ""
 #~ msgstr "Dod&aj privzete"
 
 #, fuzzy
-#~| msgid "Speed Limits"
 #~ msgid "Special Limits"
 #~ msgstr "Omejitve hitrosti"
 
@@ -4419,12 +4131,10 @@ msgstr ""
 #~ msgstr "Barva vsake normalne postavke na urniku."
 
 #, fuzzy
-#~| msgid "Paused schedule item color:"
 #~ msgid "Suspended schedule item color:"
 #~ msgstr "Barva prekinjene postavke na urniku:"
 
 #, fuzzy
-#~| msgid "Color of each paused item on the schedule."
 #~ msgid "Color of each suspended item on the schedule."
 #~ msgstr "Barva vsake prekinjene postavke na urniku."
 
@@ -4453,7 +4163,6 @@ msgstr ""
 #~ msgstr "Omejitev pošiljanja:"
 
 #, fuzzy
-#~| msgid "Set connection limits"
 #~ msgid "Connection Limits"
 #~ msgstr "Nastavi omejitve hitrosti"
 
@@ -4482,22 +4191,18 @@ msgstr ""
 #~ msgstr "Konec tedna"
 
 #, fuzzy
-#~| msgid "Download Toolbar"
 #~ msgid "Shutdown Toolbar"
 #~ msgstr "Orodjarna prenosov"
 
 #, fuzzy
-#~| msgid "Auto Resume Settings"
 #~ msgid "Shutdown Settings"
 #~ msgstr "Nastavitve samodejnega nadaljevanja"
 
 #, fuzzy
-#~| msgid "Remove Filter"
 #~ msgid "Level1 filter url"
 #~ msgstr "Odstrani filter"
 
 #, fuzzy
-#~| msgid "Use PeerGuardian filter"
 #~ msgid "Use level1 filter?"
 #~ msgstr "Uporabi filtriranje PeerGuardian"
 
@@ -4564,47 +4269,38 @@ msgstr ""
 #~ msgstr "&Prekliči"
 
 #, fuzzy
-#~| msgid "Search Preferences"
 #~ msgid "Magnet Generator Preferences"
 #~ msgstr "Nastavitve iskanja"
 
 #, fuzzy
-#~| msgid "Add Tracker"
 #~ msgid "Add tracker"
 #~ msgstr "Dodaj sledilnik"
 
 #, fuzzy
-#~| msgid "Tracker"
 #~ msgid "Tracker:"
 #~ msgstr "Sledilnik"
 
 #, fuzzy
-#~| msgid "Move a torrent down in the queue"
 #~ msgid "Add the torrent name in the URI"
 #~ msgstr "Premakni torrent dol po vrsti"
 
 #, fuzzy
-#~| msgid "Add an item"
 #~ msgid "Add name"
 #~ msgstr "Dodaj postavko"
 
 #, fuzzy
-#~| msgid "Show Video"
 #~ msgid "Show popup"
 #~ msgstr "Prikaži video"
 
 #, fuzzy
-#~| msgid "Tracker"
 #~ msgid "Toggles tracker"
 #~ msgstr "Sledilnik"
 
 #, fuzzy
-#~| msgid "Use default browser"
 #~ msgid "The default tracker"
 #~ msgstr "Uporabi privzeti brskalnik"
 
 #, fuzzy
-#~| msgid "Show Feed"
 #~ msgid "Show dn"
 #~ msgstr "Prikaži vir"
 
@@ -4615,7 +4311,6 @@ msgstr ""
 #~ msgstr "Usmerjevalnik:"
 
 #, fuzzy
-#~| msgid "No routers found !"
 #~ msgid "No routers found."
 #~ msgstr "Ni moč najti nobenega usmerjevalnika."
 
@@ -4788,24 +4483,6 @@ msgstr ""
 #~ msgstr "Omrežni vmesnik:"
 
 #, fuzzy
-#~| msgid ""
-#~| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/"
-#~| "TR/REC-html40/strict.dtd\">\n"
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Which network "
-#~| "interface to use for all network traffic.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
-#~| "font-family:'OpenSymbol';\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'OpenSymbol';"
-#~| "\"><span style=\" font-weight:600;\">Note: </span>Requires a restart to "
-#~| "take effect !</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -4851,12 +4528,10 @@ msgstr ""
 #~ "priporočene nastavitve."
 
 #, fuzzy
-#~| msgid "Recommended Settings"
 #~ msgid "Recommended Settings..."
 #~ msgstr "Priporočene nastavitve"
 
 #, fuzzy
-#~| msgid "Captures"
 #~ msgid "Features"
 #~ msgstr "Zajemi"
 
@@ -4918,7 +4593,6 @@ msgstr ""
 #~ msgstr "Uporabi izmenjavo vrstnikov"
 
 #, fuzzy
-#~| msgid "Webseeds"
 #~ msgid "Use webseeds"
 #~ msgstr "Spletna semena"
 
@@ -5010,7 +4684,6 @@ msgstr ""
 #~ "onemogočite, če so delčki večji od določene velikosti."
 
 #, fuzzy
-#~| msgid "Don't recheck when chunks are bigger than"
 #~ msgid "Do not recheck when chunks are bigger than"
 #~ msgstr "Ne preverjaj znova, če so delčki večji kot"
 
@@ -5319,7 +4992,6 @@ msgstr ""
 #~ msgstr "Za najave sledilniku ne uporabljaj KIO"
 
 #, fuzzy
-#~| msgid "Resolving hostname %1"
 #~ msgid "Resolve hostnames of peers"
 #~ msgstr "Razreševanje gostitelja %1"
 
@@ -5365,6 +5037,10 @@ msgstr ""
 
 #~ msgid "Show system tray icon"
 #~ msgstr "Prikaži ikono v sistemski vrstici"
+
+#, fuzzy
+#~ msgid "Whether or not to show system tray popup messages."
+#~ msgstr "Prikazuj pojavna obvestila"
 
 #~ msgid "Show system tray popup messages"
 #~ msgstr "Prikazuj pojavna obvestila"
@@ -5530,7 +5206,6 @@ msgstr ""
 #~ msgstr " minut"
 
 #, fuzzy
-#~| msgid "Seeding"
 #~ msgctxt "@title:group Options regarging Seeding"
 #~ msgid "Seeding"
 #~ msgstr "Sejanje"
@@ -5556,7 +5231,6 @@ msgstr ""
 #~ "istočasno pošiljate posamezni torrent."
 
 #, fuzzy
-#~| msgid "Maximum share ratio:"
 #~ msgid "Default maximum share ratio:"
 #~ msgstr "Največje delilno razmerje:"
 
@@ -5603,7 +5277,6 @@ msgstr ""
 #~ "sejanjem.</p></body></html>"
 
 #, fuzzy
-#~| msgid "Maximum seed time:"
 #~ msgid "Default maximum seed time:"
 #~ msgstr "Najdaljši čas sejanja:"
 
@@ -5884,7 +5557,6 @@ msgstr ""
 #~ "body></html>"
 
 #, fuzzy
-#~| msgid "Open..."
 #~ msgid "..."
 #~ msgstr "Odpri ..."
 
@@ -5911,7 +5583,6 @@ msgstr ""
 #~ msgstr "0"
 
 #, fuzzy
-#~| msgid "File"
 #~ msgid "Failed:"
 #~ msgstr "Datoteka"
 
@@ -5935,7 +5606,6 @@ msgstr ""
 #~ "bili prenešeni, a niso v redu.</p></body></html>"
 
 #, fuzzy
-#~| msgid "Downloaded:"
 #~ msgid "Not downloaded:"
 #~ msgstr "Prejeti:"
 
@@ -6217,7 +5887,6 @@ msgstr ""
 #~ msgstr "Razširi vse"
 
 #, fuzzy
-#~| msgid "Skip data check if existing files are found"
 #~ msgid "No existing files are found"
 #~ msgstr "Preskoči preverjanje podatkov, če so najdene obstoječe datoteke"
 
@@ -6228,23 +5897,6 @@ msgstr ""
 #~ msgstr "Zaženi torrent"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~| "size:8pt; font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">When existing files "
-#~| "have been found, skip the data check and assume that the files are fully "
-#~| "downloaded.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Note: </span>only do this when you are absolutely sure !</"
-#~| "p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -6284,17 +5936,14 @@ msgstr ""
 #~ msgstr "Preskoči preverjanje podatkov, če so najdene obstoječe datoteke"
 
 #, fuzzy
-#~| msgid "Disk space"
 #~ msgid "Disk Space"
 #~ msgstr "Prostor na disku"
 
 #, fuzzy
-#~| msgid "Required disk space:"
 #~ msgid "Required:"
 #~ msgstr "Potreben prostor:"
 
 #, fuzzy
-#~| msgid "Available"
 #~ msgid "Available:"
 #~ msgstr "Na voljo"
 
@@ -6302,12 +5951,10 @@ msgstr ""
 #~ msgstr "Po prenosu:"
 
 #, fuzzy
-#~| msgid "Speed limits for all torrents (double click to edit):"
 #~ msgid "Speed limits for individual torrents (double click to edit):"
 #~ msgstr "Omejitve hitrosti za vse torrente (dvojni klik za urejanje):"
 
 #, fuzzy
-#~| msgid "Filter"
 #~ msgid "Filter:"
 #~ msgstr "Filter"
 
@@ -6476,7 +6123,6 @@ msgstr ""
 #~ msgstr "&Datoteka"
 
 #, fuzzy
-#~| msgid "ViewMenu"
 #~ msgid "&View"
 #~ msgstr "MeniVidez"
 
@@ -6502,9 +6148,6 @@ msgstr ""
 #~ msgstr "Dodaj vrstnika:"
 
 #, fuzzy
-#~| msgid ""
-#~| "Invalid IP address %1. You must enter an IP address in the format 'XXX."
-#~| "XXX.XXX.XXX'. You can also use wildcards for ranges like '127.0.0.*'."
 #~ msgid ""
 #~ "IP addresses must be in the format 'XXX.XXX.XXX.XXX'.\n"
 #~ "                                        \n"
@@ -6527,104 +6170,84 @@ msgstr ""
 #~ msgstr "Prikazani torrent:"
 
 #, fuzzy
-#~| msgid "Maximum number of connection setups:"
 #~ msgid "Maximum number of downloads (0 = no limit)"
 #~ msgstr "Največje število vzpostavitev povezav"
 
 #, fuzzy
-#~| msgid "The maximum number of connections allowed per torrent."
 #~ msgid "Maximum number of connections per torrent (0 = no limit)"
 #~ msgstr "Največje dovoljeno število povezav na torrent."
 
 #, fuzzy
-#~| msgid "The maximum number of connections allowed per torrent."
 #~ msgid "Maximum number of connections for all torrents (0 = no limit) "
 #~ msgstr "Največje dovoljeno število povezav na torrent."
 
 #, fuzzy
-#~| msgid "The maximum upload speed in KiB/s"
 #~ msgid "Maximum upload speed in KiB/sec (0 = no limit)"
 #~ msgstr "Največja hitrost pošiljanja v KiB/s."
 
 #, fuzzy
-#~| msgid "The maximum download speed in KiB/s."
 #~ msgid "Maximum download speed in KiB/sec (0 = no limit)"
 #~ msgstr "Največja hitrost prejemanja v KiB/s."
 
 #, fuzzy
-#~| msgid "Maximum share ratio limit reached."
 #~ msgid "Maximum share ratio (0 = no limit)"
 #~ msgstr "Doseženo največje delitveno razmerje."
 
 #, fuzzy
-#~| msgid "Show system tray icon"
 #~ msgid "Show a system tray icon"
 #~ msgstr "Prikaži ikono v sistemski vrstici"
 
 #, fuzzy
-#~| msgid "Show system tray icon"
 #~ msgid "Show speed bar in tray icon"
 #~ msgstr "Prikaži ikono v sistemski vrstici"
 
 #, fuzzy
-#~| msgid "Available download bandwidth:"
 #~ msgid "Download bandwidth (in kb/s):"
 #~ msgstr "Razpoložljiva hitrost prejemanja:"
 
 #, fuzzy
-#~| msgid "Keep seeding after download is finished"
 #~ msgid "Keep seeding after download has finished"
 #~ msgstr "Po zaključku prejemanja nadaljuj s sejanjem"
 
 #, fuzzy
-#~| msgid "Folder to store torrent information:"
 #~ msgid "Folder to store temporary files"
 #~ msgstr "Shranjevanje podatkov o torrentih:"
 
 #, fuzzy
-#~| msgid "Folder to store torrent information:"
 #~ msgid "Folder to store downloaded files"
 #~ msgstr "Shranjevanje podatkov o torrentih:"
 
 #, fuzzy
-#~| msgid "Copy torrent files to:"
 #~ msgid "Folder to copy .torrent files to"
 #~ msgstr "Skopiraj torrente v:"
 
 #, fuzzy
-#~| msgid "Send the tracker a custom IP address or hostname"
 #~ msgid "Whether to use a custom IP to pass to the tracker"
 #~ msgstr "Sledilniku pošlji naslov IP ali ime gostitelja po meri"
 
 #, fuzzy
-#~| msgid "IP address of the peer"
 #~ msgid "IP to pass to the tracker"
 #~ msgstr "Naslov IP vrstnika"
 
 #, fuzzy
-#~| msgid "GUI update interval:"
 #~ msgid "GUI update interval"
 #~ msgstr "Interval posodabljanja vmesnika:"
 
 #, fuzzy
-#~| msgid "DHT: off"
 #~ msgid "DHT port"
 #~ msgstr "DHT: izklopljeno"
 
 #, fuzzy
-#~| msgid "Number of upload slots:"
 #~ msgid "Number of upload slots"
 #~ msgstr "Število mest za pošiljanje:"
 
 #, fuzzy
-#~| msgid "Directory to move data to when a torrent has finished downloading."
 #~ msgid "Algorithm to estimate the time when a torrent is finished"
 #~ msgstr ""
 #~ "Mapa, v katero bodo premaknjeni podatki, ko se zaključi prenašanje "
 #~ "torrenta."
 
 #, fuzzy
-#~| msgid "Move completed downloads to:"
 #~ msgid "Folder to move completed downloaded files to"
 #~ msgstr "Premakni zaključene prenose v:"
 
@@ -6645,12 +6268,10 @@ msgstr ""
 #~ msgstr "Nadaljuj KTorrent"
 
 #, fuzzy
-#~| msgid "Resume paused torrents"
 #~ msgid "Resume suspended torrents"
 #~ msgstr "Nadaljuj prekinjene prenose"
 
 #, fuzzy
-#~| msgid "TextLabel"
 #~ msgid "KSqueezedTextLabel"
 #~ msgstr "BesedilnaOznaka"
 
@@ -6743,7 +6364,6 @@ msgstr ""
 #~ "Izgubili boste vse podatke iz teh datotek. Ali res želite nadaljevati?"
 
 #, fuzzy
-#~| msgid "From:"
 #~ msgid "Form"
 #~ msgstr "Od:"
 
@@ -6803,7 +6423,6 @@ msgstr ""
 #~ msgstr "Za prikaz datotek v torrentu uporabi navaden seznam"
 
 #, fuzzy
-#~| msgid "Torrent has no announce or nodes field"
 #~ msgid "Torrent has no announce or nodes field."
 #~ msgstr "Torrent ne vsebuje polja za najavljanje ali polja z vozlišči"
 
@@ -7031,16 +6650,6 @@ msgstr ""
 #~ msgstr "Uporabniška pošiljanja"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~| "size:8pt; font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Time used for the "
-#~| "stall timer. When a torrent is stalled longer than this, it's priority "
-#~| "will be decreased.</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -7065,23 +6674,6 @@ msgstr ""
 #~ "body></html>"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Port used for the "
-#~| "bittorrent protocol.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Attention:</span> If you are behind a router, this port "
-#~| "needs to be forwarded to accept incoming connections. The UPnP plugin "
-#~| "can do this for you.</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -7131,7 +6723,6 @@ msgstr ""
 #~ msgstr "Pošiljanja v vrsti"
 
 #, fuzzy
-#~| msgid "Active torrents"
 #~ msgid ""
 #~ "%1\n"
 #~ "%2 active filters"
@@ -7206,15 +6797,6 @@ msgstr ""
 #~ "p></body></html>"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~| "size:8pt; font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Wether or not to use "
-#~| "the HTTP proxy for webseed connections.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -7353,7 +6935,6 @@ msgstr ""
 #~ "p></body></html>"
 
 #, fuzzy
-#~| msgid "Cannot open %1 : %2"
 #~ msgid "Cannot open %s : %s"
 #~ msgstr "Ni moč odpreti %1: %2"
 

@@ -29,10 +29,17 @@
 
 #include "version.h"
 
+
 namespace bt
 {
 
-	HttpConnection::HttpConnection() : sock(0),state(IDLE),mutex(QMutex::Recursive),request(0),using_proxy(false),response_code(0)
+	HttpConnection::HttpConnection() :
+		sock(0),
+		state(IDLE),
+		mutex(QMutex::Recursive),
+		request(0),
+		using_proxy(false),
+		response_code(0)
 	{
 		status = i18n("Not connected");
 		connect(&reply_timer,SIGNAL(timeout()),this,SLOT(replyTimeout()));
@@ -100,20 +107,37 @@ namespace bt
 	
 	void HttpConnection::connectToProxy(const QString & proxy,Uint16 proxy_port)
 	{
-		using_proxy = true;
-		KNetwork::KResolver::resolveAsync(this, SLOT(hostResolved(KNetwork::KResolverResults)), 
-										  proxy, QString::number(proxy_port == 0 ? 8080 : proxy_port));
-		state = RESOLVING;
-		status = i18n("Resolving proxy %1:%2",proxy,proxy_port);
+		if (OpenFileAllowed())
+		{
+			using_proxy = true;
+			net::AddressResolver::resolve(proxy, proxy_port, this, SLOT(hostResolved(net::AddressResolver*)));
+			state = RESOLVING;
+			status = i18n("Resolving proxy %1:%2",proxy,proxy_port);
+		}
+		else
+		{
+			Out(SYS_CON|LOG_IMPORTANT) << "HttpConnection: not enough system resources available" << endl;
+			state = ERROR;
+			status = i18n("Not enough system resources available");
+		}
 	}
 	
 	void HttpConnection::connectTo(const KUrl & url)
 	{
-		using_proxy = false;
-		KNetwork::KResolver::resolveAsync(this, SLOT(hostResolved(KNetwork::KResolverResults)), 
-										url.host(), QString::number(url.port() <= 0 ? 80 : url.port()));
-		state = RESOLVING;
-		status = i18n("Resolving hostname %1",url.host());
+		if (OpenFileAllowed())
+		{
+			using_proxy = false;
+			net::AddressResolver::resolve(url.host(), url.port() <= 0 ? 80 : url.port(), 
+										this, SLOT(hostResolved(net::AddressResolver*)));
+			state = RESOLVING;
+			status = i18n("Resolving hostname %1",url.host());
+		}
+		else
+		{
+			Out(SYS_CON|LOG_IMPORTANT) << "HttpConnection: not enough system resources available" << endl;
+			state = ERROR;
+			status = i18n("Not enough system resources available");
+		}
 	}
 
 	void HttpConnection::onDataReady(Uint8* buf,Uint32 size)
@@ -142,15 +166,31 @@ namespace bt
 		}
 	}
 	
-	Uint32 HttpConnection::onReadyToWrite(Uint8* data,Uint32 max_to_write)
+	void HttpConnection::dataSent()
+	{
+		QMutexLocker locker(&mutex);
+		if (state == ACTIVE && request)
+		{
+			request->buffer.clear();
+			// wait 60 seconds for a reply
+			startReplyTimer(60 * 1000);
+		}
+	}
+	
+	void HttpConnection::connectFinished(bool succeeded)
 	{
 		QMutexLocker locker(&mutex);
 		if (state == CONNECTING)
 		{
-			if (sock->socketDevice()->connectSuccesFull())
+			if (succeeded)
 			{
 				state = ACTIVE;
 				status = i18n("Connected");
+				if (request && !request->request_sent)
+				{
+					sock->addData(request->buffer);
+					request->request_sent = true;
+				}
 			}
 			else
 			{
@@ -160,54 +200,19 @@ namespace bt
 			}
 			stopConnectTimer();
 		}
-		else if (state == ACTIVE && request)
-		{
-			HttpGet* g = request;
-			if (g->request_sent)
-				return 0;
-			
-			Uint32 len = g->buffer.size() - g->bytes_sent;
-			if (len > max_to_write)
-				len = max_to_write;
-			
-			memcpy(data,g->buffer.data() + g->bytes_sent,len);
-			g->bytes_sent += len;
-			if ((int) len == g->buffer.size())
-			{
-				g->buffer.clear();
-				g->request_sent = true;
-				// wait 60 seconds for a reply
-				startReplyTimer(60 * 1000);
-			}
-			return len;
-		}
-		
-		return 0;
-	}
-	
-	bool HttpConnection::hasBytesToWrite() const
-	{
-		QMutexLocker locker(&mutex);
-		if (state == CONNECTING)
-			return true;
-		
-		if (state == ERROR || !request)
-			return false;
-		
-		return !request->request_sent;
 	}
 
-	void HttpConnection::hostResolved(KNetwork::KResolverResults res)
+
+	void HttpConnection::hostResolved(net::AddressResolver* ar)
 	{
-		if (res.count() > 0)
+		if (ar->succeeded())
 		{
-			KNetwork::KInetSocketAddress addr = res.front().address();
+			net::Address addr = ar->address();
 			if (!sock)
 			{
-				sock = new net::BufferedSocket(true,addr.ipVersion());
+				sock = new net::StreamSocket(true, addr.ipVersion(), this);
 				sock->socketDevice()->setBlocking(false);
 				sock->setReader(this);
-				sock->setWriter(this);
 				sock->setGroupID(up_gid,true);
 				sock->setGroupID(down_gid,false);
 			}
@@ -219,7 +224,7 @@ namespace bt
 				net::SocketMonitor::instance().add(sock);
 				net::SocketMonitor::instance().signalPacketReady();
 			}
-			else if (sock->socketDevice()->state() == net::Socket::CONNECTING)
+			else if (sock->socketDevice()->state() == net::SocketDevice::CONNECTING)
 			{
 				status = i18n("Connecting");
 				state = CONNECTING;
@@ -250,7 +255,11 @@ namespace bt
 			return false;
 			
 		request = new HttpGet(host,path,start,len,using_proxy);
-		net::SocketMonitor::instance().signalPacketReady();
+		if (sock)
+		{
+			sock->addData(request->buffer);
+			request->request_sent = true;
+		}
 		return true;
 	}
 	
@@ -274,12 +283,7 @@ namespace bt
 		}
 		
 		if (g->piece_data.size() == 0)
-		{
-			if (!g->request_sent)
-				net::SocketMonitor::instance().signalPacketReady();
-				
 			return false;
-		}
 		
 		data = g->piece_data;
 		g->piece_data.clear();
@@ -339,7 +343,7 @@ namespace bt
 	////////////////////////////////////////////
 	
 	HttpConnection::HttpGet::HttpGet(const QString & host,const QString & path,bt::Uint64 start,bt::Uint64 len,bool using_proxy) 
-		: host(host),path(path),start(start),len(len),data_received(0),bytes_sent(0),response_header_received(false),request_sent(false),response_code(0)
+		: host(host),path(path),start(start),len(len),data_received(0),response_header_received(false),request_sent(false),response_code(0)
 	{
 		KUrl url;
 		url.setPath(path);
@@ -427,5 +431,3 @@ namespace bt
 		return true;
 	}
 }
-
-#include "httpconnection.moc"

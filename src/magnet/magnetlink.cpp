@@ -60,7 +60,7 @@ namespace bt
 		return *this;
 	}
 
-	bool MagnetLink::operator==(const bt::MagnetLink& mlink)
+	bool MagnetLink::operator==(const bt::MagnetLink& mlink) const
 	{
 		return info_hash == mlink.infoHash();
 	}
@@ -70,11 +70,13 @@ namespace bt
 		KUrl url(mlink);
 		if (url.protocol() != "magnet")
 		{
-			Out(SYS_GEN|LOG_NOTICE) << "Invalid magnet link " << mlink << endl;
+			Out(SYS_GEN|LOG_NOTICE) << "Invalid protocol of magnet link "
+				<< mlink << endl;
 			return;
 		}
 		
 		torrent_url = url.queryItem("to");
+		//magnet://description-of-content.btih.HASH(-HASH)*.dht/path/file?x.pt=&x.to=
 
 		// TODO automatically select these files and prefetches from here
 		path = url.queryItem("pt");
@@ -91,7 +93,8 @@ namespace bt
 				QString primaryHash = btihHash.cap(1).split("-")[0];
 				xt = "urn:btih:"+primaryHash;
 			} else {
-				Out(SYS_GEN|LOG_NOTICE) << "Invalid magnet link " << mlink << endl;
+				Out(SYS_GEN|LOG_NOTICE) << "No hash found in magnet link "
+					<< mlink << endl;
 				return;
 			}
 		}
@@ -99,7 +102,8 @@ namespace bt
 		QString ih = xt.mid(9);
 		if (ih.length() != 40 && ih.length() != 32)
 		{
-			Out(SYS_GEN|LOG_NOTICE) << "Invalid magnet link " << mlink << endl;
+			Out(SYS_GEN|LOG_NOTICE) << "Hash has not valid length in magnet link "
+				<< mlink << endl;
 			return;
 		}
 		

@@ -6,16 +6,16 @@
 # Danny Kukawka <danny.kukawka@web.de>, 2006.
 # Jannick Kuhr <opensource@kuhr.org>, 2006, 2007, 2008, 2009, 2010.
 # Panagiotis Papadopoulos <pano_90@gmx.net>, 2009, 2010.
-# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2011.
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2011, 2012.
 # Markus Slopianka <markus.s@kdemail.net>, 2009, 2010.
-# Frederik Schwarzer <schwarzer@kde.org>, 2011.
+# Frederik Schwarzer <schwarzer@kde.org>, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-11 11:17+0200\n"
-"PO-Revision-Date: 2011-10-24 12:49+0200\n"
-"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"POT-Creation-Date: 2012-02-07 18:22+0100\n"
+"PO-Revision-Date: 2012-01-21 23:44+0100\n"
+"Last-Translator: Frederik Schwarzer <schwarzerf@gmail.com>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -24,103 +24,47 @@ msgstr ""
 "X-Generator: Lokalize 1.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: src/bcodec/bdecoder.cpp:62
+#: src/bcodec/bdecoder.cpp:71
 #, kde-format
 msgid "Illegal token: %1"
 msgstr "Ungültiges Zeichen: %1"
 
-#: src/bcodec/bdecoder.cpp:125 src/bcodec/bdecoder.cpp:133
+#: src/bcodec/bdecoder.cpp:133 src/bcodec/bdecoder.cpp:141
 msgid "Decode error"
 msgstr "Dekodierungsfehler"
 
-#: src/bcodec/bdecoder.cpp:193 src/bcodec/bdecoder.cpp:238
+#: src/bcodec/bdecoder.cpp:201 src/bcodec/bdecoder.cpp:246
 msgid "Unexpected end of input"
 msgstr "Unerwartetes Ende der Eingabe"
 
-#: src/bcodec/bdecoder.cpp:213 src/bcodec/bdecoder.cpp:247
+#: src/bcodec/bdecoder.cpp:221 src/bcodec/bdecoder.cpp:255
 #, kde-format
 msgid "Cannot convert %1 to an int"
 msgstr "%1 kann nicht nach int umgewandelt werden"
 
-#: src/bcodec/bdecoder.cpp:252
+#: src/bcodec/bdecoder.cpp:260
 msgid "Torrent is incomplete."
 msgstr "Der Torrent ist unvollständig."
 
-#: src/datachecker/datacheckerjob.cpp:76
+#: src/datachecker/datacheckerjob.cpp:82
 msgid "Waiting for other data checks to finish"
 msgstr "Es wird darauf gewartet, dass andere Datenprüfungen abgeschlossen sind"
 
-#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:93
 msgid "Checking data"
 msgstr "Daten werden geprüft"
 
-#: src/datachecker/datacheckerjob.cpp:135
+#: src/datachecker/datacheckerjob.cpp:141
 msgid "Checking Data"
 msgstr "Daten werden geprüft"
 
-#: src/datachecker/multidatachecker.cpp:203
+#: src/datachecker/multidatachecker.cpp:209
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
 #, kde-format
 msgid "Cannot open file %1: %2"
 msgstr "Die Datei %1 lässt sich nicht öffnen: %2"
-
-#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
-#: src/util/fileops.cpp:396
-#, kde-format
-msgid "Cannot open %1: %2"
-msgstr "%1 lässt sich nicht öffnen: %2"
-
-#: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
-#: src/diskio/cachefile.cpp:412 src/diskio/cachefile.cpp:480
-#, kde-format
-msgid "Cannot open %1 for writing: readonly filesystem"
-msgstr "%1 kann nicht zum Schreiben geöffnet werden: Nur-Lesen-Dateisystem"
-
-#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:418
-#, kde-format
-msgid "Attempting to write beyond the maximum size of %1"
-msgstr "Es wird versucht, über die Maximalgröße von %1 hinaus zu schreiben"
-
-#: src/diskio/cachefile.cpp:255
-#, kde-format
-msgid ""
-"Cannot expand file %1: attempting to grow the file beyond the maximum size"
-msgstr ""
-"Die Datei %1 kann nicht expandiert werden: Es wird versucht, die Datei über "
-"die Maximalgröße hinaus zu vergrößern"
-
-#: src/diskio/cachefile.cpp:259
-#, kde-format
-msgid "Cannot expand file %1: %2"
-msgstr "Die Datei %1 kann nicht expandiert werden: %2"
-
-#: src/diskio/cachefile.cpp:378
-#, kde-format
-msgid "Error: Reading past the end of the file %1"
-msgstr "Fehler: Das Ende der Datei %1 kann nicht gelesen werden"
-
-#: src/diskio/cachefile.cpp:383 src/diskio/cachefile.cpp:430
-#, kde-format
-msgid "Failed to seek file %1: %2"
-msgstr "Die Datei %1 kann nicht gesucht werden: %2"
-
-#: src/diskio/cachefile.cpp:391
-#, kde-format
-msgid "Error reading from %1"
-msgstr "Fehler beim Lesen der Datei %1"
-
-#: src/diskio/cachefile.cpp:434
-#, kde-format
-msgid "Failed to write to file %1: %2"
-msgstr "In die Datei %1 kann nicht geschrieben werden: %2"
-
-#: src/diskio/cachefile.cpp:501
-#, kde-format
-msgid "Cannot preallocate diskspace: %1"
-msgstr ""
-"Der benötigte Speicherplatz auf dem Medium kann nicht reserviert werden: %1"
 
 #: src/diskio/dndfile.cpp:89
 #, kde-format
@@ -137,21 +81,6 @@ msgstr "Schreiben des ersten Blocks in DND-Datei fehlgeschlagen: %1"
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Schreiben des letzten Blocks in DND-Datei fehlgeschlagen: %1"
 
-#: src/diskio/movedatafilesjob.cpp:166
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Verschiebevorgang"
-
-#: src/diskio/movedatafilesjob.cpp:167
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "Quelle"
-
-#: src/diskio/movedatafilesjob.cpp:168
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "Ziel"
-
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, kde-format
 msgid "Failed to open %1: %2"
@@ -166,70 +95,86 @@ msgstr "%1 kann nicht erstellt werden: %2"
 msgid "Unable to write to a piece mapped read only"
 msgstr "Es kann nicht in schreibgeschützte Bereiche geschrieben werden"
 
-#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
+#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
+#: src/util/fileops.cpp:399
+#, kde-format
+msgid "Cannot open %1: %2"
+msgstr "%1 lässt sich nicht öffnen: %2"
+
+#: src/diskio/cachefile.cpp:122 src/diskio/cachefile.cpp:250
+#: src/diskio/cachefile.cpp:414 src/diskio/cachefile.cpp:482
+#, kde-format
+msgid "Cannot open %1 for writing: readonly filesystem"
+msgstr "%1 kann nicht zum Schreiben geöffnet werden: Nur-Lesen-Dateisystem"
+
+#: src/diskio/cachefile.cpp:129 src/diskio/cachefile.cpp:420
+#, kde-format
+msgid "Attempting to write beyond the maximum size of %1"
+msgstr "Es wird versucht, über die Maximalgröße von %1 hinaus zu schreiben"
+
+#: src/diskio/cachefile.cpp:257
+#, kde-format
+msgid ""
+"Cannot expand file %1: attempting to grow the file beyond the maximum size"
+msgstr ""
+"Die Datei %1 kann nicht expandiert werden: Es wird versucht, die Datei über "
+"die Maximalgröße hinaus zu vergrößern"
+
+#: src/diskio/cachefile.cpp:261
+#, kde-format
+msgid "Cannot expand file %1: %2"
+msgstr "Die Datei %1 kann nicht expandiert werden: %2"
+
+#: src/diskio/cachefile.cpp:380
+#, kde-format
+msgid "Error: Reading past the end of the file %1"
+msgstr "Fehler: Das Ende der Datei %1 kann nicht gelesen werden"
+
+#: src/diskio/cachefile.cpp:385 src/diskio/cachefile.cpp:432
+#, kde-format
+msgid "Failed to seek file %1: %2"
+msgstr "Die Datei %1 kann nicht gesucht werden: %2"
+
+#: src/diskio/cachefile.cpp:393
+#, kde-format
+msgid "Error reading from %1"
+msgstr "Fehler beim Lesen der Datei %1"
+
+#: src/diskio/cachefile.cpp:436
+#, kde-format
+msgid "Failed to write to file %1: %2"
+msgstr "In die Datei %1 kann nicht geschrieben werden: %2"
+
+#: src/diskio/cachefile.cpp:503
+#, kde-format
+msgid "Cannot preallocate diskspace: %1"
+msgstr ""
+"Der benötigte Speicherplatz auf dem Medium kann nicht reserviert werden: %1"
+
+#: src/diskio/chunkmanager.cpp:928 src/diskio/chunkmanager.cpp:954
 #, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr "Indexdatei %1 kann nicht geöffnet werden: %2"
 
-#: src/download/downloader.cpp:810
-msgid "Disabled because webseed does not match torrent"
-msgstr "Deaktiviert, weil der Webseed nicht zum Torrents passt"
+#: src/diskio/movedatafilesjob.cpp:140
+msgid "Waiting for other move jobs to finish"
+msgstr ""
+"Es wird darauf gewartet, dass andere Verschiebevorgänge abgeschlossen werden"
 
-#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
-msgid "Not connected"
-msgstr "Nicht verbunden"
+#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr "Quelle"
 
-#: src/download/httpconnection.cpp:107
-#, kde-format
-msgid "Resolving proxy %1:%2"
-msgstr "Proxy %1:%2 wird aufgelöst"
+#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr "Ziel"
 
-#: src/download/httpconnection.cpp:116
-#, kde-format
-msgid "Resolving hostname %1"
-msgstr "Rechnername %1 wird aufgelöst"
-
-#: src/download/httpconnection.cpp:129 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "Verbindung beendet"
-
-#: src/download/httpconnection.cpp:136
-#, kde-format
-msgid "Error: request failed: %1"
-msgstr "Fehler: Anfrage fehlgeschlagen: %1"
-
-#: src/download/httpconnection.cpp:153 src/download/httpconnection.cpp:217
-msgid "Connected"
-msgstr "Verbunden"
-
-#: src/download/httpconnection.cpp:159
-msgid "Error: Failed to connect to webseed"
-msgstr "Fehler: Verbindung zum Webseed fehlgeschlagen"
-
-#: src/download/httpconnection.cpp:224
-msgid "Connecting"
-msgstr "Verbindung wird hergestellt"
-
-#: src/download/httpconnection.cpp:235
-msgid "Failed to connect to webseed"
-msgstr "Verbindung zum Webseed fehlgeschlagen"
-
-#: src/download/httpconnection.cpp:242
-msgid "Failed to resolve hostname of webseed"
-msgstr "Der Rechnername des Webseeds wurde nicht gefunden"
-
-#: src/download/httpconnection.cpp:322
-msgid "Error: failed to connect, server not responding"
-msgstr "Fehler: Verbindung fehlgeschlagen, Server antwortet nicht"
-
-#: src/download/httpconnection.cpp:333
-msgid "Error: request timed out"
-msgstr "Fehler: Zeitüberschreitung der Anfrage"
-
-#: src/download/httpconnection.cpp:398
-msgid "Redirected without a new location."
-msgstr "Ohne neue Adresse umgeleitet."
+#: src/diskio/movedatafilesjob.cpp:180
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Verschiebevorgang"
 
 #: src/download/chunkdownload.cpp:383
 #, kde-format
@@ -237,6 +182,70 @@ msgid "1 peer"
 msgid_plural "%1 peers"
 msgstr[0] "Eine Gegenstelle"
 msgstr[1] "%1 Gegenstellen"
+
+#: src/download/downloader.cpp:808
+msgid "Disabled because webseed does not match torrent"
+msgstr "Deaktiviert, weil der Webseed nicht zum Torrents passt"
+
+#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
+#: src/download/webseed.cpp:98
+msgid "Not connected"
+msgstr "Nicht verbunden"
+
+#: src/download/httpconnection.cpp:115
+#, kde-format
+msgid "Resolving proxy %1:%2"
+msgstr "Proxy %1:%2 wird aufgelöst"
+
+#: src/download/httpconnection.cpp:121 src/download/httpconnection.cpp:139
+msgid "Not enough system resources available"
+msgstr "Es sind nicht ausreichend System-Ressourcen verfügbar."
+
+#: src/download/httpconnection.cpp:133
+#, kde-format
+msgid "Resolving hostname %1"
+msgstr "Rechnername %1 wird aufgelöst"
+
+#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
+msgid "Connection closed"
+msgstr "Verbindung beendet"
+
+#: src/download/httpconnection.cpp:160
+#, kde-format
+msgid "Error: request failed: %1"
+msgstr "Fehler: Anfrage fehlgeschlagen: %1"
+
+#: src/download/httpconnection.cpp:188 src/download/httpconnection.cpp:222
+msgid "Connected"
+msgstr "Verbunden"
+
+#: src/download/httpconnection.cpp:199
+msgid "Error: Failed to connect to webseed"
+msgstr "Fehler: Verbindung zum Webseed fehlgeschlagen"
+
+#: src/download/httpconnection.cpp:229
+msgid "Connecting"
+msgstr "Verbindung wird hergestellt"
+
+#: src/download/httpconnection.cpp:240
+msgid "Failed to connect to webseed"
+msgstr "Verbindung zum Webseed fehlgeschlagen"
+
+#: src/download/httpconnection.cpp:247
+msgid "Failed to resolve hostname of webseed"
+msgstr "Der Rechnername des Webseeds wurde nicht gefunden"
+
+#: src/download/httpconnection.cpp:326
+msgid "Error: failed to connect, server not responding"
+msgstr "Fehler: Verbindung fehlgeschlagen, Server antwortet nicht"
+
+#: src/download/httpconnection.cpp:337
+msgid "Error: request timed out"
+msgstr "Fehler: Zeitüberschreitung der Anfrage"
+
+#: src/download/httpconnection.cpp:402
+msgid "Redirected without a new location."
+msgstr "Ohne neue Adresse umgeleitet."
 
 #: src/download/webseed.cpp:545
 #, kde-format
@@ -256,7 +265,7 @@ msgstr "Achtung: %1"
 msgid "Announcing"
 msgstr "Anmelden"
 
-#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:86
+#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:87
 #, kde-format
 msgid "Error: %1"
 msgstr "Fehler: %1"
@@ -274,59 +283,6 @@ msgstr "Unbekannter Client"
 #, kde-format
 msgid "Cannot create index file: %1"
 msgstr "Die Indexdatei %1 lässt sich nicht erstellen."
-
-#: src/torrent/torrentstats.cpp:72
-msgid "Not started"
-msgstr "Nicht gestartet"
-
-#: src/torrent/torrentstats.cpp:74
-msgid "Download completed"
-msgstr "Download beendet"
-
-#: src/torrent/torrentstats.cpp:76
-msgid "Seeding completed"
-msgstr "Upload beendet"
-
-#: src/torrent/torrentstats.cpp:78
-msgctxt "Status of a torrent file"
-msgid "Seeding"
-msgstr "Hochladen"
-
-#: src/torrent/torrentstats.cpp:80
-msgid "Downloading"
-msgstr "Herunterladen"
-
-#: src/torrent/torrentstats.cpp:82
-msgid "Stalled"
-msgstr "Stehengeblieben"
-
-#: src/torrent/torrentstats.cpp:84
-msgid "Stopped"
-msgstr "Angehalten"
-
-#: src/torrent/torrentstats.cpp:88
-msgid "Allocating diskspace"
-msgstr "Speicherplatz wird belegt"
-
-#: src/torrent/torrentstats.cpp:90
-msgid "Queued for seeding"
-msgstr "In Upload-Warteschlange eingereiht"
-
-#: src/torrent/torrentstats.cpp:90
-msgid "Queued for downloading"
-msgstr "In Download-Warteschlange eingereiht"
-
-#: src/torrent/torrentstats.cpp:94
-msgid "Stopped. No space left on device."
-msgstr "Angehalten. Auf dem Medium ist kein Speicherplatz mehr verfügbar."
-
-#: src/torrent/torrentstats.cpp:96
-msgid "Paused"
-msgstr "Pausiert"
-
-#: src/torrent/torrentstats.cpp:98
-msgid "Superseeding"
-msgstr "Superseed-Modus"
 
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
@@ -346,7 +302,7 @@ msgstr ""
 "Fehler beim Schreiben auf den Datenträger. Ist genügend Speicherplatz "
 "vorhanden?"
 
-#: src/torrent/torrentcontrol.cpp:553
+#: src/torrent/torrentcontrol.cpp:554
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -356,17 +312,17 @@ msgstr ""
 "b><br/>Der Torrent ist möglicherweise beschädigt oder es handelt sich nicht "
 "um eine gültige Torrent-Datei."
 
-#: src/torrent/torrentcontrol.cpp:583
+#: src/torrent/torrentcontrol.cpp:584
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr "Beim Laden von <b>%1</b> ist ein Fehler aufgetreten:<br/><b>%2</b>"
 
-#: src/torrent/torrentcontrol.cpp:594
+#: src/torrent/torrentcontrol.cpp:595
 #, kde-format
 msgid "Unable to create %1: %2"
 msgstr "%1 kann nicht erstellt werden: %2"
 
-#: src/torrent/torrentcontrol.cpp:609
+#: src/torrent/torrentcontrol.cpp:610
 #, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
@@ -375,38 +331,91 @@ msgstr ""
 "Sie laden den Torrent <b>%1</b> bereits herunter. Die Liste der Tracker von "
 "beiden Torrents wurde zusammengeführt."
 
-#: src/torrent/torrentcontrol.cpp:614
+#: src/torrent/torrentcontrol.cpp:615
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Sie laden den Torrent <b>%1</b> bereits herunter."
+
+#: src/torrent/torrentstats.cpp:73
+msgid "Not started"
+msgstr "Nicht gestartet"
+
+#: src/torrent/torrentstats.cpp:75
+msgid "Download completed"
+msgstr "Download beendet"
+
+#: src/torrent/torrentstats.cpp:77
+msgid "Seeding completed"
+msgstr "Upload beendet"
+
+#: src/torrent/torrentstats.cpp:79
+msgctxt "Status of a torrent file"
+msgid "Seeding"
+msgstr "Hochladen"
+
+#: src/torrent/torrentstats.cpp:81
+msgid "Downloading"
+msgstr "Herunterladen"
+
+#: src/torrent/torrentstats.cpp:83
+msgid "Stalled"
+msgstr "Stehengeblieben"
+
+#: src/torrent/torrentstats.cpp:85
+msgid "Stopped"
+msgstr "Angehalten"
+
+#: src/torrent/torrentstats.cpp:89
+msgid "Allocating diskspace"
+msgstr "Speicherplatz wird belegt"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Queued for seeding"
+msgstr "In Upload-Warteschlange eingereiht"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Queued for downloading"
+msgstr "In Download-Warteschlange eingereiht"
+
+#: src/torrent/torrentstats.cpp:95
+msgid "Stopped. No space left on device."
+msgstr "Angehalten. Auf dem Medium ist kein Speicherplatz mehr verfügbar."
+
+#: src/torrent/torrentstats.cpp:97
+msgid "Paused"
+msgstr "Pausiert"
+
+#: src/torrent/torrentstats.cpp:99
+msgid "Superseeding"
+msgstr "Superseed-Modus"
 
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "Umleitung ohne Zieladresse"
 
-#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
-#: src/tracker/httptracker.cpp:557
+#: src/tracker/httptracker.cpp:287 src/tracker/httptracker.cpp:307
+#: src/tracker/httptracker.cpp:463
+msgid "Invalid response from tracker"
+msgstr "Ungültige Antwort vom Tracker"
+
+#: src/tracker/httptracker.cpp:300
+msgid "Invalid data from tracker"
+msgstr "Ungültige Daten vom Tracker"
+
+#: src/tracker/httptracker.cpp:480
+msgid "Invalid tracker URL"
+msgstr "Ungültige Tracker-Adresse"
+
+#: src/tracker/httptracker.cpp:558 src/tracker/udptracker.cpp:364
+#: src/tracker/udptracker.cpp:374
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Zeitüberschreitung beim Verbinden mit dem Tracker %1"
 
-#: src/tracker/udptracker.cpp:409
+#: src/tracker/udptracker.cpp:401
 #, kde-format
 msgid "Unable to resolve hostname %1"
 msgstr "Der Rechnername %1 wurde nicht gefunden"
-
-#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:462
-msgid "Invalid response from tracker"
-msgstr "Ungültige Antwort vom Tracker"
-
-#: src/tracker/httptracker.cpp:293
-msgid "Invalid data from tracker"
-msgstr "Ungültige Daten vom Tracker"
-
-#: src/tracker/httptracker.cpp:479
-msgid "Invalid tracker URL"
-msgstr "Ungültige Tracker-Adresse"
 
 #: src/util/logsystemmanager.cpp:33
 msgid "General"
@@ -441,6 +450,14 @@ msgstr "In die Datei %1 kann nicht geschrieben werden: %2"
 #, kde-format
 msgid "Cannot read from %1"
 msgstr "Aus Datei %1 kann nicht gelesen werden"
+
+#: src/util/signalcatcher.cpp:78
+msgid "Error when writing to disk"
+msgstr "Fehler beim Schreiben auf den Datenträger"
+
+#: src/util/signalcatcher.cpp:78
+msgid "Error when reading from disk"
+msgstr "Fehler beim Lesen vom Datenträger"
 
 #: src/util/fileops.cpp:94
 #, kde-format
@@ -484,35 +501,27 @@ msgid "Cannot calculate the filesize: %1"
 msgstr "Die Dateigröße kann nicht berechnet werden: %1"
 
 #: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
-#: src/util/fileops.cpp:387
+#: src/util/fileops.cpp:387 src/util/fileops.cpp:390
 #, kde-format
 msgid "Cannot expand file: %1"
 msgstr "Die Datei kann nicht expandiert werden: %1"
 
-#: src/util/fileops.cpp:417
+#: src/util/fileops.cpp:420
 #, kde-format
 msgid "Cannot seek in file: %1"
 msgstr "In der Datei kann nicht gesucht werden: %1"
 
-#: src/util/functions.cpp:280
+#: src/util/functions.cpp:234
 #, kde-format
 msgid "%1/s"
 msgstr "%1/s"
 
-#: src/util/functions.cpp:291
+#: src/util/functions.cpp:245
 #, kde-format
 msgid "1 day "
 msgid_plural "%1 days "
 msgstr[0] "1 Tag "
 msgstr[1] "%1 Tage "
-
-#: src/util/signalcatcher.cpp:62
-msgid "Error when writing to disk"
-msgstr "Fehler beim Schreiben auf den Datenträger"
-
-#: src/util/signalcatcher.cpp:62
-msgid "Error when reading from disk"
-msgstr "Fehler beim Lesen vom Datenträger"
 
 #: src/upnp/httprequest.cpp:96
 msgid "Connection closed unexpectedly"
@@ -572,14 +581,18 @@ msgstr "ktcli"
 #~ msgid "Parse Error"
 #~ msgstr "Verarbeitungsfehler"
 
-#~ msgid "Cannot open file : %1 : %2"
-#~ msgstr "Die Datei %1 lässt sich nicht öffnen: %2"
+#~ msgid "Not in use"
+#~ msgstr "Nicht in Benutzung"
+
+#, fuzzy
+#~ msgid "Not enough diskspace"
+#~ msgstr "Nicht ausreichend freier Speicherplatz für %1"
 
 #~ msgid "Cannot open file %1 : %2"
 #~ msgstr "Die Datei %1 lässt sich nicht öffnen: %2"
 
-#~ msgid "Not in use"
-#~ msgstr "Nicht in Benutzung"
+#~ msgid "Cannot open file : %1 : %2"
+#~ msgstr "Die Datei %1 lässt sich nicht öffnen: %2"
 
 #~ msgid ""
 #~ "An error occurred while loading the torrent:<br/><b>%1</b><br/>The "
@@ -591,11 +604,6 @@ msgstr "ktcli"
 
 #~ msgid "Cannot open log file %1 : %2"
 #~ msgstr "Die Protokolldatei %1 lässt sich nicht öffnen: %2"
-
-#, fuzzy
-#~| msgid "Not enough free disk space for %1"
-#~ msgid "Not enough diskspace"
-#~ msgstr "Nicht ausreichend freier Speicherplatz für %1"
 
 #~ msgid "Timeout occurred"
 #~ msgstr "Wartezeit überschritten"
@@ -1538,7 +1546,6 @@ msgstr "ktcli"
 #~ msgstr " Suchmaschine: "
 
 #, fuzzy
-#~| msgid "Do you want to download this magnet link ?"
 #~ msgid "Do you want to download this magnet link?"
 #~ msgstr "Möchten Sie diese Magnet-Verknüpfung herunterladen?"
 
@@ -1616,7 +1623,6 @@ msgstr "ktcli"
 #~ "aktuelle Eintrag kann nicht geändert werden."
 
 #, fuzzy
-#~| msgid "Current schedule: paused"
 #~ msgid "Current schedule: suspended"
 #~ msgstr "Aktueller Plan: pausiert"
 
@@ -1646,7 +1652,6 @@ msgstr "ktcli"
 #~ "Die Datei %1 ist beschädigt oder keine korrekte KTorrent-Planerdatei."
 
 #, fuzzy
-#~| msgid "Speed"
 #~ msgid "Suspended"
 #~ msgstr "Geschwindigkeit"
 
@@ -1762,7 +1767,6 @@ msgstr "ktcli"
 #~ msgstr "Copyright © 2005–2007 Joris Guisson und Ivan Vasic"
 
 #, fuzzy
-#~| msgid "Time Downloaded"
 #~ msgid "KTMagnetDownloader"
 #~ msgstr "Downloadzeit"
 
@@ -1838,17 +1842,14 @@ msgstr "ktcli"
 #~ "mit Hilfe der Knöpfe auf der rechten Seite."
 
 #, fuzzy
-#~| msgid "Search"
 #~ msgid "Show Search"
 #~ msgstr "Suchen"
 
 #, fuzzy
-#~| msgid "Show or hide the group view"
 #~ msgid "Show or hide the search bar"
 #~ msgstr "Gruppenansicht anzeigen oder ausblenden"
 
 #, fuzzy
-#~| msgid "Move Up"
 #~ msgid "Move Top"
 #~ msgstr "Nach oben"
 
@@ -1868,7 +1869,6 @@ msgstr "ktcli"
 #~ msgstr "Einen Torrent in der Warteschlange nach unten verschieben"
 
 #, fuzzy
-#~| msgid "Move to &bottom"
 #~ msgid "Move Bottom"
 #~ msgstr "Ganz nach unten"
 
@@ -2104,7 +2104,6 @@ msgstr "ktcli"
 #~ msgstr "Der Speicherort der Daten des Torrents auf dem Medium"
 
 #, fuzzy
-#~| msgid "When all torrents finish seeding"
 #~ msgid "When this torrent was added"
 #~ msgstr "Wenn der Upload aller Torrents abgeschlossen ist"
 
@@ -2598,7 +2597,6 @@ msgstr "ktcli"
 #~ msgstr "Andrei Barbu"
 
 #, fuzzy
-#~| msgid "When all torrents finish seeding"
 #~ msgid "Feature which adds the date a torrent was added"
 #~ msgstr "Wenn der Upload aller Torrents abgeschlossen ist"
 
@@ -2645,17 +2643,14 @@ msgstr "ktcli"
 #~ msgstr "Adresse (URL) öffnen"
 
 #, fuzzy
-#~| msgid "Open a URL which points to a torrent"
 #~ msgid "Open a URL which points to a torrent, magnet links are supported"
 #~ msgstr "Eine Adresse (URL) öffnen, die auf einen Torrent zeigt"
 
 #, fuzzy
-#~| msgid "Pause KTorrent"
 #~ msgid "Suspend KTorrent"
 #~ msgstr "KTorrent pausieren"
 
 #, fuzzy
-#~| msgid "Pause all running torrents"
 #~ msgid "Suspend all running torrents"
 #~ msgstr "Alle laufenden Torrents pausieren"
 
@@ -2791,9 +2786,6 @@ msgstr "ktcli"
 #~ "Unter Einstellungen -> KTorrent einrichten können Sie diese Begrenzungen "
 #~ "ändern."
 
-#~ msgid "There is not enough diskspace available."
-#~ msgstr "Es ist nicht ausreichend Platz auf dem Datenträger verfügbar."
-
 #~ msgid ""
 #~ "Your disk is running out of space.<br /><b>%1</b> is being downloaded to "
 #~ "'%2'."
@@ -2808,9 +2800,6 @@ msgstr "ktcli"
 #~ msgstr "Geschwindigkeitsbegrenzung in KiB/s"
 
 #, fuzzy
-#~| msgid ""
-#~| "KTorrent is unable to accept connections because the ports %1 to %2 are "
-#~| "already in use by another program."
 #~ msgid ""
 #~ "KTorrent is unable to accept connections because the TCP ports %1 is "
 #~ "already in use by another program."
@@ -2819,9 +2808,6 @@ msgstr "ktcli"
 #~ "von einem anderen Programm verwendet werden."
 
 #, fuzzy
-#~| msgid ""
-#~| "KTorrent is unable to accept connections because the ports %1 to %2 are "
-#~| "already in use by another program."
 #~ msgid ""
 #~ "KTorrent is unable to accept connections because the UDP port %1 is "
 #~ "already in use by another program."
@@ -3518,24 +3504,6 @@ msgstr "ktcli"
 #~ msgstr "Gibt an, welche Oberfläche verwendet wird."
 
 #, fuzzy
-#~| msgid ""
-#~| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/"
-#~| "TR/REC-html40/strict.dtd\">\n"
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Scan the folder "
-#~| "recursively for torrents.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;\">Note: "
-#~| "<span style=\" font-weight:400;\">This will not be done for any folder "
-#~| "named loaded.</span></p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -3575,7 +3543,6 @@ msgstr "ktcli"
 #~ "mit dem Namen „Geladen“ durchgeführt.</span></p></body></html>"
 
 #, fuzzy
-#~| msgid "Required:"
 #~ msgid "Login required"
 #~ msgstr "Benötigt:"
 
@@ -3675,7 +3642,6 @@ msgstr "ktcli"
 #~ msgstr "Diagramm alle n Oberflächenaktualisierungen aktualisieren"
 
 #, fuzzy
-#~| msgid "Interval in miliseconds between data gathering"
 #~ msgid "Interval in milliseconds between data gathering"
 #~ msgstr "Intervall in Millisekunden zwischen den Datenerfassungen"
 
@@ -4363,12 +4329,10 @@ msgstr "ktcli"
 #~ msgstr "Farbe der normalen Elemente im Planer."
 
 #, fuzzy
-#~| msgid "Paused schedule item color:"
 #~ msgid "Suspended schedule item color:"
 #~ msgstr "Farbe für pausiertes Element:"
 
 #, fuzzy
-#~| msgid "Color of each paused item on the schedule."
 #~ msgid "Color of each suspended item on the schedule."
 #~ msgstr "Farbe der pausierten Elemente im Planer."
 
@@ -4510,12 +4474,10 @@ msgstr "ktcli"
 #~ msgstr "&Abbrechen"
 
 #, fuzzy
-#~| msgid "Search Preferences"
 #~ msgid "Magnet Generator Preferences"
 #~ msgstr "Such-Einstellungen"
 
 #, fuzzy
-#~| msgid "Add Trackers"
 #~ msgid "Add tracker"
 #~ msgstr "Tracker hinzufügen"
 
@@ -4523,7 +4485,6 @@ msgstr "ktcli"
 #~ msgstr "Tracker:"
 
 #, fuzzy
-#~| msgid "Move a torrent down in the queue"
 #~ msgid "Add the torrent name in the URI"
 #~ msgstr "Einen Torrent in der Warteschlange nach unten verschieben"
 
@@ -4538,22 +4499,18 @@ msgstr "ktcli"
 #~ msgstr "In die Zwischenablage kopieren"
 
 #, fuzzy
-#~| msgid "Show Video"
 #~ msgid "Show popup"
 #~ msgstr "Video anzeigen"
 
 #, fuzzy
-#~| msgid "Tracker"
 #~ msgid "Toggles tracker"
 #~ msgstr "Tracker"
 
 #, fuzzy
-#~| msgid "Use default browser"
 #~ msgid "The default tracker"
 #~ msgstr "Standard-Browser verwenden"
 
 #, fuzzy
-#~| msgid "Show Feed"
 #~ msgid "Show dn"
 #~ msgstr "Nachrichtenquelle anzeigen"
 
@@ -5319,6 +5276,10 @@ msgstr "ktcli"
 
 #~ msgid "Show system tray icon"
 #~ msgstr "Symbol im Systemabschnitt der Kontrollleiste anzeigen."
+
+#, fuzzy
+#~ msgid "Whether or not to show system tray popup messages."
+#~ msgstr "Kurzinfo-Fenster im Systemabschnitt der Kontrollleiste anzeigen"
 
 #~ msgid "Show system tray popup messages"
 #~ msgstr "Kurzinfo-Fenster im Systemabschnitt der Kontrollleiste anzeigen"
@@ -6592,7 +6553,6 @@ msgstr "ktcli"
 #~ msgstr "KTorrent fortsetzen"
 
 #, fuzzy
-#~| msgid "Resume paused torrents"
 #~ msgid "Resume suspended torrents"
 #~ msgstr "Pausierte Torrents fortsetzen"
 
@@ -7046,30 +7006,6 @@ msgstr "ktcli"
 #~ "html>"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Which method to use "
-#~| "for reserving diskspace.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Basic: </span>Will work on all filesystems, but is slow.</"
-#~| "p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Filesystem Specific: </span>Will use special methods "
-#~| "provided by some filesystems, which are faster then the basic method.</"
-#~| "p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -7125,7 +7061,6 @@ msgstr "ktcli"
 #~ msgid "Queued uploads"
 #~ msgstr "Eingereihte Verteilvorgänge"
 
-#~| msgid "<b>%1</b><br/><br/>%2"
 #~ msgid ""
 #~ "%1\n"
 #~ "%2 active filters"
@@ -7143,7 +7078,6 @@ msgstr "ktcli"
 #~ msgstr "Heruntergeladen: %1 / %2 Verteilt: %3"
 
 #, fuzzy
-#~| msgid "<b>%1</b><br/><br/>%2"
 #~ msgid "<b>%1</b><br/>1 active filter"
 #~ msgstr "<b>%1</b><br/><br/>%2"
 
@@ -7415,7 +7349,6 @@ msgstr "ktcli"
 #~ "Datei."
 
 #, fuzzy
-#~| msgid "Cannot open %1 : %2"
 #~ msgid "Cannot open %s : %s"
 #~ msgstr "Die Datei %1 lässt sich nicht öffnen: %2"
 
@@ -7431,13 +7364,6 @@ msgstr "ktcli"
 #~ msgid "Update From Internet"
 #~ msgstr "Aktualisierung aus dem Internet"
 
-#~| msgid ""
-#~| "Use your web browser to search for the string %1 (capital letters) on "
-#~| "the search engine you want to add. <br> Then copy the URL in the "
-#~| "addressbar after the search is finished, and paste it here."
-#~| "<br><br>Searching for %1 on Google for example, will result in http://"
-#~| "www.google.com/search?q=FOOBAR&ie=UTF-8&oe=UTF-8. <br> If you add this "
-#~| "URL here, ktorrent can search using ,Google."
 #~ msgid ""
 #~ "Use your web browser to search for the string %1 (capital letters) on the "
 #~ "search engine you want to add. <br> Then copy the URL in the addressbar "

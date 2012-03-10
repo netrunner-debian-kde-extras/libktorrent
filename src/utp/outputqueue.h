@@ -23,12 +23,12 @@
 #define UTP_OUTPUTQUEUE_H
 
 #include <QList>
-#include <QByteArray>
 #include <net/serversocket.h>
 #include "connection.h"
+#include "packetbuffer.h"
 
 
-namespace utp 
+namespace utp
 {
 	/**
 	 * Manages the send queue of all UTP server sockets
@@ -38,32 +38,32 @@ namespace utp
 	public:
 		OutputQueue();
 		virtual ~OutputQueue();
-		
+
 		/**
 		 * Add an entry to the queue.
 		 * @param data The packet
 		 * @param conn The connection this packet belongs to
 		 * @return The number of queued packets
 		 */
-		int add(const QByteArray & data, Connection::WPtr conn);
-		
+		int add(const PacketBuffer & packet, Connection::WPtr conn);
+
 		/**
 		 * Attempt to send the queue on a socket
 		 * @param sock The socket
 		 */
 		void send(net::ServerSocket* sock);
-		
+
 	private:
 		struct Entry
 		{
-			QByteArray data;
+			PacketBuffer data;
 			Connection::WPtr conn;
-			
-			Entry(const QByteArray & data, Connection::WPtr conn)
-			: data(data),conn(conn)
+
+			Entry(const PacketBuffer & data, Connection::WPtr conn)
+					: data(data), conn(conn)
 			{}
 		};
-		
+
 		QList<Entry> queue;
 		QMutex mutex;
 	};

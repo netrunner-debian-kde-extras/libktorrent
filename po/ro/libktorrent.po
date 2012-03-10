@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent(2)\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-11 11:17+0200\n"
+"POT-Creation-Date: 2012-02-07 18:22+0100\n"
 "PO-Revision-Date: 2009-07-20 16:52+0300\n"
 "Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -19,45 +19,43 @@ msgstr ""
 "20)) ? 1 : 2;\n"
 "X-Generator: Lokalize 1.0\n"
 
-#: src/bcodec/bdecoder.cpp:62
+#: src/bcodec/bdecoder.cpp:71
 #, kde-format
 msgid "Illegal token: %1"
 msgstr "Element ilegal : %1"
 
-#: src/bcodec/bdecoder.cpp:125 src/bcodec/bdecoder.cpp:133
+#: src/bcodec/bdecoder.cpp:133 src/bcodec/bdecoder.cpp:141
 msgid "Decode error"
 msgstr "Erroare la decodificare"
 
-#: src/bcodec/bdecoder.cpp:193 src/bcodec/bdecoder.cpp:238
+#: src/bcodec/bdecoder.cpp:201 src/bcodec/bdecoder.cpp:246
 msgid "Unexpected end of input"
 msgstr "Final neașteptat al intrării"
 
-#: src/bcodec/bdecoder.cpp:213 src/bcodec/bdecoder.cpp:247
+#: src/bcodec/bdecoder.cpp:221 src/bcodec/bdecoder.cpp:255
 #, kde-format
 msgid "Cannot convert %1 to an int"
 msgstr "Nu se poate converti %1 la un număr întreg"
 
-#: src/bcodec/bdecoder.cpp:252
+#: src/bcodec/bdecoder.cpp:260
 #, fuzzy
-#| msgid "Torrent is incomplete!"
 msgid "Torrent is incomplete."
 msgstr "Torentul este incomplet!"
 
-#: src/datachecker/datacheckerjob.cpp:76
+#: src/datachecker/datacheckerjob.cpp:82
 msgid "Waiting for other data checks to finish"
 msgstr ""
 
-#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:93
 msgid "Checking data"
 msgstr "Se verifică datele"
 
-#: src/datachecker/datacheckerjob.cpp:135
+#: src/datachecker/datacheckerjob.cpp:141
 #, fuzzy
-#| msgid "Checking data"
 msgid "Checking Data"
 msgstr "Se verifică datele"
 
-#: src/datachecker/multidatachecker.cpp:203
+#: src/datachecker/multidatachecker.cpp:209
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
@@ -65,116 +63,28 @@ msgstr "Se verifică datele"
 msgid "Cannot open file %1: %2"
 msgstr "Nu am putut deschide fișierul %1: %2"
 
-#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
-#: src/util/fileops.cpp:396
-#, fuzzy, kde-format
-#| msgid "Cannot open %1 : %2"
-msgid "Cannot open %1: %2"
-msgstr "Nu am putut deschide %1 : %2"
-
-#: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
-#: src/diskio/cachefile.cpp:412 src/diskio/cachefile.cpp:480
-#, fuzzy, kde-format
-#| msgid "Cannot open %1 for writing : readonly filesystem"
-msgid "Cannot open %1 for writing: readonly filesystem"
-msgstr ""
-"Nu am putut deschide %1 pentru scriere : sistem de fișiere protejat la "
-"scriere."
-
-#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:418
-#, kde-format
-msgid "Attempting to write beyond the maximum size of %1"
-msgstr ""
-
-#: src/diskio/cachefile.cpp:255
-#, kde-format
-msgid ""
-"Cannot expand file %1: attempting to grow the file beyond the maximum size"
-msgstr ""
-
-#: src/diskio/cachefile.cpp:259
-#, fuzzy, kde-format
-#| msgid "Cannot expand file %1 : %2"
-msgid "Cannot expand file %1: %2"
-msgstr "Nu am putut expanda fișierul %1 : %2"
-
-#: src/diskio/cachefile.cpp:378
-#, fuzzy, kde-format
-#| msgid "Error : Reading past the end of the file %1"
-msgid "Error: Reading past the end of the file %1"
-msgstr "Eroare: am depășit capătul fișierului %1"
-
-#: src/diskio/cachefile.cpp:383 src/diskio/cachefile.cpp:430
-#, fuzzy, kde-format
-#| msgid "Failed to seek file %1 : %2"
-msgid "Failed to seek file %1: %2"
-msgstr "Am eșuat la căutarea în fișierul %1 : %2"
-
-#: src/diskio/cachefile.cpp:391
-#, kde-format
-msgid "Error reading from %1"
-msgstr "Eroare la citirea din %1 "
-
-#: src/diskio/cachefile.cpp:434
-#, fuzzy, kde-format
-#| msgid "Failed to write to file %1 : %2"
-msgid "Failed to write to file %1: %2"
-msgstr "Eroare la scrierea în %1 : %2"
-
-#: src/diskio/cachefile.cpp:501
-#, fuzzy, kde-format
-#| msgid "Cannot preallocate diskspace : %1"
-msgid "Cannot preallocate diskspace: %1"
-msgstr "Nu am putut prealoca spațiu pe disc : %1"
-
 #: src/diskio/dndfile.cpp:89
 #, fuzzy, kde-format
-#| msgid "Cannot create file %1 : %2"
 msgid "Cannot create file %1: %2"
 msgstr "Nu am putut crea fișierul %1 : %2"
 
 #: src/diskio/dndfile.cpp:137
 #, fuzzy, kde-format
-#| msgid "Failed to write first chunk to DND file : %1"
 msgid "Failed to write first chunk to DND file: %1"
 msgstr "Nu am putut scrie prima bucată în fișierul DND: %1"
 
 #: src/diskio/dndfile.cpp:155
 #, fuzzy, kde-format
-#| msgid "Failed to write last chunk to DND file : %1"
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Nu am putut scrie ultima bucată în fișierul DND: %1"
 
-#: src/diskio/movedatafilesjob.cpp:166
-#, fuzzy
-#| msgid "Moving average"
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Viteză mutare"
-
-#: src/diskio/movedatafilesjob.cpp:167
-#, fuzzy
-#| msgid "Add Source"
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "Adaugă sursă"
-
-#: src/diskio/movedatafilesjob.cpp:168
-#, fuzzy
-#| msgid "Destination"
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "Destinație"
-
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, fuzzy, kde-format
-#| msgid "Failed to open %1 : %2"
 msgid "Failed to open %1: %2"
 msgstr "Nu am putut deschide %1 : %2"
 
 #: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
 #, fuzzy, kde-format
-#| msgid "Failed to create %1 : %2"
 msgid "Failed to create %1: %2"
 msgstr "Nu am putut crea %1 : %2"
 
@@ -182,75 +92,87 @@ msgstr "Nu am putut crea %1 : %2"
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
 
-#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
+#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
+#: src/util/fileops.cpp:399
 #, fuzzy, kde-format
-#| msgid "Cannot open index file %1 : %2"
+msgid "Cannot open %1: %2"
+msgstr "Nu am putut deschide %1 : %2"
+
+#: src/diskio/cachefile.cpp:122 src/diskio/cachefile.cpp:250
+#: src/diskio/cachefile.cpp:414 src/diskio/cachefile.cpp:482
+#, fuzzy, kde-format
+msgid "Cannot open %1 for writing: readonly filesystem"
+msgstr ""
+"Nu am putut deschide %1 pentru scriere : sistem de fișiere protejat la "
+"scriere."
+
+#: src/diskio/cachefile.cpp:129 src/diskio/cachefile.cpp:420
+#, kde-format
+msgid "Attempting to write beyond the maximum size of %1"
+msgstr ""
+
+#: src/diskio/cachefile.cpp:257
+#, kde-format
+msgid ""
+"Cannot expand file %1: attempting to grow the file beyond the maximum size"
+msgstr ""
+
+#: src/diskio/cachefile.cpp:261
+#, fuzzy, kde-format
+msgid "Cannot expand file %1: %2"
+msgstr "Nu am putut expanda fișierul %1 : %2"
+
+#: src/diskio/cachefile.cpp:380
+#, fuzzy, kde-format
+msgid "Error: Reading past the end of the file %1"
+msgstr "Eroare: am depășit capătul fișierului %1"
+
+#: src/diskio/cachefile.cpp:385 src/diskio/cachefile.cpp:432
+#, fuzzy, kde-format
+msgid "Failed to seek file %1: %2"
+msgstr "Am eșuat la căutarea în fișierul %1 : %2"
+
+#: src/diskio/cachefile.cpp:393
+#, kde-format
+msgid "Error reading from %1"
+msgstr "Eroare la citirea din %1 "
+
+#: src/diskio/cachefile.cpp:436
+#, fuzzy, kde-format
+msgid "Failed to write to file %1: %2"
+msgstr "Eroare la scrierea în %1 : %2"
+
+#: src/diskio/cachefile.cpp:503
+#, fuzzy, kde-format
+msgid "Cannot preallocate diskspace: %1"
+msgstr "Nu am putut prealoca spațiu pe disc : %1"
+
+#: src/diskio/chunkmanager.cpp:928 src/diskio/chunkmanager.cpp:954
+#, fuzzy, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr "Nu am putut deschide fișierul index %1 : %2"
 
-#: src/download/downloader.cpp:810
+#: src/diskio/movedatafilesjob.cpp:140
+msgid "Waiting for other move jobs to finish"
+msgstr ""
+
+#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
 #, fuzzy
-#| msgid "Displays all the webseeds of a torrent"
-msgid "Disabled because webseed does not match torrent"
-msgstr "Afișează toate semințele web ale unui torent"
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr "Adaugă sursă"
 
-#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
-msgid "Not connected"
-msgstr "Neconectat"
-
-#: src/download/httpconnection.cpp:107
-#, kde-format
-msgid "Resolving proxy %1:%2"
-msgstr "Se rezolvă proxy-ul %1:%2"
-
-#: src/download/httpconnection.cpp:116
-#, kde-format
-msgid "Resolving hostname %1"
-msgstr "Se rezolvă numele calculatorului %1"
-
-#: src/download/httpconnection.cpp:129 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "Conexiune închisă"
-
-#: src/download/httpconnection.cpp:136
-#, kde-format
-msgid "Error: request failed: %1"
-msgstr "Eroare: cererea a eșuat %1"
-
-#: src/download/httpconnection.cpp:153 src/download/httpconnection.cpp:217
-msgid "Connected"
-msgstr "Conectat"
-
-#: src/download/httpconnection.cpp:159
-msgid "Error: Failed to connect to webseed"
-msgstr "Eroare: conectarea la sămînța web a eșuat"
-
-#: src/download/httpconnection.cpp:224
-msgid "Connecting"
-msgstr "Se conectează"
-
-#: src/download/httpconnection.cpp:235
-msgid "Failed to connect to webseed"
-msgstr "Conectarea la sămînța web a eșuat"
-
-#: src/download/httpconnection.cpp:242
-msgid "Failed to resolve hostname of webseed"
-msgstr "Rezolvarea numelui pentru computerul seminței web a eșuat"
-
-#: src/download/httpconnection.cpp:322
-msgid "Error: failed to connect, server not responding"
-msgstr "Eroare: a eșuat conectarea, serverul nu răspunde"
-
-#: src/download/httpconnection.cpp:333
-msgid "Error: request timed out"
-msgstr "Eroare: cererea a expirat"
-
-#: src/download/httpconnection.cpp:398
+#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
 #, fuzzy
-#| msgid "Redirected without a new location !"
-msgid "Redirected without a new location."
-msgstr "Redirectare fără o locație nouă ! "
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr "Destinație"
+
+#: src/diskio/movedatafilesjob.cpp:180
+#, fuzzy
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Viteză mutare"
 
 #: src/download/chunkdownload.cpp:383
 #, kde-format
@@ -259,6 +181,73 @@ msgid_plural "%1 peers"
 msgstr[0] "1 partener"
 msgstr[1] "%1 parteneri"
 msgstr[2] "%1 de parteneri"
+
+#: src/download/downloader.cpp:808
+#, fuzzy
+msgid "Disabled because webseed does not match torrent"
+msgstr "Afișează toate semințele web ale unui torent"
+
+#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
+#: src/download/webseed.cpp:98
+msgid "Not connected"
+msgstr "Neconectat"
+
+#: src/download/httpconnection.cpp:115
+#, kde-format
+msgid "Resolving proxy %1:%2"
+msgstr "Se rezolvă proxy-ul %1:%2"
+
+#: src/download/httpconnection.cpp:121 src/download/httpconnection.cpp:139
+#, fuzzy
+msgid "Not enough system resources available"
+msgstr "Nu există destul spațiu pe disc la dispoziție."
+
+#: src/download/httpconnection.cpp:133
+#, kde-format
+msgid "Resolving hostname %1"
+msgstr "Se rezolvă numele calculatorului %1"
+
+#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
+msgid "Connection closed"
+msgstr "Conexiune închisă"
+
+#: src/download/httpconnection.cpp:160
+#, kde-format
+msgid "Error: request failed: %1"
+msgstr "Eroare: cererea a eșuat %1"
+
+#: src/download/httpconnection.cpp:188 src/download/httpconnection.cpp:222
+msgid "Connected"
+msgstr "Conectat"
+
+#: src/download/httpconnection.cpp:199
+msgid "Error: Failed to connect to webseed"
+msgstr "Eroare: conectarea la sămînța web a eșuat"
+
+#: src/download/httpconnection.cpp:229
+msgid "Connecting"
+msgstr "Se conectează"
+
+#: src/download/httpconnection.cpp:240
+msgid "Failed to connect to webseed"
+msgstr "Conectarea la sămînța web a eșuat"
+
+#: src/download/httpconnection.cpp:247
+msgid "Failed to resolve hostname of webseed"
+msgstr "Rezolvarea numelui pentru computerul seminței web a eșuat"
+
+#: src/download/httpconnection.cpp:326
+msgid "Error: failed to connect, server not responding"
+msgstr "Eroare: a eșuat conectarea, serverul nu răspunde"
+
+#: src/download/httpconnection.cpp:337
+msgid "Error: request timed out"
+msgstr "Eroare: cererea a expirat"
+
+#: src/download/httpconnection.cpp:402
+#, fuzzy
+msgid "Redirected without a new location."
+msgstr "Redirectare fără o locație nouă ! "
 
 #: src/download/webseed.cpp:545
 #, kde-format
@@ -271,7 +260,6 @@ msgstr "OK"
 
 #: src/interfaces/trackerinterface.cpp:58
 #, fuzzy, kde-format
-#| msgid "Opening %1"
 msgid "Warning: %1"
 msgstr "Deschidere %1"
 
@@ -279,9 +267,8 @@ msgstr "Deschidere %1"
 msgid "Announcing"
 msgstr "Se anunță"
 
-#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:86
+#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:87
 #, fuzzy, kde-format
-#| msgid "Error: "
 msgid "Error: %1"
 msgstr "Eroare: "
 
@@ -299,79 +286,16 @@ msgstr "Client necunoscut"
 msgid "Cannot create index file: %1"
 msgstr "Nu am putut crea fișierul index: %1"
 
-#: src/torrent/torrentstats.cpp:72
-msgid "Not started"
-msgstr "Nepornit"
-
-#: src/torrent/torrentstats.cpp:74
-msgid "Download completed"
-msgstr "Descărcare completă"
-
-#: src/torrent/torrentstats.cpp:76
-msgid "Seeding completed"
-msgstr "Încărcare completă"
-
-#: src/torrent/torrentstats.cpp:78
-#, fuzzy
-#| msgid "Seeding"
-msgctxt "Status of a torrent file"
-msgid "Seeding"
-msgstr "Încărcare"
-
-#: src/torrent/torrentstats.cpp:80
-msgid "Downloading"
-msgstr "Se descarcă"
-
-#: src/torrent/torrentstats.cpp:82
-msgid "Stalled"
-msgstr "Întrerupt"
-
-#: src/torrent/torrentstats.cpp:84
-msgid "Stopped"
-msgstr "Oprit"
-
-#: src/torrent/torrentstats.cpp:88
-msgid "Allocating diskspace"
-msgstr "Se alocă spațiu pe disc"
-
-#: src/torrent/torrentstats.cpp:90
-#, fuzzy
-#| msgid "Currently downloading:"
-msgid "Queued for seeding"
-msgstr "Se descarcă:"
-
-#: src/torrent/torrentstats.cpp:90
-#, fuzzy
-#| msgid "Currently downloading:"
-msgid "Queued for downloading"
-msgstr "Se descarcă:"
-
-#: src/torrent/torrentstats.cpp:94
-msgid "Stopped. No space left on device."
-msgstr "Oprit. Nu a mai rămas spațiu pe disc."
-
-#: src/torrent/torrentstats.cpp:96
-msgid "Paused"
-msgstr "Pauză"
-
-#: src/torrent/torrentstats.cpp:98
-#, fuzzy
-#| msgid "Seeding"
-msgid "Superseeding"
-msgstr "Încărcare"
-
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
 #: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
 #, fuzzy
-#| msgid "Corrupted torrent!"
 msgid "Corrupted torrent."
 msgstr "Torent corupt!"
 
 #: src/torrent/torrent.cpp:165
 #, fuzzy, kde-format
-#| msgid " Unable to open torrent file %1 : %2"
 msgid "Unable to open torrent file %1: %2"
 msgstr "Nu am putut deschide torentul %1 : %2"
 
@@ -379,11 +303,8 @@ msgstr "Nu am putut deschide torentul %1 : %2"
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:553
+#: src/torrent/torrentcontrol.cpp:554
 #, fuzzy, kde-format
-#| msgid ""
-#| "An error occurred while loading the torrent <b>%1</b>\n"
-#| "The torrent is probably corrupt or is not a torrent file."
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
 "torrent is probably corrupt or is not a valid torrent file."
@@ -391,22 +312,18 @@ msgstr ""
 "A apărut o eroare în timpul ce se încărca torentul <b>%1</b>.\n"
 "Torentul este probabil corupt sau nu este valid."
 
-#: src/torrent/torrentcontrol.cpp:583
+#: src/torrent/torrentcontrol.cpp:584
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:594
+#: src/torrent/torrentcontrol.cpp:595
 #, fuzzy, kde-format
-#| msgid "Unable to create %1 : %2"
 msgid "Unable to create %1: %2"
 msgstr "Nu am putut crea %1 : %2"
 
-#: src/torrent/torrentcontrol.cpp:609
+#: src/torrent/torrentcontrol.cpp:610
 #, fuzzy, kde-format
-#| msgid ""
-#| "You are already downloading this torrent %1, the list of trackers of both "
-#| "torrents has been merged."
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
 "both torrents have been merged."
@@ -414,41 +331,96 @@ msgstr ""
 "Deja se descarcă acest torent %1, lista trackerelor celor două torente a "
 "fost unificată"
 
-#: src/torrent/torrentcontrol.cpp:614
+#: src/torrent/torrentcontrol.cpp:615
 #, fuzzy, kde-format
-#| msgid "You are already downloading the torrent %1"
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Acest torent se descarcă deja %1"
 
+#: src/torrent/torrentstats.cpp:73
+msgid "Not started"
+msgstr "Nepornit"
+
+#: src/torrent/torrentstats.cpp:75
+msgid "Download completed"
+msgstr "Descărcare completă"
+
+#: src/torrent/torrentstats.cpp:77
+msgid "Seeding completed"
+msgstr "Încărcare completă"
+
+#: src/torrent/torrentstats.cpp:79
+#, fuzzy
+msgctxt "Status of a torrent file"
+msgid "Seeding"
+msgstr "Încărcare"
+
+#: src/torrent/torrentstats.cpp:81
+msgid "Downloading"
+msgstr "Se descarcă"
+
+#: src/torrent/torrentstats.cpp:83
+msgid "Stalled"
+msgstr "Întrerupt"
+
+#: src/torrent/torrentstats.cpp:85
+msgid "Stopped"
+msgstr "Oprit"
+
+#: src/torrent/torrentstats.cpp:89
+msgid "Allocating diskspace"
+msgstr "Se alocă spațiu pe disc"
+
+#: src/torrent/torrentstats.cpp:91
+#, fuzzy
+msgid "Queued for seeding"
+msgstr "Se descarcă:"
+
+#: src/torrent/torrentstats.cpp:91
+#, fuzzy
+msgid "Queued for downloading"
+msgstr "Se descarcă:"
+
+#: src/torrent/torrentstats.cpp:95
+msgid "Stopped. No space left on device."
+msgstr "Oprit. Nu a mai rămas spațiu pe disc."
+
+#: src/torrent/torrentstats.cpp:97
+msgid "Paused"
+msgstr "Pauză"
+
+#: src/torrent/torrentstats.cpp:99
+#, fuzzy
+msgid "Superseeding"
+msgstr "Încărcare"
+
 #: src/tracker/httpannouncejob.cpp:142
 #, fuzzy
-#| msgid "Redirected without a new location !"
 msgid "Redirect without a redirect location"
 msgstr "Redirectare fără o locație nouă ! "
 
-#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
-#: src/tracker/httptracker.cpp:557
+#: src/tracker/httptracker.cpp:287 src/tracker/httptracker.cpp:307
+#: src/tracker/httptracker.cpp:463
+msgid "Invalid response from tracker"
+msgstr "Răspuns invalid de la tracker"
+
+#: src/tracker/httptracker.cpp:300
+msgid "Invalid data from tracker"
+msgstr "Date invalide de la tracker"
+
+#: src/tracker/httptracker.cpp:480
+msgid "Invalid tracker URL"
+msgstr "URL invalid pentru tracker"
+
+#: src/tracker/httptracker.cpp:558 src/tracker/udptracker.cpp:364
+#: src/tracker/udptracker.cpp:374
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr ""
 
-#: src/tracker/udptracker.cpp:409
+#: src/tracker/udptracker.cpp:401
 #, kde-format
 msgid "Unable to resolve hostname %1"
 msgstr "Nu am putut rezolva numele computerului %1"
-
-#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:462
-msgid "Invalid response from tracker"
-msgstr "Răspuns invalid de la tracker"
-
-#: src/tracker/httptracker.cpp:293
-msgid "Invalid data from tracker"
-msgstr "Date invalide de la tracker"
-
-#: src/tracker/httptracker.cpp:479
-msgid "Invalid tracker URL"
-msgstr "URL invalid pentru tracker"
 
 #: src/util/logsystemmanager.cpp:33
 msgid "General"
@@ -476,7 +448,6 @@ msgstr ""
 
 #: src/util/file.cpp:84
 #, fuzzy, kde-format
-#| msgid "Cannot write to %1 : %2"
 msgid "Cannot write to %1: %2"
 msgstr "Nu am putut scrie în %1 : %2"
 
@@ -484,6 +455,16 @@ msgstr "Nu am putut scrie în %1 : %2"
 #, kde-format
 msgid "Cannot read from %1"
 msgstr "Nu am putut citi din %1"
+
+#: src/util/signalcatcher.cpp:78
+#, fuzzy
+msgid "Error when writing to disk"
+msgstr "Eroare la citirea din %1 "
+
+#: src/util/signalcatcher.cpp:78
+#, fuzzy
+msgid "Error when reading from disk"
+msgstr "Eroare la citirea din %1 "
 
 #: src/util/fileops.cpp:94
 #, kde-format
@@ -522,28 +503,26 @@ msgstr "Nu am putut calcula dimensiunea fișierului %1 : %2"
 
 #: src/util/fileops.cpp:327
 #, fuzzy, kde-format
-#| msgid "Cannot calculate the filesize : %1"
 msgid "Cannot calculate the filesize: %1"
 msgstr "Nu am putut calcula dimensiunea fișierului : %1"
 
 #: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
-#: src/util/fileops.cpp:387
+#: src/util/fileops.cpp:387 src/util/fileops.cpp:390
 #, kde-format
 msgid "Cannot expand file: %1"
 msgstr "Nu am putut expanda fișierul: %1"
 
-#: src/util/fileops.cpp:417
+#: src/util/fileops.cpp:420
 #, fuzzy, kde-format
-#| msgid "Cannot seek in file : %1"
 msgid "Cannot seek in file: %1"
 msgstr "Nu am putut căuta în fișierul: %1"
 
-#: src/util/functions.cpp:280
+#: src/util/functions.cpp:234
 #, kde-format
 msgid "%1/s"
 msgstr "%1/s"
 
-#: src/util/functions.cpp:291
+#: src/util/functions.cpp:245
 #, kde-format
 msgid "1 day "
 msgid_plural "%1 days "
@@ -551,21 +530,8 @@ msgstr[0] "1 zi "
 msgstr[1] "%1 zile "
 msgstr[2] "%1 de zile "
 
-#: src/util/signalcatcher.cpp:62
-#, fuzzy
-#| msgid "Error reading from %1"
-msgid "Error when writing to disk"
-msgstr "Eroare la citirea din %1 "
-
-#: src/util/signalcatcher.cpp:62
-#, fuzzy
-#| msgid "Error reading from %1"
-msgid "Error when reading from disk"
-msgstr "Eroare la citirea din %1 "
-
 #: src/upnp/httprequest.cpp:96
 #, fuzzy
-#| msgid "Connection closed unexpectedly."
 msgid "Connection closed unexpectedly"
 msgstr "Conexiunea s-a închis neașteptat."
 
@@ -575,7 +541,6 @@ msgstr ""
 
 #: src/upnp/upnprouter.cpp:167
 #, fuzzy, kde-format
-#| msgid "Failed to download %1 : %2"
 msgid "Failed to download %1: %2"
 msgstr "Am eșuat la descărcarea %1 : %2"
 
@@ -585,9 +550,6 @@ msgstr "Eroare la parcurgerea descrierii ruterului."
 
 #: src/upnp/upnprouter.cpp:216
 #, fuzzy
-#| msgid ""
-#| "Forwarding failed: \n"
-#| "Device does not have a WANIPConnection or WANPPPConnection."
 msgid ""
 "Forwarding failed:\n"
 "Device does not have a WANIPConnection or WANPPPConnection."
@@ -603,31 +565,26 @@ msgstr ""
 
 #: examples/ktcli/main.cpp:60
 #, fuzzy
-#| msgid "Document to open"
 msgid "Torrent to open"
 msgstr "Document de deschis"
 
 #: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
 #, fuzzy
-#| msgid "Not in use"
 msgid "Port to use"
 msgstr "Neutilizat"
 
 #: examples/ktcli/main.cpp:63
 #, fuzzy
-#| msgid "Whether or not to enable a custom download order."
 msgid "Whether or not to enable encryption"
 msgstr "Activează sau nu o ordine particulară de descărcare."
 
 #: examples/ktcli/main.cpp:64
 #, fuzzy
-#| msgid "Whether or not to use µTorrent compatible peer exchange."
 msgid "Whether or not to enable peer exchange"
 msgstr "Folosiți sau nu schimbul de parteneri compatibil cu µTorrent."
 
 #: examples/ktcli/main.cpp:65
 #, fuzzy
-#| msgid "Whether or not to show system tray popup messages."
 msgid "Whether or not to use utp"
 msgstr "Arată sau nu indicii în tava de sistem."
 
@@ -638,19 +595,20 @@ msgstr ""
 #~ msgid "Parse Error"
 #~ msgstr "Eroare la parcurgere"
 
-#~ msgid "Cannot open file : %1 : %2"
-#~ msgstr "Nu am putut deschide fișierul:%1:%2"
-
-#~ msgid "Cannot open file %1 : %2"
-#~ msgstr "Nu am putut deschide fișierul %1 : %2"
-
 #~ msgid "Not in use"
 #~ msgstr "Neutilizat"
 
 #, fuzzy
-#~| msgid ""
-#~| "An error occurred while loading the torrent <b>%1</b>\n"
-#~| "The torrent is probably corrupt or is not a torrent file."
+#~ msgid "Not enough diskspace"
+#~ msgstr "Spațiu pe disc insuficient pentru %1"
+
+#~ msgid "Cannot open file %1 : %2"
+#~ msgstr "Nu am putut deschide fișierul %1 : %2"
+
+#~ msgid "Cannot open file : %1 : %2"
+#~ msgstr "Nu am putut deschide fișierul:%1:%2"
+
+#, fuzzy
 #~ msgid ""
 #~ "An error occurred while loading the torrent:<br/><b>%1</b><br/>The "
 #~ "torrent is probably corrupt or is not a valid torrent file."
@@ -661,16 +619,10 @@ msgstr ""
 #~ msgid "Cannot open log file %1 : %2"
 #~ msgstr "Nu am putut deschide jurnalul %1 : %2"
 
-#, fuzzy
-#~| msgid "Insufficient disk space for %1"
-#~ msgid "Not enough diskspace"
-#~ msgstr "Spațiu pe disc insuficient pentru %1"
-
 #~ msgid "Timeout occurred"
 #~ msgstr "Timpul a expirat"
 
 #, fuzzy
-#~| msgid "UDP"
 #~ msgid "UTP"
 #~ msgstr "UDP"
 
@@ -678,7 +630,6 @@ msgstr ""
 #~ msgstr "Nu am putut utiliza portul UDP %1 sau următoarele 10 porturi"
 
 #, fuzzy
-#~| msgid "Scan Folder"
 #~ msgctxt "plugin name"
 #~ msgid "Scan Folder"
 #~ msgstr "Citește directorul"
@@ -731,7 +682,6 @@ msgstr ""
 #~ msgstr "Redifuzare"
 
 #, fuzzy
-#~| msgid "Widget to manage RSS and Atom feeds"
 #~ msgid "Manages RSS and Atom feeds"
 #~ msgstr "Controale de gestionat fluxurile RSS și Atom"
 
@@ -742,7 +692,6 @@ msgstr ""
 #~ msgstr "Introduceți URL-ul fluxului RSS sau Atom."
 
 #, fuzzy
-#~| msgid "Failed to load feed %1 !"
 #~ msgid "Failed to load feed %1."
 #~ msgstr "Încărcarea fluxului %1 a eșuat!"
 
@@ -768,7 +717,6 @@ msgstr ""
 #~ msgstr "Adăugare/eliminare filtre"
 
 #, fuzzy
-#~| msgid "username"
 #~ msgid "Rename"
 #~ msgstr "utilizator"
 
@@ -806,7 +754,6 @@ msgstr ""
 #~ msgstr "Torent"
 
 #, fuzzy
-#~| msgid "There already is a tracker named <b>%1</b> !"
 #~ msgid "There already is a filter named %1, filter names must be unique."
 #~ msgstr "Există deja un tracker numit <b>%1</b> !"
 
@@ -823,12 +770,10 @@ msgstr ""
 #~ msgstr "<b>%1</b><br/>Previzualizare: %2<br/>Descărcat: %3 %"
 
 #, fuzzy
-#~| msgid "Left"
 #~ msgid "Length"
 #~ msgstr "Stînga"
 
 #, fuzzy
-#~| msgid "Clear"
 #~ msgid "Year"
 #~ msgstr "Șterge"
 
@@ -842,12 +787,10 @@ msgstr ""
 #~ msgstr "Fișier unic"
 
 #, fuzzy
-#~| msgid "Play"
 #~ msgid "Playlist"
 #~ msgstr "Pornește"
 
 #, fuzzy
-#~| msgid "Random Files"
 #~ msgid "Random"
 #~ msgstr "Fișiere aleatorii"
 
@@ -855,7 +798,6 @@ msgstr ""
 #~ msgstr "Elimină"
 
 #, fuzzy
-#~| msgid "Add Feed"
 #~ msgid "Add Media"
 #~ msgstr "Adaugă flux"
 
@@ -882,7 +824,6 @@ msgstr ""
 #~ msgstr "Aplicație media"
 
 #, fuzzy
-#~| msgid "Play"
 #~ msgid "Play List"
 #~ msgstr "Pornește"
 
@@ -908,7 +849,6 @@ msgstr ""
 #~ msgstr "Redare filme"
 
 #, fuzzy
-#~| msgid "Connections"
 #~ msgid "Collection:"
 #~ msgstr "Conexiuni"
 
@@ -916,12 +856,10 @@ msgstr ""
 #~ msgstr "Comută în ecran plin"
 
 #, fuzzy
-#~| msgid "KTorrent is not running !"
 #~ msgid "KTorrent is playing a video."
 #~ msgstr "KTorrent nu rulează !"
 
 #, fuzzy
-#~| msgid "Web interface skin:"
 #~ msgid "Cannot find web interface skins."
 #~ msgstr "Fațeta interfeței web:"
 
@@ -929,12 +867,10 @@ msgstr ""
 #~ msgstr "Interfața web"
 
 #, fuzzy
-#~| msgid "Invalid tracker URL"
 #~ msgid "Invalid data received"
 #~ msgstr "URL invalid pentru tracker"
 
 #, fuzzy
-#~| msgid "Folder to store temporary files"
 #~ msgid "Failed to open temporary file"
 #~ msgstr "Dosar pentru stocarea fișierelor temporare"
 
@@ -1078,7 +1014,6 @@ msgstr ""
 #~ msgstr "Nu"
 
 #, fuzzy
-#~| msgid "IP Address"
 #~ msgid "Address"
 #~ msgstr "Adresă IP"
 
@@ -1150,12 +1085,10 @@ msgstr ""
 #~ msgstr "Numărul cererilor de încărcare și descărcare"
 
 #, fuzzy
-#~| msgid "How much data we downloaded from this peer"
 #~ msgid "How much data we have downloaded from this peer"
 #~ msgstr "Cîte date am descărcat de la acest partener"
 
 #, fuzzy
-#~| msgid "How much data we uploaded to this peer"
 #~ msgid "How much data we have uploaded to this peer"
 #~ msgstr "Cîte date am încărcat acestui partener"
 
@@ -1172,7 +1105,6 @@ msgstr ""
 #~ msgstr "Info componentă"
 
 #, fuzzy
-#~| msgid "Status"
 #~ msgctxt "@title:tab"
 #~ msgid "Status"
 #~ msgstr "Stare"
@@ -1181,7 +1113,6 @@ msgstr ""
 #~ msgstr "Arată informații de stare despre torent"
 
 #, fuzzy
-#~| msgid "Files"
 #~ msgctxt "@title:tab"
 #~ msgid "Files"
 #~ msgstr "Fișiere"
@@ -1294,23 +1225,18 @@ msgstr ""
 #~ msgstr "Expandare ierarhie directoare"
 
 #, fuzzy
-#~| msgid "Filter"
 #~ msgid "File Tree"
 #~ msgstr "Filtru"
 
 #, fuzzy
-#~| msgid "File Exists"
 #~ msgid "File List"
 #~ msgstr "Fișierul există"
 
 #, fuzzy
-#~| msgid "New Filter"
 #~ msgid "Show Filter"
 #~ msgstr "Filtru nou"
 
 #, fuzzy
-#~| msgid ""
-#~| "You will lose all data in this file, are you sure you want to do this ?"
 #~ msgid ""
 #~ "You will lose all data in this file, are you sure you want to do this?"
 #~ msgid_plural ""
@@ -1335,12 +1261,10 @@ msgstr ""
 #~ msgstr "Descărcători"
 
 #, fuzzy
-#~| msgid "Times Downloaded:"
 #~ msgid "Times Downloaded"
 #~ msgstr "Număr de descărcări:"
 
 #, fuzzy
-#~| msgid "Next update:"
 #~ msgid "Next Update"
 #~ msgstr "Următoarea actualizare:"
 
@@ -1348,7 +1272,6 @@ msgstr ""
 #~ msgstr "Prioritate"
 
 #, fuzzy
-#~| msgid "Preview"
 #~ msgctxt "@title:column"
 #~ msgid "Preview"
 #~ msgstr "Previzualizare"
@@ -1389,17 +1312,14 @@ msgstr ""
 #~ msgstr "Disponibil"
 
 #, fuzzy
-#~| msgid "Add Tracker"
 #~ msgid "Add Trackers"
 #~ msgstr "Adaugă tracker"
 
 #, fuzzy
-#~| msgid "IP address of the peer"
 #~ msgid "Enter the URL's of the trackers, one per line:"
 #~ msgstr "Adresa IP a partenerului"
 
 #, fuzzy
-#~| msgid "There already is a tracker named <b>%1</b> !"
 #~ msgid "There already is a tracker named <b>%1</b>."
 #~ msgstr "Există deja un tracker numit <b>%1</b> !"
 
@@ -1447,7 +1367,6 @@ msgstr ""
 #~ msgstr "Scriptare"
 
 #, fuzzy
-#~| msgid "KTorrent Blacklisted Peers"
 #~ msgid "KTorrent Script Packages"
 #~ msgstr "Parteneri marcați inutilizabili KTorrent"
 
@@ -1455,8 +1374,6 @@ msgstr ""
 #~ msgstr "Toate fișierele"
 
 #, fuzzy
-#~| msgid ""
-#~| "You will lose all the downloaded data. Are you sure you want to do this?"
 #~ msgid ""
 #~ "Removing these scripts will fully delete them from your disk. Are you "
 #~ "sure you want to do this ?"
@@ -1468,12 +1385,10 @@ msgstr ""
 #~ msgstr "Proprietăți script"
 
 #, fuzzy
-#~| msgid "Invalid tracker URL"
 #~ msgid "Invalid archive."
 #~ msgstr "URL invalid pentru tracker"
 
 #, fuzzy
-#~| msgid "There already is a tracker named <b>%1</b> !"
 #~ msgid "There is already a script package named %1 installed."
 #~ msgstr "Există deja un tracker numit <b>%1</b> !"
 
@@ -1499,7 +1414,6 @@ msgstr ""
 #~ msgstr "Nimic"
 
 #, fuzzy
-#~| msgid "Display the logging output generated by KTorrent"
 #~ msgid "View the logging output generated by KTorrent"
 #~ msgstr "Afișează înregistrările de jurnal generate de KTorrent"
 
@@ -1519,7 +1433,6 @@ msgstr ""
 #~ msgstr "Deschide în filă nouă"
 
 #, fuzzy
-#~| msgid "Copy Torrent URL"
 #~ msgid "Copy URL"
 #~ msgstr "Copiază URL-ul torentului"
 
@@ -1533,7 +1446,6 @@ msgstr ""
 #~ msgstr "Căutare terminată"
 
 #, fuzzy
-#~| msgid "Search"
 #~ msgctxt "plugin name"
 #~ msgid "Search"
 #~ msgstr "Caută"
@@ -1551,7 +1463,6 @@ msgstr ""
 #~ msgstr "KTorrent"
 
 #, fuzzy
-#~| msgid "Folders to scan for torrents:"
 #~ msgid "Search the web for torrents."
 #~ msgstr "Directoare de citit pentru găsirea torentelor:"
 
@@ -1574,7 +1485,6 @@ msgstr ""
 #~ msgstr " Motor: "
 
 #, fuzzy
-#~| msgid "Do you want to download or save the torrent?"
 #~ msgid "Do you want to download this magnet link?"
 #~ msgstr "Doriți să descarc sau să salvez torentul?"
 
@@ -1591,14 +1501,10 @@ msgstr ""
 #~ msgstr "Adaugă un element"
 
 #, fuzzy
-#~| msgid "No day has been selected !"
 #~ msgid "No day has been selected."
 #~ msgstr "Nici o zi nu a fost selectată !"
 
 #, fuzzy
-#~| msgid ""
-#~| "Failed to add item, because it conflicts with another item on the "
-#~| "schedule !"
 #~ msgid ""
 #~ "Failed to add item, because it conflicts with another item on the "
 #~ "schedule."
@@ -1607,9 +1513,6 @@ msgstr ""
 #~ "element al programării !"
 
 #, fuzzy
-#~| msgid ""
-#~| "This item could not be added to all selected days, because it conflicts "
-#~| "with another item on the schedule !"
 #~ msgid ""
 #~ "This item could not be added to all selected days, because it conflicts "
 #~ "with another item on the schedule."
@@ -1618,14 +1521,12 @@ msgstr ""
 #~ "conflict cu un alt element al programării !"
 
 #, fuzzy
-#~| msgid "Bandwidth Schedule"
 #~ msgid ""
 #~ "Bandwidth\n"
 #~ "Schedule"
 #~ msgstr "Programare lățime de bandă"
 
 #, fuzzy
-#~| msgid "Bandwidth Schedule"
 #~ msgid "Edit the bandwidth schedule"
 #~ msgstr "Programare lățime de bandă"
 
@@ -1648,12 +1549,10 @@ msgstr ""
 #~ msgstr "Curăță programarea"
 
 #, fuzzy
-#~| msgid "Schedule line color:"
 #~ msgid "Scheduler Active"
 #~ msgstr "Culoare linie programare:"
 
 #, fuzzy
-#~| msgid "Add a new item to the schedule"
 #~ msgid "Activate or deactivate the scheduler"
 #~ msgstr "Adaugă un element nou la programare"
 
@@ -1661,9 +1560,6 @@ msgstr ""
 #~ msgstr "Fișiere programate de KTorrent"
 
 #, fuzzy
-#~| msgid ""
-#~| "This item conflicts with another item in the schedule, we cannot change "
-#~| "it !"
 #~ msgid ""
 #~ "This item conflicts with another item in the schedule, we cannot change "
 #~ "it."
@@ -1672,22 +1568,18 @@ msgstr ""
 #~ "modificat !"
 
 #, fuzzy
-#~| msgid "Current schedule: paused"
 #~ msgid "Current schedule: suspended"
 #~ msgstr "Program curent: pauză"
 
 #, fuzzy
-#~| msgid "Current schedule: %1 KiB/s download, %2 KiB/s upload"
 #~ msgid "Current schedule: %1/s download, %2/s upload"
 #~ msgstr "Program curent: %1 KiO/s descărcare, %2 KiO/s încărcare"
 
 #, fuzzy
-#~| msgid "Current schedule: unlimited download, %1 KiB/s upload"
 #~ msgid "Current schedule: unlimited download, %1/s upload"
 #~ msgstr "Program curent: descărcare nelimitată , %1 KiO/s încărcare"
 
 #, fuzzy
-#~| msgid "Current schedule: %1 KiB/s download, unlimited upload"
 #~ msgid "Current schedule: %1/s download, unlimited upload"
 #~ msgstr "Program curent: %1 KiO/s descărcare, încărcare nelimitată"
 
@@ -1695,7 +1587,6 @@ msgstr ""
 #~ msgstr "Program curent: încărcare și descărcare nelimitate"
 
 #, fuzzy
-#~| msgid "KTorrent scheduler files"
 #~ msgid " (scheduler disabled)"
 #~ msgstr "Fișiere programate de KTorrent"
 
@@ -1706,13 +1597,11 @@ msgstr ""
 #~ msgstr "Editare element"
 
 #, fuzzy
-#~| msgid "The file %1 is corrupted or not a proper KTorrent schedule file !"
 #~ msgid "The file %1 is corrupted or not a proper KTorrent schedule file."
 #~ msgstr ""
 #~ "Fișierul %1 este corupt sau nu o corespunde cu o programare KTorrent."
 
 #, fuzzy
-#~| msgid "Speed"
 #~ msgid "Suspended"
 #~ msgstr "Viteză"
 
@@ -1727,7 +1616,6 @@ msgstr ""
 #~ "%2 Încărcare"
 
 #, fuzzy
-#~| msgid "Configure Columns"
 #~ msgctxt "@title:window"
 #~ msgid "Configure Shutdown"
 #~ msgstr "Configurează coloane"
@@ -1736,28 +1624,23 @@ msgstr ""
 #~ msgstr "Oprire"
 
 #, fuzzy
-#~| msgid "Lucke"
 #~ msgid "Lock"
 #~ msgstr "Lucke"
 
 #, fuzzy
-#~| msgid "Directory to move data to when a torrent has finished downloading."
 #~ msgid "When all torrents finish downloading"
 #~ msgstr ""
 #~ "Director în care se mută datele cînd un torent a terminat de descărcat."
 
 #, fuzzy
-#~| msgid "Configure Columns"
 #~ msgid "Configure Shutdown"
 #~ msgstr "Configurează coloane"
 
 #, fuzzy
-#~| msgid "Downloading"
 #~ msgid "Downloading finishes"
 #~ msgstr "Se descarcă"
 
 #, fuzzy
-#~| msgid "Search finished"
 #~ msgid "Seeding finishes"
 #~ msgstr "Căutare terminată"
 
@@ -1771,12 +1654,10 @@ msgstr ""
 #~ msgstr "Se convertește..."
 
 #, fuzzy
-#~| msgid "Cannot open file %1: %2"
 #~ msgid "Cannot open zip file %1."
 #~ msgstr "Nu am putut deschide fișierul %1: %2"
 
 #, fuzzy
-#~| msgid "Cannot deselect missing files: %1"
 #~ msgid "Cannot find blocklist in zip file %1."
 #~ msgstr "Nu am putut deselecta fișierele lipsă: %1"
 
@@ -1798,17 +1679,14 @@ msgstr ""
 #~ msgstr "Stare: neîncărcat."
 
 #, fuzzy
-#~| msgid "Status: Downloading and converting new block list ..."
 #~ msgid "Status: Downloading and converting new block list..."
 #~ msgstr "Stare: se descarcă și se convertește lista de blocuri noi ..."
 
 #, fuzzy
-#~| msgid "No update done yet !"
 #~ msgid "No update done yet."
 #~ msgstr "Nici o actualizare efectuată deocamdată !"
 
 #, fuzzy
-#~| msgid "%1 (Last update attempt failed !)"
 #~ msgid "%1 (Last update attempt failed.)"
 #~ msgstr "%1 (Ultima tentativă de actualizare a eșuat !)"
 
@@ -1816,7 +1694,6 @@ msgstr ""
 #~ msgstr "Niciodată"
 
 #, fuzzy
-#~| msgid "Copy Torrent URL"
 #~ msgid "Copy Magnet URI"
 #~ msgstr "Copiază URL-ul torentului"
 
@@ -1830,12 +1707,10 @@ msgstr ""
 #~ msgstr "(C) 2005 - 2007 Joris Guisson and Ivan Vasic"
 
 #, fuzzy
-#~| msgid "Time Downloaded"
 #~ msgid "KTMagnetDownloader"
 #~ msgstr "Timp descărcare"
 
 #, fuzzy
-#~| msgid "Joris Guisson"
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "Joris Guisson"
 
@@ -1852,7 +1727,6 @@ msgstr ""
 #~ msgstr "BitTorrent"
 
 #, fuzzy
-#~| msgid " corrupted chunks"
 #~ msgid " corrupted chunk"
 #~ msgid_plural " corrupted chunks"
 #~ msgstr[0] " bucăți corupte"
@@ -1908,12 +1782,10 @@ msgstr ""
 #~ "pentru a schimba ordinea."
 
 #, fuzzy
-#~| msgid "Search"
 #~ msgid "Show Search"
 #~ msgstr "Caută"
 
 #, fuzzy
-#~| msgid "Move Up"
 #~ msgid "Move Top"
 #~ msgstr "Mută în sus"
 
@@ -1933,7 +1805,6 @@ msgstr ""
 #~ msgstr "Mutați torentul din coadă în jos"
 
 #, fuzzy
-#~| msgid "Bottom"
 #~ msgid "Move Bottom"
 #~ msgstr "Jos"
 
@@ -1941,17 +1812,14 @@ msgstr ""
 #~ msgstr "Mutați torentul la capătul cozii"
 
 #, fuzzy
-#~| msgid "Start torrent"
 #~ msgid "Start Magnet"
 #~ msgstr "Pornire torent"
 
 #, fuzzy
-#~| msgid "Remove Torrent"
 #~ msgid "Remove Magnet"
 #~ msgstr "Eliminare torent"
 
 #, fuzzy
-#~| msgid "Start"
 #~ msgctxt "@action Start all selected torrents in the current tab"
 #~ msgid "Start"
 #~ msgstr "Pornește"
@@ -1960,7 +1828,6 @@ msgstr ""
 #~ msgstr "Pornește toate torentele alese în fila curentă"
 
 #, fuzzy
-#~| msgid "Stop"
 #~ msgctxt "@action Stop all selected torrents in the current tab"
 #~ msgid "Stop"
 #~ msgstr "Oprește"
@@ -1969,18 +1836,15 @@ msgstr ""
 #~ msgstr "Oprește toate torentele alese în fila curentă"
 
 #, fuzzy
-#~| msgid "Pause"
 #~ msgctxt "@action Pause all selected torrents in the current tab"
 #~ msgid "Pause"
 #~ msgstr "Întrerupe"
 
 #, fuzzy
-#~| msgid "Start all selected torrents in the current tab"
 #~ msgid "Pause all selected torrents in the current tab"
 #~ msgstr "Pornește toate torentele alese în fila curentă"
 
 #, fuzzy
-#~| msgid "Remove"
 #~ msgctxt "@action Remove all selected torrents in the current tab"
 #~ msgid "Remove"
 #~ msgstr "Elimină"
@@ -1989,7 +1853,6 @@ msgstr ""
 #~ msgstr "Elimină toate torentele alese în fila curentă"
 
 #, fuzzy
-#~| msgid "Start All"
 #~ msgctxt "@action Start all torrents in the current tab"
 #~ msgid "Start All"
 #~ msgstr "Pornește toate"
@@ -1998,7 +1861,6 @@ msgstr ""
 #~ msgstr "Pornește toate torentele în fila curentă"
 
 #, fuzzy
-#~| msgid "Stop All"
 #~ msgctxt "@action Stop all torrents in the current tab"
 #~ msgid "Stop All"
 #~ msgstr "Oprește toate"
@@ -2116,7 +1978,6 @@ msgstr ""
 #~ msgstr "Locație"
 
 #, fuzzy
-#~| msgid "Add Feed"
 #~ msgid "Added"
 #~ msgstr "Adaugă flux"
 
@@ -2179,7 +2040,6 @@ msgstr ""
 #~ msgstr "Locația datelor torentului pe disc"
 
 #, fuzzy
-#~| msgid "No torrents loaded."
 #~ msgid "When this torrent was added"
 #~ msgstr "Niciun torent încărcat."
 
@@ -2262,9 +2122,6 @@ msgstr ""
 #~ msgstr "Arată o listă de fișiere"
 
 #, fuzzy
-#~| msgid ""
-#~| "The torrent <b>%1</b> has not finished downloading, do you want to "
-#~| "delete the incomplete data, too?"
 #~ msgid ""
 #~ "Some files of this torrent have been found in the completed downloads "
 #~ "directory. Do you want to import these files and use the completed "
@@ -2274,9 +2131,6 @@ msgstr ""
 #~ "imcomplete deasemenea?"
 
 #, fuzzy
-#~| msgid ""
-#~| "The torrent <b>%1</b> has not finished downloading, do you want to "
-#~| "delete the incomplete data, too?"
 #~ msgid ""
 #~ "All files of this torrent have been found in the completed downloads "
 #~ "directory. Do you want to import these files and use the completed "
@@ -2286,9 +2140,6 @@ msgstr ""
 #~ "imcomplete deasemenea?"
 
 #, fuzzy
-#~| msgid ""
-#~| "The torrent <b>%1</b> has not finished downloading, do you want to "
-#~| "delete the incomplete data, too?"
 #~ msgid ""
 #~ "The file <b>%1</b> was found in the completed downloads directory. Do you "
 #~ "want to import this file?"
@@ -2317,27 +2168,22 @@ msgstr ""
 #~ msgstr "%1 neajuns"
 
 #, fuzzy
-#~| msgid "Title: <b>%1</b>"
 #~ msgid "Existing files: <b>None</b>"
 #~ msgstr "Titlu: <b>%1</b>"
 
 #, fuzzy
-#~| msgid "Title: <b>%1</b>"
 #~ msgid "Existing files: <b>All</b>"
 #~ msgstr "Titlu: <b>%1</b>"
 
 #, fuzzy
-#~| msgid "Title: <b>%1</b><br/>Artist: <b>%2</b>"
 #~ msgid "Existing files: <b>%1</b> of <b>%2</b>"
 #~ msgstr "Titlu: <b>%1</b><br/>Artist: <b>%2</b>"
 
 #, fuzzy
-#~| msgid "Title: <b>%1</b>"
 #~ msgid "Existing file: <b>No</b>"
 #~ msgstr "Titlu: <b>%1</b>"
 
 #, fuzzy
-#~| msgid "Title: <b>%1</b>"
 #~ msgid "Existing file: <b>Yes</b>"
 #~ msgstr "Titlu: <b>%1</b>"
 
@@ -2423,9 +2269,6 @@ msgstr ""
 #~ msgstr "Listă de filtre IP"
 
 #, fuzzy
-#~| msgid ""
-#~| "Invalid IP address %1. You must enter an IP address in the format 'XXX."
-#~| "XXX.XXX.XXX'. You can also use wildcards for ranges like '127.0.0.*'."
 #~ msgid ""
 #~ "Invalid IP address <b>%1</b>. IP addresses must be in the format 'XXX.XXX."
 #~ "XXX.XXX'.<br/><br/>You can also use wildcards like '127.0.0.*' or specify "
@@ -2445,7 +2288,6 @@ msgstr ""
 #~ msgstr "Client Bittorrent pentru KDE"
 
 #, fuzzy
-#~| msgid "(C) 2005 - 2007 Joris Guisson and Ivan Vasic"
 #~ msgid "(C) 2005 - 2010 Joris Guisson and Ivan Vasic"
 #~ msgstr "(C) 2005 - 2007 Joris Guisson and Ivan Vasic"
 
@@ -2676,7 +2518,6 @@ msgstr ""
 #~ msgstr "Amichai Rothman"
 
 #, fuzzy
-#~| msgid "No torrents loaded."
 #~ msgid "Feature which adds the date a torrent was added"
 #~ msgstr "Niciun torent încărcat."
 
@@ -2720,17 +2561,14 @@ msgstr ""
 #~ msgstr "Deschide URL"
 
 #, fuzzy
-#~| msgid "Open a URL which points to a torrent"
 #~ msgid "Open a URL which points to a torrent, magnet links are supported"
 #~ msgstr "Deschide un URL ce indică spre un torent"
 
 #, fuzzy
-#~| msgid "Pause KTorrent"
 #~ msgid "Suspend KTorrent"
 #~ msgstr "Întrerupe KTorrent"
 
 #, fuzzy
-#~| msgid "Pause all running torrents"
 #~ msgid "Suspend all running torrents"
 #~ msgstr "Întrerupe toate torentele active"
 
@@ -2759,7 +2597,6 @@ msgstr ""
 #~ msgstr "Controlul care gestionează coada torentului"
 
 #, fuzzy
-#~| msgid "Displays all the chunks you are downloading, of a torrent"
 #~ msgid "Displays the currently downloading magnet links"
 #~ msgstr "Afișează toate bucățile unui torent pe care le descărcați"
 
@@ -2856,9 +2693,6 @@ msgstr ""
 #~ "Mergeți la Setări -> Configurare KTorrent, dacă doriți să schimbați "
 #~ "limitele."
 
-#~ msgid "There is not enough diskspace available."
-#~ msgstr "Nu există destul spațiu pe disc la dispoziție."
-
 #~ msgid ""
 #~ "Your disk is running out of space.<br /><b>%1</b> is being downloaded to "
 #~ "'%2'."
@@ -2873,9 +2707,6 @@ msgstr ""
 #~ msgstr "Limita de viteză în KiO/s"
 
 #, fuzzy
-#~| msgid ""
-#~| "KTorrent is unable to accept connections because the ports %1 to %2 are "
-#~| "already in use by another program."
 #~ msgid ""
 #~ "KTorrent is unable to accept connections because the TCP ports %1 is "
 #~ "already in use by another program."
@@ -2884,9 +2715,6 @@ msgstr ""
 #~ "%2 este deja utilizat de către o altă aplicație."
 
 #, fuzzy
-#~| msgid ""
-#~| "KTorrent is unable to accept connections because the ports %1 to %2 are "
-#~| "already in use by another program."
 #~ msgid ""
 #~ "KTorrent is unable to accept connections because the UDP port %1 is "
 #~ "already in use by another program."
@@ -2930,9 +2758,6 @@ msgstr ""
 #~ msgstr "Nu am putut recrea fișierul de date: %1"
 
 #, fuzzy
-#~| msgid ""
-#~| "KTorrent has found %1 torrents from the KDE3 version of KTorrent, do you "
-#~| "want to import them ?"
 #~ msgid ""
 #~ "KTorrent has found a torrent from the KDE3 version of KTorrent, do you "
 #~ "want to import it?"
@@ -3338,7 +3163,6 @@ msgstr ""
 #~ msgstr "Testează"
 
 #, fuzzy
-#~| msgid "IP filter file:"
 #~ msgid "filter on feed:"
 #~ msgstr "Fișier filtru IP:"
 
@@ -3349,7 +3173,6 @@ msgstr ""
 #~ msgstr "Stare:"
 
 #, fuzzy
-#~| msgid "Refresh"
 #~ msgid "Refresh every:"
 #~ msgstr "Reîmprospătează"
 
@@ -3396,24 +3219,6 @@ msgstr ""
 #~ msgstr "Care interfață va fi utilizată."
 
 #, fuzzy
-#~| msgid ""
-#~| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/"
-#~| "TR/REC-html40/strict.dtd\">\n"
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Scan the folder "
-#~| "recursively for torrents.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;\">Note: "
-#~| "<span style=\" font-weight:400;\">This will not be done for any folder "
-#~| "named loaded.</span></p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -3453,7 +3258,6 @@ msgstr ""
 #~ "html>"
 
 #, fuzzy
-#~| msgid "Required disk space:"
 #~ msgid "Login required"
 #~ msgstr "Spațiu pe disc necesar:"
 
@@ -3484,23 +3288,6 @@ msgstr ""
 #~ msgstr "Portul folosit de interfața web."
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">If you are behind a "
-#~| "router and you want to access the webinterface from somewhere on the "
-#~| "internet you need to forward the correct port.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">This checkbox will "
-#~| "ensure that the UPnP plugin automatically forwards the port. The UPnP "
-#~| "plugin needs to be loaded for this to work.</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -3566,52 +3353,42 @@ msgstr ""
 #~ msgstr "parolă"
 
 #, fuzzy
-#~| msgid "Update charts every"
 #~ msgid "Update charts every n gui updates"
 #~ msgstr "Actualizare grafice la fiecare"
 
 #, fuzzy
-#~| msgid "Show seeds in swarms"
 #~ msgid "Whether to show seeds in swarms"
 #~ msgstr "Arată încărcători în roiuri"
 
 #, fuzzy
-#~| msgid "Show leechers in swarms"
 #~ msgid "Whether to show leachers in swarms"
 #~ msgstr "Arată descărcători în roiuri"
 
 #, fuzzy
-#~| msgid "Color of the schedule background."
 #~ msgid "Color of the speed on dl chart"
 #~ msgstr "Culoare pentru fundalul programării."
 
 #, fuzzy
-#~| msgid "Color of the schedule background."
 #~ msgid "Color of the seeds on peers chart"
 #~ msgstr "Culoare pentru fundalul programării."
 
 #, fuzzy
-#~| msgid "Color of the schedule background."
 #~ msgid "Color of the speed on upload chart"
 #~ msgstr "Culoare pentru fundalul programării."
 
 #, fuzzy
-#~| msgid "Color of all lines on the schedule."
 #~ msgid "Color of the nodes on DHT chart"
 #~ msgstr "Culoare pentru toate liniile din programare."
 
 #, fuzzy
-#~| msgid "Use anti-aliasing"
 #~ msgid "Use anti aliasing on charts?"
 #~ msgstr "Folosește antialierea"
 
 #, fuzzy
-#~| msgid "Draw background grid"
 #~ msgid "Draw ugly grey background grid?"
 #~ msgstr "Desenează grila de fundal"
 
 #, fuzzy
-#~| msgid "Speed"
 #~ msgctxt "@title:window"
 #~ msgid "Speed"
 #~ msgstr "Viteză"
@@ -3701,7 +3478,6 @@ msgstr ""
 #~ msgstr "Schimbă tracker"
 
 #, fuzzy
-#~| msgid "Update Tracker"
 #~ msgid "Update Trackers"
 #~ msgstr "Actualizare tracker"
 
@@ -3715,7 +3491,6 @@ msgstr ""
 #~ msgstr "Viteza medie de descărcare:"
 
 #, fuzzy
-#~| msgid "Type"
 #~ msgid "Type:"
 #~ msgstr "Tip"
 
@@ -3924,18 +3699,15 @@ msgstr ""
 #~ msgstr "Configurări reluare automată"
 
 #, fuzzy
-#~| msgid "Auto resume after:"
 #~ msgid "Auto remove a torrent when:"
 #~ msgstr "Reluare automată după:"
 
 #, fuzzy
-#~| msgid "Directory to move data to when a torrent has finished downloading."
 #~ msgid "The torrent finishes downloading"
 #~ msgstr ""
 #~ "Director în care se mută datele cînd un torent a terminat de descărcat."
 
 #, fuzzy
-#~| msgid "Directory to move data to when a torrent has finished downloading."
 #~ msgid "The torrent finishes seeding"
 #~ msgstr ""
 #~ "Director în care se mută datele cînd un torent a terminat de descărcat."
@@ -3965,7 +3737,6 @@ msgstr ""
 #~ msgstr "Site web:"
 
 #, fuzzy
-#~| msgid "Use rich text for logging output"
 #~ msgid "Use rich log text"
 #~ msgstr "Folosește text formatat pentru jurnal"
 
@@ -4042,7 +3813,6 @@ msgstr ""
 #~ msgstr "Folosește text formatat pentru jurnal"
 
 #, fuzzy
-#~| msgid "Torrent Limits"
 #~ msgid "Torrent activity"
 #~ msgstr "Limite torent"
 
@@ -4063,7 +3833,6 @@ msgstr ""
 #~ msgstr "Bara de căutare"
 
 #, fuzzy
-#~| msgid "Current schedule:"
 #~ msgid "Current search engine"
 #~ msgstr "Program curent:"
 
@@ -4071,17 +3840,14 @@ msgstr ""
 #~ msgstr "Folosește navigatorul implicit"
 
 #, fuzzy
-#~| msgid "Use a custom browser."
 #~ msgid "Use custom browser"
 #~ msgstr "Utilizează navigator personalizat."
 
 #, fuzzy
-#~| msgid "Custom browser path:"
 #~ msgid "Custom browser executable path"
 #~ msgstr "Calea navigatorului particularizat:"
 
 #, fuzzy
-#~| msgid "Clear Search History"
 #~ msgid "Clear the search history combo boxes."
 #~ msgstr "Curăță istoric căutare"
 
@@ -4089,7 +3855,6 @@ msgstr ""
 #~ msgstr "Curăță istoric căutare"
 
 #, fuzzy
-#~| msgid "Open searches in external browser"
 #~ msgid "Whether or not to open searches in an external browser."
 #~ msgstr "Deschide căutările în navigator extern"
 
@@ -4133,7 +3898,6 @@ msgstr ""
 #~ msgstr "Adaugă imp&licit"
 
 #, fuzzy
-#~| msgid "Speed Limits"
 #~ msgid "Special Limits"
 #~ msgstr "Limite de viteză"
 
@@ -4162,12 +3926,10 @@ msgstr ""
 #~ msgstr "Culoare pentru fiecare element normal din programare."
 
 #, fuzzy
-#~| msgid "Paused schedule item color:"
 #~ msgid "Suspended schedule item color:"
 #~ msgstr "Culoare element programare întreruptă:"
 
 #, fuzzy
-#~| msgid "Color of each paused item on the schedule."
 #~ msgid "Color of each suspended item on the schedule."
 #~ msgstr "Culoare pentru fiecare element întrerupt din programare."
 
@@ -4196,7 +3958,6 @@ msgstr ""
 #~ msgstr "Limită încărcare:"
 
 #, fuzzy
-#~| msgid "Set connection limits"
 #~ msgid "Connection Limits"
 #~ msgstr "Stabilește limitele conexiunii"
 
@@ -4234,12 +3995,10 @@ msgstr ""
 #~ msgstr "Acțiune de executat:"
 
 #, fuzzy
-#~| msgid "Remove Filter"
 #~ msgid "Level1 filter url"
 #~ msgstr "Elimină filtru"
 
 #, fuzzy
-#~| msgid "Use PeerGuardian filter"
 #~ msgid "Use level1 filter?"
 #~ msgstr "Folosește filtrul PeerGuardian"
 
@@ -4256,7 +4015,6 @@ msgstr ""
 #~ msgstr "Fișier filtru IP:"
 
 #, fuzzy
-#~| msgid "Status: Downloading and converting new block list ..."
 #~ msgid "Download and convert the IP filter file."
 #~ msgstr "Stare: se descarcă și se convertește lista de blocuri noi ..."
 
@@ -4296,47 +4054,38 @@ msgstr ""
 #~ msgstr "&Anulare"
 
 #, fuzzy
-#~| msgid "Search Preferences"
 #~ msgid "Magnet Generator Preferences"
 #~ msgstr "Preferințe de căutare"
 
 #, fuzzy
-#~| msgid "Add Tracker"
 #~ msgid "Add tracker"
 #~ msgstr "Adaugă tracker"
 
 #, fuzzy
-#~| msgid "Tracker"
 #~ msgid "Tracker:"
 #~ msgstr "Tracker"
 
 #, fuzzy
-#~| msgid "Move a torrent down in the queue"
 #~ msgid "Add the torrent name in the URI"
 #~ msgstr "Mutați torentul din coadă în jos"
 
 #, fuzzy
-#~| msgid "Add an item"
 #~ msgid "Add name"
 #~ msgstr "Adaugă un element"
 
 #, fuzzy
-#~| msgid "Show Video"
 #~ msgid "Show popup"
 #~ msgstr "Arată video"
 
 #, fuzzy
-#~| msgid "Tracker"
 #~ msgid "Toggles tracker"
 #~ msgstr "Tracker"
 
 #, fuzzy
-#~| msgid "Use default browser"
 #~ msgid "The default tracker"
 #~ msgstr "Folosește navigatorul implicit"
 
 #, fuzzy
-#~| msgid "Show Feed"
 #~ msgid "Show dn"
 #~ msgstr "Arată flux"
 
@@ -4557,7 +4306,6 @@ msgstr ""
 #~ "lățimea de bandă disponibilă."
 
 #, fuzzy
-#~| msgid "Recommended Settings"
 #~ msgid "Recommended Settings..."
 #~ msgstr "Configurări recomandate"
 
@@ -5051,6 +4799,10 @@ msgstr ""
 
 #~ msgid "Show system tray icon"
 #~ msgstr "Arată pictogramă în tava de sistem"
+
+#, fuzzy
+#~ msgid "Whether or not to show system tray popup messages."
+#~ msgstr "Arată indicii în tava de sistem"
 
 #~ msgid "Show system tray popup messages"
 #~ msgstr "Arată indicii în tava de sistem"
@@ -5590,7 +5342,6 @@ msgstr ""
 #~ msgstr "0"
 
 #, fuzzy
-#~| msgid "File"
 #~ msgid "Failed:"
 #~ msgstr "Fișier"
 
@@ -5614,7 +5365,6 @@ msgstr ""
 #~ "descărcate, dar nu OK.</p></body></html>"
 
 #, fuzzy
-#~| msgid "Downloaded:"
 #~ msgid "Not downloaded:"
 #~ msgstr "Descărcate:"
 
@@ -5901,7 +5651,6 @@ msgstr ""
 #~ msgstr "Expandare tot"
 
 #, fuzzy
-#~| msgid "Skip data check if existing files are found"
 #~ msgid "No existing files are found"
 #~ msgstr "Sari peste verificarea datelor dacă se găsesc fișiere existente"
 
@@ -5953,12 +5702,10 @@ msgstr ""
 #~ msgstr "Spațiu pe disc"
 
 #, fuzzy
-#~| msgid "Required disk space:"
 #~ msgid "Required:"
 #~ msgstr "Spațiu pe disc necesar:"
 
 #, fuzzy
-#~| msgid "Available"
 #~ msgid "Available:"
 #~ msgstr "Disponibil"
 
@@ -5966,12 +5713,10 @@ msgstr ""
 #~ msgstr "După descărcare:"
 
 #, fuzzy
-#~| msgid "Speed limits for all torrents (double click to edit):"
 #~ msgid "Speed limits for individual torrents (double click to edit):"
 #~ msgstr "Limită de viteză pentru toate torentele (dublu clic pentru editare)"
 
 #, fuzzy
-#~| msgid "Filter"
 #~ msgid "Filter:"
 #~ msgstr "Filtru"
 
@@ -6140,7 +5885,6 @@ msgstr ""
 #~ msgstr "&Fișier"
 
 #, fuzzy
-#~| msgid "ViewMenu"
 #~ msgid "&View"
 #~ msgstr "MeniuVizualizare"
 
@@ -6166,9 +5910,6 @@ msgstr ""
 #~ msgstr "Adaugă partener:"
 
 #, fuzzy
-#~| msgid ""
-#~| "Invalid IP address %1. You must enter an IP address in the format 'XXX."
-#~| "XXX.XXX.XXX'. You can also use wildcards for ranges like '127.0.0.*'."
 #~ msgid ""
 #~ "IP addresses must be in the format 'XXX.XXX.XXX.XXX'.\n"
 #~ "                                        \n"
@@ -6293,7 +6034,6 @@ msgstr ""
 #~ msgstr "Reia KTorrent"
 
 #, fuzzy
-#~| msgid "Resume paused torrents"
 #~ msgid "Resume suspended torrents"
 #~ msgstr "Reia toate torentele"
 
@@ -6390,7 +6130,6 @@ msgstr ""
 #~ "faceți asta?"
 
 #, fuzzy
-#~| msgid "From:"
 #~ msgid "Form"
 #~ msgstr "De la:"
 
@@ -6454,7 +6193,6 @@ msgstr ""
 #~ msgstr "Folosește o listă pentru afișarea fișierelor dintr-un torent"
 
 #, fuzzy
-#~| msgid "Torrent has no announce or nodes field"
 #~ msgid "Torrent has no announce or nodes field."
 #~ msgstr "Torentul nu conține cîmpul de anunț sau de noduri"
 
@@ -6694,16 +6432,6 @@ msgstr ""
 #~ msgstr "TextLabel"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~| "size:8pt; font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Time used for the "
-#~| "stall timer. When a torrent is stalled longer than this, it's priority "
-#~| "will be decreased.</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -6728,30 +6456,6 @@ msgstr ""
 #~ "scade .</p></body></html>"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Which method to use "
-#~| "for reserving diskspace.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Basic: </span>Will work on all filesystems, but is slow.</"
-#~| "p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Filesystem Specific: </span>Will use special methods "
-#~| "provided by some filesystems, which are faster then the basic method.</"
-#~| "p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -6808,7 +6512,6 @@ msgstr ""
 #~ msgstr "Încărcări în coadă"
 
 #, fuzzy
-#~| msgid "<b>%1</b><br/><br/>%2"
 #~ msgid ""
 #~ "%1\n"
 #~ "%2 active filters"
@@ -6824,7 +6527,6 @@ msgstr ""
 #~ msgstr "Descărcat: %1 / %2 Încărcat: %3"
 
 #, fuzzy
-#~| msgid "<b>%1</b><br/><br/>%2"
 #~ msgid "<b>%1</b><br/>1 active filter"
 #~ msgstr "<b>%1</b><br/><br/>%2"
 

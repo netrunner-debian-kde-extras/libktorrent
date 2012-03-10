@@ -22,10 +22,10 @@
 #ifndef UTP_DELAYWINDOW_H
 #define UTP_DELAYWINDOW_H
 
-#include <list>
+#include <boost/circular_buffer.hpp>
 #include <utp/utpprotocol.h>
 
-namespace utp 
+namespace utp
 {
 	const bt::Uint32 MAX_DELAY = 0xFFFFFFFF;
 
@@ -34,32 +34,32 @@ namespace utp
 	public:
 		DelayWindow();
 		virtual ~DelayWindow();
-		
+
 		/// Update the window with a new packet, returns the base delay
-		bt::Uint32 update(const Header* hdr,bt::TimeStamp receive_time);
-		
+		bt::Uint32 update(const Header* hdr, bt::TimeStamp receive_time);
+
 	private:
 		struct DelayEntry
 		{
 			bt::Uint32 timestamp_difference_microseconds;
 			bt::TimeStamp receive_time;
-			
-			DelayEntry() : timestamp_difference_microseconds(0),receive_time(0)
+
+			DelayEntry() : timestamp_difference_microseconds(0), receive_time(0)
 			{}
-			
-			DelayEntry(bt::Uint32 tdm,bt::TimeStamp rt) : timestamp_difference_microseconds(tdm),receive_time(rt)
+
+			DelayEntry(bt::Uint32 tdm, bt::TimeStamp rt) : timestamp_difference_microseconds(tdm), receive_time(rt)
 			{}
-			
-			bool operator < (const DelayEntry & e) const 
+
+			bool operator < (const DelayEntry & e) const
 			{
 				return timestamp_difference_microseconds < e.timestamp_difference_microseconds;
 			}
 		};
-		
-		typedef std::list<DelayEntry>::iterator DelayEntryItr;
-		
+
+		typedef boost::circular_buffer<DelayEntry>::iterator DelayEntryItr;
+
 	private:
-		std::list<DelayEntry> delay_window;
+		boost::circular_buffer<DelayEntry> delay_window;
 	};
 
 }
