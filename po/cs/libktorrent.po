@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-11 11:17+0200\n"
+"POT-Creation-Date: 2012-02-07 18:22+0100\n"
 "PO-Revision-Date: 2011-11-07 15:57+0100\n"
 "Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -17,100 +17,47 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Lokalize 1.2\n"
 
-#: src/bcodec/bdecoder.cpp:62
+#: src/bcodec/bdecoder.cpp:71
 #, kde-format
 msgid "Illegal token: %1"
 msgstr "Neplatný token: %1"
 
-#: src/bcodec/bdecoder.cpp:125 src/bcodec/bdecoder.cpp:133
+#: src/bcodec/bdecoder.cpp:133 src/bcodec/bdecoder.cpp:141
 msgid "Decode error"
 msgstr "Chyba v dekódování"
 
-#: src/bcodec/bdecoder.cpp:193 src/bcodec/bdecoder.cpp:238
+#: src/bcodec/bdecoder.cpp:201 src/bcodec/bdecoder.cpp:246
 msgid "Unexpected end of input"
 msgstr "Neočekávaný konec vstupu"
 
-#: src/bcodec/bdecoder.cpp:213 src/bcodec/bdecoder.cpp:247
+#: src/bcodec/bdecoder.cpp:221 src/bcodec/bdecoder.cpp:255
 #, kde-format
 msgid "Cannot convert %1 to an int"
 msgstr "Nelze převést %1 na celé číslo"
 
-#: src/bcodec/bdecoder.cpp:252
+#: src/bcodec/bdecoder.cpp:260
 msgid "Torrent is incomplete."
 msgstr "Torrent je nekompletní."
 
-#: src/datachecker/datacheckerjob.cpp:76
+#: src/datachecker/datacheckerjob.cpp:82
 msgid "Waiting for other data checks to finish"
 msgstr "Čekám na dokončení ostatních kontrol dat"
 
-#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:93
 msgid "Checking data"
 msgstr "Kontroluji data"
 
-#: src/datachecker/datacheckerjob.cpp:135
+#: src/datachecker/datacheckerjob.cpp:141
 msgid "Checking Data"
 msgstr "Kontroluji data"
 
-#: src/datachecker/multidatachecker.cpp:203
+#: src/datachecker/multidatachecker.cpp:209
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
 #, kde-format
 msgid "Cannot open file %1: %2"
 msgstr "Nelze otevřít soubor %1: %2"
-
-#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
-#: src/util/fileops.cpp:396
-#, kde-format
-msgid "Cannot open %1: %2"
-msgstr "Nelze otevřít %1: %2"
-
-#: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
-#: src/diskio/cachefile.cpp:412 src/diskio/cachefile.cpp:480
-#, kde-format
-msgid "Cannot open %1 for writing: readonly filesystem"
-msgstr "Nelze otevřít %1 pro zápis: souborový systém je pouze pro čtení"
-
-#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:418
-#, kde-format
-msgid "Attempting to write beyond the maximum size of %1"
-msgstr "Pokouším se zapsat přes maximální velikost %1"
-
-#: src/diskio/cachefile.cpp:255
-#, kde-format
-msgid ""
-"Cannot expand file %1: attempting to grow the file beyond the maximum size"
-msgstr "Nelze rozšířit soubor %1: pokouším se růst přes maximální velikost"
-
-#: src/diskio/cachefile.cpp:259
-#, kde-format
-msgid "Cannot expand file %1: %2"
-msgstr "Nelze rozšířit soubor %1: %2"
-
-#: src/diskio/cachefile.cpp:378
-#, kde-format
-msgid "Error: Reading past the end of the file %1"
-msgstr "Chyba: Čtení za koncem souboru %1"
-
-#: src/diskio/cachefile.cpp:383 src/diskio/cachefile.cpp:430
-#, kde-format
-msgid "Failed to seek file %1: %2"
-msgstr "Selhalo nalezení souboru %1: %2"
-
-#: src/diskio/cachefile.cpp:391
-#, kde-format
-msgid "Error reading from %1"
-msgstr "Chyba při čtení z %1"
-
-#: src/diskio/cachefile.cpp:434
-#, kde-format
-msgid "Failed to write to file %1: %2"
-msgstr "Zápis do souboru %1 selhal: %2"
-
-#: src/diskio/cachefile.cpp:501
-#, kde-format
-msgid "Cannot preallocate diskspace: %1"
-msgstr "Nelze předalokovat místo na disku: %1"
 
 #: src/diskio/dndfile.cpp:89
 #, kde-format
@@ -127,21 +74,6 @@ msgstr "Nelze zapsat první blok do souboru DND: %1"
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Selhalo zapisování posledního bloku do souboru DND: %1"
 
-#: src/diskio/movedatafilesjob.cpp:166
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Přesouvání"
-
-#: src/diskio/movedatafilesjob.cpp:167
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "Zdroj"
-
-#: src/diskio/movedatafilesjob.cpp:168
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "Cíl"
-
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, kde-format
 msgid "Failed to open %1: %2"
@@ -156,70 +88,82 @@ msgstr "Nelze vytvořit %1: %2"
 msgid "Unable to write to a piece mapped read only"
 msgstr "Nelze zapisovat do části mapované pouze pro čtení"
 
-#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
+#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
+#: src/util/fileops.cpp:399
+#, kde-format
+msgid "Cannot open %1: %2"
+msgstr "Nelze otevřít %1: %2"
+
+#: src/diskio/cachefile.cpp:122 src/diskio/cachefile.cpp:250
+#: src/diskio/cachefile.cpp:414 src/diskio/cachefile.cpp:482
+#, kde-format
+msgid "Cannot open %1 for writing: readonly filesystem"
+msgstr "Nelze otevřít %1 pro zápis: souborový systém je pouze pro čtení"
+
+#: src/diskio/cachefile.cpp:129 src/diskio/cachefile.cpp:420
+#, kde-format
+msgid "Attempting to write beyond the maximum size of %1"
+msgstr "Pokouším se zapsat přes maximální velikost %1"
+
+#: src/diskio/cachefile.cpp:257
+#, kde-format
+msgid ""
+"Cannot expand file %1: attempting to grow the file beyond the maximum size"
+msgstr "Nelze rozšířit soubor %1: pokouším se růst přes maximální velikost"
+
+#: src/diskio/cachefile.cpp:261
+#, kde-format
+msgid "Cannot expand file %1: %2"
+msgstr "Nelze rozšířit soubor %1: %2"
+
+#: src/diskio/cachefile.cpp:380
+#, kde-format
+msgid "Error: Reading past the end of the file %1"
+msgstr "Chyba: Čtení za koncem souboru %1"
+
+#: src/diskio/cachefile.cpp:385 src/diskio/cachefile.cpp:432
+#, kde-format
+msgid "Failed to seek file %1: %2"
+msgstr "Selhalo nalezení souboru %1: %2"
+
+#: src/diskio/cachefile.cpp:393
+#, kde-format
+msgid "Error reading from %1"
+msgstr "Chyba při čtení z %1"
+
+#: src/diskio/cachefile.cpp:436
+#, kde-format
+msgid "Failed to write to file %1: %2"
+msgstr "Zápis do souboru %1 selhal: %2"
+
+#: src/diskio/cachefile.cpp:503
+#, kde-format
+msgid "Cannot preallocate diskspace: %1"
+msgstr "Nelze předalokovat místo na disku: %1"
+
+#: src/diskio/chunkmanager.cpp:928 src/diskio/chunkmanager.cpp:954
 #, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr "Nelze otevřít index soubor %1: %2"
 
-#: src/download/downloader.cpp:810
-msgid "Disabled because webseed does not match torrent"
-msgstr "Zakázáno protože webový seed se neshoduje s torrentem"
+#: src/diskio/movedatafilesjob.cpp:140
+msgid "Waiting for other move jobs to finish"
+msgstr "Čekám na dokončení ostatních úkolů pro skončení"
 
-#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
-msgid "Not connected"
-msgstr "Nepřipojen"
+#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr "Zdroj"
 
-#: src/download/httpconnection.cpp:107
-#, kde-format
-msgid "Resolving proxy %1:%2"
-msgstr "Zjišťuji proxy %1:%2"
+#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr "Cíl"
 
-#: src/download/httpconnection.cpp:116
-#, kde-format
-msgid "Resolving hostname %1"
-msgstr "Zjišťuji název počítače %1"
-
-#: src/download/httpconnection.cpp:129 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "Spojení uzavřeno"
-
-#: src/download/httpconnection.cpp:136
-#, kde-format
-msgid "Error: request failed: %1"
-msgstr "Chyba: požadavek selhal: %1"
-
-#: src/download/httpconnection.cpp:153 src/download/httpconnection.cpp:217
-msgid "Connected"
-msgstr "Připojen"
-
-#: src/download/httpconnection.cpp:159
-msgid "Error: Failed to connect to webseed"
-msgstr "Chyba: Připojení k webovému seedu selhalo"
-
-#: src/download/httpconnection.cpp:224
-msgid "Connecting"
-msgstr "Navazuji spojení"
-
-#: src/download/httpconnection.cpp:235
-msgid "Failed to connect to webseed"
-msgstr "Připojení k webovému seedu selhalo"
-
-#: src/download/httpconnection.cpp:242
-msgid "Failed to resolve hostname of webseed"
-msgstr "Zjištění jména počítače webového seedu selhalo"
-
-#: src/download/httpconnection.cpp:322
-msgid "Error: failed to connect, server not responding"
-msgstr "Chyba: spojení selhalo, server neodpovídá"
-
-#: src/download/httpconnection.cpp:333
-msgid "Error: request timed out"
-msgstr "Chyba: Vypršel časový limit požadavku"
-
-#: src/download/httpconnection.cpp:398
-msgid "Redirected without a new location."
-msgstr "Přesměrováno bez nového umístění."
+#: src/diskio/movedatafilesjob.cpp:180
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Přesouvání"
 
 #: src/download/chunkdownload.cpp:383
 #, kde-format
@@ -228,6 +172,70 @@ msgid_plural "%1 peers"
 msgstr[0] "1 protějšek"
 msgstr[1] "%1 protějšky"
 msgstr[2] "%1 protějšků"
+
+#: src/download/downloader.cpp:808
+msgid "Disabled because webseed does not match torrent"
+msgstr "Zakázáno protože webový seed se neshoduje s torrentem"
+
+#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
+#: src/download/webseed.cpp:98
+msgid "Not connected"
+msgstr "Nepřipojen"
+
+#: src/download/httpconnection.cpp:115
+#, kde-format
+msgid "Resolving proxy %1:%2"
+msgstr "Zjišťuji proxy %1:%2"
+
+#: src/download/httpconnection.cpp:121 src/download/httpconnection.cpp:139
+msgid "Not enough system resources available"
+msgstr "Není k dispozici dostatek systémových prostředků"
+
+#: src/download/httpconnection.cpp:133
+#, kde-format
+msgid "Resolving hostname %1"
+msgstr "Zjišťuji název počítače %1"
+
+#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
+msgid "Connection closed"
+msgstr "Spojení uzavřeno"
+
+#: src/download/httpconnection.cpp:160
+#, kde-format
+msgid "Error: request failed: %1"
+msgstr "Chyba: požadavek selhal: %1"
+
+#: src/download/httpconnection.cpp:188 src/download/httpconnection.cpp:222
+msgid "Connected"
+msgstr "Připojen"
+
+#: src/download/httpconnection.cpp:199
+msgid "Error: Failed to connect to webseed"
+msgstr "Chyba: Připojení k webovému seedu selhalo"
+
+#: src/download/httpconnection.cpp:229
+msgid "Connecting"
+msgstr "Navazuji spojení"
+
+#: src/download/httpconnection.cpp:240
+msgid "Failed to connect to webseed"
+msgstr "Připojení k webovému seedu selhalo"
+
+#: src/download/httpconnection.cpp:247
+msgid "Failed to resolve hostname of webseed"
+msgstr "Zjištění jména počítače webového seedu selhalo"
+
+#: src/download/httpconnection.cpp:326
+msgid "Error: failed to connect, server not responding"
+msgstr "Chyba: spojení selhalo, server neodpovídá"
+
+#: src/download/httpconnection.cpp:337
+msgid "Error: request timed out"
+msgstr "Chyba: Vypršel časový limit požadavku"
+
+#: src/download/httpconnection.cpp:402
+msgid "Redirected without a new location."
+msgstr "Přesměrováno bez nového umístění."
 
 #: src/download/webseed.cpp:545
 #, kde-format
@@ -247,7 +255,7 @@ msgstr "Varování: %1"
 msgid "Announcing"
 msgstr "Připojuji se"
 
-#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:86
+#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:87
 #, kde-format
 msgid "Error: %1"
 msgstr "Chyba: %1"
@@ -266,59 +274,6 @@ msgstr "Neznámý klient"
 msgid "Cannot create index file: %1"
 msgstr "Nelze vytvořit soubor s indexem: %1"
 
-#: src/torrent/torrentstats.cpp:72
-msgid "Not started"
-msgstr "Nespuštěno"
-
-#: src/torrent/torrentstats.cpp:74
-msgid "Download completed"
-msgstr "Stahování dokončeno"
-
-#: src/torrent/torrentstats.cpp:76
-msgid "Seeding completed"
-msgstr "Sdílení dokončeno"
-
-#: src/torrent/torrentstats.cpp:78
-msgctxt "Status of a torrent file"
-msgid "Seeding"
-msgstr "Sdílím"
-
-#: src/torrent/torrentstats.cpp:80
-msgid "Downloading"
-msgstr "Stahuji"
-
-#: src/torrent/torrentstats.cpp:82
-msgid "Stalled"
-msgstr "Stojící"
-
-#: src/torrent/torrentstats.cpp:84
-msgid "Stopped"
-msgstr "Zastaveno"
-
-#: src/torrent/torrentstats.cpp:88
-msgid "Allocating diskspace"
-msgstr "Přidělování diskového prostoru"
-
-#: src/torrent/torrentstats.cpp:90
-msgid "Queued for seeding"
-msgstr "Zařazeno do fronty pro sdílení"
-
-#: src/torrent/torrentstats.cpp:90
-msgid "Queued for downloading"
-msgstr "Zařazeno do fronty pro stahování"
-
-#: src/torrent/torrentstats.cpp:94
-msgid "Stopped. No space left on device."
-msgstr "Zastaveno. Není místo na disku."
-
-#: src/torrent/torrentstats.cpp:96
-msgid "Paused"
-msgstr "Pozastaveno"
-
-#: src/torrent/torrentstats.cpp:98
-msgid "Superseeding"
-msgstr "Super-sdílení"
-
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
@@ -335,7 +290,7 @@ msgstr "Nelze otevřít torrent soubor %1: %2"
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr "Chyba zápisu na disk, máte dostatek místa?"
 
-#: src/torrent/torrentcontrol.cpp:553
+#: src/torrent/torrentcontrol.cpp:554
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -344,17 +299,17 @@ msgstr ""
 "Při načítání torrentu <b>%1</b> došlo k chybě:<br/><b>%2</b><br/>Torrent je "
 "pravděpodobně poškozený nebo se nejedná o soubor torrentu."
 
-#: src/torrent/torrentcontrol.cpp:583
+#: src/torrent/torrentcontrol.cpp:584
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr "Během načítání <b>%1</b> nastala chyba:<br/><b>%2</b>"
 
-#: src/torrent/torrentcontrol.cpp:594
+#: src/torrent/torrentcontrol.cpp:595
 #, kde-format
 msgid "Unable to create %1: %2"
 msgstr "Nelze vytvořit %1: %2"
 
-#: src/torrent/torrentcontrol.cpp:609
+#: src/torrent/torrentcontrol.cpp:610
 #, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
@@ -362,38 +317,91 @@ msgid ""
 msgstr ""
 "Torrent <b>%1</b> již stahujete. Seznam trackerů obou torrentů byl sloučen."
 
-#: src/torrent/torrentcontrol.cpp:614
+#: src/torrent/torrentcontrol.cpp:615
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Již stahujete torrent <b>%1</b>."
+
+#: src/torrent/torrentstats.cpp:73
+msgid "Not started"
+msgstr "Nespuštěno"
+
+#: src/torrent/torrentstats.cpp:75
+msgid "Download completed"
+msgstr "Stahování dokončeno"
+
+#: src/torrent/torrentstats.cpp:77
+msgid "Seeding completed"
+msgstr "Sdílení dokončeno"
+
+#: src/torrent/torrentstats.cpp:79
+msgctxt "Status of a torrent file"
+msgid "Seeding"
+msgstr "Sdílím"
+
+#: src/torrent/torrentstats.cpp:81
+msgid "Downloading"
+msgstr "Stahuji"
+
+#: src/torrent/torrentstats.cpp:83
+msgid "Stalled"
+msgstr "Stojící"
+
+#: src/torrent/torrentstats.cpp:85
+msgid "Stopped"
+msgstr "Zastaveno"
+
+#: src/torrent/torrentstats.cpp:89
+msgid "Allocating diskspace"
+msgstr "Přidělování diskového prostoru"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Queued for seeding"
+msgstr "Zařazeno do fronty pro sdílení"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Queued for downloading"
+msgstr "Zařazeno do fronty pro stahování"
+
+#: src/torrent/torrentstats.cpp:95
+msgid "Stopped. No space left on device."
+msgstr "Zastaveno. Není místo na disku."
+
+#: src/torrent/torrentstats.cpp:97
+msgid "Paused"
+msgstr "Pozastaveno"
+
+#: src/torrent/torrentstats.cpp:99
+msgid "Superseeding"
+msgstr "Super-sdílení"
 
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "Přesměrování bez umístění přesměrování"
 
-#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
-#: src/tracker/httptracker.cpp:557
+#: src/tracker/httptracker.cpp:287 src/tracker/httptracker.cpp:307
+#: src/tracker/httptracker.cpp:463
+msgid "Invalid response from tracker"
+msgstr "Neplatná odpověď od trackeru"
+
+#: src/tracker/httptracker.cpp:300
+msgid "Invalid data from tracker"
+msgstr "Neplatná data z trackeru"
+
+#: src/tracker/httptracker.cpp:480
+msgid "Invalid tracker URL"
+msgstr "Neplatné URL trackeru"
+
+#: src/tracker/httptracker.cpp:558 src/tracker/udptracker.cpp:364
+#: src/tracker/udptracker.cpp:374
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Vypršel časový limit při kontaktování trackeru %1"
 
-#: src/tracker/udptracker.cpp:409
+#: src/tracker/udptracker.cpp:401
 #, kde-format
 msgid "Unable to resolve hostname %1"
 msgstr "Nelze rozpoznat název hostitele %1"
-
-#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:462
-msgid "Invalid response from tracker"
-msgstr "Neplatná odpověď od trackeru"
-
-#: src/tracker/httptracker.cpp:293
-msgid "Invalid data from tracker"
-msgstr "Neplatná data z trackeru"
-
-#: src/tracker/httptracker.cpp:479
-msgid "Invalid tracker URL"
-msgstr "Neplatné URL trackeru"
 
 #: src/util/logsystemmanager.cpp:33
 msgid "General"
@@ -428,6 +436,14 @@ msgstr "Nelze zapisovat do %1: %2"
 #, kde-format
 msgid "Cannot read from %1"
 msgstr "Nelze číst z %1"
+
+#: src/util/signalcatcher.cpp:78
+msgid "Error when writing to disk"
+msgstr "Chyba při zápisu na disk"
+
+#: src/util/signalcatcher.cpp:78
+msgid "Error when reading from disk"
+msgstr "Chyba při čtení z disku"
 
 #: src/util/fileops.cpp:94
 #, kde-format
@@ -470,36 +486,28 @@ msgid "Cannot calculate the filesize: %1"
 msgstr "Nelze spočítat velikost souboru: %1"
 
 #: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
-#: src/util/fileops.cpp:387
+#: src/util/fileops.cpp:387 src/util/fileops.cpp:390
 #, kde-format
 msgid "Cannot expand file: %1"
 msgstr "Nelze rozšířit soubor : %1"
 
-#: src/util/fileops.cpp:417
+#: src/util/fileops.cpp:420
 #, kde-format
 msgid "Cannot seek in file: %1"
 msgstr "Nelze hledat v souboru: %1"
 
-#: src/util/functions.cpp:280
+#: src/util/functions.cpp:234
 #, kde-format
 msgid "%1/s"
 msgstr "%1/s"
 
-#: src/util/functions.cpp:291
+#: src/util/functions.cpp:245
 #, kde-format
 msgid "1 day "
 msgid_plural "%1 days "
 msgstr[0] "1 den "
 msgstr[1] "%1 dnů "
 msgstr[2] "%1 "
-
-#: src/util/signalcatcher.cpp:62
-msgid "Error when writing to disk"
-msgstr "Chyba při zápisu na disk"
-
-#: src/util/signalcatcher.cpp:62
-msgid "Error when reading from disk"
-msgstr "Chyba při čtení z disku"
 
 #: src/upnp/httprequest.cpp:96
 msgid "Connection closed unexpectedly"
@@ -557,14 +565,18 @@ msgstr "ktcli"
 #~ msgid "Parse Error"
 #~ msgstr "Chyba analýzy"
 
-#~ msgid "Cannot open file : %1 : %2"
-#~ msgstr "Nelze otevřít soubor: %1 : %2"
+#~ msgid "Not in use"
+#~ msgstr "Nepoužito"
+
+#, fuzzy
+#~ msgid "Not enough diskspace"
+#~ msgstr "Nedostatek místa na disku pro %1"
 
 #~ msgid "Cannot open file %1 : %2"
 #~ msgstr "Nelze otevřít soubor %1: %2"
 
-#~ msgid "Not in use"
-#~ msgstr "Nepoužito"
+#~ msgid "Cannot open file : %1 : %2"
+#~ msgstr "Nelze otevřít soubor: %1 : %2"
 
 #~ msgid ""
 #~ "An error occurred while loading the torrent:<br/><b>%1</b><br/>The "
@@ -575,11 +587,6 @@ msgstr "ktcli"
 
 #~ msgid "Cannot open log file %1 : %2"
 #~ msgstr "Nelze otevřít soubor se záznamem %1: %2"
-
-#, fuzzy
-#~| msgid "Not enough free disk space for %1"
-#~ msgid "Not enough diskspace"
-#~ msgstr "Nedostatek místa na disku pro %1"
 
 #~ msgid "Timeout occurred"
 #~ msgstr "Vypršel časový limit"
@@ -1702,7 +1709,6 @@ msgstr "ktcli"
 #~ msgstr "Nikdy"
 
 #, fuzzy
-#~| msgid "Copy Torrent URL"
 #~ msgid "Copy Magnet URI"
 #~ msgstr "Kopírovat URL torrentu"
 
@@ -1829,7 +1835,6 @@ msgstr "ktcli"
 #~ msgstr "Odstranit torrent"
 
 #, fuzzy
-#~| msgid "Start"
 #~ msgctxt "@action Start all selected torrents in the current tab"
 #~ msgid "Start"
 #~ msgstr "Start"
@@ -1838,7 +1843,6 @@ msgstr "ktcli"
 #~ msgstr "Spustit všechny vybrané torrenty v aktuální kartě"
 
 #, fuzzy
-#~| msgid "Stop"
 #~ msgctxt "@action Stop all selected torrents in the current tab"
 #~ msgid "Stop"
 #~ msgstr "Zastavit"
@@ -1847,7 +1851,6 @@ msgstr "ktcli"
 #~ msgstr "Zastavit všechny vybrané torrenty v aktuální kartě"
 
 #, fuzzy
-#~| msgid "Pause"
 #~ msgctxt "@action Pause all selected torrents in the current tab"
 #~ msgid "Pause"
 #~ msgstr "Pauza"
@@ -1857,7 +1860,6 @@ msgstr "ktcli"
 #~ msgstr "Pozastavit všechny vybrané torrenty v aktuální kartě"
 
 #, fuzzy
-#~| msgid "Remove"
 #~ msgctxt "@action Remove all selected torrents in the current tab"
 #~ msgid "Remove"
 #~ msgstr "Odstranit"
@@ -1866,7 +1868,6 @@ msgstr "ktcli"
 #~ msgstr "Odstranit všechny vybrané torrenty v aktuální kartě"
 
 #, fuzzy
-#~| msgid "Start All"
 #~ msgctxt "@action Start all torrents in the current tab"
 #~ msgid "Start All"
 #~ msgstr "Spustit vše"
@@ -1875,7 +1876,6 @@ msgstr "ktcli"
 #~ msgstr "Spustit všechny torrenty v aktuální kartě"
 
 #, fuzzy
-#~| msgid "Stop All"
 #~ msgctxt "@action Stop all torrents in the current tab"
 #~ msgid "Stop All"
 #~ msgstr "Zastavit vše"
@@ -1994,7 +1994,6 @@ msgstr "ktcli"
 #~ msgstr "Umístění"
 
 #, fuzzy
-#~| msgid "Add Feed"
 #~ msgid "Added"
 #~ msgstr "Přidat kanál"
 
@@ -2055,7 +2054,6 @@ msgstr "ktcli"
 #~ msgstr "Umístění dat torrentu na disku"
 
 #, fuzzy
-#~| msgid "No torrents loaded."
 #~ msgid "When this torrent was added"
 #~ msgstr "Nenačteny žádné torrenty."
 
@@ -2309,7 +2307,6 @@ msgstr "ktcli"
 #~ msgstr "BitTorrent klient pro KDE"
 
 #, fuzzy
-#~| msgid "(C) 2005 - 2007 Joris Guisson and Ivan Vasic"
 #~ msgid "(C) 2005 - 2010 Joris Guisson and Ivan Vasic"
 #~ msgstr "(C) 2005 - 2007 Joris Guisson a Ivan Vasic"
 
@@ -2537,7 +2534,6 @@ msgstr "ktcli"
 #~ msgstr "Leo Trubach"
 
 #, fuzzy
-#~| msgid "No torrents loaded."
 #~ msgid "Feature which adds the date a torrent was added"
 #~ msgstr "Nenačteny žádné torrenty."
 
@@ -2718,9 +2714,6 @@ msgstr "ktcli"
 #~ msgstr ""
 #~ "Pokud chcete změnit limity, jděte na Nastavení -> Nastavit KTorrent."
 
-#~ msgid "There is not enough diskspace available."
-#~ msgstr "Není k dispozici dostatek místa na disku."
-
 #~ msgid ""
 #~ "Your disk is running out of space.<br /><b>%1</b> is being downloaded to "
 #~ "'%2'."
@@ -2733,9 +2726,6 @@ msgstr "ktcli"
 #~ msgstr "Rychlostní omezení v KiB/s"
 
 #, fuzzy
-#~| msgid ""
-#~| "KTorrent is unable to accept connections because the ports %1 to %2 are "
-#~| "already in use by another program."
 #~ msgid ""
 #~ "KTorrent is unable to accept connections because the TCP ports %1 is "
 #~ "already in use by another program."
@@ -2744,9 +2734,6 @@ msgstr "ktcli"
 #~ "již využívány jiným programem."
 
 #, fuzzy
-#~| msgid ""
-#~| "KTorrent is unable to accept connections because the ports %1 to %2 are "
-#~| "already in use by another program."
 #~ msgid ""
 #~ "KTorrent is unable to accept connections because the UDP port %1 is "
 #~ "already in use by another program."
@@ -3409,24 +3396,6 @@ msgstr "ktcli"
 #~ msgstr "Které rozhraní použít."
 
 #, fuzzy
-#~| msgid ""
-#~| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/"
-#~| "TR/REC-html40/strict.dtd\">\n"
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Scan the folder "
-#~| "recursively for torrents.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;\">Note: "
-#~| "<span style=\" font-weight:400;\">This will not be done for any folder "
-#~| "named loaded.</span></p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -3466,7 +3435,6 @@ msgstr "ktcli"
 #~ "pro všechny složky jmenovitě načtené.</span></p></body></html>"
 
 #, fuzzy
-#~| msgid "Required:"
 #~ msgid "Login required"
 #~ msgstr "Požadováno:"
 
@@ -4275,47 +4243,38 @@ msgstr "ktcli"
 #~ msgstr "Z&rušit"
 
 #, fuzzy
-#~| msgid "Search Preferences"
 #~ msgid "Magnet Generator Preferences"
 #~ msgstr "Nastavení hledání"
 
 #, fuzzy
-#~| msgid "Add Trackers"
 #~ msgid "Add tracker"
 #~ msgstr "Přidat trackery"
 
 #, fuzzy
-#~| msgid "Tracker"
 #~ msgid "Tracker:"
 #~ msgstr "Tracker"
 
 #, fuzzy
-#~| msgid "Move a torrent down in the queue"
 #~ msgid "Add the torrent name in the URI"
 #~ msgstr "Přesunout torrent ve frontě dolů"
 
 #, fuzzy
-#~| msgid "Add an item"
 #~ msgid "Add name"
 #~ msgstr "Přidat položku"
 
 #, fuzzy
-#~| msgid "Show Video"
 #~ msgid "Show popup"
 #~ msgstr "Zobrazit video"
 
 #, fuzzy
-#~| msgid "Tracker"
 #~ msgid "Toggles tracker"
 #~ msgstr "Tracker"
 
 #, fuzzy
-#~| msgid "Use default browser"
 #~ msgid "The default tracker"
 #~ msgstr "Použít výchozí prohlížeč"
 
 #, fuzzy
-#~| msgid "Show Feed"
 #~ msgid "Show dn"
 #~ msgstr "Zobrazit kanál"
 
@@ -5033,6 +4992,10 @@ msgstr "ktcli"
 
 #~ msgid "Show system tray icon"
 #~ msgstr "Zobrazit ikonu v systémovém panelu"
+
+#, fuzzy
+#~ msgid "Whether or not to show system tray popup messages."
+#~ msgstr "Zobrazit vyskakovací zprávy systémového panelu"
 
 #~ msgid "Show system tray popup messages"
 #~ msgstr "Zobrazit vyskakovací zprávy systémového panelu"

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-11 11:17+0200\n"
-"PO-Revision-Date: 2011-03-19 08:16+0100\n"
+"POT-Creation-Date: 2012-02-07 18:22+0100\n"
+"PO-Revision-Date: 2011-11-10 11:36+0100\n"
 "Last-Translator: Manfred Wiese <m.j.wiese@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
 "Language: nds\n"
@@ -18,102 +18,47 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 1.0\n"
 
-#: src/bcodec/bdecoder.cpp:62
+#: src/bcodec/bdecoder.cpp:71
 #, kde-format
 msgid "Illegal token: %1"
 msgstr "Leeg Beteker: %1"
 
-#: src/bcodec/bdecoder.cpp:125 src/bcodec/bdecoder.cpp:133
+#: src/bcodec/bdecoder.cpp:133 src/bcodec/bdecoder.cpp:141
 msgid "Decode error"
 msgstr "Dekodeer-Fehler"
 
-#: src/bcodec/bdecoder.cpp:193 src/bcodec/bdecoder.cpp:238
+#: src/bcodec/bdecoder.cpp:201 src/bcodec/bdecoder.cpp:246
 msgid "Unexpected end of input"
 msgstr "Nich verwacht Ingaav-Enn"
 
-#: src/bcodec/bdecoder.cpp:213 src/bcodec/bdecoder.cpp:247
+#: src/bcodec/bdecoder.cpp:221 src/bcodec/bdecoder.cpp:255
 #, kde-format
 msgid "Cannot convert %1 to an int"
 msgstr "\"%1\" lett sik nich na en Heeltall ümwanneln"
 
-#: src/bcodec/bdecoder.cpp:252
+#: src/bcodec/bdecoder.cpp:260
 msgid "Torrent is incomplete."
 msgstr "Torrent is nich komplett."
 
-#: src/datachecker/datacheckerjob.cpp:76
+#: src/datachecker/datacheckerjob.cpp:82
 msgid "Waiting for other data checks to finish"
 msgstr "An't Töven, dat anner Datenpröven afslaten warrt"
 
-#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:93
 msgid "Checking data"
 msgstr "Daten warrt pröövt"
 
-#: src/datachecker/datacheckerjob.cpp:135
+#: src/datachecker/datacheckerjob.cpp:141
 msgid "Checking Data"
 msgstr "Daten warrt pröövt"
 
-#: src/datachecker/multidatachecker.cpp:203
+#: src/datachecker/multidatachecker.cpp:209
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
 #, kde-format
 msgid "Cannot open file %1: %2"
 msgstr "Datei \"%1\" lett sik nich opmaken: %2"
-
-#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
-#: src/util/fileops.cpp:396
-#, kde-format
-msgid "Cannot open %1: %2"
-msgstr "\"%1\" lett sik nich opmaken: %2"
-
-#: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
-#: src/diskio/cachefile.cpp:412 src/diskio/cachefile.cpp:480
-#, kde-format
-msgid "Cannot open %1 for writing: readonly filesystem"
-msgstr "\"%1\" lett sik nich schrieven: Bloots leesbor Dateisysteem"
-
-#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:418
-#, kde-format
-msgid "Attempting to write beyond the maximum size of %1"
-msgstr "Schriefversöök na mehr as de Hööchstgrött vun %1 överweg"
-
-#: src/diskio/cachefile.cpp:255
-#, kde-format
-msgid ""
-"Cannot expand file %1: attempting to grow the file beyond the maximum size"
-msgstr ""
-"Datei \"%1\" lett sik nich utpacken: Anners warrt de Datei grötter as "
-"tohööchst tolaten."
-
-#: src/diskio/cachefile.cpp:259
-#, kde-format
-msgid "Cannot expand file %1: %2"
-msgstr "Datei \"%1\" lett sik nich utpacken: %2"
-
-#: src/diskio/cachefile.cpp:378
-#, kde-format
-msgid "Error: Reading past the end of the file %1"
-msgstr "Fehler: Achter dat Enn vun Datei \"%1\" lett sik nix lesen."
-
-#: src/diskio/cachefile.cpp:383 src/diskio/cachefile.cpp:430
-#, kde-format
-msgid "Failed to seek file %1: %2"
-msgstr "Datei \"%1\" lett sik nich finnen: %2"
-
-#: src/diskio/cachefile.cpp:391
-#, kde-format
-msgid "Error reading from %1"
-msgstr "Fehler bi't Lesen vun %1"
-
-#: src/diskio/cachefile.cpp:434
-#, kde-format
-msgid "Failed to write to file %1: %2"
-msgstr "\"%1\" lett sik nich schrieven: %2"
-
-#: src/diskio/cachefile.cpp:501
-#, kde-format
-msgid "Cannot preallocate diskspace: %1"
-msgstr "Plattenspieker lett sik nich vörweg towiesen: %1"
 
 #: src/diskio/dndfile.cpp:89
 #, kde-format
@@ -130,21 +75,6 @@ msgstr "Eerst Block lett sik nich na DND-Datei schrieven: %1"
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Lest Block lett sik nich na DND-Datei schrieven: %1"
 
-#: src/diskio/movedatafilesjob.cpp:166
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Verschuven"
-
-#: src/diskio/movedatafilesjob.cpp:167
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "Born"
-
-#: src/diskio/movedatafilesjob.cpp:168
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "Teel"
-
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, kde-format
 msgid "Failed to open %1: %2"
@@ -159,70 +89,84 @@ msgstr "\"%1\" lett sik nich opstellen: %2"
 msgid "Unable to write to a piece mapped read only"
 msgstr "Schrieven na en bloots leesbor Stück nich mööglich"
 
-#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
+#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
+#: src/util/fileops.cpp:399
+#, kde-format
+msgid "Cannot open %1: %2"
+msgstr "\"%1\" lett sik nich opmaken: %2"
+
+#: src/diskio/cachefile.cpp:122 src/diskio/cachefile.cpp:250
+#: src/diskio/cachefile.cpp:414 src/diskio/cachefile.cpp:482
+#, kde-format
+msgid "Cannot open %1 for writing: readonly filesystem"
+msgstr "\"%1\" lett sik nich schrieven: Bloots leesbor Dateisysteem"
+
+#: src/diskio/cachefile.cpp:129 src/diskio/cachefile.cpp:420
+#, kde-format
+msgid "Attempting to write beyond the maximum size of %1"
+msgstr "Schriefversöök na mehr as de Hööchstgrött vun %1 överweg"
+
+#: src/diskio/cachefile.cpp:257
+#, kde-format
+msgid ""
+"Cannot expand file %1: attempting to grow the file beyond the maximum size"
+msgstr ""
+"Datei \"%1\" lett sik nich utpacken: Anners warrt de Datei grötter as "
+"tohööchst tolaten."
+
+#: src/diskio/cachefile.cpp:261
+#, kde-format
+msgid "Cannot expand file %1: %2"
+msgstr "Datei \"%1\" lett sik nich utpacken: %2"
+
+#: src/diskio/cachefile.cpp:380
+#, kde-format
+msgid "Error: Reading past the end of the file %1"
+msgstr "Fehler: Achter dat Enn vun Datei \"%1\" lett sik nix lesen."
+
+#: src/diskio/cachefile.cpp:385 src/diskio/cachefile.cpp:432
+#, kde-format
+msgid "Failed to seek file %1: %2"
+msgstr "Datei \"%1\" lett sik nich finnen: %2"
+
+#: src/diskio/cachefile.cpp:393
+#, kde-format
+msgid "Error reading from %1"
+msgstr "Fehler bi't Lesen vun %1"
+
+#: src/diskio/cachefile.cpp:436
+#, kde-format
+msgid "Failed to write to file %1: %2"
+msgstr "\"%1\" lett sik nich schrieven: %2"
+
+#: src/diskio/cachefile.cpp:503
+#, kde-format
+msgid "Cannot preallocate diskspace: %1"
+msgstr "Plattenspieker lett sik nich vörweg towiesen: %1"
+
+#: src/diskio/chunkmanager.cpp:928 src/diskio/chunkmanager.cpp:954
 #, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr "Index-Datei \"%1\" lett sik nich opmaken: %2"
 
-#: src/download/downloader.cpp:810
-msgid "Disabled because webseed does not match torrent"
-msgstr "Utmaakt, wiel de Nettverdelen nich to den Torrent passt"
+#: src/diskio/movedatafilesjob.cpp:140
+msgid "Waiting for other move jobs to finish"
+msgstr "An't Töven, dat anner Verschuven afslaten warrt"
 
-#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
-msgid "Not connected"
-msgstr "Nich tokoppelt"
+#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr "Born"
 
-#: src/download/httpconnection.cpp:107
-#, kde-format
-msgid "Resolving proxy %1:%2"
-msgstr "Proxy \"%1\" warrt nakeken: %2"
+#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr "Teel"
 
-#: src/download/httpconnection.cpp:116
-#, kde-format
-msgid "Resolving hostname %1"
-msgstr "Reeknernaam \"%1\" warrt nakeken"
-
-#: src/download/httpconnection.cpp:129 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "Afkoppelt"
-
-#: src/download/httpconnection.cpp:136
-#, kde-format
-msgid "Error: request failed: %1"
-msgstr "Fehler: Anfraag fehlslaan: %1"
-
-#: src/download/httpconnection.cpp:153 src/download/httpconnection.cpp:217
-msgid "Connected"
-msgstr "Tokoppelt"
-
-#: src/download/httpconnection.cpp:159
-msgid "Error: Failed to connect to webseed"
-msgstr "Fehler: Tokoppeln na Nettverdelen fehlslaan"
-
-#: src/download/httpconnection.cpp:224
-msgid "Connecting"
-msgstr "An't Tokoppeln"
-
-#: src/download/httpconnection.cpp:235
-msgid "Failed to connect to webseed"
-msgstr "Tokoppeln na Nettverdelen fehlslaan"
-
-#: src/download/httpconnection.cpp:242
-msgid "Failed to resolve hostname of webseed"
-msgstr "Nakieken vun de Verdelen ehr Reeknernaam fehlslaan"
-
-#: src/download/httpconnection.cpp:322
-msgid "Error: failed to connect, server not responding"
-msgstr "Fehler: Tokoppeln fehlslaan, Server antert nich"
-
-#: src/download/httpconnection.cpp:333
-msgid "Error: request timed out"
-msgstr "Fehler: Anfraagtiet aflopen"
-
-#: src/download/httpconnection.cpp:398
-msgid "Redirected without a new location."
-msgstr "Ahn nieg Teel wiederleddt."
+#: src/diskio/movedatafilesjob.cpp:180
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Verschuven"
 
 #: src/download/chunkdownload.cpp:383
 #, kde-format
@@ -230,6 +174,70 @@ msgid "1 peer"
 msgid_plural "%1 peers"
 msgstr[0] "1 Partner"
 msgstr[1] "%1 Partners"
+
+#: src/download/downloader.cpp:808
+msgid "Disabled because webseed does not match torrent"
+msgstr "Utmaakt, wiel de Nettverdelen nich to den Torrent passt"
+
+#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
+#: src/download/webseed.cpp:98
+msgid "Not connected"
+msgstr "Nich tokoppelt"
+
+#: src/download/httpconnection.cpp:115
+#, kde-format
+msgid "Resolving proxy %1:%2"
+msgstr "Proxy \"%1\" warrt nakeken: %2"
+
+#: src/download/httpconnection.cpp:121 src/download/httpconnection.cpp:139
+msgid "Not enough system resources available"
+msgstr "Nich noog Systemressourcen verföögbor"
+
+#: src/download/httpconnection.cpp:133
+#, kde-format
+msgid "Resolving hostname %1"
+msgstr "Reeknernaam \"%1\" warrt nakeken"
+
+#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
+msgid "Connection closed"
+msgstr "Afkoppelt"
+
+#: src/download/httpconnection.cpp:160
+#, kde-format
+msgid "Error: request failed: %1"
+msgstr "Fehler: Anfraag fehlslaan: %1"
+
+#: src/download/httpconnection.cpp:188 src/download/httpconnection.cpp:222
+msgid "Connected"
+msgstr "Tokoppelt"
+
+#: src/download/httpconnection.cpp:199
+msgid "Error: Failed to connect to webseed"
+msgstr "Fehler: Tokoppeln na Nettverdelen fehlslaan"
+
+#: src/download/httpconnection.cpp:229
+msgid "Connecting"
+msgstr "An't Tokoppeln"
+
+#: src/download/httpconnection.cpp:240
+msgid "Failed to connect to webseed"
+msgstr "Tokoppeln na Nettverdelen fehlslaan"
+
+#: src/download/httpconnection.cpp:247
+msgid "Failed to resolve hostname of webseed"
+msgstr "Nakieken vun de Verdelen ehr Reeknernaam fehlslaan"
+
+#: src/download/httpconnection.cpp:326
+msgid "Error: failed to connect, server not responding"
+msgstr "Fehler: Tokoppeln fehlslaan, Server antert nich"
+
+#: src/download/httpconnection.cpp:337
+msgid "Error: request timed out"
+msgstr "Fehler: Anfraagtiet aflopen"
+
+#: src/download/httpconnection.cpp:402
+msgid "Redirected without a new location."
+msgstr "Ahn nieg Teel wiederleddt."
 
 #: src/download/webseed.cpp:545
 #, kde-format
@@ -249,7 +257,7 @@ msgstr "Wohrschoen: %1"
 msgid "Announcing"
 msgstr "Künnig maken"
 
-#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:86
+#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:87
 #, kde-format
 msgid "Error: %1"
 msgstr "Fehler: %1"
@@ -268,59 +276,6 @@ msgstr "Nich begäng Client"
 msgid "Cannot create index file: %1"
 msgstr "Indexdatei \"%1\" lett sik nich opstellen."
 
-#: src/torrent/torrentstats.cpp:72
-msgid "Not started"
-msgstr "Nich start"
-
-#: src/torrent/torrentstats.cpp:74
-msgid "Download completed"
-msgstr "Daalladen afslaten"
-
-#: src/torrent/torrentstats.cpp:76
-msgid "Seeding completed"
-msgstr "Verdelen afslaten"
-
-#: src/torrent/torrentstats.cpp:78
-msgctxt "Status of a torrent file"
-msgid "Seeding"
-msgstr "Bi to verdelen"
-
-#: src/torrent/torrentstats.cpp:80
-msgid "Downloading"
-msgstr "An't Daalladen"
-
-#: src/torrent/torrentstats.cpp:82
-msgid "Stalled"
-msgstr "Afreten"
-
-#: src/torrent/torrentstats.cpp:84
-msgid "Stopped"
-msgstr "Anhollen"
-
-#: src/torrent/torrentstats.cpp:88
-msgid "Allocating diskspace"
-msgstr "Plaatspieker warrt towiest"
-
-#: src/torrent/torrentstats.cpp:90
-msgid "Queued for seeding"
-msgstr "För't Verdelen inreegt"
-
-#: src/torrent/torrentstats.cpp:90
-msgid "Queued for downloading"
-msgstr "För't Daalladen inreegt"
-
-#: src/torrent/torrentstats.cpp:94
-msgid "Stopped. No space left on device."
-msgstr "Anhollen. Keen Platz mehr op Reedschap na."
-
-#: src/torrent/torrentstats.cpp:96
-msgid "Paused"
-msgstr "Ophollen"
-
-#: src/torrent/torrentstats.cpp:98
-msgid "Superseeding"
-msgstr "Plietsch Verdelen"
-
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
@@ -338,7 +293,7 @@ msgid "Error writing to disk, do you have enough diskspace?"
 msgstr ""
 "Fehler bi't Schrieven na de Fastplaat. - Is dor noch noog free Ruum övrig?"
 
-#: src/torrent/torrentcontrol.cpp:553
+#: src/torrent/torrentcontrol.cpp:554
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -347,17 +302,17 @@ msgstr ""
 "Bi't Laden vun den Torrent <b>%1</b> hett dat en Fehler geven.<br/><b>%2</"
 "b><br/>De Torrent is wull schaadhaftig, oder keen Torrent-Datei."
 
-#: src/torrent/torrentcontrol.cpp:583
+#: src/torrent/torrentcontrol.cpp:584
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr "Dat geev en Fehler bi't Laden vun <b>%1</b>:<br/><b>%2</b>"
 
-#: src/torrent/torrentcontrol.cpp:594
+#: src/torrent/torrentcontrol.cpp:595
 #, kde-format
 msgid "Unable to create %1: %2"
 msgstr "\"%1\" lett sik nich opstellen: %2"
 
-#: src/torrent/torrentcontrol.cpp:609
+#: src/torrent/torrentcontrol.cpp:610
 #, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
@@ -366,38 +321,91 @@ msgstr ""
 "Du laadst den Torrent <b>%1</b> al daal. De Tracker-List vun beed Torrents "
 "wöör tosamenföhrt."
 
-#: src/torrent/torrentcontrol.cpp:614
+#: src/torrent/torrentcontrol.cpp:615
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Du laadst den Torrent <b>%1</b> al daal."
+
+#: src/torrent/torrentstats.cpp:73
+msgid "Not started"
+msgstr "Nich start"
+
+#: src/torrent/torrentstats.cpp:75
+msgid "Download completed"
+msgstr "Daalladen afslaten"
+
+#: src/torrent/torrentstats.cpp:77
+msgid "Seeding completed"
+msgstr "Verdelen afslaten"
+
+#: src/torrent/torrentstats.cpp:79
+msgctxt "Status of a torrent file"
+msgid "Seeding"
+msgstr "Bi to verdelen"
+
+#: src/torrent/torrentstats.cpp:81
+msgid "Downloading"
+msgstr "An't Daalladen"
+
+#: src/torrent/torrentstats.cpp:83
+msgid "Stalled"
+msgstr "Afreten"
+
+#: src/torrent/torrentstats.cpp:85
+msgid "Stopped"
+msgstr "Anhollen"
+
+#: src/torrent/torrentstats.cpp:89
+msgid "Allocating diskspace"
+msgstr "Plaatspieker warrt towiest"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Queued for seeding"
+msgstr "För't Verdelen inreegt"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Queued for downloading"
+msgstr "För't Daalladen inreegt"
+
+#: src/torrent/torrentstats.cpp:95
+msgid "Stopped. No space left on device."
+msgstr "Anhollen. Keen Platz mehr op Reedschap na."
+
+#: src/torrent/torrentstats.cpp:97
+msgid "Paused"
+msgstr "Ophollen"
+
+#: src/torrent/torrentstats.cpp:99
+msgid "Superseeding"
+msgstr "Plietsch Verdelen"
 
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "Ahn nieg Teel wiederledden"
 
-#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
-#: src/tracker/httptracker.cpp:557
+#: src/tracker/httptracker.cpp:287 src/tracker/httptracker.cpp:307
+#: src/tracker/httptracker.cpp:463
+msgid "Invalid response from tracker"
+msgstr "Leeg Antwoort vun Tracker"
+
+#: src/tracker/httptracker.cpp:300
+msgid "Invalid data from tracker"
+msgstr "Leeg Daten vun Tracker"
+
+#: src/tracker/httptracker.cpp:480
+msgid "Invalid tracker URL"
+msgstr "Leeg Tracker-Adress"
+
+#: src/tracker/httptracker.cpp:558 src/tracker/udptracker.cpp:364
+#: src/tracker/udptracker.cpp:374
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Tiet för't Ansnacken vun Tracker aflopen %1"
 
-#: src/tracker/udptracker.cpp:409
+#: src/tracker/udptracker.cpp:401
 #, kde-format
 msgid "Unable to resolve hostname %1"
 msgstr "Reeknernaam \"%1\" lett sik nich oplösen"
-
-#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:462
-msgid "Invalid response from tracker"
-msgstr "Leeg Antwoort vun Tracker"
-
-#: src/tracker/httptracker.cpp:293
-msgid "Invalid data from tracker"
-msgstr "Leeg Daten vun Tracker"
-
-#: src/tracker/httptracker.cpp:479
-msgid "Invalid tracker URL"
-msgstr "Leeg Tracker-Adress"
 
 #: src/util/logsystemmanager.cpp:33
 msgid "General"
@@ -432,6 +440,14 @@ msgstr "Datei \"%1\" lett sik nich schrieven: %2"
 #, kde-format
 msgid "Cannot read from %1"
 msgstr "Datei \"%1\" lett sik nich lesen."
+
+#: src/util/signalcatcher.cpp:78
+msgid "Error when writing to disk"
+msgstr "Fehler bi't Schrieven na Fastplaat"
+
+#: src/util/signalcatcher.cpp:78
+msgid "Error when reading from disk"
+msgstr "Fehler bi't Lesen vun Fastplaat"
 
 #: src/util/fileops.cpp:94
 #, kde-format
@@ -474,35 +490,27 @@ msgid "Cannot calculate the filesize: %1"
 msgstr "Dateigrött lett sik nich utreken: %1"
 
 #: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
-#: src/util/fileops.cpp:387
+#: src/util/fileops.cpp:387 src/util/fileops.cpp:390
 #, kde-format
 msgid "Cannot expand file: %1"
 msgstr "Datei \"%1\" lett sik nich ruttrecken."
 
-#: src/util/fileops.cpp:417
+#: src/util/fileops.cpp:420
 #, kde-format
 msgid "Cannot seek in file: %1"
 msgstr "Binnen Datei \"%1\" lett sik nich söken."
 
-#: src/util/functions.cpp:280
+#: src/util/functions.cpp:234
 #, kde-format
 msgid "%1/s"
 msgstr "%1/s"
 
-#: src/util/functions.cpp:291
+#: src/util/functions.cpp:245
 #, kde-format
 msgid "1 day "
 msgid_plural "%1 days "
 msgstr[0] "Een Dag "
 msgstr[1] "%1 Daag "
-
-#: src/util/signalcatcher.cpp:62
-msgid "Error when writing to disk"
-msgstr "Fehler bi't Schrieven na Fastplaat"
-
-#: src/util/signalcatcher.cpp:62
-msgid "Error when reading from disk"
-msgstr "Fehler bi't Lesen vun Fastplaat"
 
 #: src/upnp/httprequest.cpp:96
 msgid "Connection closed unexpectedly"
@@ -559,17 +567,27 @@ msgstr "Leggt fast, wat UTP bruukt warrt."
 msgid "ktcli"
 msgstr "ktcli"
 
+#~ msgid "Timeout occurred"
+#~ msgstr "Tiet is aflopen"
+
+#~ msgid "UTP"
+#~ msgstr "UTP"
+
 #~ msgid "Parse Error"
 #~ msgstr "Inleesfehler"
 
-#~ msgid "Cannot open file : %1 : %2"
-#~ msgstr "Datei \"%1\" lett sik nich opmaken: %2"
+#~ msgid "Not in use"
+#~ msgstr "Nich bruukt"
+
+#, fuzzy
+#~ msgid "Not enough diskspace"
+#~ msgstr "Nich noog free Ruum op de Fastplaat för %1"
 
 #~ msgid "Cannot open file %1 : %2"
 #~ msgstr "Datei \"%1\" lett sik nich opmaken: %2"
 
-#~ msgid "Not in use"
-#~ msgstr "Nich bruukt"
+#~ msgid "Cannot open file : %1 : %2"
+#~ msgstr "Datei \"%1\" lett sik nich opmaken: %2"
 
 #~ msgid ""
 #~ "An error occurred while loading the torrent:<br/><b>%1</b><br/>The "
@@ -580,11 +598,6 @@ msgstr "ktcli"
 
 #~ msgid "Cannot open log file %1 : %2"
 #~ msgstr "Logbookdatei \"%1\" lett sik nich opmaken: %2"
-
-#, fuzzy
-#~| msgid "Not enough free disk space for %1"
-#~ msgid "Not enough diskspace"
-#~ msgstr "Nich noog free Ruum op de Fastplaat för %1"
 
 #~ msgid "Cannot bind to udp port %1 or the 10 following ports."
 #~ msgstr "UDP-Port %1 un de 10 nakamen Porten laat sik nich bruken."

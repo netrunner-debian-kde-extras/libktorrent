@@ -30,7 +30,7 @@
 namespace bt
 {
 
-	SingleDataChecker::SingleDataChecker(): DataChecker()
+	SingleDataChecker::SingleDataChecker(bt::Uint32 from, bt::Uint32 to): DataChecker(from, to)
 	{}
 
 
@@ -48,13 +48,18 @@ namespace bt
 		{
 			throw Error(i18n("Cannot open file %1: %2", path, fptr.errorString()));
 		}
+		
+		if (from >= tor.getNumChunks())
+			from = 0;
+		if (to >= tor.getNumChunks())
+			to = tor.getNumChunks() - 1;
 
 		// initialize the bitset
 		result = BitSet(num_chunks);
 		// loop over all chunks
 		Array<Uint8> buf(chunk_size);
 		TimeStamp last_emitted = bt::Now();
-		for (Uint32 i = 0;i < num_chunks && !need_to_stop;i++)
+		for (Uint32 i = from;i <= to && !need_to_stop;i++)
 		{
 			if (!fptr.eof())
 			{
@@ -90,7 +95,7 @@ namespace bt
 			if (now - last_emitted > 1000 || i == num_chunks - 1) // Emit signals once every second
 			{
 				status(failed,found,downloaded,not_downloaded);
-				progress(i,num_chunks);
+				progress(i - from,from - to + 1);
 				last_emitted = now;
 			}
 		}

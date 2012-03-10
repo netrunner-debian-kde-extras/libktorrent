@@ -27,6 +27,7 @@ set(libktorrent_SRC
 	util/pipe.cpp
 	util/circularbuffer.cpp
 	util/resourcemanager.cpp
+	util/bufferpool.cpp
 	
 	bcodec/bdecoder.cpp  
 	bcodec/bencoder.cpp  
@@ -34,7 +35,7 @@ set(libktorrent_SRC
 	bcodec/value.cpp
 
 	net/address.cpp  
-	net/bufferedsocket.cpp  
+	net/packetsocket.cpp  
 	net/portlist.cpp  
 	net/socket.cpp  
 	net/socketmonitor.cpp  
@@ -49,11 +50,14 @@ set(libktorrent_SRC
 	net/socketdevice.cpp
 	net/poll.cpp
 	net/serversocket.cpp
+	net/addressresolver.cpp
+	net/trafficshapedsocket.cpp
+	net/streamsocket.cpp
 	
 	mse/bigint.cpp  
 	mse/functions.cpp  
 	mse/rc4encryptor.cpp  
-	mse/streamsocket.cpp
+	mse/encryptedpacketsocket.cpp
 	mse/encryptedauthenticate.cpp
 	mse/encryptedserverauthenticate.cpp
 	
@@ -67,7 +71,6 @@ set(libktorrent_SRC
 	peer/peermanager.cpp
 	peer/peerdownloader.cpp
 	peer/peeruploader.cpp
-	peer/packetwriter.cpp
 	peer/packetreader.cpp
 	peer/peerprotocolextension.cpp
 	peer/utpex.cpp
@@ -185,6 +188,7 @@ set(libktorrent_SRC
 	utp/pollpipe.cpp
 	utp/delaywindow.cpp
 	utp/outputqueue.cpp 
+	utp/packetbuffer.cpp
 	
 	upnp/soap.cpp
 	upnp/upnpmcastsocket.cpp
@@ -214,7 +218,7 @@ target_link_libraries(ktorrent ${KDE4_KIO_LIBS} ${GMP_LIBRARIES} ${KDE4_SOLID_LI
 if(WIN32)
 target_link_libraries(ktorrent ws2_32)
 endif(WIN32)
-set_target_properties(ktorrent PROPERTIES VERSION 3.0.3 SOVERSION 3)
+set_target_properties(ktorrent PROPERTIES VERSION 4.0.0 SOVERSION 4 LINK_INTERFACE_LIBRARIES ${KDE4_KDEUI_LIBS})
 install(TARGETS ktorrent  ${INSTALL_TARGETS_DEFAULT_ARGS} )
 
 

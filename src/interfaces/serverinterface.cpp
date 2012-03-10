@@ -28,7 +28,7 @@
 #include <peer/accessmanager.h>
 #include <peer/serverauthenticate.h>
 #include <torrent/torrent.h>
-#include <mse/streamsocket.h>
+#include <mse/encryptedpacketsocket.h>
 #include <mse/encryptedserverauthenticate.h>
 
 namespace bt
@@ -123,7 +123,7 @@ namespace bt
 	}
 	
 	
-	void ServerInterface::newConnection(mse::StreamSocket::Ptr s)
+	void ServerInterface::newConnection(mse::EncryptedPacketSocket::Ptr s)
 	{
 		if (peer_managers.count() == 0)
 		{
@@ -136,6 +136,10 @@ namespace bt
 				Out(SYS_CON|LOG_DEBUG) << "A client with a blocked IP address ("<< s->getRemoteIPAddress() << ") tried to connect !" << endl;
 				return;
 			}
+			
+			// Not enough free file descriptors
+			if (!OpenFileAllowed())
+				return;
 			
 			ServerAuthenticate* auth = 0;
 			

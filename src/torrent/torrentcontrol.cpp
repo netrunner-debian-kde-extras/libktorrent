@@ -53,7 +53,6 @@
 #include <datachecker/datacheckerjob.h>
 #include <peer/peer.h>
 #include <peer/peermanager.h>
-#include <peer/packetwriter.h>
 #include <peer/peerdownloader.h>
 #include <net/socketmonitor.h>
 #include "torrentfile.h"
@@ -75,8 +74,6 @@ namespace bt
 {
 	bool TorrentControl::completed_datacheck = false;
 	Uint32 TorrentControl::min_diskspace = 100;
-	bool TorrentControl::auto_recheck = true;
-	Uint32 TorrentControl::num_corrupted_for_recheck = 3;
 
 	TorrentControl::TorrentControl()
 	: tor(0),psman(0),cman(0),pman(0),downloader(0),uploader(0),choke(0),tmon(0),prealloc(false)
@@ -112,7 +109,7 @@ namespace bt
 		{
 			// block all signals to prevent crash at exit
 			blockSignals(true);
-			stop(false);
+			stop(0);
 		}
 		
 		if (tmon)
@@ -121,6 +118,7 @@ namespace bt
 		if (downloader)
 			downloader->saveWebSeeds(tordir + "webseeds");
 		
+		delete job_queue;
 		delete choke;
 		delete downloader;
 		delete uploader;
@@ -141,7 +139,7 @@ namespace bt
 		
 		if (istats.io_error)
 		{
-			stop(false);
+			stop();
 			emit stoppedByError(this, stats.error_msg);
 			return;
 		}
@@ -191,6 +189,7 @@ namespace bt
 				// only sent completed to tracker when we have all chunks (so no excluded chunks)
 				if (cman->haveAllChunks())
 					psman->completed();
+				pman->setPartialSeed(!cman->haveAllChunks() && cman->chunksLeft() == 0);
 				
 				finished(this);
 
@@ -219,7 +218,7 @@ namespace bt
 			}
 			updateStatus();
 
-			if(wanted_update_timer.getElapsedSinceUpdate() >= 60*1000)
+			if (wanted_update_timer.getElapsedSinceUpdate() >= 60*1000)
 			{
 				// Get a list of the chunks I have...
 				BitSet wanted_chunks = cman->getBitSet();
@@ -280,7 +279,8 @@ namespace bt
 			
 			if (stats.completed && (overMaxRatio() || overMaxSeedTime()))
 			{
-				stop(); 
+				stats.auto_stopped = true;
+				stop();
 				emit seedingAutoStopped(this, overMaxRatio() ? MAX_RATIO_REACHED : MAX_SEED_TIME_REACHED);
 			}
 
@@ -291,7 +291,7 @@ namespace bt
 			}
 
 			// Emit the needDataCheck signal if needed
-			if (checkOnCompletion || (auto_recheck && stats.num_corrupted_chunks >= num_corrupted_for_recheck))
+			if (checkOnCompletion)
 				needDataCheck(this);
 			
 			// Move completed files if needed:
@@ -460,6 +460,7 @@ namespace bt
 		stalled_timer.update();
 		psman->start();
 		stalled_timer.update();
+		pman->setPartialSeed(!cman->haveAllChunks() && cman->chunksLeft() == 0);
 	}
 	
 	void TorrentControl::updateRunningTimes()
@@ -679,16 +680,16 @@ namespace bt
 		// create downloader,uploader and choker
 		downloader = new Downloader(*tor,*pman,*cman);
 		downloader->loadWebSeeds(tordir + "webseeds");
-		connect(downloader,SIGNAL(ioError(const QString& )),this,SLOT(onIOError(const QString& )));
+		connect(downloader,SIGNAL(ioError(QString)),this,SLOT(onIOError(QString)));
 		connect(downloader,SIGNAL(chunkDownloaded(Uint32)),this,SLOT(downloaded(Uint32)));
 		uploader = new Uploader(*cman,*pman);
 		choke = new Choker(*pman,*cman);
 
-		connect(pman,SIGNAL(newPeer(Peer* )),this,SLOT(onNewPeer(Peer* )));
-		connect(pman,SIGNAL(peerKilled(Peer* )),this,SLOT(onPeerRemoved(Peer* )));
-		connect(cman,SIGNAL(excluded(Uint32, Uint32 )),downloader,SLOT(onExcluded(Uint32, Uint32 )));
-		connect(cman,SIGNAL(included( Uint32, Uint32 )),downloader,SLOT(onIncluded( Uint32, Uint32 )));
-		connect(cman,SIGNAL(corrupted( Uint32 )),this,SLOT(corrupted( Uint32 )));
+		connect(pman,SIGNAL(newPeer(Peer*)),this,SLOT(onNewPeer(Peer*)));
+		connect(pman,SIGNAL(peerKilled(Peer*)),this,SLOT(onPeerRemoved(Peer*)));
+		connect(cman,SIGNAL(excluded(Uint32,Uint32)),downloader,SLOT(onExcluded(Uint32,Uint32)));
+		connect(cman,SIGNAL(included(Uint32,Uint32)),downloader,SLOT(onIncluded(Uint32,Uint32)));
+		connect(cman,SIGNAL(corrupted(Uint32)),this,SLOT(corrupted(Uint32)));
 	}
 	
 	void TorrentControl::initInternal(QueueManagerInterface* qman,const QString & tmpdir,const QString & ddir)
@@ -758,25 +759,25 @@ namespace bt
 			{
 				const BitSet & bs = cman->getBitSet();
 				if (bs.allOn())
-					p->getPacketWriter().sendHaveAll();
+					p->sendHaveAll();
 				else if (bs.numOnBits() == 0)
-					p->getPacketWriter().sendHaveNone();
+					p->sendHaveNone();
 				else
-					p->getPacketWriter().sendBitSet(bs);
+					p->sendBitSet(bs);
 			}
 			else
 			{
-				p->getPacketWriter().sendBitSet(cman->getBitSet());
+				p->sendBitSet(cman->getBitSet());
 			}
 		}
 		
 		if (!stats.completed && !stats.paused)
-			p->getPacketWriter().sendInterested();
+			p->sendInterested();
 		
 		if (!stats.priv_torrent)
 		{
 			if (p->isDHTSupported())
-				p->getPacketWriter().sendPort(Globals::instance().getDHT().getPort());
+				p->sendPort(Globals::instance().getDHT().getPort());
 			else
 				// WORKAROUND so we can contact µTorrent's DHT
 				// They do not properly support the standard and do not turn on
@@ -1063,6 +1064,7 @@ namespace bt
 		stats_file->write("MAX_RATIO", QString("%1").arg(stats.max_share_ratio,0,'f',2));
 		stats_file->write("MAX_SEED_TIME",QString::number(stats.max_seed_time));
 		stats_file->write("RESTART_DISK_PREALLOCATION",prealloc ? "1" : "0");
+		stats_file->write("AUTO_STOPPED", stats.auto_stopped ? "1" : "0");
 		
 		if(!stats.priv_torrent)
 		{
@@ -1141,6 +1143,7 @@ namespace bt
 		stats.max_share_ratio = stats_file->readFloat("MAX_RATIO");
 		stats.max_seed_time = stats_file->readFloat("MAX_SEED_TIME");
 		stats.qm_can_start = stats_file->readBoolean("QM_CAN_START");
+		stats.auto_stopped = stats_file->readBoolean("AUTO_STOPPED");
 
 		if (stats_file->hasKey("RESTART_DISK_PREALLOCATION"))
 			prealloc = stats_file->readString("RESTART_DISK_PREALLOCATION") == "1";
@@ -1408,9 +1411,9 @@ namespace bt
 		return psman;
 	}
 	
-	Job* TorrentControl::startDataCheck(bool auto_import)
+	Job* TorrentControl::startDataCheck(bool auto_import, bt::Uint32 from, bt::Uint32 to)
 	{
-		Job* j = new DataCheckerJob(auto_import,this);
+		Job* j = new DataCheckerJob(auto_import, this, from, to);
 		job_queue->enqueue(j);
 		return j;
 	}
@@ -1428,9 +1431,9 @@ namespace bt
 		bool completed = stats.completed;
 		if (job && !job->isStopped())
 		{
-			downloader->dataChecked(result);
+			downloader->dataChecked(result, job->firstChunk(), job->lastChunk());
 			// update chunk manager
-			cman->dataChecked(result);
+			cman->dataChecked(result, job->firstChunk(), job->lastChunk());
 			if (job->isAutoImport())
 			{
 				downloader->recalcDownloaded();
@@ -1446,6 +1449,7 @@ namespace bt
 					stats.imported_bytes = stats.bytes_downloaded - downloaded;
 				 
 				stats.completed = cman->completed();
+				pman->setPartialSeed(!cman->haveAllChunks() && cman->chunksLeft() == 0);
 			}
 		}
 		
@@ -1457,13 +1461,21 @@ namespace bt
 	
 		if (stats.completed != completed)
 		{
-			// Tell QM to redo queue 
+			// Tell QM to redo queue and emit finished signal
 			// seeder might have become downloader, so 
 			// queue might need to be redone
 			// use QTimer because we need to ensure this is run after the JobQueue removes the job
 			QTimer::singleShot(0,this,SIGNAL(updateQueue()));
+			if (stats.completed) 
+				QTimer::singleShot(0,this,SLOT(emitFinished()));
 		}
 	}
+	
+	void TorrentControl::emitFinished()
+	{
+		finished(this);
+	}
+
 	
 	void TorrentControl::markExistingFilesAsDownloaded()
 	{
@@ -1492,7 +1504,7 @@ namespace bt
 		{
 			cman->recreateMissingFiles();
 			prealloc = true; // set prealloc to true so files will be truncated again
-			downloader->dataChecked(cman->getBitSet()); // update chunk selector
+			downloader->dataChecked(cman->getBitSet(), 0, tor->getNumChunks() - 1); // update chunk selector
 		}
 		catch (Error & err)
 		{
@@ -1508,7 +1520,7 @@ namespace bt
 			cman->dndMissingFiles();
 			prealloc = true; // set prealloc to true so files will be truncated again
 			missingFilesMarkedDND(this);
-			downloader->dataChecked(cman->getBitSet()); // update chunk selector
+			downloader->dataChecked(cman->getBitSet(), 0, tor->getNumChunks() - 1); // update chunk selector
 		}
 		catch (Error & err)
 		{
@@ -1963,6 +1975,8 @@ namespace bt
 			stats.completed = false;
 			updateStatus();
 			updateStats();
+			// Trigger an update of the queue, so it can be restarted again, if it was auto stopped
+			updateQueue();
 		}
 	}
 	

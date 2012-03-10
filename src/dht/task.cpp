@@ -18,27 +18,32 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.             *
  ***************************************************************************/
 #include "task.h"
-#include <k3resolver.h>
+#include <net/addressresolver.h>
 #include "kclosestnodessearch.h"
 #include "rpcserver.h"
 
-using namespace KNetwork;
+
 
 namespace dht
 {
 
-	Task::Task(RPCServer* rpc,Node* node) 
-	: node(node),rpc(rpc),outstanding_reqs(0),task_finished(false),queued(queued)
+	Task::Task(RPCServer* rpc, Node* node, QObject* parent)
+			: RPCCallListener(parent),
+			node(node),
+			rpc(rpc),
+			outstanding_reqs(0),
+			task_finished(false),
+			queued(true)
 	{
-		
+
 	}
 
 
 	Task::~Task()
 	{
 	}
-	
-	void Task::start(const KClosestNodesSearch & kns,bool queued)
+
+	void Task::start(const KClosestNodesSearch & kns, bool queued)
 	{
 		// fill the todo list
 		for (KClosestNodesSearch::CItr i = kns.begin(); i != kns.end();i++)
@@ -47,7 +52,7 @@ namespace dht
 		if (!queued)
 			update();
 	}
-	
+
 	void Task::start()
 	{
 		if (queued)
@@ -62,13 +67,13 @@ namespace dht
 	{
 		if (outstanding_reqs > 0)
 			outstanding_reqs--;
-		
+
 		if (!isFinished())
 		{
-			callFinished(c,rsp);
-		
+			callFinished(c, rsp);
+
 			if (canDoRequest() && !isFinished())
-				update(); 
+				update();
 		}
 	}
 
@@ -76,58 +81,65 @@ namespace dht
 	{
 		if (outstanding_reqs > 0)
 			outstanding_reqs--;
-		
+
 		if (!isFinished())
 		{
 			callTimeout(c);
-			
+
 			if (canDoRequest() && !isFinished())
-				update(); 
+				update();
 		}
 	}
-	
+
 	bool Task::rpcCall(dht::MsgBase::Ptr req)
 	{
-		if (!canDoRequest() || !req->getDestination().length())
+		if (!canDoRequest())
 			return false;
-		
+
 		RPCCall* c = rpc->doCall(req);
 		c->addListener(this);
 		outstanding_reqs++;
 		return true;
 	}
-	
+
 	void Task::done()
 	{
 		task_finished = true;
 		finished(this);
 	}
-	
+
 	void Task::emitDataReady()
 	{
 		dataReady(this);
 	}
-	
+
 	void Task::kill()
 	{
 		task_finished = true;
 		finished(this);
 	}
-	
-	void Task::addDHTNode(const QString & ip,bt::Uint16 port)
+
+	void Task::addDHTNode(const QString & ip, bt::Uint16 port)
 	{
-		KResolver::resolveAsync(this,SLOT(onResolverResults(KNetwork::KResolverResults )),
-								ip,QString::number(port));
+		net::Address addr;
+		if (addr.setAddress(ip))
+		{
+			addr.setPort(port);
+			todo.insert(KBucketEntry(addr, dht::Key()));
+		}
+		else
+			net::AddressResolver::resolve(ip, port, this, SLOT(onResolverResults(net::AddressResolver*)));
 	}
-	
-	void Task::onResolverResults(KResolverResults res)
+
+	void Task::onResolverResults(net::AddressResolver* ar)
 	{
-		if (res.count() == 0)
+		if (!ar->succeeded())
 			return;
-		
-		todo.insert(KBucketEntry(res.front().address(),dht::Key()));
+
+		todo.insert(KBucketEntry(ar->address(), dht::Key()));
 	}
 
 }
 
 #include "task.moc"
+

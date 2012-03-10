@@ -2,117 +2,63 @@
 #
 # Marek Laane <bald@starman.ee>, 2005-2008.
 # Hasso Tepper <hasso@kde.org>, 2006.
-# Marek Laane <bald@smail.ee>, 2008-2009, 2010, 2011.
+# Marek Laane <bald@smail.ee>, 2008-2009, 2010, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-11 11:17+0200\n"
-"PO-Revision-Date: 2011-03-07 18:19+0200\n"
+"POT-Creation-Date: 2012-02-07 18:22+0100\n"
+"PO-Revision-Date: 2012-01-09 19:51+0200\n"
 "Last-Translator: Marek Laane <bald@smail.ee>\n"
 "Language-Team: Estonian <kde-et@linux.ee>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Lokalize 1.4\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: src/bcodec/bdecoder.cpp:62
+#: src/bcodec/bdecoder.cpp:71
 #, kde-format
 msgid "Illegal token: %1"
 msgstr "Vigane märgis: %1"
 
-#: src/bcodec/bdecoder.cpp:125 src/bcodec/bdecoder.cpp:133
+#: src/bcodec/bdecoder.cpp:133 src/bcodec/bdecoder.cpp:141
 msgid "Decode error"
 msgstr "Dekodeerimise viga"
 
-#: src/bcodec/bdecoder.cpp:193 src/bcodec/bdecoder.cpp:238
+#: src/bcodec/bdecoder.cpp:201 src/bcodec/bdecoder.cpp:246
 msgid "Unexpected end of input"
 msgstr "Ootamatu sisendi lõpp"
 
-#: src/bcodec/bdecoder.cpp:213 src/bcodec/bdecoder.cpp:247
+#: src/bcodec/bdecoder.cpp:221 src/bcodec/bdecoder.cpp:255
 #, kde-format
 msgid "Cannot convert %1 to an int"
 msgstr "%1 teisendamine täisarvuks nurjus"
 
-#: src/bcodec/bdecoder.cpp:252
+#: src/bcodec/bdecoder.cpp:260
 msgid "Torrent is incomplete."
 msgstr "Torrent pole täielik."
 
-#: src/datachecker/datacheckerjob.cpp:76
+#: src/datachecker/datacheckerjob.cpp:82
 msgid "Waiting for other data checks to finish"
 msgstr "Teiste andmekontrollide järel ootamine enne lõpetamist"
 
-#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:93
 msgid "Checking data"
 msgstr "Andmete kontroll"
 
-#: src/datachecker/datacheckerjob.cpp:135
+#: src/datachecker/datacheckerjob.cpp:141
 msgid "Checking Data"
 msgstr "Andmete kontroll"
 
-#: src/datachecker/multidatachecker.cpp:203
+#: src/datachecker/multidatachecker.cpp:209
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
 #, kde-format
 msgid "Cannot open file %1: %2"
 msgstr "Faili %1 avamine nurjus: %2"
-
-#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
-#: src/util/fileops.cpp:396
-#, kde-format
-msgid "Cannot open %1: %2"
-msgstr "%1 avamine nurjus: %2"
-
-#: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
-#: src/diskio/cachefile.cpp:412 src/diskio/cachefile.cpp:480
-#, kde-format
-msgid "Cannot open %1 for writing: readonly filesystem"
-msgstr "%1 avamine kirjutamiseks nurjus: kirjutuskaitstud failisüsteem"
-
-#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:418
-#, kde-format
-msgid "Attempting to write beyond the maximum size of %1"
-msgstr "Püüti kirjuta üle %1 lubatud maksimumsuuruse"
-
-#: src/diskio/cachefile.cpp:255
-#, kde-format
-msgid ""
-"Cannot expand file %1: attempting to grow the file beyond the maximum size"
-msgstr ""
-"Faili %1 laiendamine nurjus: faili püüti suurendada üle maksimumsuuruse"
-
-#: src/diskio/cachefile.cpp:259
-#, kde-format
-msgid "Cannot expand file %1: %2"
-msgstr "Faili %1 avamine nurjus: %2"
-
-#: src/diskio/cachefile.cpp:378
-#, kde-format
-msgid "Error: Reading past the end of the file %1"
-msgstr "Viga: loeti üle faili %1 lõpu"
-
-#: src/diskio/cachefile.cpp:383 src/diskio/cachefile.cpp:430
-#, kde-format
-msgid "Failed to seek file %1: %2"
-msgstr "Faili %1 otsimine nurjus: %2"
-
-#: src/diskio/cachefile.cpp:391
-#, kde-format
-msgid "Error reading from %1"
-msgstr "Viga %1 lugemisel"
-
-#: src/diskio/cachefile.cpp:434
-#, kde-format
-msgid "Failed to write to file %1: %2"
-msgstr "Faili %1 kirjutamine nurjus: %2"
-
-#: src/diskio/cachefile.cpp:501
-#, kde-format
-msgid "Cannot preallocate diskspace: %1"
-msgstr "Kettaruumi eraldamine nurjus: %1"
 
 #: src/diskio/dndfile.cpp:89
 #, kde-format
@@ -129,21 +75,6 @@ msgstr "Esimese tüki kirjutamine faili nurjus: %1"
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Viimase tüki kirjutamine faili nurjus: %1"
 
-#: src/diskio/movedatafilesjob.cpp:166
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Liigutamine"
-
-#: src/diskio/movedatafilesjob.cpp:167
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "Lähtekoht"
-
-#: src/diskio/movedatafilesjob.cpp:168
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "Sihtkoht"
-
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, kde-format
 msgid "Failed to open %1: %2"
@@ -158,70 +89,83 @@ msgstr "%1 loomine nurjus: %2"
 msgid "Unable to write to a piece mapped read only"
 msgstr "Kirjutuskaitstud tükki pole võimalik kirjutada"
 
-#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
+#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
+#: src/util/fileops.cpp:399
+#, kde-format
+msgid "Cannot open %1: %2"
+msgstr "%1 avamine nurjus: %2"
+
+#: src/diskio/cachefile.cpp:122 src/diskio/cachefile.cpp:250
+#: src/diskio/cachefile.cpp:414 src/diskio/cachefile.cpp:482
+#, kde-format
+msgid "Cannot open %1 for writing: readonly filesystem"
+msgstr "%1 avamine kirjutamiseks nurjus: kirjutuskaitstud failisüsteem"
+
+#: src/diskio/cachefile.cpp:129 src/diskio/cachefile.cpp:420
+#, kde-format
+msgid "Attempting to write beyond the maximum size of %1"
+msgstr "Püüti kirjuta üle %1 lubatud maksimumsuuruse"
+
+#: src/diskio/cachefile.cpp:257
+#, kde-format
+msgid ""
+"Cannot expand file %1: attempting to grow the file beyond the maximum size"
+msgstr ""
+"Faili %1 laiendamine nurjus: faili püüti suurendada üle maksimumsuuruse"
+
+#: src/diskio/cachefile.cpp:261
+#, kde-format
+msgid "Cannot expand file %1: %2"
+msgstr "Faili %1 avamine nurjus: %2"
+
+#: src/diskio/cachefile.cpp:380
+#, kde-format
+msgid "Error: Reading past the end of the file %1"
+msgstr "Viga: loeti üle faili %1 lõpu"
+
+#: src/diskio/cachefile.cpp:385 src/diskio/cachefile.cpp:432
+#, kde-format
+msgid "Failed to seek file %1: %2"
+msgstr "Faili %1 otsimine nurjus: %2"
+
+#: src/diskio/cachefile.cpp:393
+#, kde-format
+msgid "Error reading from %1"
+msgstr "Viga %1 lugemisel"
+
+#: src/diskio/cachefile.cpp:436
+#, kde-format
+msgid "Failed to write to file %1: %2"
+msgstr "Faili %1 kirjutamine nurjus: %2"
+
+#: src/diskio/cachefile.cpp:503
+#, kde-format
+msgid "Cannot preallocate diskspace: %1"
+msgstr "Kettaruumi eraldamine nurjus: %1"
+
+#: src/diskio/chunkmanager.cpp:928 src/diskio/chunkmanager.cpp:954
 #, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr "Indeksifaili %1 avamine nurjus: %2"
 
-#: src/download/downloader.cpp:810
-msgid "Disabled because webseed does not match torrent"
-msgstr "Keelatud, sest veebilevitus ei vasta torrentile"
+#: src/diskio/movedatafilesjob.cpp:140
+msgid "Waiting for other move jobs to finish"
+msgstr "Teiste liigutamistööde järel ootamine enne lõpetamist"
 
-#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
-msgid "Not connected"
-msgstr "Pole ühendatud"
+#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr "Lähtekoht"
 
-#: src/download/httpconnection.cpp:107
-#, kde-format
-msgid "Resolving proxy %1:%2"
-msgstr "Puhverserveri %1 lahendamine: %2"
+#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr "Sihtkoht"
 
-#: src/download/httpconnection.cpp:116
-#, kde-format
-msgid "Resolving hostname %1"
-msgstr "Masinanime %1 lahendamine"
-
-#: src/download/httpconnection.cpp:129 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "Ühendus suletud"
-
-#: src/download/httpconnection.cpp:136
-#, kde-format
-msgid "Error: request failed: %1"
-msgstr "Viga: päring nurjus: %1"
-
-#: src/download/httpconnection.cpp:153 src/download/httpconnection.cpp:217
-msgid "Connected"
-msgstr "Ühendatud"
-
-#: src/download/httpconnection.cpp:159
-msgid "Error: Failed to connect to webseed"
-msgstr "Viga: ühendumine veebilevitusega nurjus"
-
-#: src/download/httpconnection.cpp:224
-msgid "Connecting"
-msgstr "Ühendumine"
-
-#: src/download/httpconnection.cpp:235
-msgid "Failed to connect to webseed"
-msgstr "Ühendumine veebilevitusega nurjus"
-
-#: src/download/httpconnection.cpp:242
-msgid "Failed to resolve hostname of webseed"
-msgstr "Veebilevituse masinanime lahendamine nurjus"
-
-#: src/download/httpconnection.cpp:322
-msgid "Error: failed to connect, server not responding"
-msgstr "Viga: ühendumine nurjus, server ei vasta"
-
-#: src/download/httpconnection.cpp:333
-msgid "Error: request timed out"
-msgstr "Viga: päring aegus"
-
-#: src/download/httpconnection.cpp:398
-msgid "Redirected without a new location."
-msgstr "Ümber suunatud ilma uue asukohata."
+#: src/diskio/movedatafilesjob.cpp:180
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Liigutamine"
 
 #: src/download/chunkdownload.cpp:383
 #, kde-format
@@ -229,6 +173,70 @@ msgid "1 peer"
 msgid_plural "%1 peers"
 msgstr[0] "1 masin"
 msgstr[1] "%1 masinat"
+
+#: src/download/downloader.cpp:808
+msgid "Disabled because webseed does not match torrent"
+msgstr "Keelatud, sest veebilevitus ei vasta torrentile"
+
+#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
+#: src/download/webseed.cpp:98
+msgid "Not connected"
+msgstr "Pole ühendatud"
+
+#: src/download/httpconnection.cpp:115
+#, kde-format
+msgid "Resolving proxy %1:%2"
+msgstr "Puhverserveri %1 lahendamine: %2"
+
+#: src/download/httpconnection.cpp:121 src/download/httpconnection.cpp:139
+msgid "Not enough system resources available"
+msgstr "Süsteemi ressursse napib"
+
+#: src/download/httpconnection.cpp:133
+#, kde-format
+msgid "Resolving hostname %1"
+msgstr "Masinanime %1 lahendamine"
+
+#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
+msgid "Connection closed"
+msgstr "Ühendus suletud"
+
+#: src/download/httpconnection.cpp:160
+#, kde-format
+msgid "Error: request failed: %1"
+msgstr "Viga: päring nurjus: %1"
+
+#: src/download/httpconnection.cpp:188 src/download/httpconnection.cpp:222
+msgid "Connected"
+msgstr "Ühendatud"
+
+#: src/download/httpconnection.cpp:199
+msgid "Error: Failed to connect to webseed"
+msgstr "Viga: ühendumine veebilevitusega nurjus"
+
+#: src/download/httpconnection.cpp:229
+msgid "Connecting"
+msgstr "Ühendumine"
+
+#: src/download/httpconnection.cpp:240
+msgid "Failed to connect to webseed"
+msgstr "Ühendumine veebilevitusega nurjus"
+
+#: src/download/httpconnection.cpp:247
+msgid "Failed to resolve hostname of webseed"
+msgstr "Veebilevituse masinanime lahendamine nurjus"
+
+#: src/download/httpconnection.cpp:326
+msgid "Error: failed to connect, server not responding"
+msgstr "Viga: ühendumine nurjus, server ei vasta"
+
+#: src/download/httpconnection.cpp:337
+msgid "Error: request timed out"
+msgstr "Viga: päring aegus"
+
+#: src/download/httpconnection.cpp:402
+msgid "Redirected without a new location."
+msgstr "Ümber suunatud ilma uue asukohata."
 
 #: src/download/webseed.cpp:545
 #, kde-format
@@ -248,7 +256,7 @@ msgstr "Hoiatus: %1"
 msgid "Announcing"
 msgstr "Teatamine"
 
-#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:86
+#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:87
 #, kde-format
 msgid "Error: %1"
 msgstr "Viga: %1"
@@ -267,59 +275,6 @@ msgstr "Tundmatu klient"
 msgid "Cannot create index file: %1"
 msgstr "Indeksifaili loomine nurjus: %1"
 
-#: src/torrent/torrentstats.cpp:72
-msgid "Not started"
-msgstr "Pole alustatud"
-
-#: src/torrent/torrentstats.cpp:74
-msgid "Download completed"
-msgstr "Allalaadimine valmis"
-
-#: src/torrent/torrentstats.cpp:76
-msgid "Seeding completed"
-msgstr "Levitamine valmis"
-
-#: src/torrent/torrentstats.cpp:78
-msgctxt "Status of a torrent file"
-msgid "Seeding"
-msgstr "Levitamine"
-
-#: src/torrent/torrentstats.cpp:80
-msgid "Downloading"
-msgstr "Allalaadimine"
-
-#: src/torrent/torrentstats.cpp:82
-msgid "Stalled"
-msgstr "Seiskunud"
-
-#: src/torrent/torrentstats.cpp:84
-msgid "Stopped"
-msgstr "Peatatud"
-
-#: src/torrent/torrentstats.cpp:88
-msgid "Allocating diskspace"
-msgstr "Kettaruumi eraldamine"
-
-#: src/torrent/torrentstats.cpp:90
-msgid "Queued for seeding"
-msgstr "Järjekorras levitamiseks"
-
-#: src/torrent/torrentstats.cpp:90
-msgid "Queued for downloading"
-msgstr "Järjekorras allalaadimiseks"
-
-#: src/torrent/torrentstats.cpp:94
-msgid "Stopped. No space left on device."
-msgstr "Peatatud. Kettal pole ruumi."
-
-#: src/torrent/torrentstats.cpp:96
-msgid "Paused"
-msgstr "Peatatud"
-
-#: src/torrent/torrentstats.cpp:98
-msgid "Superseeding"
-msgstr "Superlevitamine"
-
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
@@ -336,7 +291,7 @@ msgstr "Torrentifaili %1 avamine nurjus: %2"
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr "Viga kettale kirjutamisel: kas kettaruumi on ikka piisavalt?"
 
-#: src/torrent/torrentcontrol.cpp:553
+#: src/torrent/torrentcontrol.cpp:554
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -345,17 +300,17 @@ msgstr ""
 "Torrenti <b>%1</b> laadimisel tekkis viga:<br/><b>%2</b><br/> Arvatavasti on "
 "torrent vigane või pole see üldse torrenti fail."
 
-#: src/torrent/torrentcontrol.cpp:583
+#: src/torrent/torrentcontrol.cpp:584
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr "<b>%1</b> laadimisel tekkis tõrge:<br/><b>%2</b>"
 
-#: src/torrent/torrentcontrol.cpp:594
+#: src/torrent/torrentcontrol.cpp:595
 #, kde-format
 msgid "Unable to create %1: %2"
 msgstr "%1 loomine nurjus: %2"
 
-#: src/torrent/torrentcontrol.cpp:609
+#: src/torrent/torrentcontrol.cpp:610
 #, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
@@ -364,38 +319,91 @@ msgstr ""
 "Sa juba laadid torrentit <b>%1</b> alla, mõlema torrenti tracker'ite "
 "nimekiri on ühendatud."
 
-#: src/torrent/torrentcontrol.cpp:614
+#: src/torrent/torrentcontrol.cpp:615
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Sa juba laadid torrentit <b>%1</b> alla."
+
+#: src/torrent/torrentstats.cpp:73
+msgid "Not started"
+msgstr "Pole alustatud"
+
+#: src/torrent/torrentstats.cpp:75
+msgid "Download completed"
+msgstr "Allalaadimine valmis"
+
+#: src/torrent/torrentstats.cpp:77
+msgid "Seeding completed"
+msgstr "Levitamine valmis"
+
+#: src/torrent/torrentstats.cpp:79
+msgctxt "Status of a torrent file"
+msgid "Seeding"
+msgstr "Levitamine"
+
+#: src/torrent/torrentstats.cpp:81
+msgid "Downloading"
+msgstr "Allalaadimine"
+
+#: src/torrent/torrentstats.cpp:83
+msgid "Stalled"
+msgstr "Seiskunud"
+
+#: src/torrent/torrentstats.cpp:85
+msgid "Stopped"
+msgstr "Peatatud"
+
+#: src/torrent/torrentstats.cpp:89
+msgid "Allocating diskspace"
+msgstr "Kettaruumi eraldamine"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Queued for seeding"
+msgstr "Järjekorras levitamiseks"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Queued for downloading"
+msgstr "Järjekorras allalaadimiseks"
+
+#: src/torrent/torrentstats.cpp:95
+msgid "Stopped. No space left on device."
+msgstr "Peatatud. Kettal pole ruumi."
+
+#: src/torrent/torrentstats.cpp:97
+msgid "Paused"
+msgstr "Peatatud"
+
+#: src/torrent/torrentstats.cpp:99
+msgid "Superseeding"
+msgstr "Superlevitamine"
 
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "Ümbersuunamine ilma uue asukohata"
 
-#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
-#: src/tracker/httptracker.cpp:557
+#: src/tracker/httptracker.cpp:287 src/tracker/httptracker.cpp:307
+#: src/tracker/httptracker.cpp:463
+msgid "Invalid response from tracker"
+msgstr "Vigane vastus tracker'ist"
+
+#: src/tracker/httptracker.cpp:300
+msgid "Invalid data from tracker"
+msgstr "Vigased andmed tracker'ist"
+
+#: src/tracker/httptracker.cpp:480
+msgid "Invalid tracker URL"
+msgstr "Vigane tracker'i URL"
+
+#: src/tracker/httptracker.cpp:558 src/tracker/udptracker.cpp:364
+#: src/tracker/udptracker.cpp:374
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Ajaületus ühendumisel tracker'iga %1"
 
-#: src/tracker/udptracker.cpp:409
+#: src/tracker/udptracker.cpp:401
 #, kde-format
 msgid "Unable to resolve hostname %1"
 msgstr "%1 masinanime lahendamine nurjus"
-
-#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:462
-msgid "Invalid response from tracker"
-msgstr "Vigane vastus tracker'ist"
-
-#: src/tracker/httptracker.cpp:293
-msgid "Invalid data from tracker"
-msgstr "Vigased andmed tracker'ist"
-
-#: src/tracker/httptracker.cpp:479
-msgid "Invalid tracker URL"
-msgstr "Vigane tracker'i URL"
 
 #: src/util/logsystemmanager.cpp:33
 msgid "General"
@@ -430,6 +438,14 @@ msgstr "%1 kirjutamine nurjus: %2"
 #, kde-format
 msgid "Cannot read from %1"
 msgstr "%1 lugemine nurjus"
+
+#: src/util/signalcatcher.cpp:78
+msgid "Error when writing to disk"
+msgstr "Viga kettale kirjutamisel"
+
+#: src/util/signalcatcher.cpp:78
+msgid "Error when reading from disk"
+msgstr "Viga kettalt lugemisel"
 
 #: src/util/fileops.cpp:94
 #, kde-format
@@ -472,35 +488,27 @@ msgid "Cannot calculate the filesize: %1"
 msgstr "Faili suuruse arvutamine nurjus: %1"
 
 #: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
-#: src/util/fileops.cpp:387
+#: src/util/fileops.cpp:387 src/util/fileops.cpp:390
 #, kde-format
 msgid "Cannot expand file: %1"
 msgstr "Faili laiendamie nurjus: %1"
 
-#: src/util/fileops.cpp:417
+#: src/util/fileops.cpp:420
 #, kde-format
 msgid "Cannot seek in file: %1"
 msgstr "Otsing failis nurjus: %1"
 
-#: src/util/functions.cpp:280
+#: src/util/functions.cpp:234
 #, kde-format
 msgid "%1/s"
 msgstr "%1/sek"
 
-#: src/util/functions.cpp:291
+#: src/util/functions.cpp:245
 #, kde-format
 msgid "1 day "
 msgid_plural "%1 days "
 msgstr[0] "1 päev"
 msgstr[1] "%1 päeva"
-
-#: src/util/signalcatcher.cpp:62
-msgid "Error when writing to disk"
-msgstr "Viga kettale kirjutamisel"
-
-#: src/util/signalcatcher.cpp:62
-msgid "Error when reading from disk"
-msgstr "Viga kettalt lugemisel"
 
 #: src/upnp/httprequest.cpp:96
 msgid "Connection closed unexpectedly"
@@ -558,14 +566,18 @@ msgstr "ktcli"
 #~ msgid "Parse Error"
 #~ msgstr "Parsimisviga"
 
-#~ msgid "Cannot open file : %1 : %2"
-#~ msgstr "Faili avamine nurjus: %1: %2"
+#~ msgid "Not in use"
+#~ msgstr "Pole kasutusel"
+
+#, fuzzy
+#~ msgid "Not enough diskspace"
+#~ msgstr "%1 jaoks napib kettaruumi"
 
 #~ msgid "Cannot open file %1 : %2"
 #~ msgstr "Faili %1 avamine nurjus: %2"
 
-#~ msgid "Not in use"
-#~ msgstr "Pole kasutusel"
+#~ msgid "Cannot open file : %1 : %2"
+#~ msgstr "Faili avamine nurjus: %1: %2"
 
 #~ msgid ""
 #~ "An error occurred while loading the torrent:<br/><b>%1</b><br/>The "
@@ -577,16 +589,10 @@ msgstr "ktcli"
 #~ msgid "Cannot open log file %1 : %2"
 #~ msgstr "Logifaili %1 avamine nurjus: %2"
 
-#, fuzzy
-#~| msgid "Not enough free disk space for %1"
-#~ msgid "Not enough diskspace"
-#~ msgstr "%1 jaoks napib kettaruumi"
-
 #~ msgid "Timeout occurred"
 #~ msgstr "Tekkis ajaületus"
 
 #, fuzzy
-#~| msgid "UDP"
 #~ msgid "UTP"
 #~ msgstr "UDP"
 
@@ -1500,7 +1506,6 @@ msgstr "ktcli"
 #~ msgstr " Mootor: "
 
 #, fuzzy
-#~| msgid "Do you want to download this magnet link ?"
 #~ msgid "Do you want to download this magnet link?"
 #~ msgstr "Kas laadida magnetlink alla?"
 
@@ -1705,7 +1710,6 @@ msgstr "ktcli"
 #~ msgstr "Mitte kunagi"
 
 #, fuzzy
-#~| msgid "Stop Magnet"
 #~ msgid "Copy Magnet URI"
 #~ msgstr "Peata Magnet"
 
@@ -2295,7 +2299,6 @@ msgstr "ktcli"
 #~ msgstr "KDE BitTorrenti klient"
 
 #, fuzzy
-#~| msgid "(C) 2005 - 2007 Joris Guisson and Ivan Vasic"
 #~ msgid "(C) 2005 - 2010 Joris Guisson and Ivan Vasic"
 #~ msgstr "(C) 2005 - 2007: Joris Guisson ja Ivan Vasic"
 
@@ -2708,9 +2711,6 @@ msgstr "ktcli"
 #~ "Go to Settings -> Configure KTorrent, if you want to change the limits."
 #~ msgstr ""
 #~ "Kui soovid piiranguid muuta, vali Seadistused -> KTorrenti seadistamine."
-
-#~ msgid "There is not enough diskspace available."
-#~ msgstr "Kettaruumi napib."
 
 #~ msgid ""
 #~ "Your disk is running out of space.<br /><b>%1</b> is being downloaded to "
@@ -3418,24 +3418,6 @@ msgstr "ktcli"
 #~ msgstr "Kasutatav veebiliides."
 
 #, fuzzy
-#~| msgid ""
-#~| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/"
-#~| "TR/REC-html40/strict.dtd\">\n"
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Scan the folder "
-#~| "recursively for torrents.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;\">Note: "
-#~| "<span style=\" font-weight:400;\">This will not be done for any folder "
-#~| "named loaded.</span></p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -3475,7 +3457,6 @@ msgstr "ktcli"
 #~ "puhul, mis kannavad nime 'laaditud'.</span></p></body></html>"
 
 #, fuzzy
-#~| msgid "Required:"
 #~ msgid "Login required"
 #~ msgstr "Vajalik:"
 
@@ -4383,47 +4364,38 @@ msgstr "ktcli"
 #~ msgstr "&Loobu"
 
 #, fuzzy
-#~| msgid "Search Preferences"
 #~ msgid "Magnet Generator Preferences"
 #~ msgstr "Otsingu seadistused"
 
 #, fuzzy
-#~| msgid "Add Trackers"
 #~ msgid "Add tracker"
 #~ msgstr "Lisa tracker'id"
 
 #, fuzzy
-#~| msgid "Tracker"
 #~ msgid "Tracker:"
 #~ msgstr "Tracker"
 
 #, fuzzy
-#~| msgid "Move a torrent down in the queue"
 #~ msgid "Add the torrent name in the URI"
 #~ msgstr "Liiguta torrent järjekorras allapoole"
 
 #, fuzzy
-#~| msgid "Add an item"
 #~ msgid "Add name"
 #~ msgstr "Lisa element"
 
 #, fuzzy
-#~| msgid "Show Video"
 #~ msgid "Show popup"
 #~ msgstr "Näita videot"
 
 #, fuzzy
-#~| msgid "Tracker"
 #~ msgid "Toggles tracker"
 #~ msgstr "Tracker"
 
 #, fuzzy
-#~| msgid "Use default browser"
 #~ msgid "The default tracker"
 #~ msgstr "Vaikimisi brauseri kasutamine"
 
 #, fuzzy
-#~| msgid "Show Feed"
 #~ msgid "Show dn"
 #~ msgstr "Näita voogu"
 
@@ -5197,6 +5169,10 @@ msgstr "ktcli"
 
 #~ msgid "Show system tray icon"
 #~ msgstr "Ikoon &süsteemses salves"
+
+#, fuzzy
+#~ msgid "Whether or not to show system tray popup messages."
+#~ msgstr "Süsteemse salve hüpikteadete näitamine"
 
 #~ msgid "Show system tray popup messages"
 #~ msgstr "Süsteemse salve hüpikteadete näitamine"

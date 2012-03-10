@@ -1,3 +1,34 @@
+Changes in 1.2:
+- Fix large file preallocation when not using quick preallocation in some cases (293279)
+- Disable current open file checking, it causes performance issues in some situations
+- Don't use the gcrypt version macro in it's version check (294866)
+
+Changes in 1.2rc1:
+- Make it possible to check data on chunk ranges instead of the entire torrent
+- Move data file jobs are now done one after the other (212614)
+- Implement partial seeding extension (256263)
+- Add support for IPv6 traffic class field
+- Make sure a torrent is restarted when it was auto stopped and more files are selected for downloading (179945)
+- Emit finished signal when torrent is found completely downloaded in data check
+- Seeders and leechers shown in view is now the maximum of all trackers and not the sum
+- Do not add trackers with unsupported protocols (278352)
+- Improve SIGBUS handling, fixes a crash (276777)
+- Remove usage of several deprecated KDE3 networking classes
+- Remove obsolete functions of data check during upload
+- Simplify blocklist interface
+- Revamp networking code
+- Remove thread from DHT code
+- Prevent file descriptor exhaustion from happening (251120, 282873, 274544)
+- Do not count non piece data in upload speed calculation (283170)
+- Fix IPv6 address parsing bug
+- Improve performance of µTP code
+- Fix crash in DHT packet receive code (284627)
+- Fill ip parameter of tracker announce with current IPv6 address if not filled in by user in settings (267551)
+- Fix crash in PeerManager (287967)
+- Fix crash at exit when datachecker job is running (289153)
+- Fix crash due to bug in smaller then operator of net::Address (288444)
+- Fix crash due to race condition in logging initialization (286597)
+
 Changes in 1.1.3:
 - Fix bug causing UPnP not to work properly if there is a question mark in the controlurl
 - Fix crash in webseed code (281605)

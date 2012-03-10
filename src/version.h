@@ -25,8 +25,8 @@
 #include <util/constants.h>
 
 #define LIBKTORRENT_MAJOR 1
-#define LIBKTORRENT_MINOR 1
-#define LIBKTORRENT_RELEASE 3
+#define LIBKTORRENT_MINOR 2
+#define LIBKTORRENT_RELEASE 0
 #define LIBKTORRENT_VERSION ((LIBKTORRENT_MAJOR << 16) | (LIBKTORRENT_MINOR << 8) | LIBKTORRENT_RELEASE)
 
 class QString;
@@ -73,7 +73,7 @@ namespace bt
 	/// Version type of the ktorrent library
 	const VersionType VERSION_TYPE = NORMAL;
 	/// Release version number only applicable for betas, alphas and rc's of libktorrent
-	const Uint32 BETA_ALPHA_RC_RELEASE = 0;
+	const Uint32 BETA_ALPHA_RC_RELEASE = 1;
 	/// Release version number of the ktorrent library (only for normal releases)
 	const Uint32 RELEASE = LIBKTORRENT_RELEASE;
 }

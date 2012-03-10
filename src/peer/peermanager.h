@@ -25,7 +25,7 @@
 #include <ktorrent_export.h>
 #include <peer/superseeder.h>
 #include <peer/peerconnector.h>
-#include <mse/streamsocket.h>
+#include <mse/encryptedpacketsocket.h>
 
 namespace KNetwork
 {
@@ -173,13 +173,15 @@ namespace bt
 		 * @param peer_id The Peer's ID
 		 * @param support What extensions the peer supports
 		 */
-		void newConnection(mse::StreamSocket::Ptr sock,const PeerID & peer_id,Uint32 support);
+		void newConnection(mse::EncryptedPacketSocket::Ptr sock,const PeerID & peer_id,Uint32 support);
 
 		/**
 		 * Add a potential peer
-		 * @param pp The PotentialPeer
-		 */
-		void addPotentialPeer(const PotentialPeer & pp);
+		 * @param addr The peers' address
+		 * @param local Is it a peer on the local network
+		 * @return void
+		 **/
+		void addPotentialPeer(const net::Address & addr, bool local);
 		
 		/**
 		 * Kills all connections to seeders. 
@@ -269,6 +271,12 @@ namespace bt
 		/// Send a have message to all peers
 		void sendHave(Uint32 index);
 		
+		/// Set if we are a partial seed or not
+		void setPartialSeed(bool partial_seed);
+		
+		/// Are we a partial seed
+		bool isPartialSeed() const;
+		
 	public slots:
 		/**
 		 * A PeerSource, has new potential peers.
@@ -279,9 +287,6 @@ namespace bt
 	private:
 		virtual void allowChunk(PeerInterface* peer, Uint32 chunk);
 
-	private slots:
-		void onResolverResults(KNetwork::KResolverResults res);
-		
 	signals:
 		void newPeer(Peer* p);
 		void peerKilled(Peer* p);

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-11 11:17+0200\n"
+"POT-Creation-Date: 2012-02-07 18:22+0100\n"
 "PO-Revision-Date: 2009-11-17 11:13+0100\n"
 "Last-Translator: Axel Rousseau <axel@esperanto-jeunes.org>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -16,45 +16,43 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: src/bcodec/bdecoder.cpp:62
+#: src/bcodec/bdecoder.cpp:71
 #, kde-format
 msgid "Illegal token: %1"
 msgstr "Maltaŭga ĵetono: %1"
 
-#: src/bcodec/bdecoder.cpp:125 src/bcodec/bdecoder.cpp:133
+#: src/bcodec/bdecoder.cpp:133 src/bcodec/bdecoder.cpp:141
 msgid "Decode error"
 msgstr "Malkoda eraro"
 
-#: src/bcodec/bdecoder.cpp:193 src/bcodec/bdecoder.cpp:238
+#: src/bcodec/bdecoder.cpp:201 src/bcodec/bdecoder.cpp:246
 msgid "Unexpected end of input"
 msgstr "Neatendita fino de enigo"
 
-#: src/bcodec/bdecoder.cpp:213 src/bcodec/bdecoder.cpp:247
+#: src/bcodec/bdecoder.cpp:221 src/bcodec/bdecoder.cpp:255
 #, kde-format
 msgid "Cannot convert %1 to an int"
 msgstr "Ne povas konverti %1 en entjeron"
 
-#: src/bcodec/bdecoder.cpp:252
+#: src/bcodec/bdecoder.cpp:260
 #, fuzzy
-#| msgid "Torrent is incomplete!"
 msgid "Torrent is incomplete."
 msgstr "Torento estas nekompleta!"
 
-#: src/datachecker/datacheckerjob.cpp:76
+#: src/datachecker/datacheckerjob.cpp:82
 msgid "Waiting for other data checks to finish"
 msgstr ""
 
-#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:93
 msgid "Checking data"
 msgstr "Kontrolas datumojn"
 
-#: src/datachecker/datacheckerjob.cpp:135
+#: src/datachecker/datacheckerjob.cpp:141
 #, fuzzy
-#| msgid "Checking data"
 msgid "Checking Data"
 msgstr "Kontrolas datumojn"
 
-#: src/datachecker/multidatachecker.cpp:203
+#: src/datachecker/multidatachecker.cpp:209
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
@@ -62,114 +60,28 @@ msgstr "Kontrolas datumojn"
 msgid "Cannot open file %1: %2"
 msgstr "Ne povas malfermi dosieron %1: %2"
 
-#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
-#: src/util/fileops.cpp:396
-#, fuzzy, kde-format
-#| msgid "Cannot open %1 : %2"
-msgid "Cannot open %1: %2"
-msgstr "Ne povas malfermi %1 : %2"
-
-#: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
-#: src/diskio/cachefile.cpp:412 src/diskio/cachefile.cpp:480
-#, fuzzy, kde-format
-#| msgid "Cannot open %1 for writing : readonly filesystem"
-msgid "Cannot open %1 for writing: readonly filesystem"
-msgstr "Ne povas malfermi %1 por skribi : nurlega dosiersistemo"
-
-#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:418
-#, kde-format
-msgid "Attempting to write beyond the maximum size of %1"
-msgstr ""
-
-#: src/diskio/cachefile.cpp:255
-#, kde-format
-msgid ""
-"Cannot expand file %1: attempting to grow the file beyond the maximum size"
-msgstr ""
-
-#: src/diskio/cachefile.cpp:259
-#, fuzzy, kde-format
-#| msgid "Cannot expand file %1 : %2"
-msgid "Cannot expand file %1: %2"
-msgstr "Ne povas malpaki dosieron: %1 : %2"
-
-#: src/diskio/cachefile.cpp:378
-#, fuzzy, kde-format
-#| msgid "Error : Reading past the end of the file %1"
-msgid "Error: Reading past the end of the file %1"
-msgstr "Eraro : Legas preter fino de la dosiero %1"
-
-#: src/diskio/cachefile.cpp:383 src/diskio/cachefile.cpp:430
-#, fuzzy, kde-format
-#| msgid "Failed to create %1 : %2"
-msgid "Failed to seek file %1: %2"
-msgstr "Ne povas krei %1 : %2"
-
-#: src/diskio/cachefile.cpp:391
-#, kde-format
-msgid "Error reading from %1"
-msgstr "Eraro okazis dum legado de %1"
-
-#: src/diskio/cachefile.cpp:434
-#, fuzzy, kde-format
-#| msgid "Failed to create %1 : %2"
-msgid "Failed to write to file %1: %2"
-msgstr "Ne povas krei %1 : %2"
-
-#: src/diskio/cachefile.cpp:501
-#, fuzzy, kde-format
-#| msgid "Cannot preallocate diskspace : %1"
-msgid "Cannot preallocate diskspace: %1"
-msgstr "Ne povas antaŭdisponigi diskspacon : %1"
-
 #: src/diskio/dndfile.cpp:89
 #, fuzzy, kde-format
-#| msgid "Cannot create file %1 : %2"
 msgid "Cannot create file %1: %2"
 msgstr "Ne povas krei dosieron %1 : %2"
 
 #: src/diskio/dndfile.cpp:137
 #, fuzzy, kde-format
-#| msgid "Failed to write first chunk to DND file : %1"
 msgid "Failed to write first chunk to DND file: %1"
 msgstr "Malsukcesis skribi unuan pecon al DND-dosiero : %1"
 
 #: src/diskio/dndfile.cpp:155
 #, fuzzy, kde-format
-#| msgid "Failed to write last chunk to DND file : %1"
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Malsukcesis skribi lastan pecon al DND-dosiero : %1"
 
-#: src/diskio/movedatafilesjob.cpp:166
-#, fuzzy
-#| msgid "Moving average"
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Movanta averaĝo"
-
-#: src/diskio/movedatafilesjob.cpp:167
-#, fuzzy
-#| msgid "Score"
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "Poentoj"
-
-#: src/diskio/movedatafilesjob.cpp:168
-#, fuzzy
-#| msgid "Scrape"
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "Informpeti"
-
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, fuzzy, kde-format
-#| msgid "Failed to open %1 : %2"
 msgid "Failed to open %1: %2"
 msgstr "Ne povas malfermi %1 : %2"
 
 #: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
 #, fuzzy, kde-format
-#| msgid "Failed to create %1 : %2"
 msgid "Failed to create %1: %2"
 msgstr "Ne povas krei %1 : %2"
 
@@ -177,90 +89,162 @@ msgstr "Ne povas krei %1 : %2"
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
 
-#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
+#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
+#: src/util/fileops.cpp:399
 #, fuzzy, kde-format
-#| msgid "Cannot open index file %1 : %2"
+msgid "Cannot open %1: %2"
+msgstr "Ne povas malfermi %1 : %2"
+
+#: src/diskio/cachefile.cpp:122 src/diskio/cachefile.cpp:250
+#: src/diskio/cachefile.cpp:414 src/diskio/cachefile.cpp:482
+#, fuzzy, kde-format
+msgid "Cannot open %1 for writing: readonly filesystem"
+msgstr "Ne povas malfermi %1 por skribi : nurlega dosiersistemo"
+
+#: src/diskio/cachefile.cpp:129 src/diskio/cachefile.cpp:420
+#, kde-format
+msgid "Attempting to write beyond the maximum size of %1"
+msgstr ""
+
+#: src/diskio/cachefile.cpp:257
+#, kde-format
+msgid ""
+"Cannot expand file %1: attempting to grow the file beyond the maximum size"
+msgstr ""
+
+#: src/diskio/cachefile.cpp:261
+#, fuzzy, kde-format
+msgid "Cannot expand file %1: %2"
+msgstr "Ne povas malpaki dosieron: %1 : %2"
+
+#: src/diskio/cachefile.cpp:380
+#, fuzzy, kde-format
+msgid "Error: Reading past the end of the file %1"
+msgstr "Eraro : Legas preter fino de la dosiero %1"
+
+#: src/diskio/cachefile.cpp:385 src/diskio/cachefile.cpp:432
+#, fuzzy, kde-format
+msgid "Failed to seek file %1: %2"
+msgstr "Ne povas krei %1 : %2"
+
+#: src/diskio/cachefile.cpp:393
+#, kde-format
+msgid "Error reading from %1"
+msgstr "Eraro okazis dum legado de %1"
+
+#: src/diskio/cachefile.cpp:436
+#, fuzzy, kde-format
+msgid "Failed to write to file %1: %2"
+msgstr "Ne povas krei %1 : %2"
+
+#: src/diskio/cachefile.cpp:503
+#, fuzzy, kde-format
+msgid "Cannot preallocate diskspace: %1"
+msgstr "Ne povas antaŭdisponigi diskspacon : %1"
+
+#: src/diskio/chunkmanager.cpp:928 src/diskio/chunkmanager.cpp:954
+#, fuzzy, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr "Ne povas malfermi indekshavan dosieron %1 : %2"
 
-#: src/download/downloader.cpp:810
-msgid "Disabled because webseed does not match torrent"
+#: src/diskio/movedatafilesjob.cpp:140
+msgid "Waiting for other move jobs to finish"
 msgstr ""
 
-#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
+#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
 #, fuzzy
-#| msgid "Seeds connected"
-msgid "Not connected"
-msgstr "Fontoj konektitaj"
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr "Poentoj"
 
-#: src/download/httpconnection.cpp:107
-#, kde-format
-msgid "Resolving proxy %1:%2"
-msgstr ""
-
-#: src/download/httpconnection.cpp:116
-#, fuzzy, kde-format
-#| msgid "Unable to create %1 : %2"
-msgid "Resolving hostname %1"
-msgstr "Ne povas krei %1 : %2"
-
-#: src/download/httpconnection.cpp:129 src/download/webseed.cpp:336
+#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
 #, fuzzy
-#| msgid "Connections"
-msgid "Connection closed"
-msgstr "Konektoj"
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr "Informpeti"
 
-#: src/download/httpconnection.cpp:136
-#, kde-format
-msgid "Error: request failed: %1"
-msgstr ""
-
-#: src/download/httpconnection.cpp:153 src/download/httpconnection.cpp:217
+#: src/diskio/movedatafilesjob.cpp:180
 #, fuzzy
-#| msgid "Connections"
-msgid "Connected"
-msgstr "Konektoj"
-
-#: src/download/httpconnection.cpp:159
-msgid "Error: Failed to connect to webseed"
-msgstr ""
-
-#: src/download/httpconnection.cpp:224
-#, fuzzy
-#| msgid "Connections"
-msgid "Connecting"
-msgstr "Konektoj"
-
-#: src/download/httpconnection.cpp:235
-msgid "Failed to connect to webseed"
-msgstr ""
-
-#: src/download/httpconnection.cpp:242
-#, fuzzy
-#| msgid "Unable to create %1 : %2"
-msgid "Failed to resolve hostname of webseed"
-msgstr "Ne povas krei %1 : %2"
-
-#: src/download/httpconnection.cpp:322
-msgid "Error: failed to connect, server not responding"
-msgstr ""
-
-#: src/download/httpconnection.cpp:333
-msgid "Error: request timed out"
-msgstr ""
-
-#: src/download/httpconnection.cpp:398
-msgid "Redirected without a new location."
-msgstr ""
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Movanta averaĝo"
 
 #: src/download/chunkdownload.cpp:383
 #, fuzzy, kde-format
-#| msgid "%1 peers"
 msgid "1 peer"
 msgid_plural "%1 peers"
 msgstr[0] "%1 kundividantoj"
 msgstr[1] "%1 kundividantoj"
+
+#: src/download/downloader.cpp:808
+msgid "Disabled because webseed does not match torrent"
+msgstr ""
+
+#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
+#: src/download/webseed.cpp:98
+#, fuzzy
+msgid "Not connected"
+msgstr "Fontoj konektitaj"
+
+#: src/download/httpconnection.cpp:115
+#, kde-format
+msgid "Resolving proxy %1:%2"
+msgstr ""
+
+#: src/download/httpconnection.cpp:121 src/download/httpconnection.cpp:139
+#, fuzzy
+msgid "Not enough system resources available"
+msgstr "Ne estas sufiĉa diskspaco."
+
+#: src/download/httpconnection.cpp:133
+#, fuzzy, kde-format
+msgid "Resolving hostname %1"
+msgstr "Ne povas krei %1 : %2"
+
+#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
+#, fuzzy
+msgid "Connection closed"
+msgstr "Konektoj"
+
+#: src/download/httpconnection.cpp:160
+#, kde-format
+msgid "Error: request failed: %1"
+msgstr ""
+
+#: src/download/httpconnection.cpp:188 src/download/httpconnection.cpp:222
+#, fuzzy
+msgid "Connected"
+msgstr "Konektoj"
+
+#: src/download/httpconnection.cpp:199
+msgid "Error: Failed to connect to webseed"
+msgstr ""
+
+#: src/download/httpconnection.cpp:229
+#, fuzzy
+msgid "Connecting"
+msgstr "Konektoj"
+
+#: src/download/httpconnection.cpp:240
+msgid "Failed to connect to webseed"
+msgstr ""
+
+#: src/download/httpconnection.cpp:247
+#, fuzzy
+msgid "Failed to resolve hostname of webseed"
+msgstr "Ne povas krei %1 : %2"
+
+#: src/download/httpconnection.cpp:326
+msgid "Error: failed to connect, server not responding"
+msgstr ""
+
+#: src/download/httpconnection.cpp:337
+msgid "Error: request timed out"
+msgstr ""
+
+#: src/download/httpconnection.cpp:402
+msgid "Redirected without a new location."
+msgstr ""
 
 #: src/download/webseed.cpp:545
 #, kde-format
@@ -273,7 +257,6 @@ msgstr "Bone"
 
 #: src/interfaces/trackerinterface.cpp:58
 #, fuzzy, kde-format
-#| msgid "Opening %1"
 msgid "Warning: %1"
 msgstr "Malfermas %1"
 
@@ -281,9 +264,8 @@ msgstr "Malfermas %1"
 msgid "Announcing"
 msgstr "Konektas"
 
-#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:86
+#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:87
 #, fuzzy, kde-format
-#| msgid "Error: "
 msgid "Error: %1"
 msgstr "Eraro: "
 
@@ -301,79 +283,16 @@ msgstr "Nekonata kliento"
 msgid "Cannot create index file: %1"
 msgstr "Ne povas krei indekshavan dosieron: %1"
 
-#: src/torrent/torrentstats.cpp:72
-msgid "Not started"
-msgstr "Ne lanĉiĝis"
-
-#: src/torrent/torrentstats.cpp:74
-msgid "Download completed"
-msgstr "Elŝuto finiĝis"
-
-#: src/torrent/torrentstats.cpp:76
-msgid "Seeding completed"
-msgstr "Finis la fontsendon"
-
-#: src/torrent/torrentstats.cpp:78
-#, fuzzy
-#| msgid "Seeding"
-msgctxt "Status of a torrent file"
-msgid "Seeding"
-msgstr "Fontsendas"
-
-#: src/torrent/torrentstats.cpp:80
-msgid "Downloading"
-msgstr "Elŝutas"
-
-#: src/torrent/torrentstats.cpp:82
-msgid "Stalled"
-msgstr "Paraliziĝis"
-
-#: src/torrent/torrentstats.cpp:84
-msgid "Stopped"
-msgstr "Ĉesis"
-
-#: src/torrent/torrentstats.cpp:88
-msgid "Allocating diskspace"
-msgstr "Disponigas diskspacon"
-
-#: src/torrent/torrentstats.cpp:90
-#, fuzzy
-#| msgid "Currently downloading:"
-msgid "Queued for seeding"
-msgstr "Nun elŝutas:"
-
-#: src/torrent/torrentstats.cpp:90
-#, fuzzy
-#| msgid "Currently downloading:"
-msgid "Queued for downloading"
-msgstr "Nun elŝutas:"
-
-#: src/torrent/torrentstats.cpp:94
-msgid "Stopped. No space left on device."
-msgstr "Ĉesis: disponaĵo estas plenplena."
-
-#: src/torrent/torrentstats.cpp:96
-msgid "Paused"
-msgstr "Paŭzita"
-
-#: src/torrent/torrentstats.cpp:98
-#, fuzzy
-#| msgid "Seeding"
-msgid "Superseeding"
-msgstr "Fontsendas"
-
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
 #: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
 #, fuzzy
-#| msgid "Corrupted torrent!"
 msgid "Corrupted torrent."
 msgstr "Malbona torento!"
 
 #: src/torrent/torrent.cpp:165
 #, fuzzy, kde-format
-#| msgid " Unable to open torrent file %1 : %2"
 msgid "Unable to open torrent file %1: %2"
 msgstr "Ne povas malfermi torentan dosieron %1 : %2"
 
@@ -381,11 +300,8 @@ msgstr "Ne povas malfermi torentan dosieron %1 : %2"
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:553
+#: src/torrent/torrentcontrol.cpp:554
 #, fuzzy, kde-format
-#| msgid ""
-#| "An error occurred while loading the torrent. The torrent is probably "
-#| "corrupt or is not a torrent file."
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
 "torrent is probably corrupt or is not a valid torrent file."
@@ -393,22 +309,18 @@ msgstr ""
 "Eraro okazis dum la ŝargado de la torento. Kompreneble aŭ la torento estas "
 "malbona, aŭ eĉ ne estas torentdosiero."
 
-#: src/torrent/torrentcontrol.cpp:583
+#: src/torrent/torrentcontrol.cpp:584
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:594
+#: src/torrent/torrentcontrol.cpp:595
 #, fuzzy, kde-format
-#| msgid "Unable to create %1 : %2"
 msgid "Unable to create %1: %2"
 msgstr "Ne povas krei %1 : %2"
 
-#: src/torrent/torrentcontrol.cpp:609
+#: src/torrent/torrentcontrol.cpp:610
 #, fuzzy, kde-format
-#| msgid ""
-#| "You are already downloading this torrent %1, the list of trackers of both "
-#| "torrents has been merged."
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
 "both torrents have been merged."
@@ -416,44 +328,98 @@ msgstr ""
 "Vi jam elŝutas tiun ĉi torenton %1, la listo de kunordigaj serviloj de ambaŭ "
 "jam kunfandiĝis."
 
-#: src/torrent/torrentcontrol.cpp:614
+#: src/torrent/torrentcontrol.cpp:615
 #, fuzzy, kde-format
-#| msgid "You are already downloading the torrent %1"
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Vi jam elŝutas la torenton %1"
+
+#: src/torrent/torrentstats.cpp:73
+msgid "Not started"
+msgstr "Ne lanĉiĝis"
+
+#: src/torrent/torrentstats.cpp:75
+msgid "Download completed"
+msgstr "Elŝuto finiĝis"
+
+#: src/torrent/torrentstats.cpp:77
+msgid "Seeding completed"
+msgstr "Finis la fontsendon"
+
+#: src/torrent/torrentstats.cpp:79
+#, fuzzy
+msgctxt "Status of a torrent file"
+msgid "Seeding"
+msgstr "Fontsendas"
+
+#: src/torrent/torrentstats.cpp:81
+msgid "Downloading"
+msgstr "Elŝutas"
+
+#: src/torrent/torrentstats.cpp:83
+msgid "Stalled"
+msgstr "Paraliziĝis"
+
+#: src/torrent/torrentstats.cpp:85
+msgid "Stopped"
+msgstr "Ĉesis"
+
+#: src/torrent/torrentstats.cpp:89
+msgid "Allocating diskspace"
+msgstr "Disponigas diskspacon"
+
+#: src/torrent/torrentstats.cpp:91
+#, fuzzy
+msgid "Queued for seeding"
+msgstr "Nun elŝutas:"
+
+#: src/torrent/torrentstats.cpp:91
+#, fuzzy
+msgid "Queued for downloading"
+msgstr "Nun elŝutas:"
+
+#: src/torrent/torrentstats.cpp:95
+msgid "Stopped. No space left on device."
+msgstr "Ĉesis: disponaĵo estas plenplena."
+
+#: src/torrent/torrentstats.cpp:97
+msgid "Paused"
+msgstr "Paŭzita"
+
+#: src/torrent/torrentstats.cpp:99
+#, fuzzy
+msgid "Superseeding"
+msgstr "Fontsendas"
 
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr ""
 
-#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
-#: src/tracker/httptracker.cpp:557
+#: src/tracker/httptracker.cpp:287 src/tracker/httptracker.cpp:307
+#: src/tracker/httptracker.cpp:463
+msgid "Invalid response from tracker"
+msgstr "Nevalida respondo de servilo"
+
+#: src/tracker/httptracker.cpp:300
+msgid "Invalid data from tracker"
+msgstr "Nevalida datumo de servilo"
+
+#: src/tracker/httptracker.cpp:480
+msgid "Invalid tracker URL"
+msgstr "Nevalida servila retadreso"
+
+#: src/tracker/httptracker.cpp:558 src/tracker/udptracker.cpp:364
+#: src/tracker/udptracker.cpp:374
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr ""
 
-#: src/tracker/udptracker.cpp:409
+#: src/tracker/udptracker.cpp:401
 #, fuzzy, kde-format
-#| msgid "Unable to create %1 : %2"
 msgid "Unable to resolve hostname %1"
 msgstr "Ne povas krei %1 : %2"
 
-#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:462
-msgid "Invalid response from tracker"
-msgstr "Nevalida respondo de servilo"
-
-#: src/tracker/httptracker.cpp:293
-msgid "Invalid data from tracker"
-msgstr "Nevalida datumo de servilo"
-
-#: src/tracker/httptracker.cpp:479
-msgid "Invalid tracker URL"
-msgstr "Nevalida servila retadreso"
-
 #: src/util/logsystemmanager.cpp:33
 #, fuzzy
-#| msgid "General:"
 msgid "General"
 msgstr "Ĝenerala:"
 
@@ -463,7 +429,6 @@ msgstr "Konektoj"
 
 #: src/util/logsystemmanager.cpp:35
 #, fuzzy
-#| msgid "Trackers"
 msgid "Tracker"
 msgstr "Kunordigaj serviloj"
 
@@ -473,7 +438,6 @@ msgstr "DHT"
 
 #: src/util/logsystemmanager.cpp:37
 #, fuzzy
-#| msgid "Disk I/O:"
 msgid "Disk Input/Output"
 msgstr "Diska en/eligo:"
 
@@ -483,7 +447,6 @@ msgstr ""
 
 #: src/util/file.cpp:84
 #, fuzzy, kde-format
-#| msgid "Cannot write to %1 : %2"
 msgid "Cannot write to %1: %2"
 msgstr "Ne povas skribi al %1 : %2"
 
@@ -492,9 +455,18 @@ msgstr "Ne povas skribi al %1 : %2"
 msgid "Cannot read from %1"
 msgstr "Ne povas legi el %1"
 
+#: src/util/signalcatcher.cpp:78
+#, fuzzy
+msgid "Error when writing to disk"
+msgstr "Eraro okazis dum legado de %1"
+
+#: src/util/signalcatcher.cpp:78
+#, fuzzy
+msgid "Error when reading from disk"
+msgstr "Eraro okazis dum legado de %1"
+
 #: src/util/fileops.cpp:94
 #, fuzzy, kde-format
-#| msgid "Cannot create directory %1: %2"
 msgid "Cannot create directory %1"
 msgstr "Ne povas krei dosierujon %1: %2"
 
@@ -530,50 +502,34 @@ msgstr "Ne povas kalkuli la dosiergrandecon de %1: %2"
 
 #: src/util/fileops.cpp:327
 #, fuzzy, kde-format
-#| msgid "Cannot calculate the filesize : %1"
 msgid "Cannot calculate the filesize: %1"
 msgstr "Ne povas kalkuli la dosiergrandecon : %1"
 
 #: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
-#: src/util/fileops.cpp:387
+#: src/util/fileops.cpp:387 src/util/fileops.cpp:390
 #, fuzzy, kde-format
-#| msgid "Cannot expand file : %1"
 msgid "Cannot expand file: %1"
 msgstr "Ne povas malpaki dosieron: %1"
 
-#: src/util/fileops.cpp:417
+#: src/util/fileops.cpp:420
 #, fuzzy, kde-format
-#| msgid "Cannot seek in file : %1"
 msgid "Cannot seek in file: %1"
 msgstr "Ne povas serĉi dosieron: %1"
 
-#: src/util/functions.cpp:280
+#: src/util/functions.cpp:234
 #, kde-format
 msgid "%1/s"
 msgstr "%1/s"
 
-#: src/util/functions.cpp:291
+#: src/util/functions.cpp:245
 #, kde-format
 msgid "1 day "
 msgid_plural "%1 days "
 msgstr[0] "1 tago"
 msgstr[1] "%1 tagoj"
 
-#: src/util/signalcatcher.cpp:62
-#, fuzzy
-#| msgid "Error reading from %1"
-msgid "Error when writing to disk"
-msgstr "Eraro okazis dum legado de %1"
-
-#: src/util/signalcatcher.cpp:62
-#, fuzzy
-#| msgid "Error reading from %1"
-msgid "Error when reading from disk"
-msgstr "Eraro okazis dum legado de %1"
-
 #: src/upnp/httprequest.cpp:96
 #, fuzzy
-#| msgid "Connections"
 msgid "Connection closed unexpectedly"
 msgstr "Konektoj"
 
@@ -583,7 +539,6 @@ msgstr ""
 
 #: src/upnp/upnprouter.cpp:167
 #, fuzzy, kde-format
-#| msgid "Failed to open %1 : %2"
 msgid "Failed to download %1: %2"
 msgstr "Ne povas malfermi %1 : %2"
 
@@ -599,38 +554,32 @@ msgstr ""
 
 #: src/upnp/upnprouter.cpp:314
 #, fuzzy
-#| msgid "Cannot find port forwarding service in the device's description!"
 msgid "Cannot find port forwarding service in the device's description."
 msgstr ""
 "Ne povas trovi alipordan plusendadan servon en la priskribo de la aparato!"
 
 #: examples/ktcli/main.cpp:60
 #, fuzzy
-#| msgid "Document to open"
 msgid "Torrent to open"
 msgstr "La dosiero malfermiĝi"
 
 #: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
 #, fuzzy
-#| msgid "Notice"
 msgid "Port to use"
 msgstr "Rimarku"
 
 #: examples/ktcli/main.cpp:63
 #, fuzzy
-#| msgid "Use protocol encryption"
 msgid "Whether or not to enable encryption"
 msgstr "Uzi protokolan ĉifradon"
 
 #: examples/ktcli/main.cpp:64
 #, fuzzy
-#| msgid "Whether or not to show system tray popup messages."
 msgid "Whether or not to enable peer exchange"
 msgstr "Ĉu montri sistempletajn ŝprucmesaĝojn."
 
 #: examples/ktcli/main.cpp:65
 #, fuzzy
-#| msgid "Whether or not to show system tray popup messages."
 msgid "Whether or not to use utp"
 msgstr "Ĉu montri sistempletajn ŝprucmesaĝojn."
 
@@ -641,21 +590,21 @@ msgstr ""
 #~ msgid "Parse Error"
 #~ msgstr "Sintaksa eraro"
 
-#~ msgid "Cannot open file : %1 : %2"
-#~ msgstr "Ne povas malfermi dosieron : %1 : %2"
-
-#~ msgid "Cannot open file %1 : %2"
-#~ msgstr "Ne povas malfermi dosieron %1 : %2"
-
 #, fuzzy
-#~| msgid "Notice"
 #~ msgid "Not in use"
 #~ msgstr "Rimarku"
 
 #, fuzzy
-#~| msgid ""
-#~| "An error occurred while loading the torrent. The torrent is probably "
-#~| "corrupt or is not a torrent file."
+#~ msgid "Not enough diskspace"
+#~ msgstr "Nesufiĉa diskspaco por %1"
+
+#~ msgid "Cannot open file %1 : %2"
+#~ msgstr "Ne povas malfermi dosieron %1 : %2"
+
+#~ msgid "Cannot open file : %1 : %2"
+#~ msgstr "Ne povas malfermi dosieron : %1 : %2"
+
+#, fuzzy
 #~ msgid ""
 #~ "An error occurred while loading the torrent:<br/><b>%1</b><br/>The "
 #~ "torrent is probably corrupt or is not a valid torrent file."
@@ -667,12 +616,6 @@ msgstr ""
 #~ msgstr "Ne povas malfermi protokolon %1 : %2"
 
 #, fuzzy
-#~| msgid "Insufficient disk space for %1"
-#~ msgid "Not enough diskspace"
-#~ msgstr "Nesufiĉa diskspaco por %1"
-
-#, fuzzy
-#~| msgid "UDP"
 #~ msgid "UTP"
 #~ msgstr "UDP"
 
@@ -680,7 +623,6 @@ msgstr ""
 #~ msgstr "Ne povas uzi udp-pordon %1 aŭ la sekvantajn 10 pordojn."
 
 #, fuzzy
-#~| msgid "Scan Folder"
 #~ msgctxt "plugin name"
 #~ msgid "Scan Folder"
 #~ msgstr "Serĉi dosierujon"
@@ -701,7 +643,6 @@ msgstr ""
 #~ msgstr "UPnP"
 
 #, fuzzy
-#~| msgid "Active torrents"
 #~ msgid ""
 #~ "%2\n"
 #~ "1 active filter"
@@ -715,97 +656,78 @@ msgstr ""
 #~ msgstr "<b>%1</b><br/><br/>%2"
 
 #, fuzzy
-#~| msgid "Application"
 #~ msgid "Syndication"
 #~ msgstr "Aplikaĵo"
 
 #, fuzzy
-#~| msgid "Please enter the group name."
 #~ msgid "Please enter the URL of the RSS or Atom feed."
 #~ msgstr "Bonvolu entajpi la nomon de grupo."
 
 #, fuzzy
-#~| msgid "Failed to open %1 : %2"
 #~ msgid "Failed to load feed %1."
 #~ msgstr "Ne povas malfermi %1 : %2"
 
 #, fuzzy
-#~| msgid "Failed to create %1 : %2"
 #~ msgid "Failed to create directory for feed %1 : %2"
 #~ msgstr "Ne povas krei %1 : %2"
 
 #, fuzzy
-#~| msgid "Add Folder"
 #~ msgid "New Filter"
 #~ msgstr "Aldoni dosierujon"
 
 #, fuzzy
-#~| msgid "Add Folder"
 #~ msgid "Add New Filter"
 #~ msgstr "Aldoni dosierujon"
 
 #, fuzzy
-#~| msgid "Seeders"
 #~ msgid "Add Feed"
 #~ msgstr "Fontoj"
 
 #, fuzzy
-#~| msgid "Remove Item"
 #~ msgid "Remove Feed"
 #~ msgstr "Elpreni eron"
 
 #, fuzzy
-#~| msgid "Speed"
 #~ msgid "Show Feed"
 #~ msgstr "Rapido"
 
 #, fuzzy
-#~| msgid "Remove Folder"
 #~ msgid "Add/Remove Filters"
 #~ msgstr "Elpreni dosierujon"
 
 #, fuzzy
-#~| msgid "Username:"
 #~ msgid "Rename"
 #~ msgstr "Uzantnomo:"
 
 #, fuzzy
-#~| msgid "Add Folder"
 #~ msgid "Add Filter"
 #~ msgstr "Aldoni dosierujon"
 
 #, fuzzy
-#~| msgid "Remove Folder"
 #~ msgid "Remove Filter"
 #~ msgstr "Elpreni dosierujon"
 
 #, fuzzy
-#~| msgid "Add Folder"
 #~ msgid "Edit Filter"
 #~ msgstr "Aldoni dosierujon"
 
 #, fuzzy
-#~| msgid "Scanning data of <b>%1</b> :"
 #~ msgid "Feed: <b>%1</b>"
 #~ msgstr "Legas datumon de <b>%1</b> :"
 
 #, fuzzy
-#~| msgid "Scanning data of <b>%1</b> :"
 #~ msgid "<b>OK</b>"
 #~ msgstr "Legas datumon de <b>%1</b> :"
 
 #, fuzzy
-#~| msgid "Downloaded"
 #~ msgid "<b>Download Failed</b>"
 #~ msgstr "Elŝutis"
 
 #, fuzzy
-#~| msgid "Downloading"
 #~ msgid "<b>Downloading</b>"
 #~ msgstr "Elŝutas"
 
 #, fuzzy
-#~| msgid "File"
 #~ msgid "Title"
 #~ msgstr "Dosiero"
 
@@ -813,7 +735,6 @@ msgstr ""
 #~ msgstr "Torento"
 
 #, fuzzy
-#~| msgid "Zeroconf"
 #~ msgid "ZeroConf"
 #~ msgstr "Zeroconf"
 
@@ -821,8 +742,6 @@ msgstr ""
 #~ msgstr "Disponebla"
 
 #, fuzzy
-#~| msgctxt "Preview pending"
-#~| msgid "Pending"
 #~ msgid "Pending"
 #~ msgstr "Pritraktota"
 
@@ -833,7 +752,6 @@ msgstr ""
 #~ msgstr "Albumo"
 
 #, fuzzy
-#~| msgid "Left:"
 #~ msgid "Length"
 #~ msgstr "Maldekstra:"
 
@@ -841,12 +759,10 @@ msgstr ""
 #~ msgstr "Jaro"
 
 #, fuzzy
-#~| msgid "Node:"
 #~ msgid "Mode:"
 #~ msgstr "Nodo:"
 
 #, fuzzy
-#~| msgid "All Files"
 #~ msgid "Single File"
 #~ msgstr "Ĉiuj dosieroj"
 
@@ -860,12 +776,10 @@ msgstr ""
 #~ msgstr "Forpreni"
 
 #, fuzzy
-#~| msgid "Seeders"
 #~ msgid "Add Media"
 #~ msgstr "Fontoj"
 
 #, fuzzy
-#~| msgid "Scanning data of <b>%1</b> :"
 #~ msgid "Playing: <b>%1</b>"
 #~ msgstr "Legas datumon de <b>%1</b> :"
 
@@ -873,7 +787,6 @@ msgstr ""
 #~ msgstr "Medioludilo"
 
 #, fuzzy
-#~| msgid "IP Filter"
 #~ msgid "Play List"
 #~ msgstr "IPFiltrilo"
 
@@ -887,7 +800,6 @@ msgstr ""
 #~ msgstr "Ĉesi"
 
 #, fuzzy
-#~| msgid "Preview"
 #~ msgid "Previous"
 #~ msgstr "Antaŭvido"
 
@@ -895,22 +807,18 @@ msgstr ""
 #~ msgstr "Sekva"
 
 #, fuzzy
-#~| msgid "Move File"
 #~ msgid "Movie player"
 #~ msgstr "Movi dosieron"
 
 #, fuzzy
-#~| msgid "Connections:"
 #~ msgid "Collection:"
 #~ msgstr "Konektoj:"
 
 #, fuzzy
-#~| msgid "Torrent is incomplete!"
 #~ msgid "KTorrent is playing a video."
 #~ msgstr "Torento estas nekompleta!"
 
 #, fuzzy
-#~| msgid "Webinterface Plugin"
 #~ msgid "Cannot find web interface skins."
 #~ msgstr "RetInterfaca kromprogrameto"
 
@@ -918,12 +826,10 @@ msgstr ""
 #~ msgstr "RetInterfaco"
 
 #, fuzzy
-#~| msgid "Invalid tracker URL"
 #~ msgid "Invalid data received"
 #~ msgstr "Nevalida servila retadreso"
 
 #, fuzzy
-#~| msgid "Folder to store torrent information:"
 #~ msgid "Failed to open temporary file"
 #~ msgstr "Dosierujo por konservi torentajn informojn:"
 
@@ -938,12 +844,10 @@ msgstr ""
 #~ "monospace'>&nbsp;&nbsp;</span>&nbsp;—&nbsp;%2</li>"
 
 #, fuzzy
-#~| msgid "Rescan"
 #~ msgid "Rescale"
 #~ msgstr "Reserĉi"
 
 #, fuzzy
-#~| msgid "Resume"
 #~ msgid "Reset"
 #~ msgstr "Daŭrigi"
 
@@ -951,7 +855,6 @@ msgstr ""
 #~ msgstr "KiB/s"
 
 #, fuzzy
-#~| msgid "Statistics Plugin"
 #~ msgid "Statistics"
 #~ msgstr "Statistika kromprogrameto"
 
@@ -968,7 +871,6 @@ msgstr ""
 #~ msgstr "Fontoj konektitaj"
 
 #, fuzzy
-#~| msgid "Seeds  in swarms"
 #~ msgid "Seeds in swarms"
 #~ msgstr "Fontoj en torentaroj"
 
@@ -979,12 +881,10 @@ msgstr ""
 #~ msgstr "Averaĝaj fontoj konektitaj por ĉiu torento:"
 
 #, fuzzy
-#~| msgid "Average leechers connected per torrent"
 #~ msgid "Average leechers connected per running torrent"
 #~ msgstr "Averaĝaj ricevantoj konektitaj por ĉiu torento:"
 
 #, fuzzy
-#~| msgid "Avg. seeds connected per running torrent"
 #~ msgid "Average seeds connected per running torrent"
 #~ msgstr "Averaĝaj fontoj konektitaj por ĉiu aktiva torento"
 
@@ -1001,7 +901,6 @@ msgstr ""
 #~ msgstr "Averaĝa rapido"
 
 #, fuzzy
-#~| msgid "Speed Limits"
 #~ msgid "Speed limit"
 #~ msgstr "Limigo de rapido"
 
@@ -1021,12 +920,10 @@ msgstr ""
 #~ msgstr "De fontoj"
 
 #, fuzzy
-#~| msgid "Speed Limits"
 #~ msgid "Speed charts"
 #~ msgstr "Limigo de rapido"
 
 #, fuzzy
-#~| msgid "Connections"
 #~ msgid "Connections charts"
 #~ msgstr "Konektoj"
 
@@ -1105,22 +1002,18 @@ msgstr ""
 #~ msgstr "Interesa"
 
 #, fuzzy
-#~| msgid "Downloaded"
 #~ msgid "Download speed"
 #~ msgstr "Elŝutis"
 
 #, fuzzy
-#~| msgid "Uploaded"
 #~ msgid "Upload speed"
 #~ msgstr "Alŝutis"
 
 #, fuzzy
-#~| msgid "Do you want to download or save the torrent?"
 #~ msgid "How much data we have downloaded from this peer"
 #~ msgstr "Ĉu vi volas elŝuti aŭ konservi la fontan torenton?"
 
 #, fuzzy
-#~| msgid "Do you want to download or save the torrent?"
 #~ msgid "How much data we have uploaded to this peer"
 #~ msgstr "Ĉu vi volas elŝuti aŭ konservi la fontan torenton?"
 
@@ -1137,19 +1030,16 @@ msgstr ""
 #~ msgstr "InformaFenestraĵo"
 
 #, fuzzy
-#~| msgid "Status"
 #~ msgctxt "@title:tab"
 #~ msgid "Status"
 #~ msgstr "Stato"
 
 #, fuzzy
-#~| msgid "Files"
 #~ msgctxt "@title:tab"
 #~ msgid "Files"
 #~ msgstr "Dosieroj"
 
 #, fuzzy
-#~| msgid "Choose a file to save the torrent"
 #~ msgid "Shows all the files in a torrent"
 #~ msgstr "Por konservo de torento, elektu dosieron"
 
@@ -1166,16 +1056,12 @@ msgstr ""
 #~ msgstr "Kunordigaj serviloj"
 
 #, fuzzy
-#~| msgid ""
-#~| "Directory to store information about all torrents currently opened in "
-#~| "KTorrent."
 #~ msgid "Displays information about all the trackers of a torrent"
 #~ msgstr ""
 #~ "Dosierujo en kiu vi volas konservi informojn pri ĉiuj nunaj ruliĝantaj "
 #~ "torentoj en KTorrent."
 
 #, fuzzy
-#~| msgid "Seeders"
 #~ msgid "Webseeds"
 #~ msgstr "Fontoj"
 
@@ -1192,17 +1078,14 @@ msgstr ""
 #~ msgstr "Dosieroj"
 
 #, fuzzy
-#~| msgid "Size of each chunk:"
 #~ msgid "Number of the chunk"
 #~ msgstr "Grando de ĉiu peco:"
 
 #, fuzzy
-#~| msgid "Downloaded chunks:"
 #~ msgid "Download progress of the chunk"
 #~ msgstr "Elŝutitaj pecoj:"
 
 #, fuzzy
-#~| msgid "Downloaded chunks:"
 #~ msgid "Download speed of the chunk"
 #~ msgstr "Elŝutitaj pecoj:"
 
@@ -1247,28 +1130,22 @@ msgstr ""
 #~ msgstr "Movi dosieron"
 
 #, fuzzy
-#~| msgid "Scan Folder"
 #~ msgid "Expand Folder Tree"
 #~ msgstr "Serĉi dosierujon"
 
 #, fuzzy
-#~| msgid "IP Filter"
 #~ msgid "File Tree"
 #~ msgstr "IPFiltrilo"
 
 #, fuzzy
-#~| msgid "File Exists"
 #~ msgid "File List"
 #~ msgstr "Dosiero ekzistas"
 
 #, fuzzy
-#~| msgid "Add Folder"
 #~ msgid "Show Filter"
 #~ msgstr "Aldoni dosierujon"
 
 #, fuzzy
-#~| msgid ""
-#~| "You will lose all data in this file, are you sure you want to do this ?"
 #~ msgid ""
 #~ "You will lose all data in this file, are you sure you want to do this?"
 #~ msgid_plural ""
@@ -1290,12 +1167,10 @@ msgstr ""
 #~ msgstr "Ricevantoj"
 
 #, fuzzy
-#~| msgid "Time Downloaded"
 #~ msgid "Times Downloaded"
 #~ msgstr "Elŝutis dum"
 
 #, fuzzy
-#~| msgid "Next update in:"
 #~ msgid "Next Update"
 #~ msgstr "Ĝisdatigos post:"
 
@@ -1303,14 +1178,11 @@ msgstr ""
 #~ msgstr "Prioritato"
 
 #, fuzzy
-#~| msgid "Preview"
 #~ msgctxt "@title:column"
 #~ msgid "Preview"
 #~ msgstr "Antaŭvido"
 
 #, fuzzy
-#~| msgctxt "Percent of File Downloaded"
-#~| msgid "% Complete"
 #~ msgctxt "Percent of File Downloaded"
 #~ msgid "% Complete"
 #~ msgstr "% finita"
@@ -1347,7 +1219,6 @@ msgstr ""
 #~ msgstr "Disponebla"
 
 #, fuzzy
-#~| msgid "Add Tracker"
 #~ msgid "Add Trackers"
 #~ msgstr "Aldoni kunordigan servilon"
 
@@ -1365,37 +1236,30 @@ msgstr ""
 #~ msgstr "Normale"
 
 #, fuzzy
-#~| msgid "Scrape"
 #~ msgid "Scripts"
 #~ msgstr "Informpeti"
 
 #, fuzzy
-#~| msgid "Add Tracker"
 #~ msgid "Add Script"
 #~ msgstr "Aldoni kunordigan servilon"
 
 #, fuzzy
-#~| msgid "Remove Group"
 #~ msgid "Remove Script"
 #~ msgstr "Elpreni grupon"
 
 #, fuzzy
-#~| msgid "Scrape"
 #~ msgid "Run Script"
 #~ msgstr "Informpeti"
 
 #, fuzzy
-#~| msgid "Add Tracker"
 #~ msgid "Stop Script"
 #~ msgstr "Aldoni kunordigan servilon"
 
 #, fuzzy
-#~| msgid "Add Tracker"
 #~ msgid "Edit Script"
 #~ msgstr "Aldoni kunordigan servilon"
 
 #, fuzzy
-#~| msgid "Progress"
 #~ msgid "Properties"
 #~ msgstr "Progreso"
 
@@ -1403,12 +1267,10 @@ msgstr ""
 #~ msgstr "Agordi"
 
 #, fuzzy
-#~| msgid "Scrape"
 #~ msgid "Scripting"
 #~ msgstr "Informpeti"
 
 #, fuzzy
-#~| msgid "KTorrent Blacklisted Peers"
 #~ msgid "KTorrent Script Packages"
 #~ msgstr "KTorrenta kundividanta negrolisto"
 
@@ -1416,8 +1278,6 @@ msgstr ""
 #~ msgstr "Ĉiuj dosieroj"
 
 #, fuzzy
-#~| msgid ""
-#~| "You will lose all the downloaded data. Are you sure you want to do this?"
 #~ msgid ""
 #~ "Removing these scripts will fully delete them from your disk. Are you "
 #~ "sure you want to do this ?"
@@ -1426,7 +1286,6 @@ msgstr ""
 #~ "tion?"
 
 #, fuzzy
-#~| msgid "Invalid tracker URL"
 #~ msgid "Invalid archive."
 #~ msgstr "Nevalida servila retadreso"
 
@@ -1434,7 +1293,6 @@ msgstr ""
 #~ msgstr "Sistemo"
 
 #, fuzzy
-#~| msgid "Log Viewer"
 #~ msgid "Log Level"
 #~ msgstr "Protokolorigardilo"
 
@@ -1457,7 +1315,6 @@ msgstr ""
 #~ msgstr "Protokolo"
 
 #, fuzzy
-#~| msgid "Displays ktorrent logging output"
 #~ msgid "View the logging output generated by KTorrent"
 #~ msgstr "Montras la KTorrent-protokoladan eligon"
 
@@ -1465,12 +1322,10 @@ msgstr ""
 #~ msgstr "Protokolorigardilo"
 
 #, fuzzy
-#~| msgid "Time Downloaded"
 #~ msgid "File Download Order"
 #~ msgstr "Elŝutis dum"
 
 #, fuzzy
-#~| msgid "Scanning data of <b>%1</b> :"
 #~ msgid "File download order for <b>%1</b>:"
 #~ msgstr "Legas datumon de <b>%1</b> :"
 
@@ -1478,12 +1333,10 @@ msgstr ""
 #~ msgstr "Serĉilo:"
 
 #, fuzzy
-#~| msgid "Open Tab"
 #~ msgid "Open in New Tab"
 #~ msgstr "Malfermi langeton"
 
 #, fuzzy
-#~| msgid "Paste Torrent URL"
 #~ msgid "Copy URL"
 #~ msgstr "Alglui torentan adreson"
 
@@ -1497,18 +1350,15 @@ msgstr ""
 #~ msgstr "Finis la serĉon"
 
 #, fuzzy
-#~| msgid "Search"
 #~ msgctxt "plugin name"
 #~ msgid "Search"
 #~ msgstr "Serĉi"
 
 #, fuzzy
-#~| msgid "Search Engine"
 #~ msgid "Add a Search Engine"
 #~ msgstr "Serĉilo"
 
 #, fuzzy
-#~| msgid "Searching for %1..."
 #~ msgid "Search for %1"
 #~ msgstr "Serĉas %1..."
 
@@ -1522,17 +1372,14 @@ msgstr ""
 #~ msgstr "KTorrent"
 
 #, fuzzy
-#~| msgid "Folders to scan for torrents:"
 #~ msgid "Search the web for torrents."
 #~ msgstr "Dosierujoj en kiuj vi volas serĉi torentojn:"
 
 #, fuzzy
-#~| msgid "Failed to open %1 : %2"
 #~ msgid "Failed to parse %1"
 #~ msgstr "Ne povas malfermi %1 : %2"
 
 #, fuzzy
-#~| msgid "Scanning data of <b>%1</b> :"
 #~ msgid "Url: <b>%1</b>"
 #~ msgstr "Legas datumon de <b>%1</b> :"
 
@@ -1549,7 +1396,6 @@ msgstr ""
 #~ msgstr " Serĉilo: "
 
 #, fuzzy
-#~| msgid "Do you want to download or save the torrent?"
 #~ msgid "Do you want to download this magnet link?"
 #~ msgstr "Ĉu vi volas elŝuti aŭ konservi la fontan torenton?"
 
@@ -1563,13 +1409,10 @@ msgstr ""
 #~ msgstr "Elŝuti"
 
 #, fuzzy
-#~| msgid "Edit an item"
 #~ msgid "Add an item"
 #~ msgstr "Modifi eron"
 
 #, fuzzy
-#~| msgid ""
-#~| "This item conflicts with another item in the schedule, we cannot add it !"
 #~ msgid ""
 #~ "Failed to add item, because it conflicts with another item on the "
 #~ "schedule."
@@ -1577,8 +1420,6 @@ msgstr ""
 #~ "Ĉi tiu ero konfliktas kun alia ero en la horaro, ni ne povas aldoni ĝin !"
 
 #, fuzzy
-#~| msgid ""
-#~| "This item conflicts with another item in the schedule, we cannot add it !"
 #~ msgid ""
 #~ "This item could not be added to all selected days, because it conflicts "
 #~ "with another item on the schedule."
@@ -1586,14 +1427,12 @@ msgstr ""
 #~ "Ĉi tiu ero konfliktas kun alia ero en la horaro, ni ne povas aldoni ĝin !"
 
 #, fuzzy
-#~| msgid "Bandwidth Schedule"
 #~ msgid ""
 #~ "Bandwidth\n"
 #~ "Schedule"
 #~ msgstr "Kapacita horaro"
 
 #, fuzzy
-#~| msgid "Bandwidth Schedule"
 #~ msgid "Edit the bandwidth schedule"
 #~ msgstr "Kapacita horaro"
 
@@ -1616,12 +1455,10 @@ msgstr ""
 #~ msgstr "Viŝi horaron"
 
 #, fuzzy
-#~| msgid "Scheduler:"
 #~ msgid "Scheduler Active"
 #~ msgstr "Horaro:"
 
 #, fuzzy
-#~| msgid "Add a new item to the schedule"
 #~ msgid "Activate or deactivate the scheduler"
 #~ msgstr "Aldoni novan eron al la horaro"
 
@@ -1629,9 +1466,6 @@ msgstr ""
 #~ msgstr "KTorrent horaraj dosieroj"
 
 #, fuzzy
-#~| msgid ""
-#~| "This item conflicts with another item in the schedule, we cannot change "
-#~| "it !"
 #~ msgid ""
 #~ "This item conflicts with another item in the schedule, we cannot change "
 #~ "it."
@@ -1639,22 +1473,18 @@ msgstr ""
 #~ "Ĉi tiu ero konfliktas kun alia ero en la horaro, ni ne povas ŝanĝi ĝin !"
 
 #, fuzzy
-#~| msgid "Current schedule: paused"
 #~ msgid "Current schedule: suspended"
 #~ msgstr "Nuna horaro: paŭzita"
 
 #, fuzzy
-#~| msgid "Current schedule: %1 KB/s download, %2 KB/s upload"
 #~ msgid "Current schedule: %1/s download, %2/s upload"
 #~ msgstr "Nuna horaro: %1 KB/s elŝuto, %2 KB/s alŝuto"
 
 #, fuzzy
-#~| msgid "Current schedule: unlimited download, %1 KB/s upload"
 #~ msgid "Current schedule: unlimited download, %1/s upload"
 #~ msgstr "Nuna horaro: senlima elŝuto, %1 KB/s alŝuto"
 
 #, fuzzy
-#~| msgid "Current schedule: %1 KB/s download, unlimited upload"
 #~ msgid "Current schedule: %1/s download, unlimited upload"
 #~ msgstr "Nuna horaro: %1 KB/s elŝuto, senlima alŝuto"
 
@@ -1662,7 +1492,6 @@ msgstr ""
 #~ msgstr "Nuna horaro: senlimaj alŝuto kaj elŝuto"
 
 #, fuzzy
-#~| msgid "KTorrent scheduler files"
 #~ msgid " (scheduler disabled)"
 #~ msgstr "KTorrent horaraj dosieroj"
 
@@ -1673,13 +1502,11 @@ msgstr ""
 #~ msgstr "Modifi eron"
 
 #, fuzzy
-#~| msgid "The file %1 is corrupted or not a proper KTorrent schedule file !"
 #~ msgid "The file %1 is corrupted or not a proper KTorrent schedule file."
 #~ msgstr ""
 #~ "La dosiero %1 aŭ estas malbona aŭ ne estas KTorrent-horara dosiero !"
 
 #, fuzzy
-#~| msgid "Speed"
 #~ msgid "Suspended"
 #~ msgstr "Rapido"
 
@@ -1694,7 +1521,6 @@ msgstr ""
 #~ "%2 Al"
 
 #, fuzzy
-#~| msgid "Configure"
 #~ msgctxt "@title:window"
 #~ msgid "Configure Shutdown"
 #~ msgstr "Agordi"
@@ -1712,17 +1538,14 @@ msgstr ""
 #~ msgstr "Pasivumigi (halteti al disko)"
 
 #, fuzzy
-#~| msgid "Directory to move data to when a torrent has finished downloading."
 #~ msgid "When all torrents finish downloading"
 #~ msgstr "Dosierujo al kiu vi volas movi datumojn post la elŝuto de torento."
 
 #, fuzzy
-#~| msgid "Downloading"
 #~ msgid "Downloading finishes"
 #~ msgstr "Elŝutas"
 
 #, fuzzy
-#~| msgid "Search finished"
 #~ msgid "Seeding finishes"
 #~ msgstr "Finis la serĉon"
 
@@ -1736,12 +1559,10 @@ msgstr ""
 #~ msgstr "Konvertas..."
 
 #, fuzzy
-#~| msgid "Cannot open file %1: %2"
 #~ msgid "Cannot open zip file %1."
 #~ msgstr "Ne povas malfermi dosieron %1: %2"
 
 #, fuzzy
-#~| msgid "Cannot deselect missing files: %1"
 #~ msgid "Cannot find blocklist in zip file %1."
 #~ msgstr "Ne povas malelekti mankantajn dosierojn: %1"
 
@@ -1763,17 +1584,14 @@ msgstr ""
 #~ msgstr "Stato: Ne ŝargiĝis."
 
 #, fuzzy
-#~| msgid "Status: Downloading and converting new block list ..."
 #~ msgid "Status: Downloading and converting new block list..."
 #~ msgstr "Stato: Elŝutas kaj konvertas novan blokitan liston ..."
 
 #, fuzzy
-#~| msgid "Server:"
 #~ msgid "Never"
 #~ msgstr "Servilo:"
 
 #, fuzzy
-#~| msgid "Paste Torrent URL"
 #~ msgid "Copy Magnet URI"
 #~ msgstr "Alglui torentan adreson"
 
@@ -1787,12 +1605,10 @@ msgstr ""
 #~ msgstr "(C) 2005 - 2007 Joris Guisson and Ivan Vasic"
 
 #, fuzzy
-#~| msgid "Time Downloaded"
 #~ msgid "KTMagnetDownloader"
 #~ msgstr "Elŝutis dum"
 
 #, fuzzy
-#~| msgid "Joris Guisson"
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "Joris Guisson"
 
@@ -1835,7 +1651,6 @@ msgstr ""
 #~ msgstr "Nomo"
 
 #, fuzzy
-#~| msgid "Stalled"
 #~ msgid "Time Stalled"
 #~ msgstr "Paraliziĝis"
 
@@ -1852,12 +1667,10 @@ msgstr ""
 #~ msgstr "%1"
 
 #, fuzzy
-#~| msgid "Search"
 #~ msgid "Show Search"
 #~ msgstr "Serĉi"
 
 #, fuzzy
-#~| msgid "Move Up"
 #~ msgid "Move Top"
 #~ msgstr "Movi supren"
 
@@ -1868,63 +1681,52 @@ msgstr ""
 #~ msgstr "Movi malsupren"
 
 #, fuzzy
-#~| msgid "Bottom"
 #~ msgid "Move Bottom"
 #~ msgstr "Malsupre"
 
 #, fuzzy
-#~| msgid "Start torrent"
 #~ msgid "Start Magnet"
 #~ msgstr "Komenci torenton"
 
 #, fuzzy
-#~| msgid "Remove Torrent"
 #~ msgid "Remove Magnet"
 #~ msgstr "Elpreni torenton"
 
 #, fuzzy
-#~| msgid "Start"
 #~ msgctxt "@action Start all selected torrents in the current tab"
 #~ msgid "Start"
 #~ msgstr "Komenci"
 
 #, fuzzy
-#~| msgid "Stop"
 #~ msgctxt "@action Stop all selected torrents in the current tab"
 #~ msgid "Stop"
 #~ msgstr "Ĉesi"
 
 #, fuzzy
-#~| msgid "Pause"
 #~ msgctxt "@action Pause all selected torrents in the current tab"
 #~ msgid "Pause"
 #~ msgstr "Paŭzita"
 
 #, fuzzy
-#~| msgid "Stop all torrents"
 #~ msgid "Pause all selected torrents in the current tab"
 #~ msgstr "Ĉesigi ĉiujn torentojn"
 
 #, fuzzy
-#~| msgid "Remove"
 #~ msgctxt "@action Remove all selected torrents in the current tab"
 #~ msgid "Remove"
 #~ msgstr "Forpreni"
 
 #, fuzzy
-#~| msgid "Start All"
 #~ msgctxt "@action Start all torrents in the current tab"
 #~ msgid "Start All"
 #~ msgstr "Komenci ĉiujn"
 
 #, fuzzy
-#~| msgid "Stop All"
 #~ msgctxt "@action Stop all torrents in the current tab"
 #~ msgid "Stop All"
 #~ msgstr "Ĉesigi ĉiujn"
 
 #, fuzzy
-#~| msgid "Stop all torrents"
 #~ msgid "Stop all torrents in the current tab"
 #~ msgstr "Ĉesigi ĉiujn torentojn"
 
@@ -1932,7 +1734,6 @@ msgstr ""
 #~ msgstr "Elpreni torenton kaj datumojn"
 
 #, fuzzy
-#~| msgid "Remove Torrent"
 #~ msgid "Rename Torrent"
 #~ msgstr "Elpreni torenton"
 
@@ -1970,7 +1771,6 @@ msgstr ""
 #~ msgstr "Kontroli datumojn"
 
 #, fuzzy
-#~| msgid "Scanning data of torrent :"
 #~ msgid "Check all the data of a torrent"
 #~ msgstr "Legas datumojn de torento :"
 
@@ -1981,12 +1781,10 @@ msgstr ""
 #~ msgstr "Aldoni al grupo"
 
 #, fuzzy
-#~| msgid "Paste Torrent URL"
 #~ msgid "Copy Torrent URL"
 #~ msgstr "Alglui torentan adreson"
 
 #, fuzzy
-#~| msgid "Import Torrent"
 #~ msgid "Export Torrent"
 #~ msgstr "Importi torenton"
 
@@ -1994,7 +1792,6 @@ msgstr ""
 #~ msgstr "Limigo de rapido"
 
 #, fuzzy
-#~| msgid "Torrent Files (*.torrent)"
 #~ msgid "Torrents (*.torrent)"
 #~ msgstr "Fontaj torentoj (*.torrent)"
 
@@ -2045,42 +1842,34 @@ msgstr ""
 #~ msgstr "Fontsendis dum"
 
 #, fuzzy
-#~| msgid "Open Location"
 #~ msgid "Location"
 #~ msgstr "Malfermi lokon"
 
 #, fuzzy
-#~| msgid "Seeders"
 #~ msgid "Added"
 #~ msgstr "Fontoj"
 
 #, fuzzy
-#~| msgid "Do you want to download or save the torrent?"
 #~ msgid "How much data we have downloaded of the torrent"
 #~ msgstr "Ĉu vi volas elŝuti aŭ konservi la fontan torenton?"
 
 #, fuzzy
-#~| msgid "Set max download speed"
 #~ msgid "Current download speed"
 #~ msgstr "Fiksi la maks. rapidon de elŝutado"
 
 #, fuzzy
-#~| msgid "Current speed"
 #~ msgid "Current upload speed"
 #~ msgstr "Nuna rapido"
 
 #, fuzzy
-#~| msgid "You are already downloading the torrent %1"
 #~ msgid "How long we have been downloading the torrent"
 #~ msgstr "Vi jam elŝutas la torenton %1"
 
 #, fuzzy
-#~| msgid "Copy torrent files to:"
 #~ msgid "When this torrent was added"
 #~ msgstr "Kopii torentdosierojn al:"
 
 #, fuzzy
-#~| msgid "Scanning data of <b>%1</b> :"
 #~ msgid "%1<br>Url: <b>%2</b>"
 #~ msgstr "Legas datumon de <b>%1</b> :"
 
@@ -2109,22 +1898,18 @@ msgstr ""
 #~ msgstr "Alŝuta limigo"
 
 #, fuzzy
-#~| msgid "Download completed"
 #~ msgid "Assured Download Speed"
 #~ msgstr "Elŝuto finiĝis"
 
 #, fuzzy
-#~| msgid "Set max upload speed"
 #~ msgid "Assured Upload Speed"
 #~ msgstr "Fiksi la maks. rapidon de alŝutado"
 
 #, fuzzy
-#~| msgid "Current speed"
 #~ msgid "No assured speed"
 #~ msgstr "Nuna rapido"
 
 #, fuzzy
-#~| msgid "Create a torrent"
 #~ msgid "Create A Torrent"
 #~ msgstr "Krei fontan torenton"
 
@@ -2132,7 +1917,6 @@ msgstr ""
 #~ msgstr "Ĉiuj torentoj"
 
 #, fuzzy
-#~| msgid "Invalid tracker URL"
 #~ msgid "Invalid url %1"
 #~ msgstr "Nevalida servila retadreso"
 
@@ -2156,7 +1940,6 @@ msgstr ""
 #~ msgstr "Por konservo de torento, elektu dosieron"
 
 #, fuzzy
-#~| msgid "Choose a file to save the torrent"
 #~ msgid "Show a file tree"
 #~ msgstr "Por konservo de torento, elektu dosieron"
 
@@ -2164,9 +1947,6 @@ msgstr ""
 #~ msgstr "Montri dosierliston"
 
 #, fuzzy
-#~| msgid ""
-#~| "The torrent <b>%1</b> has not finished downloading, do you want to "
-#~| "delete the incomplete data, too?"
 #~ msgid ""
 #~ "Some files of this torrent have been found in the completed downloads "
 #~ "directory. Do you want to import these files and use the completed "
@@ -2176,9 +1956,6 @@ msgstr ""
 #~ "nekompletajn datumojn?"
 
 #, fuzzy
-#~| msgid ""
-#~| "The torrent <b>%1</b> has not finished downloading, do you want to "
-#~| "delete the incomplete data, too?"
 #~ msgid ""
 #~ "All files of this torrent have been found in the completed downloads "
 #~ "directory. Do you want to import these files and use the completed "
@@ -2188,9 +1965,6 @@ msgstr ""
 #~ "nekompletajn datumojn?"
 
 #, fuzzy
-#~| msgid ""
-#~| "The torrent <b>%1</b> has not finished downloading, do you want to "
-#~| "delete the incomplete data, too?"
 #~ msgid ""
 #~ "The file <b>%1</b> was found in the completed downloads directory. Do you "
 #~ "want to import this file?"
@@ -2199,14 +1973,10 @@ msgstr ""
 #~ "nekompletajn datumojn?"
 
 #, fuzzy
-#~| msgid "The directory %1 does not exist"
 #~ msgid "The directory %1 does not exist, do you want to create it?"
 #~ msgstr "La dosierujo %1 ne ekzistas"
 
 #, fuzzy
-#~| msgid ""
-#~| "You have deselected the following existing files. You will lose all data "
-#~| "in these files, are you sure you want to do this ?"
 #~ msgid ""
 #~ "You have deselected the following existing files. You will lose all data "
 #~ "in these files, are you sure you want to do this?"
@@ -2221,7 +1991,6 @@ msgstr ""
 #~ msgstr "Ne, konservu la dosierojn"
 
 #, fuzzy
-#~| msgid "%1 short!"
 #~ msgctxt "We are %1 bytes short of what we need"
 #~ msgid "%1 short"
 #~ msgstr "%1 ne atingis!"
@@ -2233,22 +2002,18 @@ msgstr ""
 #~ msgstr "Elektu la dosierujon kie la datumoj nune troviĝas."
 
 #, fuzzy
-#~| msgid "The data files are not present in the location you selected !"
 #~ msgid ""
 #~ "The data files are not present in the location you selected. Do you want "
 #~ "to create all the files in the selected directory?"
 #~ msgstr "La datumdosieroj ne troviĝas en la elektita loko !"
 
 #, fuzzy
-#~| msgid ""
-#~| "Not all files where found in the new location, some are still missing !"
 #~ msgid ""
 #~ "Not all files were found in the new location; some are still missing. Do "
 #~ "you want to create the missing files in the selected directory?"
 #~ msgstr "Ne trovis ĉiujn dosierojn en la nova loko, iuj ankoraŭ mankas !"
 
 #, fuzzy
-#~| msgid "The data file is not present in the location you selected !"
 #~ msgid ""
 #~ "The data file is not present in the location you selected. Do you want to "
 #~ "create the file in the selected directory?"
@@ -2260,17 +2025,14 @@ msgstr ""
 #~ msgstr[1] "Importi %1 torentojn"
 
 #, fuzzy
-#~| msgid "Scanning data of <b>%1</b> :"
 #~ msgid "Importing <b>%1</b> ..."
 #~ msgstr "Legas datumon de <b>%1</b> :"
 
 #, fuzzy
-#~| msgid "Scanning data of <b>%1</b> :"
 #~ msgid "Failed to load <b>%1</b>"
 #~ msgstr "Legas datumon de <b>%1</b> :"
 
 #, fuzzy
-#~| msgid "Failed to create %1 : %2"
 #~ msgid "Failed to import <b>%1</b> : %2"
 #~ msgstr "Ne povas krei %1 : %2"
 
@@ -2287,7 +2049,6 @@ msgstr ""
 #~ msgstr "Malfermi retadreson"
 
 #, fuzzy
-#~| msgid "Invalid tracker URL"
 #~ msgid "Invalid URL: %1"
 #~ msgstr "Nevalida servila retadreso"
 
@@ -2304,14 +2065,10 @@ msgstr ""
 #~ msgstr "DHT: %1 nodoj, %2 taskoj"
 
 #, fuzzy
-#~| msgid "IP Filter"
 #~ msgid "IP Filter List"
 #~ msgstr "IPFiltrilo"
 
 #, fuzzy
-#~| msgid ""
-#~| "You must enter IP in format 'XXX.XXX.XXX.XXX'. You can also use "
-#~| "wildcards for ranges like '127.0.0.*'."
 #~ msgid ""
 #~ "Invalid IP address <b>%1</b>. IP addresses must be in the format 'XXX.XXX."
 #~ "XXX.XXX'.<br/><br/>You can also use wildcards like '127.0.0.*' or specify "
@@ -2330,7 +2087,6 @@ msgstr ""
 #~ msgstr "BitTorrent-programo por KDE"
 
 #, fuzzy
-#~| msgid "(C) 2005 - 2007 Joris Guisson and Ivan Vasic"
 #~ msgid "(C) 2005 - 2010 Joris Guisson and Ivan Vasic"
 #~ msgstr "(C) 2005 - 2007 Joris Guisson and Ivan Vasic"
 
@@ -2344,7 +2100,6 @@ msgstr ""
 #~ msgstr "Alan Jones"
 
 #, fuzzy
-#~| msgid "Webinterface Plugin"
 #~ msgid "BitFinder Plugin"
 #~ msgstr "RetInterfaca kromprogrameto"
 
@@ -2407,7 +2162,6 @@ msgstr ""
 #~ msgstr "Adam Forsyth"
 
 #, fuzzy
-#~| msgid "File prioritization"
 #~ msgid "File prioritization and some other patches"
 #~ msgstr "Dosiera prioritatado"
 
@@ -2535,7 +2289,6 @@ msgstr ""
 #~ msgstr "caruccio"
 
 #, fuzzy
-#~| msgid "Patch to load silently with a save location"
 #~ msgid "Patch to load torrents silently from the command line"
 #~ msgstr "Silentŝarga flikaĵo kun konserva loko"
 
@@ -2552,12 +2305,10 @@ msgstr ""
 #~ msgstr "Amichai Rothman"
 
 #, fuzzy
-#~| msgid "Copy torrent files to:"
 #~ msgid "Feature which adds the date a torrent was added"
 #~ msgstr "Kopii torentdosierojn al:"
 
 #, fuzzy
-#~| msgid " Unable to open torrent file %1 : %2"
 #~ msgid "Silently open torrent given on URL"
 #~ msgstr "Ne povas malfermi torentan dosieron %1 : %2"
 
@@ -2571,12 +2322,10 @@ msgstr ""
 #~ msgstr "Malfermi lokon"
 
 #, fuzzy
-#~| msgid "Create a torrent"
 #~ msgid "Create a new torrent"
 #~ msgstr "Krei fontan torenton"
 
 #, fuzzy
-#~| msgid "Create a torrent"
 #~ msgid "Open a torrent"
 #~ msgstr "Krei fontan torenton"
 
@@ -2584,7 +2333,6 @@ msgstr ""
 #~ msgstr "Malfermi silente"
 
 #, fuzzy
-#~| msgid "Open the torrents without asking any questions."
 #~ msgid "Open a torrent without asking any questions"
 #~ msgstr "Senpete malfermas torentojn."
 
@@ -2592,7 +2340,6 @@ msgstr ""
 #~ msgstr "Komenci ĉiujn"
 
 #, fuzzy
-#~| msgid "Start torrents"
 #~ msgid "Start all torrents"
 #~ msgstr "Komenci torentojn"
 
@@ -2603,22 +2350,18 @@ msgstr ""
 #~ msgstr "Ĉesigi ĉiujn torentojn"
 
 #, fuzzy
-#~| msgid "Open an URL"
 #~ msgid "Open URL"
 #~ msgstr "Malfermi retadreson"
 
 #, fuzzy
-#~| msgid "Inactive torrents"
 #~ msgid "Suspend KTorrent"
 #~ msgstr "Neaktivaj torentoj"
 
 #, fuzzy
-#~| msgid "Pause all running torrents"
 #~ msgid "Suspend all running torrents"
 #~ msgstr "Ĉesigi ĉiujn torentojn"
 
 #, fuzzy
-#~| msgid "Show list of trackers"
 #~ msgid "Show the list of blocked IP addresses"
 #~ msgstr "Montri liston de kunordigaj serviloj"
 
@@ -2626,12 +2369,10 @@ msgstr ""
 #~ msgstr "Importi torenton"
 
 #, fuzzy
-#~| msgid "Import Torrent"
 #~ msgid "Import a torrent"
 #~ msgstr "Importi torenton"
 
 #, fuzzy
-#~| msgid "Import Torrent"
 #~ msgid "Import KDE3 Torrents"
 #~ msgstr "Importi torenton"
 
@@ -2642,12 +2383,10 @@ msgstr ""
 #~ msgstr "Torrents"
 
 #, fuzzy
-#~| msgid "Invalid tracker URL"
 #~ msgid "Invalid IP address %1"
 #~ msgstr "Nevalida servila retadreso"
 
 #, fuzzy
-#~| msgid "Invalid tracker URL"
 #~ msgid "Duplicate IP address %1"
 #~ msgstr "Nevalida servila retadreso"
 
@@ -2701,9 +2440,6 @@ msgstr ""
 #~ "kontrolus la integrecon de la torentaj datumoj."
 
 #, fuzzy
-#~| msgid ""
-#~| "<b>%1</b> has reached its maximum share ratio of %2 and cannot be "
-#~| "enqueued. Remove the limit manually if you want to continue seeding."
 #~ msgid ""
 #~ "<b>%1</b> has reached its maximum share ratio of %2 and cannot be "
 #~ "enqueued. <br>Remove the limit manually if you want to continue seeding."
@@ -2713,9 +2449,6 @@ msgstr ""
 #~ "fonton."
 
 #, fuzzy
-#~| msgid ""
-#~| "<b>%1</b> has reached its maximum seed time of %2 hours and cannot be "
-#~| "enqueued. Remove the limit manually if you want to continue seeding."
 #~ msgid ""
 #~ "<b>%1</b> has reached its maximum seed time of %2 hours and cannot be "
 #~ "enqueued. <br>Remove the limit manually if you want to continue seeding."
@@ -2741,9 +2474,6 @@ msgstr ""
 #~ "Go to Settings -> Configure KTorrent, if you want to change the limits."
 #~ msgstr "Iru al Agordoj -> Agordi KTorrent, se vi volas ŝanĝi la limigojn."
 
-#~ msgid "There is not enough diskspace available."
-#~ msgstr "Ne estas sufiĉa diskspaco."
-
 #~ msgid ""
 #~ "Your disk is running out of space.<br /><b>%1</b> is being downloaded to "
 #~ "'%2'."
@@ -2753,14 +2483,10 @@ msgstr ""
 #~ msgstr "Ĉesigis la torenton.<br />"
 
 #, fuzzy
-#~| msgid "Speed limit in KB/s"
 #~ msgid "Speed limit in KiB/s"
 #~ msgstr "Limigo de rapido laŭ KB/s"
 
 #, fuzzy
-#~| msgid ""
-#~| "KTorrent is unable to accept connections because the ports %1 to %2 are "
-#~| "already in use by another program."
 #~ msgid ""
 #~ "KTorrent is unable to accept connections because the TCP ports %1 is "
 #~ "already in use by another program."
@@ -2769,9 +2495,6 @@ msgstr ""
 #~ "de alia aplikaĵo."
 
 #, fuzzy
-#~| msgid ""
-#~| "KTorrent is unable to accept connections because the ports %1 to %2 are "
-#~| "already in use by another program."
 #~ msgid ""
 #~ "KTorrent is unable to accept connections because the UDP port %1 is "
 #~ "already in use by another program."
@@ -2780,7 +2503,6 @@ msgstr ""
 #~ "de alia aplikaĵo."
 
 #, fuzzy
-#~| msgid "Torrent has no announce or nodes field"
 #~ msgid "KTorrent is running one or more torrents"
 #~ msgstr "Torento ne havas konektan aŭ nodan kampon"
 
@@ -2817,22 +2539,18 @@ msgstr ""
 #~ msgstr "Ne povas rekrei datumdosieron: %1"
 
 #, fuzzy
-#~| msgid "Apply"
 #~ msgid "Applet"
 #~ msgstr "Apliki"
 
 #, fuzzy
-#~| msgid "Torrent is incomplete!"
 #~ msgid "KTorrent is not running."
 #~ msgstr "Torento estas nekompleta!"
 
 #, fuzzy
-#~| msgid "Copy torrent files to:"
 #~ msgid "No torrents loaded."
 #~ msgstr "Kopii torentdosierojn al:"
 
 #, fuzzy
-#~| msgid "Corrupted torrent!"
 #~ msgid "Ungrouped Torrents"
 #~ msgstr "Malbona torento!"
 
@@ -2840,7 +2558,6 @@ msgstr ""
 #~ msgstr "Alŝutoj"
 
 #, fuzzy
-#~| msgid "Running"
 #~ msgid "Running Uploads"
 #~ msgstr "Ruliĝas"
 
@@ -2848,42 +2565,34 @@ msgstr ""
 #~ msgstr "Elŝutoj"
 
 #, fuzzy
-#~| msgid "Downloads"
 #~ msgid "Running Downloads"
 #~ msgstr "Elŝutoj"
 
 #, fuzzy
-#~| msgid "Do Not Download"
 #~ msgid "Not Running Downloads"
 #~ msgstr "Ne Elŝuti"
 
 #, fuzzy
-#~| msgid "Active torrents"
 #~ msgid "Active Torrents"
 #~ msgstr "Aktivaj torentoj"
 
 #, fuzzy
-#~| msgid "Active downloads"
 #~ msgid "Active Downloads"
 #~ msgstr "Aktivaj elŝutoj"
 
 #, fuzzy
-#~| msgid "Active uploads"
 #~ msgid "Active Uploads"
 #~ msgstr "Aktivaj alŝutoj"
 
 #, fuzzy
-#~| msgid "Inactive torrents"
 #~ msgid "Passive Torrents"
 #~ msgstr "Neaktivaj torentoj"
 
 #, fuzzy
-#~| msgid "Inactive downloads"
 #~ msgid "Passive Downloads"
 #~ msgstr "Neaktivaj elŝutoj"
 
 #, fuzzy
-#~| msgid "Inactive uploads"
 #~ msgid "Passive Uploads"
 #~ msgstr "Neaktivaj alŝutoj"
 
@@ -2891,8 +2600,6 @@ msgstr ""
 #~ msgstr "Malgrandaj piktogramoj"
 
 #, fuzzy
-#~| msgctxt "Download Normal (not as first or last)"
-#~| msgid "Normal"
 #~ msgid "Normal icons"
 #~ msgstr "Normale"
 
@@ -2921,12 +2628,10 @@ msgstr ""
 #~ msgstr "Malsupre"
 
 #, fuzzy
-#~| msgid "Maximum share ratio limit reached."
 #~ msgid "Maximum share ratio reached."
 #~ msgstr "Atingis maksimuman kundividan rejŝon."
 
 #, fuzzy
-#~| msgid "Maximum seed time:"
 #~ msgid "Maximum seed time reached."
 #~ msgstr "Maksimuma fontsenda tempo:"
 
@@ -2934,9 +2639,6 @@ msgstr ""
 #~ msgstr "Dosiero"
 
 #, fuzzy
-#~| msgid ""
-#~| "Torrent \"%1\" has reached its maximum share ratio. Ignore the limit and "
-#~| "start seeding anyway?"
 #~ msgid ""
 #~ "The torrent \"%1\" has reached its maximum share ratio and its maximum "
 #~ "seed time. Ignore the limit and start seeding anyway?"
@@ -2945,9 +2647,6 @@ msgstr ""
 #~ "limigon kaj fariĝi fonton spite?"
 
 #, fuzzy
-#~| msgid ""
-#~| "Torrent \"%1\" has reached its maximum share ratio. Ignore the limit and "
-#~| "start seeding anyway?"
 #~ msgid ""
 #~ "The torrent \"%1\" has reached its maximum share ratio. Ignore the limit "
 #~ "and start seeding anyway?"
@@ -2956,9 +2655,6 @@ msgstr ""
 #~ "limigon kaj fariĝi fonton spite?"
 
 #, fuzzy
-#~| msgid ""
-#~| "Torrent \"%1\" has reached its maximum share ratio. Ignore the limit and "
-#~| "start seeding anyway?"
 #~ msgid ""
 #~ "The torrent \"%1\" has reached its maximum seed time. Ignore the limit "
 #~ "and start seeding anyway?"
@@ -2977,9 +2673,6 @@ msgstr ""
 #~ msgstr "Nesufiĉa diskspaco por %1"
 
 #, fuzzy
-#~| msgid ""
-#~| "You don't have enough disk space to download this torrent. Are you sure "
-#~| "you want to continue?"
 #~ msgid ""
 #~ "Not enough disk space for the following torrents. Do you want to start "
 #~ "them anyway ?"
@@ -2988,9 +2681,6 @@ msgstr ""
 #~ "ke vi volas daŭri?"
 
 #, fuzzy
-#~| msgid ""
-#~| "Torrent \"%1\" has reached its maximum share ratio. Ignore the limit and "
-#~| "start seeding anyway?"
 #~ msgid ""
 #~ "The following torrents have reached their maximum seed time. Do you want "
 #~ "to start them anyway ?"
@@ -2999,9 +2689,6 @@ msgstr ""
 #~ "limigon kaj fariĝi fonton spite?"
 
 #, fuzzy
-#~| msgid ""
-#~| "Torrent \"%1\" has reached its maximum share ratio. Ignore the limit and "
-#~| "start seeding anyway?"
 #~ msgid ""
 #~ "The following torrents have reached their maximum share ratio. Do you "
 #~ "want to start them anyway ?"
@@ -3028,7 +2715,6 @@ msgstr ""
 #~ "\"excluded_color\">&nbsp; - Ekskluzivitaj pecoj"
 
 #, fuzzy
-#~| msgid "Cannot write beyond end of the mmap buffer!"
 #~ msgid "Cannot write beyond end of the mmap buffer."
 #~ msgstr "Ne povas skribi preter la fino de la mmap bufro!"
 
@@ -3047,7 +2733,6 @@ msgstr ""
 #~ msgstr "Dosierujoj en kiuj vi volas serĉi torentojn:"
 
 #, fuzzy
-#~| msgid "Add a new item to the schedule"
 #~ msgid "Add a new folder to be scanned."
 #~ msgstr "Aldoni novan eron al la horaro"
 
@@ -3067,22 +2752,6 @@ msgstr ""
 #~ msgstr "Malfermi silente"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Scan the folder "
-#~| "recursively for torrents.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Note:</span> This will not be done for any folder named "
-#~| "loaded.</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -3122,22 +2791,6 @@ msgstr ""
 #~ msgstr "Serĉi subdosierujojn"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">When a torrent file "
-#~| "has been found and loaded, delete it.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Warning:</span> you will permanently lose this file.</p></"
-#~| "body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -3187,17 +2840,14 @@ msgstr ""
 #~ msgstr "Movi torenton al \"ŝargita\" dosierujo"
 
 #, fuzzy
-#~| msgid "Add to Group"
 #~ msgid "Add torrent to group:"
 #~ msgstr "Aldoni al grupo"
 
 #, fuzzy
-#~| msgid "Stop all torrents"
 #~ msgid "Group to add torrents to."
 #~ msgstr "Ĉesigi ĉiujn torentojn"
 
 #, fuzzy
-#~| msgid "Open silently"
 #~ msgid "Whether to open torrent silently or not."
 #~ msgstr "Malfermi silente"
 
@@ -3211,7 +2861,6 @@ msgstr ""
 #~ msgstr "Reserĉi"
 
 #, fuzzy
-#~| msgid "Main Toolbar"
 #~ msgid "Syndication Toolbar"
 #~ msgstr "Ĉefa ilobreto"
 
@@ -3219,7 +2868,6 @@ msgstr ""
 #~ msgstr "Nomo:"
 
 #, fuzzy
-#~| msgid "Add to Group"
 #~ msgid "Add to group:"
 #~ msgstr "Aldoni al grupo"
 
@@ -3227,7 +2875,6 @@ msgstr ""
 #~ msgstr "Elŝuti al:"
 
 #, fuzzy
-#~| msgid "Open silently"
 #~ msgid "Open torrents silently"
 #~ msgstr "Malfermi silente"
 
@@ -3235,7 +2882,6 @@ msgstr ""
 #~ msgstr "Testo"
 
 #, fuzzy
-#~| msgid "IP filter file:"
 #~ msgid "filter on feed:"
 #~ msgstr "IP-filtrila dosiero:"
 
@@ -3246,7 +2892,6 @@ msgstr ""
 #~ msgstr "Stato:"
 
 #, fuzzy
-#~| msgid "Recreate"
 #~ msgid "Refresh every:"
 #~ msgstr "Rekrei"
 
@@ -3254,7 +2899,6 @@ msgstr ""
 #~ msgstr " minutoj"
 
 #, fuzzy
-#~| msgid "Recreate"
 #~ msgid "Refresh"
 #~ msgstr "Rekrei"
 
@@ -3262,17 +2906,14 @@ msgstr ""
 #~ msgstr "Filtrilo"
 
 #, fuzzy
-#~| msgid "IP Filter"
 #~ msgid "Manage Filters"
 #~ msgstr "IPFiltrilo"
 
 #, fuzzy
-#~| msgid "Seeders"
 #~ msgid "Feed:"
 #~ msgstr "Fontoj"
 
 #, fuzzy
-#~| msgid "Active torrents"
 #~ msgid "Active filters:"
 #~ msgstr "Aktivaj torentoj"
 
@@ -3280,17 +2921,14 @@ msgstr ""
 #~ msgstr "Aldoni"
 
 #, fuzzy
-#~| msgid "Available chunks:"
 #~ msgid "Available filters:"
 #~ msgstr "Disponeblaj pecoj:"
 
 #, fuzzy
-#~| msgid "R&emove All"
 #~ msgid "Remove All"
 #~ msgstr "&Forpreni ĉiujn"
 
 #, fuzzy
-#~| msgid "Search Toolbar"
 #~ msgid "Media Player Toolbar"
 #~ msgstr "Serĉa ilobreto"
 
@@ -3298,7 +2936,6 @@ msgstr ""
 #~ msgstr "Serĉa agordo"
 
 #, fuzzy
-#~| msgid "Webinterface Plugin"
 #~ msgid "Web interface skin:"
 #~ msgstr "RetInterfaca kromprogrameto"
 
@@ -3306,22 +2943,6 @@ msgstr ""
 #~ msgstr "La interfaco kiun vi volas uzi."
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Scan the folder "
-#~| "recursively for torrents.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Note:</span> This will not be done for any folder named "
-#~| "loaded.</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -3359,7 +2980,6 @@ msgstr ""
 #~ "html>"
 
 #, fuzzy
-#~| msgid "Required disk space:"
 #~ msgid "Login required"
 #~ msgstr "Bezonita diskspaco:"
 
@@ -3380,7 +3000,6 @@ msgstr ""
 #~ "ktorrent."
 
 #, fuzzy
-#~| msgid "Seeders"
 #~ msgid "Web Server"
 #~ msgstr "Fontoj"
 
@@ -3391,23 +3010,6 @@ msgstr ""
 #~ msgstr "La pordo al kiu la retinterfaco atentas."
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">If you are behind a "
-#~| "router and you want to access the webinterface from somewhere on the "
-#~| "internet you need to forward the correct port.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">This checkbox will "
-#~| "ensure that the UPnP plugin automatically forwards the port. The UPnP "
-#~| "plugin needs to be loaded for this to work.</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -3459,57 +3061,46 @@ msgstr ""
 #~ msgstr "sek-oj"
 
 #, fuzzy
-#~| msgid "Forward port"
 #~ msgid "forward Port"
 #~ msgstr "Plusendi pordon"
 
 #, fuzzy
-#~| msgid "Webinterface Plugin"
 #~ msgid "interface skin"
 #~ msgstr "RetInterfaca kromprogrameto"
 
 #, fuzzy
-#~| msgid "Username:"
 #~ msgid "username"
 #~ msgstr "Uzantnomo:"
 
 #, fuzzy
-#~| msgid "Password:"
 #~ msgid "password"
 #~ msgstr "Pasvorto:"
 
 #, fuzzy
-#~| msgid "Update charts every"
 #~ msgid "Update charts every n gui updates"
 #~ msgstr "Ĝisdatigi diagramojn ĉiu"
 
 #, fuzzy
-#~| msgid "Show seeds in swarms"
 #~ msgid "Whether to show seeds in swarms"
 #~ msgstr "Montri fontojn en torentaroj"
 
 #, fuzzy
-#~| msgid "Show leechers in swarms"
 #~ msgid "Whether to show leachers in swarms"
 #~ msgstr "Montri ricevantojn en torentaroj"
 
 #, fuzzy
-#~| msgid "Add a new item to the schedule"
 #~ msgid "Color of the nodes on DHT chart"
 #~ msgstr "Aldoni novan eron al la horaro"
 
 #, fuzzy
-#~| msgid "Use anti-aliasing"
 #~ msgid "Use anti aliasing on charts?"
 #~ msgstr "Uzi glatigon"
 
 #, fuzzy
-#~| msgid "Draw background grid"
 #~ msgid "Draw ugly grey background grid?"
 #~ msgstr "Fari fonan kradon"
 
 #, fuzzy
-#~| msgid "Speed"
 #~ msgctxt "@title:window"
 #~ msgid "Speed"
 #~ msgstr "Rapido"
@@ -3599,7 +3190,6 @@ msgstr ""
 #~ msgstr "Ŝanĝi servilon"
 
 #, fuzzy
-#~| msgid "Update Tracker"
 #~ msgid "Update Trackers"
 #~ msgstr "Ĝisdatigi servilon"
 
@@ -3643,22 +3233,6 @@ msgstr ""
 #~ msgstr " Horoj"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Scan the folder "
-#~| "recursively for torrents.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Note:</span> This will not be done for any folder named "
-#~| "loaded.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -3693,12 +3267,10 @@ msgstr ""
 #~ "html>"
 
 #, fuzzy
-#~| msgid "Seeders"
 #~ msgid "Add Webseed"
 #~ msgstr "Fontoj"
 
 #, fuzzy
-#~| msgid "Remove Item"
 #~ msgid "Remove Webseed"
 #~ msgstr "Elpreni eron"
 
@@ -3706,7 +3278,6 @@ msgstr ""
 #~ msgstr "Ŝaltu ĉiujn"
 
 #, fuzzy
-#~| msgid "Tasks"
 #~ msgid "Tabs"
 #~ msgstr "Taskoj"
 
@@ -3730,15 +3301,6 @@ msgstr ""
 #~ msgstr "Montri liston de kunordigaj serviloj"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Cancel, do not start "
-#~| "the torrent.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -3759,30 +3321,18 @@ msgstr ""
 #~ "torenton.</p></body></html>"
 
 #, fuzzy
-#~| msgid "Show list of peers"
 #~ msgid "Show list of webseeds"
 #~ msgstr "Montri liston de kundividantoj"
 
 #, fuzzy
-#~| msgid "File prioritization"
 #~ msgid "File Priority Colors"
 #~ msgstr "Dosiera prioritatado"
 
 #, fuzzy
-#~| msgid "Priority"
 #~ msgid "First priority:"
 #~ msgstr "Prioritato"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Password for the SOCKS "
-#~| "proxy server.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -3803,20 +3353,10 @@ msgstr ""
 #~ "prokurila servilo.</p></body></html>"
 
 #, fuzzy
-#~| msgid "Priority"
 #~ msgid "Last priority:"
 #~ msgstr "Prioritato"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Password for the SOCKS "
-#~| "proxy server.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -3855,42 +3395,34 @@ msgstr ""
 #~ msgstr "Grando:"
 
 #, fuzzy
-#~| msgid "Settings"
 #~ msgid "EMail Settings"
 #~ msgstr "Agordo"
 
 #, fuzzy
-#~| msgid "Server:"
 #~ msgid "SMTP Server"
 #~ msgstr "Servilo:"
 
 #, fuzzy
-#~| msgid "Server:"
 #~ msgid "SMTP server:"
 #~ msgstr "Servilo:"
 
 #, fuzzy
-#~| msgid "Use protocol encryption"
 #~ msgid "Use SSL/TLS encryption"
 #~ msgstr "Uzi protokolan ĉifradon"
 
 #, fuzzy
-#~| msgid "Add peer:"
 #~ msgid "Add CC:"
 #~ msgstr "Aldoni kundividanton:"
 
 #, fuzzy
-#~| msgid "Create a torrent"
 #~ msgid "Auto remove a torrent when:"
 #~ msgstr "Krei fontan torenton"
 
 #, fuzzy
-#~| msgid "Directory to move data to when a torrent has finished downloading."
 #~ msgid "The torrent finishes downloading"
 #~ msgstr "Dosierujo al kiu vi volas movi datumojn post la elŝuto de torento."
 
 #, fuzzy
-#~| msgid "Directory to move data to when a torrent has finished downloading."
 #~ msgid "The torrent finishes seeding"
 #~ msgstr "Dosierujo al kiu vi volas movi datumojn post la elŝuto de torento."
 
@@ -3901,7 +3433,6 @@ msgstr ""
 #~ msgstr "sek-oj"
 
 #, fuzzy
-#~| msgid "Scrape"
 #~ msgid "Description:"
 #~ msgstr "Informpeti"
 
@@ -3915,39 +3446,10 @@ msgstr ""
 #~ msgstr "Retejo:"
 
 #, fuzzy
-#~| msgid "Use rich text for logging output"
 #~ msgid "Use rich log text"
 #~ msgstr "Uzi riĉan tekston por protokolo"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Specifies which log "
-#~| "level to use for each component.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">All: </span>Show all messages</p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Debug:</span> Show debug, notice and important messages</"
-#~| "p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Notice: </span>Show notice and important messages</p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Important: </span>Show only important messages</p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">None: </span>Show no messages</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -4019,12 +3521,10 @@ msgstr ""
 #~ msgstr "Uzi riĉan tekston por protokolo"
 
 #, fuzzy
-#~| msgid "Torrent files"
 #~ msgid "Torrent activity"
 #~ msgstr "Torentdosieroj"
 
 #, fuzzy
-#~| msgid "Failed to open %1 : %2"
 #~ msgid "File download order for:"
 #~ msgstr "Ne povas malfermi %1 : %2"
 
@@ -4032,7 +3532,6 @@ msgstr ""
 #~ msgstr "Serĉa ilobreto"
 
 #, fuzzy
-#~| msgid "Current schedule:"
 #~ msgid "Current search engine"
 #~ msgstr "Nuna horaro:"
 
@@ -4040,17 +3539,14 @@ msgstr ""
 #~ msgstr "Uzi defaŭltan retumilon"
 
 #, fuzzy
-#~| msgid "Use default browser"
 #~ msgid "Use custom browser"
 #~ msgstr "Uzi defaŭltan retumilon"
 
 #, fuzzy
-#~| msgid "Custom browser path:"
 #~ msgid "Custom browser executable path"
 #~ msgstr "Difinita vojo al retumilo:"
 
 #, fuzzy
-#~| msgid "Clear Search History"
 #~ msgid "Clear the search history combo boxes."
 #~ msgstr "Viŝi serĉan historion"
 
@@ -4058,7 +3554,6 @@ msgstr ""
 #~ msgstr "Viŝi serĉan historion"
 
 #, fuzzy
-#~| msgid "Open searches in external browser"
 #~ msgid "Whether or not to open searches in an external browser."
 #~ msgstr "Malfermi serĉojn en ekstera retumilo"
 
@@ -4066,7 +3561,6 @@ msgstr ""
 #~ msgstr "Malfermi serĉojn en ekstera retumilo"
 
 #, fuzzy
-#~| msgid "Use default browser"
 #~ msgid "Use a custom browser."
 #~ msgstr "Uzi defaŭltan retumilon"
 
@@ -4077,7 +3571,6 @@ msgstr ""
 #~ msgstr "Serĉiloj"
 
 #, fuzzy
-#~| msgid "Search Engine"
 #~ msgid "Add a new search engine."
 #~ msgstr "Serĉilo"
 
@@ -4085,7 +3578,6 @@ msgstr ""
 #~ msgstr "&Forpreni"
 
 #, fuzzy
-#~| msgid "Search Engine"
 #~ msgid "Remove all search engines."
 #~ msgstr "Serĉilo"
 
@@ -4093,7 +3585,6 @@ msgstr ""
 #~ msgstr "&Forpreni ĉiujn"
 
 #, fuzzy
-#~| msgid "Search Engine"
 #~ msgid "Add all default search engines."
 #~ msgstr "Serĉilo"
 
@@ -4101,7 +3592,6 @@ msgstr ""
 #~ msgstr "Aldoni defaŭ&ltan"
 
 #, fuzzy
-#~| msgid "Speed Limits"
 #~ msgid "Special Limits"
 #~ msgstr "Limigo de rapido"
 
@@ -4112,32 +3602,26 @@ msgstr ""
 #~ msgstr "Maksimuma elŝuta rapido:"
 
 #, fuzzy
-#~| msgid "Scheduler:"
 #~ msgid "Schedule line color:"
 #~ msgstr "Horaro:"
 
 #, fuzzy
-#~| msgid "Add a new item to the schedule"
 #~ msgid "Color of all lines on the schedule."
 #~ msgstr "Aldoni novan eron al la horaro"
 
 #, fuzzy
-#~| msgid "Scheduler:"
 #~ msgid "Schedule Item color:"
 #~ msgstr "Horaro:"
 
 #, fuzzy
-#~| msgid "Add a new item to the schedule"
 #~ msgid "Color of each normal item on the schedule."
 #~ msgstr "Aldoni novan eron al la horaro"
 
 #, fuzzy
-#~| msgid "Scheduler:"
 #~ msgid "Suspended schedule item color:"
 #~ msgstr "Horaro:"
 
 #, fuzzy
-#~| msgid "Add a new item to the schedule"
 #~ msgid "Color of each suspended item on the schedule."
 #~ msgstr "Aldoni novan eron al la horaro"
 
@@ -4166,12 +3650,10 @@ msgstr ""
 #~ msgstr "Alŝuta limigo"
 
 #, fuzzy
-#~| msgid "Global connection limit:"
 #~ msgid "Connection Limits"
 #~ msgstr "Ĉiea konekta limigo:"
 
 #, fuzzy
-#~| msgid "Global connection limit:"
 #~ msgid "Set connection limits"
 #~ msgstr "Ĉiea konekta limigo:"
 
@@ -4191,22 +3673,18 @@ msgstr ""
 #~ msgstr "Semajnfino"
 
 #, fuzzy
-#~| msgid "Download Toolbar"
 #~ msgid "Shutdown Toolbar"
 #~ msgstr "Elŝuta ilobreto"
 
 #, fuzzy
-#~| msgid "Settings"
 #~ msgid "Shutdown Settings"
 #~ msgstr "Agordo"
 
 #, fuzzy
-#~| msgid "Remove Folder"
 #~ msgid "Level1 filter url"
 #~ msgstr "Elpreni dosierujon"
 
 #, fuzzy
-#~| msgid "Use PeerGuardian filter"
 #~ msgid "Use level1 filter?"
 #~ msgstr "Uzi PeerGuardian-filtrilon"
 
@@ -4214,7 +3692,6 @@ msgstr ""
 #~ msgstr "IPBlokada agordo"
 
 #, fuzzy
-#~| msgid "Select PeerGuardian filter file "
 #~ msgid "PeerGuardian Filter File "
 #~ msgstr "Elekti PeerGuardian-filtrilan dosieron "
 
@@ -4225,7 +3702,6 @@ msgstr ""
 #~ msgstr "IP-filtrila dosiero:"
 
 #, fuzzy
-#~| msgid "Status: Downloading and converting new block list ..."
 #~ msgid "Download and convert the IP filter file."
 #~ msgstr "Stato: Elŝutas kaj konvertas novan blokitan liston ..."
 
@@ -4240,12 +3716,10 @@ msgstr ""
 #~ "NOTO: ZIP-dosiero el bluetack.co.uk estas subtenata."
 
 #, fuzzy
-#~| msgid "Update charts every"
 #~ msgid "Update file every:"
 #~ msgstr "Ĝisdatigi diagramojn ĉiu"
 
 #, fuzzy
-#~| msgid "GUI update interval:"
 #~ msgid "Update interval in days."
 #~ msgstr "Intervalo por la ĝisdatigo de la fasado:"
 
@@ -4253,12 +3727,10 @@ msgstr ""
 #~ msgstr "tagoj"
 
 #, fuzzy
-#~| msgid "Next update in:"
 #~ msgid "Last updated:"
 #~ msgstr "Ĝisdatigos post:"
 
 #, fuzzy
-#~| msgid "Next update in:"
 #~ msgid "Next update:"
 #~ msgstr "Ĝisdatigos post:"
 
@@ -4271,37 +3743,30 @@ msgstr ""
 #~ msgstr "Rezi&gnu"
 
 #, fuzzy
-#~| msgid "Search Preferences"
 #~ msgid "Magnet Generator Preferences"
 #~ msgstr "Serĉa agordo"
 
 #, fuzzy
-#~| msgid "Add Tracker"
 #~ msgid "Add tracker"
 #~ msgstr "Aldoni kunordigan servilon"
 
 #, fuzzy
-#~| msgid "Trackers"
 #~ msgid "Tracker:"
 #~ msgstr "Kunordigaj serviloj"
 
 #, fuzzy
-#~| msgid "Edit an item"
 #~ msgid "Add name"
 #~ msgstr "Modifi eron"
 
 #, fuzzy
-#~| msgid "Trackers"
 #~ msgid "Toggles tracker"
 #~ msgstr "Kunordigaj serviloj"
 
 #, fuzzy
-#~| msgid "Use default browser"
 #~ msgid "The default tracker"
 #~ msgstr "Uzi defaŭltan retumilon"
 
 #, fuzzy
-#~| msgid "Speed"
 #~ msgid "Show dn"
 #~ msgstr "Rapido"
 
@@ -4312,7 +3777,6 @@ msgstr ""
 #~ msgstr "Enkursigilo:"
 
 #, fuzzy
-#~| msgid "No routers found !"
 #~ msgid "No routers found."
 #~ msgstr "Ne trovis enkursigilon!"
 
@@ -4332,23 +3796,6 @@ msgstr ""
 #~ msgstr "Pordoj kaj limigoj"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Port used for the "
-#~| "bittorrent protocol.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Attention:</span> If you are behind a router, this port "
-#~| "needs to be forwarded to accept incoming connections. The UPnP plugin "
-#~| "can do this for you.</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -4391,23 +3838,6 @@ msgstr ""
 #~ msgstr "UDP pordo de kunordiga servilo:"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Port used for the UDP "
-#~| "tracker protocol.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Attention:</span> If you are behind a router, this port "
-#~| "needs to be forwarded. The UPnP plugin can do this for you.</p></body></"
-#~| "html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -4453,12 +3883,10 @@ msgstr ""
 #~ msgstr "La ĉiea konekta limigo, sume de ĉiuj torentoj."
 
 #, fuzzy
-#~| msgid "The maximum download speed in KB/s."
 #~ msgid "The maximum download speed in KiB/s."
 #~ msgstr "Maksimuma elŝuta rapido laŭ KB/sek."
 
 #, fuzzy
-#~| msgid "The maximum upload speed in KB/s"
 #~ msgid "The maximum upload speed in KiB/s"
 #~ msgstr "Maksimuma alŝuta rapido laŭ KB/sek"
 
@@ -4469,22 +3897,6 @@ msgstr ""
 #~ msgstr "Maksimuma nombro de konektaj agordoj:"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">The maximum number of "
-#~| "outgoing connections ktorrent will try to setup simultaneously.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">If you are having "
-#~| "trouble with ktorrent blocking other internet traffic, try setting this "
-#~| "number a bit lower.</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -4524,22 +3936,6 @@ msgstr ""
 #~ msgstr "Reta interfaco:"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Which network "
-#~| "interface to use for all network traffic.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Note: </span>Requires a restart to take effect !</p></"
-#~| "body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -4592,23 +3988,6 @@ msgstr ""
 #~ msgstr "UDP-pordo por DHT-komunikado:"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">UDP port to use for "
-#~| "the DHT protocol.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Attention:</span> If you are behind a router, this port "
-#~| "needs to be forwarded to accept incoming DHT requests. The UPnP plugin "
-#~| "can do this for you.</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -4648,12 +4027,10 @@ msgstr ""
 #~ "kromprogramo povas fari tion por vi.</p></body></html>"
 
 #, fuzzy
-#~| msgid "Peer Exchange"
 #~ msgid "Use peer exchange"
 #~ msgstr "Kolektado de kundividantoj"
 
 #, fuzzy
-#~| msgid "Seeders"
 #~ msgid "Use webseeds"
 #~ msgstr "Fontoj"
 
@@ -4718,7 +4095,6 @@ msgstr ""
 #~ "malebligi la rekontrolon de difinita grandeco de pecoj."
 
 #, fuzzy
-#~| msgid "Don't recheck when chunks are bigger then"
 #~ msgid "Do not recheck when chunks are bigger than"
 #~ msgstr "Ne rekontroli pecojn pli grandaj ol"
 
@@ -4740,9 +4116,6 @@ msgstr ""
 #~ msgstr "La nombro de malbonaj pecoj kiu lanĉos plenan datumkontrolon"
 
 #, fuzzy
-#~| msgid ""
-#~| "The torrent <b>%1</b> has not finished downloading, do you want to "
-#~| "delete the incomplete data, too?"
 #~ msgid ""
 #~ "When a torrent has finished downloading, do a full data check on the "
 #~ "torrent."
@@ -4762,9 +4135,6 @@ msgstr ""
 #~ msgstr "Rezervi diskspacon antaŭ ol la komenco de torento"
 
 #, fuzzy
-#~| msgid ""
-#~| "Instead of doing a quick reservation, do a full reservation. This is "
-#~| "slower then the quick way, but avoids fragmentation on the disk."
 #~ msgid ""
 #~ "Instead of doing a quick reservation, do a full reservation. This is "
 #~ "slower than the quick way, but avoids fragmentation on the disk."
@@ -4782,22 +4152,6 @@ msgstr ""
 #~ msgstr "Intervalo por la ĝisdatigo de la fasado:"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">The interval in "
-#~| "milliseconds between GUI updates.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Note: </span>Increasing this will decrease CPU usage.</p></"
-#~| "body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -4841,32 +4195,6 @@ msgstr ""
 #~ msgstr "Senaktiviga daŭro de la reto:"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;\">Amount "
-#~| "of time the network threads will sleep when they are speed limited. This "
-#~| "has absolutely no effect when there are no speed limits.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
-#~| "font-size:9pt;\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;\"><span "
-#~| "style=\" font-weight:600;\">Note:</span> The lower this is the more CPU "
-#~| "is used. Setting it high can lead to lower speeds in high bandwith "
-#~| "situations. </p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
-#~| "font-size:9pt;\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;\">For "
-#~| "example on an 100 Mbit LAN, if you set a limit of 3000 KB/s, you might "
-#~| "not actually reach this speed when this value is too high. Without a "
-#~| "limit you can easily get above 3000 KB/s on a LAN.</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -4930,38 +4258,6 @@ msgstr ""
 #~ msgstr "Algoritmo de tempo-takso:"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Select which algorithm "
-#~| "to use for estimating the time left :</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">KTorrent:</span> Mix of other algorithms, we use the one "
-#~| "which fits best in the current situation.</p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Current speed:</span> Bytes left to download / current "
-#~| "speed</p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Average speed: </span>Bytes left to download / average "
-#~| "speed</p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Window of X:</span> Average of the last X samples (X = 20)"
-#~| "</p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Moving average:</span>  Moving average of the last 20 "
-#~| "samples</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -5034,15 +4330,6 @@ msgstr ""
 #~ msgstr "Fenestro de X"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Password for the SOCKS "
-#~| "proxy server.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -5064,15 +4351,6 @@ msgstr ""
 #~ "prokurila servilo.</p></body></html>"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Password for the SOCKS "
-#~| "proxy server.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -5094,7 +4372,6 @@ msgstr ""
 #~ "prokurila servilo.</p></body></html>"
 
 #, fuzzy
-#~| msgid "Do not use the KDE proxy settings for HTTP tracker connections"
 #~ msgid "Do not use KIO for tracker announces"
 #~ msgstr ""
 #~ "Ne uzi la KDE-prokurilan agordon por HTTP-kunordigaj servilaj konektoj"
@@ -5142,19 +4419,14 @@ msgstr ""
 #~ msgid "Show system tray icon"
 #~ msgstr "Montri sistempletan piktogramon"
 
+#, fuzzy
+#~ msgid "Whether or not to show system tray popup messages."
+#~ msgstr "Montri sistempletajn ŝprucmesaĝojn"
+
 #~ msgid "Show system tray popup messages"
 #~ msgstr "Montri sistempletajn ŝprucmesaĝojn"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">They are no longer "
-#~| "there, recreate them.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -5176,15 +4448,6 @@ msgstr ""
 #~ "bonvolu rekrei ilin.</p></body></html>"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Password for the SOCKS "
-#~| "proxy server.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -5241,7 +4504,6 @@ msgstr ""
 #~ msgstr "Komenci torentojn"
 
 #, fuzzy
-#~| msgid "Stop torrents when free disk space is lower then:"
 #~ msgid "Stop torrents when free disk space is lower than:"
 #~ msgstr "Ĉesigi torentojn kiam libera diskspaco falas sub:"
 
@@ -5256,22 +4518,6 @@ msgstr ""
 #~ msgstr " MiB"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Scan the folder "
-#~| "recursively for torrents.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Note:</span> This will not be done for any folder named "
-#~| "loaded.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -5307,20 +4553,10 @@ msgstr ""
 #~ "html>"
 
 #, fuzzy
-#~| msgid "Stalled"
 #~ msgid "Stalled timer:"
 #~ msgstr "Paraliziĝis"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">IP address or hostname "
-#~| "of the SOCKS server</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -5344,20 +4580,15 @@ msgstr ""
 #~ "de la SOCKS-servilo</p></body></html>"
 
 #, fuzzy
-#~| msgid "Find Routers"
 #~ msgid " Minutes"
 #~ msgstr "Trovi enkursigilojn"
 
 #, fuzzy
-#~| msgid "Seeding"
 #~ msgctxt "@title:group Options regarging Seeding"
 #~ msgid "Seeding"
 #~ msgstr "Fontsendas"
 
 #, fuzzy
-#~| msgid ""
-#~| "The maximum seed time in hours. Once you reach this time, the torrent "
-#~| "will be stopped."
 #~ msgid ""
 #~ "When a download is finished, continue seeding it. If this is disabled, "
 #~ "the torrent will be stopped."
@@ -5379,27 +4610,10 @@ msgstr ""
 #~ "povas samtempe alŝuti por unu torento."
 
 #, fuzzy
-#~| msgid "Maximum share ratio:"
 #~ msgid "Default maximum share ratio:"
 #~ msgstr "Maks. kunhava rejŝo:"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">The maximum share "
-#~| "ratio, if this value is reached seeding will be stopped.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Attention: </span>This is not used when downloading, only "
-#~| "when seeding.</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -5439,14 +4653,10 @@ msgstr ""
 #~ "fontsendado.</p></body></html>"
 
 #, fuzzy
-#~| msgid "Maximum seed time:"
 #~ msgid "Default maximum seed time:"
 #~ msgstr "Maksimuma fontsenda tempo:"
 
 #, fuzzy
-#~| msgid ""
-#~| "The maximum seed time in hours. Once you reach this time, the torrent "
-#~| "will be stopped."
 #~ msgid ""
 #~ "The maximum seed time in hours. Once you reach this time, the torrent "
 #~ "will be stopped. This is only applied to newly opened torrents, existing "
@@ -5474,12 +4684,10 @@ msgstr ""
 #~ msgstr "Agordoj"
 
 #, fuzzy
-#~| msgid "Average speed"
 #~ msgid "Average speed per slot:"
 #~ msgstr "Averaĝa rapido"
 
 #, fuzzy
-#~| msgid "Start torrent"
 #~ msgid "Slots per torrent:"
 #~ msgstr "Komenci torenton"
 
@@ -5487,15 +4695,6 @@ msgstr ""
 #~ msgstr "HTTP"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">IP address or hostname "
-#~| "of the SOCKS server</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -5519,30 +4718,18 @@ msgstr ""
 #~ "de la SOCKS-servilo</p></body></html>"
 
 #, fuzzy
-#~| msgid "Proxy"
 #~ msgid "Proxy:"
 #~ msgstr "Prokurilo"
 
 #, fuzzy
-#~| msgid "HTTP proxy to use for tracker connections."
 #~ msgid "Whether or not to use the HTTP proxy for webseed connections."
 #~ msgstr "HTTP-prokurilo por kunordigaj servilaj konektoj."
 
 #, fuzzy
-#~| msgid "HTTP proxy to use for tracker connections."
 #~ msgid "Use proxy for webseed connections"
 #~ msgstr "HTTP-prokurilo por kunordigaj servilaj konektoj."
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Cancel, do not start "
-#~| "the torrent.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -5563,7 +4750,6 @@ msgstr ""
 #~ "torenton.</p></body></html>"
 
 #, fuzzy
-#~| msgid "HTTP proxy to use for tracker connections."
 #~ msgid "Use proxy for tracker connections"
 #~ msgstr "HTTP-prokurilo por kunordigaj servilaj konektoj."
 
@@ -5571,22 +4757,6 @@ msgstr ""
 #~ msgstr "SOCKS"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Use a SOCKS proxy "
-#~| "server for bittorrent connections.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Note: </span>This is not used for tracker connections</p></"
-#~| "body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -5630,15 +4800,6 @@ msgstr ""
 #~ msgstr "Servilo:"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">IP address or hostname "
-#~| "of the SOCKS server</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -5662,15 +4823,6 @@ msgstr ""
 #~ "de la SOCKS-servilo</p></body></html>"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">IP address or hostname "
-#~| "of the SOCKS server</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -5697,15 +4849,6 @@ msgstr ""
 #~ msgstr "Versio:"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">IP address or hostname "
-#~| "of the SOCKS server</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -5729,15 +4872,6 @@ msgstr ""
 #~ "de la SOCKS-servilo</p></body></html>"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">IP address or hostname "
-#~| "of the SOCKS server</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -5767,15 +4901,6 @@ msgstr ""
 #~ msgstr "Trovis:"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Password for the SOCKS "
-#~| "proxy server.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -5799,20 +4924,10 @@ msgstr ""
 #~ msgstr "0"
 
 #, fuzzy
-#~| msgid "File"
 #~ msgid "Failed:"
 #~ msgstr "Dosiero"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Password for the SOCKS "
-#~| "proxy server.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -5833,20 +4948,10 @@ msgstr ""
 #~ "prokurila servilo.</p></body></html>"
 
 #, fuzzy
-#~| msgid "Downloaded:"
 #~ msgid "Not downloaded:"
 #~ msgstr "Elŝutis:"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Password for the SOCKS "
-#~| "proxy server.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -5867,15 +4972,6 @@ msgstr ""
 #~ "prokurila servilo.</p></body></html>"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Password for the SOCKS "
-#~| "proxy server.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -5905,22 +5001,6 @@ msgstr ""
 #~ msgstr "Dialogo"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Scan the folder "
-#~| "recursively for torrents.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Note:</span> This will not be done for any folder named "
-#~| "loaded.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -5957,22 +5037,6 @@ msgstr ""
 #~ "html>"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Scan the folder "
-#~| "recursively for torrents.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Note:</span> This will not be done for any folder named "
-#~| "loaded.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -6009,15 +5073,6 @@ msgstr ""
 #~ "html>"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Password for the SOCKS "
-#~| "proxy server.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -6038,17 +5093,14 @@ msgstr ""
 #~ "prokurila servilo.</p></body></html>"
 
 #, fuzzy
-#~| msgid "Torrent files"
 #~ msgid "Torrent Limits"
 #~ msgstr "Torentdosieroj"
 
 #, fuzzy
-#~| msgid "Maximum downloads:"
 #~ msgid "Maximum download rate:"
 #~ msgstr "Maksimumaj elŝutoj:"
 
 #, fuzzy
-#~| msgid "Maximum upload speed:"
 #~ msgid "Maximum upload rate:"
 #~ msgstr "Maksimuma alŝuta rapido:"
 
@@ -6059,22 +5111,6 @@ msgstr ""
 #~ msgstr "Maks. kunhava rejŝo:"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Scan the folder "
-#~| "recursively for torrents.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Note:</span> This will not be done for any folder named "
-#~| "loaded.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -6167,7 +5203,6 @@ msgstr ""
 #~ msgstr "Pordo"
 
 #, fuzzy
-#~| msgid "Seeders"
 #~ msgid "Web Seeds"
 #~ msgstr "Fontoj"
 
@@ -6184,7 +5219,6 @@ msgstr ""
 #~ msgstr "Inversigi elekton"
 
 #, fuzzy
-#~| msgid "Stop All"
 #~ msgid "Collapse All"
 #~ msgstr "Ĉesigi ĉiujn"
 
@@ -6198,22 +5232,6 @@ msgstr ""
 #~ msgstr "Komenci torenton"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Scan the folder "
-#~| "recursively for torrents.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Note:</span> This will not be done for any folder named "
-#~| "loaded.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -6252,13 +5270,10 @@ msgstr ""
 #~ msgstr "Diskspaco"
 
 #, fuzzy
-#~| msgid "Required disk space:"
 #~ msgid "Required:"
 #~ msgstr "Bezonita diskspaco:"
 
 #, fuzzy
-#~| msgctxt "Preview available"
-#~| msgid "Available"
 #~ msgid "Available:"
 #~ msgstr "Disponebla"
 
@@ -6266,12 +5281,10 @@ msgstr ""
 #~ msgstr "Post elŝuto:"
 
 #, fuzzy
-#~| msgid "Speed limits for all torrents (double click to edit):"
 #~ msgid "Speed limits for individual torrents (double click to edit):"
 #~ msgstr "Rapidlimigoj por ĉiuj torentoj (duoble alklaku por modifi):"
 
 #, fuzzy
-#~| msgid "IP Filter"
 #~ msgid "Filter:"
 #~ msgstr "IPFiltrilo"
 
@@ -6289,22 +5302,6 @@ msgstr ""
 #~ msgstr "Kundividanto:"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">The IP address or "
-#~| "hostname of the peer you want to connect to, should be put here.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Note:</span> We accept both IPv4 and IPv6 addresses</p></"
-#~| "body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -6349,15 +5346,6 @@ msgstr ""
 #~ msgstr "La sekvaj dosieroj mankas:"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">They are no longer "
-#~| "there, recreate them.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -6381,15 +5369,6 @@ msgstr ""
 #~ msgstr "Rekrei"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Do not download the "
-#~| "missing files.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -6410,15 +5389,6 @@ msgstr ""
 #~ "dosierojn.</p></body></html>"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">The files have been "
-#~| "moved to another location, select the new location.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -6442,15 +5412,6 @@ msgstr ""
 #~ msgstr "Elekti novan lokon"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Cancel, do not start "
-#~| "the torrent.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -6471,7 +5432,6 @@ msgstr ""
 #~ "torenton.</p></body></html>"
 
 #, fuzzy
-#~| msgid "Converting..."
 #~ msgid "Importing ..."
 #~ msgstr "Konvertas..."
 
@@ -6497,12 +5457,10 @@ msgstr ""
 #~ msgstr "&Dosiero"
 
 #, fuzzy
-#~| msgid "&File"
 #~ msgid "&View"
 #~ msgstr "&Dosiero"
 
 #, fuzzy
-#~| msgid "Groups"
 #~ msgid "GroupsMenu"
 #~ msgstr "Grupoj"
 
@@ -6522,9 +5480,6 @@ msgstr ""
 #~ msgstr "Aldoni kundividanton:"
 
 #, fuzzy
-#~| msgid ""
-#~| "You must enter IP in format 'XXX.XXX.XXX.XXX'. You can also use "
-#~| "wildcards for ranges like '127.0.0.*'."
 #~ msgid ""
 #~ "IP addresses must be in the format 'XXX.XXX.XXX.XXX'.\n"
 #~ "                                        \n"
@@ -6544,92 +5499,74 @@ msgstr ""
 #~ msgstr "Konservi kiel..."
 
 #, fuzzy
-#~| msgid "Torrent files"
 #~ msgid "Torrent to display:"
 #~ msgstr "Torentdosieroj"
 
 #, fuzzy
-#~| msgid "Maximum number of connection setups:"
 #~ msgid "Maximum number of downloads (0 = no limit)"
 #~ msgstr "Maksimuma nombro de konektaj agordoj:"
 
 #, fuzzy
-#~| msgid "The maximum number of connections allowed per torrent."
 #~ msgid "Maximum number of connections per torrent (0 = no limit)"
 #~ msgstr "Maksimuma nombro de konektoj por ĉiu torento."
 
 #, fuzzy
-#~| msgid "The maximum number of connections allowed per torrent."
 #~ msgid "Maximum number of connections for all torrents (0 = no limit) "
 #~ msgstr "Maksimuma nombro de konektoj por ĉiu torento."
 
 #, fuzzy
-#~| msgid "The maximum upload speed in KB/s"
 #~ msgid "Maximum upload speed in KiB/sec (0 = no limit)"
 #~ msgstr "Maksimuma alŝuta rapido laŭ KB/sek"
 
 #, fuzzy
-#~| msgid "The maximum download speed in KB/s."
 #~ msgid "Maximum download speed in KiB/sec (0 = no limit)"
 #~ msgstr "Maksimuma elŝuta rapido laŭ KB/sek."
 
 #, fuzzy
-#~| msgid "Maximum share ratio limit reached."
 #~ msgid "Maximum share ratio (0 = no limit)"
 #~ msgstr "Atingis maksimuman kundividan rejŝon."
 
 #, fuzzy
-#~| msgid "Show system tray icon"
 #~ msgid "Show a system tray icon"
 #~ msgstr "Montri sistempletan piktogramon"
 
 #, fuzzy
-#~| msgid "Show system tray icon"
 #~ msgid "Show speed bar in tray icon"
 #~ msgstr "Montri sistempletan piktogramon"
 
 #, fuzzy
-#~| msgid "Keep seeding after download is finished"
 #~ msgid "Keep seeding after download has finished"
 #~ msgstr "Daŭri sendi la fonton post la fino de la elŝuto"
 
 #, fuzzy
-#~| msgid "Folder to store torrent information:"
 #~ msgid "Folder to store temporary files"
 #~ msgstr "Dosierujo por konservi torentajn informojn:"
 
 #, fuzzy
-#~| msgid "Folder to store torrent information:"
 #~ msgid "Folder to store downloaded files"
 #~ msgstr "Dosierujo por konservi torentajn informojn:"
 
 #, fuzzy
-#~| msgid "Copy torrent files to:"
 #~ msgid "Folder to copy .torrent files to"
 #~ msgstr "Kopii torentdosierojn al:"
 
 #, fuzzy
-#~| msgid "GUI update interval:"
 #~ msgid "GUI update interval"
 #~ msgstr "Intervalo por la ĝisdatigo de la fasado:"
 
 #, fuzzy
-#~| msgid "DHT: off"
 #~ msgid "DHT port"
 #~ msgstr "DHT: malŝaltita"
 
 #, fuzzy
-#~| msgid "Number of upload slots:"
 #~ msgid "Number of upload slots"
 #~ msgstr "Nombro de alŝutaj fakoj:"
 
 #, fuzzy
-#~| msgid "Directory to move data to when a torrent has finished downloading."
 #~ msgid "Algorithm to estimate the time when a torrent is finished"
 #~ msgstr "Dosierujo al kiu vi volas movi datumojn post la elŝuto de torento."
 
 #, fuzzy
-#~| msgid "Move completed downloads to:"
 #~ msgid "Folder to move completed downloaded files to"
 #~ msgstr "Movi finitajn elŝutojn al:"
 
@@ -6647,12 +5584,10 @@ msgstr ""
 #~ "KTorrent nun uzas pordon %2."
 
 #, fuzzy
-#~| msgid "Remove Torrent"
 #~ msgid "Resume KTorrent"
 #~ msgstr "Elpreni torenton"
 
 #, fuzzy
-#~| msgid "Resume paused torrents"
 #~ msgid "Resume suspended torrents"
 #~ msgstr "Daŭrigi paŭzitajn torentojn"
 
@@ -6660,7 +5595,6 @@ msgstr ""
 #~ msgstr "KSqueezedTextLabel"
 
 #, fuzzy
-#~| msgid "Create a torrent"
 #~ msgid "Creating Torrent"
 #~ msgstr "Krei fontan torenton"
 
@@ -6677,45 +5611,30 @@ msgstr ""
 #~ msgstr "Legas datumon de <b>%1</b> :"
 
 #, fuzzy
-#~| msgid "Scanning data of torrent :"
 #~ msgid "Scanning data of torrent:"
 #~ msgstr "Legas datumojn de torento :"
 
 #, fuzzy
-#~| msgid "Number of chunks found :"
 #~ msgid "Chunks found:"
 #~ msgstr "Nombro de pecoj trovitaj :"
 
 #, fuzzy
-#~| msgid "Chunks"
 #~ msgid "Chunks failed:"
 #~ msgstr "Pecoj"
 
 #, fuzzy
-#~| msgid "Number of chunks failed / not downloaded :"
 #~ msgid "Chunks not downloaded:"
 #~ msgstr "Nombro de pecoj kiuj malsukcesis / ne elŝutiĝis :"
 
 #, fuzzy
-#~| msgid "Downloaded:"
 #~ msgid "Chunks downloaded:"
 #~ msgstr "Elŝutis:"
 
 #, fuzzy
-#~| msgid "Invalid tracker URL"
 #~ msgid "Invalid URL: "
 #~ msgstr "Nevalida servila retadreso"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Password for the SOCKS "
-#~| "proxy server.</p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"

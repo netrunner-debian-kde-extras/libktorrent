@@ -148,8 +148,10 @@ namespace bt
 		Tracker* trk = 0;
 		if (url.protocol() == "udp")
 			trk = new UDPTracker(url,this,tor->getTorrent().getPeerID(),tier);
-		else
+		else if (url.protocol() == "http" || url.protocol() == "https")
 			trk = new HTTPTracker(url,this,tor->getTorrent().getPeerID(),tier);
+		else
+			return 0;
 		
 		addTracker(trk);
 		if (custom)
@@ -242,11 +244,11 @@ namespace bt
 	void TrackerManager::addTracker(Tracker* trk)
 	{
 		trackers.insert(trk->trackerURL(),trk);
-		connect(trk,SIGNAL(peersReady( PeerSource* )),
-				 pman,SLOT(peerSourceReady( PeerSource* )));
+		connect(trk,SIGNAL(peersReady(PeerSource*)),
+				 pman,SLOT(peerSourceReady(PeerSource*)));
 		connect(trk,SIGNAL(scrapeDone()),tor,SLOT(trackerScrapeDone()));
 		connect(trk,SIGNAL(requestOK()),this,SLOT(onTrackerOK()));
-		connect(trk,SIGNAL(requestFailed( const QString& )),this,SLOT(onTrackerError( const QString& )));
+		connect(trk,SIGNAL(requestFailed(QString)),this,SLOT(onTrackerError(QString)));
 	}
 	
 	void TrackerManager::start() 
@@ -520,12 +522,12 @@ namespace bt
 			return curr && curr->getNumSeeders() > 0 ? curr->getNumSeeders() : 0;
 		}
 		
-		Uint32 r = 0;
+		int r = 0;
 		for (PtrMap<KUrl,Tracker>::const_iterator i = trackers.begin();i != trackers.end();i++)
 		{
 			int v = i->second->getNumSeeders();
-			if (v > 0)
-				r += v;
+			if (v > r) 
+				r = v;
 		}
 		
 		return r;
@@ -536,12 +538,12 @@ namespace bt
 		if (tor->getStats().priv_torrent)
 			return curr && curr->getNumLeechers() > 0 ? curr->getNumLeechers() : 0;
 		
-		Uint32 r = 0;
+		int r = 0;
 		for (PtrMap<KUrl,Tracker>::const_iterator i = trackers.begin();i != trackers.end();i++)
 		{
 			int v = i->second->getNumLeechers();
-			if (v > 0)
-				r += v;
+			if (v > r)
+				r = v;
 		}
 		
 		return r;
@@ -598,5 +600,11 @@ namespace bt
 		return tor->getInfoHash();
 	}
 
+	bool TrackerManager::isPartialSeed() const
+	{
+		return pman->isPartialSeed();
+	}
+
 
 }
+

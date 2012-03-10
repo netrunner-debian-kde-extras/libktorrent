@@ -38,27 +38,22 @@ namespace bt
 	void PeerSource::aboutToBeDestroyed()
 	{}
 	
-	void PeerSource::addPeer(const QString & ip,bt::Uint16 port,bool local)
+	void PeerSource::addPeer(const net::Address & addr, bool local)
 	{
-		PotentialPeer pp;
-		pp.ip = ip;
-		pp.port = port;
-		pp.local = local;
-		peers.append(pp);
+		peers.append(qMakePair(addr, local));
 	}
-		
-	bool PeerSource::takePotentialPeer(PotentialPeer & pp)
+	
+	bool PeerSource::takePeer(net::Address& addr, bool& local)
 	{
 		if (peers.count() > 0)
 		{
-			pp = peers.front();
+			addr = peers.front().first;
+			local = peers.front().second;
 			peers.pop_front();
 			return true;
 		}
 		return false;
 	}
-
-	
 
 }
 #include "peersource.moc"

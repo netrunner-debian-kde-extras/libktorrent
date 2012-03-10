@@ -1,13 +1,13 @@
 # translation of ktorrent.po to Italian
 #
 # Nicola Ruggero <nixprog.adsl@tiscali.it>, 2005, 2006.
-# Nicola Ruggero <nicola@nxnt.org>, 2006, 2007, 2008, 2009, 2010.
+# Nicola Ruggero <nicola@nxnt.org>, 2006, 2007, 2008, 2009, 2010, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-11 11:17+0200\n"
-"PO-Revision-Date: 2010-05-14 16:13+0200\n"
+"POT-Creation-Date: 2012-02-07 18:22+0100\n"
+"PO-Revision-Date: 2012-02-20 15:59+0100\n"
 "Last-Translator: Nicola Ruggero <nicola@nxnt.org>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -17,43 +17,41 @@ msgstr ""
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: src/bcodec/bdecoder.cpp:62
+#: src/bcodec/bdecoder.cpp:71
 #, kde-format
 msgid "Illegal token: %1"
 msgstr "Token non valido: %1"
 
-#: src/bcodec/bdecoder.cpp:125 src/bcodec/bdecoder.cpp:133
+#: src/bcodec/bdecoder.cpp:133 src/bcodec/bdecoder.cpp:141
 msgid "Decode error"
 msgstr "Errore di decodifica"
 
-#: src/bcodec/bdecoder.cpp:193 src/bcodec/bdecoder.cpp:238
+#: src/bcodec/bdecoder.cpp:201 src/bcodec/bdecoder.cpp:246
 msgid "Unexpected end of input"
 msgstr "Fine dell'input non atteso"
 
-#: src/bcodec/bdecoder.cpp:213 src/bcodec/bdecoder.cpp:247
+#: src/bcodec/bdecoder.cpp:221 src/bcodec/bdecoder.cpp:255
 #, kde-format
 msgid "Cannot convert %1 to an int"
 msgstr "Impossibile convertire %1 in un intero"
 
-#: src/bcodec/bdecoder.cpp:252
+#: src/bcodec/bdecoder.cpp:260
 msgid "Torrent is incomplete."
 msgstr "Il torrent è incompleto."
 
-#: src/datachecker/datacheckerjob.cpp:76
+#: src/datachecker/datacheckerjob.cpp:82
 msgid "Waiting for other data checks to finish"
-msgstr ""
+msgstr "In attesa del termine degli altri controlli sui dati"
 
-#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:93
 msgid "Checking data"
 msgstr "Controllo dati"
 
-#: src/datachecker/datacheckerjob.cpp:135
-#, fuzzy
-#| msgid "Checking data"
+#: src/datachecker/datacheckerjob.cpp:141
 msgid "Checking Data"
 msgstr "Controllo dati"
 
-#: src/datachecker/multidatachecker.cpp:203
+#: src/datachecker/multidatachecker.cpp:209
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
@@ -61,193 +59,113 @@ msgstr "Controllo dati"
 msgid "Cannot open file %1: %2"
 msgstr "Impossibile aprire il file %1: %2"
 
-#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
-#: src/util/fileops.cpp:396
-#, fuzzy, kde-format
-#| msgid "Cannot open %1 : %2"
-msgid "Cannot open %1: %2"
-msgstr "Impossibile aprire %1: %2"
-
-#: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
-#: src/diskio/cachefile.cpp:412 src/diskio/cachefile.cpp:480
-#, fuzzy, kde-format
-#| msgid "Cannot open %1 for writing : readonly filesystem"
-msgid "Cannot open %1 for writing: readonly filesystem"
-msgstr "Impossibile aprire %1 in scrittura: filesystem in sola lettura"
-
-#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:418
-#, kde-format
-msgid "Attempting to write beyond the maximum size of %1"
-msgstr "Tentativo di scrittura oltre la dimensione massima di %1"
-
-#: src/diskio/cachefile.cpp:255
-#, fuzzy, kde-format
-#| msgid ""
-#| "Cannot expand file %1 : attempting to grow the file beyond the maximum "
-#| "size"
-msgid ""
-"Cannot expand file %1: attempting to grow the file beyond the maximum size"
-msgstr ""
-"Impossibile espandere il file %1; tentativo di espansione del file oltre la "
-"dimensione massima"
-
-#: src/diskio/cachefile.cpp:259
-#, fuzzy, kde-format
-#| msgid "Cannot expand file %1 : %2"
-msgid "Cannot expand file %1: %2"
-msgstr "Impossibile espandere il file %1: %2"
-
-#: src/diskio/cachefile.cpp:378
-#, fuzzy, kde-format
-#| msgid "Error : Reading past the end of the file %1"
-msgid "Error: Reading past the end of the file %1"
-msgstr "Errore: lettura oltre la fine del file %1"
-
-#: src/diskio/cachefile.cpp:383 src/diskio/cachefile.cpp:430
-#, fuzzy, kde-format
-#| msgid "Failed to seek file %1 : %2"
-msgid "Failed to seek file %1: %2"
-msgstr "Impossibile scorrere il file %1: %2"
-
-#: src/diskio/cachefile.cpp:391
-#, kde-format
-msgid "Error reading from %1"
-msgstr "Errore durante la lettura di %1"
-
-#: src/diskio/cachefile.cpp:434
-#, fuzzy, kde-format
-#| msgid "Failed to write to file %1 : %2"
-msgid "Failed to write to file %1: %2"
-msgstr "Impossibile scrivere nel file %1: %2"
-
-#: src/diskio/cachefile.cpp:501
-#, fuzzy, kde-format
-#| msgid "Cannot preallocate diskspace : %1"
-msgid "Cannot preallocate diskspace: %1"
-msgstr "Impossibile riservare lo spazio su disco: %1"
-
 #: src/diskio/dndfile.cpp:89
-#, fuzzy, kde-format
-#| msgid "Cannot create file %1 : %2"
+#, kde-format
 msgid "Cannot create file %1: %2"
 msgstr "Impossibile creare il file %1: %2"
 
 #: src/diskio/dndfile.cpp:137
-#, fuzzy, kde-format
-#| msgid "Failed to write first chunk to DND file : %1"
+#, kde-format
 msgid "Failed to write first chunk to DND file: %1"
 msgstr "Impossibile scrivere la prima parte al file DND: %1"
 
 #: src/diskio/dndfile.cpp:155
-#, fuzzy, kde-format
-#| msgid "Failed to write last chunk to DND file : %1"
+#, kde-format
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Impossibile scrivere l'ultima parte al file DND: %1"
 
-#: src/diskio/movedatafilesjob.cpp:166
-#, fuzzy
-#| msgid "Moving average"
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Media commovente"
-
-#: src/diskio/movedatafilesjob.cpp:167
-#, fuzzy
-#| msgid "Add Source"
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "Aggiungi fonte"
-
-#: src/diskio/movedatafilesjob.cpp:168
-#, fuzzy
-#| msgid "Destination"
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "Destinazione"
-
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
-#, fuzzy, kde-format
-#| msgid "Failed to open %1 : %2"
+#, kde-format
 msgid "Failed to open %1: %2"
 msgstr "Impossibile aprire %1: %2"
 
 #: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
-#, fuzzy, kde-format
-#| msgid "Failed to create %1 : %2"
+#, kde-format
 msgid "Failed to create %1: %2"
-msgstr "Impossibile creare %1 : %2"
+msgstr "Impossibile creare %1: %2"
 
 #: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
 msgid "Unable to write to a piece mapped read only"
-msgstr ""
+msgstr "Impossibile scrivere una porzione mappata in sola lettura"
 
-#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
-#, fuzzy, kde-format
-#| msgid "Cannot open index file %1 : %2"
+#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
+#: src/util/fileops.cpp:399
+#, kde-format
+msgid "Cannot open %1: %2"
+msgstr "Impossibile aprire %1: %2"
+
+#: src/diskio/cachefile.cpp:122 src/diskio/cachefile.cpp:250
+#: src/diskio/cachefile.cpp:414 src/diskio/cachefile.cpp:482
+#, kde-format
+msgid "Cannot open %1 for writing: readonly filesystem"
+msgstr "Impossibile aprire %1 in scrittura: filesystem in sola lettura"
+
+#: src/diskio/cachefile.cpp:129 src/diskio/cachefile.cpp:420
+#, kde-format
+msgid "Attempting to write beyond the maximum size of %1"
+msgstr "Tentativo di scrittura oltre la dimensione massima di %1"
+
+#: src/diskio/cachefile.cpp:257
+#, kde-format
+msgid ""
+"Cannot expand file %1: attempting to grow the file beyond the maximum size"
+msgstr ""
+"Impossibile espandere il file %1: tentativo di espansione del file oltre la "
+"dimensione massima"
+
+#: src/diskio/cachefile.cpp:261
+#, kde-format
+msgid "Cannot expand file %1: %2"
+msgstr "Impossibile espandere il file %1: %2"
+
+#: src/diskio/cachefile.cpp:380
+#, kde-format
+msgid "Error: Reading past the end of the file %1"
+msgstr "Errore: lettura oltre la fine del file %1"
+
+#: src/diskio/cachefile.cpp:385 src/diskio/cachefile.cpp:432
+#, kde-format
+msgid "Failed to seek file %1: %2"
+msgstr "Impossibile scorrere il file %1: %2"
+
+#: src/diskio/cachefile.cpp:393
+#, kde-format
+msgid "Error reading from %1"
+msgstr "Errore durante la lettura di %1"
+
+#: src/diskio/cachefile.cpp:436
+#, kde-format
+msgid "Failed to write to file %1: %2"
+msgstr "Impossibile scrivere nel file %1: %2"
+
+#: src/diskio/cachefile.cpp:503
+#, kde-format
+msgid "Cannot preallocate diskspace: %1"
+msgstr "Impossibile riservare lo spazio su disco: %1"
+
+#: src/diskio/chunkmanager.cpp:928 src/diskio/chunkmanager.cpp:954
+#, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr "Impossibile aprire il file indice %1: %2"
 
-#: src/download/downloader.cpp:810
-#, fuzzy
-#| msgid "Displays all the webseeds of a torrent"
-msgid "Disabled because webseed does not match torrent"
-msgstr "Mostra tutti i distributori web di un torrent"
+#: src/diskio/movedatafilesjob.cpp:140
+msgid "Waiting for other move jobs to finish"
+msgstr "In attesa del termine degli altri lavori di spostamento"
 
-#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
-msgid "Not connected"
-msgstr "Non connesso"
+#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr "Sorgente"
 
-#: src/download/httpconnection.cpp:107
-#, kde-format
-msgid "Resolving proxy %1:%2"
-msgstr "Risoluzione proxy %1:%2"
+#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr "Destinazione"
 
-#: src/download/httpconnection.cpp:116
-#, kde-format
-msgid "Resolving hostname %1"
-msgstr "Risoluzione nome host %1"
-
-#: src/download/httpconnection.cpp:129 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "Connessione chiusa"
-
-#: src/download/httpconnection.cpp:136
-#, kde-format
-msgid "Error: request failed: %1"
-msgstr "Errore: richiesta non riuscita %1"
-
-#: src/download/httpconnection.cpp:153 src/download/httpconnection.cpp:217
-msgid "Connected"
-msgstr "Connesso"
-
-#: src/download/httpconnection.cpp:159
-msgid "Error: Failed to connect to webseed"
-msgstr "Errore: impossibile connettersi al distributore web"
-
-#: src/download/httpconnection.cpp:224
-msgid "Connecting"
-msgstr "Connessione in corso"
-
-#: src/download/httpconnection.cpp:235
-msgid "Failed to connect to webseed"
-msgstr "Impossibile connettersi al distributore web"
-
-#: src/download/httpconnection.cpp:242
-msgid "Failed to resolve hostname of webseed"
-msgstr "Impossibile risolvere il nome host del distributore web"
-
-#: src/download/httpconnection.cpp:322
-msgid "Error: failed to connect, server not responding"
-msgstr "Errore: impossibile connettersi, il server non risponde"
-
-#: src/download/httpconnection.cpp:333
-msgid "Error: request timed out"
-msgstr "Errore: richiesta scaduta"
-
-#: src/download/httpconnection.cpp:398
-msgid "Redirected without a new location."
-msgstr "Rediretto senza una nuova destinazione."
+#: src/diskio/movedatafilesjob.cpp:180
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Spostamento"
 
 #: src/download/chunkdownload.cpp:383
 #, kde-format
@@ -256,26 +174,89 @@ msgid_plural "%1 peers"
 msgstr[0] "1 nodo"
 msgstr[1] "%1 nodi"
 
+#: src/download/downloader.cpp:808
+msgid "Disabled because webseed does not match torrent"
+msgstr "Disabilitato perché il distributore web non corrisponde al torrent"
+
+#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
+#: src/download/webseed.cpp:98
+msgid "Not connected"
+msgstr "Non connesso"
+
+#: src/download/httpconnection.cpp:115
+#, kde-format
+msgid "Resolving proxy %1:%2"
+msgstr "Risoluzione proxy %1:%2"
+
+#: src/download/httpconnection.cpp:121 src/download/httpconnection.cpp:139
+msgid "Not enough system resources available"
+msgstr "Non ci sono abbastanza risorse di sistema disponibili"
+
+#: src/download/httpconnection.cpp:133
+#, kde-format
+msgid "Resolving hostname %1"
+msgstr "Risoluzione nome host %1"
+
+#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
+msgid "Connection closed"
+msgstr "Connessione chiusa"
+
+#: src/download/httpconnection.cpp:160
+#, kde-format
+msgid "Error: request failed: %1"
+msgstr "Errore: richiesta non riuscita %1"
+
+#: src/download/httpconnection.cpp:188 src/download/httpconnection.cpp:222
+msgid "Connected"
+msgstr "Connesso"
+
+#: src/download/httpconnection.cpp:199
+msgid "Error: Failed to connect to webseed"
+msgstr "Errore: impossibile connettersi al distributore web"
+
+#: src/download/httpconnection.cpp:229
+msgid "Connecting"
+msgstr "Connessione in corso"
+
+#: src/download/httpconnection.cpp:240
+msgid "Failed to connect to webseed"
+msgstr "Impossibile connettersi al distributore web"
+
+#: src/download/httpconnection.cpp:247
+msgid "Failed to resolve hostname of webseed"
+msgstr "Impossibile risolvere il nome host del distributore web"
+
+#: src/download/httpconnection.cpp:326
+msgid "Error: failed to connect, server not responding"
+msgstr "Errore: impossibile connettersi, il server non risponde"
+
+#: src/download/httpconnection.cpp:337
+msgid "Error: request timed out"
+msgstr "Errore: richiesta scaduta"
+
+#: src/download/httpconnection.cpp:402
+msgid "Redirected without a new location."
+msgstr "Rediretto senza una nuova destinazione."
+
 #: src/download/webseed.cpp:545
 #, kde-format
 msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
+msgstr "Inutilizzato per %1 secondi (Troppi errori di connessione)"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr "OK"
 
 #: src/interfaces/trackerinterface.cpp:58
-#, fuzzy, kde-format
-#| msgid "Opening %1"
+#, kde-format
 msgid "Warning: %1"
-msgstr "Apertura %1"
+msgstr "Avviso: %1"
 
 #: src/interfaces/trackerinterface.cpp:59
 msgid "Announcing"
 msgstr "Annuncio"
 
-#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:86
+#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:87
 #, kde-format
 msgid "Error: %1"
 msgstr "Errore: %1"
@@ -294,62 +275,6 @@ msgstr "Client sconosciuto"
 msgid "Cannot create index file: %1"
 msgstr "Impossibile creare il file indice: %1"
 
-#: src/torrent/torrentstats.cpp:72
-msgid "Not started"
-msgstr "Non avviato"
-
-#: src/torrent/torrentstats.cpp:74
-msgid "Download completed"
-msgstr "Scaricamento completato"
-
-#: src/torrent/torrentstats.cpp:76
-msgid "Seeding completed"
-msgstr "Distribuzione seme completata"
-
-#: src/torrent/torrentstats.cpp:78
-msgctxt "Status of a torrent file"
-msgid "Seeding"
-msgstr "Distribuzione seme"
-
-#: src/torrent/torrentstats.cpp:80
-msgid "Downloading"
-msgstr "Scaricamento"
-
-#: src/torrent/torrentstats.cpp:82
-msgid "Stalled"
-msgstr "In stallo"
-
-#: src/torrent/torrentstats.cpp:84
-msgid "Stopped"
-msgstr "Fermato"
-
-#: src/torrent/torrentstats.cpp:88
-msgid "Allocating diskspace"
-msgstr "Riserva spazio su disco in corso"
-
-#: src/torrent/torrentstats.cpp:90
-msgid "Queued for seeding"
-msgstr "In coda per la distribuzione"
-
-#: src/torrent/torrentstats.cpp:90
-msgid "Queued for downloading"
-msgstr "In coda per lo scaricamento"
-
-#: src/torrent/torrentstats.cpp:94
-msgid "Stopped. No space left on device."
-msgstr "Fermato. Non c'è spazio rimanente sul dispositivo."
-
-#: src/torrent/torrentstats.cpp:96
-msgid "Paused"
-msgstr "In pausa"
-
-#: src/torrent/torrentstats.cpp:98
-#, fuzzy
-#| msgctxt "Status of a torrent file"
-#| msgid "Seeding"
-msgid "Superseeding"
-msgstr "Distribuzione seme"
-
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
@@ -358,16 +283,15 @@ msgid "Corrupted torrent."
 msgstr "Torrent danneggiato."
 
 #: src/torrent/torrent.cpp:165
-#, fuzzy, kde-format
-#| msgid " Unable to open torrent file %1 : %2"
+#, kde-format
 msgid "Unable to open torrent file %1: %2"
 msgstr "Impossibile aprire il file torrent %1: %2"
 
 #: src/torrent/torrentcontrol.cpp:308
 msgid "Error writing to disk, do you have enough diskspace?"
-msgstr ""
+msgstr "Impossibile scrivere nel disco, c'è abbastanza spazio disponibile?"
 
-#: src/torrent/torrentcontrol.cpp:553
+#: src/torrent/torrentcontrol.cpp:554
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -377,18 +301,17 @@ msgstr ""
 ">Probabilmente il torrent è danneggiato oppure non è affatto un file torrent "
 "valido."
 
-#: src/torrent/torrentcontrol.cpp:583
+#: src/torrent/torrentcontrol.cpp:584
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
-msgstr ""
+msgstr "Errore nel caricamento di <b>%1</b>:<br/><b>%2</b>"
 
-#: src/torrent/torrentcontrol.cpp:594
-#, fuzzy, kde-format
-#| msgid "Unable to create %1 : %2"
+#: src/torrent/torrentcontrol.cpp:595
+#, kde-format
 msgid "Unable to create %1: %2"
 msgstr "Impossibile creare %1: %2"
 
-#: src/torrent/torrentcontrol.cpp:609
+#: src/torrent/torrentcontrol.cpp:610
 #, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
@@ -397,38 +320,91 @@ msgstr ""
 "Stai già scaricando il torrent <b>%1</b>. La lista dei server traccia di "
 "entrambi i torrent è stata unificata."
 
-#: src/torrent/torrentcontrol.cpp:614
+#: src/torrent/torrentcontrol.cpp:615
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Stai già scaricando il torrent <b>%1</b>."
+
+#: src/torrent/torrentstats.cpp:73
+msgid "Not started"
+msgstr "Non avviato"
+
+#: src/torrent/torrentstats.cpp:75
+msgid "Download completed"
+msgstr "Scaricamento completato"
+
+#: src/torrent/torrentstats.cpp:77
+msgid "Seeding completed"
+msgstr "Distribuzione seme completata"
+
+#: src/torrent/torrentstats.cpp:79
+msgctxt "Status of a torrent file"
+msgid "Seeding"
+msgstr "Distribuzione seme"
+
+#: src/torrent/torrentstats.cpp:81
+msgid "Downloading"
+msgstr "Scaricamento"
+
+#: src/torrent/torrentstats.cpp:83
+msgid "Stalled"
+msgstr "In stallo"
+
+#: src/torrent/torrentstats.cpp:85
+msgid "Stopped"
+msgstr "Fermato"
+
+#: src/torrent/torrentstats.cpp:89
+msgid "Allocating diskspace"
+msgstr "Riserva spazio su disco in corso"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Queued for seeding"
+msgstr "In coda per la distribuzione"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Queued for downloading"
+msgstr "In coda per lo scaricamento"
+
+#: src/torrent/torrentstats.cpp:95
+msgid "Stopped. No space left on device."
+msgstr "Fermato. Non c'è spazio rimanente sul dispositivo."
+
+#: src/torrent/torrentstats.cpp:97
+msgid "Paused"
+msgstr "In pausa"
+
+#: src/torrent/torrentstats.cpp:99
+msgid "Superseeding"
+msgstr "Super distribuzione seme"
 
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "Rediretto senza una nuova destinazione"
 
-#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
-#: src/tracker/httptracker.cpp:557
+#: src/tracker/httptracker.cpp:287 src/tracker/httptracker.cpp:307
+#: src/tracker/httptracker.cpp:463
+msgid "Invalid response from tracker"
+msgstr "Risposta non valida dal server traccia"
+
+#: src/tracker/httptracker.cpp:300
+msgid "Invalid data from tracker"
+msgstr "Dati non validi dal server traccia"
+
+#: src/tracker/httptracker.cpp:480
+msgid "Invalid tracker URL"
+msgstr "URL del server traccia non valido"
+
+#: src/tracker/httptracker.cpp:558 src/tracker/udptracker.cpp:364
+#: src/tracker/udptracker.cpp:374
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "Tempo scaduto contattando il server traccia %1"
 
-#: src/tracker/udptracker.cpp:409
+#: src/tracker/udptracker.cpp:401
 #, kde-format
 msgid "Unable to resolve hostname %1"
 msgstr "Impossibile risolvere il nome host %1"
-
-#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:462
-msgid "Invalid response from tracker"
-msgstr "Risposta non valida dal server traccia"
-
-#: src/tracker/httptracker.cpp:293
-msgid "Invalid data from tracker"
-msgstr "Dati non validi dal server traccia"
-
-#: src/tracker/httptracker.cpp:479
-msgid "Invalid tracker URL"
-msgstr "URL del server traccia non valido"
 
 #: src/util/logsystemmanager.cpp:33
 msgid "General"
@@ -455,8 +431,7 @@ msgid "µTP"
 msgstr "µTP"
 
 #: src/util/file.cpp:84
-#, fuzzy, kde-format
-#| msgid "Cannot write to %1 : %2"
+#, kde-format
 msgid "Cannot write to %1: %2"
 msgstr "Impossibile scrivere su %1: %2"
 
@@ -464,6 +439,14 @@ msgstr "Impossibile scrivere su %1: %2"
 #, kde-format
 msgid "Cannot read from %1"
 msgstr "Impossibile leggere da %1"
+
+#: src/util/signalcatcher.cpp:78
+msgid "Error when writing to disk"
+msgstr "Errore durante la scrittura del disco"
+
+#: src/util/signalcatcher.cpp:78
+msgid "Error when reading from disk"
+msgstr "Errore durante la lettura del disco"
 
 #: src/util/fileops.cpp:94
 #, kde-format
@@ -501,122 +484,87 @@ msgid "Cannot calculate the filesize of %1: %2"
 msgstr "Impossibile calcolare la dimensione del file di %1: %2"
 
 #: src/util/fileops.cpp:327
-#, fuzzy, kde-format
-#| msgid "Cannot calculate the filesize : %1"
+#, kde-format
 msgid "Cannot calculate the filesize: %1"
 msgstr "Impossibile calcolare la dimensione del file: %1"
 
 #: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
-#: src/util/fileops.cpp:387
+#: src/util/fileops.cpp:387 src/util/fileops.cpp:390
 #, kde-format
 msgid "Cannot expand file: %1"
 msgstr "Impossibile espandere il file: %1"
 
-#: src/util/fileops.cpp:417
-#, fuzzy, kde-format
-#| msgid "Cannot seek in file : %1"
+#: src/util/fileops.cpp:420
+#, kde-format
 msgid "Cannot seek in file: %1"
 msgstr "Impossibile scorrere il file: %1"
 
-#: src/util/functions.cpp:280
+#: src/util/functions.cpp:234
 #, kde-format
 msgid "%1/s"
 msgstr "%1/s"
 
-#: src/util/functions.cpp:291
+#: src/util/functions.cpp:245
 #, kde-format
 msgid "1 day "
 msgid_plural "%1 days "
 msgstr[0] "1 giorno "
 msgstr[1] "%1 giorni "
 
-#: src/util/signalcatcher.cpp:62
-#, fuzzy
-#| msgid "Error reading from %1"
-msgid "Error when writing to disk"
-msgstr "Errore durante la lettura di %1"
-
-#: src/util/signalcatcher.cpp:62
-#, fuzzy
-#| msgid "Error reading from %1"
-msgid "Error when reading from disk"
-msgstr "Errore durante la lettura di %1"
-
 #: src/upnp/httprequest.cpp:96
-#, fuzzy
-#| msgid "Connection closed unexpectedly !"
 msgid "Connection closed unexpectedly"
-msgstr "Connessione chiusa inaspettatamente!"
+msgstr "Connessione chiusa inaspettatamente"
 
 #: src/upnp/httprequest.cpp:155
 msgid "Operation timed out"
-msgstr ""
+msgstr "Tempo esaurito per l'operazione"
 
 #: src/upnp/upnprouter.cpp:167
-#, fuzzy, kde-format
-#| msgid "Failed to download %1 : %2"
+#, kde-format
 msgid "Failed to download %1: %2"
-msgstr "Impossibile scaricare %1 : %2"
+msgstr "Impossibile scaricare %1: %2"
 
 #: src/upnp/upnprouter.cpp:178
-#, fuzzy
-#| msgid "Error parsing router description !"
 msgid "Error parsing router description."
-msgstr "Errore durante l'analisi della descrizione del router!"
+msgstr "Errore durante l'analisi della descrizione del router."
 
 #: src/upnp/upnprouter.cpp:216
-#, fuzzy
-#| msgid ""
-#| "Forwarding failed: \n"
-#| "Device does not have a WANIPConnection or WANPPPConnection !"
 msgid ""
 "Forwarding failed:\n"
 "Device does not have a WANIPConnection or WANPPPConnection."
 msgstr ""
 "Mappatura non riuscita: \n"
-"Il dispositivo non ha una connessione WAN IP o WAN PPP!"
+"Il dispositivo non ha una connessione WAN IP o WAN PPP."
 
 #: src/upnp/upnprouter.cpp:314
-#, fuzzy
-#| msgid "Cannot find port forwarding service in the device's description!"
 msgid "Cannot find port forwarding service in the device's description."
 msgstr ""
 "Impossibile trovare il servizio di mappatura porte nella descrizione del "
-"dispositivo!"
+"dispositivo."
 
 #: examples/ktcli/main.cpp:60
-#, fuzzy
-#| msgid "Document to open"
 msgid "Torrent to open"
-msgstr "Documento da aprire"
+msgstr "Torrent da aprire"
 
 #: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-#, fuzzy
-#| msgid "Not in use"
 msgid "Port to use"
-msgstr "Non in uso"
+msgstr "Porta da usare"
 
 #: examples/ktcli/main.cpp:63
-#, fuzzy
-#| msgid "Whether or not to enable a custom download order."
 msgid "Whether or not to enable encryption"
-msgstr "Abilita o meno l'ordine di scaricamento personalizzato."
+msgstr "Abilita o meno la cifratura"
 
 #: examples/ktcli/main.cpp:64
-#, fuzzy
-#| msgid "Whether or not to use µTorrent compatible peer exchange."
 msgid "Whether or not to enable peer exchange"
-msgstr "Usa o meno lo scambio nodo compatibile con µTorrent."
+msgstr "Abilita o meno lo scambio nodo"
 
 #: examples/ktcli/main.cpp:65
-#, fuzzy
-#| msgid "Whether or not to show system tray popup messages."
 msgid "Whether or not to use utp"
-msgstr "Mostra o meno i messaggi a comparsa nel vassoio di sistema."
+msgstr "Abilita o meno utp"
 
 #: examples/ktcli/main.cpp:67
 msgid "ktcli"
-msgstr ""
+msgstr "ktcli"
 
 #~ msgid "Parse Error"
 #~ msgstr "Errore di analisi"
@@ -642,7 +590,6 @@ msgstr ""
 #~ msgstr "Impossibile aprire il file registro %1: %2"
 
 #, fuzzy
-#~| msgid "Not enough free disk space for %1"
 #~ msgid "Not enough diskspace"
 #~ msgstr "Spazio su disco insufficiente per %1"
 
@@ -650,7 +597,6 @@ msgstr ""
 #~ msgstr "Tempo scaduto"
 
 #, fuzzy
-#~| msgid "UDP"
 #~ msgid "UTP"
 #~ msgstr "UDP"
 
@@ -659,7 +605,6 @@ msgstr ""
 #~ "Impossibile collegarsi alla porta UDP %1 o alle 10 porte successive."
 
 #, fuzzy
-#~| msgid "Scan Folder"
 #~ msgctxt "plugin name"
 #~ msgid "Scan Folder"
 #~ msgstr "Scansione cartella"
@@ -709,7 +654,6 @@ msgstr ""
 #~ msgstr "Sottoscrizioni"
 
 #, fuzzy
-#~| msgid "Widget to manage RSS and Atom feeds"
 #~ msgid "Manages RSS and Atom feeds"
 #~ msgstr "Elemento per gestire fonti RSS ed Atom"
 
@@ -720,7 +664,6 @@ msgstr ""
 #~ msgstr "Per favore inserisci l'URL della fonte RSS od Atom."
 
 #, fuzzy
-#~| msgid "Failed to load feed %1 !"
 #~ msgid "Failed to load feed %1."
 #~ msgstr "Impossibile caricare la fonte %1!"
 
@@ -746,7 +689,6 @@ msgstr ""
 #~ msgstr "Aggiungi/Rimuovi filtri"
 
 #, fuzzy
-#~| msgid "Username:"
 #~ msgid "Rename"
 #~ msgstr "Nome utente:"
 
@@ -775,7 +717,6 @@ msgstr ""
 #~ msgstr "<b>Scaricamento</b>"
 
 #, fuzzy
-#~| msgid "Couldn't find a valid link to a torrent on %1"
 #~ msgid "Could not find a valid link to a torrent on %1"
 #~ msgstr "Impossibile trovare un collegamento valido per il torrent in %1"
 
@@ -789,7 +730,6 @@ msgstr ""
 #~ msgstr "Torrent"
 
 #, fuzzy
-#~| msgid "There already is a filter named %1, filter names must be unique !"
 #~ msgid "There already is a filter named %1, filter names must be unique."
 #~ msgstr ""
 #~ "C'è già un filtro che si chiama %1, il nome dei filtri dev'essere univoco!"
@@ -807,7 +747,6 @@ msgstr ""
 #~ msgstr "<b>%1</b><br/>Anteprima: %2<br/>Scaricato: %3 %"
 
 #, fuzzy
-#~| msgid "Clear"
 #~ msgid "Year"
 #~ msgstr "Pulisci"
 
@@ -821,12 +760,10 @@ msgstr ""
 #~ msgstr "File singolo"
 
 #, fuzzy
-#~| msgid "Play"
 #~ msgid "Playlist"
 #~ msgstr "Riproduci"
 
 #, fuzzy
-#~| msgid "Random Files"
 #~ msgid "Random"
 #~ msgstr "File casuali"
 
@@ -834,7 +771,6 @@ msgstr ""
 #~ msgstr "Rimuovi"
 
 #, fuzzy
-#~| msgid "Add Feed"
 #~ msgid "Add Media"
 #~ msgstr "Aggiungi fonte"
 
@@ -861,7 +797,6 @@ msgstr ""
 #~ msgstr "Lettore multimediale"
 
 #, fuzzy
-#~| msgid "Play"
 #~ msgid "Play List"
 #~ msgstr "Riproduci"
 
@@ -887,7 +822,6 @@ msgstr ""
 #~ msgstr "Lettore multimediale"
 
 #, fuzzy
-#~| msgid "Connections"
 #~ msgid "Collection:"
 #~ msgstr "Connessioni"
 
@@ -895,12 +829,10 @@ msgstr ""
 #~ msgstr "Schermo intero"
 
 #, fuzzy
-#~| msgid "KTorrent is not running."
 #~ msgid "KTorrent is playing a video."
 #~ msgstr "KTorrent non è in esecuzione."
 
 #, fuzzy
-#~| msgid "Web interface skin:"
 #~ msgid "Cannot find web interface skins."
 #~ msgstr "Tema interfaccia web:"
 
@@ -908,12 +840,10 @@ msgstr ""
 #~ msgstr "Interfaccia web"
 
 #, fuzzy
-#~| msgid "Invalid tracker URL"
 #~ msgid "Invalid data received"
 #~ msgstr "URL del server traccia non valido"
 
 #, fuzzy
-#~| msgid "Folder to store torrent information:"
 #~ msgid "Failed to open temporary file"
 #~ msgstr "Cartella per le informazioni sui torrent:"
 
@@ -1057,7 +987,6 @@ msgstr ""
 #~ msgstr "No"
 
 #, fuzzy
-#~| msgid "IP Address"
 #~ msgid "Address"
 #~ msgstr "Indirizzo IP"
 
@@ -1119,9 +1048,6 @@ msgstr ""
 #~ msgstr "Velocità invio"
 
 #, fuzzy
-#~| msgid ""
-#~| "Whether or not the peer has choked us, when we are choked the peer will "
-#~| "not send any data to us"
 #~ msgid ""
 #~ "Whether or not the peer has choked us - when we are choked the peer will "
 #~ "not send us any data"
@@ -1130,8 +1056,6 @@ msgstr ""
 #~ "non spedirà alcun dato a noi"
 
 #, fuzzy
-#~| msgid ""
-#~| "Snubbed means the peer hasn't sent us any data in the last 2 minutes"
 #~ msgid ""
 #~ "Snubbed means the peer has not sent us any data in the last 2 minutes"
 #~ msgstr ""
@@ -1158,12 +1082,10 @@ msgstr ""
 #~ msgstr "Il numero di richieste di scaricamento e invio"
 
 #, fuzzy
-#~| msgid "How much data we downloaded from this peer"
 #~ msgid "How much data we have downloaded from this peer"
 #~ msgstr "Quanti dati abbiamo scaricato da questo nodo"
 
 #, fuzzy
-#~| msgid "How much data we uploaded to this peer"
 #~ msgid "How much data we have uploaded to this peer"
 #~ msgstr "Quanti dati abbiamo inviato a questo nodo"
 
@@ -1180,7 +1102,6 @@ msgstr ""
 #~ msgstr "Pannello informazioni"
 
 #, fuzzy
-#~| msgid "Status"
 #~ msgctxt "@title:tab"
 #~ msgid "Status"
 #~ msgstr "Stato"
@@ -1189,7 +1110,6 @@ msgstr ""
 #~ msgstr "Mostra le informazioni di stato di un torrent"
 
 #, fuzzy
-#~| msgid "Files"
 #~ msgctxt "@title:tab"
 #~ msgid "Files"
 #~ msgstr "File"
@@ -1304,23 +1224,18 @@ msgstr ""
 #~ msgstr "Espandi albero cartelle"
 
 #, fuzzy
-#~| msgid "Filter"
 #~ msgid "File Tree"
 #~ msgstr "Filtro"
 
 #, fuzzy
-#~| msgid "File Exists"
 #~ msgid "File List"
 #~ msgstr "Il file esiste già"
 
 #, fuzzy
-#~| msgid "New Filter"
 #~ msgid "Show Filter"
 #~ msgstr "Nuovo filtro"
 
 #, fuzzy
-#~| msgid ""
-#~| "You will lose all data in this file, are you sure you want to do this ?"
 #~ msgid ""
 #~ "You will lose all data in this file, are you sure you want to do this?"
 #~ msgid_plural ""
@@ -1340,12 +1255,10 @@ msgstr ""
 #~ msgstr "Ricettori"
 
 #, fuzzy
-#~| msgid "Times Downloaded:"
 #~ msgid "Times Downloaded"
 #~ msgstr "Numero scaricamenti:"
 
 #, fuzzy
-#~| msgid "Next update:"
 #~ msgid "Next Update"
 #~ msgstr "Prossimo aggiornamento:"
 
@@ -1353,7 +1266,6 @@ msgstr ""
 #~ msgstr "Priorità"
 
 #, fuzzy
-#~| msgid "Preview"
 #~ msgctxt "@title:column"
 #~ msgid "Preview"
 #~ msgstr "Anteprima"
@@ -1394,17 +1306,14 @@ msgstr ""
 #~ msgstr "Disponibile"
 
 #, fuzzy
-#~| msgid "Add Tracker"
 #~ msgid "Add Trackers"
 #~ msgstr "Aggiungi server traccia"
 
 #, fuzzy
-#~| msgid "Enter the URL"
 #~ msgid "Enter the URL's of the trackers, one per line:"
 #~ msgstr "Inserisci l'URL"
 
 #, fuzzy
-#~| msgid "There already is a tracker named <b>%1</b> !"
 #~ msgid "There already is a tracker named <b>%1</b>."
 #~ msgstr "C'è già un server traccia che si chiama <b>%1</b> !"
 
@@ -1452,7 +1361,6 @@ msgstr ""
 #~ msgstr "Script"
 
 #, fuzzy
-#~| msgid "KTorrent Blacklisted Peers"
 #~ msgid "KTorrent Script Packages"
 #~ msgstr "Lista nera nodi KTorrent"
 
@@ -1460,8 +1368,6 @@ msgstr ""
 #~ msgstr "Tutti i file"
 
 #, fuzzy
-#~| msgid ""
-#~| "You will lose all the downloaded data. Are you sure you want to do this?"
 #~ msgid ""
 #~ "Removing these scripts will fully delete them from your disk. Are you "
 #~ "sure you want to do this ?"
@@ -1471,12 +1377,10 @@ msgstr ""
 #~ msgstr "Proprietà script"
 
 #, fuzzy
-#~| msgid "Invalid tracker URL"
 #~ msgid "Invalid archive."
 #~ msgstr "URL del server traccia non valido"
 
 #, fuzzy
-#~| msgid "There already is a tracker named <b>%1</b> !"
 #~ msgid "There is already a script package named %1 installed."
 #~ msgstr "C'è già un server traccia che si chiama <b>%1</b> !"
 
@@ -1502,7 +1406,6 @@ msgstr ""
 #~ msgstr "Nessuno"
 
 #, fuzzy
-#~| msgid "Display the logging output generated by KTorrent"
 #~ msgid "View the logging output generated by KTorrent"
 #~ msgstr "Mostra il registro generato da KTorrent"
 
@@ -1522,7 +1425,6 @@ msgstr ""
 #~ msgstr "Apri in una nuova scheda"
 
 #, fuzzy
-#~| msgid "Copy Torrent URL"
 #~ msgid "Copy URL"
 #~ msgstr "Copia URL torrent"
 
@@ -1536,7 +1438,6 @@ msgstr ""
 #~ msgstr "Ricerca terminata"
 
 #, fuzzy
-#~| msgid "Search"
 #~ msgctxt "plugin name"
 #~ msgid "Search"
 #~ msgstr "Cerca"
@@ -1560,7 +1461,6 @@ msgstr ""
 #~ "segnaposto con la cosa che stai cercando."
 
 #, fuzzy
-#~| msgid "The URL %1, does not contain {searchTerms}."
 #~ msgid "The URL %1 does not contain {searchTerms}."
 #~ msgstr "L'URL %1, non contiene {searchTerms}."
 
@@ -1574,7 +1474,6 @@ msgstr ""
 #~ msgstr "KTorrent"
 
 #, fuzzy
-#~| msgid "Folders to scan for torrents:"
 #~ msgid "Search the web for torrents."
 #~ msgstr "Cartella da analizzare per i torrent:"
 
@@ -1597,7 +1496,6 @@ msgstr ""
 #~ msgstr " Motore: "
 
 #, fuzzy
-#~| msgid "Do you want to download or save the torrent?"
 #~ msgid "Do you want to download this magnet link?"
 #~ msgstr "Vuoi scaricare o salvare il torrent?"
 
@@ -1614,14 +1512,10 @@ msgstr ""
 #~ msgstr "Aggiungi un elemento"
 
 #, fuzzy
-#~| msgid "No day has been selected !"
 #~ msgid "No day has been selected."
 #~ msgstr "Non è stato selezionato alcun giorno!"
 
 #, fuzzy
-#~| msgid ""
-#~| "Failed to add item, because it conflicts with another item on the "
-#~| "schedule !"
 #~ msgid ""
 #~ "Failed to add item, because it conflicts with another item on the "
 #~ "schedule."
@@ -1630,9 +1524,6 @@ msgstr ""
 #~ "presente nella pianificazione!"
 
 #, fuzzy
-#~| msgid ""
-#~| "This item could not be added to all selected days, because it conflicts "
-#~| "with another item on the schedule !"
 #~ msgid ""
 #~ "This item could not be added to all selected days, because it conflicts "
 #~ "with another item on the schedule."
@@ -1641,14 +1532,12 @@ msgstr ""
 #~ "perché è in conflitto con un altro elemento nella pianificazione!"
 
 #, fuzzy
-#~| msgid "Bandwidth Schedule"
 #~ msgid ""
 #~ "Bandwidth\n"
 #~ "Schedule"
 #~ msgstr "Pianificatore banda"
 
 #, fuzzy
-#~| msgid "Tab to edit the bandwidth schedule"
 #~ msgid "Edit the bandwidth schedule"
 #~ msgstr "Scheda per modificare il pianificatore banda"
 
@@ -1671,12 +1560,10 @@ msgstr ""
 #~ msgstr "Azzera pianificazione"
 
 #, fuzzy
-#~| msgid "Schedule line color:"
 #~ msgid "Scheduler Active"
 #~ msgstr "Colore riga nella pianificazione:"
 
 #, fuzzy
-#~| msgid "Add a new item to the schedule"
 #~ msgid "Activate or deactivate the scheduler"
 #~ msgstr "Aggiungi un nuovo elemento alla pianificazione"
 
@@ -1684,9 +1571,6 @@ msgstr ""
 #~ msgstr "File della pianificazione di KTorrent"
 
 #, fuzzy
-#~| msgid ""
-#~| "This item conflicts with another item in the schedule, we cannot change "
-#~| "it !"
 #~ msgid ""
 #~ "This item conflicts with another item in the schedule, we cannot change "
 #~ "it."
@@ -1695,22 +1579,18 @@ msgstr ""
 #~ "pianificazione, impossibile modificarlo!"
 
 #, fuzzy
-#~| msgid "Current schedule: paused"
 #~ msgid "Current schedule: suspended"
 #~ msgstr "Pianificazione attuale: in pausa"
 
 #, fuzzy
-#~| msgid "Current schedule: %1 KiB/s download, %2 KiB/s upload"
 #~ msgid "Current schedule: %1/s download, %2/s upload"
 #~ msgstr "Pianificazione attuale: %1 KiB/s in scaricamento, %2 KiB/s in invio"
 
 #, fuzzy
-#~| msgid "Current schedule: unlimited download, %1 KiB/s upload"
 #~ msgid "Current schedule: unlimited download, %1/s upload"
 #~ msgstr "Pianificazione attuale: scaricamento illimitato, %1 KiB in invio"
 
 #, fuzzy
-#~| msgid "Current schedule: %1 KiB/s download, unlimited upload"
 #~ msgid "Current schedule: %1/s download, unlimited upload"
 #~ msgstr "Pianificazione attuale: %1 KiB/s in scaricamento, invio illimitato"
 
@@ -1718,7 +1598,6 @@ msgstr ""
 #~ msgstr "Pianificazione attuale: invio e scaricamento illimitati"
 
 #, fuzzy
-#~| msgid "KTorrent scheduler files"
 #~ msgid " (scheduler disabled)"
 #~ msgstr "File della pianificazione di KTorrent"
 
@@ -1729,14 +1608,12 @@ msgstr ""
 #~ msgstr "Modifica un elemento"
 
 #, fuzzy
-#~| msgid "The file %1 is corrupted or not a proper KTorrent schedule file !"
 #~ msgid "The file %1 is corrupted or not a proper KTorrent schedule file."
 #~ msgstr ""
 #~ "Il file %1 è danneggiato oppure non è un file della pianificazione di "
 #~ "KTorrent!"
 
 #, fuzzy
-#~| msgid "Speed"
 #~ msgid "Suspended"
 #~ msgstr "Velocità"
 
@@ -1751,34 +1628,28 @@ msgstr ""
 #~ "%2 Invio"
 
 #, fuzzy
-#~| msgid "Configure Columns"
 #~ msgctxt "@title:window"
 #~ msgid "Configure Shutdown"
 #~ msgstr "Configura colonne"
 
 #, fuzzy
-#~| msgid "Lucke"
 #~ msgid "Lock"
 #~ msgstr "Lucke"
 
 #, fuzzy
-#~| msgid "Directory to move data to when a torrent has finished downloading."
 #~ msgid "When all torrents finish downloading"
 #~ msgstr ""
 #~ "Cartella dove spostare i dati quando un torrent ha finito lo scaricamento."
 
 #, fuzzy
-#~| msgid "Configure Columns"
 #~ msgid "Configure Shutdown"
 #~ msgstr "Configura colonne"
 
 #, fuzzy
-#~| msgid "Downloading"
 #~ msgid "Downloading finishes"
 #~ msgstr "Scaricamento"
 
 #, fuzzy
-#~| msgid "Search finished"
 #~ msgid "Seeding finishes"
 #~ msgstr "Ricerca terminata"
 
@@ -1792,12 +1663,10 @@ msgstr ""
 #~ msgstr "Conversione..."
 
 #, fuzzy
-#~| msgid "Cannot open file %1: %2"
 #~ msgid "Cannot open zip file %1."
 #~ msgstr "Impossibile aprire il file %1: %2"
 
 #, fuzzy
-#~| msgid "Cannot deselect missing files: %1"
 #~ msgid "Cannot find blocklist in zip file %1."
 #~ msgstr "Impossibile deselezionare i file mancanti: %1"
 
@@ -1818,17 +1687,14 @@ msgstr ""
 #~ msgstr "Stato: non caricato."
 
 #, fuzzy
-#~| msgid "Status: Downloading and converting new block list ..."
 #~ msgid "Status: Downloading and converting new block list..."
 #~ msgstr "Stato: Scaricamento e conversione della nuova lista di blocco..."
 
 #, fuzzy
-#~| msgid "No update done yet !"
 #~ msgid "No update done yet."
 #~ msgstr "Nessun aggiornamento eseguito fino adesso!"
 
 #, fuzzy
-#~| msgid "%1 (Last update attempt failed !)"
 #~ msgid "%1 (Last update attempt failed.)"
 #~ msgstr "%1 (Ultimo tentativo di aggiornamento non riuscito!)"
 
@@ -1836,7 +1702,6 @@ msgstr ""
 #~ msgstr "Mai"
 
 #, fuzzy
-#~| msgid "Copy Torrent URL"
 #~ msgid "Copy Magnet URI"
 #~ msgstr "Copia URL torrent"
 
@@ -1850,12 +1715,10 @@ msgstr ""
 #~ msgstr "(C) 2005 - 2007 Joris Guisson e Ivan Vasic"
 
 #, fuzzy
-#~| msgid "Time Downloaded"
 #~ msgid "KTMagnetDownloader"
 #~ msgstr "Tempo scaricamento"
 
 #, fuzzy
-#~| msgid "Joris Guisson"
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "Joris Guisson"
 
@@ -1872,7 +1735,6 @@ msgstr ""
 #~ msgstr "BitTorrent"
 
 #, fuzzy
-#~| msgid " corrupted chunks"
 #~ msgid " corrupted chunk"
 #~ msgid_plural " corrupted chunks"
 #~ msgstr[0] " parti danneggiate"
@@ -1927,12 +1789,10 @@ msgstr ""
 #~ "giù per cambiare l'ordine."
 
 #, fuzzy
-#~| msgid "Search"
 #~ msgid "Show Search"
 #~ msgstr "Cerca"
 
 #, fuzzy
-#~| msgid "Move Up"
 #~ msgid "Move Top"
 #~ msgstr "Sposta su"
 
@@ -1952,7 +1812,6 @@ msgstr ""
 #~ msgstr "Sposta un torrent più in basso nella coda"
 
 #, fuzzy
-#~| msgid "Move Data"
 #~ msgid "Move Bottom"
 #~ msgstr "Sposta i dati"
 
@@ -1960,17 +1819,14 @@ msgstr ""
 #~ msgstr "Sposta un torrent in fondo alla coda"
 
 #, fuzzy
-#~| msgid "Start torrent"
 #~ msgid "Start Magnet"
 #~ msgstr "Avvia il torrent"
 
 #, fuzzy
-#~| msgid "Remove Torrent"
 #~ msgid "Remove Magnet"
 #~ msgstr "Rimuovi torrent"
 
 #, fuzzy
-#~| msgid "Start"
 #~ msgctxt "@action Start all selected torrents in the current tab"
 #~ msgid "Start"
 #~ msgstr "Avvia"
@@ -1979,7 +1835,6 @@ msgstr ""
 #~ msgstr "Avvia tutti i torrent selezionati in questa scheda"
 
 #, fuzzy
-#~| msgid "Stop"
 #~ msgctxt "@action Stop all selected torrents in the current tab"
 #~ msgid "Stop"
 #~ msgstr "Ferma"
@@ -1988,18 +1843,15 @@ msgstr ""
 #~ msgstr "Ferma tutti i torrent selezionati in questa scheda"
 
 #, fuzzy
-#~| msgid "Pause"
 #~ msgctxt "@action Pause all selected torrents in the current tab"
 #~ msgid "Pause"
 #~ msgstr "Metti in pausa"
 
 #, fuzzy
-#~| msgid "Start all selected torrents in the current tab"
 #~ msgid "Pause all selected torrents in the current tab"
 #~ msgstr "Avvia tutti i torrent selezionati in questa scheda"
 
 #, fuzzy
-#~| msgid "Remove"
 #~ msgctxt "@action Remove all selected torrents in the current tab"
 #~ msgid "Remove"
 #~ msgstr "Rimuovi"
@@ -2008,7 +1860,6 @@ msgstr ""
 #~ msgstr "Rimuove tutti i torrent selezionati in questa scheda"
 
 #, fuzzy
-#~| msgid "Start All"
 #~ msgctxt "@action Start all torrents in the current tab"
 #~ msgid "Start All"
 #~ msgstr "Avvia tutti"
@@ -2017,7 +1868,6 @@ msgstr ""
 #~ msgstr "Avvia tutti i torrent in questa scheda"
 
 #, fuzzy
-#~| msgid "Stop All"
 #~ msgctxt "@action Stop all torrents in the current tab"
 #~ msgid "Stop All"
 #~ msgstr "Ferma tutti"
@@ -2077,7 +1927,6 @@ msgstr ""
 #~ msgstr "Copia URL torrent"
 
 #, fuzzy
-#~| msgid "Import Torrent"
 #~ msgid "Export Torrent"
 #~ msgstr "Importa torrent"
 
@@ -2088,7 +1937,6 @@ msgstr ""
 #~ msgstr "Imposta i limiti di velocità per ciascun torrent"
 
 #, fuzzy
-#~| msgid "Torrent Files (*.torrent)"
 #~ msgid "Torrents (*.torrent)"
 #~ msgstr "File torrent (*.torrent)"
 
@@ -2140,7 +1988,6 @@ msgstr ""
 #~ msgstr "Indirizzo"
 
 #, fuzzy
-#~| msgid "Add Feed"
 #~ msgid "Added"
 #~ msgstr "Aggiungi fonte"
 
@@ -2204,7 +2051,6 @@ msgstr ""
 #~ msgstr "Posizione dei dati del torrent nel disco"
 
 #, fuzzy
-#~| msgid "No torrents loaded."
 #~ msgid "When this torrent was added"
 #~ msgstr "Nessun torrent caricato."
 
@@ -2260,7 +2106,6 @@ msgstr ""
 #~ msgstr "URL non valido %1"
 
 #, fuzzy
-#~| msgid "Only HTTP is supported for webseeding!"
 #~ msgid "Only HTTP is supported for webseeding."
 #~ msgstr "Per la distribuzione web è supportato solo l'HTTP!"
 
@@ -2284,19 +2129,14 @@ msgstr ""
 #~ msgstr "Scegli un file per salvare il torrent"
 
 #, fuzzy
-#~| msgid "Shows all the files in a torrent"
 #~ msgid "Show a file tree"
 #~ msgstr "Mostra tutti i file in un torrent"
 
 #, fuzzy
-#~| msgid "Choose a file"
 #~ msgid "Show a file list"
 #~ msgstr "Scegli un file"
 
 #, fuzzy
-#~| msgid ""
-#~| "The torrent <b>%1</b> has not finished downloading, do you want to "
-#~| "delete the incomplete data, too?"
 #~ msgid ""
 #~ "Some files of this torrent have been found in the completed downloads "
 #~ "directory. Do you want to import these files and use the completed "
@@ -2306,9 +2146,6 @@ msgstr ""
 #~ "anche i dati incompleti?"
 
 #, fuzzy
-#~| msgid ""
-#~| "The torrent <b>%1</b> has not finished downloading, do you want to "
-#~| "delete the incomplete data, too?"
 #~ msgid ""
 #~ "All files of this torrent have been found in the completed downloads "
 #~ "directory. Do you want to import these files and use the completed "
@@ -2318,9 +2155,6 @@ msgstr ""
 #~ "anche i dati incompleti?"
 
 #, fuzzy
-#~| msgid ""
-#~| "The torrent <b>%1</b> has not finished downloading, do you want to "
-#~| "delete the incomplete data, too?"
 #~ msgid ""
 #~ "The file <b>%1</b> was found in the completed downloads directory. Do you "
 #~ "want to import this file?"
@@ -2329,14 +2163,10 @@ msgstr ""
 #~ "anche i dati incompleti?"
 
 #, fuzzy
-#~| msgid "The directory %1 does not exist, do you want to create it ?"
 #~ msgid "The directory %1 does not exist, do you want to create it?"
 #~ msgstr "La cartella %1 non esiste, vuoi crearla?"
 
 #, fuzzy
-#~| msgid ""
-#~| "You have deselected the following existing files. You will lose all data "
-#~| "in these files, are you sure you want to do this ?"
 #~ msgid ""
 #~ "You have deselected the following existing files. You will lose all data "
 #~ "in these files, are you sure you want to do this?"
@@ -2351,33 +2181,27 @@ msgstr ""
 #~ msgstr "No, mantieni i file"
 
 #, fuzzy
-#~| msgid "%1 short!"
 #~ msgctxt "We are %1 bytes short of what we need"
 #~ msgid "%1 short"
 #~ msgstr "%1 breve!"
 
 #, fuzzy
-#~| msgid "Title: <b>%1</b>"
 #~ msgid "Existing files: <b>None</b>"
 #~ msgstr "Titolo: <b>%1</b>"
 
 #, fuzzy
-#~| msgid "Title: <b>%1</b>"
 #~ msgid "Existing files: <b>All</b>"
 #~ msgstr "Titolo: <b>%1</b>"
 
 #, fuzzy
-#~| msgid "Title: <b>%1</b><br/>Artist: <b>%2</b>"
 #~ msgid "Existing files: <b>%1</b> of <b>%2</b>"
 #~ msgstr "Titolo: <b>%1</b><br/>Artista: <b>%2</b>"
 
 #, fuzzy
-#~| msgid "Title: <b>%1</b>"
 #~ msgid "Existing file: <b>No</b>"
 #~ msgstr "Titolo: <b>%1</b>"
 
 #, fuzzy
-#~| msgid "Title: <b>%1</b>"
 #~ msgid "Existing file: <b>Yes</b>"
 #~ msgstr "Titolo: <b>%1</b>"
 
@@ -2388,9 +2212,6 @@ msgstr ""
 #~ msgstr "Seleziona la cartella in cui si trovano i dati."
 
 #, fuzzy
-#~| msgid ""
-#~| "The data files are not present in the location you selected! Do you want "
-#~| "to create all the files in the selected directory ?"
 #~ msgid ""
 #~ "The data files are not present in the location you selected. Do you want "
 #~ "to create all the files in the selected directory?"
@@ -2399,9 +2220,6 @@ msgstr ""
 #~ "Vuoi creare tutti i file nella cartella selezionata?"
 
 #, fuzzy
-#~| msgid ""
-#~| "Not all files were found in the new location; some are still missing! Do "
-#~| "you want to create the missing files in the selected directory ?"
 #~ msgid ""
 #~ "Not all files were found in the new location; some are still missing. Do "
 #~ "you want to create the missing files in the selected directory?"
@@ -2410,9 +2228,6 @@ msgstr ""
 #~ "ancora! Vuoi crearei file mancanti nella cartella selezionata?"
 
 #, fuzzy
-#~| msgid ""
-#~| "The data file is not present in the location you selected! Do you want "
-#~| "to create the file in the selected directory ?"
 #~ msgid ""
 #~ "The data file is not present in the location you selected. Do you want to "
 #~ "create the file in the selected directory?"
@@ -2429,12 +2244,10 @@ msgstr ""
 #~ msgstr "Importazione di <b>%1</b>..."
 
 #, fuzzy
-#~| msgid "Finished import !"
 #~ msgid "Finished import."
 #~ msgstr "Importazione conclusa!"
 
 #, fuzzy
-#~| msgid "Torrent <b>%1</b> already loaded !"
 #~ msgid "Torrent <b>%1</b> already loaded."
 #~ msgstr "Il torrent <b>%1</b> è già caricato!"
 
@@ -2478,9 +2291,6 @@ msgstr ""
 #~ msgstr "Lista filtro IP"
 
 #, fuzzy
-#~| msgid ""
-#~| "Invalid IP address %1. You must enter an IP address in the format 'XXX."
-#~| "XXX.XXX.XXX'. You can also use wildcards for ranges like '127.0.0.*'."
 #~ msgid ""
 #~ "Invalid IP address <b>%1</b>. IP addresses must be in the format 'XXX.XXX."
 #~ "XXX.XXX'.<br/><br/>You can also use wildcards like '127.0.0.*' or specify "
@@ -2500,7 +2310,6 @@ msgstr ""
 #~ msgstr "Un client BitTorrent per KDE"
 
 #, fuzzy
-#~| msgid "(C) 2005 - 2007 Joris Guisson and Ivan Vasic"
 #~ msgid "(C) 2005 - 2010 Joris Guisson and Ivan Vasic"
 #~ msgstr "(C) 2005 - 2007 Joris Guisson e Ivan Vasic"
 
@@ -2729,7 +2538,6 @@ msgstr ""
 #~ msgstr "Patch per trasformate l'applet plasma in un'applet a comparsa"
 
 #, fuzzy
-#~| msgid "No torrents loaded."
 #~ msgid "Feature which adds the date a torrent was added"
 #~ msgstr "Nessun torrent caricato."
 
@@ -2773,17 +2581,14 @@ msgstr ""
 #~ msgstr "Apri URL"
 
 #, fuzzy
-#~| msgid "Open an URL which points to a torrent"
 #~ msgid "Open a URL which points to a torrent, magnet links are supported"
 #~ msgstr "Apre un URL che punta ad un torrent"
 
 #, fuzzy
-#~| msgid "Pause KTorrent"
 #~ msgid "Suspend KTorrent"
 #~ msgstr "Sospendi KTorrent"
 
 #, fuzzy
-#~| msgid "Pause all running torrents"
 #~ msgid "Suspend all running torrents"
 #~ msgstr "Sospendi tutti i torrent avviati"
 
@@ -2806,7 +2611,6 @@ msgstr ""
 #~ msgstr "Mostra/Nascondi KTorrent"
 
 #, fuzzy
-#~| msgid "Torrent"
 #~ msgid "Torrents"
 #~ msgstr "Torrent"
 
@@ -2814,17 +2618,14 @@ msgstr ""
 #~ msgstr "Elemento per gestire la coda dei torrent"
 
 #, fuzzy
-#~| msgid "Displays all the chunks you are downloading, of a torrent"
 #~ msgid "Displays the currently downloading magnet links"
 #~ msgstr "Mostra tutte le parti in scaricamento di un torrent"
 
 #, fuzzy
-#~| msgid "Invalid IP address %1 !"
 #~ msgid "Invalid IP address %1"
 #~ msgstr "Indirizzo IP non valido %1 !"
 
 #, fuzzy
-#~| msgid "Duplicate IP address %1 !"
 #~ msgid "Duplicate IP address %1"
 #~ msgstr "Indirizzo IP duplicato %1 !"
 
@@ -2913,9 +2714,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Vai su Impostazioni -> Configura KTorrent, se vuoi cambiare i limiti."
 
-#~ msgid "There is not enough diskspace available."
-#~ msgstr "Non c'è abbastanza spazio disponibile sul disco."
-
 #~ msgid ""
 #~ "Your disk is running out of space.<br /><b>%1</b> is being downloaded to "
 #~ "'%2'."
@@ -2930,9 +2728,6 @@ msgstr ""
 #~ msgstr "Limite velocità in KiB/s"
 
 #, fuzzy
-#~| msgid ""
-#~| "KTorrent is unable to accept connections because the ports %1 to %2 are "
-#~| "already in use by another program."
 #~ msgid ""
 #~ "KTorrent is unable to accept connections because the TCP ports %1 is "
 #~ "already in use by another program."
@@ -2941,9 +2736,6 @@ msgstr ""
 #~ "sono già in uso da un altro programma."
 
 #, fuzzy
-#~| msgid ""
-#~| "KTorrent is unable to accept connections because the ports %1 to %2 are "
-#~| "already in use by another program."
 #~ msgid ""
 #~ "KTorrent is unable to accept connections because the UDP port %1 is "
 #~ "already in use by another program."
@@ -2987,9 +2779,6 @@ msgstr ""
 #~ msgstr "Impossibile ricreare il file di dati: %1"
 
 #, fuzzy
-#~| msgid ""
-#~| "KTorrent has found %1 torrents from the KDE3 version of KTorrent, do you "
-#~| "want to import them ?"
 #~ msgid ""
 #~ "KTorrent has found a torrent from the KDE3 version of KTorrent, do you "
 #~ "want to import it?"
@@ -3004,21 +2793,14 @@ msgstr ""
 #~ "importarli?"
 
 #, fuzzy
-#~| msgid "No torrents from the KDE3 version were found !"
 #~ msgid "No torrents from the KDE3 version were found."
 #~ msgstr "Nessun torrent della versione per KDE3 di KTorrent trovato!"
 
 #, fuzzy
-#~| msgid "Apply"
 #~ msgid "Applet"
 #~ msgstr "Applica"
 
 #, fuzzy
-#~| msgid ""
-#~| "<table>\t\t\t\t<tr><td>Download Speed:</td><td>%5 </td><td>Seeders: </"
-#~| "td><td>%1 (%2)</td></tr>\t\t\t\t<tr><td>Upload Speed:</td><td>%6 </"
-#~| "td><td>Leechers: </td><td>%3 (%4)</td></tr>\t\t\t\t<tr><td>Downloaded:</"
-#~| "td><td>%7 / %8 </td><td>Uploaded: </td><td>%9</td></tr>\t\t\t\t</table>"
 #~ msgid ""
 #~ "<table>\t\t\t\t<tr><td>Download Speed:</td><td>%5 </td><td>Seeders: </"
 #~ "td><td>%1 (%2)</td></tr>\t\t\t\t<tr><td>Upload Speed:</td><td>%6 </"
@@ -3031,11 +2813,6 @@ msgstr ""
 #~ "tr>\t\t\t\t</table>"
 
 #, fuzzy
-#~| msgid ""
-#~| "<table>\t\t\t\t<tr><td>Download Speed:</td><td>%5 </td><td>Seeders: </"
-#~| "td><td>%1 (%2)</td></tr>\t\t\t\t<tr><td>Upload Speed:</td><td>%6 </"
-#~| "td><td>Leechers: </td><td>%3 (%4)</td></tr>\t\t\t\t<tr><td>Downloaded:</"
-#~| "td><td>%7 / %8 </td><td>Uploaded: </td><td>%9</td></tr>\t\t\t\t</table>"
 #~ msgid ""
 #~ "<tr><td>Downloaded:</td><td>%1 </td><td>Size: </td><td>%2</td></tr>\t\t\t"
 #~ "\t<tr><td>Uploaded:</td><td>%3 </td><td>Complete: </td><td>%4 %</td></tr>"
@@ -3097,18 +2874,14 @@ msgstr ""
 #~ msgstr "Invii passivi"
 
 #, fuzzy
-#~| msgctxt "Download Normal (not as first or last)"
-#~| msgid "Normal"
 #~ msgid "Normal icons"
 #~ msgstr "Normale"
 
 #, fuzzy
-#~| msgid "Text encoding:"
 #~ msgid "Text only"
 #~ msgstr "Codifica testo:"
 
 #, fuzzy
-#~| msgid "Left:"
 #~ msgid "Left"
 #~ msgstr "Rimaste:"
 
@@ -3116,12 +2889,10 @@ msgstr ""
 #~ msgstr "Massimo"
 
 #, fuzzy
-#~| msgid "Maximum share ratio reached !"
 #~ msgid "Maximum share ratio reached."
 #~ msgstr "Livello massimo di condivisione raggiunto!"
 
 #, fuzzy
-#~| msgid "Maximum seed time reached !"
 #~ msgid "Maximum seed time reached."
 #~ msgstr "Tempo massimo di distribuzione raggiunto!"
 
@@ -3129,9 +2900,6 @@ msgstr ""
 #~ msgstr "File"
 
 #, fuzzy
-#~| msgid ""
-#~| "The torrent \"%1\" has reached it's maximum share ratio and it's maximum "
-#~| "seed time. Ignore the limit and start seeding anyway?"
 #~ msgid ""
 #~ "The torrent \"%1\" has reached its maximum share ratio and its maximum "
 #~ "seed time. Ignore the limit and start seeding anyway?"
@@ -3141,9 +2909,6 @@ msgstr ""
 #~ "distribuzione seme?"
 
 #, fuzzy
-#~| msgid ""
-#~| "The torrent \"%1\" has reached it's maximum share ratio. Ignore the "
-#~| "limit and start seeding anyway?"
 #~ msgid ""
 #~ "The torrent \"%1\" has reached its maximum share ratio. Ignore the limit "
 #~ "and start seeding anyway?"
@@ -3152,9 +2917,6 @@ msgstr ""
 #~ "il limite e inizio ugualmente la distribuzione seme?"
 
 #, fuzzy
-#~| msgid ""
-#~| "The torrent \"%1\" has reached it's maximum seed time. Ignore the limit "
-#~| "and start seeding anyway?"
 #~ msgid ""
 #~ "The torrent \"%1\" has reached its maximum seed time. Ignore the limit "
 #~ "and start seeding anyway?"
@@ -3212,7 +2974,6 @@ msgstr ""
 #~ "\"excluded_color\">&nbsp; - Parti escluse"
 
 #, fuzzy
-#~| msgid "Cannot write beyond end of the mmap buffer!"
 #~ msgid "Cannot write beyond end of the mmap buffer."
 #~ msgstr "Impossibile scrivere oltre la fine del buffer mmap!"
 
@@ -3356,7 +3117,6 @@ msgstr ""
 #~ msgstr "Gruppo al quale aggiungere i torrent."
 
 #, fuzzy
-#~| msgid "Open torrents silently"
 #~ msgid "Whether to open torrent silently or not."
 #~ msgstr "Apri torrent senza avvisi"
 
@@ -3600,7 +3360,6 @@ msgstr ""
 #~ msgstr "Stato:"
 
 #, fuzzy
-#~| msgid "Refresh"
 #~ msgid "Refresh every:"
 #~ msgstr "Aggiorna"
 
@@ -3647,24 +3406,6 @@ msgstr ""
 #~ msgstr "Che interfaccia usare."
 
 #, fuzzy
-#~| msgid ""
-#~| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/"
-#~| "TR/REC-html40/strict.dtd\">\n"
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Scan the folder "
-#~| "recursively for torrents.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;\">Note: "
-#~| "<span style=\" font-weight:400;\">This will not be done for any folder "
-#~| "named loaded.</span></p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -3704,7 +3445,6 @@ msgstr ""
 #~ "cartelle chiamate «loaded».</span></p></body></html>"
 
 #, fuzzy
-#~| msgid "Required disk space:"
 #~ msgid "Login required"
 #~ msgstr "Spazio su disco richiesto:"
 
@@ -3735,25 +3475,6 @@ msgstr ""
 #~ msgstr "La porta in cui è in ascolto l'interfaccia web."
 
 #, fuzzy
-#~| msgid ""
-#~| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/"
-#~| "TR/REC-html40/strict.dtd\">\n"
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">If you are behind a "
-#~| "router and you want to access the webinterface from somewhere on the "
-#~| "internet you need to forward the correct port.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">This checkbox will "
-#~| "ensure that the UPnP plugin automatically forwards the port. The UPnP "
-#~| "plugin needs to be loaded for this to work.</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -3806,72 +3527,58 @@ msgstr ""
 #~ msgstr " sec"
 
 #, fuzzy
-#~| msgid "Forward port"
 #~ msgid "forward Port"
 #~ msgstr "Mappa porta"
 
 #, fuzzy
-#~| msgid "Web interface skin:"
 #~ msgid "interface skin"
 #~ msgstr "Tema interfaccia web:"
 
 #, fuzzy
-#~| msgid "Username:"
 #~ msgid "username"
 #~ msgstr "Nome utente:"
 
 #, fuzzy
-#~| msgid "Password:"
 #~ msgid "password"
 #~ msgstr "Password:"
 
 #, fuzzy
-#~| msgid "Update charts every"
 #~ msgid "Update charts every n gui updates"
 #~ msgstr "Aggiorna grafici ogni"
 
 #, fuzzy
-#~| msgid "Show seeds in swarms"
 #~ msgid "Whether to show seeds in swarms"
 #~ msgstr "Mostra distributori in sciami"
 
 #, fuzzy
-#~| msgid "Show leechers in swarms"
 #~ msgid "Whether to show leachers in swarms"
 #~ msgstr "Mostra ricettori in sciami"
 
 #, fuzzy
-#~| msgid "Color of the schedule background."
 #~ msgid "Color of the speed on dl chart"
 #~ msgstr "Colore di sfondo della pianificazione."
 
 #, fuzzy
-#~| msgid "Color of the schedule background."
 #~ msgid "Color of the seeds on peers chart"
 #~ msgstr "Colore di sfondo della pianificazione."
 
 #, fuzzy
-#~| msgid "Color of the schedule background."
 #~ msgid "Color of the speed on upload chart"
 #~ msgstr "Colore di sfondo della pianificazione."
 
 #, fuzzy
-#~| msgid "Color of all lines on the schedule."
 #~ msgid "Color of the nodes on DHT chart"
 #~ msgstr "Colore di tutte le righe nella pianificazione."
 
 #, fuzzy
-#~| msgid "Use anti-aliasing"
 #~ msgid "Use anti aliasing on charts?"
 #~ msgstr "Usa anti-aliasing"
 
 #, fuzzy
-#~| msgid "Draw background grid"
 #~ msgid "Draw ugly grey background grid?"
 #~ msgstr "Disegna griglia sullo sfondo"
 
 #, fuzzy
-#~| msgid "Speed"
 #~ msgctxt "@title:window"
 #~ msgid "Speed"
 #~ msgstr "Velocità"
@@ -3961,7 +3668,6 @@ msgstr ""
 #~ msgstr "Cambia server traccia"
 
 #, fuzzy
-#~| msgid "Trackers"
 #~ msgid "Update Trackers"
 #~ msgstr "Server traccia"
 
@@ -3975,7 +3681,6 @@ msgstr ""
 #~ msgstr "Velocità media scaricamento:"
 
 #, fuzzy
-#~| msgid "Type"
 #~ msgid "Type:"
 #~ msgstr "Tipo"
 
@@ -4046,7 +3751,6 @@ msgstr ""
 #~ msgstr "Rimuovi distributore web"
 
 #, fuzzy
-#~| msgid "Expand All"
 #~ msgid "Enable All"
 #~ msgstr "Espandi tutto"
 
@@ -4183,17 +3887,14 @@ msgstr ""
 #~ msgstr "Impostazioni ripresa automatica"
 
 #, fuzzy
-#~| msgid "Auto resume after:"
 #~ msgid "Auto remove a torrent when:"
 #~ msgstr "Riprendi automaticamente dopo:"
 
 #, fuzzy
-#~| msgid "Remove torrent file after loading"
 #~ msgid "The torrent finishes downloading"
 #~ msgstr "Rimuove il file torrent dopo il caricamento"
 
 #, fuzzy
-#~| msgid "Remove torrent file after loading"
 #~ msgid "The torrent finishes seeding"
 #~ msgstr "Rimuove il file torrent dopo il caricamento"
 
@@ -4222,7 +3923,6 @@ msgstr ""
 #~ msgstr "Sito web:"
 
 #, fuzzy
-#~| msgid "Use rich text for logging output"
 #~ msgid "Use rich log text"
 #~ msgstr "Usa testo formattato per il registro"
 
@@ -4300,7 +4000,6 @@ msgstr ""
 #~ msgstr "Usa testo formattato per il registro"
 
 #, fuzzy
-#~| msgid "Torrent Limits"
 #~ msgid "Torrent activity"
 #~ msgstr "Limiti del torrent"
 
@@ -4321,7 +4020,6 @@ msgstr ""
 #~ msgstr "Barra degli strumenti delle ricerche"
 
 #, fuzzy
-#~| msgid "Current schedule:"
 #~ msgid "Current search engine"
 #~ msgstr "Pianificazione attuale:"
 
@@ -4329,12 +4027,10 @@ msgstr ""
 #~ msgstr "Usa browser predefinito"
 
 #, fuzzy
-#~| msgid "Use a custom browser."
 #~ msgid "Use custom browser"
 #~ msgstr "Usa browser personalizzato."
 
 #, fuzzy
-#~| msgid "Custom browser path:"
 #~ msgid "Custom browser executable path"
 #~ msgstr "Percorso browser personalizzato:"
 
@@ -4388,7 +4084,6 @@ msgstr ""
 #~ msgstr "Aggiungi predefi&niti"
 
 #, fuzzy
-#~| msgid "Speed Limits"
 #~ msgid "Special Limits"
 #~ msgstr "Limiti velocità"
 
@@ -4417,12 +4112,10 @@ msgstr ""
 #~ msgstr "Colore di ogni elemento normale nella pianificazione."
 
 #, fuzzy
-#~| msgid "Paused schedule item color:"
 #~ msgid "Suspended schedule item color:"
 #~ msgstr "Colore elemento in pausa nella pianificazione:"
 
 #, fuzzy
-#~| msgid "Color of each paused item on the schedule."
 #~ msgid "Color of each suspended item on the schedule."
 #~ msgstr "Colore di ogni elemento in pausa nella pianificazione."
 
@@ -4451,7 +4144,6 @@ msgstr ""
 #~ msgstr "Limite invio:"
 
 #, fuzzy
-#~| msgid "Set connection limits"
 #~ msgid "Connection Limits"
 #~ msgstr "Imposta i limiti di connessione"
 
@@ -4480,22 +4172,18 @@ msgstr ""
 #~ msgstr "Fine settimana"
 
 #, fuzzy
-#~| msgid "Download Toolbar"
 #~ msgid "Shutdown Toolbar"
 #~ msgstr "Barra degli strumenti degli scaricamenti"
 
 #, fuzzy
-#~| msgid "Auto Resume Settings"
 #~ msgid "Shutdown Settings"
 #~ msgstr "Impostazioni ripresa automatica"
 
 #, fuzzy
-#~| msgid "Remove Filter"
 #~ msgid "Level1 filter url"
 #~ msgstr "Rimuovi filtro"
 
 #, fuzzy
-#~| msgid "Use PeerGuardian filter"
 #~ msgid "Use level1 filter?"
 #~ msgstr "Usa il filtro PeerGuardian"
 
@@ -4561,47 +4249,38 @@ msgstr ""
 #~ msgstr "&Annulla"
 
 #, fuzzy
-#~| msgid "Search Preferences"
 #~ msgid "Magnet Generator Preferences"
 #~ msgstr "Preferenze di ricerca"
 
 #, fuzzy
-#~| msgid "Add Tracker"
 #~ msgid "Add tracker"
 #~ msgstr "Aggiungi server traccia"
 
 #, fuzzy
-#~| msgid "Tracker"
 #~ msgid "Tracker:"
 #~ msgstr "Server traccia"
 
 #, fuzzy
-#~| msgid "Move a torrent down in the queue"
 #~ msgid "Add the torrent name in the URI"
 #~ msgstr "Sposta un torrent più in basso nella coda"
 
 #, fuzzy
-#~| msgid "Add an item"
 #~ msgid "Add name"
 #~ msgstr "Aggiungi un elemento"
 
 #, fuzzy
-#~| msgid "Show Video"
 #~ msgid "Show popup"
 #~ msgstr "Mostra video"
 
 #, fuzzy
-#~| msgid "Tracker"
 #~ msgid "Toggles tracker"
 #~ msgstr "Server traccia"
 
 #, fuzzy
-#~| msgid "Use default browser"
 #~ msgid "The default tracker"
 #~ msgstr "Usa browser predefinito"
 
 #, fuzzy
-#~| msgid "Show Feed"
 #~ msgid "Show dn"
 #~ msgstr "Mostra fonte"
 
@@ -4612,7 +4291,6 @@ msgstr ""
 #~ msgstr "Router:"
 
 #, fuzzy
-#~| msgid "No routers found !"
 #~ msgid "No routers found."
 #~ msgstr "Nessun router trovato!"
 
@@ -4788,24 +4466,6 @@ msgstr ""
 #~ msgstr "Interfaccia di rete:"
 
 #, fuzzy
-#~| msgid ""
-#~| "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/"
-#~| "TR/REC-html40/strict.dtd\">\n"
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'OpenSymbol'; font-size:8pt; "
-#~| "font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">Which network "
-#~| "interface to use for all network traffic.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; "
-#~| "font-family:'OpenSymbol';\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px; font-family:'OpenSymbol';"
-#~| "\"><span style=\" font-weight:600;\">Note: </span>Requires a restart to "
-#~| "take effect !</p></body></html>"
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 #~ "REC-html40/strict.dtd\">\n"
@@ -4851,12 +4511,10 @@ msgstr ""
 #~ "banda che hai disponibile."
 
 #, fuzzy
-#~| msgid "Recommended Settings"
 #~ msgid "Recommended Settings..."
 #~ msgstr "Impostazioni consigliate"
 
 #, fuzzy
-#~| msgid "Captures"
 #~ msgid "Features"
 #~ msgstr "Catture"
 
@@ -4918,7 +4576,6 @@ msgstr ""
 #~ msgstr "Usa lo scambio nodo"
 
 #, fuzzy
-#~| msgid "Webseeds"
 #~ msgid "Use webseeds"
 #~ msgstr "Distributori web"
 
@@ -5011,7 +4668,6 @@ msgstr ""
 #~ "una certa dimensione."
 
 #, fuzzy
-#~| msgid "Don't recheck when chunks are bigger than"
 #~ msgid "Do not recheck when chunks are bigger than"
 #~ msgstr "Non ricontrollare quando le parti sono più grandi di"
 
@@ -5307,12 +4963,10 @@ msgstr ""
 #~ "l'anteprima.</p></body></html>"
 
 #, fuzzy
-#~| msgid "Use proxy for tracker connections"
 #~ msgid "Do not use KIO for tracker announces"
 #~ msgstr "Usa proxy HTTP per le connessioni al server traccia"
 
 #, fuzzy
-#~| msgid "Resolving hostname %1"
 #~ msgid "Resolve hostnames of peers"
 #~ msgstr "Risoluzione nome host %1"
 
@@ -5528,7 +5182,6 @@ msgstr ""
 #~ msgstr " Minuti"
 
 #, fuzzy
-#~| msgid "Seeding"
 #~ msgctxt "@title:group Options regarging Seeding"
 #~ msgid "Seeding"
 #~ msgstr "Distribuzione seme"
@@ -5554,7 +5207,6 @@ msgstr ""
 #~ "puoi inviare contemporaneamente un torrent."
 
 #, fuzzy
-#~| msgid "Maximum share ratio:"
 #~ msgid "Default maximum share ratio:"
 #~ msgstr "Livello massimo di condivisione:"
 
@@ -5602,7 +5254,6 @@ msgstr ""
 #~ "scaricamento, solo durante la distribuzione seme.</p></body></html>"
 
 #, fuzzy
-#~| msgid "Maximum seed time:"
 #~ msgid "Default maximum seed time:"
 #~ msgstr "Tempo massimo di distribuzione:"
 
@@ -5884,7 +5535,6 @@ msgstr ""
 #~ "body></html>"
 
 #, fuzzy
-#~| msgid "Open..."
 #~ msgid "..."
 #~ msgstr "Apri..."
 
@@ -5911,7 +5561,6 @@ msgstr ""
 #~ msgstr "0"
 
 #, fuzzy
-#~| msgid "File"
 #~ msgid "Failed:"
 #~ msgstr "File"
 
@@ -5935,7 +5584,6 @@ msgstr ""
 #~ "che sono state scaricate e delle parti che non sono OK.</p></body></html>"
 
 #, fuzzy
-#~| msgid "Downloaded:"
 #~ msgid "Not downloaded:"
 #~ msgstr "Scaricate:"
 
@@ -6220,7 +5868,6 @@ msgstr ""
 #~ msgstr "Espandi tutto"
 
 #, fuzzy
-#~| msgid "Skip data check if existing files are found"
 #~ msgid "No existing files are found"
 #~ msgstr "Salta il controllo dei dati se trovi file esistenti"
 
@@ -6231,23 +5878,6 @@ msgstr ""
 #~ msgstr "Avvia il torrent"
 
 #, fuzzy
-#~| msgid ""
-#~| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~| "css\">\n"
-#~| "p, li { white-space: pre-wrap; }\n"
-#~| "</style></head><body style=\" font-family:'Bitstream Vera Sans'; font-"
-#~| "size:8pt; font-weight:400; font-style:normal;\">\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\">When existing files "
-#~| "have been found, skip the data check and assume that the files are fully "
-#~| "downloaded.</p>\n"
-#~| "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-#~| "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-#~| "\"></p>\n"
-#~| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~| "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~| "weight:600;\">Note: </span>only do this when you are absolutely sure !</"
-#~| "p></body></html>"
 #~ msgid ""
 #~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
 #~ "css\">\n"
@@ -6287,17 +5917,14 @@ msgstr ""
 #~ msgstr "Salta il controllo dei dati se trovi file esistenti"
 
 #, fuzzy
-#~| msgid "Disk space"
 #~ msgid "Disk Space"
 #~ msgstr "Spazio su disco"
 
 #, fuzzy
-#~| msgid "Required disk space:"
 #~ msgid "Required:"
 #~ msgstr "Spazio su disco richiesto:"
 
 #, fuzzy
-#~| msgid "Available"
 #~ msgid "Available:"
 #~ msgstr "Disponibile"
 
@@ -6305,13 +5932,11 @@ msgstr ""
 #~ msgstr "Dopo lo scaricamento:"
 
 #, fuzzy
-#~| msgid "Speed limits for all torrents (double click to edit):"
 #~ msgid "Speed limits for individual torrents (double click to edit):"
 #~ msgstr ""
 #~ "Limiti di velocità per tutti i torrent (doppio clic per modificare):"
 
 #, fuzzy
-#~| msgid "Filter"
 #~ msgid "Filter:"
 #~ msgstr "Filtro"
 
@@ -6481,7 +6106,6 @@ msgstr ""
 #~ msgstr "&File"
 
 #, fuzzy
-#~| msgid "ViewMenu"
 #~ msgid "&View"
 #~ msgstr "ViewMenu"
 
@@ -6507,9 +6131,6 @@ msgstr ""
 #~ msgstr "Aggiungi nodo:"
 
 #, fuzzy
-#~| msgid ""
-#~| "Invalid IP address %1. You must enter an IP address in the format 'XXX."
-#~| "XXX.XXX.XXX'. You can also use wildcards for ranges like '127.0.0.*'."
 #~ msgid ""
 #~ "IP addresses must be in the format 'XXX.XXX.XXX.XXX'.\n"
 #~ "                                        \n"
@@ -6533,103 +6154,83 @@ msgstr ""
 #~ msgstr "Torrent da mostrare:"
 
 #, fuzzy
-#~| msgid "Maximum number of connection setups:"
 #~ msgid "Maximum number of downloads (0 = no limit)"
 #~ msgstr "Numero massimo di connessioni impostate:"
 
 #, fuzzy
-#~| msgid "The maximum number of connections allowed per torrent."
 #~ msgid "Maximum number of connections per torrent (0 = no limit)"
 #~ msgstr "Numero massimo di connessioni consentite per torrent."
 
 #, fuzzy
-#~| msgid "The maximum number of connections allowed per torrent."
 #~ msgid "Maximum number of connections for all torrents (0 = no limit) "
 #~ msgstr "Numero massimo di connessioni consentite per torrent."
 
 #, fuzzy
-#~| msgid "The maximum upload speed in KiB/s"
 #~ msgid "Maximum upload speed in KiB/sec (0 = no limit)"
 #~ msgstr "Velocità massima di invio in KiB/s"
 
 #, fuzzy
-#~| msgid "The maximum download speed in KiB/s."
 #~ msgid "Maximum download speed in KiB/sec (0 = no limit)"
 #~ msgstr "Velocità massima di scaricamento in KiB/s."
 
 #, fuzzy
-#~| msgid "Maximum share ratio limit reached."
 #~ msgid "Maximum share ratio (0 = no limit)"
 #~ msgstr "Livello massimo di condivisione raggiunto."
 
 #, fuzzy
-#~| msgid "Show system tray icon"
 #~ msgid "Show a system tray icon"
 #~ msgstr "Mostra icona nel vassoio di sistema"
 
 #, fuzzy
-#~| msgid "Show system tray icon"
 #~ msgid "Show speed bar in tray icon"
 #~ msgstr "Mostra icona nel vassoio di sistema"
 
 #, fuzzy
-#~| msgid "Available download bandwidth:"
 #~ msgid "Download bandwidth (in kb/s):"
 #~ msgstr "Banda disponibile in scaricamento:"
 
 #, fuzzy
-#~| msgid "Keep seeding after download is finished"
 #~ msgid "Keep seeding after download has finished"
 #~ msgstr "Mantieni il seme dopo il termine dello scaricamento"
 
 #, fuzzy
-#~| msgid "Folder to store torrent information:"
 #~ msgid "Folder to store temporary files"
 #~ msgstr "Cartella per le informazioni sui torrent:"
 
 #, fuzzy
-#~| msgid "Folder to store torrent information:"
 #~ msgid "Folder to store downloaded files"
 #~ msgstr "Cartella per le informazioni sui torrent:"
 
 #, fuzzy
-#~| msgid "Copy torrent files to:"
 #~ msgid "Folder to copy .torrent files to"
 #~ msgstr "Copia file torrent in:"
 
 #, fuzzy
-#~| msgid "Send the tracker a custom IP address or hostname"
 #~ msgid "Whether to use a custom IP to pass to the tracker"
 #~ msgstr "Invia al server traccia un indirizzo IP o nome host personalizzato"
 
 #, fuzzy
-#~| msgid "IP address of the peer"
 #~ msgid "IP to pass to the tracker"
 #~ msgstr "Indirizzo IP del nodo"
 
 #, fuzzy
-#~| msgid "GUI update interval:"
 #~ msgid "GUI update interval"
 #~ msgstr "Intervallo aggiornamento interfaccia:"
 
 #, fuzzy
-#~| msgid "DHT: off"
 #~ msgid "DHT port"
 #~ msgstr "DHT: non attivo"
 
 #, fuzzy
-#~| msgid "Number of upload slots:"
 #~ msgid "Number of upload slots"
 #~ msgstr "Numero slot di invio:"
 
 #, fuzzy
-#~| msgid "Directory to move data to when a torrent has finished downloading."
 #~ msgid "Algorithm to estimate the time when a torrent is finished"
 #~ msgstr ""
 #~ "Cartella dove spostare i dati quando un torrent ha finito lo scaricamento."
 
 #, fuzzy
-#~| msgid "Move completed downloads to:"
 #~ msgid "Folder to move completed downloaded files to"
 #~ msgstr "Sposta scaricamenti completati in:"
 
@@ -6650,7 +6251,6 @@ msgstr ""
 #~ msgstr "Riprendi KTorrent"
 
 #, fuzzy
-#~| msgid "Resume paused torrents"
 #~ msgid "Resume suspended torrents"
 #~ msgstr "Riprendi i torrent in pausa"
 
@@ -6742,7 +6342,6 @@ msgstr ""
 #~ msgstr "Perderai tutti i dati in questi file. Sei sicuro di volerlo fare?"
 
 #, fuzzy
-#~| msgid "From:"
 #~ msgid "Form"
 #~ msgstr "Da:"
 
@@ -6804,7 +6403,6 @@ msgstr ""
 #~ msgstr "Usa lista semplice di file quando visualizza i file di un torrent"
 
 #, fuzzy
-#~| msgid "Torrent has no announce or nodes field"
 #~ msgid "Torrent has no announce or nodes field."
 #~ msgstr "Il torrent non ha il campo annuncio o il campo nodi"
 

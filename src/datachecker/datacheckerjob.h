@@ -33,7 +33,7 @@ namespace bt
 	{
 		Q_OBJECT
 	public:
-		DataCheckerJob(bool auto_import,TorrentControl* tc);
+		DataCheckerJob(bool auto_import,TorrentControl* tc, bt::Uint32 from, bt::Uint32 to);
 		virtual ~DataCheckerJob();
 		
 		virtual void start();
@@ -45,6 +45,12 @@ namespace bt
 		
 		/// Was the job stopped
 		bool isStopped() const {return killed;}
+		
+		/// Get the first chunk the datacheck was started from
+		bt::Uint32 firstChunk() const {return from;}
+		
+		/// Get the last chunk of the datacheck
+		bt::Uint32 lastChunk() const {return to;}
 		
 	private slots:
 		void threadFinished();
@@ -59,6 +65,8 @@ namespace bt
 		bool killed;
 		bool auto_import;
 		bool started;
+		bt::Uint32 from;
+		bt::Uint32 to;
 	};
 
 }

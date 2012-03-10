@@ -38,7 +38,6 @@
 #include <peer/badpeerslist.h>
 #include <util/functions.h>
 #include <interfaces/monitorinterface.h>
-#include <peer/packetwriter.h>
 #include <peer/accessmanager.h>
 #include <peer/chunkcounter.h>
 #include "chunkselector.h"
@@ -108,8 +107,7 @@ namespace bt
 	
 	void Downloader::setChunkSelector(ChunkSelectorInterface* csel)
 	{
-		if (chunk_selector)
-			delete chunk_selector;
+		delete chunk_selector;
 		
 		if (!csel) // check if a custom one was provided, if not create a default one
 			chunk_selector = new ChunkSelector();
@@ -733,9 +731,9 @@ namespace bt
 		chunk_selector->reinsert(chunk);
 	}
 	
-	void Downloader::dataChecked(const BitSet & ok_chunks)
+	void Downloader::dataChecked(const bt::BitSet& ok_chunks, Uint32 from, Uint32 to)
 	{
-		for (Uint32 i = 0;i < ok_chunks.getNumBits();i++)
+		for (Uint32 i = from;i < ok_chunks.getNumBits() && i <= to;i++)
 		{
 			ChunkDownload* cd = current_chunks.find(i);
 			if (ok_chunks.get(i) && cd)
@@ -748,7 +746,7 @@ namespace bt
 				current_chunks.erase(i);
 			}
 		}
-		chunk_selector->dataChecked(ok_chunks);
+		chunk_selector->dataChecked(ok_chunks, from, to);
 	}
 	
 	void Downloader::recalcDownloaded()

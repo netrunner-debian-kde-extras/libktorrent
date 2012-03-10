@@ -99,13 +99,15 @@ namespace bt
 			TimeStamp time_unchoked;
 			/// The transport protocol used by the peer
 			bt::TransportProtocol transport_protocol;
+			/// Is this a partial seed
+			bool partial_seed;
 			
 			/// Get the address of the peer (hostname if it is valid, IP otherwise)
 			QString address() const {return hostname.isEmpty() ? ip_address : hostname;}
 		};
 
 		/// Get the Peer's statistics
-		virtual const Stats & getStats() const {return stats;}
+		const Stats & getStats() const {return stats;}
 		
 		/** 
 			Kill the Peer, will ensure the PeerManager closes the connection, and cleans things up.

@@ -24,7 +24,6 @@
 #include <util/log.h>
 #include "peer.h"
 #include <download/piece.h>
-#include "packetwriter.h"
 
 
 namespace bt
@@ -81,14 +80,6 @@ namespace bt
 	PeerDownloader::~PeerDownloader() 
 	{
 	}
-#if 0
-	void PeerDownloader::retransmitRequests()
-	{
-		for (QValueList<Request>::iterator i = reqs.begin();i != reqs.end();i++)
-			peer->getPacketWriter().sendRequest(*i);
-			
-	}
-#endif
 	
 	QString PeerDownloader::getName() const
 	{
@@ -127,7 +118,7 @@ namespace bt
 		if (!wait_queue.removeAll(req))
 		{
 			reqs.removeAll(req);
-			peer->getPacketWriter().sendCancel(req);
+			peer->sendCancel(req);
 		}
 	}
 	
@@ -148,7 +139,7 @@ namespace bt
 			while (i != reqs.end())
 			{
 				TimeStampedRequest & tr = *i;
-				peer->getPacketWriter().sendCancel(tr.req);
+				peer->sendCancel(tr.req);
 				i++;
 			}
 		}
@@ -160,8 +151,8 @@ namespace bt
 	void PeerDownloader::piece(const Piece & p)
 	{
 		Request r(p);
-		if (!wait_queue.removeAll(r))
-			reqs.removeAll(r);
+		if (!reqs.removeOne(r))
+			wait_queue.removeAll(r);
 	}
 	
 	void PeerDownloader::peerDestroyed()
@@ -265,7 +256,7 @@ namespace bt
 			wait_queue.pop_front();
 			TimeStampedRequest r = TimeStampedRequest(req);
 			reqs.append(r);
-			peer->getPacketWriter().sendRequest(req);
+			peer->sendRequest(req);
 		}
 		
 		max_wait_queue_size = 2*max_reqs;
@@ -273,5 +264,3 @@ namespace bt
 			max_wait_queue_size = 10;
 	}
 }
-
-#include "peerdownloader.moc"

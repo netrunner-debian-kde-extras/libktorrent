@@ -26,16 +26,13 @@
 #include <net/address.h>
 #include "tracker.h"
 
-namespace KNetwork
+namespace net 
 {
-	class KResolverResults;
+	class AddressResolver;
 }
 
 namespace bt
 {
-	using KNetwork::KResolverResults;
-
-	
 	
 	class UDPTrackerSocket;
 
@@ -63,10 +60,10 @@ namespace bt
 	private slots:
 		void onConnTimeout();
 		void connectReceived(Int32 tid,Int64 connection_id);
-		void announceReceived(Int32 tid,const QByteArray & buf);
-		void scrapeReceived(Int32 tid,const QByteArray & buf);
+		void announceReceived(Int32 tid,const Uint8* buf,Uint32 size);
+		void scrapeReceived(Int32 tid,const Uint8* buf,Uint32 size);
 		void onError(Int32 tid,const QString & error_string);
-		void onResolverResults(KNetwork::KResolverResults res);
+		void onResolverResults(net::AddressResolver* ar);
 		virtual void manualUpdate();
 
 	private:

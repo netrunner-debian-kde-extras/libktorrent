@@ -26,7 +26,7 @@
 #include <torrent/server.h>
 #include <net/socks.h>
 #include "rc4encryptor.h"
-#include "streamsocket.h"
+#include "encryptedpacketsocket.h"
 #include "functions.h"
 
 using namespace bt;
@@ -37,13 +37,12 @@ namespace mse
 	
 
 	EncryptedAuthenticate::EncryptedAuthenticate(
-			const QString& ip, 
-			Uint16 port, 
+			const net::Address & addr,
 			TransportProtocol proto,
 			const SHA1Hash& info_hash, 
 			const PeerID& peer_id, 
 			PeerConnector::WPtr pcon)
-	: Authenticate(ip, port, proto, info_hash, peer_id, pcon)
+	: Authenticate(addr, proto, info_hash, peer_id, pcon)
 	{
 		mse::GeneratePublicPrivateKey(xa,ya);
 		state = NOT_CONNECTED;

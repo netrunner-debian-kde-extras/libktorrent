@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-11 11:17+0200\n"
+"POT-Creation-Date: 2012-02-07 18:22+0100\n"
 "PO-Revision-Date: 2009-10-31 23:24+0900\n"
 "Last-Translator: Yukiko Bando <ybando@k6.dion.ne.jp>\n"
 "Language-Team: Japanese <Kdeveloper@kde.gr.jp>\n"
@@ -18,43 +18,42 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
 
-#: src/bcodec/bdecoder.cpp:62
+#: src/bcodec/bdecoder.cpp:71
 #, kde-format
 msgid "Illegal token: %1"
 msgstr "不正なトークン: %1"
 
-#: src/bcodec/bdecoder.cpp:125 src/bcodec/bdecoder.cpp:133
+#: src/bcodec/bdecoder.cpp:133 src/bcodec/bdecoder.cpp:141
 msgid "Decode error"
 msgstr "デコードエラー"
 
-#: src/bcodec/bdecoder.cpp:193 src/bcodec/bdecoder.cpp:238
+#: src/bcodec/bdecoder.cpp:201 src/bcodec/bdecoder.cpp:246
 msgid "Unexpected end of input"
 msgstr "予期しない入力の終端"
 
-#: src/bcodec/bdecoder.cpp:213 src/bcodec/bdecoder.cpp:247
+#: src/bcodec/bdecoder.cpp:221 src/bcodec/bdecoder.cpp:255
 #, kde-format
 msgid "Cannot convert %1 to an int"
 msgstr "%1 を整数に変換できません"
 
-#: src/bcodec/bdecoder.cpp:252
+#: src/bcodec/bdecoder.cpp:260
 msgid "Torrent is incomplete."
 msgstr "torrent が不完全です。"
 
-#: src/datachecker/datacheckerjob.cpp:76
+#: src/datachecker/datacheckerjob.cpp:82
 msgid "Waiting for other data checks to finish"
 msgstr ""
 
-#: src/datachecker/datacheckerjob.cpp:82 src/torrent/torrentstats.cpp:92
+#: src/datachecker/datacheckerjob.cpp:88 src/torrent/torrentstats.cpp:93
 msgid "Checking data"
 msgstr "データをチェック中"
 
-#: src/datachecker/datacheckerjob.cpp:135
+#: src/datachecker/datacheckerjob.cpp:141
 #, fuzzy
-#| msgid "Checking data"
 msgid "Checking Data"
 msgstr "データをチェック中"
 
-#: src/datachecker/multidatachecker.cpp:203
+#: src/datachecker/multidatachecker.cpp:209
 #: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
 #: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
@@ -62,111 +61,28 @@ msgstr "データをチェック中"
 msgid "Cannot open file %1: %2"
 msgstr "ファイル <filename>%1</filename> を開けません: %2"
 
-#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
-#: src/util/fileops.cpp:396
-#, fuzzy, kde-format
-#| msgid "Cannot open %1 : %2"
-msgid "Cannot open %1: %2"
-msgstr "<filename>%1</filename> を開けません: %2"
-
-#: src/diskio/cachefile.cpp:120 src/diskio/cachefile.cpp:248
-#: src/diskio/cachefile.cpp:412 src/diskio/cachefile.cpp:480
-#, fuzzy, kde-format
-#| msgid "Cannot open %1 for writing : readonly filesystem"
-msgid "Cannot open %1 for writing: readonly filesystem"
-msgstr ""
-"<filename>%1</filename> を書き込みのために開けません: 読み取り専用のファイル"
-"システムです"
-
-#: src/diskio/cachefile.cpp:127 src/diskio/cachefile.cpp:418
-#, kde-format
-msgid "Attempting to write beyond the maximum size of %1"
-msgstr ""
-
-#: src/diskio/cachefile.cpp:255
-#, kde-format
-msgid ""
-"Cannot expand file %1: attempting to grow the file beyond the maximum size"
-msgstr ""
-
-#: src/diskio/cachefile.cpp:259
-#, fuzzy, kde-format
-#| msgid "Cannot expand file %1 : %2"
-msgid "Cannot expand file %1: %2"
-msgstr "ファイル <filename>%1</filename> を展開できません: %2"
-
-#: src/diskio/cachefile.cpp:378
-#, fuzzy, kde-format
-#| msgid "Error : Reading past the end of the file %1"
-msgid "Error: Reading past the end of the file %1"
-msgstr ""
-"エラー: ファイル <filename>%1</filename> の終端を越えて読むことはできません"
-
-#: src/diskio/cachefile.cpp:383 src/diskio/cachefile.cpp:430
-#, fuzzy, kde-format
-#| msgid "Failed to seek file %1 : %2"
-msgid "Failed to seek file %1: %2"
-msgstr "ファイル <filename>%1</filename> をシークできませんでした: %2"
-
-#: src/diskio/cachefile.cpp:391
-#, kde-format
-msgid "Error reading from %1"
-msgstr "<filename>%1</filename> からの読み取りエラー"
-
-#: src/diskio/cachefile.cpp:434
-#, fuzzy, kde-format
-#| msgid "Failed to write to file %1 : %2"
-msgid "Failed to write to file %1: %2"
-msgstr "ファイル <filename>%1</filename> に書き込めませんでした: %2"
-
-#: src/diskio/cachefile.cpp:501
-#, fuzzy, kde-format
-#| msgid "Cannot preallocate diskspace : %1"
-msgid "Cannot preallocate diskspace: %1"
-msgstr "ディスク領域の事前割り当てができません: %1"
-
 #: src/diskio/dndfile.cpp:89
 #, fuzzy, kde-format
-#| msgid "Cannot create file %1 : %2"
 msgid "Cannot create file %1: %2"
 msgstr "ファイル <filename>%1</filename> を作成できません: %2"
 
 #: src/diskio/dndfile.cpp:137
 #, fuzzy, kde-format
-#| msgid "Failed to write first chunk to DND file : %1"
 msgid "Failed to write first chunk to DND file: %1"
 msgstr "最初のピースを DND ファイルに書き込めませんでした: %1"
 
 #: src/diskio/dndfile.cpp:155
 #, fuzzy, kde-format
-#| msgid "Failed to write last chunk to DND file : %1"
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "最後のピースを DND ファイルに書き込めませんでした: %1"
 
-#: src/diskio/movedatafilesjob.cpp:166
-msgctxt "@title job"
-msgid "Moving"
-msgstr ""
-
-#: src/diskio/movedatafilesjob.cpp:167
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr ""
-
-#: src/diskio/movedatafilesjob.cpp:168
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr ""
-
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, fuzzy, kde-format
-#| msgid "Failed to open %1 : %2"
 msgid "Failed to open %1: %2"
 msgstr "<filename>%1</filename> を開けませんでした: %2"
 
 #: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
 #, fuzzy, kde-format
-#| msgid "Failed to create %1 : %2"
 msgid "Failed to create %1: %2"
 msgstr "<filename>%1</filename> を作成できませんでした: %2"
 
@@ -174,71 +90,85 @@ msgstr "<filename>%1</filename> を作成できませんでした: %2"
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
 
-#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
+#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
+#: src/util/fileops.cpp:399
 #, fuzzy, kde-format
-#| msgid "Cannot open index file %1 : %2"
+msgid "Cannot open %1: %2"
+msgstr "<filename>%1</filename> を開けません: %2"
+
+#: src/diskio/cachefile.cpp:122 src/diskio/cachefile.cpp:250
+#: src/diskio/cachefile.cpp:414 src/diskio/cachefile.cpp:482
+#, fuzzy, kde-format
+msgid "Cannot open %1 for writing: readonly filesystem"
+msgstr ""
+"<filename>%1</filename> を書き込みのために開けません: 読み取り専用のファイル"
+"システムです"
+
+#: src/diskio/cachefile.cpp:129 src/diskio/cachefile.cpp:420
+#, kde-format
+msgid "Attempting to write beyond the maximum size of %1"
+msgstr ""
+
+#: src/diskio/cachefile.cpp:257
+#, kde-format
+msgid ""
+"Cannot expand file %1: attempting to grow the file beyond the maximum size"
+msgstr ""
+
+#: src/diskio/cachefile.cpp:261
+#, fuzzy, kde-format
+msgid "Cannot expand file %1: %2"
+msgstr "ファイル <filename>%1</filename> を展開できません: %2"
+
+#: src/diskio/cachefile.cpp:380
+#, fuzzy, kde-format
+msgid "Error: Reading past the end of the file %1"
+msgstr ""
+"エラー: ファイル <filename>%1</filename> の終端を越えて読むことはできません"
+
+#: src/diskio/cachefile.cpp:385 src/diskio/cachefile.cpp:432
+#, fuzzy, kde-format
+msgid "Failed to seek file %1: %2"
+msgstr "ファイル <filename>%1</filename> をシークできませんでした: %2"
+
+#: src/diskio/cachefile.cpp:393
+#, kde-format
+msgid "Error reading from %1"
+msgstr "<filename>%1</filename> からの読み取りエラー"
+
+#: src/diskio/cachefile.cpp:436
+#, fuzzy, kde-format
+msgid "Failed to write to file %1: %2"
+msgstr "ファイル <filename>%1</filename> に書き込めませんでした: %2"
+
+#: src/diskio/cachefile.cpp:503
+#, fuzzy, kde-format
+msgid "Cannot preallocate diskspace: %1"
+msgstr "ディスク領域の事前割り当てができません: %1"
+
+#: src/diskio/chunkmanager.cpp:928 src/diskio/chunkmanager.cpp:954
+#, fuzzy, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr "インデックスファイル <filename>%1</filename> を開けません: %2"
 
-#: src/download/downloader.cpp:810
-msgid "Disabled because webseed does not match torrent"
+#: src/diskio/movedatafilesjob.cpp:140
+msgid "Waiting for other move jobs to finish"
 msgstr ""
 
-#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
-msgid "Not connected"
-msgstr "接続していません"
+#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr ""
 
-#: src/download/httpconnection.cpp:107
-#, kde-format
-msgid "Resolving proxy %1:%2"
-msgstr "プロキシ %1:%2 を解決"
+#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr ""
 
-#: src/download/httpconnection.cpp:116
-#, kde-format
-msgid "Resolving hostname %1"
-msgstr "ホスト名 %1 を解決"
-
-#: src/download/httpconnection.cpp:129 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "接続が閉じられました"
-
-#: src/download/httpconnection.cpp:136
-#, kde-format
-msgid "Error: request failed: %1"
-msgstr "エラー: 要求が失敗しました: %1"
-
-#: src/download/httpconnection.cpp:153 src/download/httpconnection.cpp:217
-msgid "Connected"
-msgstr "接続しました"
-
-#: src/download/httpconnection.cpp:159
-msgid "Error: Failed to connect to webseed"
-msgstr "エラー: ウェブシードに接続できませんでした"
-
-#: src/download/httpconnection.cpp:224
-msgid "Connecting"
-msgstr "接続中"
-
-#: src/download/httpconnection.cpp:235
-msgid "Failed to connect to webseed"
-msgstr "ウェブシードに接続できませんでした"
-
-#: src/download/httpconnection.cpp:242
-msgid "Failed to resolve hostname of webseed"
-msgstr "ウェブシードのホスト名を解決できませんでした"
-
-#: src/download/httpconnection.cpp:322
-msgid "Error: failed to connect, server not responding"
-msgstr "エラー: 接続できませんでした、サーバが応答しません"
-
-#: src/download/httpconnection.cpp:333
-msgid "Error: request timed out"
-msgstr "エラー: 要求がタイムアウトしました"
-
-#: src/download/httpconnection.cpp:398
-msgid "Redirected without a new location."
-msgstr "新しい場所なしでリダイレクトされました。"
+#: src/diskio/movedatafilesjob.cpp:180
+msgctxt "@title job"
+msgid "Moving"
+msgstr ""
 
 #: src/download/chunkdownload.cpp:383
 #, kde-format
@@ -246,6 +176,70 @@ msgid "1 peer"
 msgid_plural "%1 peers"
 msgstr[0] "1 ピア"
 msgstr[1] "%1 ピア"
+
+#: src/download/downloader.cpp:808
+msgid "Disabled because webseed does not match torrent"
+msgstr ""
+
+#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
+#: src/download/webseed.cpp:98
+msgid "Not connected"
+msgstr "接続していません"
+
+#: src/download/httpconnection.cpp:115
+#, kde-format
+msgid "Resolving proxy %1:%2"
+msgstr "プロキシ %1:%2 を解決"
+
+#: src/download/httpconnection.cpp:121 src/download/httpconnection.cpp:139
+msgid "Not enough system resources available"
+msgstr ""
+
+#: src/download/httpconnection.cpp:133
+#, kde-format
+msgid "Resolving hostname %1"
+msgstr "ホスト名 %1 を解決"
+
+#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
+msgid "Connection closed"
+msgstr "接続が閉じられました"
+
+#: src/download/httpconnection.cpp:160
+#, kde-format
+msgid "Error: request failed: %1"
+msgstr "エラー: 要求が失敗しました: %1"
+
+#: src/download/httpconnection.cpp:188 src/download/httpconnection.cpp:222
+msgid "Connected"
+msgstr "接続しました"
+
+#: src/download/httpconnection.cpp:199
+msgid "Error: Failed to connect to webseed"
+msgstr "エラー: ウェブシードに接続できませんでした"
+
+#: src/download/httpconnection.cpp:229
+msgid "Connecting"
+msgstr "接続中"
+
+#: src/download/httpconnection.cpp:240
+msgid "Failed to connect to webseed"
+msgstr "ウェブシードに接続できませんでした"
+
+#: src/download/httpconnection.cpp:247
+msgid "Failed to resolve hostname of webseed"
+msgstr "ウェブシードのホスト名を解決できませんでした"
+
+#: src/download/httpconnection.cpp:326
+msgid "Error: failed to connect, server not responding"
+msgstr "エラー: 接続できませんでした、サーバが応答しません"
+
+#: src/download/httpconnection.cpp:337
+msgid "Error: request timed out"
+msgstr "エラー: 要求がタイムアウトしました"
+
+#: src/download/httpconnection.cpp:402
+msgid "Redirected without a new location."
+msgstr "新しい場所なしでリダイレクトされました。"
 
 #: src/download/webseed.cpp:545
 #, kde-format
@@ -265,7 +259,7 @@ msgstr ""
 msgid "Announcing"
 msgstr "アナウンス"
 
-#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:86
+#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:87
 #, kde-format
 msgid "Error: %1"
 msgstr "エラー: %1"
@@ -284,62 +278,6 @@ msgstr "未知のクライアント"
 msgid "Cannot create index file: %1"
 msgstr "インデックスファイルを作成できません: %1"
 
-#: src/torrent/torrentstats.cpp:72
-msgid "Not started"
-msgstr "開始していません"
-
-#: src/torrent/torrentstats.cpp:74
-msgid "Download completed"
-msgstr "ダウンロード完了"
-
-#: src/torrent/torrentstats.cpp:76
-msgid "Seeding completed"
-msgstr "シード完了"
-
-#: src/torrent/torrentstats.cpp:78
-msgctxt "Status of a torrent file"
-msgid "Seeding"
-msgstr "シード中"
-
-#: src/torrent/torrentstats.cpp:80
-msgid "Downloading"
-msgstr "ダウンロード中"
-
-#: src/torrent/torrentstats.cpp:82
-msgid "Stalled"
-msgstr "ストールしました"
-
-#: src/torrent/torrentstats.cpp:84
-msgid "Stopped"
-msgstr "停止中"
-
-#: src/torrent/torrentstats.cpp:88
-msgid "Allocating diskspace"
-msgstr "ディスク領域を割り当て中"
-
-#: src/torrent/torrentstats.cpp:90
-msgid "Queued for seeding"
-msgstr "シード待ち"
-
-#: src/torrent/torrentstats.cpp:90
-msgid "Queued for downloading"
-msgstr "ダウンロード待ち"
-
-#: src/torrent/torrentstats.cpp:94
-msgid "Stopped. No space left on device."
-msgstr "停止しました。デバイスに空き領域が残っていません。"
-
-#: src/torrent/torrentstats.cpp:96
-msgid "Paused"
-msgstr "一時停止"
-
-#: src/torrent/torrentstats.cpp:98
-#, fuzzy
-#| msgctxt "Status of a torrent file"
-#| msgid "Seeding"
-msgid "Superseeding"
-msgstr "シード中"
-
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
@@ -349,7 +287,6 @@ msgstr "torrent が壊れています。"
 
 #: src/torrent/torrent.cpp:165
 #, fuzzy, kde-format
-#| msgid " Unable to open torrent file %1 : %2"
 msgid "Unable to open torrent file %1: %2"
 msgstr "torrent ファイル <filename>%1</filename> を開けません: %2"
 
@@ -357,7 +294,7 @@ msgstr "torrent ファイル <filename>%1</filename> を開けません: %2"
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:553
+#: src/torrent/torrentcontrol.cpp:554
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -366,22 +303,18 @@ msgstr ""
 "torrent <b>%1</b> のロード中にエラーが発生しました:<br/>%2<br/>おそらく "
 "torrent が壊れているか、有効な torrent ファイルではありません。"
 
-#: src/torrent/torrentcontrol.cpp:583
+#: src/torrent/torrentcontrol.cpp:584
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:594
+#: src/torrent/torrentcontrol.cpp:595
 #, fuzzy, kde-format
-#| msgid "Unable to create %1 : %2"
 msgid "Unable to create %1: %2"
 msgstr "<resource>%1</resource> を作成できません: %2"
 
-#: src/torrent/torrentcontrol.cpp:609
+#: src/torrent/torrentcontrol.cpp:610
 #, fuzzy, kde-format
-#| msgid ""
-#| "You are already downloading this torrent %1, the list of trackers of both "
-#| "torrents has been merged."
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
 "both torrents have been merged."
@@ -389,39 +322,92 @@ msgstr ""
 "torrent <resource>%1</resource> は既にダウンロード中です。両方の torrent のト"
 "ラッカーリストをマージしました。"
 
-#: src/torrent/torrentcontrol.cpp:614
+#: src/torrent/torrentcontrol.cpp:615
 #, fuzzy, kde-format
-#| msgid "You are already downloading the torrent %1"
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "torrent <resource>%1</resource> は既にダウンロード中です"
+
+#: src/torrent/torrentstats.cpp:73
+msgid "Not started"
+msgstr "開始していません"
+
+#: src/torrent/torrentstats.cpp:75
+msgid "Download completed"
+msgstr "ダウンロード完了"
+
+#: src/torrent/torrentstats.cpp:77
+msgid "Seeding completed"
+msgstr "シード完了"
+
+#: src/torrent/torrentstats.cpp:79
+msgctxt "Status of a torrent file"
+msgid "Seeding"
+msgstr "シード中"
+
+#: src/torrent/torrentstats.cpp:81
+msgid "Downloading"
+msgstr "ダウンロード中"
+
+#: src/torrent/torrentstats.cpp:83
+msgid "Stalled"
+msgstr "ストールしました"
+
+#: src/torrent/torrentstats.cpp:85
+msgid "Stopped"
+msgstr "停止中"
+
+#: src/torrent/torrentstats.cpp:89
+msgid "Allocating diskspace"
+msgstr "ディスク領域を割り当て中"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Queued for seeding"
+msgstr "シード待ち"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Queued for downloading"
+msgstr "ダウンロード待ち"
+
+#: src/torrent/torrentstats.cpp:95
+msgid "Stopped. No space left on device."
+msgstr "停止しました。デバイスに空き領域が残っていません。"
+
+#: src/torrent/torrentstats.cpp:97
+msgid "Paused"
+msgstr "一時停止"
+
+#: src/torrent/torrentstats.cpp:99
+#, fuzzy
+msgid "Superseeding"
+msgstr "シード中"
 
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "リダイレクト先なしでリダイレクトされました"
 
-#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
-#: src/tracker/httptracker.cpp:557
+#: src/tracker/httptracker.cpp:287 src/tracker/httptracker.cpp:307
+#: src/tracker/httptracker.cpp:463
+msgid "Invalid response from tracker"
+msgstr "トラッカーから無効な応答"
+
+#: src/tracker/httptracker.cpp:300
+msgid "Invalid data from tracker"
+msgstr "トラッカーから無効なデータ"
+
+#: src/tracker/httptracker.cpp:480
+msgid "Invalid tracker URL"
+msgstr "無効なトラッカー URL"
+
+#: src/tracker/httptracker.cpp:558 src/tracker/udptracker.cpp:364
+#: src/tracker/udptracker.cpp:374
 #, kde-format
 msgid "Timeout contacting tracker %1"
 msgstr "トラッカー %1 への接続中にタイムアウト"
 
-#: src/tracker/udptracker.cpp:409
+#: src/tracker/udptracker.cpp:401
 #, kde-format
 msgid "Unable to resolve hostname %1"
 msgstr "ホスト名 %1 を解決できませんでした"
-
-#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:462
-msgid "Invalid response from tracker"
-msgstr "トラッカーから無効な応答"
-
-#: src/tracker/httptracker.cpp:293
-msgid "Invalid data from tracker"
-msgstr "トラッカーから無効なデータ"
-
-#: src/tracker/httptracker.cpp:479
-msgid "Invalid tracker URL"
-msgstr "無効なトラッカー URL"
 
 #: src/util/logsystemmanager.cpp:33
 msgid "General"
@@ -449,7 +435,6 @@ msgstr ""
 
 #: src/util/file.cpp:84
 #, fuzzy, kde-format
-#| msgid "Cannot write to %1 : %2"
 msgid "Cannot write to %1: %2"
 msgstr "<filename>%1</filename> に書き込めません: %2"
 
@@ -457,6 +442,15 @@ msgstr "<filename>%1</filename> に書き込めません: %2"
 #, kde-format
 msgid "Cannot read from %1"
 msgstr "<filename>%1</filename> から読み取れません"
+
+#: src/util/signalcatcher.cpp:78
+msgid "Error when writing to disk"
+msgstr ""
+
+#: src/util/signalcatcher.cpp:78
+#, fuzzy
+msgid "Error when reading from disk"
+msgstr "<filename>%1</filename> からの読み取りエラー"
 
 #: src/util/fileops.cpp:94
 #, kde-format
@@ -499,47 +493,34 @@ msgstr "<filename>%1</filename> のファイルサイズを計算できません
 
 #: src/util/fileops.cpp:327
 #, fuzzy, kde-format
-#| msgid "Cannot calculate the filesize : %1"
 msgid "Cannot calculate the filesize: %1"
 msgstr "ファイルサイズを計算できません: %1"
 
 #: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
-#: src/util/fileops.cpp:387
+#: src/util/fileops.cpp:387 src/util/fileops.cpp:390
 #, kde-format
 msgid "Cannot expand file: %1"
 msgstr "ファイルを展開できません: %1"
 
-#: src/util/fileops.cpp:417
+#: src/util/fileops.cpp:420
 #, fuzzy, kde-format
-#| msgid "Cannot seek in file : %1"
 msgid "Cannot seek in file: %1"
 msgstr "ファイル内でシークできません: %1"
 
-#: src/util/functions.cpp:280
+#: src/util/functions.cpp:234
 #, kde-format
 msgid "%1/s"
 msgstr "%1/秒"
 
-#: src/util/functions.cpp:291
+#: src/util/functions.cpp:245
 #, kde-format
 msgid "1 day "
 msgid_plural "%1 days "
 msgstr[0] "1 日"
 msgstr[1] "%1 日"
 
-#: src/util/signalcatcher.cpp:62
-msgid "Error when writing to disk"
-msgstr ""
-
-#: src/util/signalcatcher.cpp:62
-#, fuzzy
-#| msgid "Error reading from %1"
-msgid "Error when reading from disk"
-msgstr "<filename>%1</filename> からの読み取りエラー"
-
 #: src/upnp/httprequest.cpp:96
 #, fuzzy
-#| msgid "Connection closed"
 msgid "Connection closed unexpectedly"
 msgstr "接続が閉じられました"
 
@@ -549,7 +530,6 @@ msgstr ""
 
 #: src/upnp/upnprouter.cpp:167
 #, fuzzy, kde-format
-#| msgid "Failed to open %1 : %2"
 msgid "Failed to download %1: %2"
 msgstr "<filename>%1</filename> を開けませんでした: %2"
 
@@ -569,13 +549,11 @@ msgstr ""
 
 #: examples/ktcli/main.cpp:60
 #, fuzzy
-#| msgid "Torrent is incomplete."
 msgid "Torrent to open"
 msgstr "torrent が不完全です。"
 
 #: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
 #, fuzzy
-#| msgid "Not in use"
 msgid "Port to use"
 msgstr "使用されていません"
 

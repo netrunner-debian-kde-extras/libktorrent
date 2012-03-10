@@ -25,7 +25,6 @@
 #include <QSet>
 #include <QTextStream>
 #include <QDateTime>
-#include <k3resolver.h>
 #include <klocale.h>
 
 #include <util/ptrmap.h>
@@ -38,13 +37,12 @@
 #include <net/address.h>
 #include <torrent/torrent.h>
 #include <util/functions.h>
-#include <mse/streamsocket.h> 
+#include <mse/encryptedpacketsocket.h> 
 #include <mse/encryptedauthenticate.h>
 #include <peer/accessmanager.h>
 #include <torrent/globals.h>
 #include <torrent/server.h>
 #include <dht/dhtbase.h>
-#include "packetwriter.h"
 #include "chunkcounter.h"
 #include "authenticationmonitor.h"
 #include "peer.h"
@@ -60,7 +58,7 @@ namespace bt
 	Uint32 PeerManager::max_total_connections = 0;
 	Uint32 PeerManager::total_connections = 0;
 	
-	typedef std::multimap<QString,PotentialPeer>::iterator PPItr;
+	typedef std::map<net::Address, bool>::iterator PPItr;
 	
 
 	
@@ -72,8 +70,8 @@ namespace bt
 		
 		void updateAvailableChunks();
 		bool killBadPeer();
-		void createPeer(mse::StreamSocket::Ptr sock,const PeerID & peer_id,Uint32 support,bool local);
-		bool connectedTo(const QString & ip,Uint16 port) const;
+		void createPeer(mse::EncryptedPacketSocket::Ptr sock,const PeerID & peer_id,Uint32 support,bool local);
+		bool connectedTo(const net::Address & addr) const;
 		void update();
 		void have(Peer* peer,Uint32 index);
 		void connectToPeers();
@@ -93,7 +91,8 @@ namespace bt
 		bool paused;
 		QSet<PeerConnector::Ptr> connectors;
 		SuperSeeder* superseeder;
-		std::multimap<QString,PotentialPeer> potential_peers;
+		std::map<net::Address, bool> potential_peers;
+		bool partial_seed;
 	};
 
 	PeerManager::PeerManager(Torrent & tor)
@@ -128,7 +127,7 @@ namespace bt
 		{
 			p->unpause();
 			if (p->hasWantedChunks(d->wanted_chunks)) // send interested when it has wanted chunks
-				p->getPacketWriter().sendInterested();
+				p->sendInterested();
 		}
 		d->paused = false;
 	}
@@ -161,53 +160,12 @@ namespace bt
 		d->wanted_changed = true;
 	}
 	
-	void PeerManager::addPotentialPeer(const PotentialPeer & pp)
+	void PeerManager::addPotentialPeer(const net::Address & addr, bool local)
 	{
-		if (d->potential_peers.size() > 500)
-			return;
-		
-		KIpAddress addr;
-		if (addr.setAddress(pp.ip))
+		if (d->potential_peers.size() < 500)
 		{
-			// avoid duplicates in the potential_peers map
-			std::pair<PPItr,PPItr> r = d->potential_peers.equal_range(pp.ip);
-			for (PPItr i = r.first;i != r.second;i++)
-			{
-				if (i->second.port == pp.port) // port and IP are the same so return
-					return;
-			}
-		
-			d->potential_peers.insert(std::make_pair(pp.ip,pp));
+			d->potential_peers[addr] = local;
 		}
-		else
-		{
-			// must be a hostname, so resolve it
-			KResolver::resolveAsync(this,SLOT(onResolverResults(KNetwork::KResolverResults )),
-					pp.ip,QString::number(pp.port));
-		}
-	}
-	
-	void PeerManager::onResolverResults(KResolverResults res)
-	{
-		if (res.count() == 0)
-			return;
-		
-		net::Address addr = res.front().address().asInet();
-		
-		PotentialPeer pp;
-		pp.ip = addr.ipAddress().toString();
-		pp.port = addr.port();
-		pp.local = false;
-		
-		// avoid duplicates in the potential_peers map
-		std::pair<PPItr,PPItr> r = d->potential_peers.equal_range(pp.ip);
-		for (PPItr i = r.first;i != r.second;i++)
-		{
-			if (i->second.port == pp.port) // port and IP are the same so return
-				return;
-		}
-		
-		d->potential_peers.insert(std::make_pair(pp.ip,pp));
 	}
 
 	void PeerManager::killSeeders()
@@ -254,14 +212,14 @@ namespace bt
 		}
 		
 		if (interested && !d->paused)
-			p->getPacketWriter().sendInterested();
+			p->sendInterested();
 		
 		if (d->superseeder)
 			d->superseeder->bitset(p,bs);
 	}
 	
 
-	void PeerManager::newConnection(mse::StreamSocket::Ptr sock,const PeerID & peer_id,Uint32 support)
+	void PeerManager::newConnection(mse::EncryptedPacketSocket::Ptr sock,const PeerID & peer_id,Uint32 support)
 	{
 		if (!d->started)
 			return;
@@ -361,14 +319,14 @@ namespace bt
 			foreach(Peer* p,d->peer_list)
 			{
 				const net::Address & addr = p->getAddress();
-				out << addr.ipAddress().toString() << " " << (unsigned short)addr.port() << ::endl;
+				out << addr.toString() << " " << (unsigned short)addr.port() << ::endl;
 			}
 			
 			// now the potential_peers
 			PPItr i = d->potential_peers.begin();
 			while (i != d->potential_peers.end())
 			{
-				out << i->first << " " <<  i->second.port << ::endl;
+				out << i->first.toString() << " " <<  i->first.port() << ::endl;
 				i++;
 			}
 		}
@@ -396,11 +354,9 @@ namespace bt
 					continue;
 				
 				bool ok = false;
-				PotentialPeer pp;
-				pp.ip = sl[0];
-				pp.port = sl[1].toInt(&ok);
+				net::Address addr(sl[0], sl[1].toInt(&ok));
 				if (ok)
-					addPotentialPeer(pp);
+					addPotentialPeer(addr, false);
 			}
 		}
 		catch (bt::Error & err)
@@ -428,11 +384,8 @@ namespace bt
 		ServerInterface::removePeerManager(this);
 		d->connectors.clear();
 		
-		if (d->superseeder)
-		{
-			delete d->superseeder;
-			d->superseeder = 0;
-		}
+		delete d->superseeder;
+		d->superseeder = 0;
 		
 		closeAllConnections();
 	}
@@ -464,9 +417,10 @@ namespace bt
 	
 	void PeerManager::peerSourceReady(PeerSource* ps)
 	{
-		PotentialPeer pp;
-		while (ps->takePotentialPeer(pp))
-			addPotentialPeer(pp);
+		net::Address addr;
+		bool local = false;
+		while (ps->takePeer(addr, local))
+			addPotentialPeer(addr, local);
 	}
 	
 	
@@ -479,19 +433,8 @@ namespace bt
 		Out(SYS_CON|LOG_NOTICE) << "PEX: found " << (arr.size() / 6) << " peers"  << endl;
 		for (int i = 0;i+6 <= arr.size();i+=6)
 		{
-			Uint8 tmp[6];
-			memcpy(tmp,arr.data() + i,6);
-			PotentialPeer pp;
-			pp.port = ReadUint16(tmp,4);
-			Uint32 ip = ReadUint32(tmp,0);
-			pp.ip = QString("%1.%2.%3.%4")
-						.arg((ip & 0xFF000000) >> 24)
-						.arg((ip & 0x00FF0000) >> 16)
-						.arg((ip & 0x0000FF00) >> 8)
-						.arg( ip & 0x000000FF);
-			pp.local = false;
-			
-			addPotentialPeer(pp);
+			const Uint8* tmp = (const Uint8*)arr.data() + i;
+			addPotentialPeer(net::Address(ReadUint32(tmp,0), ReadUint16(tmp,4)), false);
 		}
 	}
 	
@@ -510,7 +453,7 @@ namespace bt
 			{
 				p->setPexEnabled(on);
 				bt::Uint16 port = ServerInterface::getPort();
-				p->sendExtProtHandshake(port,d->tor.getMetaData().size());
+				p->sendExtProtHandshake(port,d->tor.getMetaData().size(),d->partial_seed);
 			}
 		}
 		d->pex_on = on;
@@ -572,11 +515,7 @@ namespace bt
 		foreach(Peer* p,d->peer_list)
 		{
 			const net::Address & addr = p->getAddress();
-			PotentialPeer pp;
-			pp.ip = addr.ipAddress().toString();
-			pp.port = addr.port();
-			pp.local = false;
-			d->potential_peers.insert(std::make_pair(pp.ip,pp));
+			addPotentialPeer(addr, false);
 			p->kill();
 		}
 	}
@@ -586,7 +525,7 @@ namespace bt
 		Out(SYS_CON|LOG_DEBUG) << "Peer " << peer->getPeerID().toString() << " is allowed to download " << chunk << endl;
 		Peer* p = dynamic_cast<Peer*>(peer);
 		if (p)
-			p->getPacketWriter().sendHave(chunk);
+			p->sendHave(chunk);
 	}
 	
 	void PeerManager::sendHave(Uint32 index)
@@ -596,7 +535,7 @@ namespace bt
 		
 		foreach (Peer* peer, d->peer_list)
 		{
-			peer->getPacketWriter().sendHave(index);
+			peer->sendHave(index);
 		}
 	}
 	
@@ -653,12 +592,34 @@ namespace bt
 	{
 		return d->peer_list;
 	}
+	
+	void PeerManager::setPartialSeed(bool partial_seed)
+	{
+		if (d->partial_seed != partial_seed)
+		{
+			d->partial_seed = partial_seed;
+			
+			// If partial seeding status changes, update all peers
+			bt::Uint16 port = ServerInterface::getPort();
+			foreach (Peer* peer,d->peer_list)
+				peer->sendExtProtHandshake(port,d->tor.getMetaData().size(),d->partial_seed);
+		}
+	}
+	
+	bool PeerManager::isPartialSeed() const
+	{
+		return d->partial_seed;
+	}
 
 
 	//////////////////////////////////////////////////
 	
 	PeerManager::Private::Private(PeerManager* p, Torrent& tor)
-		: p(p),tor(tor),available_chunks(tor.getNumChunks()),wanted_chunks(tor.getNumChunks())
+		: p(p),
+		tor(tor),
+		available_chunks(tor.getNumChunks()),
+		wanted_chunks(tor.getNumChunks()),
+		partial_seed(false)
 	{
 		started = false;
 		wanted_chunks.setAll(true);
@@ -702,13 +663,8 @@ namespace bt
 			Peer* peer = *i;
 			if (!peer->isKilled() && peer->isStalled())
 			{
-				PotentialPeer pp;
-				pp.port = peer->getPort();
-				pp.local = peer->getStats().local;
-				pp.ip = peer->getIPAddresss();
+				p->addPotentialPeer(peer->getAddress(), peer->getStats().local);
 				peer->kill();
-				p->addPotentialPeer(pp);
-				Out(SYS_CON|LOG_NOTICE) << QString("Killed stalled peer %1").arg(pp.ip) << endl;
 			}
 			
 			if (peer->isKilled())
@@ -735,9 +691,9 @@ namespace bt
 			foreach (Peer* peer,peer_list)
 			{
 				if (peer->hasWantedChunks(wanted_chunks))
-					peer->getPacketWriter().sendInterested();
+					peer->sendInterested();
 				else
-					peer->getPacketWriter().sendNotInterested();
+					peer->sendNotInterested();
 				i++;
 			}
 			wanted_changed = false;
@@ -747,7 +703,7 @@ namespace bt
 	void PeerManager::Private::have(Peer* peer, Uint32 index)
 	{
 		if (wanted_chunks.get(index) && !paused)
-			peer->getPacketWriter().sendInterested();
+			peer->sendInterested();
 		available_chunks.set(index,true);
 		cnt->inc(index);
 		if (superseeder)
@@ -777,7 +733,7 @@ namespace bt
 		return false;
 	}
 	
-	void PeerManager::Private::createPeer(mse::StreamSocket::Ptr sock,const PeerID & peer_id,Uint32 support,bool local)
+	void PeerManager::Private::createPeer(mse::EncryptedPacketSocket::Ptr sock,const PeerID & peer_id,Uint32 support,bool local)
 	{
 		Peer* peer = new Peer(sock,peer_id,tor.getNumChunks(),tor.getChunkSize(),support,local,p);
 		peer_list.append(peer);
@@ -787,20 +743,20 @@ namespace bt
 		peer->setPexEnabled(pex_on);
 		// send extension protocol handshake
 		bt::Uint16 port = ServerInterface::getPort();
-		peer->sendExtProtHandshake(port,tor.getMetaData().size());
+		peer->sendExtProtHandshake(port,tor.getMetaData().size(),partial_seed);
 		
 		if (superseeder)
 			superseeder->peerAdded(peer);
 	}
 	
 	
-	bool PeerManager::Private::connectedTo(const QString & ip,Uint16 port) const
+	bool PeerManager::Private::connectedTo(const net::Address & addr) const
 	{
 		PtrMap<Uint32,Peer>::const_iterator i = peer_map.begin();
 		while (i != peer_map.end())
 		{
 			const Peer* peer = i->second;
-			if (peer->getPort() == port && peer->getStats().ip_address == ip)
+			if (peer->getAddress() == addr)
 				return true;
 			i++;
 		}
@@ -815,21 +771,20 @@ namespace bt
 		if (potential_peers.size() == 0)
 			return;
 		
-		if (peer_list.count() + connectors.size() >= max_connections && max_connections > 0)
+		if (peer_list.count() + connectors.size() >= (int)max_connections && max_connections > 0)
 			return;
 		
 		if (total_connections >= max_total_connections && max_total_connections > 0)
 			return;
 		
-		if (connectors.size() > MAX_SIMULTANIOUS_AUTHS)
+		if ((Uint32)connectors.size() > MAX_SIMULTANIOUS_AUTHS)
 			return;
 		
 		Uint32 num = 0;
 		if (max_connections > 0)
 		{
 			Uint32 available = max_connections - (peer_list.count() + connectors.size());
-			num = available >= potential_peers.size() ? 
-			potential_peers.size() : available;
+			num = qMin<Uint32>(available, potential_peers.size());
 		}
 		else
 		{
@@ -839,19 +794,18 @@ namespace bt
 		if (num + total_connections >= max_total_connections && max_total_connections > 0)
 			num = max_total_connections - total_connections;
 		
-		for (Uint32 i = 0;i < num;i++)
+		for (Uint32 i = 0;i < num && !potential_peers.empty();i++)
 		{
-			if (connectors.size() > MAX_SIMULTANIOUS_AUTHS)
+			if ((Uint32)connectors.size() > MAX_SIMULTANIOUS_AUTHS)
 				return;
 			
 			PPItr itr = potential_peers.begin();
 			
 			AccessManager & aman = AccessManager::instance();
 			
-			if (aman.allowed(itr->first) && !connectedTo(itr->first,itr->second.port))
+			if (aman.allowed(itr->first) && !connectedTo(itr->first))
 			{
-				const PotentialPeer & pp = itr->second;
-				PeerConnector::Ptr pcon(new PeerConnector(pp.ip,pp.port,pp.local,p));
+				PeerConnector::Ptr pcon(new PeerConnector(itr->first,itr->second,p));
 				pcon->setWeakPointer(PeerConnector::WPtr(pcon));
 				connectors.insert(pcon);
 				total_connections++;

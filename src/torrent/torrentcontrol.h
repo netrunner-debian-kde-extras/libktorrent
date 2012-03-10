@@ -157,7 +157,7 @@ namespace bt
 		virtual void setChunkSelector(ChunkSelectorInterface* csel);
 		virtual void networkUp();
 		virtual bool announceAllowed();
-		virtual Job* startDataCheck(bool auto_import);
+		virtual Job* startDataCheck(bool auto_import, bt::Uint32 from, bt::Uint32 to);
 		virtual bool hasMissingFiles(QStringList & sl);
 		virtual Uint32 getNumDHTNodes() const;
 		virtual const DHTNode & getDHTNode(Uint32 i) const;
@@ -249,18 +249,6 @@ namespace bt
 		 */
 		static void setMinimumDiskSpace(Uint32 m) {min_diskspace = m;}
 		
-		/**
-		 * Enable or disable automatic datachecking when to many corrupted chunks have been found on disk.
-		 * @param on 
-		 */
-		static void setAutoRecheck(bool on) {auto_recheck = on;}
-		
-		/**
-		 * Set the number of corrupted chunks for a before we start an automatic recheck.
-		 * @param m 
-		 */
-		static void setNumCorruptedForRecheck(Uint32 m) {num_corrupted_for_recheck = m;}
-		
 	protected:
 		/// Called when a data check is finished by DataCheckerJob
 		void afterDataCheck(DataCheckerJob* job,const BitSet & result);
@@ -281,6 +269,7 @@ namespace bt
 		void moveDataFilesWithMapFinished(KJob* j);
 		void downloaded(Uint32 chunk);
 		void moveToCompletedDir();
+		void emitFinished();
 		
 	private:	
 		void updateTracker(const QString & ev,bool last_succes = true);
@@ -364,8 +353,6 @@ namespace bt
 		
 		static bool completed_datacheck;
 		static Uint32 min_diskspace;
-		static bool auto_recheck;
-		static Uint32 num_corrupted_for_recheck;
 		
 		friend class DataCheckerJob;
 		friend class PreallocationJob;

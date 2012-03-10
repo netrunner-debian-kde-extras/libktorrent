@@ -29,14 +29,15 @@
 #include "dhtbase.h"
 #include "rpcmsg.h"
 
+
+namespace net
+{
+	class AddressResolver;
+}
+
 namespace bt
 {
 	class SHA1Hash;
-}
-
-namespace KNetwork
-{
-	class KResolverResults;
 }
 
 namespace dht
@@ -115,15 +116,16 @@ namespace dht
 		
 	private slots:
 		void update();
-		void onResolverResults(KNetwork::KResolverResults res);
+		void onResolverResults(net::AddressResolver* ar);
 		void ownNodeLookupFinished(Task* t);
+		void expireDatabaseItems();
 		
 	private:
 		Node* node;
 		RPCServer* srv;
 		Database* db;
 		TaskManager* tman;
-		bt::Timer expire_timer;
+		QTimer expire_timer;
 		QString table_file;
 		QTimer update_timer;
 		NodeLookup* our_node_lookup;
