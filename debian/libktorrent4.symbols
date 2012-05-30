@@ -1469,8 +1469,8 @@ libktorrent.so.4 libktorrent4 #MINVER#
  _ZN2bt9BDictNode7getListERK7QString@Base 1.2.0
  _ZN2bt9BDictNode8getInt64ERK7QString@Base 1.2.0
  _ZN2bt9BDictNode8getValueERK7QString@Base 1.2.0
- _ZN2bt9BDictNode9DictEntryD1Ev@Base 1.2.0
- _ZN2bt9BDictNode9DictEntryD2Ev@Base 1.2.0
+ (optional)_ZN2bt9BDictNode9DictEntryD1Ev@Base 1.2.0
+ (optional)_ZN2bt9BDictNode9DictEntryD2Ev@Base 1.2.0
  _ZN2bt9BDictNode9getStringERK7QStringP10QTextCodec@Base 1.2.0
  _ZN2bt9BDictNodeC1Ej@Base 1.2.0
  _ZN2bt9BDictNodeC2Ej@Base 1.2.0
@@ -1889,8 +1889,8 @@ libktorrent.so.4 libktorrent4 #MINVER#
  _ZN3utp9UTPSocketD0Ev@Base 1.2.0
  _ZN3utp9UTPSocketD1Ev@Base 1.2.0
  _ZN3utp9UTPSocketD2Ev@Base 1.2.0
- _ZN4KUrl4ListD1Ev@Base 1.2.0
- _ZN4KUrl4ListD2Ev@Base 1.2.0
+ (optional)_ZN4KUrl4ListD1Ev@Base 1.2.0
+ (optional)_ZN4KUrl4ListD2Ev@Base 1.2.0
  _ZNK2bt10Downloader10isFinishedEv@Base 1.2.0
  _ZNK2bt10Downloader10metaObjectEv@Base 1.2.0
  _ZNK2bt10Downloader11downloadingEj@Base 1.2.0
@@ -2340,7 +2340,7 @@ libktorrent.so.4 libktorrent4 #MINVER#
  _ZTIN3utp9UTPServerE@Base 1.2.0
  _ZTIN3utp9UTPSocketE@Base 1.2.0
  _ZTIN5boost9exceptionE@Base 1.2.0
- _ZTISt3setIN3dht12KBucketEntryESt4lessIS1_ESaIS1_EE@Base 1.2.0
+ (optional)_ZTISt3setIN3dht12KBucketEntryESt4lessIS1_ESaIS1_EE@Base 1.2.0
  _ZTSN2bt10BValueNodeE@Base 1.2.0
  _ZTSN2bt10BufferPoolE@Base 1.2.0
  _ZTSN2bt10DownloaderE@Base 1.2.0
@@ -2469,7 +2469,7 @@ libktorrent.so.4 libktorrent4 #MINVER#
  _ZTSN3utp9UTPServerE@Base 1.2.0
  _ZTSN3utp9UTPSocketE@Base 1.2.0
  _ZTSN5boost9exceptionE@Base 1.2.0
- _ZTSSt3setIN3dht12KBucketEntryESt4lessIS1_ESaIS1_EE@Base 1.2.0
+ (optional)_ZTSSt3setIN3dht12KBucketEntryESt4lessIS1_ESaIS1_EE@Base 1.2.0
  _ZTVN2bt10BValueNodeE@Base 1.2.0
  _ZTVN2bt10BufferPoolE@Base 1.2.0
  _ZTVN2bt10DownloaderE@Base 1.2.0
