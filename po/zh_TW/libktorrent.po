@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-07 18:22+0100\n"
+"POT-Creation-Date: 2012-03-12 11:09+0100\n"
 "PO-Revision-Date: 2012-01-16 10:31+0800\n"
 "Last-Translator: Franklin Weng <franklin@mail.everfocus.com.tw>\n"
 "Language-Team: Chinese Traditional <zh-l10n@linux.org.tw>\n"
@@ -180,10 +180,19 @@ msgstr[0] "%1 個端點"
 msgid "Disabled because webseed does not match torrent"
 msgstr "已關閉，因為網頁種子與 torrent 不符"
 
-#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
+#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
+#: src/download/httpconnection.cpp:44
 msgid "Not connected"
 msgstr "未連線"
+
+#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
+msgid "Connection closed"
+msgstr "連線已關閉"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr "未使用達 %1 秒（太多連線失敗）"
 
 #: src/download/httpconnection.cpp:115
 #, kde-format
@@ -198,10 +207,6 @@ msgstr "系統資源不足"
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr "解析主機名稱 %1 中"
-
-#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "連線已關閉"
 
 #: src/download/httpconnection.cpp:160
 #, kde-format
@@ -228,22 +233,17 @@ msgstr "連線到 webseed 失敗"
 msgid "Failed to resolve hostname of webseed"
 msgstr "解析 webseed 的主機名稱失敗"
 
-#: src/download/httpconnection.cpp:326
+#: src/download/httpconnection.cpp:325
 msgid "Error: failed to connect, server not responding"
 msgstr "錯誤：連線失敗，伺服器未回應"
 
-#: src/download/httpconnection.cpp:337
+#: src/download/httpconnection.cpp:336
 msgid "Error: request timed out"
 msgstr "錯誤：連線逾時"
 
-#: src/download/httpconnection.cpp:402
+#: src/download/httpconnection.cpp:401
 msgid "Redirected without a new location."
 msgstr "重新導線，但是沒有給新的位置。"
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr "未使用達 %1 秒（太多連線失敗）"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"

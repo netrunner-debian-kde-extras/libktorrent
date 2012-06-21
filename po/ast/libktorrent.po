@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-07 18:22+0100\n"
+"POT-Creation-Date: 2012-03-12 11:09+0100\n"
 "PO-Revision-Date: 2009-12-18 18:26+0100\n"
 "Last-Translator: astur <malditoastur@gmail.com>\n"
 "Language-Team: Asturian <alministradores@softastur.org>\n"
@@ -183,10 +183,19 @@ msgstr[1] "%1 collacios"
 msgid "Disabled because webseed does not match torrent"
 msgstr "Amuesa toles semilles web d'un torrent"
 
-#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
+#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
+#: src/download/httpconnection.cpp:44
 msgid "Not connected"
 msgstr "Non conectáu"
+
+#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
+msgid "Connection closed"
+msgstr "Zarróse la conexón"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr ""
 
 #: src/download/httpconnection.cpp:115
 #, kde-format
@@ -202,10 +211,6 @@ msgstr "Nun hai abondu espaciu disponible en discu."
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr "Resolviendo'l nome de máquina %1"
-
-#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "Zarróse la conexón"
 
 #: src/download/httpconnection.cpp:160
 #, kde-format
@@ -232,22 +237,17 @@ msgstr "Fallu al coneutase a la semiente web"
 msgid "Failed to resolve hostname of webseed"
 msgstr "Fallu al resolver el nome de máquina de la semiente web"
 
-#: src/download/httpconnection.cpp:326
+#: src/download/httpconnection.cpp:325
 msgid "Error: failed to connect, server not responding"
 msgstr "Fallu: fallu al coneutase, el sirvidor nun retruca"
 
-#: src/download/httpconnection.cpp:337
+#: src/download/httpconnection.cpp:336
 msgid "Error: request timed out"
 msgstr "Fallu: la petición superó'l tiempu llímite"
 
-#: src/download/httpconnection.cpp:402
+#: src/download/httpconnection.cpp:401
 msgid "Redirected without a new location."
 msgstr "Redirixíu ensin un nuevu allugamientu"
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"

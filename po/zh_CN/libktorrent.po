@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-07 18:22+0100\n"
+"POT-Creation-Date: 2012-03-12 11:09+0100\n"
 "PO-Revision-Date: 2011-11-13 11:57+0800\n"
 "Last-Translator: Ni Hui <shuizhuyuanluo@126.com>\n"
 "Language-Team: Chinese Simplified <kde-china@kde.org>\n"
@@ -180,10 +180,19 @@ msgstr[0] "%1 个对等点"
 msgid "Disabled because webseed does not match torrent"
 msgstr "因为网络种子不匹配种子文件而禁用"
 
-#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
+#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
+#: src/download/httpconnection.cpp:44
 msgid "Not connected"
 msgstr "未连接"
+
+#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
+msgid "Connection closed"
+msgstr "连接关闭"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr "不使用 %1 秒(连接失败次数太多)"
 
 #: src/download/httpconnection.cpp:115
 #, kde-format
@@ -199,10 +208,6 @@ msgstr "磁盘空间不够用。"
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr "正在解析主机名 %1"
-
-#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "连接关闭"
 
 #: src/download/httpconnection.cpp:160
 #, kde-format
@@ -229,22 +234,17 @@ msgstr "连接到网络种子失败"
 msgid "Failed to resolve hostname of webseed"
 msgstr "解析网络种子主机名失败"
 
-#: src/download/httpconnection.cpp:326
+#: src/download/httpconnection.cpp:325
 msgid "Error: failed to connect, server not responding"
 msgstr "错误：连接失败，服务器没有响应"
 
-#: src/download/httpconnection.cpp:337
+#: src/download/httpconnection.cpp:336
 msgid "Error: request timed out"
 msgstr "错误：请求超时"
 
-#: src/download/httpconnection.cpp:402
+#: src/download/httpconnection.cpp:401
 msgid "Redirected without a new location."
 msgstr "重定向没有新位置。"
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr "不使用 %1 秒(连接失败次数太多)"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"

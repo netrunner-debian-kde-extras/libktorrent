@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-07 18:22+0100\n"
+"POT-Creation-Date: 2012-03-12 11:09+0100\n"
 "PO-Revision-Date: 2009-11-10 11:27+0000\n"
 "Last-Translator: \n"
 "Language-Team:  <is@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: KBabel 1.11.4\n"
 
 #: src/bcodec/bdecoder.cpp:71
@@ -188,10 +188,20 @@ msgstr[1] "1 jafningi"
 msgid "Disabled because webseed does not match torrent"
 msgstr "allir af a"
 
-#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
+#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
+#: src/download/httpconnection.cpp:44
 msgid "Not connected"
 msgstr "Ótengd(ur)"
+
+#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
+#, fuzzy
+msgid "Connection closed"
+msgstr "Tengingu lokað"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr ""
 
 #: src/download/httpconnection.cpp:115
 #, fuzzy, kde-format
@@ -207,11 +217,6 @@ msgstr "er ekki."
 #, fuzzy, kde-format
 msgid "Resolving hostname %1"
 msgstr "Greini vélarheiti %1"
-
-#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
-#, fuzzy
-msgid "Connection closed"
-msgstr "Tengingu lokað"
 
 #: src/download/httpconnection.cpp:160
 #, fuzzy, kde-format
@@ -241,25 +246,20 @@ msgstr "Gat ekki tengst vefsáningu"
 msgid "Failed to resolve hostname of webseed"
 msgstr "Mistókst að greina vélarheiti vefsáningarinnar"
 
-#: src/download/httpconnection.cpp:326
+#: src/download/httpconnection.cpp:325
 #, fuzzy
 msgid "Error: failed to connect, server not responding"
 msgstr "Villa: tókst ekki að tengjast, þjónn svarar ekki"
 
-#: src/download/httpconnection.cpp:337
+#: src/download/httpconnection.cpp:336
 #, fuzzy
 msgid "Error: request timed out"
 msgstr "Villa: fyrirspurn rann út á tíma"
 
-#: src/download/httpconnection.cpp:402
+#: src/download/httpconnection.cpp:401
 #, fuzzy
 msgid "Redirected without a new location."
 msgstr "a nýtt."
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
 
 #: src/interfaces/trackerinterface.cpp:58
 #, fuzzy

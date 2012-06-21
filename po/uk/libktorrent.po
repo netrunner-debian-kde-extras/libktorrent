@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-07 18:22+0100\n"
+"POT-Creation-Date: 2012-03-12 11:09+0100\n"
 "PO-Revision-Date: 2012-01-24 11:52+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <translation@linux.org.ua>\n"
@@ -182,10 +182,21 @@ msgstr[3] "%1 вузол"
 msgid "Disabled because webseed does not match torrent"
 msgstr "Вимкнено через те, що вебапоширювач не відповідає торенту"
 
-#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
+#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
+#: src/download/httpconnection.cpp:44
 msgid "Not connected"
 msgstr "Не з’єднано"
+
+#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
+msgid "Connection closed"
+msgstr "З'єднання закрито"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr ""
+"Не використовується %1 секунд (занадто багато помилок під час спроби "
+"з’єднання)"
 
 #: src/download/httpconnection.cpp:115
 #, kde-format
@@ -200,10 +211,6 @@ msgstr "Недостатньо ресурсів системи"
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr "Обробка назви вузла %1"
-
-#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "З'єднання закрито"
 
 #: src/download/httpconnection.cpp:160
 #, kde-format
@@ -230,24 +237,17 @@ msgstr "Не вдалося з’єднатися з поширювачем"
 msgid "Failed to resolve hostname of webseed"
 msgstr "Не вдалося обробити назву вузла поширення"
 
-#: src/download/httpconnection.cpp:326
+#: src/download/httpconnection.cpp:325
 msgid "Error: failed to connect, server not responding"
 msgstr "Помилка: не вдалося з’єднатися, сервер не відповідає"
 
-#: src/download/httpconnection.cpp:337
+#: src/download/httpconnection.cpp:336
 msgid "Error: request timed out"
 msgstr "Помилка: час очікування результатів запиту збіг"
 
-#: src/download/httpconnection.cpp:402
+#: src/download/httpconnection.cpp:401
 msgid "Redirected without a new location."
 msgstr "Переспрямовано без зазначення нової адреси."
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
-"Не використовується %1 секунд (занадто багато помилок під час спроби "
-"з’єднання)"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"

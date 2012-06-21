@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KTorrent 3.1\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-07 18:22+0100\n"
+"POT-Creation-Date: 2012-03-12 11:09+0100\n"
 "PO-Revision-Date: 2012-02-14 16:13+0100\n"
 "Last-Translator: Kristóf Kiszel <ulysses@kubuntu.org>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -180,10 +180,19 @@ msgstr[1] "%1 partner"
 msgid "Disabled because webseed does not match torrent"
 msgstr "Letiltva, mert a webfeltöltés nem egyezik a torrenttel"
 
-#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
+#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
+#: src/download/httpconnection.cpp:44
 msgid "Not connected"
 msgstr "Nincs kapcsolat"
+
+#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
+msgid "Connection closed"
+msgstr "A kapcsolat bezárva"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr "Nincs használatban %1 másodperce (Túl sok kapcsolódási hiba)"
 
 #: src/download/httpconnection.cpp:115
 #, kde-format
@@ -198,10 +207,6 @@ msgstr "Nincs elég elérhető rendszer erőforrás"
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr "Gépnév feloldása: %1"
-
-#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "A kapcsolat bezárva"
 
 #: src/download/httpconnection.cpp:160
 #, kde-format
@@ -228,22 +233,17 @@ msgstr "Nem sikerült csatlakozni webes feltöltőhöz"
 msgid "Failed to resolve hostname of webseed"
 msgstr "Nem sikerült feloldani a webes feltöltő gépnevét"
 
-#: src/download/httpconnection.cpp:326
+#: src/download/httpconnection.cpp:325
 msgid "Error: failed to connect, server not responding"
 msgstr "Hiba történt, nem sikerült csatlakozni, a kiszolgáló nem válaszol"
 
-#: src/download/httpconnection.cpp:337
+#: src/download/httpconnection.cpp:336
 msgid "Error: request timed out"
 msgstr "Hiba történt, időtúllépés"
 
-#: src/download/httpconnection.cpp:402
+#: src/download/httpconnection.cpp:401
 msgid "Redirected without a new location."
 msgstr "Átirányítva új hely nélkül."
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr "Nincs használatban %1 másodperce (Túl sok kapcsolódási hiba)"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"

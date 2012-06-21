@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-07 18:22+0100\n"
+"POT-Creation-Date: 2012-03-12 11:09+0100\n"
 "PO-Revision-Date: 2011-06-08 07:00+0200\n"
 "Last-Translator: Dimitrios Glentadakis <dglent@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-doc@kde.org>\n"
@@ -187,10 +187,19 @@ msgstr[1] "%1 ομότιμοι κόμβοι"
 msgid "Disabled because webseed does not match torrent"
 msgstr "Απενεργοποιήθηκε γιατί η πηγή ιστού δεν ταιριάζει με το torrent"
 
-#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
+#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
+#: src/download/httpconnection.cpp:44
 msgid "Not connected"
 msgstr "Χωρίς σύνδεση"
+
+#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
+msgid "Connection closed"
+msgstr "Η σύνδεση έκλεισε"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr "Αχρησιμοποίητο για %1 δευτερόλεπτα (Πάρα πολλές αποτυχίες σύνδεσης)"
 
 #: src/download/httpconnection.cpp:115
 #, kde-format
@@ -206,10 +215,6 @@ msgstr "Δεν υπάρχει αρκετός διαθέσιμος χώρος σ�
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr "Επίλυση ονόματος υπολογιστή %1"
-
-#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "Η σύνδεση έκλεισε"
 
 #: src/download/httpconnection.cpp:160
 #, kde-format
@@ -236,22 +241,17 @@ msgstr "Αποτυχία σύνδεσης σε πηγή ιστού"
 msgid "Failed to resolve hostname of webseed"
 msgstr "Αποτυχία επίλυσης ονόματος υπολογιστή της πηγής ιστού"
 
-#: src/download/httpconnection.cpp:326
+#: src/download/httpconnection.cpp:325
 msgid "Error: failed to connect, server not responding"
 msgstr "Σφάλμα: αποτυχία σύνδεσης, ο εξυπηρετητής δεν ανταποκρίνεται"
 
-#: src/download/httpconnection.cpp:337
+#: src/download/httpconnection.cpp:336
 msgid "Error: request timed out"
 msgstr "Σφάλμα: λήξη χρονικού ορίου αίτησης"
 
-#: src/download/httpconnection.cpp:402
+#: src/download/httpconnection.cpp:401
 msgid "Redirected without a new location."
 msgstr "Ανακατεύθυνση χωρίς μια νέα τοποθεσία."
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr "Αχρησιμοποίητο για %1 δευτερόλεπτα (Πάρα πολλές αποτυχίες σύνδεσης)"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"

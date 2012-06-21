@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-07 18:22+0100\n"
+"POT-Creation-Date: 2012-03-12 11:09+0100\n"
 "PO-Revision-Date: 2012-02-03 18:30+0100\n"
 "Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -183,10 +183,19 @@ msgstr[1] "%1 parells"
 msgid "Disabled because webseed does not match torrent"
 msgstr "S'ha deshabilitat perquè el sembrador web no coincideix amb el torrent"
 
-#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
+#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
+#: src/download/httpconnection.cpp:44
 msgid "Not connected"
 msgstr "Sense connexió"
+
+#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
+msgid "Connection closed"
+msgstr "Connexió tancada"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr "No usat durant %1 segons (hi ha massa errors de connexió)"
 
 #: src/download/httpconnection.cpp:115
 #, kde-format
@@ -201,10 +210,6 @@ msgstr "No hi ha suficients recursos del sistema disponibles"
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr "Resolent el nom de màquina %1"
-
-#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "Connexió tancada"
 
 #: src/download/httpconnection.cpp:160
 #, kde-format
@@ -231,22 +236,17 @@ msgstr "Error en connectar al sembrador web"
 msgid "Failed to resolve hostname of webseed"
 msgstr "Error en la resolució del nom de màquina del sembrador web"
 
-#: src/download/httpconnection.cpp:326
+#: src/download/httpconnection.cpp:325
 msgid "Error: failed to connect, server not responding"
 msgstr "Error: la connexió ha fallat, el servidor no respon"
 
-#: src/download/httpconnection.cpp:337
+#: src/download/httpconnection.cpp:336
 msgid "Error: request timed out"
 msgstr "Error: s'ha esgotat el temps de sol·licitud"
 
-#: src/download/httpconnection.cpp:402
+#: src/download/httpconnection.cpp:401
 msgid "Redirected without a new location."
 msgstr "S'ha redireccionat sense cap ubicació nova."
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr "No usat durant %1 segons (hi ha massa errors de connexió)"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"

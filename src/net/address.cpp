@@ -19,7 +19,7 @@
  ***************************************************************************/
 
 #include "address.h"
-#include <arpa/inet.h>
+#include <sys/socket.h>
 #include <util/log.h>
 
 using namespace bt;
@@ -176,6 +176,18 @@ namespace net
 				return false;
 			
 		return addr[10] == 0xff && addr[11] == 0xff;
+	}
+	
+	Address Address::convertIPv4Mapped() const
+	{
+		if (isIPv4Mapped())
+		{
+			Q_IPV6ADDR ipv6 = toIPv6Address();
+			quint32 ip = ipv6[12] << 24 | ipv6[13] << 16 | ipv6[14] << 8 | ipv6[15];
+			return net::Address(ip, port());
+		}
+		
+		return net::Address(*this);
 	}
 
 
