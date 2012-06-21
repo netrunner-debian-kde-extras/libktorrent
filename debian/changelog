@@ -1,6 +1,7 @@
 libktorrent (1.2.1-1) UNRELEASED; urgency=low
 
   * New upstream release.
+  * Confirm symbol file on all arches.
 
  -- Modestas Vainius <modax@debian.org>  Thu, 21 Jun 2012 21:40:13 +0300
 
