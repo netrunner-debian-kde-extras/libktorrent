@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-07 18:22+0100\n"
-"PO-Revision-Date: 2012-01-10 09:53+0100\n"
+"POT-Creation-Date: 2012-03-12 11:09+0100\n"
+"PO-Revision-Date: 2012-03-08 07:47+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
 "Language: nl\n"
@@ -183,10 +183,19 @@ msgstr[1] "%1 peers"
 msgid "Disabled because webseed does not match torrent"
 msgstr "Uitgeschakeld omdat de webseed niet overeenkomt met de torrent"
 
-#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
+#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
+#: src/download/httpconnection.cpp:44
 msgid "Not connected"
 msgstr "Niet verbonden"
+
+#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
+msgid "Connection closed"
+msgstr "Verbinding gesloten"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr "Ongebruikt voor %1 seconden (Te veel mislukkingen bij een verbinding)"
 
 #: src/download/httpconnection.cpp:115
 #, kde-format
@@ -202,14 +211,10 @@ msgstr "Er zijn niet genoeg hulpbronnen beschikbaar"
 msgid "Resolving hostname %1"
 msgstr "Hostnaam herleiden %1"
 
-#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "Verbinding gesloten"
-
 #: src/download/httpconnection.cpp:160
 #, kde-format
 msgid "Error: request failed: %1"
-msgstr "Fout: verzoek gefaald: %1"
+msgstr "Fout: verzoek is mislukt: %1"
 
 #: src/download/httpconnection.cpp:188 src/download/httpconnection.cpp:222
 msgid "Connected"
@@ -231,22 +236,17 @@ msgstr "Kon niet verbinden naar webseed"
 msgid "Failed to resolve hostname of webseed"
 msgstr "Kon de hostnaam van de webseed niet herleiden"
 
-#: src/download/httpconnection.cpp:326
+#: src/download/httpconnection.cpp:325
 msgid "Error: failed to connect, server not responding"
 msgstr "Fout: kon niet verbinden, server reageerde niet"
 
-#: src/download/httpconnection.cpp:337
+#: src/download/httpconnection.cpp:336
 msgid "Error: request timed out"
 msgstr "Fout: time-out op verzoek"
 
-#: src/download/httpconnection.cpp:402
+#: src/download/httpconnection.cpp:401
 msgid "Redirected without a new location."
 msgstr "Doorgestuurd zonder een nieuwe locatie."
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr "Ongebruikt voor %1 seconden (Te veel mislukkingen bij een verbinding)"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"

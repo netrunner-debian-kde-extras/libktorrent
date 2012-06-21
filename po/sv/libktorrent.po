@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-07 18:22+0100\n"
+"POT-Creation-Date: 2012-03-12 11:09+0100\n"
 "PO-Revision-Date: 2012-01-11 19:20+0100\n"
 "Last-Translator: Stefan Asserhall <stefan.asserhall@comhem.se>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -178,10 +178,19 @@ msgstr[1] "%1 deltagare"
 msgid "Disabled because webseed does not match torrent"
 msgstr "Inaktiverad eftersom webberbjudande inte stämmer med dataflöde"
 
-#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
+#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
+#: src/download/httpconnection.cpp:44
 msgid "Not connected"
 msgstr "Inte ansluten"
+
+#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
+msgid "Connection closed"
+msgstr "Anslutning stängd"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr "Oanvänd under %1 sekunder (för många anslutningsfel)"
 
 #: src/download/httpconnection.cpp:115
 #, kde-format
@@ -196,10 +205,6 @@ msgstr "Tillräckliga systemresurser ej tillgängliga"
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr "Upplösning av värddatornamn %1"
-
-#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "Anslutning stängd"
 
 #: src/download/httpconnection.cpp:160
 #, kde-format
@@ -226,22 +231,17 @@ msgstr "Misslyckades ansluta till webberbjudande"
 msgid "Failed to resolve hostname of webseed"
 msgstr "Misslyckades vid upplösning av webberbjudandets värddatornamn"
 
-#: src/download/httpconnection.cpp:326
+#: src/download/httpconnection.cpp:325
 msgid "Error: failed to connect, server not responding"
 msgstr "Fel: Misslyckades ansluta, servern svarar inte"
 
-#: src/download/httpconnection.cpp:337
+#: src/download/httpconnection.cpp:336
 msgid "Error: request timed out"
 msgstr "Fel: Tidsgräns för begäran gick ut"
 
-#: src/download/httpconnection.cpp:402
+#: src/download/httpconnection.cpp:401
 msgid "Redirected without a new location."
 msgstr "Omdirigerad utan en ny plats."
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr "Oanvänd under %1 sekunder (för många anslutningsfel)"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"

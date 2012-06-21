@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-07 18:22+0100\n"
+"POT-Creation-Date: 2012-03-12 11:09+0100\n"
 "PO-Revision-Date: 2012-01-15 08:44+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -183,10 +183,19 @@ msgstr[2] "%1 partnerów"
 msgid "Disabled because webseed does not match torrent"
 msgstr "Wyłączony, ponieważ rozsiewacz sieciowy nie pasuje do torrenta"
 
-#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
+#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
+#: src/download/httpconnection.cpp:44
 msgid "Not connected"
 msgstr "Nie połączony"
+
+#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
+msgid "Connection closed"
+msgstr "Połączenie zostało zakończone"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr "Nieużywane przez %1 sekund (Zbyt wiele nieudanych połączeń)"
 
 #: src/download/httpconnection.cpp:115
 #, kde-format
@@ -201,10 +210,6 @@ msgstr "Za mało zasobów systemowych"
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr "Określanie nazwy komputera %1"
-
-#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "Połączenie zostało zakończone"
 
 #: src/download/httpconnection.cpp:160
 #, kde-format
@@ -231,22 +236,17 @@ msgstr "Połączenie z serwerem rozsiewającym nie powiodło się"
 msgid "Failed to resolve hostname of webseed"
 msgstr "Przetwarzanie nazwy serwera rozsiewającego nie powiodło się"
 
-#: src/download/httpconnection.cpp:326
+#: src/download/httpconnection.cpp:325
 msgid "Error: failed to connect, server not responding"
 msgstr "Błąd: nie nawiązano połączenia, serwer nie odpowiada"
 
-#: src/download/httpconnection.cpp:337
+#: src/download/httpconnection.cpp:336
 msgid "Error: request timed out"
 msgstr "Błąd: czas żądania został przekroczony"
 
-#: src/download/httpconnection.cpp:402
+#: src/download/httpconnection.cpp:401
 msgid "Redirected without a new location."
 msgstr "Przekierowanie bez nowej lokalizacji."
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr "Nieużywane przez %1 sekund (Zbyt wiele nieudanych połączeń)"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"

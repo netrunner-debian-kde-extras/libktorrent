@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-07 18:22+0100\n"
+"POT-Creation-Date: 2012-03-12 11:09+0100\n"
 "PO-Revision-Date: 2012-01-12 14:27+0700\n"
 "Last-Translator: Sok Sophea <sophea@khmeros.info>\n"
 "Language-Team: Khmer <>\n"
@@ -179,10 +179,19 @@ msgstr[0] "ម៉ាស៊ីន​ដូចគ្នា %1"
 msgid "Disabled because webseed does not match torrent"
 msgstr "បាន​បិទ​ពីព្រោះ​បណ្ដុះ​បណ្ដាញ​មិន​ផ្គូផ្គង​ torrent ឡើយ​"
 
-#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
+#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
+#: src/download/httpconnection.cpp:44
 msgid "Not connected"
 msgstr "មិនបាន​តភ្ជាប់"
+
+#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
+msgid "Connection closed"
+msgstr "បាន​បិទ​ការ​តភ្ជាប់"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr "មិន​បាន​ប្រើ​វិនាទី​ %1 (បរាជ័យ​ការ​តភ្ជាប់​ជា​ច្រើន​)"
 
 #: src/download/httpconnection.cpp:115
 #, kde-format
@@ -197,10 +206,6 @@ msgstr "មិន​មាន​ធនធាន​ប្រព័ន្ធ​គ
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr "ដោះស្រាយ​ឈ្មោះ​ម៉ាស៊ីន %1"
-
-#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "បាន​បិទ​ការ​តភ្ជាប់"
 
 #: src/download/httpconnection.cpp:160
 #, kde-format
@@ -227,22 +232,17 @@ msgstr "បរាជ័យ​ក្នុងការ​តភ្ជាប់​
 msgid "Failed to resolve hostname of webseed"
 msgstr "បរាជ័យ​ក្នុងការ​ដោះស្រាយ​ឈ្មោះ​ម៉ាស៊ីន​របស់ webseed"
 
-#: src/download/httpconnection.cpp:326
+#: src/download/httpconnection.cpp:325
 msgid "Error: failed to connect, server not responding"
 msgstr "កំហុស ៖ បរាជ័យ​ក្នុងការ​តភ្ជាប់ ម៉ាស៊ីន​បម្រើ​មិន​ឆ្លើយតប"
 
-#: src/download/httpconnection.cpp:337
+#: src/download/httpconnection.cpp:336
 msgid "Error: request timed out"
 msgstr "កំហុស ៖ សំណើ​អស់​ពេល"
 
-#: src/download/httpconnection.cpp:402
+#: src/download/httpconnection.cpp:401
 msgid "Redirected without a new location."
 msgstr "បាន​បញ្ជូន​បន្ត​ដោយ​គ្មាន​ទីតាំង​ថ្មី !"
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr "មិន​បាន​ប្រើ​វិនាទី​ %1 (បរាជ័យ​ការ​តភ្ជាប់​ជា​ច្រើន​)"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"

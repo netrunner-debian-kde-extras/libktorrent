@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent(2)\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-07 18:22+0100\n"
+"POT-Creation-Date: 2012-03-12 11:09+0100\n"
 "PO-Revision-Date: 2009-07-20 16:52+0300\n"
 "Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -187,10 +187,19 @@ msgstr[2] "%1 de parteneri"
 msgid "Disabled because webseed does not match torrent"
 msgstr "Afișează toate semințele web ale unui torent"
 
-#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
+#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
+#: src/download/httpconnection.cpp:44
 msgid "Not connected"
 msgstr "Neconectat"
+
+#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
+msgid "Connection closed"
+msgstr "Conexiune închisă"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr ""
 
 #: src/download/httpconnection.cpp:115
 #, kde-format
@@ -206,10 +215,6 @@ msgstr "Nu există destul spațiu pe disc la dispoziție."
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr "Se rezolvă numele calculatorului %1"
-
-#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "Conexiune închisă"
 
 #: src/download/httpconnection.cpp:160
 #, kde-format
@@ -236,23 +241,18 @@ msgstr "Conectarea la sămînța web a eșuat"
 msgid "Failed to resolve hostname of webseed"
 msgstr "Rezolvarea numelui pentru computerul seminței web a eșuat"
 
-#: src/download/httpconnection.cpp:326
+#: src/download/httpconnection.cpp:325
 msgid "Error: failed to connect, server not responding"
 msgstr "Eroare: a eșuat conectarea, serverul nu răspunde"
 
-#: src/download/httpconnection.cpp:337
+#: src/download/httpconnection.cpp:336
 msgid "Error: request timed out"
 msgstr "Eroare: cererea a expirat"
 
-#: src/download/httpconnection.cpp:402
+#: src/download/httpconnection.cpp:401
 #, fuzzy
 msgid "Redirected without a new location."
 msgstr "Redirectare fără o locație nouă ! "
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"

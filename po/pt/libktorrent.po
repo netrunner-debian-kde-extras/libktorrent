@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-07 18:22+0100\n"
+"POT-Creation-Date: 2012-03-12 11:09+0100\n"
 "PO-Revision-Date: 2010-05-04 12:08+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -177,10 +177,20 @@ msgstr[1] "%1 máquinas"
 msgid "Disabled because webseed does not match torrent"
 msgstr "Desactivado porque a fonte Web não corresponde à torrente"
 
-#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
+#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
+#: src/download/httpconnection.cpp:44
 msgid "Not connected"
 msgstr "Não ligado"
+
+#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
+msgid "Connection closed"
+msgstr "A ligação foi fechada"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr ""
+"Não usado por %1 segundos (demasiadas tentativas de ligação sem sucesso)"
 
 #: src/download/httpconnection.cpp:115
 #, kde-format
@@ -195,10 +205,6 @@ msgstr "Não estão disponíveis recursos suficientes do sistema"
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr "A resolver o nome da máquina %1"
-
-#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "A ligação foi fechada"
 
 #: src/download/httpconnection.cpp:160
 #, kde-format
@@ -225,23 +231,17 @@ msgstr "Não foi possível ligar à fonte Web"
 msgid "Failed to resolve hostname of webseed"
 msgstr "Não foi possível resolver o nome da máquina da fonte Web"
 
-#: src/download/httpconnection.cpp:326
+#: src/download/httpconnection.cpp:325
 msgid "Error: failed to connect, server not responding"
 msgstr "Erro: não foi possível a ligação; o servidor não está a responder"
 
-#: src/download/httpconnection.cpp:337
+#: src/download/httpconnection.cpp:336
 msgid "Error: request timed out"
 msgstr "Erro: o pedido expirou o tempo-limite"
 
-#: src/download/httpconnection.cpp:402
+#: src/download/httpconnection.cpp:401
 msgid "Redirected without a new location."
 msgstr "Foi redireccionado sem ser definido o novo local."
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
-"Não usado por %1 segundos (demasiadas tentativas de ligação sem sucesso)"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"

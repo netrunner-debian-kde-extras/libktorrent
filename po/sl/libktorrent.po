@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-07 18:22+0100\n"
+"POT-Creation-Date: 2012-03-12 11:09+0100\n"
 "PO-Revision-Date: 2010-05-06 21:26+0200\n"
 "Last-Translator: Jure Repinc <jlp@holodeck1.com>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -186,10 +186,19 @@ msgstr[3] "%1 vrstniki"
 msgid "Disabled because webseed does not match torrent"
 msgstr "Prikazuje vsa spletna semena za torrent"
 
-#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
+#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
+#: src/download/httpconnection.cpp:44
 msgid "Not connected"
 msgstr "Brez povezave"
+
+#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
+msgid "Connection closed"
+msgstr "Povezava prekinjena"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr ""
 
 #: src/download/httpconnection.cpp:115
 #, kde-format
@@ -205,10 +214,6 @@ msgstr "Na voljo ni dovolj prostora na na disku."
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr "Razreševanje gostitelja %1"
-
-#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "Povezava prekinjena"
 
 #: src/download/httpconnection.cpp:160
 #, kde-format
@@ -235,22 +240,17 @@ msgstr "Povezava s spletnim semenom ni uspela"
 msgid "Failed to resolve hostname of webseed"
 msgstr "Razreševanje imena gostitelja spletnega semena ni uspelo"
 
-#: src/download/httpconnection.cpp:326
+#: src/download/httpconnection.cpp:325
 msgid "Error: failed to connect, server not responding"
 msgstr "Napaka: napaka pri povezovanju, strežnik se ne odziva"
 
-#: src/download/httpconnection.cpp:337
+#: src/download/httpconnection.cpp:336
 msgid "Error: request timed out"
 msgstr "Napaka: čas za zahtevek je potekel"
 
-#: src/download/httpconnection.cpp:402
+#: src/download/httpconnection.cpp:401
 msgid "Redirected without a new location."
 msgstr "Preusmerjen brez nove lokacije."
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"

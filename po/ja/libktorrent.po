@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-07 18:22+0100\n"
+"POT-Creation-Date: 2012-03-12 11:09+0100\n"
 "PO-Revision-Date: 2009-10-31 23:24+0900\n"
 "Last-Translator: Yukiko Bando <ybando@k6.dion.ne.jp>\n"
 "Language-Team: Japanese <Kdeveloper@kde.gr.jp>\n"
@@ -181,10 +181,19 @@ msgstr[1] "%1 ピア"
 msgid "Disabled because webseed does not match torrent"
 msgstr ""
 
-#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:51
-#: src/download/webseed.cpp:98
+#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
+#: src/download/httpconnection.cpp:44
 msgid "Not connected"
 msgstr "接続していません"
+
+#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
+msgid "Connection closed"
+msgstr "接続が閉じられました"
+
+#: src/download/webseed.cpp:545
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr ""
 
 #: src/download/httpconnection.cpp:115
 #, kde-format
@@ -199,10 +208,6 @@ msgstr ""
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr "ホスト名 %1 を解決"
-
-#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:336
-msgid "Connection closed"
-msgstr "接続が閉じられました"
 
 #: src/download/httpconnection.cpp:160
 #, kde-format
@@ -229,22 +234,17 @@ msgstr "ウェブシードに接続できませんでした"
 msgid "Failed to resolve hostname of webseed"
 msgstr "ウェブシードのホスト名を解決できませんでした"
 
-#: src/download/httpconnection.cpp:326
+#: src/download/httpconnection.cpp:325
 msgid "Error: failed to connect, server not responding"
 msgstr "エラー: 接続できませんでした、サーバが応答しません"
 
-#: src/download/httpconnection.cpp:337
+#: src/download/httpconnection.cpp:336
 msgid "Error: request timed out"
 msgstr "エラー: 要求がタイムアウトしました"
 
-#: src/download/httpconnection.cpp:402
+#: src/download/httpconnection.cpp:401
 msgid "Redirected without a new location."
 msgstr "新しい場所なしでリダイレクトされました。"
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
