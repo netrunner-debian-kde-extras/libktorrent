@@ -2091,6 +2091,7 @@ libktorrent.so.4 libktorrent4 #MINVER#
  _ZNK3net6Socket5readyEPKNS_4PollENS1_4ModeE@Base 1.2.0
  _ZNK3net7Address12isIPv4MappedEv@Base 1.2.0
  _ZNK3net7Address15toSocketAddressEP16sockaddr_storageRi@Base 1.2.0
+ _ZNK3net7Address17convertIPv4MappedEv@Base 1.2.1
  _ZNK3net7AddresseqERKS0_@Base 1.2.0
  _ZNK3net7AddressltERKS0_@Base 1.2.0
  _ZNK3utp10Connection10metaObjectEv@Base 1.2.0
