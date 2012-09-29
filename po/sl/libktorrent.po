@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-12 11:09+0100\n"
+"POT-Creation-Date: 2012-08-14 19:52+0200\n"
 "PO-Revision-Date: 2010-05-06 21:26+0200\n"
 "Last-Translator: Jure Repinc <jlp@holodeck1.com>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -17,6 +17,35 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "X-Generator: Lokalize 1.0\n"
+
+#: examples/ktcli/main.cpp:60
+#, fuzzy
+msgid "Torrent to open"
+msgstr "Dokument za odprtje"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+#, fuzzy
+msgid "Port to use"
+msgstr "Ni v uporabi"
+
+#: examples/ktcli/main.cpp:63
+#, fuzzy
+msgid "Whether or not to enable encryption"
+msgstr "Ali naj bo omogočen vrstni red prejemanja po meri."
+
+#: examples/ktcli/main.cpp:64
+#, fuzzy
+msgid "Whether or not to enable peer exchange"
+msgstr "Ali naj se uporabi izmenjava vrstnikov, združljiva z µTorrent."
+
+#: examples/ktcli/main.cpp:65
+#, fuzzy
+msgid "Whether or not to use utp"
+msgstr "Ali naj ikona v sistemski vrstici prikazuje pojavna obvestila."
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr ""
 
 #: src/bcodec/bdecoder.cpp:71
 #, kde-format
@@ -54,41 +83,18 @@ msgid "Checking Data"
 msgstr "Preverjanje podatkov"
 
 #: src/datachecker/multidatachecker.cpp:209
-#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
-#: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
+#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:706
+#: src/diskio/multifilecache.cpp:745 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
 #, kde-format
 msgid "Cannot open file %1: %2"
 msgstr "Ni moč odpreti datoteke %1: %2"
 
-#: src/diskio/dndfile.cpp:89
-#, fuzzy, kde-format
-msgid "Cannot create file %1: %2"
-msgstr "Ni moč ustvariti datoteke %1: %2"
-
-#: src/diskio/dndfile.cpp:137
-#, fuzzy, kde-format
-msgid "Failed to write first chunk to DND file: %1"
-msgstr "Zapis prvega delčka v datoteko DND ni uspel: %1"
-
-#: src/diskio/dndfile.cpp:155
-#, fuzzy, kde-format
-msgid "Failed to write last chunk to DND file: %1"
-msgstr "Zapis zadnjega delčka v datoteko DND ni uspel: %1"
-
-#: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
-#, fuzzy, kde-format
-msgid "Failed to open %1: %2"
-msgstr "Ni moč odpreti %1: %2"
-
-#: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
+#: src/diskio/cache.cpp:170 src/diskio/multifilecache.cpp:118
+#: src/diskio/singlefilecache.cpp:85
 #, fuzzy, kde-format
 msgid "Failed to create %1: %2"
 msgstr "Ni moč ustvariti %1: %2"
-
-#: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
-msgid "Unable to write to a piece mapped read only"
-msgstr ""
 
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
 #: src/util/fileops.cpp:399
@@ -145,10 +151,25 @@ msgstr "Ni bilo moč pisati v datoteko %1 : %2"
 msgid "Cannot preallocate diskspace: %1"
 msgstr "Ni moč v naprej dodeliti prostora na disku: %1"
 
-#: src/diskio/chunkmanager.cpp:928 src/diskio/chunkmanager.cpp:954
+#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
 #, fuzzy, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr "Ni moč odpreti indeksne datoteke %1: %2"
+
+#: src/diskio/dndfile.cpp:89
+#, fuzzy, kde-format
+msgid "Cannot create file %1: %2"
+msgstr "Ni moč ustvariti datoteke %1: %2"
+
+#: src/diskio/dndfile.cpp:137
+#, fuzzy, kde-format
+msgid "Failed to write first chunk to DND file: %1"
+msgstr "Zapis prvega delčka v datoteko DND ni uspel: %1"
+
+#: src/diskio/dndfile.cpp:155
+#, fuzzy, kde-format
+msgid "Failed to write last chunk to DND file: %1"
+msgstr "Zapis zadnjega delčka v datoteko DND ni uspel: %1"
 
 #: src/diskio/movedatafilesjob.cpp:140
 msgid "Waiting for other move jobs to finish"
@@ -172,6 +193,15 @@ msgctxt "@title job"
 msgid "Moving"
 msgstr "Drseče povprečje"
 
+#: src/diskio/multifilecache.cpp:91 src/diskio/singlefilecache.cpp:74
+#, fuzzy, kde-format
+msgid "Failed to open %1: %2"
+msgstr "Ni moč odpreti %1: %2"
+
+#: src/diskio/piecedata.cpp:69 src/diskio/piecedata.cpp:108
+msgid "Unable to write to a piece mapped read only"
+msgstr ""
+
 #: src/download/chunkdownload.cpp:383
 #, kde-format
 msgid "1 peer"
@@ -186,19 +216,10 @@ msgstr[3] "%1 vrstniki"
 msgid "Disabled because webseed does not match torrent"
 msgstr "Prikazuje vsa spletna semena za torrent"
 
-#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
-#: src/download/httpconnection.cpp:44
+#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:52
+#: src/download/webseed.cpp:99
 msgid "Not connected"
 msgstr "Brez povezave"
-
-#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
-msgid "Connection closed"
-msgstr "Povezava prekinjena"
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
 
 #: src/download/httpconnection.cpp:115
 #, kde-format
@@ -214,6 +235,10 @@ msgstr "Na voljo ni dovolj prostora na na disku."
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr "Razreševanje gostitelja %1"
+
+#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:348
+msgid "Connection closed"
+msgstr "Povezava prekinjena"
 
 #: src/download/httpconnection.cpp:160
 #, kde-format
@@ -252,6 +277,11 @@ msgstr "Napaka: čas za zahtevek je potekel"
 msgid "Redirected without a new location."
 msgstr "Preusmerjen brez nove lokacije."
 
+#: src/download/webseed.cpp:558
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr ""
+
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr "V redu"
@@ -279,11 +309,6 @@ msgstr "Mapa %1 ne obstaja"
 msgid "Unknown client"
 msgstr "Neznan odjemalec"
 
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "Ni moč ustvariti indeksne datoteke: %1"
-
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
@@ -296,11 +321,11 @@ msgstr "Poškodovan torrent."
 msgid "Unable to open torrent file %1: %2"
 msgstr " Ni moč odpreti torrenta %1: %2"
 
-#: src/torrent/torrentcontrol.cpp:308
+#: src/torrent/torrentcontrol.cpp:302
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:554
+#: src/torrent/torrentcontrol.cpp:548
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -309,17 +334,17 @@ msgstr ""
 "Prišlo je do napake pri nalaganju torrenta <b>%1</b>:<br/><b>%2</b><br/"
 ">Torrent je verjetno poškodovan, ali pa to ni veljavna datoteka torrent."
 
-#: src/torrent/torrentcontrol.cpp:584
+#: src/torrent/torrentcontrol.cpp:578
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:595
+#: src/torrent/torrentcontrol.cpp:589
 #, fuzzy, kde-format
 msgid "Unable to create %1: %2"
 msgstr "Ni bilo moč ustvariti %1 : %2"
 
-#: src/torrent/torrentcontrol.cpp:610
+#: src/torrent/torrentcontrol.cpp:604
 #, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
@@ -328,10 +353,15 @@ msgstr ""
 "Torrent <b>%1</b> že prejemate. Seznama sledilnikov iz obeh torrentov sta "
 "bila združena."
 
-#: src/torrent/torrentcontrol.cpp:615
+#: src/torrent/torrentcontrol.cpp:609
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Torrent <b>%1</b> že prejemate."
+
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "Ni moč ustvariti indeksne datoteke: %1"
 
 #: src/torrent/torrentstats.cpp:73
 msgid "Not started"
@@ -415,29 +445,38 @@ msgstr "Čas za povezavo s sledilnikom %1 je potekel"
 msgid "Unable to resolve hostname %1"
 msgstr "Ni moč razrešiti imena gostitelja %1"
 
-#: src/util/logsystemmanager.cpp:33
-msgid "General"
-msgstr "Splošno"
+#: src/upnp/httprequest.cpp:96
+#, fuzzy
+msgid "Connection closed unexpectedly"
+msgstr "Povezava je bila nepričakovano prekinjena."
 
-#: src/util/logsystemmanager.cpp:34
-msgid "Connections"
-msgstr "Povezave"
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr ""
 
-#: src/util/logsystemmanager.cpp:35
-msgid "Tracker"
-msgstr "Sledilnik"
+#: src/upnp/upnprouter.cpp:167
+#, fuzzy, kde-format
+msgid "Failed to download %1: %2"
+msgstr "Ni bilo moč prenesti %1: %2"
 
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr "DHT"
+#: src/upnp/upnprouter.cpp:178
+#, fuzzy
+msgid "Error parsing router description."
+msgstr "Napaka razčlenjevanja opisa usmerjevalnika."
 
-#: src/util/logsystemmanager.cpp:37
-msgid "Disk Input/Output"
-msgstr "Pisanje/branje z diska"
+#: src/upnp/upnprouter.cpp:216
+#, fuzzy
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+"Posredovanje je spodletelo:\n"
+"Naprava nima WANIPConnection ali WANPPPConnection."
 
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
-msgstr "µTP"
+#: src/upnp/upnprouter.cpp:314
+#, fuzzy
+msgid "Cannot find port forwarding service in the device's description."
+msgstr "V opisu naprave ni moč najti storitve posredovanja vrat."
 
 #: src/util/file.cpp:84
 #, fuzzy, kde-format
@@ -448,16 +487,6 @@ msgstr "Ni moč pisati v %1: %2"
 #, kde-format
 msgid "Cannot read from %1"
 msgstr "Ni moč brati iz %1"
-
-#: src/util/signalcatcher.cpp:78
-#, fuzzy
-msgid "Error when writing to disk"
-msgstr "Napaka pri branju iz %1"
-
-#: src/util/signalcatcher.cpp:78
-#, fuzzy
-msgid "Error when reading from disk"
-msgstr "Napaka pri branju iz %1"
 
 #: src/util/fileops.cpp:94
 #, kde-format
@@ -524,67 +553,39 @@ msgstr[1] "%1 dan "
 msgstr[2] "%1 dneva "
 msgstr[3] "%1 dni "
 
-#: src/upnp/httprequest.cpp:96
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "Splošno"
+
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
+msgstr "Povezave"
+
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "Sledilnik"
+
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
+
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
+msgstr "Pisanje/branje z diska"
+
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr "µTP"
+
+#: src/util/signalcatcher.cpp:80
 #, fuzzy
-msgid "Connection closed unexpectedly"
-msgstr "Povezava je bila nepričakovano prekinjena."
+msgid "Error when writing to disk"
+msgstr "Napaka pri branju iz %1"
 
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
-msgstr ""
-
-#: src/upnp/upnprouter.cpp:167
-#, fuzzy, kde-format
-msgid "Failed to download %1: %2"
-msgstr "Ni bilo moč prenesti %1: %2"
-
-#: src/upnp/upnprouter.cpp:178
+#: src/util/signalcatcher.cpp:80
 #, fuzzy
-msgid "Error parsing router description."
-msgstr "Napaka razčlenjevanja opisa usmerjevalnika."
-
-#: src/upnp/upnprouter.cpp:216
-#, fuzzy
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
-"Posredovanje je spodletelo:\n"
-"Naprava nima WANIPConnection ali WANPPPConnection."
-
-#: src/upnp/upnprouter.cpp:314
-#, fuzzy
-msgid "Cannot find port forwarding service in the device's description."
-msgstr "V opisu naprave ni moč najti storitve posredovanja vrat."
-
-#: examples/ktcli/main.cpp:60
-#, fuzzy
-msgid "Torrent to open"
-msgstr "Dokument za odprtje"
-
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-#, fuzzy
-msgid "Port to use"
-msgstr "Ni v uporabi"
-
-#: examples/ktcli/main.cpp:63
-#, fuzzy
-msgid "Whether or not to enable encryption"
-msgstr "Ali naj bo omogočen vrstni red prejemanja po meri."
-
-#: examples/ktcli/main.cpp:64
-#, fuzzy
-msgid "Whether or not to enable peer exchange"
-msgstr "Ali naj se uporabi izmenjava vrstnikov, združljiva z µTorrent."
-
-#: examples/ktcli/main.cpp:65
-#, fuzzy
-msgid "Whether or not to use utp"
-msgstr "Ali naj ikona v sistemski vrstici prikazuje pojavna obvestila."
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr ""
+msgid "Error when reading from disk"
+msgstr "Napaka pri branju iz %1"
 
 #~ msgid "Parse Error"
 #~ msgstr "Napaka pri razčlenjevanju"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-12 11:09+0100\n"
+"POT-Creation-Date: 2012-08-14 19:52+0200\n"
 "PO-Revision-Date: 2009-11-10 11:27+0000\n"
 "Last-Translator: \n"
 "Language-Team:  <is@li.org>\n"
@@ -17,8 +17,37 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: KBabel 1.11.4\n"
+
+#: examples/ktcli/main.cpp:60
+#, fuzzy
+msgid "Torrent to open"
+msgstr "Skjal sem á að opna"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+#, fuzzy
+msgid "Port to use"
+msgstr "Ekki í notkun"
+
+#: examples/ktcli/main.cpp:63
+#, fuzzy
+msgid "Whether or not to enable encryption"
+msgstr "eða ekki til a sérsniðið."
+
+#: examples/ktcli/main.cpp:64
+#, fuzzy
+msgid "Whether or not to enable peer exchange"
+msgstr "eða ekki til."
+
+#: examples/ktcli/main.cpp:65
+#, fuzzy
+msgid "Whether or not to use utp"
+msgstr "eða ekki til."
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr ""
 
 #: src/bcodec/bdecoder.cpp:71
 #, fuzzy, kde-format
@@ -60,41 +89,18 @@ msgid "Checking Data"
 msgstr "Yfirfer gögn"
 
 #: src/datachecker/multidatachecker.cpp:209
-#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
-#: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
+#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:706
+#: src/diskio/multifilecache.cpp:745 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
 #, fuzzy, kde-format
 msgid "Cannot open file %1: %2"
 msgstr "Gat ekki opnað skrá %1: %2"
 
-#: src/diskio/dndfile.cpp:89
-#, fuzzy, kde-format
-msgid "Cannot create file %1: %2"
-msgstr "Gat ekki búið til skrána %1 : %2"
-
-#: src/diskio/dndfile.cpp:137
-#, fuzzy, kde-format
-msgid "Failed to write first chunk to DND file: %1"
-msgstr "Gat ekki skrifað fyrsta bútinn í DND skrá: %1"
-
-#: src/diskio/dndfile.cpp:155
-#, fuzzy, kde-format
-msgid "Failed to write last chunk to DND file: %1"
-msgstr "Gat ekki skrifað síðasta bútinn í DND skrá: %1"
-
-#: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
-#, fuzzy, kde-format
-msgid "Failed to open %1: %2"
-msgstr "Mistókst að opna %1 : %2"
-
-#: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
+#: src/diskio/cache.cpp:170 src/diskio/multifilecache.cpp:118
+#: src/diskio/singlefilecache.cpp:85
 #, fuzzy, kde-format
 msgid "Failed to create %1: %2"
 msgstr "Gat ekki búið til %1 : %2"
-
-#: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
-msgid "Unable to write to a piece mapped read only"
-msgstr ""
 
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
 #: src/util/fileops.cpp:399
@@ -149,10 +155,25 @@ msgstr "Gat ekki skrifað í skrá %1 : %2"
 msgid "Cannot preallocate diskspace: %1"
 msgstr "Gat ekki tekið frá diskpláss : %1"
 
-#: src/diskio/chunkmanager.cpp:928 src/diskio/chunkmanager.cpp:954
+#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
 #, fuzzy, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr "Get ekki opnað yfirlitsskrá %1 : %2"
+
+#: src/diskio/dndfile.cpp:89
+#, fuzzy, kde-format
+msgid "Cannot create file %1: %2"
+msgstr "Gat ekki búið til skrána %1 : %2"
+
+#: src/diskio/dndfile.cpp:137
+#, fuzzy, kde-format
+msgid "Failed to write first chunk to DND file: %1"
+msgstr "Gat ekki skrifað fyrsta bútinn í DND skrá: %1"
+
+#: src/diskio/dndfile.cpp:155
+#, fuzzy, kde-format
+msgid "Failed to write last chunk to DND file: %1"
+msgstr "Gat ekki skrifað síðasta bútinn í DND skrá: %1"
 
 #: src/diskio/movedatafilesjob.cpp:140
 msgid "Waiting for other move jobs to finish"
@@ -176,6 +197,15 @@ msgctxt "@title job"
 msgid "Moving"
 msgstr "Færi"
 
+#: src/diskio/multifilecache.cpp:91 src/diskio/singlefilecache.cpp:74
+#, fuzzy, kde-format
+msgid "Failed to open %1: %2"
+msgstr "Mistókst að opna %1 : %2"
+
+#: src/diskio/piecedata.cpp:69 src/diskio/piecedata.cpp:108
+msgid "Unable to write to a piece mapped read only"
+msgstr ""
+
 #: src/download/chunkdownload.cpp:383
 #, fuzzy, kde-format
 msgid "1 peer"
@@ -188,20 +218,10 @@ msgstr[1] "1 jafningi"
 msgid "Disabled because webseed does not match torrent"
 msgstr "allir af a"
 
-#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
-#: src/download/httpconnection.cpp:44
+#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:52
+#: src/download/webseed.cpp:99
 msgid "Not connected"
 msgstr "Ótengd(ur)"
-
-#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
-#, fuzzy
-msgid "Connection closed"
-msgstr "Tengingu lokað"
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
 
 #: src/download/httpconnection.cpp:115
 #, fuzzy, kde-format
@@ -217,6 +237,11 @@ msgstr "er ekki."
 #, fuzzy, kde-format
 msgid "Resolving hostname %1"
 msgstr "Greini vélarheiti %1"
+
+#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:348
+#, fuzzy
+msgid "Connection closed"
+msgstr "Tengingu lokað"
 
 #: src/download/httpconnection.cpp:160
 #, fuzzy, kde-format
@@ -261,6 +286,11 @@ msgstr "Villa: fyrirspurn rann út á tíma"
 msgid "Redirected without a new location."
 msgstr "a nýtt."
 
+#: src/download/webseed.cpp:558
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr ""
+
 #: src/interfaces/trackerinterface.cpp:58
 #, fuzzy
 msgid "OK"
@@ -291,11 +321,6 @@ msgstr "Mappan %1 er ekki til"
 msgid "Unknown client"
 msgstr "Óþekktur biðlari"
 
-#: src/torrent/torrentcreator.cpp:361
-#, fuzzy, kde-format
-msgid "Cannot create index file: %1"
-msgstr "Gat ekki búið til yfirlitsskrá: %1"
-
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
@@ -309,11 +334,11 @@ msgstr "Búa til a"
 msgid "Unable to open torrent file %1: %2"
 msgstr "Gat ekki opnað torrent skrá %1 : %2"
 
-#: src/torrent/torrentcontrol.cpp:308
+#: src/torrent/torrentcontrol.cpp:302
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:554
+#: src/torrent/torrentcontrol.cpp:548
 #, fuzzy, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -322,17 +347,17 @@ msgstr ""
 "Villa kom upp vi að hlaða inn straumnum <b>%1</b>:<br/><b>%2</b><br/> "
 "Torrent straumurinn er líklega skemmdur eða er ekki gild torrent skrá."
 
-#: src/torrent/torrentcontrol.cpp:584
+#: src/torrent/torrentcontrol.cpp:578
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:595
+#: src/torrent/torrentcontrol.cpp:589
 #, fuzzy, kde-format
 msgid "Unable to create %1: %2"
 msgstr "Gat ekki búið til %1 : %2"
 
-#: src/torrent/torrentcontrol.cpp:610
+#: src/torrent/torrentcontrol.cpp:604
 #, fuzzy, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
@@ -341,10 +366,15 @@ msgstr ""
 "Þú ert nú þegar að ná í þennan torrent staum %1, listi skrásetjara beggja "
 "straumanna hefur verið sameinaður."
 
-#: src/torrent/torrentcontrol.cpp:615
+#: src/torrent/torrentcontrol.cpp:609
 #, fuzzy, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Þú ert nú þegar að ná í torrent stauminn %1"
+
+#: src/torrent/torrentcreator.cpp:361
+#, fuzzy, kde-format
+msgid "Cannot create index file: %1"
+msgstr "Gat ekki búið til yfirlitsskrá: %1"
 
 #: src/torrent/torrentstats.cpp:73
 #, fuzzy
@@ -440,32 +470,36 @@ msgstr ""
 msgid "Unable to resolve hostname %1"
 msgstr "Tókst ekki að greina vélarheiti %1"
 
-#: src/util/logsystemmanager.cpp:33
-msgid "General"
-msgstr "Almennt"
-
-#: src/util/logsystemmanager.cpp:34
+#: src/upnp/httprequest.cpp:96
 #, fuzzy
-msgid "Connections"
-msgstr "Tengingar"
+msgid "Connection closed unexpectedly"
+msgstr "Tenging."
 
-#: src/util/logsystemmanager.cpp:35
-#, fuzzy
-msgid "Tracker"
-msgstr "Skrásetjari (tracker)"
-
-#: src/util/logsystemmanager.cpp:36
-#, fuzzy
-msgid "DHT"
-msgstr "DHT"
-
-#: src/util/logsystemmanager.cpp:37
-msgid "Disk Input/Output"
-msgstr "Inntak/Úttak disks"
-
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
 msgstr ""
+
+#: src/upnp/upnprouter.cpp:167
+#, fuzzy, kde-format
+msgid "Failed to download %1: %2"
+msgstr "Mistókst til 2"
+
+#: src/upnp/upnprouter.cpp:178
+#, fuzzy
+msgid "Error parsing router description."
+msgstr "Villa lýsing."
+
+#: src/upnp/upnprouter.cpp:216
+#, fuzzy
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr "mistókst ekki a eða."
+
+#: src/upnp/upnprouter.cpp:314
+#, fuzzy
+msgid "Cannot find port forwarding service in the device's description."
+msgstr "\" s lýsing."
 
 #: src/util/file.cpp:84
 #, fuzzy, kde-format
@@ -476,16 +510,6 @@ msgstr "Get ekki skrifað í %1 : %2"
 #, fuzzy, kde-format
 msgid "Cannot read from %1"
 msgstr "Get ekki lesið frá %1"
-
-#: src/util/signalcatcher.cpp:78
-#, fuzzy
-msgid "Error when writing to disk"
-msgstr "Villa við lestur frá %1"
-
-#: src/util/signalcatcher.cpp:78
-#, fuzzy
-msgid "Error when reading from disk"
-msgstr "Villa við lestur frá %1"
 
 #: src/util/fileops.cpp:94
 #, fuzzy, kde-format
@@ -550,65 +574,42 @@ msgid_plural "%1 days "
 msgstr[0] "1 dagur"
 msgstr[1] "1 dagur"
 
-#: src/upnp/httprequest.cpp:96
-#, fuzzy
-msgid "Connection closed unexpectedly"
-msgstr "Tenging."
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "Almennt"
 
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
+#: src/util/logsystemmanager.cpp:34
+#, fuzzy
+msgid "Connections"
+msgstr "Tengingar"
+
+#: src/util/logsystemmanager.cpp:35
+#, fuzzy
+msgid "Tracker"
+msgstr "Skrásetjari (tracker)"
+
+#: src/util/logsystemmanager.cpp:36
+#, fuzzy
+msgid "DHT"
+msgstr "DHT"
+
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
+msgstr "Inntak/Úttak disks"
+
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
 msgstr ""
 
-#: src/upnp/upnprouter.cpp:167
-#, fuzzy, kde-format
-msgid "Failed to download %1: %2"
-msgstr "Mistókst til 2"
-
-#: src/upnp/upnprouter.cpp:178
+#: src/util/signalcatcher.cpp:80
 #, fuzzy
-msgid "Error parsing router description."
-msgstr "Villa lýsing."
+msgid "Error when writing to disk"
+msgstr "Villa við lestur frá %1"
 
-#: src/upnp/upnprouter.cpp:216
+#: src/util/signalcatcher.cpp:80
 #, fuzzy
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr "mistókst ekki a eða."
-
-#: src/upnp/upnprouter.cpp:314
-#, fuzzy
-msgid "Cannot find port forwarding service in the device's description."
-msgstr "\" s lýsing."
-
-#: examples/ktcli/main.cpp:60
-#, fuzzy
-msgid "Torrent to open"
-msgstr "Skjal sem á að opna"
-
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-#, fuzzy
-msgid "Port to use"
-msgstr "Ekki í notkun"
-
-#: examples/ktcli/main.cpp:63
-#, fuzzy
-msgid "Whether or not to enable encryption"
-msgstr "eða ekki til a sérsniðið."
-
-#: examples/ktcli/main.cpp:64
-#, fuzzy
-msgid "Whether or not to enable peer exchange"
-msgstr "eða ekki til."
-
-#: examples/ktcli/main.cpp:65
-#, fuzzy
-msgid "Whether or not to use utp"
-msgstr "eða ekki til."
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr ""
+msgid "Error when reading from disk"
+msgstr "Villa við lestur frá %1"
 
 #, fuzzy
 #~ msgid "Parse Error"

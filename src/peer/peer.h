@@ -30,6 +30,7 @@
 #include <ktorrent_export.h>
 #include "peerid.h"
 #include "peerprotocolextension.h"
+#include "connectionlimit.h"
 
 namespace net
 {
@@ -69,6 +70,8 @@ namespace bt
 		 * @param chunk_size Size of each chunk 
 		 * @param support Which extensions the peer supports
 		 * @param local Whether or not it is a local peer
+		 * @param token ConnectionLimit token
+		 * @param pman The PeerManager
 		 */
 		Peer(mse::EncryptedPacketSocket::Ptr sock,
 			 const PeerID & peer_id,
@@ -76,6 +79,7 @@ namespace bt
 			 Uint32 chunk_size,
 			 Uint32 support,
 			 bool local,
+			 ConnectionLimit::Token::Ptr token,
 			 PeerManager* pman);
 		
 		virtual ~Peer();
@@ -304,11 +308,29 @@ namespace bt
 		 */
 		void clearPendingPieceUploads();
 		
+		virtual void chunkAllowed(Uint32 chunk);
+		virtual void handlePacket(const bt::Uint8* packet, bt::Uint32 size);
+		
+		typedef QSharedPointer<Peer> Ptr;
+		typedef QWeakPointer<Peer> WPtr;
+		
 	private slots:
 		void resolved(const QString & hinfo);
 		
 	private:
-		void packetReady(const Uint8* packet,Uint32 size);
+		void handleChoke(Uint32 len);
+		void handleUnchoke(Uint32 len);
+		void handleInterested(Uint32 len);
+		void handleNotInterested(Uint32 len);
+		void handleHave(const Uint8* packet,Uint32 len);
+		void handleHaveAll(Uint32 len);
+		void handleHaveNone(Uint32 len);
+		void handleBitField(const Uint8* packet,Uint32 len);
+		void handleRequest(const Uint8* packet,Uint32 len);
+		void handlePiece(const Uint8* packet,Uint32 len);
+		void handleCancel(const Uint8* packet,Uint32 len);
+		void handleReject(const Uint8* packet,Uint32 len);
+		void handlePort(const Uint8* packet,Uint32 len);
 		void handleExtendedPacket(const Uint8* packet,Uint32 size);
 		void handleExtendedHandshake(const Uint8* packet,Uint32 size);
 		
@@ -320,6 +342,7 @@ namespace bt
 
 	private:
 		mse::EncryptedPacketSocket::Ptr sock;
+		ConnectionLimit::Token::Ptr token;
 		
 		Timer stalled_timer;
 		
@@ -340,7 +363,6 @@ namespace bt
 		
 		static bool resolve_hostname;
 
-		friend class PacketReader;
 		friend class PeerDownloader;
 	};
 }

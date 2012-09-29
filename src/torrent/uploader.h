@@ -62,13 +62,12 @@ namespace bt
 		void update();
 		
 	private:
-		virtual void visit(const bt::Peer* p);
+		virtual void visit(const bt::Peer::Ptr p);
 		
 	private:
 		ChunkManager & cman;
 		PeerManager & pman;
 		Uint64 uploaded;
-		Uint32 opt_unchoked;
 	};
 
 }

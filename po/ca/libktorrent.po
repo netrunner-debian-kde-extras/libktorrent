@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-12 11:09+0100\n"
+"POT-Creation-Date: 2012-08-14 19:52+0200\n"
 "PO-Revision-Date: 2012-02-03 18:30+0100\n"
 "Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -21,6 +21,30 @@ msgstr ""
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
+
+#: examples/ktcli/main.cpp:60
+msgid "Torrent to open"
+msgstr "Torrent a obrir"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+msgid "Port to use"
+msgstr "Port a usar"
+
+#: examples/ktcli/main.cpp:63
+msgid "Whether or not to enable encryption"
+msgstr "Si habilitar o no l'encriptatge"
+
+#: examples/ktcli/main.cpp:64
+msgid "Whether or not to enable peer exchange"
+msgstr "Si activar o no l'intercanvi de parells"
+
+#: examples/ktcli/main.cpp:65
+msgid "Whether or not to use utp"
+msgstr "Si usar o no l'UTP"
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr "ktcli"
 
 #: src/bcodec/bdecoder.cpp:71
 #, kde-format
@@ -57,41 +81,18 @@ msgid "Checking Data"
 msgstr "S'estan comprovant les dades"
 
 #: src/datachecker/multidatachecker.cpp:209
-#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
-#: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
+#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:706
+#: src/diskio/multifilecache.cpp:745 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
 #, kde-format
 msgid "Cannot open file %1: %2"
 msgstr "No es pot obrir el fitxer %1: %2"
 
-#: src/diskio/dndfile.cpp:89
-#, kde-format
-msgid "Cannot create file %1: %2"
-msgstr "No es pot crear el fitxer %1: %2"
-
-#: src/diskio/dndfile.cpp:137
-#, kde-format
-msgid "Failed to write first chunk to DND file: %1"
-msgstr "Ha fallat en escriure el primer tros al fitxer DND: %1"
-
-#: src/diskio/dndfile.cpp:155
-#, kde-format
-msgid "Failed to write last chunk to DND file: %1"
-msgstr "Ha fallat en escriure l'últim tros en el fitxer DND: %1"
-
-#: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
-#, kde-format
-msgid "Failed to open %1: %2"
-msgstr "Ha fallat en obrir %1: %2"
-
-#: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
+#: src/diskio/cache.cpp:170 src/diskio/multifilecache.cpp:118
+#: src/diskio/singlefilecache.cpp:85
 #, kde-format
 msgid "Failed to create %1: %2"
 msgstr "Ha fallat en crear %1: %2"
-
-#: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
-msgid "Unable to write to a piece mapped read only"
-msgstr "No es pot escriure a una part assignada com a només de lectura"
 
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
 #: src/util/fileops.cpp:399
@@ -148,10 +149,25 @@ msgstr "Ha fallat en escriure el fitxer %1: %2"
 msgid "Cannot preallocate diskspace: %1"
 msgstr "No es pot preassignar espai en disc: %1"
 
-#: src/diskio/chunkmanager.cpp:928 src/diskio/chunkmanager.cpp:954
+#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
 #, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr "No es pot obrir el fitxer d'índex %1: %2"
+
+#: src/diskio/dndfile.cpp:89
+#, kde-format
+msgid "Cannot create file %1: %2"
+msgstr "No es pot crear el fitxer %1: %2"
+
+#: src/diskio/dndfile.cpp:137
+#, kde-format
+msgid "Failed to write first chunk to DND file: %1"
+msgstr "Ha fallat en escriure el primer tros al fitxer DND: %1"
+
+#: src/diskio/dndfile.cpp:155
+#, kde-format
+msgid "Failed to write last chunk to DND file: %1"
+msgstr "Ha fallat en escriure l'últim tros en el fitxer DND: %1"
 
 #: src/diskio/movedatafilesjob.cpp:140
 msgid "Waiting for other move jobs to finish"
@@ -172,6 +188,15 @@ msgctxt "@title job"
 msgid "Moving"
 msgstr "S'està movent"
 
+#: src/diskio/multifilecache.cpp:91 src/diskio/singlefilecache.cpp:74
+#, kde-format
+msgid "Failed to open %1: %2"
+msgstr "Ha fallat en obrir %1: %2"
+
+#: src/diskio/piecedata.cpp:69 src/diskio/piecedata.cpp:108
+msgid "Unable to write to a piece mapped read only"
+msgstr "No es pot escriure a una part assignada com a només de lectura"
+
 #: src/download/chunkdownload.cpp:383
 #, kde-format
 msgid "1 peer"
@@ -183,19 +208,10 @@ msgstr[1] "%1 parells"
 msgid "Disabled because webseed does not match torrent"
 msgstr "S'ha deshabilitat perquè el sembrador web no coincideix amb el torrent"
 
-#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
-#: src/download/httpconnection.cpp:44
+#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:52
+#: src/download/webseed.cpp:99
 msgid "Not connected"
 msgstr "Sense connexió"
-
-#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
-msgid "Connection closed"
-msgstr "Connexió tancada"
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr "No usat durant %1 segons (hi ha massa errors de connexió)"
 
 #: src/download/httpconnection.cpp:115
 #, kde-format
@@ -210,6 +226,10 @@ msgstr "No hi ha suficients recursos del sistema disponibles"
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr "Resolent el nom de màquina %1"
+
+#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:348
+msgid "Connection closed"
+msgstr "Connexió tancada"
 
 #: src/download/httpconnection.cpp:160
 #, kde-format
@@ -248,6 +268,11 @@ msgstr "Error: s'ha esgotat el temps de sol·licitud"
 msgid "Redirected without a new location."
 msgstr "S'ha redireccionat sense cap ubicació nova."
 
+#: src/download/webseed.cpp:558
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr "No usat durant %1 segons (hi ha massa errors de connexió)"
+
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr "Bé"
@@ -275,11 +300,6 @@ msgstr "El directori %1 no existeix"
 msgid "Unknown client"
 msgstr "Client desconegut"
 
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "No es pot crear el fitxer índex:%1"
-
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
@@ -292,11 +312,11 @@ msgstr "El torrent és corrupte."
 msgid "Unable to open torrent file %1: %2"
 msgstr " No es pot obrir el fitxer torrent %1: %2"
 
-#: src/torrent/torrentcontrol.cpp:308
+#: src/torrent/torrentcontrol.cpp:302
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr "Error en escriure al disc. Hi ha suficient espai lliure al disc?"
 
-#: src/torrent/torrentcontrol.cpp:554
+#: src/torrent/torrentcontrol.cpp:548
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -305,17 +325,17 @@ msgstr ""
 "Hi ha hagut un error mentre es carregava el torrent<b>%1</b>:<br/><b>%2</"
 "b><br/>Probablement el torrent és corrupte o no és un fitxer torrent vàlid."
 
-#: src/torrent/torrentcontrol.cpp:584
+#: src/torrent/torrentcontrol.cpp:578
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr "Hi ha hagut un error en carregar <b>%1</b>:<br/><b>%2</b>"
 
-#: src/torrent/torrentcontrol.cpp:595
+#: src/torrent/torrentcontrol.cpp:589
 #, kde-format
 msgid "Unable to create %1: %2"
 msgstr "No es pot crear %1: %2"
 
-#: src/torrent/torrentcontrol.cpp:610
+#: src/torrent/torrentcontrol.cpp:604
 #, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
@@ -324,10 +344,15 @@ msgstr ""
 "Ja esteu baixant el torrent <b>%1</b>%1. S'ha fusionat la llista de "
 "seguidors d'ambdós torrents."
 
-#: src/torrent/torrentcontrol.cpp:615
+#: src/torrent/torrentcontrol.cpp:609
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Ja esteu baixant el torrent <b>%1</b>."
+
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "No es pot crear el fitxer índex:%1"
 
 #: src/torrent/torrentstats.cpp:73
 msgid "Not started"
@@ -410,29 +435,35 @@ msgstr "Temps exhaurit en connectar amb el seguidor %1"
 msgid "Unable to resolve hostname %1"
 msgstr "No s'ha pogut resoldre el nom de màquina %1"
 
-#: src/util/logsystemmanager.cpp:33
-msgid "General"
-msgstr "General"
+#: src/upnp/httprequest.cpp:96
+msgid "Connection closed unexpectedly"
+msgstr "La connexió s'ha tancat inesperadament"
 
-#: src/util/logsystemmanager.cpp:34
-msgid "Connections"
-msgstr "Connexions"
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr "L'operació ha excedit el temps"
 
-#: src/util/logsystemmanager.cpp:35
-msgid "Tracker"
-msgstr "Seguidor"
+#: src/upnp/upnprouter.cpp:167
+#, kde-format
+msgid "Failed to download %1: %2"
+msgstr "Error en baixar %1: %2"
 
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr "DHT"
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
+msgstr "Error en analitzar la descripció de l'encaminador."
 
-#: src/util/logsystemmanager.cpp:37
-msgid "Disk Input/Output"
-msgstr "E/S de disc"
+#: src/upnp/upnprouter.cpp:216
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+"Ha fallat el redireccionament:\n"
+"El dispositiu no té cap connexió WANIP ni WANPPP."
 
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
-msgstr "µTP"
+#: src/upnp/upnprouter.cpp:314
+msgid "Cannot find port forwarding service in the device's description."
+msgstr ""
+"No es troba el servei de redirecció de ports en la descripció del dispositiu."
 
 #: src/util/file.cpp:84
 #, kde-format
@@ -443,14 +474,6 @@ msgstr "No es pot escriure a %1: %2"
 #, kde-format
 msgid "Cannot read from %1"
 msgstr "No es pot llegir des de %1"
-
-#: src/util/signalcatcher.cpp:78
-msgid "Error when writing to disk"
-msgstr "Error en escriure al disc"
-
-#: src/util/signalcatcher.cpp:78
-msgid "Error when reading from disk"
-msgstr "Error en llegir des del disc"
 
 #: src/util/fileops.cpp:94
 #, kde-format
@@ -515,59 +538,37 @@ msgid_plural "%1 days "
 msgstr[0] "1 dia "
 msgstr[1] "%1 dies "
 
-#: src/upnp/httprequest.cpp:96
-msgid "Connection closed unexpectedly"
-msgstr "La connexió s'ha tancat inesperadament"
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "General"
 
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
-msgstr "L'operació ha excedit el temps"
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
+msgstr "Connexions"
 
-#: src/upnp/upnprouter.cpp:167
-#, kde-format
-msgid "Failed to download %1: %2"
-msgstr "Error en baixar %1: %2"
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "Seguidor"
 
-#: src/upnp/upnprouter.cpp:178
-msgid "Error parsing router description."
-msgstr "Error en analitzar la descripció de l'encaminador."
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
 
-#: src/upnp/upnprouter.cpp:216
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
-"Ha fallat el redireccionament:\n"
-"El dispositiu no té cap connexió WANIP ni WANPPP."
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
+msgstr "E/S de disc"
 
-#: src/upnp/upnprouter.cpp:314
-msgid "Cannot find port forwarding service in the device's description."
-msgstr ""
-"No es troba el servei de redirecció de ports en la descripció del dispositiu."
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr "µTP"
 
-#: examples/ktcli/main.cpp:60
-msgid "Torrent to open"
-msgstr "Torrent a obrir"
+#: src/util/signalcatcher.cpp:80
+msgid "Error when writing to disk"
+msgstr "Error en escriure al disc"
 
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-msgid "Port to use"
-msgstr "Port a usar"
-
-#: examples/ktcli/main.cpp:63
-msgid "Whether or not to enable encryption"
-msgstr "Si habilitar o no l'encriptatge"
-
-#: examples/ktcli/main.cpp:64
-msgid "Whether or not to enable peer exchange"
-msgstr "Si activar o no l'intercanvi de parells"
-
-#: examples/ktcli/main.cpp:65
-msgid "Whether or not to use utp"
-msgstr "Si usar o no l'UTP"
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr "ktcli"
+#: src/util/signalcatcher.cpp:80
+msgid "Error when reading from disk"
+msgstr "Error en llegir des del disc"
 
 #~ msgid "Parse Error"
 #~ msgstr "Error d'interpretació"

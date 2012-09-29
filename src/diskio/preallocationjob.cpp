@@ -20,15 +20,15 @@
 
 #include "preallocationjob.h"
 #include "preallocationthread.h"
+#include "chunkmanager.h"
 #include <util/log.h>
 #include <torrent/torrentcontrol.h>
 
 namespace bt
 {
-	
-	PreallocationJob::PreallocationJob(ChunkManager* cman, TorrentControl* tc): Job(false,tc),cman(cman)
+
+	PreallocationJob::PreallocationJob(ChunkManager* cman, TorrentControl* tc): Job(false, tc), cman(cman), prealloc_thread(0)
 	{
-		prealloc_thread = 0;
 	}
 
 	PreallocationJob::~PreallocationJob()
@@ -37,14 +37,15 @@ namespace bt
 
 	void PreallocationJob::start()
 	{
-		prealloc_thread = new PreallocationThread(cman);
-		connect(prealloc_thread,SIGNAL(finished()),this,SLOT(finished()),Qt::QueuedConnection);
+		prealloc_thread = new PreallocationThread();
+		cman->preparePreallocation(prealloc_thread);
+		connect(prealloc_thread, SIGNAL(finished()), this, SLOT(finished()), Qt::QueuedConnection);
 		prealloc_thread->start(QThread::IdlePriority);
 	}
 
 	void PreallocationJob::kill(bool quietly)
 	{
-		if (prealloc_thread)
+		if(prealloc_thread)
 		{
 			prealloc_thread->stop();
 			prealloc_thread->wait();
@@ -53,19 +54,19 @@ namespace bt
 		}
 		bt::Job::kill(quietly);
 	}
-	
-	
+
+
 	void PreallocationJob::finished()
 	{
-		if (prealloc_thread)
+		if(prealloc_thread)
 		{
-			torrent()->preallocFinished(prealloc_thread->errorMessage(),!prealloc_thread->isStopped());
+			torrent()->preallocFinished(prealloc_thread->errorMessage(), !prealloc_thread->isStopped());
 			prealloc_thread->deleteLater();
 			prealloc_thread = 0;
 		}
 		else
-			torrent()->preallocFinished(QString(),false);
-		
+			torrent()->preallocFinished(QString(), false);
+
 		setError(0);
 		emitResult();
 	}

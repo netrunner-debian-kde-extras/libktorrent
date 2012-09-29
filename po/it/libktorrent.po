@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-12 11:09+0100\n"
+"POT-Creation-Date: 2012-08-14 19:52+0200\n"
 "PO-Revision-Date: 2012-02-20 15:59+0100\n"
 "Last-Translator: Nicola Ruggero <nicola@nxnt.org>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -16,6 +16,30 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: examples/ktcli/main.cpp:60
+msgid "Torrent to open"
+msgstr "Torrent da aprire"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+msgid "Port to use"
+msgstr "Porta da usare"
+
+#: examples/ktcli/main.cpp:63
+msgid "Whether or not to enable encryption"
+msgstr "Abilita o meno la cifratura"
+
+#: examples/ktcli/main.cpp:64
+msgid "Whether or not to enable peer exchange"
+msgstr "Abilita o meno lo scambio nodo"
+
+#: examples/ktcli/main.cpp:65
+msgid "Whether or not to use utp"
+msgstr "Abilita o meno utp"
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr "ktcli"
 
 #: src/bcodec/bdecoder.cpp:71
 #, kde-format
@@ -52,41 +76,18 @@ msgid "Checking Data"
 msgstr "Controllo dati"
 
 #: src/datachecker/multidatachecker.cpp:209
-#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
-#: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
+#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:706
+#: src/diskio/multifilecache.cpp:745 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
 #, kde-format
 msgid "Cannot open file %1: %2"
 msgstr "Impossibile aprire il file %1: %2"
 
-#: src/diskio/dndfile.cpp:89
-#, kde-format
-msgid "Cannot create file %1: %2"
-msgstr "Impossibile creare il file %1: %2"
-
-#: src/diskio/dndfile.cpp:137
-#, kde-format
-msgid "Failed to write first chunk to DND file: %1"
-msgstr "Impossibile scrivere la prima parte al file DND: %1"
-
-#: src/diskio/dndfile.cpp:155
-#, kde-format
-msgid "Failed to write last chunk to DND file: %1"
-msgstr "Impossibile scrivere l'ultima parte al file DND: %1"
-
-#: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
-#, kde-format
-msgid "Failed to open %1: %2"
-msgstr "Impossibile aprire %1: %2"
-
-#: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
+#: src/diskio/cache.cpp:170 src/diskio/multifilecache.cpp:118
+#: src/diskio/singlefilecache.cpp:85
 #, kde-format
 msgid "Failed to create %1: %2"
 msgstr "Impossibile creare %1: %2"
-
-#: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
-msgid "Unable to write to a piece mapped read only"
-msgstr "Impossibile scrivere una porzione mappata in sola lettura"
 
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
 #: src/util/fileops.cpp:399
@@ -143,10 +144,25 @@ msgstr "Impossibile scrivere nel file %1: %2"
 msgid "Cannot preallocate diskspace: %1"
 msgstr "Impossibile riservare lo spazio su disco: %1"
 
-#: src/diskio/chunkmanager.cpp:928 src/diskio/chunkmanager.cpp:954
+#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
 #, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr "Impossibile aprire il file indice %1: %2"
+
+#: src/diskio/dndfile.cpp:89
+#, kde-format
+msgid "Cannot create file %1: %2"
+msgstr "Impossibile creare il file %1: %2"
+
+#: src/diskio/dndfile.cpp:137
+#, kde-format
+msgid "Failed to write first chunk to DND file: %1"
+msgstr "Impossibile scrivere la prima parte al file DND: %1"
+
+#: src/diskio/dndfile.cpp:155
+#, kde-format
+msgid "Failed to write last chunk to DND file: %1"
+msgstr "Impossibile scrivere l'ultima parte al file DND: %1"
 
 #: src/diskio/movedatafilesjob.cpp:140
 msgid "Waiting for other move jobs to finish"
@@ -167,6 +183,15 @@ msgctxt "@title job"
 msgid "Moving"
 msgstr "Spostamento"
 
+#: src/diskio/multifilecache.cpp:91 src/diskio/singlefilecache.cpp:74
+#, kde-format
+msgid "Failed to open %1: %2"
+msgstr "Impossibile aprire %1: %2"
+
+#: src/diskio/piecedata.cpp:69 src/diskio/piecedata.cpp:108
+msgid "Unable to write to a piece mapped read only"
+msgstr "Impossibile scrivere una porzione mappata in sola lettura"
+
 #: src/download/chunkdownload.cpp:383
 #, kde-format
 msgid "1 peer"
@@ -178,19 +203,10 @@ msgstr[1] "%1 nodi"
 msgid "Disabled because webseed does not match torrent"
 msgstr "Disabilitato perché il distributore web non corrisponde al torrent"
 
-#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
-#: src/download/httpconnection.cpp:44
+#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:52
+#: src/download/webseed.cpp:99
 msgid "Not connected"
 msgstr "Non connesso"
-
-#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
-msgid "Connection closed"
-msgstr "Connessione chiusa"
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr "Inutilizzato per %1 secondi (Troppi errori di connessione)"
 
 #: src/download/httpconnection.cpp:115
 #, kde-format
@@ -205,6 +221,10 @@ msgstr "Non ci sono abbastanza risorse di sistema disponibili"
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr "Risoluzione nome host %1"
+
+#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:348
+msgid "Connection closed"
+msgstr "Connessione chiusa"
 
 #: src/download/httpconnection.cpp:160
 #, kde-format
@@ -243,6 +263,11 @@ msgstr "Errore: richiesta scaduta"
 msgid "Redirected without a new location."
 msgstr "Rediretto senza una nuova destinazione."
 
+#: src/download/webseed.cpp:558
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr "Inutilizzato per %1 secondi (Troppi errori di connessione)"
+
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr "OK"
@@ -270,11 +295,6 @@ msgstr "La cartella %1 non esiste"
 msgid "Unknown client"
 msgstr "Client sconosciuto"
 
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "Impossibile creare il file indice: %1"
-
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
@@ -287,11 +307,11 @@ msgstr "Torrent danneggiato."
 msgid "Unable to open torrent file %1: %2"
 msgstr "Impossibile aprire il file torrent %1: %2"
 
-#: src/torrent/torrentcontrol.cpp:308
+#: src/torrent/torrentcontrol.cpp:302
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr "Impossibile scrivere nel disco, c'è abbastanza spazio disponibile?"
 
-#: src/torrent/torrentcontrol.cpp:554
+#: src/torrent/torrentcontrol.cpp:548
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -301,17 +321,17 @@ msgstr ""
 ">Probabilmente il torrent è danneggiato oppure non è affatto un file torrent "
 "valido."
 
-#: src/torrent/torrentcontrol.cpp:584
+#: src/torrent/torrentcontrol.cpp:578
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr "Errore nel caricamento di <b>%1</b>:<br/><b>%2</b>"
 
-#: src/torrent/torrentcontrol.cpp:595
+#: src/torrent/torrentcontrol.cpp:589
 #, kde-format
 msgid "Unable to create %1: %2"
 msgstr "Impossibile creare %1: %2"
 
-#: src/torrent/torrentcontrol.cpp:610
+#: src/torrent/torrentcontrol.cpp:604
 #, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
@@ -320,10 +340,15 @@ msgstr ""
 "Stai già scaricando il torrent <b>%1</b>. La lista dei server traccia di "
 "entrambi i torrent è stata unificata."
 
-#: src/torrent/torrentcontrol.cpp:615
+#: src/torrent/torrentcontrol.cpp:609
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Stai già scaricando il torrent <b>%1</b>."
+
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "Impossibile creare il file indice: %1"
 
 #: src/torrent/torrentstats.cpp:73
 msgid "Not started"
@@ -406,29 +431,36 @@ msgstr "Tempo scaduto contattando il server traccia %1"
 msgid "Unable to resolve hostname %1"
 msgstr "Impossibile risolvere il nome host %1"
 
-#: src/util/logsystemmanager.cpp:33
-msgid "General"
-msgstr "Generale"
+#: src/upnp/httprequest.cpp:96
+msgid "Connection closed unexpectedly"
+msgstr "Connessione chiusa inaspettatamente"
 
-#: src/util/logsystemmanager.cpp:34
-msgid "Connections"
-msgstr "Connessioni"
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr "Tempo esaurito per l'operazione"
 
-#: src/util/logsystemmanager.cpp:35
-msgid "Tracker"
-msgstr "Server traccia"
+#: src/upnp/upnprouter.cpp:167
+#, kde-format
+msgid "Failed to download %1: %2"
+msgstr "Impossibile scaricare %1: %2"
 
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr "DHT"
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
+msgstr "Errore durante l'analisi della descrizione del router."
 
-#: src/util/logsystemmanager.cpp:37
-msgid "Disk Input/Output"
-msgstr "Input/Output disco"
+#: src/upnp/upnprouter.cpp:216
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+"Mappatura non riuscita: \n"
+"Il dispositivo non ha una connessione WAN IP o WAN PPP."
 
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
-msgstr "µTP"
+#: src/upnp/upnprouter.cpp:314
+msgid "Cannot find port forwarding service in the device's description."
+msgstr ""
+"Impossibile trovare il servizio di mappatura porte nella descrizione del "
+"dispositivo."
 
 #: src/util/file.cpp:84
 #, kde-format
@@ -439,14 +471,6 @@ msgstr "Impossibile scrivere su %1: %2"
 #, kde-format
 msgid "Cannot read from %1"
 msgstr "Impossibile leggere da %1"
-
-#: src/util/signalcatcher.cpp:78
-msgid "Error when writing to disk"
-msgstr "Errore durante la scrittura del disco"
-
-#: src/util/signalcatcher.cpp:78
-msgid "Error when reading from disk"
-msgstr "Errore durante la lettura del disco"
 
 #: src/util/fileops.cpp:94
 #, kde-format
@@ -511,60 +535,37 @@ msgid_plural "%1 days "
 msgstr[0] "1 giorno "
 msgstr[1] "%1 giorni "
 
-#: src/upnp/httprequest.cpp:96
-msgid "Connection closed unexpectedly"
-msgstr "Connessione chiusa inaspettatamente"
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "Generale"
 
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
-msgstr "Tempo esaurito per l'operazione"
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
+msgstr "Connessioni"
 
-#: src/upnp/upnprouter.cpp:167
-#, kde-format
-msgid "Failed to download %1: %2"
-msgstr "Impossibile scaricare %1: %2"
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "Server traccia"
 
-#: src/upnp/upnprouter.cpp:178
-msgid "Error parsing router description."
-msgstr "Errore durante l'analisi della descrizione del router."
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
 
-#: src/upnp/upnprouter.cpp:216
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
-"Mappatura non riuscita: \n"
-"Il dispositivo non ha una connessione WAN IP o WAN PPP."
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
+msgstr "Input/Output disco"
 
-#: src/upnp/upnprouter.cpp:314
-msgid "Cannot find port forwarding service in the device's description."
-msgstr ""
-"Impossibile trovare il servizio di mappatura porte nella descrizione del "
-"dispositivo."
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr "µTP"
 
-#: examples/ktcli/main.cpp:60
-msgid "Torrent to open"
-msgstr "Torrent da aprire"
+#: src/util/signalcatcher.cpp:80
+msgid "Error when writing to disk"
+msgstr "Errore durante la scrittura del disco"
 
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-msgid "Port to use"
-msgstr "Porta da usare"
-
-#: examples/ktcli/main.cpp:63
-msgid "Whether or not to enable encryption"
-msgstr "Abilita o meno la cifratura"
-
-#: examples/ktcli/main.cpp:64
-msgid "Whether or not to enable peer exchange"
-msgstr "Abilita o meno lo scambio nodo"
-
-#: examples/ktcli/main.cpp:65
-msgid "Whether or not to use utp"
-msgstr "Abilita o meno utp"
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr "ktcli"
+#: src/util/signalcatcher.cpp:80
+msgid "Error when reading from disk"
+msgstr "Errore durante la lettura del disco"
 
 #~ msgid "Parse Error"
 #~ msgstr "Errore di analisi"

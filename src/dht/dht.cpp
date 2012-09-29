@@ -33,7 +33,14 @@
 #include "database.h"
 #include "taskmanager.h"
 #include "nodelookup.h"
-
+#include "pingreq.h"
+#include "findnodereq.h"
+#include "getpeersreq.h"
+#include "announcereq.h"
+#include "pingrsp.h"
+#include "findnodersp.h"
+#include "getpeersrsp.h"
+#include "announcersp.h"
 
 using namespace bt;
 
@@ -102,43 +109,46 @@ namespace dht
 		delete srv; srv = 0;
 	}
 
-	void DHT::ping(PingReq::Ptr r)
+	void DHT::ping(const PingReq & r)
 	{
 		if (!running)
 			return;
 
 		// ignore requests we get from ourself
-		if (r->getID() == node->getOurID())
+		if (r.getID() == node->getOurID())
 			return;
 
-		PingRsp rsp(r->getMTID(), node->getOurID());
-		rsp.setOrigin(r->getOrigin());
+		PingRsp rsp(r.getMTID(), node->getOurID());
+		rsp.setOrigin(r.getOrigin());
 		srv->sendMsg(rsp);
 		node->received(this, r);
 	}
 
-
-
-	void DHT::findNode(FindNodeReq::Ptr r)
+	void DHT::findNode(const dht::FindNodeReq& r)
 	{
 		if (!running)
 			return;
 
 		// ignore requests we get from ourself
-		if (r->getID() == node->getOurID())
+		if (r.getID() == node->getOurID())
 			return;
 
-		Out(SYS_DHT | LOG_DEBUG) << "DHT: got findNode request" << endl;
 		node->received(this, r);
 		// find the K closest nodes and pack them
-		KClosestNodesSearch kns(r->getTarget(), K);
+		KClosestNodesSearch kns(r.getTarget(), K);
 
-		node->findKClosestNodes(kns);
+		bt::Uint32 wants = 0;
+		if (r.wants(4) || r.getOrigin().ipVersion() == 4)
+			wants |= WANT_IPV4;
+		if (r.wants(6) || r.getOrigin().ipVersion() == 6)
+			wants |= WANT_IPV6;
 
-		FindNodeRsp fnr(r->getMTID(), node->getOurID());
+		node->findKClosestNodes(kns, wants);
+
+		FindNodeRsp fnr(r.getMTID(), node->getOurID());
 		// pack the found nodes in a byte array
 		kns.pack(&fnr);
-		fnr.setOrigin(r->getOrigin());
+		fnr.setOrigin(r.getOrigin());
 		srv->sendMsg(fnr);
 	}
 
@@ -160,72 +170,65 @@ namespace dht
 	}
 
 
-	void DHT::announce(AnnounceReq::Ptr r)
+	void DHT::announce(const AnnounceReq & r)
 	{
 		if (!running)
 			return;
 
 		// ignore requests we get from ourself
-		if (r->getID() == node->getOurID())
+		if (r.getID() == node->getOurID())
 			return;
 
-		Out(SYS_DHT | LOG_DEBUG) << "DHT: got announce request" << endl;
 		node->received(this, r);
 		// first check if the token is OK
-		dht::Key token = r->getToken();
-		if (!db->checkToken(token, r->getOrigin()))
+		dht::Key token = r.getToken();
+		if (!db->checkToken(token, r.getOrigin()))
 			return;
 
 		// everything OK, so store the value
-		db->store(r->getInfoHash(), DBItem(r->getOrigin()));
+		db->store(r.getInfoHash(), DBItem(r.getOrigin()));
 		// send a proper response to indicate everything is OK
-		AnnounceRsp rsp(r->getMTID(), node->getOurID());
-		rsp.setOrigin(r->getOrigin());
+		AnnounceRsp rsp(r.getMTID(), node->getOurID());
+		rsp.setOrigin(r.getOrigin());
 		srv->sendMsg(rsp);
 	}
 
 
 
-	void DHT::getPeers(GetPeersReq::Ptr r)
+	void DHT::getPeers(const GetPeersReq & r)
 	{
 		if (!running)
 			return;
 
 		// ignore requests we get from ourself
-		if (r->getID() == node->getOurID())
+		if (r.getID() == node->getOurID())
 			return;
 
-		Out(SYS_DHT | LOG_DEBUG) << "DHT: got getPeers request" << endl;
 		node->received(this, r);
 		DBItemList dbl;
-		db->sample(r->getInfoHash(), dbl, 50);
+		db->sample(r.getInfoHash(), dbl, 50, r.getOrigin().ipVersion());
 
 		// generate a token
-		dht::Key token = db->genToken(r->getOrigin());
+		dht::Key token = db->genToken(r.getOrigin());
 
-		if (dbl.count() == 0)
-		{
-			// if data is null do the same as when we have a findNode request
-			// find the K closest nodes and pack them
-			KClosestNodesSearch kns(r->getInfoHash(), K);
-			node->findKClosestNodes(kns);
+		bt::Uint32 wants = 0;
+		if (r.wants(4) || r.getOrigin().ipVersion() == 4)
+			wants |= WANT_IPV4;
+		if (r.wants(6) || r.getOrigin().ipVersion() == 6)
+			wants |= WANT_IPV6;
 
+		// if data is null do the same as when we have a findNode request
+		// find the K closest nodes and pack them
+		KClosestNodesSearch kns(r.getInfoHash(), K);
+		node->findKClosestNodes(kns, wants);
 
-			GetPeersRsp fnr(r->getMTID(), node->getOurID(), token);
-			kns.pack(&fnr);
-			fnr.setOrigin(r->getOrigin());
-			srv->sendMsg(fnr);
-		}
-		else
-		{
-			// send a get peers response
-			GetPeersRsp fvr(r->getMTID(), node->getOurID(), dbl, token);
-			fvr.setOrigin(r->getOrigin());
-			srv->sendMsg(fvr);
-		}
+		GetPeersRsp fnr(r.getMTID(), node->getOurID(), dbl, token);
+		kns.pack(&fnr);
+		fnr.setOrigin(r.getOrigin());
+		srv->sendMsg(fnr);
 	}
 
-	void DHT::response(MsgBase::Ptr r)
+	void DHT::response(const RPCMsg & r)
 	{
 		if (!running)
 			return;
@@ -233,8 +236,10 @@ namespace dht
 		node->received(this, r);
 	}
 
-	void DHT::error(ErrMsg::Ptr )
-	{}
+	void DHT::error(const ErrMsg & msg)
+	{
+		Q_UNUSED(msg);
+	}
 
 
 	void DHT::portReceived(const QString & ip, bt::Uint16 port)
@@ -242,7 +247,7 @@ namespace dht
 		if (!running)
 			return;
 
-		MsgBase::Ptr r(new PingReq(node->getOurID()));
+		RPCMsg::Ptr r(new PingReq(node->getOurID()));
 		r->setOrigin(net::Address(ip, port));
 		srv->doCall(r);
 	}
@@ -265,7 +270,7 @@ namespace dht
 			return 0;
 
 		KClosestNodesSearch kns(info_hash, K);
-		node->findKClosestNodes(kns);
+		node->findKClosestNodes(kns, WANT_BOTH);
 		if (kns.getNumEntries() > 0)
 		{
 			Out(SYS_DHT | LOG_NOTICE) << "DHT: Doing announce " << endl;
@@ -306,7 +311,7 @@ namespace dht
 			return 0;
 
 		KClosestNodesSearch kns(id, K);
-		node->findKClosestNodes(kns);
+		node->findKClosestNodes(kns, WANT_BOTH);
 		if (kns.getNumEntries() > 0)
 		{
 			Out(SYS_DHT | LOG_DEBUG) << "DHT: finding node " << endl;
@@ -342,7 +347,7 @@ namespace dht
 		}
 	}
 
-	void DHT::timeout(MsgBase::Ptr r)
+	void DHT::timeout(RPCMsg::Ptr r)
 	{
 		node->onTimeout(r);
 	}
@@ -372,35 +377,34 @@ namespace dht
 			srv->ping(node->getOurID(), res->address());
 		}
 	}
-
+	
 	QMap<QString, int> DHT::getClosestGoodNodes(int maxNodes)
 	{
 		QMap<QString, int> map;
-
+		
 		if (!node)
 			return map;
-
+		
 		int max = 0;
 		KClosestNodesSearch kns(node->getOurID(), maxNodes*2);
-		node->findKClosestNodes(kns);
-
+		node->findKClosestNodes(kns, WANT_BOTH);
+		
 		KClosestNodesSearch::Itr it;
 		for (it = kns.begin(); it != kns.end(); ++it)
 		{
 			KBucketEntry e = it->second;
-
+			
 			if (!e.isGood())
 				continue;
-
+			
 			const net::Address & a = e.getAddress();
-
+			
 			map.insert(a.toString(), a.port());
 			if (++max >= maxNodes)
 				break;
 		}
-
+		
 		return map;
 	}
+	
 }
-
-#include "dht.moc"

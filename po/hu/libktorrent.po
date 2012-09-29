@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KTorrent 3.1\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-12 11:09+0100\n"
+"POT-Creation-Date: 2012-08-14 19:52+0200\n"
 "PO-Revision-Date: 2012-02-14 16:13+0100\n"
 "Last-Translator: Kristóf Kiszel <ulysses@kubuntu.org>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -19,6 +19,30 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.4\n"
+
+#: examples/ktcli/main.cpp:60
+msgid "Torrent to open"
+msgstr "Megnyitandó torrent"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+msgid "Port to use"
+msgstr "A használt port"
+
+#: examples/ktcli/main.cpp:63
+msgid "Whether or not to enable encryption"
+msgstr "Titkosítás engedélyezése vagy tiltása"
+
+#: examples/ktcli/main.cpp:64
+msgid "Whether or not to enable peer exchange"
+msgstr "A partnercsere engedélyezése vagy tiltása"
+
+#: examples/ktcli/main.cpp:65
+msgid "Whether or not to use utp"
+msgstr "UTP használata vagy sem"
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr "ktcli"
 
 #: src/bcodec/bdecoder.cpp:71
 #, kde-format
@@ -55,41 +79,18 @@ msgid "Checking Data"
 msgstr "Adatellenőrzés"
 
 #: src/datachecker/multidatachecker.cpp:209
-#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
-#: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
+#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:706
+#: src/diskio/multifilecache.cpp:745 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
 #, kde-format
 msgid "Cannot open file %1: %2"
 msgstr "Nem sikerült megnyitni ezt a fájlt: %1. %2"
 
-#: src/diskio/dndfile.cpp:89
-#, kde-format
-msgid "Cannot create file %1: %2"
-msgstr "A(z) %1 fájl nem hozható létre: %2"
-
-#: src/diskio/dndfile.cpp:137
-#, kde-format
-msgid "Failed to write first chunk to DND file: %1"
-msgstr "Nem sikerült kiírni az első darabot a DND-fájlba: %1"
-
-#: src/diskio/dndfile.cpp:155
-#, kde-format
-msgid "Failed to write last chunk to DND file: %1"
-msgstr "Nem sikerült kiírni az utolsó darabot a DND-fájlba: %1"
-
-#: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
-#, kde-format
-msgid "Failed to open %1: %2"
-msgstr "%1 megnyitása nem sikerült: %2"
-
-#: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
+#: src/diskio/cache.cpp:170 src/diskio/multifilecache.cpp:118
+#: src/diskio/singlefilecache.cpp:85
 #, kde-format
 msgid "Failed to create %1: %2"
 msgstr "%1 létrehozása nem sikerült: %2"
-
-#: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
-msgid "Unable to write to a piece mapped read only"
-msgstr "Nem lehet a csak olvashatónak feltérképezett darabba írni"
 
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
 #: src/util/fileops.cpp:399
@@ -145,10 +146,25 @@ msgstr "Nem sikerült írni a(z) %1 fájlba: %2"
 msgid "Cannot preallocate diskspace: %1"
 msgstr "Nem sikerült előre lefoglalni lemezterületet: %1"
 
-#: src/diskio/chunkmanager.cpp:928 src/diskio/chunkmanager.cpp:954
+#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
 #, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr "A(z) %1 index fájl nem nyitható meg: %2"
+
+#: src/diskio/dndfile.cpp:89
+#, kde-format
+msgid "Cannot create file %1: %2"
+msgstr "A(z) %1 fájl nem hozható létre: %2"
+
+#: src/diskio/dndfile.cpp:137
+#, kde-format
+msgid "Failed to write first chunk to DND file: %1"
+msgstr "Nem sikerült kiírni az első darabot a DND-fájlba: %1"
+
+#: src/diskio/dndfile.cpp:155
+#, kde-format
+msgid "Failed to write last chunk to DND file: %1"
+msgstr "Nem sikerült kiírni az utolsó darabot a DND-fájlba: %1"
 
 #: src/diskio/movedatafilesjob.cpp:140
 msgid "Waiting for other move jobs to finish"
@@ -169,6 +185,15 @@ msgctxt "@title job"
 msgid "Moving"
 msgstr "Mozgatás"
 
+#: src/diskio/multifilecache.cpp:91 src/diskio/singlefilecache.cpp:74
+#, kde-format
+msgid "Failed to open %1: %2"
+msgstr "%1 megnyitása nem sikerült: %2"
+
+#: src/diskio/piecedata.cpp:69 src/diskio/piecedata.cpp:108
+msgid "Unable to write to a piece mapped read only"
+msgstr "Nem lehet a csak olvashatónak feltérképezett darabba írni"
+
 #: src/download/chunkdownload.cpp:383
 #, kde-format
 msgid "1 peer"
@@ -180,19 +205,10 @@ msgstr[1] "%1 partner"
 msgid "Disabled because webseed does not match torrent"
 msgstr "Letiltva, mert a webfeltöltés nem egyezik a torrenttel"
 
-#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
-#: src/download/httpconnection.cpp:44
+#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:52
+#: src/download/webseed.cpp:99
 msgid "Not connected"
 msgstr "Nincs kapcsolat"
-
-#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
-msgid "Connection closed"
-msgstr "A kapcsolat bezárva"
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr "Nincs használatban %1 másodperce (Túl sok kapcsolódási hiba)"
 
 #: src/download/httpconnection.cpp:115
 #, kde-format
@@ -207,6 +223,10 @@ msgstr "Nincs elég elérhető rendszer erőforrás"
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr "Gépnév feloldása: %1"
+
+#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:348
+msgid "Connection closed"
+msgstr "A kapcsolat bezárva"
 
 #: src/download/httpconnection.cpp:160
 #, kde-format
@@ -245,6 +265,11 @@ msgstr "Hiba történt, időtúllépés"
 msgid "Redirected without a new location."
 msgstr "Átirányítva új hely nélkül."
 
+#: src/download/webseed.cpp:558
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr "Nincs használatban %1 másodperce (Túl sok kapcsolódási hiba)"
+
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr "OK"
@@ -272,11 +297,6 @@ msgstr "%1 - a könyvtár nem létezik"
 msgid "Unknown client"
 msgstr "Ismeretlen kliens"
 
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "Az indexfájl nem hozható létre: %1"
-
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
@@ -289,11 +309,11 @@ msgstr "Hibás torrent."
 msgid "Unable to open torrent file %1: %2"
 msgstr "A(z) %1 torrentfájl nem nyitható meg: %2"
 
-#: src/torrent/torrentcontrol.cpp:308
+#: src/torrent/torrentcontrol.cpp:302
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr "Hiba a lemezre íráskor, van elegendő lemezterülete?"
 
-#: src/torrent/torrentcontrol.cpp:554
+#: src/torrent/torrentcontrol.cpp:548
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -302,17 +322,17 @@ msgstr ""
 "<b>%1</b> torrent betöltése sikertelen:<br/><b>%2</b><br/>A torrent "
 "valószínűleg sérült, vagy nem érvényes torrentfájl."
 
-#: src/torrent/torrentcontrol.cpp:584
+#: src/torrent/torrentcontrol.cpp:578
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr "Hiba történt a(z) <b>%1</b> betöltése közben: <br/><b>%2</b>"
 
-#: src/torrent/torrentcontrol.cpp:595
+#: src/torrent/torrentcontrol.cpp:589
 #, kde-format
 msgid "Unable to create %1: %2"
 msgstr "A(z) %1 nem hozható létre: %2"
 
-#: src/torrent/torrentcontrol.cpp:610
+#: src/torrent/torrentcontrol.cpp:604
 #, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
@@ -321,10 +341,15 @@ msgstr ""
 "<b>%1</b> letöltése már folyamatban van, ezért a két követőlista "
 "összevonásra került."
 
-#: src/torrent/torrentcontrol.cpp:615
+#: src/torrent/torrentcontrol.cpp:609
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "<b>%1</b> torrent letöltése már folyamatban van."
+
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "Az indexfájl nem hozható létre: %1"
 
 #: src/torrent/torrentstats.cpp:73
 msgid "Not started"
@@ -407,29 +432,35 @@ msgstr "Időtúllépés a követőhöz való kapcsolódás közben: %1"
 msgid "Unable to resolve hostname %1"
 msgstr "%1 hosztnév nem oldható fel"
 
-#: src/util/logsystemmanager.cpp:33
-msgid "General"
-msgstr "Általános"
+#: src/upnp/httprequest.cpp:96
+msgid "Connection closed unexpectedly"
+msgstr "A kapcsolat váratlanul lezárult"
 
-#: src/util/logsystemmanager.cpp:34
-msgid "Connections"
-msgstr "Kapcsolatok"
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr "A művelet átlépte az időkorlátot"
 
-#: src/util/logsystemmanager.cpp:35
-msgid "Tracker"
-msgstr "Követő"
+#: src/upnp/upnprouter.cpp:167
+#, kde-format
+msgid "Failed to download %1: %2"
+msgstr "A(z) %1 letöltése nem sikerült: %2"
 
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr "DHT"
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
+msgstr "Nem sikerült feldolgozni a router leírását."
 
-#: src/util/logsystemmanager.cpp:37
-msgid "Disk Input/Output"
-msgstr "Lemez bemenet/kimenet"
+#: src/upnp/upnprouter.cpp:216
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+"Sikertelen átirányítás: \n"
+"Az eszköz nem rendelkezik WANIPConnection vagy WANPPPConnection "
+"lehetőségekkel."
 
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
-msgstr "µTP"
+#: src/upnp/upnprouter.cpp:314
+msgid "Cannot find port forwarding service in the device's description."
+msgstr "Az eszköz leírásában nem található port-átirányítási szolgáltatás."
 
 #: src/util/file.cpp:84
 #, kde-format
@@ -440,14 +471,6 @@ msgstr "Nem sikerült írni a(z) %1 fájlba: %2"
 #, kde-format
 msgid "Cannot read from %1"
 msgstr "Nem sikerült olvasni: %1"
-
-#: src/util/signalcatcher.cpp:78
-msgid "Error when writing to disk"
-msgstr "Hiba a lemezre írás közben"
-
-#: src/util/signalcatcher.cpp:78
-msgid "Error when reading from disk"
-msgstr "Hiba a lemez olvasása közben"
 
 #: src/util/fileops.cpp:94
 #, kde-format
@@ -512,59 +535,37 @@ msgid_plural "%1 days "
 msgstr[0] "%1 nap "
 msgstr[1] "%1 nap "
 
-#: src/upnp/httprequest.cpp:96
-msgid "Connection closed unexpectedly"
-msgstr "A kapcsolat váratlanul lezárult"
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "Általános"
 
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
-msgstr "A művelet átlépte az időkorlátot"
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
+msgstr "Kapcsolatok"
 
-#: src/upnp/upnprouter.cpp:167
-#, kde-format
-msgid "Failed to download %1: %2"
-msgstr "A(z) %1 letöltése nem sikerült: %2"
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "Követő"
 
-#: src/upnp/upnprouter.cpp:178
-msgid "Error parsing router description."
-msgstr "Nem sikerült feldolgozni a router leírását."
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
 
-#: src/upnp/upnprouter.cpp:216
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
-"Sikertelen átirányítás: \n"
-"Az eszköz nem rendelkezik WANIPConnection vagy WANPPPConnection "
-"lehetőségekkel."
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
+msgstr "Lemez bemenet/kimenet"
 
-#: src/upnp/upnprouter.cpp:314
-msgid "Cannot find port forwarding service in the device's description."
-msgstr "Az eszköz leírásában nem található port-átirányítási szolgáltatás."
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr "µTP"
 
-#: examples/ktcli/main.cpp:60
-msgid "Torrent to open"
-msgstr "Megnyitandó torrent"
+#: src/util/signalcatcher.cpp:80
+msgid "Error when writing to disk"
+msgstr "Hiba a lemezre írás közben"
 
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-msgid "Port to use"
-msgstr "A használt port"
-
-#: examples/ktcli/main.cpp:63
-msgid "Whether or not to enable encryption"
-msgstr "Titkosítás engedélyezése vagy tiltása"
-
-#: examples/ktcli/main.cpp:64
-msgid "Whether or not to enable peer exchange"
-msgstr "A partnercsere engedélyezése vagy tiltása"
-
-#: examples/ktcli/main.cpp:65
-msgid "Whether or not to use utp"
-msgstr "UTP használata vagy sem"
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr "ktcli"
+#: src/util/signalcatcher.cpp:80
+msgid "Error when reading from disk"
+msgstr "Hiba a lemez olvasása közben"
 
 #~ msgid "Parse Error"
 #~ msgstr "Feldolgozási hiba"

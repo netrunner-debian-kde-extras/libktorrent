@@ -170,6 +170,12 @@ namespace bt
 	{
 		return d->cache->hasMissingFiles(sl);
 	}
+	
+	bool ChunkManager::isStorageMounted(QStringList & missing)
+	{
+		return d->cache->isStorageMounted(missing);
+	}
+
 
 	Chunk* ChunkManager::getChunk(unsigned int i)
 	{
@@ -603,9 +609,9 @@ namespace bt
 		return d->cache->getOutputPath();
 	}
 	
-	void ChunkManager::preallocateDiskSpace(PreallocationThread* prealloc)
+	void ChunkManager::preparePreallocation(PreallocationThread* prealloc)
 	{
-		d->cache->preallocateDiskSpace(prealloc);
+		d->cache->preparePreallocation(prealloc);
 	}
 	
 	void ChunkManager::dataChecked(const bt::BitSet& ok_chunks, bt::Uint32 from, bt::Uint32 to)
@@ -841,6 +847,7 @@ namespace bt
 	void ChunkManager::loadIndexFile()
 	{
 		d->loadIndexFile();
+		d->cache->loadMountPoints();
 	}
 
 	
@@ -868,6 +875,7 @@ namespace bt
 			cache = fac->create(tor,tmpdir,datadir);
 		
 		cache->loadFileMap();
+		
 		index_file = tmpdir + "index";
 		file_info_file = tmpdir + "file_info";
 		file_priority_file = tmpdir + "file_priority";

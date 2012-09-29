@@ -50,6 +50,11 @@ namespace dht
 	class AnnounceTask;
 	class NodeLookup;
 	class KBucket;
+	class ErrMsg;
+	class PingReq;
+	class FindNodeReq;
+	class GetPeersReq;
+	class AnnounceReq;
 
 	/**
 		@author Joris Guisson <joris.guisson@gmail.com>
@@ -61,13 +66,13 @@ namespace dht
 		DHT();
 		virtual ~DHT();
 		
-		void ping(PingReq::Ptr r);
-		void findNode(FindNodeReq::Ptr r);
-		void response(MsgBase::Ptr r);
-		void getPeers(GetPeersReq::Ptr r);
-		void announce(AnnounceReq::Ptr r);
-		void error(ErrMsg::Ptr r);
-		void timeout(MsgBase::Ptr r);
+		void ping(const PingReq & r);
+		void findNode(const FindNodeReq & r);
+		void response(const RPCMsg & r);
+		void getPeers(const GetPeersReq &  r);
+		void announce(const AnnounceReq & r);
+		void error(const ErrMsg & r);
+		void timeout(RPCMsg::Ptr r);
 		
 		/**
 		 * A Peer has received a PORT message, and uses this function to alert the DHT of it.
@@ -107,12 +112,7 @@ namespace dht
 		void stop();
 		void addDHTNode(const QString & host,bt::Uint16 hport);
 		
-		/**
-		 * Returns maxNodes number of <IP address, port> nodes 
-		 * that are closest to ourselves and are good.
-		 * @param maxNodes maximum nr of nodes in QMap to return.
-		 */
-		QMap<QString, int> getClosestGoodNodes(int maxNodes);
+		virtual QMap<QString, int> getClosestGoodNodes(int maxNodes);
 		
 	private slots:
 		void update();

@@ -5,7 +5,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 include_directories(${LIBGCRYPT_INCLUDE_DIR} ${QCA2_INCLUDE_DIR})
 remove_definitions(-DQT_NO_HTTP)
 
-set(libktorrent_SRC 
+set(libktorrent_SRC
 	util/bitset.cpp
 	util/timer.cpp
 	util/urlencoder.cpp
@@ -79,6 +79,7 @@ set(libktorrent_SRC
 	peer/badpeerslist.cpp
 	peer/peerconnector.cpp
 	peer/superseeder.cpp
+	peer/connectionlimit.cpp 
 
 	download/piece.cpp
 	download/request.cpp
@@ -129,18 +130,32 @@ set(libktorrent_SRC
 	dht/dht.cpp                
 	dht/kclosestnodessearch.cpp  
 	dht/nodelookup.cpp  
-	dht/rpcmsg.cpp     
+	dht/rpcmsg.cpp   
+	dht/rpcmsgfactory.cpp 
 	dht/taskmanager.cpp
 	dht/database.cpp      
 	dht/dhtpeersource.cpp 
 	dht/key.cpp                  
 	dht/pack.cpp        
 	dht/rpcserver.cpp
+	dht/rpcserverinterface.cpp
 	dht/dhtbase.cpp       
-	dht/kbucket.cpp            
+	dht/kbucket.cpp
+	dht/kbucketentry.cpp 
+	dht/kbuckettable.cpp 
 	dht/node.cpp                 
 	dht/rpccall.cpp     
 	dht/task.cpp
+	dht/packednodecontainer.cpp 
+	dht/errmsg.cpp 
+	dht/pingreq.cpp 
+	dht/findnodereq.cpp
+	dht/getpeersreq.cpp
+	dht/announcereq.cpp 
+	dht/pingrsp.cpp 
+	dht/findnodersp.cpp
+	dht/getpeersrsp.cpp
+	dht/announcersp.cpp 
 
 	diskio/cache.cpp      
 	diskio/chunk.cpp         
@@ -218,7 +233,7 @@ target_link_libraries(ktorrent ${KDE4_KIO_LIBS} ${GMP_LIBRARIES} ${KDE4_SOLID_LI
 if(WIN32)
 target_link_libraries(ktorrent ws2_32)
 endif(WIN32)
-set_target_properties(ktorrent PROPERTIES VERSION 4.0.1 SOVERSION 4 LINK_INTERFACE_LIBRARIES ${KDE4_KDEUI_LIBS})
+set_target_properties(ktorrent PROPERTIES VERSION 5.0.0 SOVERSION 5 LINK_INTERFACE_LIBRARIES ${KDE4_KDEUI_LIBS})
 install(TARGETS ktorrent  ${INSTALL_TARGETS_DEFAULT_ARGS} )
 
 
@@ -253,27 +268,6 @@ set (bcodec_HDR
 	./bcodec/bdecoder.h
 	./bcodec/value.h
 )
-	
-
-
-set (dht_HDR
-	./dht/dhtbase.h
-	./dht/rpcserver.h
-	./dht/key.h
-	./dht/pack.h
-	./dht/rpcmsg.h
-	./dht/dhtpeersource.h
-	./dht/announcetask.h
-	./dht/rpccall.h
-	./dht/kclosestnodessearch.h
-	./dht/dht.h
-	./dht/node.h
-	./dht/task.h
-	./dht/nodelookup.h
-	./dht/taskmanager.h
-	./dht/kbucket.h
-	./dht/database.h
-)
 
 set (migrate_HDR
 	./migrate/ccmigrate.h
@@ -285,7 +279,6 @@ set (migrate_HDR
 
 install(FILES ${bcodec_HDR} DESTINATION ${INCLUDE_INSTALL_DIR}/libktorrent/bcodec COMPONENT Devel)
 install(FILES ${interfaces_HDR} DESTINATION ${INCLUDE_INSTALL_DIR}/libktorrent/interfaces COMPONENT Devel)
-install(FILES ${dht_HDR} DESTINATION ${INCLUDE_INSTALL_DIR}/libktorrent/dht COMPONENT Devel)
 install(FILES ${migrate_HDR} DESTINATION ${INCLUDE_INSTALL_DIR}/libktorrent/migrate COMPONENT Devel)
 install(FILES ${ktorrent_HDR} DESTINATION ${INCLUDE_INSTALL_DIR}/libktorrent COMPONENT Devel)
 
@@ -301,3 +294,4 @@ add_subdirectory(util)
 add_subdirectory(utp)
 add_subdirectory(upnp)
 add_subdirectory(tracker)
+add_subdirectory(dht)
