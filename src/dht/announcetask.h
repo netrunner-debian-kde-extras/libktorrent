@@ -57,7 +57,7 @@ namespace dht
 		             QObject* parent);
 		virtual ~AnnounceTask();
 
-		virtual void callFinished(RPCCall* c, MsgBase::Ptr rsp);
+		virtual void callFinished(RPCCall* c, RPCMsg::Ptr rsp);
 		virtual void callTimeout(RPCCall* c);
 		virtual void update();
 
@@ -68,6 +68,9 @@ namespace dht
 		 * @return false if no item to take, true else
 		 */
 		bool takeItem(DBItem & item);
+		
+	private:
+		void handleNodes(const QByteArray & nodes, int ip_version);
 		
 	private:
 		dht::Key info_hash;

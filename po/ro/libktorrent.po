@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent(2)\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-12 11:09+0100\n"
+"POT-Creation-Date: 2012-08-14 19:52+0200\n"
 "PO-Revision-Date: 2009-07-20 16:52+0300\n"
 "Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -18,6 +18,35 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
 "X-Generator: Lokalize 1.0\n"
+
+#: examples/ktcli/main.cpp:60
+#, fuzzy
+msgid "Torrent to open"
+msgstr "Document de deschis"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+#, fuzzy
+msgid "Port to use"
+msgstr "Neutilizat"
+
+#: examples/ktcli/main.cpp:63
+#, fuzzy
+msgid "Whether or not to enable encryption"
+msgstr "Activează sau nu o ordine particulară de descărcare."
+
+#: examples/ktcli/main.cpp:64
+#, fuzzy
+msgid "Whether or not to enable peer exchange"
+msgstr "Folosiți sau nu schimbul de parteneri compatibil cu µTorrent."
+
+#: examples/ktcli/main.cpp:65
+#, fuzzy
+msgid "Whether or not to use utp"
+msgstr "Arată sau nu indicii în tava de sistem."
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr ""
 
 #: src/bcodec/bdecoder.cpp:71
 #, kde-format
@@ -56,41 +85,18 @@ msgid "Checking Data"
 msgstr "Se verifică datele"
 
 #: src/datachecker/multidatachecker.cpp:209
-#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
-#: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
+#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:706
+#: src/diskio/multifilecache.cpp:745 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
 #, kde-format
 msgid "Cannot open file %1: %2"
 msgstr "Nu am putut deschide fișierul %1: %2"
 
-#: src/diskio/dndfile.cpp:89
-#, fuzzy, kde-format
-msgid "Cannot create file %1: %2"
-msgstr "Nu am putut crea fișierul %1 : %2"
-
-#: src/diskio/dndfile.cpp:137
-#, fuzzy, kde-format
-msgid "Failed to write first chunk to DND file: %1"
-msgstr "Nu am putut scrie prima bucată în fișierul DND: %1"
-
-#: src/diskio/dndfile.cpp:155
-#, fuzzy, kde-format
-msgid "Failed to write last chunk to DND file: %1"
-msgstr "Nu am putut scrie ultima bucată în fișierul DND: %1"
-
-#: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
-#, fuzzy, kde-format
-msgid "Failed to open %1: %2"
-msgstr "Nu am putut deschide %1 : %2"
-
-#: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
+#: src/diskio/cache.cpp:170 src/diskio/multifilecache.cpp:118
+#: src/diskio/singlefilecache.cpp:85
 #, fuzzy, kde-format
 msgid "Failed to create %1: %2"
 msgstr "Nu am putut crea %1 : %2"
-
-#: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
-msgid "Unable to write to a piece mapped read only"
-msgstr ""
 
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
 #: src/util/fileops.cpp:399
@@ -147,10 +153,25 @@ msgstr "Eroare la scrierea în %1 : %2"
 msgid "Cannot preallocate diskspace: %1"
 msgstr "Nu am putut prealoca spațiu pe disc : %1"
 
-#: src/diskio/chunkmanager.cpp:928 src/diskio/chunkmanager.cpp:954
+#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
 #, fuzzy, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr "Nu am putut deschide fișierul index %1 : %2"
+
+#: src/diskio/dndfile.cpp:89
+#, fuzzy, kde-format
+msgid "Cannot create file %1: %2"
+msgstr "Nu am putut crea fișierul %1 : %2"
+
+#: src/diskio/dndfile.cpp:137
+#, fuzzy, kde-format
+msgid "Failed to write first chunk to DND file: %1"
+msgstr "Nu am putut scrie prima bucată în fișierul DND: %1"
+
+#: src/diskio/dndfile.cpp:155
+#, fuzzy, kde-format
+msgid "Failed to write last chunk to DND file: %1"
+msgstr "Nu am putut scrie ultima bucată în fișierul DND: %1"
 
 #: src/diskio/movedatafilesjob.cpp:140
 msgid "Waiting for other move jobs to finish"
@@ -174,6 +195,15 @@ msgctxt "@title job"
 msgid "Moving"
 msgstr "Viteză mutare"
 
+#: src/diskio/multifilecache.cpp:91 src/diskio/singlefilecache.cpp:74
+#, fuzzy, kde-format
+msgid "Failed to open %1: %2"
+msgstr "Nu am putut deschide %1 : %2"
+
+#: src/diskio/piecedata.cpp:69 src/diskio/piecedata.cpp:108
+msgid "Unable to write to a piece mapped read only"
+msgstr ""
+
 #: src/download/chunkdownload.cpp:383
 #, kde-format
 msgid "1 peer"
@@ -187,19 +217,10 @@ msgstr[2] "%1 de parteneri"
 msgid "Disabled because webseed does not match torrent"
 msgstr "Afișează toate semințele web ale unui torent"
 
-#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
-#: src/download/httpconnection.cpp:44
+#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:52
+#: src/download/webseed.cpp:99
 msgid "Not connected"
 msgstr "Neconectat"
-
-#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
-msgid "Connection closed"
-msgstr "Conexiune închisă"
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
 
 #: src/download/httpconnection.cpp:115
 #, kde-format
@@ -215,6 +236,10 @@ msgstr "Nu există destul spațiu pe disc la dispoziție."
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr "Se rezolvă numele calculatorului %1"
+
+#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:348
+msgid "Connection closed"
+msgstr "Conexiune închisă"
 
 #: src/download/httpconnection.cpp:160
 #, kde-format
@@ -254,6 +279,11 @@ msgstr "Eroare: cererea a expirat"
 msgid "Redirected without a new location."
 msgstr "Redirectare fără o locație nouă ! "
 
+#: src/download/webseed.cpp:558
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr ""
+
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr "OK"
@@ -281,11 +311,6 @@ msgstr "Directorul %1 nu există"
 msgid "Unknown client"
 msgstr "Client necunoscut"
 
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "Nu am putut crea fișierul index: %1"
-
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
@@ -299,11 +324,11 @@ msgstr "Torent corupt!"
 msgid "Unable to open torrent file %1: %2"
 msgstr "Nu am putut deschide torentul %1 : %2"
 
-#: src/torrent/torrentcontrol.cpp:308
+#: src/torrent/torrentcontrol.cpp:302
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:554
+#: src/torrent/torrentcontrol.cpp:548
 #, fuzzy, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -312,17 +337,17 @@ msgstr ""
 "A apărut o eroare în timpul ce se încărca torentul <b>%1</b>.\n"
 "Torentul este probabil corupt sau nu este valid."
 
-#: src/torrent/torrentcontrol.cpp:584
+#: src/torrent/torrentcontrol.cpp:578
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:595
+#: src/torrent/torrentcontrol.cpp:589
 #, fuzzy, kde-format
 msgid "Unable to create %1: %2"
 msgstr "Nu am putut crea %1 : %2"
 
-#: src/torrent/torrentcontrol.cpp:610
+#: src/torrent/torrentcontrol.cpp:604
 #, fuzzy, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
@@ -331,10 +356,15 @@ msgstr ""
 "Deja se descarcă acest torent %1, lista trackerelor celor două torente a "
 "fost unificată"
 
-#: src/torrent/torrentcontrol.cpp:615
+#: src/torrent/torrentcontrol.cpp:609
 #, fuzzy, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Acest torent se descarcă deja %1"
+
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "Nu am putut crea fișierul index: %1"
 
 #: src/torrent/torrentstats.cpp:73
 msgid "Not started"
@@ -422,29 +452,38 @@ msgstr ""
 msgid "Unable to resolve hostname %1"
 msgstr "Nu am putut rezolva numele computerului %1"
 
-#: src/util/logsystemmanager.cpp:33
-msgid "General"
-msgstr "General"
+#: src/upnp/httprequest.cpp:96
+#, fuzzy
+msgid "Connection closed unexpectedly"
+msgstr "Conexiunea s-a închis neașteptat."
 
-#: src/util/logsystemmanager.cpp:34
-msgid "Connections"
-msgstr "Conexiuni"
-
-#: src/util/logsystemmanager.cpp:35
-msgid "Tracker"
-msgstr "Tracker"
-
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr "DHT"
-
-#: src/util/logsystemmanager.cpp:37
-msgid "Disk Input/Output"
-msgstr "Intrări/ieșiri disc"
-
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
 msgstr ""
+
+#: src/upnp/upnprouter.cpp:167
+#, fuzzy, kde-format
+msgid "Failed to download %1: %2"
+msgstr "Am eșuat la descărcarea %1 : %2"
+
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
+msgstr "Eroare la parcurgerea descrierii ruterului."
+
+#: src/upnp/upnprouter.cpp:216
+#, fuzzy
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+"Eșuare la înaintare: \n"
+"Dispozitivul nu dispune de o conexiune WANIP sau WANPPP."
+
+#: src/upnp/upnprouter.cpp:314
+msgid "Cannot find port forwarding service in the device's description."
+msgstr ""
+"Nu s-a putut găsi serviciul de înaintare porturi în descrierea "
+"dispozitivului."
 
 #: src/util/file.cpp:84
 #, fuzzy, kde-format
@@ -455,16 +494,6 @@ msgstr "Nu am putut scrie în %1 : %2"
 #, kde-format
 msgid "Cannot read from %1"
 msgstr "Nu am putut citi din %1"
-
-#: src/util/signalcatcher.cpp:78
-#, fuzzy
-msgid "Error when writing to disk"
-msgstr "Eroare la citirea din %1 "
-
-#: src/util/signalcatcher.cpp:78
-#, fuzzy
-msgid "Error when reading from disk"
-msgstr "Eroare la citirea din %1 "
 
 #: src/util/fileops.cpp:94
 #, kde-format
@@ -530,67 +559,39 @@ msgstr[0] "1 zi "
 msgstr[1] "%1 zile "
 msgstr[2] "%1 de zile "
 
-#: src/upnp/httprequest.cpp:96
-#, fuzzy
-msgid "Connection closed unexpectedly"
-msgstr "Conexiunea s-a închis neașteptat."
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "General"
 
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
+msgstr "Conexiuni"
+
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "Tracker"
+
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
+
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
+msgstr "Intrări/ieșiri disc"
+
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
 msgstr ""
 
-#: src/upnp/upnprouter.cpp:167
-#, fuzzy, kde-format
-msgid "Failed to download %1: %2"
-msgstr "Am eșuat la descărcarea %1 : %2"
-
-#: src/upnp/upnprouter.cpp:178
-msgid "Error parsing router description."
-msgstr "Eroare la parcurgerea descrierii ruterului."
-
-#: src/upnp/upnprouter.cpp:216
+#: src/util/signalcatcher.cpp:80
 #, fuzzy
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
-"Eșuare la înaintare: \n"
-"Dispozitivul nu dispune de o conexiune WANIP sau WANPPP."
+msgid "Error when writing to disk"
+msgstr "Eroare la citirea din %1 "
 
-#: src/upnp/upnprouter.cpp:314
-msgid "Cannot find port forwarding service in the device's description."
-msgstr ""
-"Nu s-a putut găsi serviciul de înaintare porturi în descrierea "
-"dispozitivului."
-
-#: examples/ktcli/main.cpp:60
+#: src/util/signalcatcher.cpp:80
 #, fuzzy
-msgid "Torrent to open"
-msgstr "Document de deschis"
-
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-#, fuzzy
-msgid "Port to use"
-msgstr "Neutilizat"
-
-#: examples/ktcli/main.cpp:63
-#, fuzzy
-msgid "Whether or not to enable encryption"
-msgstr "Activează sau nu o ordine particulară de descărcare."
-
-#: examples/ktcli/main.cpp:64
-#, fuzzy
-msgid "Whether or not to enable peer exchange"
-msgstr "Folosiți sau nu schimbul de parteneri compatibil cu µTorrent."
-
-#: examples/ktcli/main.cpp:65
-#, fuzzy
-msgid "Whether or not to use utp"
-msgstr "Arată sau nu indicii în tava de sistem."
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr ""
+msgid "Error when reading from disk"
+msgstr "Eroare la citirea din %1 "
 
 #~ msgid "Parse Error"
 #~ msgstr "Eroare la parcurgere"

@@ -22,7 +22,7 @@
 
 #include <QList>
 #include <QObject>
-#include <dht/rpcmsg.h>
+#include <dht/rpcserverinterface.h>
 #include <net/address.h>
 #include <net/socket.h>
 #include <util/constants.h>
@@ -36,7 +36,6 @@ namespace dht
 {
 	class RPCServerThread;
 	class Key;
-	class RPCCall;
 	class DHT;
 
 	/**
@@ -44,57 +43,52 @@ namespace dht
 	 *
 	 * Class to handle incoming and outgoing RPC messages.
 	 */
-	class RPCServer : public QObject
+	class RPCServer : public QObject, public RPCServerInterface
 	{
 		Q_OBJECT
 	public:
-		RPCServer(DHT* dh_table,Uint16 port,QObject *parent = 0);
+		RPCServer(DHT* dh_table, Uint16 port, QObject *parent = 0);
 		virtual ~RPCServer();
-		
+
 		/// Start the server
 		void start();
-		
+
 		/// Stop the server
 		void stop();
-		
+
 		/**
 		 * Do a RPC call.
 		 * @param msg The message to send
 		 * @return The call object
 		 */
-		RPCCall* doCall(MsgBase::Ptr msg);
-		
+		virtual RPCCall* doCall(RPCMsg::Ptr msg);
+
 		/**
 		 * Send a message, this only sends the message, it does not keep any call
 		 * information. This should be used for replies.
 		 * @param msg The message to send
 		 */
-		void sendMsg(MsgBase::Ptr msg);
-		
+		void sendMsg(RPCMsg::Ptr msg);
+
 		/**
 		 * Send a message, this only sends the message, it does not keep any call
 		 * information. This should be used for replies.
 		 * @param msg The message to send
 		 */
-		void sendMsg(const MsgBase & msg);
-		
-		/**
-		 * A call was timed out.
-		 * @param mtid mtid of call
-		 */
-		void timedOut(Uint8 mtid);
-		
+		void sendMsg(const RPCMsg & msg);
+
 		/**
 		 * Ping a node, we don't care about the MTID.
 		 * @param addr The address
 		 */
-		void ping(const dht::Key & our_id,const net::Address & addr);
-		
+		void ping(const dht::Key & our_id, const net::Address & addr);
+
 		/// Get the number of active calls
 		Uint32 getNumActiveRPCCalls() const;
 		
-		/// Find the method given an mtid
-		Method findMethod(Uint8 mtid);
+	private slots:
+		void callTimeout(RPCCall* call);
+
 	private:
 		class Private;
 		Private* d;

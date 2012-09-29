@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-12 11:09+0100\n"
+"POT-Creation-Date: 2012-08-14 19:52+0200\n"
 "PO-Revision-Date: 2007-10-14 15:28+0000\n"
 "Last-Translator: Youssef Chahibi <chahibi@gmail.com>\n"
 "Language-Team:  <en@li.org>\n"
@@ -17,6 +17,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: examples/ktcli/main.cpp:60
+#, fuzzy
+msgid "Torrent to open"
+msgstr "المستند للفتح"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+#, fuzzy
+msgid "Port to use"
+msgstr "ملاحظة"
+
+#: examples/ktcli/main.cpp:63
+#, fuzzy
+msgid "Whether or not to enable encryption"
+msgstr "استخدم بروتوكول التشفير"
+
+#: examples/ktcli/main.cpp:64
+#, fuzzy
+msgid "Whether or not to enable peer exchange"
+msgstr "اعرض نظام نافذة منبثقة رسائل"
+
+#: examples/ktcli/main.cpp:65
+#, fuzzy
+msgid "Whether or not to use utp"
+msgstr "اعرض نظام نافذة منبثقة رسائل"
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr ""
 
 #: src/bcodec/bdecoder.cpp:71
 #, fuzzy, kde-format
@@ -58,41 +87,18 @@ msgid "Checking Data"
 msgstr "جاري فحص البيانات"
 
 #: src/datachecker/multidatachecker.cpp:209
-#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
-#: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
+#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:706
+#: src/diskio/multifilecache.cpp:745 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
 #, fuzzy, kde-format
 msgid "Cannot open file %1: %2"
 msgstr "لا يستطيع فتح ملفّ 2"
 
-#: src/diskio/dndfile.cpp:89
-#, fuzzy, kde-format
-msgid "Cannot create file %1: %2"
-msgstr "غير قادر على إنشاء الملف %1 : %2"
-
-#: src/diskio/dndfile.cpp:137
-#, fuzzy, kde-format
-msgid "Failed to write first chunk to DND file: %1"
-msgstr "فشل إلى كتابة الأوّل إلى ملفّ 1"
-
-#: src/diskio/dndfile.cpp:155
-#, fuzzy, kde-format
-msgid "Failed to write last chunk to DND file: %1"
-msgstr "فشل إلى كتابة الأخير إلى ملفّ 1"
-
-#: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
-#, fuzzy, kde-format
-msgid "Failed to open %1: %2"
-msgstr "غير قادر على فتح %1 : %2"
-
-#: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
+#: src/diskio/cache.cpp:170 src/diskio/multifilecache.cpp:118
+#: src/diskio/singlefilecache.cpp:85
 #, fuzzy, kde-format
 msgid "Failed to create %1: %2"
 msgstr "غير قادر على إنشاء %1 : %2"
-
-#: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
-msgid "Unable to write to a piece mapped read only"
-msgstr ""
 
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
 #: src/util/fileops.cpp:399
@@ -147,10 +153,25 @@ msgstr "غير قادر على إنشاء %1 : %2"
 msgid "Cannot preallocate diskspace: %1"
 msgstr "لا يستطيع 1"
 
-#: src/diskio/chunkmanager.cpp:928 src/diskio/chunkmanager.cpp:954
+#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
 #, fuzzy, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr "لايمكن فتح ملف الدليل %1 : %2"
+
+#: src/diskio/dndfile.cpp:89
+#, fuzzy, kde-format
+msgid "Cannot create file %1: %2"
+msgstr "غير قادر على إنشاء الملف %1 : %2"
+
+#: src/diskio/dndfile.cpp:137
+#, fuzzy, kde-format
+msgid "Failed to write first chunk to DND file: %1"
+msgstr "فشل إلى كتابة الأوّل إلى ملفّ 1"
+
+#: src/diskio/dndfile.cpp:155
+#, fuzzy, kde-format
+msgid "Failed to write last chunk to DND file: %1"
+msgstr "فشل إلى كتابة الأخير إلى ملفّ 1"
 
 #: src/diskio/movedatafilesjob.cpp:140
 msgid "Waiting for other move jobs to finish"
@@ -173,6 +194,15 @@ msgctxt "@title job"
 msgid "Moving"
 msgstr ""
 
+#: src/diskio/multifilecache.cpp:91 src/diskio/singlefilecache.cpp:74
+#, fuzzy, kde-format
+msgid "Failed to open %1: %2"
+msgstr "غير قادر على فتح %1 : %2"
+
+#: src/diskio/piecedata.cpp:69 src/diskio/piecedata.cpp:108
+msgid "Unable to write to a piece mapped read only"
+msgstr ""
+
 #: src/download/chunkdownload.cpp:383
 #, fuzzy, kde-format
 msgid "1 peer"
@@ -188,21 +218,11 @@ msgstr[5] "أضف النظير:"
 msgid "Disabled because webseed does not match torrent"
 msgstr ""
 
-#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
-#: src/download/httpconnection.cpp:44
+#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:52
+#: src/download/webseed.cpp:99
 #, fuzzy
 msgid "Not connected"
 msgstr "البذر مكتمل"
-
-#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
-#, fuzzy
-msgid "Connection closed"
-msgstr "الإتصالات:"
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr ""
 
 #: src/download/httpconnection.cpp:115
 #, kde-format
@@ -218,6 +238,11 @@ msgstr "هناك هو ليس متوفّر."
 #, fuzzy, kde-format
 msgid "Resolving hostname %1"
 msgstr "غير قادر على إنشاء %1 : %2"
+
+#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:348
+#, fuzzy
+msgid "Connection closed"
+msgstr "الإتصالات:"
 
 #: src/download/httpconnection.cpp:160
 #, kde-format
@@ -259,6 +284,11 @@ msgstr ""
 msgid "Redirected without a new location."
 msgstr ""
 
+#: src/download/webseed.cpp:558
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr ""
+
 #: src/interfaces/trackerinterface.cpp:58
 #, fuzzy
 msgid "OK"
@@ -289,11 +319,6 @@ msgstr "الدليل %1 غير موجود"
 msgid "Unknown client"
 msgstr "زبون غير معروف"
 
-#: src/torrent/torrentcreator.cpp:361
-#, fuzzy, kde-format
-msgid "Cannot create index file: %1"
-msgstr "لا يستطيع إ_نشئ فهرس ملفّ 1"
-
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
@@ -307,38 +332,43 @@ msgstr "مفسد!"
 msgid "Unable to open torrent file %1: %2"
 msgstr "عاجز إلى فتح ملفّ 2"
 
-#: src/torrent/torrentcontrol.cpp:308
+#: src/torrent/torrentcontrol.cpp:302
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:554
+#: src/torrent/torrentcontrol.cpp:548
 #, fuzzy, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
 "torrent is probably corrupt or is not a valid torrent file."
 msgstr "أداة تعريف خطأ بينما يجري التحميل الـ هو فاسد أو هو ليس a ملفّ."
 
-#: src/torrent/torrentcontrol.cpp:584
+#: src/torrent/torrentcontrol.cpp:578
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:595
+#: src/torrent/torrentcontrol.cpp:589
 #, fuzzy, kde-format
 msgid "Unable to create %1: %2"
 msgstr "غير قادر على إنشاء %1 : %2"
 
-#: src/torrent/torrentcontrol.cpp:610
+#: src/torrent/torrentcontrol.cpp:604
 #, fuzzy, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
 "both torrents have been merged."
 msgstr "أنت قائمة من من."
 
-#: src/torrent/torrentcontrol.cpp:615
+#: src/torrent/torrentcontrol.cpp:609
 #, fuzzy, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "أنت 1"
+
+#: src/torrent/torrentcreator.cpp:361
+#, fuzzy, kde-format
+msgid "Cannot create index file: %1"
+msgstr "لا يستطيع إ_نشئ فهرس ملفّ 1"
 
 #: src/torrent/torrentstats.cpp:73
 #, fuzzy
@@ -436,33 +466,34 @@ msgstr ""
 msgid "Unable to resolve hostname %1"
 msgstr "غير قادر على إنشاء %1 : %2"
 
-#: src/util/logsystemmanager.cpp:33
+#: src/upnp/httprequest.cpp:96
 #, fuzzy
-msgid "General"
-msgstr "عام"
-
-#: src/util/logsystemmanager.cpp:34
-#, fuzzy
-msgid "Connections"
+msgid "Connection closed unexpectedly"
 msgstr "الإتصالات:"
 
-#: src/util/logsystemmanager.cpp:35
-#, fuzzy
-msgid "Tracker"
-msgstr "المقتفون"
-
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
 msgstr ""
 
-#: src/util/logsystemmanager.cpp:37
-#, fuzzy
-msgid "Disk Input/Output"
-msgstr "قرص I O:"
+#: src/upnp/upnprouter.cpp:167
+#, fuzzy, kde-format
+msgid "Failed to download %1: %2"
+msgstr "غير قادر على فتح %1 : %2"
 
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
 msgstr ""
+
+#: src/upnp/upnprouter.cpp:216
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:314
+#, fuzzy
+msgid "Cannot find port forwarding service in the device's description."
+msgstr "لا يستطيع ابحث منفذ خدمة بوصة جهاز s الوصف!"
 
 #: src/util/file.cpp:84
 #, fuzzy, kde-format
@@ -473,16 +504,6 @@ msgstr "غير قادر على الكتابة إلى %1 : %2"
 #, fuzzy, kde-format
 msgid "Cannot read from %1"
 msgstr "غير قادر على القراءة من %1"
-
-#: src/util/signalcatcher.cpp:78
-#, fuzzy
-msgid "Error when writing to disk"
-msgstr "خطأ عند الكتابة إلى %1"
-
-#: src/util/signalcatcher.cpp:78
-#, fuzzy
-msgid "Error when reading from disk"
-msgstr "خطأ عند القراءة من %1"
 
 #: src/util/fileops.cpp:94
 #, fuzzy, kde-format
@@ -551,63 +572,43 @@ msgstr[3] ""
 msgstr[4] ""
 msgstr[5] ""
 
-#: src/upnp/httprequest.cpp:96
+#: src/util/logsystemmanager.cpp:33
 #, fuzzy
-msgid "Connection closed unexpectedly"
+msgid "General"
+msgstr "عام"
+
+#: src/util/logsystemmanager.cpp:34
+#, fuzzy
+msgid "Connections"
 msgstr "الإتصالات:"
 
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
+#: src/util/logsystemmanager.cpp:35
+#, fuzzy
+msgid "Tracker"
+msgstr "المقتفون"
+
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
 msgstr ""
 
-#: src/upnp/upnprouter.cpp:167
-#, fuzzy, kde-format
-msgid "Failed to download %1: %2"
-msgstr "غير قادر على فتح %1 : %2"
+#: src/util/logsystemmanager.cpp:37
+#, fuzzy
+msgid "Disk Input/Output"
+msgstr "قرص I O:"
 
-#: src/upnp/upnprouter.cpp:178
-msgid "Error parsing router description."
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
 msgstr ""
 
-#: src/upnp/upnprouter.cpp:216
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
-
-#: src/upnp/upnprouter.cpp:314
+#: src/util/signalcatcher.cpp:80
 #, fuzzy
-msgid "Cannot find port forwarding service in the device's description."
-msgstr "لا يستطيع ابحث منفذ خدمة بوصة جهاز s الوصف!"
+msgid "Error when writing to disk"
+msgstr "خطأ عند الكتابة إلى %1"
 
-#: examples/ktcli/main.cpp:60
+#: src/util/signalcatcher.cpp:80
 #, fuzzy
-msgid "Torrent to open"
-msgstr "المستند للفتح"
-
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-#, fuzzy
-msgid "Port to use"
-msgstr "ملاحظة"
-
-#: examples/ktcli/main.cpp:63
-#, fuzzy
-msgid "Whether or not to enable encryption"
-msgstr "استخدم بروتوكول التشفير"
-
-#: examples/ktcli/main.cpp:64
-#, fuzzy
-msgid "Whether or not to enable peer exchange"
-msgstr "اعرض نظام نافذة منبثقة رسائل"
-
-#: examples/ktcli/main.cpp:65
-#, fuzzy
-msgid "Whether or not to use utp"
-msgstr "اعرض نظام نافذة منبثقة رسائل"
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr ""
+msgid "Error when reading from disk"
+msgstr "خطأ عند القراءة من %1"
 
 #, fuzzy
 #~ msgid "Parse Error"

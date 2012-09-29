@@ -77,7 +77,7 @@ namespace net
 		/// Is this a IPv4 mapped address into the IPv6 address space
 		bool isIPv4Mapped() const;
 		
-		/// Convert to an IPv4 address when isIPv4Mapped returns true
+		/// Convert an IPv4 mapped IPv6 address to an IPv4 address
 		Address convertIPv4Mapped() const;
 		
 	private:

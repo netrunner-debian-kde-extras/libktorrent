@@ -3,24 +3,52 @@
 # Tommi Nieminen <tommi.nieminen@legisign.org>, 2009.
 # Tommi Nieminen <translator@legisign.org>, 2009, 2010.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2011, 2012.
+# KDE 4.9 Finnish translation sprint 2012-06/07
+# Author: Artnay
 msgid ""
 msgstr ""
 "Project-Id-Version: libktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-12 11:09+0100\n"
-"PO-Revision-Date: 2012-02-10 05:56+0200\n"
+"POT-Creation-Date: 2012-08-14 19:52+0200\n"
+"PO-Revision-Date: 2012-07-18 22:28:40+0000\n"
 "Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
-"Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
+"Language-Team: Finnish <lokalisointi@lists.coss.fi>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-POT-Import-Date: 2012-06-15 07:12:06+0000\n"
+"X-Generator: MediaWiki 1.20alpha (r113129); Translate 2012-07-04\n"
+
+#: examples/ktcli/main.cpp:60
+msgid "Torrent to open"
+msgstr "Avattava torrentti"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+msgid "Port to use"
+msgstr "Käytettävä portti"
+
+#: examples/ktcli/main.cpp:63
+msgid "Whether or not to enable encryption"
+msgstr "Käytetäänkö salausta"
+
+#: examples/ktcli/main.cpp:64
+msgid "Whether or not to enable peer exchange"
+msgstr "Käytetäänkö käyttäjätietojen vaihtoa"
+
+#: examples/ktcli/main.cpp:65
+msgid "Whether or not to use utp"
+msgstr "Käytetäänkö utp:tä"
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr "ktcli"
 
 #: src/bcodec/bdecoder.cpp:71
 #, kde-format
 msgid "Illegal token: %1"
-msgstr "Epäkelpo lippu: %1"
+msgstr "Virheellinen lippu: %1"
 
 #: src/bcodec/bdecoder.cpp:133 src/bcodec/bdecoder.cpp:141
 msgid "Decode error"
@@ -52,41 +80,18 @@ msgid "Checking Data"
 msgstr "Tarkistetaan dataa"
 
 #: src/datachecker/multidatachecker.cpp:209
-#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
-#: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
+#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:706
+#: src/diskio/multifilecache.cpp:745 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
 #, kde-format
 msgid "Cannot open file %1: %2"
 msgstr "Tiedostoa %1 ei voitu avata: %2"
 
-#: src/diskio/dndfile.cpp:89
-#, kde-format
-msgid "Cannot create file %1: %2"
-msgstr "Tiedostoa %1 ei voitu luoda: %2"
-
-#: src/diskio/dndfile.cpp:137
-#, kde-format
-msgid "Failed to write first chunk to DND file: %1"
-msgstr "Ensimmäisen lohkon kirjoitus DND-tiedostoon epäonnistui: %1"
-
-#: src/diskio/dndfile.cpp:155
-#, kde-format
-msgid "Failed to write last chunk to DND file: %1"
-msgstr "Viimeisen lohkon kirjoitus DND-tiedostoon epäonnistui: %1"
-
-#: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
-#, kde-format
-msgid "Failed to open %1: %2"
-msgstr "Kohteen %1 avaaminen epäonnistui: %2"
-
-#: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
+#: src/diskio/cache.cpp:170 src/diskio/multifilecache.cpp:118
+#: src/diskio/singlefilecache.cpp:85
 #, kde-format
 msgid "Failed to create %1: %2"
 msgstr "Tiedoston %1 luominen epäonnistui: %2"
-
-#: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
-msgid "Unable to write to a piece mapped read only"
-msgstr "Ei voitu kirjoittaa vain luettavaksi määritettyyn osaan"
 
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
 #: src/util/fileops.cpp:399
@@ -143,10 +148,25 @@ msgstr "Tiedostoon %1 ei voitu kirjoittaa: %2"
 msgid "Cannot preallocate diskspace: %1"
 msgstr "Ei voitu varata levytilaa: %1"
 
-#: src/diskio/chunkmanager.cpp:928 src/diskio/chunkmanager.cpp:954
+#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
 #, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr "Indeksitiedoston %1 avaus ei onnistunut: %2"
+
+#: src/diskio/dndfile.cpp:89
+#, kde-format
+msgid "Cannot create file %1: %2"
+msgstr "Tiedostoa %1 ei voitu luoda: %2"
+
+#: src/diskio/dndfile.cpp:137
+#, kde-format
+msgid "Failed to write first chunk to DND file: %1"
+msgstr "Ensimmäisen lohkon kirjoitus DND-tiedostoon epäonnistui: %1"
+
+#: src/diskio/dndfile.cpp:155
+#, kde-format
+msgid "Failed to write last chunk to DND file: %1"
+msgstr "Viimeisen lohkon kirjoitus DND-tiedostoon epäonnistui: %1"
 
 #: src/diskio/movedatafilesjob.cpp:140
 msgid "Waiting for other move jobs to finish"
@@ -167,6 +187,15 @@ msgctxt "@title job"
 msgid "Moving"
 msgstr "Siirretään"
 
+#: src/diskio/multifilecache.cpp:91 src/diskio/singlefilecache.cpp:74
+#, kde-format
+msgid "Failed to open %1: %2"
+msgstr "Kohteen %1 avaaminen epäonnistui: %2"
+
+#: src/diskio/piecedata.cpp:69 src/diskio/piecedata.cpp:108
+msgid "Unable to write to a piece mapped read only"
+msgstr "Ei voitu kirjoittaa vain luettavaksi määritettyyn osaan"
+
 #: src/download/chunkdownload.cpp:383
 #, kde-format
 msgid "1 peer"
@@ -178,19 +207,10 @@ msgstr[1] "%1 käyttäjää"
 msgid "Disabled because webseed does not match torrent"
 msgstr "Poissa käytöstä, koska web-jako ei vastaa torrenttia"
 
-#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
-#: src/download/httpconnection.cpp:44
+#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:52
+#: src/download/webseed.cpp:99
 msgid "Not connected"
 msgstr "Ei yhteyttä"
-
-#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
-msgid "Connection closed"
-msgstr "Yhteys suljettu"
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr "Käyttämättömänä %1 sekuntia (Liian monta yhteysvirhettä)"
 
 #: src/download/httpconnection.cpp:115
 #, kde-format
@@ -205,6 +225,10 @@ msgstr "Ei tarpeeksi järjestelmäresursseja"
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr "Selvitetään verkkonimeä %1"
+
+#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:348
+msgid "Connection closed"
+msgstr "Yhteys suljettu"
 
 #: src/download/httpconnection.cpp:160
 #, kde-format
@@ -243,6 +267,11 @@ msgstr "Virhe: pyyntö aikakatkaistu"
 msgid "Redirected without a new location."
 msgstr "Uudelleenohjattu ilman uutta kohdetta."
 
+#: src/download/webseed.cpp:558
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr "Käyttämättömänä %1 sekuntia (Liian monta yhteysvirhettä)"
+
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr "OK"
@@ -270,11 +299,6 @@ msgstr "Kansiota %1 ei ole olemassa"
 msgid "Unknown client"
 msgstr "Tuntematon"
 
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "Ei voi luoda indeksitiedostoa: %1"
-
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
@@ -287,11 +311,11 @@ msgstr "Viallinen torrentti."
 msgid "Unable to open torrent file %1: %2"
 msgstr "Ei voitu avata torrentia %1: %2"
 
-#: src/torrent/torrentcontrol.cpp:308
+#: src/torrent/torrentcontrol.cpp:302
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr "Virhe kirjoitettaessa levylle, onko levytilaa tarpeeksi?"
 
-#: src/torrent/torrentcontrol.cpp:554
+#: src/torrent/torrentcontrol.cpp:548
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -301,17 +325,17 @@ msgstr ""
 "Torrentti on mahdollisesti vioittunut tai se ei ole lainkaan "
 "torrenttitiedosto."
 
-#: src/torrent/torrentcontrol.cpp:584
+#: src/torrent/torrentcontrol.cpp:578
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr "Ladattaessa torrenttia <b>%1</b> havaittiin virhe:<br/><b>%2</b>"
 
-#: src/torrent/torrentcontrol.cpp:595
+#: src/torrent/torrentcontrol.cpp:589
 #, kde-format
 msgid "Unable to create %1: %2"
 msgstr "Ei voitu luoda %1: %2"
 
-#: src/torrent/torrentcontrol.cpp:610
+#: src/torrent/torrentcontrol.cpp:604
 #, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
@@ -320,10 +344,15 @@ msgstr ""
 "Lataat jo torrenttia <b>%1</b>. Kummankin torrentin "
 "seurantapalvelinluettelot on yhdistetty."
 
-#: src/torrent/torrentcontrol.cpp:615
+#: src/torrent/torrentcontrol.cpp:609
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Lataat jo torrentia <b>%1</b>."
+
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "Ei voi luoda indeksitiedostoa: %1"
 
 #: src/torrent/torrentstats.cpp:73
 msgid "Not started"
@@ -406,29 +435,34 @@ msgstr "Aikakatkaisu yhdistettäessä seurantapalvelimeen %1"
 msgid "Unable to resolve hostname %1"
 msgstr "Verkkonimeä %1 ei saatu selvitettyä"
 
-#: src/util/logsystemmanager.cpp:33
-msgid "General"
-msgstr "Yleiset"
+#: src/upnp/httprequest.cpp:96
+msgid "Connection closed unexpectedly"
+msgstr "Yhteys katkesi odottamatta"
 
-#: src/util/logsystemmanager.cpp:34
-msgid "Connections"
-msgstr "Yhteydet"
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr "Toiminnon aikakatkaisu"
 
-#: src/util/logsystemmanager.cpp:35
-msgid "Tracker"
-msgstr "Seurantapalvelin"
+#: src/upnp/upnprouter.cpp:167
+#, kde-format
+msgid "Failed to download %1: %2"
+msgstr "Kohteen %1 lataus epäonnistui: %2"
 
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr "DHT"
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
+msgstr "Virhe jäsennettäessä reitittimen kuvausta."
 
-#: src/util/logsystemmanager.cpp:37
-msgid "Disk Input/Output"
-msgstr "Levy-I/O"
+#: src/upnp/upnprouter.cpp:216
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+"Ohjaus epäonnistui:\n"
+"Laitteella ei ole WANIPConnection- eikä WANPPPConnection-palvelua."
 
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
-msgstr "µTP"
+#: src/upnp/upnprouter.cpp:314
+msgid "Cannot find port forwarding service in the device's description."
+msgstr "Portin ohjauspalvelua ei löydy laitteen kuvauksesta."
 
 #: src/util/file.cpp:84
 #, kde-format
@@ -439,14 +473,6 @@ msgstr "Ei voitu kirjoittaa %1: %2"
 #, kde-format
 msgid "Cannot read from %1"
 msgstr "Ei voitu lukea %1"
-
-#: src/util/signalcatcher.cpp:78
-msgid "Error when writing to disk"
-msgstr "Virhe kirjoitettaessa levylle"
-
-#: src/util/signalcatcher.cpp:78
-msgid "Error when reading from disk"
-msgstr "Virhe luettaessa levyltä"
 
 #: src/util/fileops.cpp:94
 #, kde-format
@@ -512,55 +538,34 @@ msgid_plural "%1 days "
 msgstr[0] "1 pv "
 msgstr[1] "%1 pv "
 
-#: src/upnp/httprequest.cpp:96
-msgid "Connection closed unexpectedly"
-msgstr "Yhteys katkesi odottamatta"
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "Yleiset"
 
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
-msgstr "Toiminnon aikakatkaisu"
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
+msgstr "Yhteydet"
 
-#: src/upnp/upnprouter.cpp:167
-#, kde-format
-msgid "Failed to download %1: %2"
-msgstr "Kohteen %1 lataus epäonnistui: %2"
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "Seurantapalvelin"
 
-#: src/upnp/upnprouter.cpp:178
-msgid "Error parsing router description."
-msgstr "Virhe jäsennettäessä reitittimen kuvausta."
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
 
-#: src/upnp/upnprouter.cpp:216
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
-"Ohjaus epäonnistui:\n"
-"Laitteella ei ole WANIPConnection- eikä WANPPPConnection-palvelua."
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
+msgstr "Levy-I/O"
 
-#: src/upnp/upnprouter.cpp:314
-msgid "Cannot find port forwarding service in the device's description."
-msgstr "Portin ohjauspalvelua ei löydy laitteen kuvauksesta."
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr "µTP"
 
-#: examples/ktcli/main.cpp:60
-msgid "Torrent to open"
-msgstr "Avattava torrentti"
+#: src/util/signalcatcher.cpp:80
+msgid "Error when writing to disk"
+msgstr "Virhe kirjoitettaessa levylle"
 
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-msgid "Port to use"
-msgstr "Käytettävä portti"
-
-#: examples/ktcli/main.cpp:63
-msgid "Whether or not to enable encryption"
-msgstr "Käytetäänkö salausta"
-
-#: examples/ktcli/main.cpp:64
-msgid "Whether or not to enable peer exchange"
-msgstr "Käytetäänkö käyttäjätietojen vaihtoa"
-
-#: examples/ktcli/main.cpp:65
-msgid "Whether or not to use utp"
-msgstr "Käytetäänkö utp:tä"
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr "ktcli"
+#: src/util/signalcatcher.cpp:80
+msgid "Error when reading from disk"
+msgstr "Virhe luettaessa levyltä"

@@ -177,7 +177,7 @@ namespace net
 			
 		return addr[10] == 0xff && addr[11] == 0xff;
 	}
-	
+
 	Address Address::convertIPv4Mapped() const
 	{
 		if (isIPv4Mapped())
@@ -189,6 +189,4 @@ namespace net
 		
 		return net::Address(*this);
 	}
-
-
 }

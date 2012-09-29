@@ -306,7 +306,7 @@ namespace bt
 		return true;
 	}
 	
-	float HttpConnection::getDownloadRate() const
+	int HttpConnection::getDownloadRate() const
 	{
 		if (sock)
 		{

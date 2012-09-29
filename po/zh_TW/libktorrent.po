@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-12 11:09+0100\n"
+"POT-Creation-Date: 2012-08-14 19:52+0200\n"
 "PO-Revision-Date: 2012-01-16 10:31+0800\n"
 "Last-Translator: Franklin Weng <franklin@mail.everfocus.com.tw>\n"
 "Language-Team: Chinese Traditional <zh-l10n@linux.org.tw>\n"
@@ -21,6 +21,30 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 1.2\n"
+
+#: examples/ktcli/main.cpp:60
+msgid "Torrent to open"
+msgstr "要開啟的 torrent"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+msgid "Port to use"
+msgstr "要使用的連接埠"
+
+#: examples/ktcli/main.cpp:63
+msgid "Whether or not to enable encryption"
+msgstr "是否要開啟加密功能。"
+
+#: examples/ktcli/main.cpp:64
+msgid "Whether or not to enable peer exchange"
+msgstr "是否要開啟端點交換功能。"
+
+#: examples/ktcli/main.cpp:65
+msgid "Whether or not to use utp"
+msgstr "是否要使用 utp"
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr "ktcli"
 
 #: src/bcodec/bdecoder.cpp:71
 #, kde-format
@@ -57,41 +81,18 @@ msgid "Checking Data"
 msgstr "檢查資料中"
 
 #: src/datachecker/multidatachecker.cpp:209
-#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
-#: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
+#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:706
+#: src/diskio/multifilecache.cpp:745 src/torrent/torrentcreator.cpp:124
 #: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
 #, kde-format
 msgid "Cannot open file %1: %2"
 msgstr "無法開啟檔案 %1：%2"
 
-#: src/diskio/dndfile.cpp:89
-#, kde-format
-msgid "Cannot create file %1: %2"
-msgstr "無法建立檔案 %1：%2"
-
-#: src/diskio/dndfile.cpp:137
-#, kde-format
-msgid "Failed to write first chunk to DND file: %1"
-msgstr "寫入 DND 檔的第一個區塊失敗：%1"
-
-#: src/diskio/dndfile.cpp:155
-#, kde-format
-msgid "Failed to write last chunk to DND file: %1"
-msgstr "寫入 DND 檔的最後一個區塊失敗：%1"
-
-#: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
-#, kde-format
-msgid "Failed to open %1: %2"
-msgstr "開啟 %1 : %2 失敗"
-
-#: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
+#: src/diskio/cache.cpp:170 src/diskio/multifilecache.cpp:118
+#: src/diskio/singlefilecache.cpp:85
 #, kde-format
 msgid "Failed to create %1: %2"
 msgstr "無法建立 %1:%2"
-
-#: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
-msgid "Unable to write to a piece mapped read only"
-msgstr "無法寫入已映射為唯讀的片段"
 
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
 #: src/util/fileops.cpp:399
@@ -146,10 +147,25 @@ msgstr "寫入檔案 %1 失敗：%2"
 msgid "Cannot preallocate diskspace: %1"
 msgstr "無法預留磁碟空間：%1"
 
-#: src/diskio/chunkmanager.cpp:928 src/diskio/chunkmanager.cpp:954
+#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
 #, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr "無法開啟索引檔 %1：%2"
+
+#: src/diskio/dndfile.cpp:89
+#, kde-format
+msgid "Cannot create file %1: %2"
+msgstr "無法建立檔案 %1：%2"
+
+#: src/diskio/dndfile.cpp:137
+#, kde-format
+msgid "Failed to write first chunk to DND file: %1"
+msgstr "寫入 DND 檔的第一個區塊失敗：%1"
+
+#: src/diskio/dndfile.cpp:155
+#, kde-format
+msgid "Failed to write last chunk to DND file: %1"
+msgstr "寫入 DND 檔的最後一個區塊失敗：%1"
 
 #: src/diskio/movedatafilesjob.cpp:140
 msgid "Waiting for other move jobs to finish"
@@ -170,6 +186,15 @@ msgctxt "@title job"
 msgid "Moving"
 msgstr "移動"
 
+#: src/diskio/multifilecache.cpp:91 src/diskio/singlefilecache.cpp:74
+#, kde-format
+msgid "Failed to open %1: %2"
+msgstr "開啟 %1 : %2 失敗"
+
+#: src/diskio/piecedata.cpp:69 src/diskio/piecedata.cpp:108
+msgid "Unable to write to a piece mapped read only"
+msgstr "無法寫入已映射為唯讀的片段"
+
 #: src/download/chunkdownload.cpp:383
 #, kde-format
 msgid "1 peer"
@@ -180,19 +205,10 @@ msgstr[0] "%1 個端點"
 msgid "Disabled because webseed does not match torrent"
 msgstr "已關閉，因為網頁種子與 torrent 不符"
 
-#: src/download/webseed.cpp:51 src/download/webseed.cpp:98
-#: src/download/httpconnection.cpp:44
+#: src/download/httpconnection.cpp:44 src/download/webseed.cpp:52
+#: src/download/webseed.cpp:99
 msgid "Not connected"
 msgstr "未連線"
-
-#: src/download/webseed.cpp:336 src/download/httpconnection.cpp:153
-msgid "Connection closed"
-msgstr "連線已關閉"
-
-#: src/download/webseed.cpp:545
-#, kde-format
-msgid "Unused for %1 seconds (Too many connection failures)"
-msgstr "未使用達 %1 秒（太多連線失敗）"
 
 #: src/download/httpconnection.cpp:115
 #, kde-format
@@ -207,6 +223,10 @@ msgstr "系統資源不足"
 #, kde-format
 msgid "Resolving hostname %1"
 msgstr "解析主機名稱 %1 中"
+
+#: src/download/httpconnection.cpp:153 src/download/webseed.cpp:348
+msgid "Connection closed"
+msgstr "連線已關閉"
 
 #: src/download/httpconnection.cpp:160
 #, kde-format
@@ -245,6 +265,11 @@ msgstr "錯誤：連線逾時"
 msgid "Redirected without a new location."
 msgstr "重新導線，但是沒有給新的位置。"
 
+#: src/download/webseed.cpp:558
+#, kde-format
+msgid "Unused for %1 seconds (Too many connection failures)"
+msgstr "未使用達 %1 秒（太多連線失敗）"
+
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
 msgstr "確定"
@@ -272,11 +297,6 @@ msgstr "目錄 %1 不存在"
 msgid "Unknown client"
 msgstr "不明客戶端"
 
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "無法建立索引檔：%1"
-
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
@@ -289,11 +309,11 @@ msgstr "損壞的 torrent。"
 msgid "Unable to open torrent file %1: %2"
 msgstr "不能開啟 torrent 檔 %1：%2"
 
-#: src/torrent/torrentcontrol.cpp:308
+#: src/torrent/torrentcontrol.cpp:302
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr "寫入磁碟時發生錯誤。您有足夠的磁碟空間嗎？"
 
-#: src/torrent/torrentcontrol.cpp:554
+#: src/torrent/torrentcontrol.cpp:548
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -302,27 +322,32 @@ msgstr ""
 "載入 torrent <b>%1</b> 時發生錯誤：<br/> <b>%2</b><br/>此 Torrent 可能已損"
 "毀，或不是一個合法的 torrent 檔。"
 
-#: src/torrent/torrentcontrol.cpp:584
+#: src/torrent/torrentcontrol.cpp:578
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr "載入 <b>%1</b> 時發生錯誤：<br/><b>%2</b>"
 
-#: src/torrent/torrentcontrol.cpp:595
+#: src/torrent/torrentcontrol.cpp:589
 #, kde-format
 msgid "Unable to create %1: %2"
 msgstr "無法建立 %1：%2"
 
-#: src/torrent/torrentcontrol.cpp:610
+#: src/torrent/torrentcontrol.cpp:604
 #, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
 "both torrents have been merged."
 msgstr "您正在下載 torrent <b>%1</b>。兩個 torrent 的追蹤器清單已被合併。"
 
-#: src/torrent/torrentcontrol.cpp:615
+#: src/torrent/torrentcontrol.cpp:609
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "您正在下載 torrent <b>%1</b>。"
+
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "無法建立索引檔：%1"
 
 #: src/torrent/torrentstats.cpp:73
 msgid "Not started"
@@ -405,29 +430,34 @@ msgstr "聯繫追蹤器 %1 時發生逾時"
 msgid "Unable to resolve hostname %1"
 msgstr "無法解析主機名稱 %1"
 
-#: src/util/logsystemmanager.cpp:33
-msgid "General"
-msgstr "一般"
+#: src/upnp/httprequest.cpp:96
+msgid "Connection closed unexpectedly"
+msgstr "連線非預期關閉"
 
-#: src/util/logsystemmanager.cpp:34
-msgid "Connections"
-msgstr "連線"
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr "操作逾時"
 
-#: src/util/logsystemmanager.cpp:35
-msgid "Tracker"
-msgstr "追蹤器"
+#: src/upnp/upnprouter.cpp:167
+#, kde-format
+msgid "Failed to download %1: %2"
+msgstr "下載 %1 時失敗：%2"
 
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr "DHT"
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
+msgstr "剖析路由器描述時發生錯誤。"
 
-#: src/util/logsystemmanager.cpp:37
-msgid "Disk Input/Output"
-msgstr "磁碟 I/O"
+#: src/upnp/upnprouter.cpp:216
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+"轉送失敗：\n"
+"裝置沒有網際網路的 IP 連線或 PPP 連線。"
 
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
-msgstr "µTP"
+#: src/upnp/upnprouter.cpp:314
+msgid "Cannot find port forwarding service in the device's description."
+msgstr "裝置描述中找不到連接埠轉送服務。"
 
 #: src/util/file.cpp:84
 #, kde-format
@@ -438,14 +468,6 @@ msgstr "無法寫入到 %1：%2"
 #, kde-format
 msgid "Cannot read from %1"
 msgstr "無法讀取 %1"
-
-#: src/util/signalcatcher.cpp:78
-msgid "Error when writing to disk"
-msgstr "寫入磁碟時發生錯誤"
-
-#: src/util/signalcatcher.cpp:78
-msgid "Error when reading from disk"
-msgstr "從磁碟讀取時發生錯誤"
 
 #: src/util/fileops.cpp:94
 #, kde-format
@@ -509,58 +531,37 @@ msgid "1 day "
 msgid_plural "%1 days "
 msgstr[0] "%1 天"
 
-#: src/upnp/httprequest.cpp:96
-msgid "Connection closed unexpectedly"
-msgstr "連線非預期關閉"
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "一般"
 
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
-msgstr "操作逾時"
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
+msgstr "連線"
 
-#: src/upnp/upnprouter.cpp:167
-#, kde-format
-msgid "Failed to download %1: %2"
-msgstr "下載 %1 時失敗：%2"
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "追蹤器"
 
-#: src/upnp/upnprouter.cpp:178
-msgid "Error parsing router description."
-msgstr "剖析路由器描述時發生錯誤。"
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
 
-#: src/upnp/upnprouter.cpp:216
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
-"轉送失敗：\n"
-"裝置沒有網際網路的 IP 連線或 PPP 連線。"
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
+msgstr "磁碟 I/O"
 
-#: src/upnp/upnprouter.cpp:314
-msgid "Cannot find port forwarding service in the device's description."
-msgstr "裝置描述中找不到連接埠轉送服務。"
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr "µTP"
 
-#: examples/ktcli/main.cpp:60
-msgid "Torrent to open"
-msgstr "要開啟的 torrent"
+#: src/util/signalcatcher.cpp:80
+msgid "Error when writing to disk"
+msgstr "寫入磁碟時發生錯誤"
 
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-msgid "Port to use"
-msgstr "要使用的連接埠"
-
-#: examples/ktcli/main.cpp:63
-msgid "Whether or not to enable encryption"
-msgstr "是否要開啟加密功能。"
-
-#: examples/ktcli/main.cpp:64
-msgid "Whether or not to enable peer exchange"
-msgstr "是否要開啟端點交換功能。"
-
-#: examples/ktcli/main.cpp:65
-msgid "Whether or not to use utp"
-msgstr "是否要使用 utp"
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr "ktcli"
+#: src/util/signalcatcher.cpp:80
+msgid "Error when reading from disk"
+msgstr "從磁碟讀取時發生錯誤"
 
 #~ msgid "Parse Error"
 #~ msgstr "剖析錯誤"

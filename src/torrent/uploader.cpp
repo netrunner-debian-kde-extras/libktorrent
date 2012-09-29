@@ -30,7 +30,7 @@ namespace bt
 {
 
 	Uploader::Uploader(ChunkManager & cman,PeerManager & pman) 
-	: cman(cman),pman(pman),uploaded(0),opt_unchoked(0)
+	: cman(cman),pman(pman),uploaded(0)
 	{}
 
 
@@ -39,10 +39,10 @@ namespace bt
 	}
 
 	
-	void Uploader::visit(const bt::Peer* p)
+	void Uploader::visit(const bt::Peer::Ptr p)
 	{
 		PeerUploader* pu = p->getPeerUploader();
-		uploaded += pu->update(cman);
+		uploaded += pu->handleRequests(cman);
 	}
 
 	
