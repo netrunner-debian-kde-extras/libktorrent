@@ -3,6 +3,7 @@ libktorrent (1.3.0-1) UNRELEASED; urgency=low
   * New upstream release.
   * SOVERSION changed to 5, make appropriate changes in packaging.
   * Update symbol file, all symbols are at version 1.3.0 now.
+  * Bump Standards-Version to 3.9.4: no changes needed.
 
  -- Modestas Vainius <modax@debian.org>  Sun, 30 Sep 2012 00:16:31 +0300
 
