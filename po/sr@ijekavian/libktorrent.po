@@ -1,12 +1,12 @@
 # Translation of libktorrent.po into Serbian.
 # Slobodan Simic <slsimic@gmail.com>, 2007, 2008, 2009, 2010.
-# Chusslove Illich <caslav.ilic@gmx.net>, 2009, 2010, 2011.
+# Chusslove Illich <caslav.ilic@gmx.net>, 2009, 2010, 2011, 2012.
 # Dalibor Djuric <daliborddjuric@gmail.com>, 2010, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: libktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-14 19:52+0200\n"
+"POT-Creation-Date: 2012-12-18 16:46+0100\n"
 "PO-Revision-Date: 2011-10-31 20:18+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -21,6 +21,30 @@ msgstr ""
 "X-Associated-UI-Catalogs: kdelibs4\n"
 "X-Environment: kde\n"
 "X-Generator: Lokalize 1.0\n"
+
+#: examples/ktcli/main.cpp:60
+msgid "Torrent to open"
+msgstr "Жељени торент"
+
+#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
+msgid "Port to use"
+msgstr "Жељени порт"
+
+#: examples/ktcli/main.cpp:63
+msgid "Whether or not to enable encryption"
+msgstr "Да ли активирати шифровање"
+
+#: examples/ktcli/main.cpp:64
+msgid "Whether or not to enable peer exchange"
+msgstr "Да ли активирати размјену вршњака"
+
+#: examples/ktcli/main.cpp:65
+msgid "Whether or not to use utp"
+msgstr "Да ли користити µТП"
+
+#: examples/ktcli/main.cpp:67
+msgid "ktcli"
+msgstr "ktcli"
 
 #: src/bcodec/bdecoder.cpp:71
 #, kde-format
@@ -64,33 +88,14 @@ msgstr "Провјеравам податке"
 msgid "Cannot open file %1: %2"
 msgstr "Не могу да отворим фајл %1: %2"
 
-#: src/diskio/movedatafilesjob.cpp:140
-msgid "Waiting for other move jobs to finish"
-msgstr "Чекам да се заврше други послови премијештања"
-
-#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "Извор"
-
-#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "Одредиште"
-
-#: src/diskio/movedatafilesjob.cpp:180
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Премијештање"
-
 #: src/diskio/cache.cpp:170 src/diskio/multifilecache.cpp:118
 #: src/diskio/singlefilecache.cpp:85
 #, kde-format
 msgid "Failed to create %1: %2"
 msgstr "Не могу да направим %1: %2"
 
-#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
-#: src/util/fileops.cpp:399
+#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:361
+#: src/util/fileops.cpp:406
 #, kde-format
 msgid "Cannot open %1: %2"
 msgstr "Не могу да отворим %1: %2"
@@ -162,6 +167,25 @@ msgstr "Не могу да упишем прво парче у ДНД фајл: 
 #, kde-format
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "Не могу да упишем посљедње парче у ДНД фајл: %1"
+
+#: src/diskio/movedatafilesjob.cpp:140
+msgid "Waiting for other move jobs to finish"
+msgstr "Чекам да се заврше други послови премијештања"
+
+#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr "Извор"
+
+#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr "Одредиште"
+
+#: src/diskio/movedatafilesjob.cpp:180
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Премијештање"
 
 #: src/diskio/multifilecache.cpp:91 src/diskio/singlefilecache.cpp:74
 #, kde-format
@@ -278,11 +302,6 @@ msgstr "Фасцикла %1 не постоји"
 msgid "Unknown client"
 msgstr "Непознат клијент"
 
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "Не могу да направим индексни фајл: %1"
-
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
@@ -294,6 +313,47 @@ msgstr "Оштећен торент."
 #, kde-format
 msgid "Unable to open torrent file %1: %2"
 msgstr "Не могу да отворим торент фајл %1: %2"
+
+#: src/torrent/torrentcontrol.cpp:300
+msgid "Error writing to disk, do you have enough diskspace?"
+msgstr "Грешка при писању на диск, има ли довољно простора?"
+
+#: src/torrent/torrentcontrol.cpp:546
+#, kde-format
+msgid ""
+"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
+"torrent is probably corrupt or is not a valid torrent file."
+msgstr ""
+"Грешка при учитавању торента <b>%1</b>:<br/><b>%2</b><br/>Торент је или "
+"оштећен или није правилан торент фајл."
+
+#: src/torrent/torrentcontrol.cpp:576
+#, kde-format
+msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
+msgstr "Грешка при учитавању <b>%1</b>:<br/><b>%2</b>"
+
+#: src/torrent/torrentcontrol.cpp:587
+#, kde-format
+msgid "Unable to create %1: %2"
+msgstr "Не могу да направим %1: %2"
+
+#: src/torrent/torrentcontrol.cpp:602
+#, kde-format
+msgid ""
+"You are already downloading the torrent <b>%1</b>. The tracker lists from "
+"both torrents have been merged."
+msgstr ""
+"Торент <b>%1</b> се већ преузима. Спискови пратилаца оба торента су стопљени."
+
+#: src/torrent/torrentcontrol.cpp:607
+#, kde-format
+msgid "You are already downloading the torrent <b>%1</b>."
+msgstr "Већ преузимате торент <b>%1</b>."
+
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "Не могу да направим индексни фајл: %1"
 
 #: src/torrent/torrentstats.cpp:73
 msgid "Not started"
@@ -348,61 +408,25 @@ msgstr "Паузирано"
 msgid "Superseeding"
 msgstr "Суперсијање"
 
-#: src/torrent/torrentcontrol.cpp:302
-msgid "Error writing to disk, do you have enough diskspace?"
-msgstr "Грешка при писању на диск, има ли довољно простора?"
-
-#: src/torrent/torrentcontrol.cpp:548
-#, kde-format
-msgid ""
-"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
-"torrent is probably corrupt or is not a valid torrent file."
-msgstr ""
-"Грешка при учитавању торента <b>%1</b>:<br/><b>%2</b><br/>Торент је или "
-"оштећен или није правилан торент фајл."
-
-#: src/torrent/torrentcontrol.cpp:578
-#, kde-format
-msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
-msgstr "Грешка при учитавању <b>%1</b>:<br/><b>%2</b>"
-
-#: src/torrent/torrentcontrol.cpp:589
-#, kde-format
-msgid "Unable to create %1: %2"
-msgstr "Не могу да направим %1: %2"
-
-#: src/torrent/torrentcontrol.cpp:604
-#, kde-format
-msgid ""
-"You are already downloading the torrent <b>%1</b>. The tracker lists from "
-"both torrents have been merged."
-msgstr ""
-"Торент <b>%1</b> се већ преузима. Спискови пратилаца оба торента су стопљени."
-
-#: src/torrent/torrentcontrol.cpp:609
-#, kde-format
-msgid "You are already downloading the torrent <b>%1</b>."
-msgstr "Већ преузимате торент <b>%1</b>."
-
-#: src/tracker/httpannouncejob.cpp:142
+#: src/tracker/httpannouncejob.cpp:144
 msgid "Redirect without a redirect location"
 msgstr "Преусмјерење без локације преусмерења"
 
-#: src/tracker/httptracker.cpp:287 src/tracker/httptracker.cpp:307
-#: src/tracker/httptracker.cpp:463
+#: src/tracker/httptracker.cpp:285 src/tracker/httptracker.cpp:305
+#: src/tracker/httptracker.cpp:461
 msgid "Invalid response from tracker"
 msgstr "Неисправан одговор са пратиоца"
 
-#: src/tracker/httptracker.cpp:300
+#: src/tracker/httptracker.cpp:298
 msgid "Invalid data from tracker"
 msgstr "Неисправни подаци са пратиоца"
 
-#: src/tracker/httptracker.cpp:480
+#: src/tracker/httptracker.cpp:478
 msgid "Invalid tracker URL"
 msgstr "Неисправан УРЛ пратиоца"
 
 # rewrite-msgid: /Timeout/Timed out while/
-#: src/tracker/httptracker.cpp:558 src/tracker/udptracker.cpp:364
+#: src/tracker/httptracker.cpp:556 src/tracker/udptracker.cpp:364
 #: src/tracker/udptracker.cpp:374
 #, kde-format
 msgid "Timeout contacting tracker %1"
@@ -413,6 +437,35 @@ msgstr "Истекло вријеме при контактирању прати
 msgid "Unable to resolve hostname %1"
 msgstr "Не могу да разријешим име домаћина %1"
 
+#: src/upnp/httprequest.cpp:96
+msgid "Connection closed unexpectedly"
+msgstr "Веза неочекивано затворена"
+
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr "Истекло вријеме поступку"
+
+#: src/upnp/upnprouter.cpp:167
+#, kde-format
+msgid "Failed to download %1: %2"
+msgstr "Не могу да преузмем %1: %2"
+
+#: src/upnp/upnprouter.cpp:178
+msgid "Error parsing router description."
+msgstr "Грешка при рашчлањивању описа рутера."
+
+#: src/upnp/upnprouter.cpp:216
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+"Преусмеравање пропало:\n"
+"Уређај нема ни WANIPConnection ни WANPPPConnection."
+
+#: src/upnp/upnprouter.cpp:314
+msgid "Cannot find port forwarding service in the device's description."
+msgstr "Не могу да нађем сервис просљеђивања у опису уређаја."
+
 #: src/util/file.cpp:84
 #, kde-format
 msgid "Cannot write to %1: %2"
@@ -422,6 +475,57 @@ msgstr "Не могу да пишем у %1: %2"
 #, kde-format
 msgid "Cannot read from %1"
 msgstr "Не могу да читам из %1"
+
+#: src/util/fileops.cpp:101
+#, kde-format
+msgid "Cannot create directory %1"
+msgstr "Не могу да направим фасциклу %1"
+
+#: src/util/fileops.cpp:168
+#, kde-format
+msgid "Cannot symlink %1 to %2: %3"
+msgstr "Не могу да симболички повежем %1 на %2: %3"
+
+#: src/util/fileops.cpp:185
+#, kde-format
+msgid "Cannot move %1 to %2: %3"
+msgstr "Не могу да премјестим %1 у %2: %3"
+
+#: src/util/fileops.cpp:201 src/util/fileops.cpp:217
+#, kde-format
+msgid "Cannot copy %1 to %2: %3"
+msgstr "Не могу да копирам %1 у %2: %3"
+
+#: src/util/fileops.cpp:282
+#, kde-format
+msgid "Cannot delete %1: %2"
+msgstr "Не могу да обришем %1: %2"
+
+#: src/util/fileops.cpp:300
+#, kde-format
+msgid "Cannot create %1: %2"
+msgstr "Не могу да направим %1: %2"
+
+#: src/util/fileops.cpp:318
+#, kde-format
+msgid "Cannot calculate the filesize of %1: %2"
+msgstr "Не могу да прорачунам величину за %1: %2"
+
+#: src/util/fileops.cpp:334
+#, kde-format
+msgid "Cannot calculate the filesize: %1"
+msgstr "Не могу да прорачунам величину: %1"
+
+#: src/util/fileops.cpp:382 src/util/fileops.cpp:388 src/util/fileops.cpp:391
+#: src/util/fileops.cpp:394 src/util/fileops.cpp:397
+#, kde-format
+msgid "Cannot expand file: %1"
+msgstr "Не могу да раширим фајл: %1"
+
+#: src/util/fileops.cpp:427
+#, kde-format
+msgid "Cannot seek in file: %1"
+msgstr "Не могу да премотавам у фајлу: %1"
 
 #: src/util/functions.cpp:234
 #, kde-format
@@ -436,57 +540,6 @@ msgstr[0] "%1 дан "
 msgstr[1] "%1 дана "
 msgstr[2] "%1 дана "
 msgstr[3] "1 дан "
-
-#: src/util/fileops.cpp:94
-#, kde-format
-msgid "Cannot create directory %1"
-msgstr "Не могу да направим фасциклу %1"
-
-#: src/util/fileops.cpp:161
-#, kde-format
-msgid "Cannot symlink %1 to %2: %3"
-msgstr "Не могу да симболички повежем %1 на %2: %3"
-
-#: src/util/fileops.cpp:178
-#, kde-format
-msgid "Cannot move %1 to %2: %3"
-msgstr "Не могу да премјестим %1 у %2: %3"
-
-#: src/util/fileops.cpp:194 src/util/fileops.cpp:210
-#, kde-format
-msgid "Cannot copy %1 to %2: %3"
-msgstr "Не могу да копирам %1 у %2: %3"
-
-#: src/util/fileops.cpp:275
-#, kde-format
-msgid "Cannot delete %1: %2"
-msgstr "Не могу да обришем %1: %2"
-
-#: src/util/fileops.cpp:293
-#, kde-format
-msgid "Cannot create %1: %2"
-msgstr "Не могу да направим %1: %2"
-
-#: src/util/fileops.cpp:311
-#, kde-format
-msgid "Cannot calculate the filesize of %1: %2"
-msgstr "Не могу да прорачунам величину за %1: %2"
-
-#: src/util/fileops.cpp:327
-#, kde-format
-msgid "Cannot calculate the filesize: %1"
-msgstr "Не могу да прорачунам величину: %1"
-
-#: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
-#: src/util/fileops.cpp:387 src/util/fileops.cpp:390
-#, kde-format
-msgid "Cannot expand file: %1"
-msgstr "Не могу да раширим фајл: %1"
-
-#: src/util/fileops.cpp:420
-#, kde-format
-msgid "Cannot seek in file: %1"
-msgstr "Не могу да премотавам у фајлу: %1"
 
 #: src/util/logsystemmanager.cpp:33
 msgid "General"
@@ -519,56 +572,3 @@ msgstr "Грешка при писању на диск"
 #: src/util/signalcatcher.cpp:80
 msgid "Error when reading from disk"
 msgstr "Грешка при читању са диска"
-
-#: src/upnp/httprequest.cpp:96
-msgid "Connection closed unexpectedly"
-msgstr "Веза неочекивано затворена"
-
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
-msgstr "Истекло вријеме поступку"
-
-#: src/upnp/upnprouter.cpp:167
-#, kde-format
-msgid "Failed to download %1: %2"
-msgstr "Не могу да преузмем %1: %2"
-
-#: src/upnp/upnprouter.cpp:178
-msgid "Error parsing router description."
-msgstr "Грешка при рашчлањивању описа рутера."
-
-#: src/upnp/upnprouter.cpp:216
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
-"Преусмеравање пропало:\n"
-"Уређај нема ни WANIPConnection ни WANPPPConnection."
-
-#: src/upnp/upnprouter.cpp:314
-msgid "Cannot find port forwarding service in the device's description."
-msgstr "Не могу да нађем сервис просљеђивања у опису уређаја."
-
-#: examples/ktcli/main.cpp:60
-msgid "Torrent to open"
-msgstr "Жељени торент"
-
-#: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-msgid "Port to use"
-msgstr "Жељени порт"
-
-#: examples/ktcli/main.cpp:63
-msgid "Whether or not to enable encryption"
-msgstr "Да ли активирати шифровање"
-
-#: examples/ktcli/main.cpp:64
-msgid "Whether or not to enable peer exchange"
-msgstr "Да ли активирати размјену вршњака"
-
-#: examples/ktcli/main.cpp:65
-msgid "Whether or not to use utp"
-msgstr "Да ли користити µТП"
-
-#: examples/ktcli/main.cpp:67
-msgid "ktcli"
-msgstr "ktcli"

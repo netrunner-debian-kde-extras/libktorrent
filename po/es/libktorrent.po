@@ -9,19 +9,20 @@
 # Jaime Robles <jaime@kde.org>, 2007, 2008.
 # Enrique Matias Sanchez (Quique) <cronopios@gmail.com>, 2008, 2009, 2010.
 # Eloy Cuadra <ecuadra@eloihr.net>, 2011, 2012.
+# Raul Gonzalez <raulgf83@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-14 19:52+0200\n"
-"PO-Revision-Date: 2012-01-13 14:35+0100\n"
-"Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
+"POT-Creation-Date: 2012-12-18 16:46+0100\n"
+"PO-Revision-Date: 2012-09-10 09:14+0200\n"
+"Last-Translator: Raul Gonzalez <raulgf83@gmail.com>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: examples/ktcli/main.cpp:60
@@ -38,7 +39,7 @@ msgstr "Si se debe habilitar o no el cifrado de datos"
 
 #: examples/ktcli/main.cpp:64
 msgid "Whether or not to enable peer exchange"
-msgstr "Si se debe habilitar o no el intercambio entre compañeros"
+msgstr "Si se debe activar o no el intercambio de pares"
 
 #: examples/ktcli/main.cpp:65
 msgid "Whether or not to use utp"
@@ -96,8 +97,8 @@ msgstr "No se puede abrir el archivo %1: %2"
 msgid "Failed to create %1: %2"
 msgstr "Fallo al crear %1: %2"
 
-#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
-#: src/util/fileops.cpp:399
+#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:361
+#: src/util/fileops.cpp:406
 #, kde-format
 msgid "Cannot open %1: %2"
 msgstr "No se puede abrir %1: %2"
@@ -204,8 +205,8 @@ msgstr "No es posible escribir en un bloque marcado como de solo lectura"
 #, kde-format
 msgid "1 peer"
 msgid_plural "%1 peers"
-msgstr[0] "1 compañero"
-msgstr[1] "%1 compañeros"
+msgstr[0] "1 par"
+msgstr[1] "%1 pares"
 
 #: src/download/downloader.cpp:808
 msgid "Disabled because webseed does not match torrent"
@@ -315,11 +316,11 @@ msgstr "Torrent dañado."
 msgid "Unable to open torrent file %1: %2"
 msgstr " No se puede abrir el archivo torrent %1: %2"
 
-#: src/torrent/torrentcontrol.cpp:302
+#: src/torrent/torrentcontrol.cpp:300
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr "Error al escribir en disco, ¿tiene suficiente espacio en disco?"
 
-#: src/torrent/torrentcontrol.cpp:548
+#: src/torrent/torrentcontrol.cpp:546
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -329,26 +330,26 @@ msgstr ""
 "%2</b><br/>Probablemente el torrent esté dañado, o no sea un archivo torrent "
 "válido."
 
-#: src/torrent/torrentcontrol.cpp:578
+#: src/torrent/torrentcontrol.cpp:576
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr "Se ha producido un error al cargar <b>%1</b>:<br/><b>%2</b>"
 
-#: src/torrent/torrentcontrol.cpp:589
+#: src/torrent/torrentcontrol.cpp:587
 #, kde-format
 msgid "Unable to create %1: %2"
 msgstr "No se ha podido crear %1: %2"
 
-#: src/torrent/torrentcontrol.cpp:604
+#: src/torrent/torrentcontrol.cpp:602
 #, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
 "both torrents have been merged."
 msgstr ""
-"Ya está descargando el torrent <b>%1</b>. Las listas de localizadores de "
+"Ya está descargando el torrent <b>%1</b>. Las listas de rastreadores de "
 "ambos torrents han sido fusionadas."
 
-#: src/torrent/torrentcontrol.cpp:609
+#: src/torrent/torrentcontrol.cpp:607
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Ya está descargando el torrent <b>%1</b>."
@@ -411,28 +412,28 @@ msgstr "En pausa"
 msgid "Superseeding"
 msgstr "Supersiembra"
 
-#: src/tracker/httpannouncejob.cpp:142
+#: src/tracker/httpannouncejob.cpp:144
 msgid "Redirect without a redirect location"
 msgstr "Redirigir sin una ubicación para ello"
 
-#: src/tracker/httptracker.cpp:287 src/tracker/httptracker.cpp:307
-#: src/tracker/httptracker.cpp:463
+#: src/tracker/httptracker.cpp:285 src/tracker/httptracker.cpp:305
+#: src/tracker/httptracker.cpp:461
 msgid "Invalid response from tracker"
-msgstr "Respuesta no válida del localizador"
+msgstr "Respuesta no válida del rastreador"
 
-#: src/tracker/httptracker.cpp:300
+#: src/tracker/httptracker.cpp:298
 msgid "Invalid data from tracker"
-msgstr "Datos no válidos del localizador"
+msgstr "Datos no válidos del rastreador"
 
-#: src/tracker/httptracker.cpp:480
+#: src/tracker/httptracker.cpp:478
 msgid "Invalid tracker URL"
-msgstr "URL no válido del localizador"
+msgstr "URL no válido del rastreador"
 
-#: src/tracker/httptracker.cpp:558 src/tracker/udptracker.cpp:364
+#: src/tracker/httptracker.cpp:556 src/tracker/udptracker.cpp:364
 #: src/tracker/udptracker.cpp:374
 #, kde-format
 msgid "Timeout contacting tracker %1"
-msgstr "Se superó el tiempo límite para contactar con el localizador %1"
+msgstr "Se superó el tiempo límite para contactar con el rastreador %1"
 
 #: src/tracker/udptracker.cpp:401
 #, kde-format
@@ -480,53 +481,53 @@ msgstr "No se puede escribir en %1: %2"
 msgid "Cannot read from %1"
 msgstr "No se puede leer de %1"
 
-#: src/util/fileops.cpp:94
+#: src/util/fileops.cpp:101
 #, kde-format
 msgid "Cannot create directory %1"
 msgstr "No se puede crear el directorio %1"
 
-#: src/util/fileops.cpp:161
+#: src/util/fileops.cpp:168
 #, kde-format
 msgid "Cannot symlink %1 to %2: %3"
 msgstr "No se puede crear el enlace simbólico de %1 a %2: %3"
 
-#: src/util/fileops.cpp:178
+#: src/util/fileops.cpp:185
 #, kde-format
 msgid "Cannot move %1 to %2: %3"
 msgstr "No se puede mover %1 a %2: %3"
 
-#: src/util/fileops.cpp:194 src/util/fileops.cpp:210
+#: src/util/fileops.cpp:201 src/util/fileops.cpp:217
 #, kde-format
 msgid "Cannot copy %1 to %2: %3"
 msgstr "No se puede copiar %1 a %2: %3"
 
-#: src/util/fileops.cpp:275
+#: src/util/fileops.cpp:282
 #, kde-format
 msgid "Cannot delete %1: %2"
 msgstr "No se puede borrar %1: %2"
 
-#: src/util/fileops.cpp:293
+#: src/util/fileops.cpp:300
 #, kde-format
 msgid "Cannot create %1: %2"
 msgstr "No se puede crear %1: %2"
 
-#: src/util/fileops.cpp:311
+#: src/util/fileops.cpp:318
 #, kde-format
 msgid "Cannot calculate the filesize of %1: %2"
 msgstr "No se puede calcular el tamaño del archivo %1: %2"
 
-#: src/util/fileops.cpp:327
+#: src/util/fileops.cpp:334
 #, kde-format
 msgid "Cannot calculate the filesize: %1"
 msgstr "No se puede calcular el tamaño del archivo: %1"
 
-#: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
-#: src/util/fileops.cpp:387 src/util/fileops.cpp:390
+#: src/util/fileops.cpp:382 src/util/fileops.cpp:388 src/util/fileops.cpp:391
+#: src/util/fileops.cpp:394 src/util/fileops.cpp:397
 #, kde-format
 msgid "Cannot expand file: %1"
 msgstr "No se puede expandir el archivo: %1"
 
-#: src/util/fileops.cpp:420
+#: src/util/fileops.cpp:427
 #, kde-format
 msgid "Cannot seek in file: %1"
 msgstr "No es posible desplazarse en el archivo: %1"
@@ -553,7 +554,7 @@ msgstr "Conexiones"
 
 #: src/util/logsystemmanager.cpp:35
 msgid "Tracker"
-msgstr "Localizador"
+msgstr "Rastreador"
 
 #: src/util/logsystemmanager.cpp:36
 msgid "DHT"

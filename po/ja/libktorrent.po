@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-14 19:52+0200\n"
+"POT-Creation-Date: 2012-12-18 16:46+0100\n"
 "PO-Revision-Date: 2009-10-31 23:24+0900\n"
 "Last-Translator: Yukiko Bando <ybando@k6.dion.ne.jp>\n"
 "Language-Team: Japanese <Kdeveloper@kde.gr.jp>\n"
@@ -93,8 +93,8 @@ msgstr "ファイル <filename>%1</filename> を開けません: %2"
 msgid "Failed to create %1: %2"
 msgstr "<filename>%1</filename> を作成できませんでした: %2"
 
-#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
-#: src/util/fileops.cpp:399
+#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:361
+#: src/util/fileops.cpp:406
 #, fuzzy, kde-format
 msgid "Cannot open %1: %2"
 msgstr "<filename>%1</filename> を開けません: %2"
@@ -312,11 +312,11 @@ msgstr "torrent が壊れています。"
 msgid "Unable to open torrent file %1: %2"
 msgstr "torrent ファイル <filename>%1</filename> を開けません: %2"
 
-#: src/torrent/torrentcontrol.cpp:302
+#: src/torrent/torrentcontrol.cpp:300
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:548
+#: src/torrent/torrentcontrol.cpp:546
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -325,17 +325,17 @@ msgstr ""
 "torrent <b>%1</b> のロード中にエラーが発生しました:<br/>%2<br/>おそらく "
 "torrent が壊れているか、有効な torrent ファイルではありません。"
 
-#: src/torrent/torrentcontrol.cpp:578
+#: src/torrent/torrentcontrol.cpp:576
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr ""
 
-#: src/torrent/torrentcontrol.cpp:589
+#: src/torrent/torrentcontrol.cpp:587
 #, fuzzy, kde-format
 msgid "Unable to create %1: %2"
 msgstr "<resource>%1</resource> を作成できません: %2"
 
-#: src/torrent/torrentcontrol.cpp:604
+#: src/torrent/torrentcontrol.cpp:602
 #, fuzzy, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
@@ -344,7 +344,7 @@ msgstr ""
 "torrent <resource>%1</resource> は既にダウンロード中です。両方の torrent のト"
 "ラッカーリストをマージしました。"
 
-#: src/torrent/torrentcontrol.cpp:609
+#: src/torrent/torrentcontrol.cpp:607
 #, fuzzy, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "torrent <resource>%1</resource> は既にダウンロード中です"
@@ -408,24 +408,24 @@ msgstr "一時停止"
 msgid "Superseeding"
 msgstr "シード中"
 
-#: src/tracker/httpannouncejob.cpp:142
+#: src/tracker/httpannouncejob.cpp:144
 msgid "Redirect without a redirect location"
 msgstr "リダイレクト先なしでリダイレクトされました"
 
-#: src/tracker/httptracker.cpp:287 src/tracker/httptracker.cpp:307
-#: src/tracker/httptracker.cpp:463
+#: src/tracker/httptracker.cpp:285 src/tracker/httptracker.cpp:305
+#: src/tracker/httptracker.cpp:461
 msgid "Invalid response from tracker"
 msgstr "トラッカーから無効な応答"
 
-#: src/tracker/httptracker.cpp:300
+#: src/tracker/httptracker.cpp:298
 msgid "Invalid data from tracker"
 msgstr "トラッカーから無効なデータ"
 
-#: src/tracker/httptracker.cpp:480
+#: src/tracker/httptracker.cpp:478
 msgid "Invalid tracker URL"
 msgstr "無効なトラッカー URL"
 
-#: src/tracker/httptracker.cpp:558 src/tracker/udptracker.cpp:364
+#: src/tracker/httptracker.cpp:556 src/tracker/udptracker.cpp:364
 #: src/tracker/udptracker.cpp:374
 #, kde-format
 msgid "Timeout contacting tracker %1"
@@ -474,57 +474,57 @@ msgstr "<filename>%1</filename> に書き込めません: %2"
 msgid "Cannot read from %1"
 msgstr "<filename>%1</filename> から読み取れません"
 
-#: src/util/fileops.cpp:94
+#: src/util/fileops.cpp:101
 #, kde-format
 msgid "Cannot create directory %1"
 msgstr "フォルダ <filename>%1</filename> を作成できません"
 
-#: src/util/fileops.cpp:161
+#: src/util/fileops.cpp:168
 #, kde-format
 msgid "Cannot symlink %1 to %2: %3"
 msgstr ""
 "<filename>%1</filename> のシンボリックリンク <filename>%2</filename> を作成で"
 "きません: %3"
 
-#: src/util/fileops.cpp:178
+#: src/util/fileops.cpp:185
 #, kde-format
 msgid "Cannot move %1 to %2: %3"
 msgstr ""
 "<filename>%1</filename> を <filename>%2</filename> に移動できません: %3"
 
-#: src/util/fileops.cpp:194 src/util/fileops.cpp:210
+#: src/util/fileops.cpp:201 src/util/fileops.cpp:217
 #, kde-format
 msgid "Cannot copy %1 to %2: %3"
 msgstr ""
 "<filename>%1</filename> を <filename>%2</filename> にコピーできません: %3"
 
-#: src/util/fileops.cpp:275
+#: src/util/fileops.cpp:282
 #, kde-format
 msgid "Cannot delete %1: %2"
 msgstr "<filename>%1</filename> を削除できません: %2"
 
-#: src/util/fileops.cpp:293
+#: src/util/fileops.cpp:300
 #, kde-format
 msgid "Cannot create %1: %2"
 msgstr "<filename>%1</filename> を作成できません: %2"
 
-#: src/util/fileops.cpp:311
+#: src/util/fileops.cpp:318
 #, kde-format
 msgid "Cannot calculate the filesize of %1: %2"
 msgstr "<filename>%1</filename> のファイルサイズを計算できません: %2"
 
-#: src/util/fileops.cpp:327
+#: src/util/fileops.cpp:334
 #, fuzzy, kde-format
 msgid "Cannot calculate the filesize: %1"
 msgstr "ファイルサイズを計算できません: %1"
 
-#: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
-#: src/util/fileops.cpp:387 src/util/fileops.cpp:390
+#: src/util/fileops.cpp:382 src/util/fileops.cpp:388 src/util/fileops.cpp:391
+#: src/util/fileops.cpp:394 src/util/fileops.cpp:397
 #, kde-format
 msgid "Cannot expand file: %1"
 msgstr "ファイルを展開できません: %1"
 
-#: src/util/fileops.cpp:420
+#: src/util/fileops.cpp:427
 #, fuzzy, kde-format
 msgid "Cannot seek in file: %1"
 msgstr "ファイル内でシークできません: %1"

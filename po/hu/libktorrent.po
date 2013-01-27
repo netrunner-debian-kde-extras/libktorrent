@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KTorrent 3.1\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-14 19:52+0200\n"
+"POT-Creation-Date: 2012-12-18 16:46+0100\n"
 "PO-Revision-Date: 2012-02-14 16:13+0100\n"
 "Last-Translator: Kristóf Kiszel <ulysses@kubuntu.org>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -92,8 +92,8 @@ msgstr "Nem sikerült megnyitni ezt a fájlt: %1. %2"
 msgid "Failed to create %1: %2"
 msgstr "%1 létrehozása nem sikerült: %2"
 
-#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
-#: src/util/fileops.cpp:399
+#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:361
+#: src/util/fileops.cpp:406
 #, kde-format
 msgid "Cannot open %1: %2"
 msgstr "A(z) %1 nem nyitható meg: %2"
@@ -309,11 +309,11 @@ msgstr "Hibás torrent."
 msgid "Unable to open torrent file %1: %2"
 msgstr "A(z) %1 torrentfájl nem nyitható meg: %2"
 
-#: src/torrent/torrentcontrol.cpp:302
+#: src/torrent/torrentcontrol.cpp:300
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr "Hiba a lemezre íráskor, van elegendő lemezterülete?"
 
-#: src/torrent/torrentcontrol.cpp:548
+#: src/torrent/torrentcontrol.cpp:546
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -322,17 +322,17 @@ msgstr ""
 "<b>%1</b> torrent betöltése sikertelen:<br/><b>%2</b><br/>A torrent "
 "valószínűleg sérült, vagy nem érvényes torrentfájl."
 
-#: src/torrent/torrentcontrol.cpp:578
+#: src/torrent/torrentcontrol.cpp:576
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr "Hiba történt a(z) <b>%1</b> betöltése közben: <br/><b>%2</b>"
 
-#: src/torrent/torrentcontrol.cpp:589
+#: src/torrent/torrentcontrol.cpp:587
 #, kde-format
 msgid "Unable to create %1: %2"
 msgstr "A(z) %1 nem hozható létre: %2"
 
-#: src/torrent/torrentcontrol.cpp:604
+#: src/torrent/torrentcontrol.cpp:602
 #, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
@@ -341,7 +341,7 @@ msgstr ""
 "<b>%1</b> letöltése már folyamatban van, ezért a két követőlista "
 "összevonásra került."
 
-#: src/torrent/torrentcontrol.cpp:609
+#: src/torrent/torrentcontrol.cpp:607
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "<b>%1</b> torrent letöltése már folyamatban van."
@@ -404,24 +404,24 @@ msgstr "Szüneteltetve"
 msgid "Superseeding"
 msgstr "Szuper-feltöltés"
 
-#: src/tracker/httpannouncejob.cpp:142
+#: src/tracker/httpannouncejob.cpp:144
 msgid "Redirect without a redirect location"
 msgstr "Átirányítás új hely nélkül"
 
-#: src/tracker/httptracker.cpp:287 src/tracker/httptracker.cpp:307
-#: src/tracker/httptracker.cpp:463
+#: src/tracker/httptracker.cpp:285 src/tracker/httptracker.cpp:305
+#: src/tracker/httptracker.cpp:461
 msgid "Invalid response from tracker"
 msgstr "Érvénytelen válasz érkezett a követőtől"
 
-#: src/tracker/httptracker.cpp:300
+#: src/tracker/httptracker.cpp:298
 msgid "Invalid data from tracker"
 msgstr "Érvénytelen adat érkezett a követőtől"
 
-#: src/tracker/httptracker.cpp:480
+#: src/tracker/httptracker.cpp:478
 msgid "Invalid tracker URL"
 msgstr "Érvénytelen követő-URL"
 
-#: src/tracker/httptracker.cpp:558 src/tracker/udptracker.cpp:364
+#: src/tracker/httptracker.cpp:556 src/tracker/udptracker.cpp:364
 #: src/tracker/udptracker.cpp:374
 #, kde-format
 msgid "Timeout contacting tracker %1"
@@ -472,53 +472,53 @@ msgstr "Nem sikerült írni a(z) %1 fájlba: %2"
 msgid "Cannot read from %1"
 msgstr "Nem sikerült olvasni: %1"
 
-#: src/util/fileops.cpp:94
+#: src/util/fileops.cpp:101
 #, kde-format
 msgid "Cannot create directory %1"
 msgstr "%1 könyvtár nem hozható létre"
 
-#: src/util/fileops.cpp:161
+#: src/util/fileops.cpp:168
 #, kde-format
 msgid "Cannot symlink %1 to %2: %3"
 msgstr "Nem sikerült létrehozni ezt a linket: %1 -> %2 - %3"
 
-#: src/util/fileops.cpp:178
+#: src/util/fileops.cpp:185
 #, kde-format
 msgid "Cannot move %1 to %2: %3"
 msgstr "Nem sikerült áthelyezni: %1 -> %2 - %3"
 
-#: src/util/fileops.cpp:194 src/util/fileops.cpp:210
+#: src/util/fileops.cpp:201 src/util/fileops.cpp:217
 #, kde-format
 msgid "Cannot copy %1 to %2: %3"
 msgstr "Nem sikerült átmásolni: %1 -> %2 - %3"
 
-#: src/util/fileops.cpp:275
+#: src/util/fileops.cpp:282
 #, kde-format
 msgid "Cannot delete %1: %2"
 msgstr "Nem sikerült törölni: %1 - %2"
 
-#: src/util/fileops.cpp:293
+#: src/util/fileops.cpp:300
 #, kde-format
 msgid "Cannot create %1: %2"
 msgstr "Nem sikerült létrehozni: %1 - %2"
 
-#: src/util/fileops.cpp:311
+#: src/util/fileops.cpp:318
 #, kde-format
 msgid "Cannot calculate the filesize of %1: %2"
 msgstr "Nem sikerült lekérdezni a fájlméretet: %1 - %2"
 
-#: src/util/fileops.cpp:327
+#: src/util/fileops.cpp:334
 #, kde-format
 msgid "Cannot calculate the filesize: %1"
 msgstr "Nem sikerült kiszámolni a fájlméretet: %1"
 
-#: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
-#: src/util/fileops.cpp:387 src/util/fileops.cpp:390
+#: src/util/fileops.cpp:382 src/util/fileops.cpp:388 src/util/fileops.cpp:391
+#: src/util/fileops.cpp:394 src/util/fileops.cpp:397
 #, kde-format
 msgid "Cannot expand file: %1"
 msgstr "Nem sikerült kitömöríteni ezt a fájlt: %1"
 
-#: src/util/fileops.cpp:420
+#: src/util/fileops.cpp:427
 #, kde-format
 msgid "Cannot seek in file: %1"
 msgstr "Nem sikerült pozícionálni a fájlban: %1"
