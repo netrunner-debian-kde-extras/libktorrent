@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-14 19:52+0200\n"
+"POT-Creation-Date: 2012-12-18 16:46+0100\n"
 "PO-Revision-Date: 2012-01-15 08:44+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -93,8 +93,8 @@ msgstr "Nie można otworzyć pliku %1: %2"
 msgid "Failed to create %1: %2"
 msgstr "Nieudane utworzenie %1: %2"
 
-#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
-#: src/util/fileops.cpp:399
+#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:361
+#: src/util/fileops.cpp:406
 #, kde-format
 msgid "Cannot open %1: %2"
 msgstr "Nie można otworzyć %1: %2"
@@ -312,11 +312,11 @@ msgstr "Uszkodzony torrent."
 msgid "Unable to open torrent file %1: %2"
 msgstr "Nie można otworzyć pliku torrenta %1: %2"
 
-#: src/torrent/torrentcontrol.cpp:302
+#: src/torrent/torrentcontrol.cpp:300
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr "Błąd zapisu na dysk, czy masz wystarczająco przestrzeni dyskowej?"
 
-#: src/torrent/torrentcontrol.cpp:548
+#: src/torrent/torrentcontrol.cpp:546
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -325,17 +325,17 @@ msgstr ""
 "Wystąpił błąd podczas wczytywania pliku torrenta <b>%1</b>:<br/><b>%2</b><br/"
 ">Prawdopodobnie torrent jest uszkodzony, lub nie jest to plik torrenta."
 
-#: src/torrent/torrentcontrol.cpp:578
+#: src/torrent/torrentcontrol.cpp:576
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr "Wystąpił błąd, podczas wczytywania <b>%1</b>:<br/><b>%2</b>"
 
-#: src/torrent/torrentcontrol.cpp:589
+#: src/torrent/torrentcontrol.cpp:587
 #, kde-format
 msgid "Unable to create %1: %2"
 msgstr "Nie można utworzyć %1: %2"
 
-#: src/torrent/torrentcontrol.cpp:604
+#: src/torrent/torrentcontrol.cpp:602
 #, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
@@ -344,7 +344,7 @@ msgstr ""
 "Torrent <b>%1</b> jest już pobierany. Lista trackerów obu torrentów została "
 "połączona."
 
-#: src/torrent/torrentcontrol.cpp:609
+#: src/torrent/torrentcontrol.cpp:607
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "Torrent <b>%1</b> jest już pobierany."
@@ -407,24 +407,24 @@ msgstr "Wstrzymane"
 msgid "Superseeding"
 msgstr "Super-rozsiewanie"
 
-#: src/tracker/httpannouncejob.cpp:142
+#: src/tracker/httpannouncejob.cpp:144
 msgid "Redirect without a redirect location"
 msgstr "Przekierowanie bez nowej lokalizacji"
 
-#: src/tracker/httptracker.cpp:287 src/tracker/httptracker.cpp:307
-#: src/tracker/httptracker.cpp:463
+#: src/tracker/httptracker.cpp:285 src/tracker/httptracker.cpp:305
+#: src/tracker/httptracker.cpp:461
 msgid "Invalid response from tracker"
 msgstr "Nieprawidłowa odpowiedź trackera"
 
-#: src/tracker/httptracker.cpp:300
+#: src/tracker/httptracker.cpp:298
 msgid "Invalid data from tracker"
 msgstr "Błędne dane z trackera"
 
-#: src/tracker/httptracker.cpp:480
+#: src/tracker/httptracker.cpp:478
 msgid "Invalid tracker URL"
 msgstr "Nieprawidłowy URL trackera"
 
-#: src/tracker/httptracker.cpp:558 src/tracker/udptracker.cpp:364
+#: src/tracker/httptracker.cpp:556 src/tracker/udptracker.cpp:364
 #: src/tracker/udptracker.cpp:374
 #, kde-format
 msgid "Timeout contacting tracker %1"
@@ -474,53 +474,53 @@ msgstr "Nie można zapisać do %1: %2"
 msgid "Cannot read from %1"
 msgstr "Nie można czytać z %1"
 
-#: src/util/fileops.cpp:94
+#: src/util/fileops.cpp:101
 #, kde-format
 msgid "Cannot create directory %1"
 msgstr "Nie można utworzyć katalogu %1"
 
-#: src/util/fileops.cpp:161
+#: src/util/fileops.cpp:168
 #, kde-format
 msgid "Cannot symlink %1 to %2: %3"
 msgstr "Nie można utworzyć dowiązania symbolicznego %1 do %2: %3"
 
-#: src/util/fileops.cpp:178
+#: src/util/fileops.cpp:185
 #, kde-format
 msgid "Cannot move %1 to %2: %3"
 msgstr "Nie można przenieść %1 do %2: %3"
 
-#: src/util/fileops.cpp:194 src/util/fileops.cpp:210
+#: src/util/fileops.cpp:201 src/util/fileops.cpp:217
 #, kde-format
 msgid "Cannot copy %1 to %2: %3"
 msgstr "Nie można skopiować %1 do %2: %3"
 
-#: src/util/fileops.cpp:275
+#: src/util/fileops.cpp:282
 #, kde-format
 msgid "Cannot delete %1: %2"
 msgstr "Nie można usunąć %1: %2"
 
-#: src/util/fileops.cpp:293
+#: src/util/fileops.cpp:300
 #, kde-format
 msgid "Cannot create %1: %2"
 msgstr "Nie można utworzyć %1: %2"
 
-#: src/util/fileops.cpp:311
+#: src/util/fileops.cpp:318
 #, kde-format
 msgid "Cannot calculate the filesize of %1: %2"
 msgstr "Nie można obliczyć rozmiaru pliku %1: %2"
 
-#: src/util/fileops.cpp:327
+#: src/util/fileops.cpp:334
 #, kde-format
 msgid "Cannot calculate the filesize: %1"
 msgstr "Nie można obliczyć rozmiaru pliku: %1"
 
-#: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
-#: src/util/fileops.cpp:387 src/util/fileops.cpp:390
+#: src/util/fileops.cpp:382 src/util/fileops.cpp:388 src/util/fileops.cpp:391
+#: src/util/fileops.cpp:394 src/util/fileops.cpp:397
 #, kde-format
 msgid "Cannot expand file: %1"
 msgstr "Nie można powiększyć pliku: %1"
 
-#: src/util/fileops.cpp:420
+#: src/util/fileops.cpp:427
 #, kde-format
 msgid "Cannot seek in file: %1"
 msgstr "Nie można przenieść się w pliku: %1"

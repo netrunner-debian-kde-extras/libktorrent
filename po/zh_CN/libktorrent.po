@@ -6,49 +6,45 @@
 # Hu Wei <contact@chaostone.com>, 2007, 2008.
 # Ni Hui <shuizhuyuanluo@126.com>, 2008, 2009, 2011.
 # Lie Ex <lilith.ex@gmail.com>, 2010.
+# Weng Xuetian <wengxt@gmail.com>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-14 19:52+0200\n"
-"PO-Revision-Date: 2011-11-13 11:57+0800\n"
-"Last-Translator: Ni Hui <shuizhuyuanluo@126.com>\n"
+"POT-Creation-Date: 2012-12-18 16:46+0100\n"
+"PO-Revision-Date: 2013-01-12 12:07-0500\n"
+"Last-Translator: Weng Xuetian <wengxt@gmail.com>\n"
 "Language-Team: Chinese Simplified <kde-china@kde.org>\n"
-"Language: \n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Lokalize 1.5\n"
 
 #: examples/ktcli/main.cpp:60
-#, fuzzy
 msgid "Torrent to open"
-msgstr "要打开的文档"
+msgstr "要打开的种子"
 
 #: examples/ktcli/main.cpp:61 examples/ktcli/main.cpp:62
-#, fuzzy
 msgid "Port to use"
-msgstr "注意"
+msgstr "要使用的端口"
 
 #: examples/ktcli/main.cpp:63
-#, fuzzy
 msgid "Whether or not to enable encryption"
-msgstr "是否启用自定义下载顺序。"
+msgstr "是否启用加密"
 
 #: examples/ktcli/main.cpp:64
-#, fuzzy
 msgid "Whether or not to enable peer exchange"
-msgstr "是否使用 Torrent 可兼容对等连接交换。"
+msgstr "是否启用对等点交换"
 
 #: examples/ktcli/main.cpp:65
-#, fuzzy
 msgid "Whether or not to use utp"
-msgstr "是否显示系统托盘弹出消息。"
+msgstr "是否启用 utp"
 
 #: examples/ktcli/main.cpp:67
 msgid "ktcli"
-msgstr ""
+msgstr "ktcli"
 
 #: src/bcodec/bdecoder.cpp:71
 #, kde-format
@@ -98,8 +94,8 @@ msgstr "无法打开文件 %1：%2"
 msgid "Failed to create %1: %2"
 msgstr "创建 %1 失败：%2"
 
-#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
-#: src/util/fileops.cpp:399
+#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:361
+#: src/util/fileops.cpp:406
 #, kde-format
 msgid "Cannot open %1: %2"
 msgstr "无法打开 %1：%2"
@@ -116,10 +112,10 @@ msgid "Attempting to write beyond the maximum size of %1"
 msgstr "正在尝试写入超过最大允许尺寸 %1 的数据"
 
 #: src/diskio/cachefile.cpp:257
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "Cannot expand file %1: attempting to grow the file beyond the maximum size"
-msgstr "无法扩展文件 %1：尝试扩展的文件已超过最大允许尺寸"
+msgstr "无法展开文件 %1：试图展开的文件超过了最大大小"
 
 #: src/diskio/cachefile.cpp:261
 #, kde-format
@@ -172,9 +168,8 @@ msgid "Failed to write last chunk to DND file: %1"
 msgstr "将最后一个块写入到 DND 文件失败：%1"
 
 #: src/diskio/movedatafilesjob.cpp:140
-#, fuzzy
 msgid "Waiting for other move jobs to finish"
-msgstr "正在等待其它数据块完成"
+msgstr "正在等待其它移动任务完成"
 
 #: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
 msgctxt "The source of a file operation"
@@ -221,9 +216,8 @@ msgid "Resolving proxy %1:%2"
 msgstr "正在解析代理 %1：%2"
 
 #: src/download/httpconnection.cpp:121 src/download/httpconnection.cpp:139
-#, fuzzy
 msgid "Not enough system resources available"
-msgstr "磁盘空间不够用。"
+msgstr "系统资源不足"
 
 #: src/download/httpconnection.cpp:133
 #, kde-format
@@ -315,11 +309,11 @@ msgstr "损坏的种子。"
 msgid "Unable to open torrent file %1: %2"
 msgstr "无法打开种子文件 %1：%2"
 
-#: src/torrent/torrentcontrol.cpp:302
+#: src/torrent/torrentcontrol.cpp:300
 msgid "Error writing to disk, do you have enough diskspace?"
-msgstr ""
+msgstr "写入磁盘出错，是否有足够的磁盘空间？"
 
-#: src/torrent/torrentcontrol.cpp:548
+#: src/torrent/torrentcontrol.cpp:546
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -328,24 +322,24 @@ msgstr ""
 "装入种子 <b>%1</b> 出错：<br/><b>%2</b><br/>种子文件可能已经损坏，或者根本就"
 "不是一个种子文件。"
 
-#: src/torrent/torrentcontrol.cpp:578
+#: src/torrent/torrentcontrol.cpp:576
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
-msgstr ""
+msgstr "载入 <b>%1</b> 时出错：<br/><b>%2</b>"
 
-#: src/torrent/torrentcontrol.cpp:589
+#: src/torrent/torrentcontrol.cpp:587
 #, kde-format
 msgid "Unable to create %1: %2"
 msgstr "无法创建 %1：%2"
 
-#: src/torrent/torrentcontrol.cpp:604
+#: src/torrent/torrentcontrol.cpp:602
 #, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
 "both torrents have been merged."
 msgstr "您已经下载过这个种子 <b>%1</b>。两个种子的 trackers 列表已经被合并。"
 
-#: src/torrent/torrentcontrol.cpp:609
+#: src/torrent/torrentcontrol.cpp:607
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "您已经下载过这个种子 <b>%1</b>。"
@@ -405,28 +399,27 @@ msgid "Paused"
 msgstr "已暂停"
 
 #: src/torrent/torrentstats.cpp:99
-#, fuzzy
 msgid "Superseeding"
-msgstr "做种中"
+msgstr "超级种子"
 
-#: src/tracker/httpannouncejob.cpp:142
+#: src/tracker/httpannouncejob.cpp:144
 msgid "Redirect without a redirect location"
 msgstr "重定向没有新位置"
 
-#: src/tracker/httptracker.cpp:287 src/tracker/httptracker.cpp:307
-#: src/tracker/httptracker.cpp:463
+#: src/tracker/httptracker.cpp:285 src/tracker/httptracker.cpp:305
+#: src/tracker/httptracker.cpp:461
 msgid "Invalid response from tracker"
 msgstr "无效的 tracker 响应"
 
-#: src/tracker/httptracker.cpp:300
+#: src/tracker/httptracker.cpp:298
 msgid "Invalid data from tracker"
 msgstr "无效的 tracker 数据"
 
-#: src/tracker/httptracker.cpp:480
+#: src/tracker/httptracker.cpp:478
 msgid "Invalid tracker URL"
 msgstr "无效的 tracker URL"
 
-#: src/tracker/httptracker.cpp:558 src/tracker/udptracker.cpp:364
+#: src/tracker/httptracker.cpp:556 src/tracker/udptracker.cpp:364
 #: src/tracker/udptracker.cpp:374
 #, kde-format
 msgid "Timeout contacting tracker %1"
@@ -438,13 +431,12 @@ msgid "Unable to resolve hostname %1"
 msgstr "无法解析主机名 %1"
 
 #: src/upnp/httprequest.cpp:96
-#, fuzzy
 msgid "Connection closed unexpectedly"
-msgstr "未预料的连接关闭！"
+msgstr "未预料的连接关闭"
 
 #: src/upnp/httprequest.cpp:155
 msgid "Operation timed out"
-msgstr ""
+msgstr "操作超时"
 
 #: src/upnp/upnprouter.cpp:167
 #, kde-format
@@ -452,23 +444,20 @@ msgid "Failed to download %1: %2"
 msgstr "下载 %1 失败：%2"
 
 #: src/upnp/upnprouter.cpp:178
-#, fuzzy
 msgid "Error parsing router description."
-msgstr "分析路由描述出错！"
+msgstr "解析路由描述出错。"
 
 #: src/upnp/upnprouter.cpp:216
-#, fuzzy
 msgid ""
 "Forwarding failed:\n"
 "Device does not have a WANIPConnection or WANPPPConnection."
 msgstr ""
 "转发失败：\n"
-"设备没有有线 IP 连接或有线 PPP 连接！"
+"设备没有 WANIP 连接或 WANPPP 连接。"
 
 #: src/upnp/upnprouter.cpp:314
-#, fuzzy
 msgid "Cannot find port forwarding service in the device's description."
-msgstr "无法在设备描述中找到端口转发服务！"
+msgstr "无法在设备描述中找到端口转发服务。"
 
 #: src/util/file.cpp:84
 #, kde-format
@@ -480,53 +469,53 @@ msgstr "无法写入 %1：%2"
 msgid "Cannot read from %1"
 msgstr "无法从 %1 读取"
 
-#: src/util/fileops.cpp:94
+#: src/util/fileops.cpp:101
 #, kde-format
 msgid "Cannot create directory %1"
 msgstr "无法创建目录 %1"
 
-#: src/util/fileops.cpp:161
+#: src/util/fileops.cpp:168
 #, kde-format
 msgid "Cannot symlink %1 to %2: %3"
 msgstr "无法创建符号链接 %1 到 %2：%3"
 
-#: src/util/fileops.cpp:178
+#: src/util/fileops.cpp:185
 #, kde-format
 msgid "Cannot move %1 to %2: %3"
 msgstr "无法移动 %1 到 %2：%3"
 
-#: src/util/fileops.cpp:194 src/util/fileops.cpp:210
+#: src/util/fileops.cpp:201 src/util/fileops.cpp:217
 #, kde-format
 msgid "Cannot copy %1 to %2: %3"
 msgstr "无法复制 %1 到 %2：%3"
 
-#: src/util/fileops.cpp:275
+#: src/util/fileops.cpp:282
 #, kde-format
 msgid "Cannot delete %1: %2"
 msgstr "无法删除 %1：%2"
 
-#: src/util/fileops.cpp:293
+#: src/util/fileops.cpp:300
 #, kde-format
 msgid "Cannot create %1: %2"
 msgstr "无法创建 %1：%2"
 
-#: src/util/fileops.cpp:311
+#: src/util/fileops.cpp:318
 #, kde-format
 msgid "Cannot calculate the filesize of %1: %2"
 msgstr "无法计算 %1 的文件大小：%2"
 
-#: src/util/fileops.cpp:327
+#: src/util/fileops.cpp:334
 #, kde-format
 msgid "Cannot calculate the filesize: %1"
 msgstr "无法计算文件大小：%1"
 
-#: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
-#: src/util/fileops.cpp:387 src/util/fileops.cpp:390
+#: src/util/fileops.cpp:382 src/util/fileops.cpp:388 src/util/fileops.cpp:391
+#: src/util/fileops.cpp:394 src/util/fileops.cpp:397
 #, kde-format
 msgid "Cannot expand file: %1"
 msgstr "无法展开文件：%1"
 
-#: src/util/fileops.cpp:420
+#: src/util/fileops.cpp:427
 #, kde-format
 msgid "Cannot seek in file: %1"
 msgstr "无法在文件中定位：%1"
@@ -567,14 +556,12 @@ msgid "µTP"
 msgstr "µTP"
 
 #: src/util/signalcatcher.cpp:80
-#, fuzzy
 msgid "Error when writing to disk"
-msgstr "无法从 %1 读取"
+msgstr "写入磁盘出错"
 
 #: src/util/signalcatcher.cpp:80
-#, fuzzy
 msgid "Error when reading from disk"
-msgstr "无法从 %1 读取"
+msgstr "从磁盘读取出错"
 
 #~ msgid "Parse Error"
 #~ msgstr "语法错误"
