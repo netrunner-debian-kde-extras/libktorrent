@@ -1,3 +1,9 @@
+libktorrent (1.3.1-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+
+ -- Modestas Vainius <modax@debian.org>  Sun, 27 Jan 2013 11:35:41 +0200
+
 libktorrent (1.3.0-1) experimental; urgency=low
 
   * New upstream release.
