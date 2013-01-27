@@ -14,7 +14,7 @@ Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-extras/libktorrent.git;a=summa
 Package: libktorrent5
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Suggests: libktorrent-l10n
+Suggests: libktorrent-l10n (>= ${source:Version})
 Description: KTorrent library for C++ / Qt 4 / KDE Platform
  The KTorrent library is a C++ / Qt 4 / KDE Platform based implementation of
  the BitTorrent protocol (mostly client side).
