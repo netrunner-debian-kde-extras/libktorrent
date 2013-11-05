@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 1.3.0 amd64
+# SymbolsHelper-Confirmed: 1.3.1 amd64
 libktorrent.so.5 libktorrent5 #MINVER#
 * Build-Depends-Package: libktorrent-dev
  _ZN2bt10BValueNode14printDebugInfoEv@Base 1.3.0
@@ -454,7 +454,7 @@ libktorrent.so.5 libktorrent5 #MINVER#
  _ZN2bt13SignalCatcher11handleInputEi@Base 1.3.0
  _ZN2bt13SignalCatcher11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.3.0
  _ZN2bt13SignalCatcher11qt_metacastEPKc@Base 1.3.0
- _ZN2bt13SignalCatcher13signalHandlerEiP7siginfoPv@Base 1.3.0
+ _ZN2bt13SignalCatcher13signalHandlerEiP9siginfo_tPv@Base 1.3.1
  _ZN2bt13SignalCatcher16staticMetaObjectE@Base 1.3.0
  _ZN2bt13SignalCatcher20signal_received_pipeE@Base 1.3.0
  _ZN2bt13SignalCatcher9triggeredEv@Base 1.3.0
@@ -1254,8 +1254,6 @@ libktorrent.so.5 libktorrent5 #MINVER#
  _ZN2bt4PipeD1Ev@Base 1.3.0
  _ZN2bt4PipeD2Ev@Base 1.3.0
  _ZN2bt4endlERNS_3LogE@Base 1.3.0
- (optional=templinst|arch=amd64 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel sparc)_ZN2bt5ArrayIhED1Ev@Base 1.3.0
- (optional=templinst|arch=amd64 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel sparc)_ZN2bt5ArrayIhED2Ev@Base 1.3.0
  _ZN2bt5BNodeC1ENS0_4TypeEj@Base 1.3.0
  _ZN2bt5BNodeC2ENS0_4TypeEj@Base 1.3.0
  _ZN2bt5BNodeD0Ev@Base 1.3.0
@@ -2132,6 +2130,12 @@ libktorrent.so.5 libktorrent5 #MINVER#
  _ZN3utp9UTPSocketD2Ev@Base 1.3.0
  (optional|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN4KUrl4ListD1Ev@Base 1.3.0
  (optional|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN4KUrl4ListD2Ev@Base 1.3.0
+ (optional=templinst)_ZN5boost16exception_detail19error_info_injectorISt12length_errorED0Ev@Base 1.3.1
+ (optional=templinst)_ZN5boost16exception_detail19error_info_injectorISt12length_errorED1Ev@Base 1.3.1
+ (optional=templinst)_ZN5boost16exception_detail19error_info_injectorISt12length_errorED2Ev@Base 1.3.1
+ (optional=internal)_ZN5boost9exceptionD0Ev@Base 1.3.1
+ (optional=internal)_ZN5boost9exceptionD1Ev@Base 1.3.1
+ (optional=internal)_ZN5boost9exceptionD2Ev@Base 1.3.1
  _ZNK2bt10Downloader10isFinishedEv@Base 1.3.0
  _ZNK2bt10Downloader10metaObjectEv@Base 1.3.0
  _ZNK2bt10Downloader11downloadingEj@Base 1.3.0
@@ -2379,35 +2383,20 @@ libktorrent.so.5 libktorrent5 #MINVER#
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNKSt8_Rb_treeIjSt4pairIKjPN2bt13ChunkDownloadEESt10_Select1stIS5_ESt4lessIjESaIS5_EE4findERS1_@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt10_List_baseIN5boost12shared_arrayIhEESaIS2_EED1Ev@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt10_List_baseIN5boost12shared_arrayIhEESaIS2_EED2Ev@Base 1.3.0
- (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt10_List_baseIjSaIjEE8_M_clearEv@Base 1.3.0
- (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt3mapI4KUrlPN2bt7TrackerESt4lessIS0_ESaISt4pairIKS0_S3_EEED1Ev@Base 1.3.0
- (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt3mapI4KUrlPN2bt7TrackerESt4lessIS0_ESaISt4pairIKS0_S3_EEED2Ev@Base 1.3.0
- (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt3mapIjPN2bt13ChunkDownloadESt4lessIjESaISt4pairIKjS2_EEED1Ev@Base 1.3.0
- (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt3mapIjPN2bt13ChunkDownloadESt4lessIjESaISt4pairIKjS2_EEED2Ev@Base 1.3.0
- (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt3mapIjPN2bt21PeerProtocolExtensionESt4lessIjESaISt4pairIKjS2_EEED1Ev@Base 1.3.0
- (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt3mapIjPN2bt21PeerProtocolExtensionESt4lessIjESaISt4pairIKjS2_EEED2Ev@Base 1.3.0
- (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt3mapIjPN2bt21PeerProtocolExtensionESt4lessIjESaISt4pairIKjS2_EEEixERS6_@Base 1.3.0
- (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt3mapIjPN2bt7WebSeedESt4lessIjESaISt4pairIKjS2_EEED1Ev@Base 1.3.0
- (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt3mapIjPN2bt7WebSeedESt4lessIjESaISt4pairIKjS2_EEED2Ev@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt4listI14QSharedPointerIN2bt6PacketEESaIS3_EED1Ev@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt4listI14QSharedPointerIN2bt6PacketEESaIS3_EED2Ev@Base 1.3.0
  (optional=templinst)_ZNSt4listIjSaIjEE4sortIN2bt7RareCmpEEEvT_@Base 1.3.0
  (optional=templinst)_ZNSt4listIjSaIjEE5mergeIN2bt7RareCmpEEEvRS1_T_@Base 1.3.0
- (optional=templinst)_ZNSt4listIjSaIjEED1Ev@Base 1.3.0
- (optional=templinst)_ZNSt4listIjSaIjEED2Ev@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt4pairIKN3dht3KeyENS0_12KBucketEntryEED1Ev@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt4pairIKN3dht3KeyENS0_12KBucketEntryEED2Ev@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt4pairIN3dht3KeyENS0_12KBucketEntryEED1Ev@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt4pairIN3dht3KeyENS0_12KBucketEntryEED2Ev@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt6vectorI6pollfdSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt6vectorIN3utp12WindowPacketESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_@Base 1.3.0
- (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt6vectorIPN2bt5ChunkESaIS2_EED1Ev@Base 1.3.0
- (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt6vectorIPN2bt5ChunkESaIS2_EED2Ev@Base 1.3.0
  (optional=templinst)_ZNSt6vectorIjSaIjEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPjS1_EERKj@Base 1.3.0
- (optional=templinst)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS6_@Base 1.3.0
- (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE12_M_erase_auxESt23_Rb_tree_const_iteratorIS6_E@Base 1.3.0
- (optional=templinst)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE16_M_insert_uniqueERKS6_@Base 1.3.0
  (optional=templinst)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS6_ERKS6_@Base 1.3.0
+ (optional=templinst)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE24_M_get_insert_unique_posERS2_@Base 1.3.1
+ (optional=templinst)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS6_ERS2_@Base 1.3.1
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE4findERS2_@Base 1.3.0
  (optional=templinst)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE8_M_eraseEPSt13_Rb_tree_nodeIS6_E@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN2bt18DeleteDataFilesJob7DirTreeEESt10_Select1stIS7_ESt4lessIS0_ESaIS7_EE10_M_insert_EPKSt18_Rb_tree_node_baseSG_RKS7_@Base 1.3.0
@@ -2429,9 +2418,9 @@ libktorrent.so.5 libktorrent5 #MINVER#
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt8_Rb_treeIN3dht3KeyESt4pairIKS1_P5QListINS0_6DBItemEEESt10_Select1stIS8_ESt4lessIS1_ESaIS8_EE16_M_insert_uniqueERKS8_@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt8_Rb_treeIN3dht3KeyESt4pairIKS1_P5QListINS0_6DBItemEEESt10_Select1stIS8_ESt4lessIS1_ESaIS8_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS8_ERKS8_@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt8_Rb_treeIN3dht3KeyESt4pairIKS1_P5QListINS0_6DBItemEEESt10_Select1stIS8_ESt4lessIS1_ESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E@Base 1.3.0
- (optional=templinst)_ZNSt8_Rb_treeIN3net7AddressESt4pairIKS1_bESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE10_M_insert_EPKSt18_Rb_tree_node_baseSD_RKS4_@Base 1.3.0
- (optional=templinst)_ZNSt8_Rb_treeIN3net7AddressESt4pairIKS1_bESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE16_M_insert_uniqueERKS4_@Base 1.3.0
  (optional=templinst)_ZNSt8_Rb_treeIN3net7AddressESt4pairIKS1_bESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS4_ERKS4_@Base 1.3.0
+ (optional=templinst)_ZNSt8_Rb_treeIN3net7AddressESt4pairIKS1_bESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE24_M_get_insert_unique_posERS3_@Base 1.3.1
+ (optional=templinst)_ZNSt8_Rb_treeIN3net7AddressESt4pairIKS1_bESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS4_ERS3_@Base 1.3.1
  (optional=templinst)_ZNSt8_Rb_treeIN3net7AddressESt4pairIKS1_bESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt8_Rb_treeIPN2bt15PieceDownloaderESt4pairIKS2_PNS0_14DownloadStatusEESt10_Select1stIS7_ESt4lessIS2_ESaIS7_EE10_M_insert_EPKSt18_Rb_tree_node_baseSG_RKS7_@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt8_Rb_treeIPN2bt15PieceDownloaderESt4pairIKS2_PNS0_14DownloadStatusEESt10_Select1stIS7_ESt4lessIS2_ESaIS7_EE16_M_insert_uniqueERKS7_@Base 1.3.0
@@ -2449,30 +2438,26 @@ libktorrent.so.5 libktorrent5 #MINVER#
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt8_Rb_treeIiSt4pairIKi14QSharedPointerIN3net10PollClientEEESt10_Select1stIS6_ESt4lessIiESaIS6_EE16_M_insert_uniqueERKS6_@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt8_Rb_treeIiSt4pairIKi14QSharedPointerIN3net10PollClientEEESt10_Select1stIS6_ESt4lessIiESaIS6_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS6_ERKS6_@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt8_Rb_treeIiSt4pairIKi14QSharedPointerIN3net10PollClientEEESt10_Select1stIS6_ESt4lessIiESaIS6_EE8_M_eraseEPSt13_Rb_tree_nodeIS6_E@Base 1.3.0
- (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjN3net7AddressEESt10_Select1stIS4_ESt4lessIjESaIS4_EE10_M_insert_EPKSt18_Rb_tree_node_baseSD_RKS4_@Base 1.3.0
  (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjN3net7AddressEESt10_Select1stIS4_ESt4lessIjESaIS4_EE16_M_insert_uniqueERKS4_@Base 1.3.0
  (optional=templinst|arch=!i386 !kfreebsd-i386)_ZNSt8_Rb_treeIjSt4pairIKjN3net7AddressEESt10_Select1stIS4_ESt4lessIjESaIS4_EE5eraseERS1_@Base 1.3.0
  (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjN3net7AddressEESt10_Select1stIS4_ESt4lessIjESaIS4_EE7_M_copyEPKSt13_Rb_tree_nodeIS4_EPSC_@Base 1.3.0
  (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjN3net7AddressEESt10_Select1stIS4_ESt4lessIjESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 1.3.0
- (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt13ChunkDownloadEESt10_Select1stIS5_ESt4lessIjESaIS5_EE10_M_insert_EPKSt18_Rb_tree_node_baseSE_RKS5_@Base 1.3.0
- (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt13ChunkDownloadEESt10_Select1stIS5_ESt4lessIjESaIS5_EE12_M_erase_auxESt23_Rb_tree_const_iteratorIS5_E@Base 1.3.0
- (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt13ChunkDownloadEESt10_Select1stIS5_ESt4lessIjESaIS5_EE16_M_insert_uniqueERKS5_@Base 1.3.0
  (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt13ChunkDownloadEESt10_Select1stIS5_ESt4lessIjESaIS5_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS5_ERKS5_@Base 1.3.0
+ (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt13ChunkDownloadEESt10_Select1stIS5_ESt4lessIjESaIS5_EE24_M_get_insert_unique_posERS1_@Base 1.3.1
+ (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt13ChunkDownloadEESt10_Select1stIS5_ESt4lessIjESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERS1_@Base 1.3.1
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt13ChunkDownloadEESt10_Select1stIS5_ESt4lessIjESaIS5_EE4findERS1_@Base 1.3.0
  (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt13ChunkDownloadEESt10_Select1stIS5_ESt4lessIjESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E@Base 1.3.0
- (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt21PeerProtocolExtensionEESt10_Select1stIS5_ESt4lessIjESaIS5_EE10_M_insert_EPKSt18_Rb_tree_node_baseSE_RKS5_@Base 1.3.0
- (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt21PeerProtocolExtensionEESt10_Select1stIS5_ESt4lessIjESaIS5_EE16_M_insert_uniqueERKS5_@Base 1.3.0
  (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt21PeerProtocolExtensionEESt10_Select1stIS5_ESt4lessIjESaIS5_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS5_ERKS5_@Base 1.3.0
+ (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt21PeerProtocolExtensionEESt10_Select1stIS5_ESt4lessIjESaIS5_EE24_M_get_insert_unique_posERS1_@Base 1.3.1
+ (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt21PeerProtocolExtensionEESt10_Select1stIS5_ESt4lessIjESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERS1_@Base 1.3.1
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt21PeerProtocolExtensionEESt10_Select1stIS5_ESt4lessIjESaIS5_EE4findERS1_@Base 1.3.0
  (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt21PeerProtocolExtensionEESt10_Select1stIS5_ESt4lessIjESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7DNDFileEESt10_Select1stIS5_ESt4lessIjESaIS5_EE10_M_insert_EPKSt18_Rb_tree_node_baseSE_RKS5_@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7DNDFileEESt10_Select1stIS5_ESt4lessIjESaIS5_EE16_M_insert_uniqueERKS5_@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7DNDFileEESt10_Select1stIS5_ESt4lessIjESaIS5_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS5_ERKS5_@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7DNDFileEESt10_Select1stIS5_ESt4lessIjESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E@Base 1.3.0
- (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7WebSeedEESt10_Select1stIS5_ESt4lessIjESaIS5_EE10_M_insert_EPKSt18_Rb_tree_node_baseSE_RKS5_@Base 1.3.0
- (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7WebSeedEESt10_Select1stIS5_ESt4lessIjESaIS5_EE12_M_erase_auxESt23_Rb_tree_const_iteratorIS5_E@Base 1.3.0
- (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7WebSeedEESt10_Select1stIS5_ESt4lessIjESaIS5_EE16_M_insert_uniqueERKS5_@Base 1.3.0
- (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7WebSeedEESt10_Select1stIS5_ESt4lessIjESaIS5_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS5_ERKS5_@Base 1.3.0
+ (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7WebSeedEESt10_Select1stIS5_ESt4lessIjESaIS5_EE24_M_get_insert_unique_posERS1_@Base 1.3.1
+ (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7WebSeedEESt10_Select1stIS5_ESt4lessIjESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERS1_@Base 1.3.1
  (optional=templinst|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7WebSeedEESt10_Select1stIS5_ESt4lessIjESaIS5_EE4findERS1_@Base 1.3.0
  (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7WebSeedEESt10_Select1stIS5_ESt4lessIjESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt9CacheFileEESt10_Select1stIS5_ESt4lessIjESaIS5_EE10_M_insert_EPKSt18_Rb_tree_node_baseSE_RKS5_@Base 1.3.0
@@ -2487,10 +2472,8 @@ libktorrent.so.5 libktorrent5 #MINVER#
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt8_Rb_treeIjSt4pairIKjSt4listIN5boost12shared_arrayIhEESaIS5_EEESt10_Select1stIS8_ESt4lessIjESaIS8_EE16_M_insert_uniqueERKS8_@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt8_Rb_treeIjSt4pairIKjSt4listIN5boost12shared_arrayIhEESaIS5_EEESt10_Select1stIS8_ESt4lessIjESaIS8_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS8_ERKS8_@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt8_Rb_treeIjSt4pairIKjSt4listIN5boost12shared_arrayIhEESaIS5_EEESt10_Select1stIS8_ESt4lessIjESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E@Base 1.3.0
- (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjhESt10_Select1stIS2_ESt4lessIjESaIS2_EE10_M_insert_EPKSt18_Rb_tree_node_baseSB_RKS2_@Base 1.3.0
- (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt8_Rb_treeIjSt4pairIKjhESt10_Select1stIS2_ESt4lessIjESaIS2_EE16_M_insert_uniqueERKS2_@Base 1.3.0
+ (optional=templinst|arch=!i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt8_Rb_treeIjSt4pairIKjhESt10_Select1stIS2_ESt4lessIjESaIS2_EE16_M_insert_uniqueERKS2_@Base 1.3.0
  (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjhESt10_Select1stIS2_ESt4lessIjESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E@Base 1.3.0
- (optional=templinst)_ZNSt8_Rb_treeIjjSt9_IdentityIjESt4lessIjESaIjEE10_M_insert_EPKSt18_Rb_tree_node_baseS8_RKj@Base 1.3.0
  (optional=templinst)_ZNSt8_Rb_treeIjjSt9_IdentityIjESt4lessIjESaIjEE16_M_insert_uniqueERKj@Base 1.3.0
  (optional=templinst)_ZNSt8_Rb_treeIjjSt9_IdentityIjESt4lessIjESaIjEE8_M_eraseEPSt13_Rb_tree_nodeIjE@Base 1.3.0
  (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZSt11lower_boundIN5boost10cb_details8iteratorINS0_15circular_bufferIN3utp11DelayWindow10DelayEntryESaIS6_EEENS1_15nonconst_traitsIS7_EEEES6_ET_SC_SC_RKT0_@Base 1.3.0
@@ -2639,6 +2622,8 @@ libktorrent.so.5 libktorrent5 #MINVER#
  _ZTIN3utp9UTPServer7PrivateE@Base 1.3.0
  _ZTIN3utp9UTPServerE@Base 1.3.0
  _ZTIN3utp9UTPSocketE@Base 1.3.0
+ (optional=internal)_ZTIN5boost16exception_detail10clone_baseE@Base 1.3.1
+ (optional=internal)_ZTIN5boost16exception_detail19error_info_injectorISt12length_errorEE@Base 1.3.1
  _ZTIN5boost9exceptionE@Base 1.3.0
  (optional|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTISt3setIN3dht12KBucketEntryESt4lessIS1_ESaIS1_EE@Base 1.3.0
  _ZTSN2bt10BValueNodeE@Base 1.3.0
@@ -2786,6 +2771,8 @@ libktorrent.so.5 libktorrent5 #MINVER#
  _ZTSN3utp9UTPServer7PrivateE@Base 1.3.0
  _ZTSN3utp9UTPServerE@Base 1.3.0
  _ZTSN3utp9UTPSocketE@Base 1.3.0
+ (optional=internal)_ZTSN5boost16exception_detail10clone_baseE@Base 1.3.1
+ (optional=internal)_ZTSN5boost16exception_detail19error_info_injectorISt12length_errorEE@Base 1.3.1
  _ZTSN5boost9exceptionE@Base 1.3.0
  (optional|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZTSSt3setIN3dht12KBucketEntryESt4lessIS1_ESaIS1_EE@Base 1.3.0
  _ZTVN2bt10BValueNodeE@Base 1.3.0
@@ -2931,7 +2918,10 @@ libktorrent.so.5 libktorrent5 #MINVER#
  _ZTVN3utp9UTPServer7PrivateE@Base 1.3.0
  _ZTVN3utp9UTPServerE@Base 1.3.0
  _ZTVN3utp9UTPSocketE@Base 1.3.0
+ (optional=internal)_ZTVN5boost16exception_detail10clone_baseE@Base 1.3.1
+ (optional=internal)_ZTVN5boost16exception_detail19error_info_injectorISt12length_errorEE@Base 1.3.1
  _ZTVN5boost9exceptionE@Base 1.3.0
+ (c++|optional=internal)"non-virtual thunk to boost::exception_detail::error_info_injector<std::length_error>::~error_info_injector()@Base" 1.3.1
  (c++)"non-virtual thunk to bt::ChunkDownload::getStats(bt::ChunkDownloadInterface::Stats&)@Base" 1.3.0
  (c++)"non-virtual thunk to bt::ChunkDownload::~ChunkDownload()@Base" 1.3.0
  (c++)"non-virtual thunk to bt::DataCheckerJob::acquired()@Base" 1.3.0
