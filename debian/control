@@ -8,8 +8,8 @@ Build-Depends: cmake, debhelper (>= 9~), pkg-kde-tools (>= 0.6~),
  pkg-config, doxygen,
 Standards-Version: 3.9.5
 Homepage: http://ktorrent.org/
-Vcs-Git: git://git.debian.org/git/pkg-kde/kde-extras/libktorrent.git
-Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-extras/libktorrent.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/libktorrent.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/libktorrent.git;a=summary
 
 Package: libktorrent5
 Architecture: any
