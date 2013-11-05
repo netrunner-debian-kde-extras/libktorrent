@@ -1,5 +1,8 @@
 #!/usr/bin/make -f
 
+export DEB_CPPFLAGS_MAINT_APPEND := $(shell dpkg-buildflags --get CPPFLAGS)
+export DEB_CFLAGS_MAINT_APPEND := $(shell dpkg-buildflags --get CPPFLAGS)
+
 override_dh_auto_configure:
 	dh_auto_configure -Skde -- -DCMAKE_USE_RELATIVE_PATHS=ON
 
