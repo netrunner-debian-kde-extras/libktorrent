@@ -1,3 +1,8 @@
+libktorrent (1.3.1-3) UNRELEASED; urgency=low
+
+
+ -- Modestas Vainius <modax@debian.org>  Wed, 06 Nov 2013 11:00:08 +0200
+
 libktorrent (1.3.1-2) unstable; urgency=low
 
   * Make libktorrent suggest greater or equal version of -l10n.
