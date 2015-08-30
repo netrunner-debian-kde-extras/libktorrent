@@ -1,3 +1,13 @@
+libktorrent (1.3.1-5) unstable; urgency=medium
+
+  * Team upload.
+  * Update symbols from build logs
+  * Add definition of PATH_MAX when not otherwise defined to fix FTBFS on
+    hurd-i386 (Closes: #762581)
+    - Thanks to Svante Signell for the patch
+
+ -- Scott Kitterman <scott@kitterman.com>  Sun, 30 Aug 2015 17:12:30 -0400
+
 libktorrent (1.3.1-4) unstable; urgency=medium
 
   * Team upload.

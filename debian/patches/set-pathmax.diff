@@ -1,0 +1,23 @@
+Description: Add definition of PATH_MAX when not otherwise defined
+   * Add definition of PATH_MAX when not otherwise defined to fix FTBFS on
+     hurd-i386
+Author: Svante Signell <svante.signell@gmail.com>
+Reviewed-By: Scott Kitterman <scott@kitterman.com>
+Bug-Debian: http://bugs.debian.org/762581
+Origin: vendor
+Forwarded: no
+Last-Update: 2015-08-30
+
+--- libktorrent-1.3.1.orig/src/util/fileops.cpp
++++ libktorrent-1.3.1/src/util/fileops.cpp
+@@ -54,6 +54,10 @@
+ #define NAME_MAX 255
+ #endif
+ 
++#ifndef PATH_MAX
++#define PATH_MAX 4096
++#endif
++
+ #ifdef HAVE_XFS_XFS_H
+ 
+ #if !defined(HAVE___S64) || !defined(HAVE___U64)
