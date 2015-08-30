@@ -1,3 +1,25 @@
+libktorrent (1.3.1-4) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Matthias Klose ]
+  * Update symbols file for GCC 5. (Closes: #777954)
+
+  [ Harald Sitter ]
+  * Add upstream_don-t-include-circular_buffer-in-moc-run.patch from upstream
+    to not include the circular_buffer boost header during meta object
+    compilation as it causes Qt4's MOC to fail on BOOST_JOIN which it cannot
+    process due to implementation limitations.
+
+  [ Adam Conrad ]
+  * Build-depend on libgcrypt11-dev
+
+  [ Scott Kitterman ]
+  * Backport gcc5 and boost1.58 changes from Ubuntu
+  * Bump standards version to 3.9.6 without further change
+
+ -- Scott Kitterman <scott@kitterman.com>  Sun, 30 Aug 2015 01:10:33 -0400
+
 libktorrent (1.3.1-3) unstable; urgency=low
 
   * Confirm symbols file on all arches, fixes FTBFSes.

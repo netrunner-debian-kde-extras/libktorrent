@@ -1,0 +1,31 @@
+From c6da334030f7865d67ee7d131f075087476fe00a Mon Sep 17 00:00:00 2001
+From: Harald Sitter <sitter@kde.org>
+Date: Tue, 11 Aug 2015 14:48:14 +0200
+Subject: [PATCH] don't include circular_buffer in moc run
+
+boost 1.58 started including files with constructs moc cannot handle and
+buts out. since the boost includes are not required for metaobject
+compliation simply do not include the relevant header during moc runs.
+
+fixes build problems with qt4 and boost ~= 1.58
+---
+ src/utp/delaywindow.h | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/src/utp/delaywindow.h b/src/utp/delaywindow.h
+index 2c1abcf..93cf986 100644
+--- a/src/utp/delaywindow.h
++++ b/src/utp/delaywindow.h
+@@ -22,7 +22,9 @@
+ #ifndef UTP_DELAYWINDOW_H
+ #define UTP_DELAYWINDOW_H
+ 
++#ifndef Q_MOC_RUN
+ #include <boost/circular_buffer.hpp>
++#endif // Q_MOC_RUN
+ #include <utp/utpprotocol.h>
+ 
+ namespace utp
+-- 
+2.1.4
+

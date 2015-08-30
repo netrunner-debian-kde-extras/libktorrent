@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 1.3.1 amd64 armel armhf i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390x sparc
+# SymbolsHelper-Confirmed: 1.3.1 amd64 arm64 armel armhf i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64el s390x sparc
 libktorrent.so.5 libktorrent5 #MINVER#
 * Build-Depends-Package: libktorrent-dev
  _ZN2bt10BValueNode14printDebugInfoEv@Base 1.3.0
@@ -270,8 +270,8 @@ libktorrent.so.5 libktorrent5 #MINVER#
  _ZN2bt11UPnPServiceC1Ev@Base 1.3.0
  _ZN2bt11UPnPServiceC2ERKS0_@Base 1.3.0
  _ZN2bt11UPnPServiceC2Ev@Base 1.3.0
- _ZN2bt11UPnPServiceD1Ev@Base 1.3.0
- _ZN2bt11UPnPServiceD2Ev@Base 1.3.0
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZN2bt11UPnPServiceD1Ev@Base 1.3.1
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZN2bt11UPnPServiceD2Ev@Base 1.3.1
  _ZN2bt11UPnPServiceaSERKS0_@Base 1.3.0
  _ZN2bt12CacheFactoryC1Ev@Base 1.3.0
  _ZN2bt12CacheFactoryC2Ev@Base 1.3.0
@@ -366,8 +366,8 @@ libktorrent.so.5 libktorrent5 #MINVER#
  _ZN2bt12PeerIDPrefixEv@Base 1.3.0
  _ZN2bt12TorrentStatsC1Ev@Base 1.3.0
  _ZN2bt12TorrentStatsC2Ev@Base 1.3.0
- _ZN2bt12TorrentStatsD1Ev@Base 1.3.0
- _ZN2bt12TorrentStatsD2Ev@Base 1.3.0
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZN2bt12TorrentStatsD1Ev@Base 1.3.1
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZN2bt12TorrentStatsD2Ev@Base 1.3.1
  _ZN2bt12TrackersList5mergeEPKNS_11TrackerTierE@Base 1.3.0
  _ZN2bt12TrackersListC1Ev@Base 1.3.0
  _ZN2bt12TrackersListC2Ev@Base 1.3.0
@@ -442,8 +442,8 @@ libktorrent.so.5 libktorrent5 #MINVER#
  _ZN2bt13PeerConnectorD0Ev@Base 1.3.0
  _ZN2bt13PeerConnectorD1Ev@Base 1.3.0
  _ZN2bt13PeerConnectorD2Ev@Base 1.3.0
- _ZN2bt13PeerInterface5StatsD1Ev@Base 1.3.0
- _ZN2bt13PeerInterface5StatsD2Ev@Base 1.3.0
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZN2bt13PeerInterface5StatsD1Ev@Base 1.3.1
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZN2bt13PeerInterface5StatsD2Ev@Base 1.3.1
  _ZN2bt13PeerInterfaceC1ERKNS_6PeerIDEj@Base 1.3.0
  _ZN2bt13PeerInterfaceC2ERKNS_6PeerIDEj@Base 1.3.0
  _ZN2bt13PeerInterfaceD0Ev@Base 1.3.0
@@ -579,8 +579,8 @@ libktorrent.so.5 libktorrent5 #MINVER#
  _ZN2bt14TorrentControl12loadEncodingEv@Base 1.3.0
  _ZN2bt14TorrentControl12overMaxRatioEv@Base 1.3.0
  _ZN2bt14TorrentControl12updateStatusEv@Base 1.3.0
- _ZN2bt14TorrentControl13InternalStatsD1Ev@Base 1.3.0
- _ZN2bt14TorrentControl13InternalStatsD2Ev@Base 1.3.0
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZN2bt14TorrentControl13InternalStatsD1Ev@Base 1.3.1
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZN2bt14TorrentControl13InternalStatsD2Ev@Base 1.3.1
  _ZN2bt14TorrentControl13addPeerSourceEPNS_10PeerSourceE@Base 1.3.0
  _ZN2bt14TorrentControl13checkExistingEPNS_21QueueManagerInterfaceE@Base 1.3.0
  _ZN2bt14TorrentControl13continueStartEv@Base 1.3.0
@@ -1036,9 +1036,9 @@ libktorrent.so.5 libktorrent5 #MINVER#
  _ZN2bt18BEncoderFileOutput5writeEPKcj@Base 1.3.0
  _ZN2bt18BEncoderFileOutputC1EPNS_4FileE@Base 1.3.0
  _ZN2bt18BEncoderFileOutputC2EPNS_4FileE@Base 1.3.0
- _ZN2bt18BEncoderFileOutputD0Ev@Base 1.3.0
- _ZN2bt18BEncoderFileOutputD1Ev@Base 1.3.0
- _ZN2bt18BEncoderFileOutputD2Ev@Base 1.3.0
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZN2bt18BEncoderFileOutputD0Ev@Base 1.3.1
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZN2bt18BEncoderFileOutputD1Ev@Base 1.3.1
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZN2bt18BEncoderFileOutputD2Ev@Base 1.3.1
  _ZN2bt18BlockListInterfaceC1Ev@Base 1.3.0
  _ZN2bt18BlockListInterfaceC2Ev@Base 1.3.0
  _ZN2bt18BlockListInterfaceD0Ev@Base 1.3.0
@@ -1067,9 +1067,9 @@ libktorrent.so.5 libktorrent5 #MINVER#
  _ZN2bt20BEncoderBufferOutput5writeEPKcj@Base 1.3.0
  _ZN2bt20BEncoderBufferOutputC1ER10QByteArray@Base 1.3.0
  _ZN2bt20BEncoderBufferOutputC2ER10QByteArray@Base 1.3.0
- _ZN2bt20BEncoderBufferOutputD0Ev@Base 1.3.0
- _ZN2bt20BEncoderBufferOutputD1Ev@Base 1.3.0
- _ZN2bt20BEncoderBufferOutputD2Ev@Base 1.3.0
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZN2bt20BEncoderBufferOutputD0Ev@Base 1.3.1
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZN2bt20BEncoderBufferOutputD1Ev@Base 1.3.1
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZN2bt20BEncoderBufferOutputD2Ev@Base 1.3.1
  _ZN2bt20TorrentFileInterface11qt_metacallEN11QMetaObject4CallEiPPv@Base 1.3.0
  _ZN2bt20TorrentFileInterface11qt_metacastEPKc@Base 1.3.0
  _ZN2bt20TorrentFileInterface15changeTextCodecEP10QTextCodec@Base 1.3.0
@@ -1108,14 +1108,14 @@ libktorrent.so.5 libktorrent5 #MINVER#
  _ZN2bt21QueueManagerInterfaceD1Ev@Base 1.3.0
  _ZN2bt21QueueManagerInterfaceD2Ev@Base 1.3.0
  _ZN2bt21UPnPDeviceDescription11setPropertyERK7QStringS3_@Base 1.3.0
- _ZN2bt21UPnPDeviceDescriptionD1Ev@Base 1.3.0
- _ZN2bt21UPnPDeviceDescriptionD2Ev@Base 1.3.0
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZN2bt21UPnPDeviceDescriptionD1Ev@Base 1.3.1
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZN2bt21UPnPDeviceDescriptionD2Ev@Base 1.3.1
  _ZN2bt22BEncoderIODeviceOutput5writeEPKcj@Base 1.3.0
  _ZN2bt22BEncoderIODeviceOutputC1EP9QIODevice@Base 1.3.0
  _ZN2bt22BEncoderIODeviceOutputC2EP9QIODevice@Base 1.3.0
- _ZN2bt22BEncoderIODeviceOutputD0Ev@Base 1.3.0
- _ZN2bt22BEncoderIODeviceOutputD1Ev@Base 1.3.0
- _ZN2bt22BEncoderIODeviceOutputD2Ev@Base 1.3.0
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZN2bt22BEncoderIODeviceOutputD0Ev@Base 1.3.1
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZN2bt22BEncoderIODeviceOutputD1Ev@Base 1.3.1
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZN2bt22BEncoderIODeviceOutputD2Ev@Base 1.3.1
  _ZN2bt22ChunkSelectorInterface11selectRangeERjS1_j@Base 1.3.0
  _ZN2bt22ChunkSelectorInterface4initEPNS_12ChunkManagerEPNS_10DownloaderEPNS_11PeerManagerE@Base 1.3.0
  _ZN2bt22ChunkSelectorInterfaceC1Ev@Base 1.3.0
@@ -1585,8 +1585,8 @@ libktorrent.so.5 libktorrent5 #MINVER#
  _ZN2bt9BDictNode7getListERK7QString@Base 1.3.0
  _ZN2bt9BDictNode8getInt64ERK7QString@Base 1.3.0
  _ZN2bt9BDictNode8getValueERK7QString@Base 1.3.0
- (optional|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZN2bt9BDictNode9DictEntryD1Ev@Base 1.3.0
- (optional|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZN2bt9BDictNode9DictEntryD2Ev@Base 1.3.0
+ (optional|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZN2bt9BDictNode9DictEntryD1Ev@Base 1.3.0
+ (optional|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZN2bt9BDictNode9DictEntryD2Ev@Base 1.3.0
  _ZN2bt9BDictNode9getStringERK7QStringP10QTextCodec@Base 1.3.0
  _ZN2bt9BDictNodeC1Ej@Base 1.3.0
  _ZN2bt9BDictNodeC2Ej@Base 1.3.0
@@ -1987,8 +1987,8 @@ libktorrent.so.5 libktorrent5 #MINVER#
  _ZN3utp10Connection16staticMetaObjectE@Base 1.3.0
  _ZN3utp10Connection17TransmissionErrorC1EPKci@Base 1.3.0
  _ZN3utp10Connection17TransmissionErrorC2EPKci@Base 1.3.0
- _ZN3utp10Connection17TransmissionErrorD1Ev@Base 1.3.0
- _ZN3utp10Connection17TransmissionErrorD2Ev@Base 1.3.0
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZN3utp10Connection17TransmissionErrorD1Ev@Base 1.3.1
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZN3utp10Connection17TransmissionErrorD2Ev@Base 1.3.1
  _ZN3utp10Connection18waitUntilConnectedEv@Base 1.3.0
  _ZN3utp10Connection22updateDelayMeasurementEPKNS_6HeaderE@Base 1.3.0
  _ZN3utp10Connection4recvEPhj@Base 1.3.0
@@ -2131,16 +2131,16 @@ libktorrent.so.5 libktorrent5 #MINVER#
  _ZN3utp9UTPSocketD0Ev@Base 1.3.0
  _ZN3utp9UTPSocketD1Ev@Base 1.3.0
  _ZN3utp9UTPSocketD2Ev@Base 1.3.0
- (optional|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZN4KUrl4ListD1Ev@Base 1.3.0
- (optional|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZN4KUrl4ListD2Ev@Base 1.3.0
- (optional=templinst|arch=ia64 powerpc s390x sparc)_ZN5boost16exception_detail19error_info_injectorISt12length_errorEC1ERKS3_@Base 1.3.1
- (optional=templinst|arch=ia64 powerpc s390x sparc)_ZN5boost16exception_detail19error_info_injectorISt12length_errorEC2ERKS3_@Base 1.3.1
+ (optional|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZN4KUrl4ListD1Ev@Base 1.3.0
+ (optional|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZN4KUrl4ListD2Ev@Base 1.3.0
+ (optional=templinst|arch=ia64 s390x sparc)_ZN5boost16exception_detail19error_info_injectorISt12length_errorEC1ERKS3_@Base 1.3.1
+ (optional=templinst|arch=ia64 s390x sparc)_ZN5boost16exception_detail19error_info_injectorISt12length_errorEC2ERKS3_@Base 1.3.1
  (optional=templinst)_ZN5boost16exception_detail19error_info_injectorISt12length_errorED0Ev@Base 1.3.1
  (optional=templinst)_ZN5boost16exception_detail19error_info_injectorISt12length_errorED1Ev@Base 1.3.1
  (optional=templinst)_ZN5boost16exception_detail19error_info_injectorISt12length_errorED2Ev@Base 1.3.1
- (optional=internal|arch=!ia64 !powerpc !s390x !sparc)_ZN5boost9exceptionD0Ev@Base 1.3.1
- (optional=internal|arch=!ia64 !powerpc !s390x !sparc)_ZN5boost9exceptionD1Ev@Base 1.3.1
- (optional=internal|arch=!ia64 !powerpc !s390x !sparc)_ZN5boost9exceptionD2Ev@Base 1.3.1
+ (optional=internal|arch=!ia64 !s390x !sparc)_ZN5boost9exceptionD0Ev@Base 1.3.1
+ (optional=internal|arch=!ia64 !s390x !sparc)_ZN5boost9exceptionD1Ev@Base 1.3.1
+ (optional=internal|arch=!ia64 !s390x !sparc)_ZN5boost9exceptionD2Ev@Base 1.3.1
  _ZNK2bt10Downloader10isFinishedEv@Base 1.3.0
  _ZNK2bt10Downloader10metaObjectEv@Base 1.3.0
  _ZNK2bt10Downloader11downloadingEj@Base 1.3.0
@@ -2385,113 +2385,117 @@ libktorrent.so.5 libktorrent5 #MINVER#
  _ZNK3utp9UTPSocket2fdEv@Base 1.3.0
  _ZNK3utp9UTPSocket2okEv@Base 1.3.0
  _ZNK3utp9UTPSocket5readyEPKN3net4PollENS2_4ModeE@Base 1.3.0
- (optional=templinst|arch=amd64 armel armhf kfreebsd-amd64)_ZNKSt8_Rb_treeIjSt4pairIKjPN2bt13ChunkDownloadEESt10_Select1stIS5_ESt4lessIjESaIS5_EE4findERS1_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt10_List_baseIN5boost12shared_arrayIhEESaIS2_EED1Ev@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt10_List_baseIN5boost12shared_arrayIhEESaIS2_EED2Ev@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt4listI14QSharedPointerIN2bt6PacketEESaIS3_EED1Ev@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt4listI14QSharedPointerIN2bt6PacketEESaIS3_EED2Ev@Base 1.3.0
- (optional=templinst)_ZNSt4listIjSaIjEE4sortIN2bt7RareCmpEEEvT_@Base 1.3.0
- (optional=templinst)_ZNSt4listIjSaIjEE5mergeIN2bt7RareCmpEEEvRS1_T_@Base 1.3.0
- (optional=templinst|arch=ia64 powerpc s390x sparc)_ZNSt4listIjSaIjEED1Ev@Base 1.3.1
- (optional=templinst|arch=ia64 powerpc s390x sparc)_ZNSt4listIjSaIjEED2Ev@Base 1.3.1
- (optional=templinst|arch=ia64 powerpc s390x sparc)_ZNSt4pairI14QSharedPointerIN3dht7KBucketEES3_ED1Ev@Base 1.3.1
- (optional=templinst|arch=ia64 powerpc s390x sparc)_ZNSt4pairI14QSharedPointerIN3dht7KBucketEES3_ED2Ev@Base 1.3.1
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt4pairIKN3dht3KeyENS0_12KBucketEntryEED1Ev@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt4pairIKN3dht3KeyENS0_12KBucketEntryEED2Ev@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt4pairIN3dht3KeyENS0_12KBucketEntryEED1Ev@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt4pairIN3dht3KeyENS0_12KBucketEntryEED2Ev@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt6vectorI6pollfdSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt6vectorIN3utp12WindowPacketESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_@Base 1.3.0
+ (optional=templinst|arch=armel kfreebsd-amd64)_ZNKSt8_Rb_treeIjSt4pairIKjPN2bt13ChunkDownloadEESt10_Select1stIS5_ESt4lessIjESaIS5_EE4findERS1_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt10_List_baseIN5boost12shared_arrayIhEESaIS2_EED1Ev@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt10_List_baseIN5boost12shared_arrayIhEESaIS2_EED2Ev@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt4listI14QSharedPointerIN2bt6PacketEESaIS3_EED1Ev@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt4listI14QSharedPointerIN2bt6PacketEESaIS3_EED2Ev@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZNSt4listIjSaIjEE4sortIN2bt7RareCmpEEEvT_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZNSt4listIjSaIjEE5mergeIN2bt7RareCmpEEEvRS1_T_@Base 1.3.0
+ (optional=templinst|arch=ia64 s390x sparc)_ZNSt4listIjSaIjEED1Ev@Base 1.3.1
+ (optional=templinst|arch=ia64 s390x sparc)_ZNSt4listIjSaIjEED2Ev@Base 1.3.1
+ (optional=templinst|arch=ia64 s390x sparc)_ZNSt4pairI14QSharedPointerIN3dht7KBucketEES3_ED1Ev@Base 1.3.1
+ (optional=templinst|arch=ia64 s390x sparc)_ZNSt4pairI14QSharedPointerIN3dht7KBucketEES3_ED2Ev@Base 1.3.1
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt4pairIKN3dht3KeyENS0_12KBucketEntryEED1Ev@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt4pairIKN3dht3KeyENS0_12KBucketEntryEED2Ev@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt4pairIN3dht3KeyENS0_12KBucketEntryEED1Ev@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt4pairIN3dht3KeyENS0_12KBucketEntryEED2Ev@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt6vectorI6pollfdSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt6vectorIN3utp12WindowPacketESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_@Base 1.3.0
  (optional=templinst)_ZNSt6vectorIjSaIjEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPjS1_EERKj@Base 1.3.0
- (optional=templinst|arch=ia64 powerpc s390x sparc)_ZNSt8_Rb_treeI10QByteArraySt4pairIKS0_PN3dht7RPCCallEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS6_@Base 1.3.1
- (optional=templinst|arch=ia64 powerpc s390x sparc)_ZNSt8_Rb_treeI10QByteArraySt4pairIKS0_PN3dht7RPCCallEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE16_M_insert_uniqueERKS6_@Base 1.3.1
- (optional=templinst|arch=ia64 powerpc s390x sparc)_ZNSt8_Rb_treeI10QByteArraySt4pairIKS0_PN3dht7RPCCallEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS6_ERKS6_@Base 1.3.1
- (optional=templinst|arch=ia64 powerpc s390x sparc)_ZNSt8_Rb_treeI10QByteArraySt4pairIKS0_PN3dht7RPCCallEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE8_M_eraseEPSt13_Rb_tree_nodeIS6_E@Base 1.3.1
- (optional=templinst|arch=ia64 powerpc s390x sparc)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS6_@Base 1.3.1
- (optional=templinst|arch=ia64 powerpc s390x sparc)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE16_M_insert_uniqueERKS6_@Base 1.3.1
- (optional=templinst)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS6_ERKS6_@Base 1.3.0
- (optional=templinst|arch=!ia64 !powerpc !s390x !sparc)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE24_M_get_insert_unique_posERS2_@Base 1.3.1
- (optional=templinst|arch=amd64 kfreebsd-amd64)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS6_ERS2_@Base 1.3.1
- (optional=templinst|arch=amd64 armel armhf i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE4findERS2_@Base 1.3.0
+ (optional=templinst|arch=amd64 arm64 armhf i386 powerpc ppc64el)_ZNSt7__cxx114listIjSaIjEE4sortIN2bt7RareCmpEEEvT_@Base 1.3.1
+ (optional=templinst|arch=amd64 arm64 armhf i386 powerpc ppc64el)_ZNSt7__cxx114listIjSaIjEE5mergeIN2bt7RareCmpEEEvRS2_T_@Base 1.3.1
+ (optional=templinst|arch=ia64 s390x sparc)_ZNSt8_Rb_treeI10QByteArraySt4pairIKS0_PN3dht7RPCCallEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS6_@Base 1.3.1
+ (optional=templinst|arch=ia64 s390x sparc)_ZNSt8_Rb_treeI10QByteArraySt4pairIKS0_PN3dht7RPCCallEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE16_M_insert_uniqueERKS6_@Base 1.3.1
+ (optional=templinst|arch=ia64 s390x sparc)_ZNSt8_Rb_treeI10QByteArraySt4pairIKS0_PN3dht7RPCCallEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS6_ERKS6_@Base 1.3.1
+ (optional=templinst|arch=ia64 s390x sparc)_ZNSt8_Rb_treeI10QByteArraySt4pairIKS0_PN3dht7RPCCallEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE8_M_eraseEPSt13_Rb_tree_nodeIS6_E@Base 1.3.1
+ (optional=templinst|arch=ia64 s390x sparc)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS6_@Base 1.3.1
+ (optional=templinst|arch=amd64 arm64 armhf i386 powerpc)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE12_M_erase_auxESt23_Rb_tree_const_iteratorIS6_E@Base 1.3.1
+ (optional=templinst|arch=ia64 s390x sparc)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE16_M_insert_uniqueERKS6_@Base 1.3.1
+ (optional=templinst|arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS6_ERKS6_@Base 1.3.0
+ (optional=templinst|arch=!ia64 !ppc64el !s390x !sparc)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE24_M_get_insert_unique_posERS2_@Base 1.3.1
+ (optional=templinst|arch=amd64 arm64 kfreebsd-amd64 ppc64el)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS6_ERS2_@Base 1.3.1
+ (optional=templinst|arch=amd64 arm64 armel armhf i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE4findERS2_@Base 1.3.0
  (optional=templinst)_ZNSt8_Rb_treeI4KUrlSt4pairIKS0_PN2bt7TrackerEESt10_Select1stIS6_ESt4lessIS0_ESaIS6_EE8_M_eraseEPSt13_Rb_tree_nodeIS6_E@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN2bt18DeleteDataFilesJob7DirTreeEESt10_Select1stIS7_ESt4lessIS0_ESaIS7_EE10_M_insert_EPKSt18_Rb_tree_node_baseSG_RKS7_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN2bt18DeleteDataFilesJob7DirTreeEESt10_Select1stIS7_ESt4lessIS0_ESaIS7_EE16_M_insert_uniqueERKS7_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN2bt18DeleteDataFilesJob7DirTreeEESt10_Select1stIS7_ESt4lessIS0_ESaIS7_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS7_ERKS7_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN2bt18DeleteDataFilesJob7DirTreeEESt10_Select1stIS7_ESt4lessIS0_ESaIS7_EE8_M_eraseEPSt13_Rb_tree_nodeIS7_E@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIN3dht12KBucketEntryES1_St9_IdentityIS1_ESt4lessIS1_ESaIS1_EE10_M_insert_EPKSt18_Rb_tree_node_baseSA_RKS1_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIN3dht12KBucketEntryES1_St9_IdentityIS1_ESt4lessIS1_ESaIS1_EE16_M_insert_uniqueERKS1_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIN3dht12KBucketEntryES1_St9_IdentityIS1_ESt4lessIS1_ESaIS1_EE8_M_eraseEPSt13_Rb_tree_nodeIS1_E@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIN3dht20KBucketEntryAndTokenES1_St9_IdentityIS1_ESt4lessIS1_ESaIS1_EE10_M_insert_EPKSt18_Rb_tree_node_baseSA_RKS1_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIN3dht20KBucketEntryAndTokenES1_St9_IdentityIS1_ESt4lessIS1_ESaIS1_EE16_M_insert_uniqueERKS1_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIN3dht20KBucketEntryAndTokenES1_St9_IdentityIS1_ESt4lessIS1_ESaIS1_EE8_M_eraseEPSt13_Rb_tree_nodeIS1_E@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIN3dht3KeyESt4pairIKS1_NS0_12KBucketEntryEESt10_Select1stIS5_ESt4lessIS1_ESaIS5_EE10_M_insert_EPKSt18_Rb_tree_node_baseSE_RKS5_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIN3dht3KeyESt4pairIKS1_NS0_12KBucketEntryEESt10_Select1stIS5_ESt4lessIS1_ESaIS5_EE11equal_rangeERS3_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIN3dht3KeyESt4pairIKS1_NS0_12KBucketEntryEESt10_Select1stIS5_ESt4lessIS1_ESaIS5_EE12_M_erase_auxESt23_Rb_tree_const_iteratorIS5_ESD_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIN3dht3KeyESt4pairIKS1_NS0_12KBucketEntryEESt10_Select1stIS5_ESt4lessIS1_ESaIS5_EE16_M_insert_uniqueERKS5_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIN3dht3KeyESt4pairIKS1_NS0_12KBucketEntryEESt10_Select1stIS5_ESt4lessIS1_ESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIN3dht3KeyESt4pairIKS1_P5QListINS0_6DBItemEEESt10_Select1stIS8_ESt4lessIS1_ESaIS8_EE10_M_insert_EPKSt18_Rb_tree_node_baseSH_RKS8_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIN3dht3KeyESt4pairIKS1_P5QListINS0_6DBItemEEESt10_Select1stIS8_ESt4lessIS1_ESaIS8_EE16_M_insert_uniqueERKS8_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIN3dht3KeyESt4pairIKS1_P5QListINS0_6DBItemEEESt10_Select1stIS8_ESt4lessIS1_ESaIS8_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS8_ERKS8_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIN3dht3KeyESt4pairIKS1_P5QListINS0_6DBItemEEESt10_Select1stIS8_ESt4lessIS1_ESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E@Base 1.3.0
- (optional=templinst|arch=ia64 powerpc s390x sparc)_ZNSt8_Rb_treeIN3net7AddressESt4pairIKS1_bESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE10_M_insert_EPKSt18_Rb_tree_node_baseSD_RKS4_@Base 1.3.1
- (optional=templinst|arch=ia64 powerpc s390x sparc)_ZNSt8_Rb_treeIN3net7AddressESt4pairIKS1_bESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE16_M_insert_uniqueERKS4_@Base 1.3.1
- (optional=templinst)_ZNSt8_Rb_treeIN3net7AddressESt4pairIKS1_bESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS4_ERKS4_@Base 1.3.0
- (optional=templinst|arch=!ia64 !powerpc !s390x !sparc)_ZNSt8_Rb_treeIN3net7AddressESt4pairIKS1_bESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE24_M_get_insert_unique_posERS3_@Base 1.3.1
- (optional=templinst|arch=amd64 kfreebsd-amd64)_ZNSt8_Rb_treeIN3net7AddressESt4pairIKS1_bESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS4_ERS3_@Base 1.3.1
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN2bt18DeleteDataFilesJob7DirTreeEESt10_Select1stIS7_ESt4lessIS0_ESaIS7_EE10_M_insert_EPKSt18_Rb_tree_node_baseSG_RKS7_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN2bt18DeleteDataFilesJob7DirTreeEESt10_Select1stIS7_ESt4lessIS0_ESaIS7_EE16_M_insert_uniqueERKS7_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN2bt18DeleteDataFilesJob7DirTreeEESt10_Select1stIS7_ESt4lessIS0_ESaIS7_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS7_ERKS7_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN2bt18DeleteDataFilesJob7DirTreeEESt10_Select1stIS7_ESt4lessIS0_ESaIS7_EE8_M_eraseEPSt13_Rb_tree_nodeIS7_E@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIN3dht12KBucketEntryES1_St9_IdentityIS1_ESt4lessIS1_ESaIS1_EE10_M_insert_EPKSt18_Rb_tree_node_baseSA_RKS1_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIN3dht12KBucketEntryES1_St9_IdentityIS1_ESt4lessIS1_ESaIS1_EE16_M_insert_uniqueERKS1_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIN3dht12KBucketEntryES1_St9_IdentityIS1_ESt4lessIS1_ESaIS1_EE8_M_eraseEPSt13_Rb_tree_nodeIS1_E@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIN3dht20KBucketEntryAndTokenES1_St9_IdentityIS1_ESt4lessIS1_ESaIS1_EE10_M_insert_EPKSt18_Rb_tree_node_baseSA_RKS1_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIN3dht20KBucketEntryAndTokenES1_St9_IdentityIS1_ESt4lessIS1_ESaIS1_EE16_M_insert_uniqueERKS1_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIN3dht20KBucketEntryAndTokenES1_St9_IdentityIS1_ESt4lessIS1_ESaIS1_EE8_M_eraseEPSt13_Rb_tree_nodeIS1_E@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIN3dht3KeyESt4pairIKS1_NS0_12KBucketEntryEESt10_Select1stIS5_ESt4lessIS1_ESaIS5_EE10_M_insert_EPKSt18_Rb_tree_node_baseSE_RKS5_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIN3dht3KeyESt4pairIKS1_NS0_12KBucketEntryEESt10_Select1stIS5_ESt4lessIS1_ESaIS5_EE11equal_rangeERS3_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIN3dht3KeyESt4pairIKS1_NS0_12KBucketEntryEESt10_Select1stIS5_ESt4lessIS1_ESaIS5_EE12_M_erase_auxESt23_Rb_tree_const_iteratorIS5_ESD_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIN3dht3KeyESt4pairIKS1_NS0_12KBucketEntryEESt10_Select1stIS5_ESt4lessIS1_ESaIS5_EE16_M_insert_uniqueERKS5_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIN3dht3KeyESt4pairIKS1_NS0_12KBucketEntryEESt10_Select1stIS5_ESt4lessIS1_ESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIN3dht3KeyESt4pairIKS1_P5QListINS0_6DBItemEEESt10_Select1stIS8_ESt4lessIS1_ESaIS8_EE10_M_insert_EPKSt18_Rb_tree_node_baseSH_RKS8_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIN3dht3KeyESt4pairIKS1_P5QListINS0_6DBItemEEESt10_Select1stIS8_ESt4lessIS1_ESaIS8_EE16_M_insert_uniqueERKS8_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIN3dht3KeyESt4pairIKS1_P5QListINS0_6DBItemEEESt10_Select1stIS8_ESt4lessIS1_ESaIS8_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS8_ERKS8_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIN3dht3KeyESt4pairIKS1_P5QListINS0_6DBItemEEESt10_Select1stIS8_ESt4lessIS1_ESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E@Base 1.3.0
+ (optional=templinst|arch=ia64 s390x sparc)_ZNSt8_Rb_treeIN3net7AddressESt4pairIKS1_bESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE10_M_insert_EPKSt18_Rb_tree_node_baseSD_RKS4_@Base 1.3.1
+ (optional=templinst|arch=ia64 s390x sparc)_ZNSt8_Rb_treeIN3net7AddressESt4pairIKS1_bESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE16_M_insert_uniqueERKS4_@Base 1.3.1
+ (optional=templinst|arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZNSt8_Rb_treeIN3net7AddressESt4pairIKS1_bESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS4_ERKS4_@Base 1.3.0
+ (optional=templinst|arch=!ia64 !ppc64el !s390x !sparc)_ZNSt8_Rb_treeIN3net7AddressESt4pairIKS1_bESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE24_M_get_insert_unique_posERS3_@Base 1.3.1
+ (optional=templinst|arch=amd64 arm64 kfreebsd-amd64 ppc64el)_ZNSt8_Rb_treeIN3net7AddressESt4pairIKS1_bESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS4_ERS3_@Base 1.3.1
  (optional=templinst)_ZNSt8_Rb_treeIN3net7AddressESt4pairIKS1_bESt10_Select1stIS4_ESt4lessIS1_ESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIPN2bt15PieceDownloaderESt4pairIKS2_PNS0_14DownloadStatusEESt10_Select1stIS7_ESt4lessIS2_ESaIS7_EE10_M_insert_EPKSt18_Rb_tree_node_baseSG_RKS7_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIPN2bt15PieceDownloaderESt4pairIKS2_PNS0_14DownloadStatusEESt10_Select1stIS7_ESt4lessIS2_ESaIS7_EE16_M_insert_uniqueERKS7_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIPN2bt15PieceDownloaderESt4pairIKS2_PNS0_14DownloadStatusEESt10_Select1stIS7_ESt4lessIS2_ESaIS7_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS7_ERKS7_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIPN2bt15PieceDownloaderESt4pairIKS2_PNS0_14DownloadStatusEESt10_Select1stIS7_ESt4lessIS2_ESaIS7_EE8_M_eraseEPSt13_Rb_tree_nodeIS7_E@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIPN3net4PollESt4pairIKS2_PN3utp12PollPipePairEESt10_Select1stIS8_ESt4lessIS2_ESaIS8_EE10_M_insert_EPKSt18_Rb_tree_node_baseSH_RKS8_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIPN3net4PollESt4pairIKS2_PN3utp12PollPipePairEESt10_Select1stIS8_ESt4lessIS2_ESaIS8_EE16_M_insert_uniqueERKS8_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIPN3net4PollESt4pairIKS2_PN3utp12PollPipePairEESt10_Select1stIS8_ESt4lessIS2_ESaIS8_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS8_ERKS8_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIPN3net4PollESt4pairIKS2_PN3utp12PollPipePairEESt10_Select1stIS8_ESt4lessIS2_ESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIiSt4pairIKi14QSharedPointerIN3net10PollClientEEESt10_Select1stIS6_ESt4lessIiESaIS6_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS6_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIiSt4pairIKi14QSharedPointerIN3net10PollClientEEESt10_Select1stIS6_ESt4lessIiESaIS6_EE16_M_insert_uniqueERKS6_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIiSt4pairIKi14QSharedPointerIN3net10PollClientEEESt10_Select1stIS6_ESt4lessIiESaIS6_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS6_ERKS6_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIiSt4pairIKi14QSharedPointerIN3net10PollClientEEESt10_Select1stIS6_ESt4lessIiESaIS6_EE8_M_eraseEPSt13_Rb_tree_nodeIS6_E@Base 1.3.0
- (optional=templinst|arch=ia64 powerpc s390x sparc)_ZNSt8_Rb_treeIjSt4pairIKjN3net7AddressEESt10_Select1stIS4_ESt4lessIjESaIS4_EE10_M_insert_EPKSt18_Rb_tree_node_baseSD_RKS4_@Base 1.3.1
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIPN2bt15PieceDownloaderESt4pairIKS2_PNS0_14DownloadStatusEESt10_Select1stIS7_ESt4lessIS2_ESaIS7_EE10_M_insert_EPKSt18_Rb_tree_node_baseSG_RKS7_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIPN2bt15PieceDownloaderESt4pairIKS2_PNS0_14DownloadStatusEESt10_Select1stIS7_ESt4lessIS2_ESaIS7_EE16_M_insert_uniqueERKS7_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIPN2bt15PieceDownloaderESt4pairIKS2_PNS0_14DownloadStatusEESt10_Select1stIS7_ESt4lessIS2_ESaIS7_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS7_ERKS7_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIPN2bt15PieceDownloaderESt4pairIKS2_PNS0_14DownloadStatusEESt10_Select1stIS7_ESt4lessIS2_ESaIS7_EE8_M_eraseEPSt13_Rb_tree_nodeIS7_E@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIPN3net4PollESt4pairIKS2_PN3utp12PollPipePairEESt10_Select1stIS8_ESt4lessIS2_ESaIS8_EE10_M_insert_EPKSt18_Rb_tree_node_baseSH_RKS8_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIPN3net4PollESt4pairIKS2_PN3utp12PollPipePairEESt10_Select1stIS8_ESt4lessIS2_ESaIS8_EE16_M_insert_uniqueERKS8_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIPN3net4PollESt4pairIKS2_PN3utp12PollPipePairEESt10_Select1stIS8_ESt4lessIS2_ESaIS8_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS8_ERKS8_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIPN3net4PollESt4pairIKS2_PN3utp12PollPipePairEESt10_Select1stIS8_ESt4lessIS2_ESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIiSt4pairIKi14QSharedPointerIN3net10PollClientEEESt10_Select1stIS6_ESt4lessIiESaIS6_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS6_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIiSt4pairIKi14QSharedPointerIN3net10PollClientEEESt10_Select1stIS6_ESt4lessIiESaIS6_EE16_M_insert_uniqueERKS6_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIiSt4pairIKi14QSharedPointerIN3net10PollClientEEESt10_Select1stIS6_ESt4lessIiESaIS6_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS6_ERKS6_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIiSt4pairIKi14QSharedPointerIN3net10PollClientEEESt10_Select1stIS6_ESt4lessIiESaIS6_EE8_M_eraseEPSt13_Rb_tree_nodeIS6_E@Base 1.3.0
+ (optional=templinst|arch=ia64 s390x sparc)_ZNSt8_Rb_treeIjSt4pairIKjN3net7AddressEESt10_Select1stIS4_ESt4lessIjESaIS4_EE10_M_insert_EPKSt18_Rb_tree_node_baseSD_RKS4_@Base 1.3.1
  (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjN3net7AddressEESt10_Select1stIS4_ESt4lessIjESaIS4_EE16_M_insert_uniqueERKS4_@Base 1.3.0
  (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjN3net7AddressEESt10_Select1stIS4_ESt4lessIjESaIS4_EE5eraseERS1_@Base 1.3.0
- (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjN3net7AddressEESt10_Select1stIS4_ESt4lessIjESaIS4_EE7_M_copyEPKSt13_Rb_tree_nodeIS4_EPSC_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZNSt8_Rb_treeIjSt4pairIKjN3net7AddressEESt10_Select1stIS4_ESt4lessIjESaIS4_EE7_M_copyEPKSt13_Rb_tree_nodeIS4_EPSC_@Base 1.3.0
+ (optional=templinst|arch=amd64 arm64 armhf i386 powerpc ppc64el)_ZNSt8_Rb_treeIjSt4pairIKjN3net7AddressEESt10_Select1stIS4_ESt4lessIjESaIS4_EE7_M_copyINSA_20_Reuse_or_alloc_nodeEEEPSt13_Rb_tree_nodeIS4_EPKSE_SF_RT_@Base 1.3.1
  (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjN3net7AddressEESt10_Select1stIS4_ESt4lessIjESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 1.3.0
- (optional=templinst|arch=ia64 powerpc s390x sparc)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt13ChunkDownloadEESt10_Select1stIS5_ESt4lessIjESaIS5_EE10_M_insert_EPKSt18_Rb_tree_node_baseSE_RKS5_@Base 1.3.1
- (optional=templinst|arch=ia64 powerpc s390x sparc)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt13ChunkDownloadEESt10_Select1stIS5_ESt4lessIjESaIS5_EE16_M_insert_uniqueERKS5_@Base 1.3.1
- (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt13ChunkDownloadEESt10_Select1stIS5_ESt4lessIjESaIS5_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS5_ERKS5_@Base 1.3.0
- (optional=templinst|arch=!ia64 !powerpc !s390x !sparc)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt13ChunkDownloadEESt10_Select1stIS5_ESt4lessIjESaIS5_EE24_M_get_insert_unique_posERS1_@Base 1.3.1
- (optional=templinst|arch=amd64 kfreebsd-amd64)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt13ChunkDownloadEESt10_Select1stIS5_ESt4lessIjESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERS1_@Base 1.3.1
- (optional=templinst|arch=amd64 armel armhf kfreebsd-amd64)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt13ChunkDownloadEESt10_Select1stIS5_ESt4lessIjESaIS5_EE4findERS1_@Base 1.3.0
+ (optional=templinst|arch=ia64 s390x sparc)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt13ChunkDownloadEESt10_Select1stIS5_ESt4lessIjESaIS5_EE10_M_insert_EPKSt18_Rb_tree_node_baseSE_RKS5_@Base 1.3.1
+ (optional=templinst|arch=ia64 s390x sparc)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt13ChunkDownloadEESt10_Select1stIS5_ESt4lessIjESaIS5_EE16_M_insert_uniqueERKS5_@Base 1.3.1
+ (optional=templinst|arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt13ChunkDownloadEESt10_Select1stIS5_ESt4lessIjESaIS5_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS5_ERKS5_@Base 1.3.0
+ (optional=templinst|arch=!ia64 !ppc64el !s390x !sparc)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt13ChunkDownloadEESt10_Select1stIS5_ESt4lessIjESaIS5_EE24_M_get_insert_unique_posERS1_@Base 1.3.1
+ (optional=templinst|arch=amd64 arm64 kfreebsd-amd64 ppc64el)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt13ChunkDownloadEESt10_Select1stIS5_ESt4lessIjESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERS1_@Base 1.3.1
+ (optional=templinst|arch=armel kfreebsd-amd64)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt13ChunkDownloadEESt10_Select1stIS5_ESt4lessIjESaIS5_EE4findERS1_@Base 1.3.0
  (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt13ChunkDownloadEESt10_Select1stIS5_ESt4lessIjESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E@Base 1.3.0
- (optional=templinst|arch=ia64 powerpc s390x sparc)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt21PeerProtocolExtensionEESt10_Select1stIS5_ESt4lessIjESaIS5_EE10_M_insert_EPKSt18_Rb_tree_node_baseSE_RKS5_@Base 1.3.1
- (optional=templinst|arch=ia64 powerpc s390x sparc)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt21PeerProtocolExtensionEESt10_Select1stIS5_ESt4lessIjESaIS5_EE16_M_insert_uniqueERKS5_@Base 1.3.1
- (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt21PeerProtocolExtensionEESt10_Select1stIS5_ESt4lessIjESaIS5_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS5_ERKS5_@Base 1.3.0
- (optional=templinst|arch=!ia64 !powerpc !s390x !sparc)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt21PeerProtocolExtensionEESt10_Select1stIS5_ESt4lessIjESaIS5_EE24_M_get_insert_unique_posERS1_@Base 1.3.1
- (optional=templinst|arch=amd64 kfreebsd-amd64)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt21PeerProtocolExtensionEESt10_Select1stIS5_ESt4lessIjESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERS1_@Base 1.3.1
- (optional=templinst|arch=amd64 armel armhf kfreebsd-amd64)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt21PeerProtocolExtensionEESt10_Select1stIS5_ESt4lessIjESaIS5_EE4findERS1_@Base 1.3.0
+ (optional=templinst|arch=ia64 s390x sparc)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt21PeerProtocolExtensionEESt10_Select1stIS5_ESt4lessIjESaIS5_EE10_M_insert_EPKSt18_Rb_tree_node_baseSE_RKS5_@Base 1.3.1
+ (optional=templinst|arch=ia64 s390x sparc)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt21PeerProtocolExtensionEESt10_Select1stIS5_ESt4lessIjESaIS5_EE16_M_insert_uniqueERKS5_@Base 1.3.1
+ (optional=templinst|arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt21PeerProtocolExtensionEESt10_Select1stIS5_ESt4lessIjESaIS5_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS5_ERKS5_@Base 1.3.0
+ (optional=templinst|arch=!ia64 !ppc64el !s390x !sparc)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt21PeerProtocolExtensionEESt10_Select1stIS5_ESt4lessIjESaIS5_EE24_M_get_insert_unique_posERS1_@Base 1.3.1
+ (optional=templinst|arch=amd64 arm64 kfreebsd-amd64 ppc64el)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt21PeerProtocolExtensionEESt10_Select1stIS5_ESt4lessIjESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERS1_@Base 1.3.1
+ (optional=templinst|arch=armel kfreebsd-amd64)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt21PeerProtocolExtensionEESt10_Select1stIS5_ESt4lessIjESaIS5_EE4findERS1_@Base 1.3.0
  (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt21PeerProtocolExtensionEESt10_Select1stIS5_ESt4lessIjESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E@Base 1.3.0
- (optional=templinst|arch=ia64 powerpc s390x sparc)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7WebSeedEESt10_Select1stIS5_ESt4lessIjESaIS5_EE10_M_insert_EPKSt18_Rb_tree_node_baseSE_RKS5_@Base 1.3.1
- (optional=templinst|arch=ia64 powerpc s390x sparc)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7WebSeedEESt10_Select1stIS5_ESt4lessIjESaIS5_EE16_M_insert_uniqueERKS5_@Base 1.3.1
- (optional=templinst|arch=!amd64 !kfreebsd-amd64)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7WebSeedEESt10_Select1stIS5_ESt4lessIjESaIS5_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS5_ERKS5_@Base 1.3.1
- (optional=templinst|arch=!ia64 !powerpc !s390x !sparc)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7WebSeedEESt10_Select1stIS5_ESt4lessIjESaIS5_EE24_M_get_insert_unique_posERS1_@Base 1.3.1
- (optional=templinst|arch=amd64 kfreebsd-amd64)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7WebSeedEESt10_Select1stIS5_ESt4lessIjESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERS1_@Base 1.3.1
- (optional=templinst|arch=amd64 armel armhf kfreebsd-amd64)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7WebSeedEESt10_Select1stIS5_ESt4lessIjESaIS5_EE4findERS1_@Base 1.3.0
+ (optional=templinst|arch=ia64 s390x sparc)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7WebSeedEESt10_Select1stIS5_ESt4lessIjESaIS5_EE10_M_insert_EPKSt18_Rb_tree_node_baseSE_RKS5_@Base 1.3.1
+ (optional=templinst|arch=ia64 s390x sparc)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7WebSeedEESt10_Select1stIS5_ESt4lessIjESaIS5_EE16_M_insert_uniqueERKS5_@Base 1.3.1
+ (optional=templinst|arch=!amd64 !arm64 !armhf !i386 !kfreebsd-amd64 !powerpc !ppc64el)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7WebSeedEESt10_Select1stIS5_ESt4lessIjESaIS5_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS5_ERKS5_@Base 1.3.1
+ (optional=templinst|arch=!ia64 !ppc64el !s390x !sparc)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7WebSeedEESt10_Select1stIS5_ESt4lessIjESaIS5_EE24_M_get_insert_unique_posERS1_@Base 1.3.1
+ (optional=templinst|arch=amd64 arm64 kfreebsd-amd64 ppc64el)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7WebSeedEESt10_Select1stIS5_ESt4lessIjESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERS1_@Base 1.3.1
+ (optional=templinst|arch=armel kfreebsd-amd64)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7WebSeedEESt10_Select1stIS5_ESt4lessIjESaIS5_EE4findERS1_@Base 1.3.0
  (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjPN2bt7WebSeedEESt10_Select1stIS5_ESt4lessIjESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIjSt4pairIKjPN3net11SocketGroupEESt10_Select1stIS5_ESt4lessIjESaIS5_EE10_M_insert_EPKSt18_Rb_tree_node_baseSE_RKS5_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIjSt4pairIKjPN3net11SocketGroupEESt10_Select1stIS5_ESt4lessIjESaIS5_EE16_M_insert_uniqueERKS5_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIjSt4pairIKjPN3net11SocketGroupEESt10_Select1stIS5_ESt4lessIjESaIS5_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS5_ERKS5_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIjSt4pairIKjPN3net11SocketGroupEESt10_Select1stIS5_ESt4lessIjESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIjSt4pairIKjSt4listIN5boost12shared_arrayIhEESaIS5_EEESt10_Select1stIS8_ESt4lessIjESaIS8_EE10_M_insert_EPKSt18_Rb_tree_node_baseSH_RKS8_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIjSt4pairIKjSt4listIN5boost12shared_arrayIhEESaIS5_EEESt10_Select1stIS8_ESt4lessIjESaIS8_EE16_M_insert_uniqueERKS8_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIjSt4pairIKjSt4listIN5boost12shared_arrayIhEESaIS5_EEESt10_Select1stIS8_ESt4lessIjESaIS8_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS8_ERKS8_@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZNSt8_Rb_treeIjSt4pairIKjSt4listIN5boost12shared_arrayIhEESaIS5_EEESt10_Select1stIS8_ESt4lessIjESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E@Base 1.3.0
- (optional=templinst|arch=ia64 powerpc s390x sparc)_ZNSt8_Rb_treeIjSt4pairIKjhESt10_Select1stIS2_ESt4lessIjESaIS2_EE10_M_insert_EPKSt18_Rb_tree_node_baseSB_RKS2_@Base 1.3.1
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIjSt4pairIKjPN3net11SocketGroupEESt10_Select1stIS5_ESt4lessIjESaIS5_EE10_M_insert_EPKSt18_Rb_tree_node_baseSE_RKS5_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIjSt4pairIKjPN3net11SocketGroupEESt10_Select1stIS5_ESt4lessIjESaIS5_EE16_M_insert_uniqueERKS5_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIjSt4pairIKjPN3net11SocketGroupEESt10_Select1stIS5_ESt4lessIjESaIS5_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS5_ERKS5_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIjSt4pairIKjPN3net11SocketGroupEESt10_Select1stIS5_ESt4lessIjESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIjSt4pairIKjSt4listIN5boost12shared_arrayIhEESaIS5_EEESt10_Select1stIS8_ESt4lessIjESaIS8_EE10_M_insert_EPKSt18_Rb_tree_node_baseSH_RKS8_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIjSt4pairIKjSt4listIN5boost12shared_arrayIhEESaIS5_EEESt10_Select1stIS8_ESt4lessIjESaIS8_EE16_M_insert_uniqueERKS8_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIjSt4pairIKjSt4listIN5boost12shared_arrayIhEESaIS5_EEESt10_Select1stIS8_ESt4lessIjESaIS8_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS8_ERKS8_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZNSt8_Rb_treeIjSt4pairIKjSt4listIN5boost12shared_arrayIhEESaIS5_EEESt10_Select1stIS8_ESt4lessIjESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E@Base 1.3.0
+ (optional=templinst|arch=ia64 s390x sparc)_ZNSt8_Rb_treeIjSt4pairIKjhESt10_Select1stIS2_ESt4lessIjESaIS2_EE10_M_insert_EPKSt18_Rb_tree_node_baseSB_RKS2_@Base 1.3.1
  (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjhESt10_Select1stIS2_ESt4lessIjESaIS2_EE16_M_insert_uniqueERKS2_@Base 1.3.0
  (optional=templinst)_ZNSt8_Rb_treeIjSt4pairIKjhESt10_Select1stIS2_ESt4lessIjESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E@Base 1.3.0
- (optional=templinst|arch=ia64 powerpc s390x sparc)_ZNSt8_Rb_treeIjjSt9_IdentityIjESt4lessIjESaIjEE10_M_insert_EPKSt18_Rb_tree_node_baseS8_RKj@Base 1.3.1
+ (optional=templinst|arch=ia64 s390x sparc)_ZNSt8_Rb_treeIjjSt9_IdentityIjESt4lessIjESaIjEE10_M_insert_EPKSt18_Rb_tree_node_baseS8_RKj@Base 1.3.1
  (optional=templinst)_ZNSt8_Rb_treeIjjSt9_IdentityIjESt4lessIjESaIjEE16_M_insert_uniqueERKj@Base 1.3.0
  (optional=templinst)_ZNSt8_Rb_treeIjjSt9_IdentityIjESt4lessIjESaIjEE8_M_eraseEPSt13_Rb_tree_nodeIjE@Base 1.3.0
- (optional=templinst|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZSt11lower_boundIN5boost10cb_details8iteratorINS0_15circular_bufferIN3utp11DelayWindow10DelayEntryESaIS6_EEENS1_15nonconst_traitsIS7_EEEES6_ET_SC_SC_RKT0_@Base 1.3.0
+ (optional=templinst|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZSt11lower_boundIN5boost10cb_details8iteratorINS0_15circular_bufferIN3utp11DelayWindow10DelayEntryESaIS6_EEENS1_15nonconst_traitsIS7_EEEES6_ET_SC_SC_RKT0_@Base 1.3.0
  _ZTIN2bt10BValueNodeE@Base 1.3.0
  _ZTIN2bt10BufferPoolE@Base 1.3.0
  _ZTIN2bt10DownloaderE@Base 1.3.0
@@ -2640,7 +2644,7 @@ libktorrent.so.5 libktorrent5 #MINVER#
  (optional=internal)_ZTIN5boost16exception_detail10clone_baseE@Base 1.3.1
  (optional=internal)_ZTIN5boost16exception_detail19error_info_injectorISt12length_errorEE@Base 1.3.1
  _ZTIN5boost9exceptionE@Base 1.3.0
- (optional|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZTISt3setIN3dht12KBucketEntryESt4lessIS1_ESaIS1_EE@Base 1.3.0
+ (optional|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZTISt3setIN3dht12KBucketEntryESt4lessIS1_ESaIS1_EE@Base 1.3.0
  _ZTSN2bt10BValueNodeE@Base 1.3.0
  _ZTSN2bt10BufferPoolE@Base 1.3.0
  _ZTSN2bt10DownloaderE@Base 1.3.0
@@ -2789,7 +2793,7 @@ libktorrent.so.5 libktorrent5 #MINVER#
  (optional=internal)_ZTSN5boost16exception_detail10clone_baseE@Base 1.3.1
  (optional=internal)_ZTSN5boost16exception_detail19error_info_injectorISt12length_errorEE@Base 1.3.1
  _ZTSN5boost9exceptionE@Base 1.3.0
- (optional|arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel)_ZTSSt3setIN3dht12KBucketEntryESt4lessIS1_ESaIS1_EE@Base 1.3.0
+ (optional|arch=!amd64 !arm64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64el)_ZTSSt3setIN3dht12KBucketEntryESt4lessIS1_ESaIS1_EE@Base 1.3.0
  _ZTVN2bt10BValueNodeE@Base 1.3.0
  _ZTVN2bt10BufferPoolE@Base 1.3.0
  _ZTVN2bt10DownloaderE@Base 1.3.0
@@ -2799,7 +2803,7 @@ libktorrent.so.5 libktorrent5 #MINVER#
  _ZTVN2bt10UTMetaDataE@Base 1.3.0
  _ZTVN2bt11DataCheckerE@Base 1.3.0
  _ZTVN2bt11HTTPTrackerE@Base 1.3.0
- _ZTVN2bt11PeerManager11PeerVisitorE@Base 1.3.0
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZTVN2bt11PeerManager11PeerVisitorE@Base 1.3.1
  _ZTVN2bt11PeerManagerE@Base 1.3.0
  _ZTVN2bt11SuperSeederE@Base 1.3.0
  _ZTVN2bt11TorrentFileE@Base 1.3.0
@@ -2807,7 +2811,7 @@ libktorrent.so.5 libktorrent5 #MINVER#
  _ZTVN2bt12ChunkCounterE@Base 1.3.0
  _ZTVN2bt12ChunkManagerE@Base 1.3.0
  _ZTVN2bt12PacketReaderE@Base 1.3.0
- _ZTVN2bt12PieceHandlerE@Base 1.3.0
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZTVN2bt12PieceHandlerE@Base 1.3.1
  _ZTVN2bt12TrackersListE@Base 1.3.0
  _ZTVN2bt13AccessManagerE@Base 1.3.0
  _ZTVN2bt13BusErrorGuardE@Base 1.3.0
@@ -2816,7 +2820,7 @@ libktorrent.so.5 libktorrent5 #MINVER#
  _ZTVN2bt13PeerConnectorE@Base 1.3.0
  _ZTVN2bt13PeerInterfaceE@Base 1.3.0
  _ZTVN2bt13SignalCatcherE@Base 1.3.0
- _ZTVN2bt14BEncoderOutputE@Base 1.3.0
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZTVN2bt14BEncoderOutputE@Base 1.3.1
  _ZTVN2bt14CircularBufferE@Base 1.3.0
  _ZTVN2bt14CompressThreadE@Base 1.3.0
  _ZTVN2bt14DataCheckerJobE@Base 1.3.0
@@ -2849,13 +2853,13 @@ libktorrent.so.5 libktorrent5 #MINVER#
  _ZTVN2bt17DecompressFileJobE@Base 1.3.0
  _ZTVN2bt17SingleDataCheckerE@Base 1.3.0
  _ZTVN2bt17TorrentFileStreamE@Base 1.3.0
- _ZTVN2bt17TrackerDataSourceE@Base 1.3.0
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZTVN2bt17TrackerDataSourceE@Base 1.3.1
  _ZTVN2bt18BEncoderFileOutputE@Base 1.3.0
  _ZTVN2bt18BlockListInterfaceE@Base 1.3.0
  _ZTVN2bt19LogMonitorInterfaceE@Base 1.3.0
  _ZTVN2bt19PreallocationThreadE@Base 1.3.0
  _ZTVN2bt20BEncoderBufferOutputE@Base 1.3.0
- _ZTVN2bt20FilePriorityListenerE@Base 1.3.0
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZTVN2bt20FilePriorityListenerE@Base 1.3.1
  _ZTVN2bt20TorrentFileInterfaceE@Base 1.3.0
  _ZTVN2bt21AuthenticationMonitorE@Base 1.3.0
  _ZTVN2bt21PeerProtocolExtensionE@Base 1.3.0
@@ -2910,10 +2914,10 @@ libktorrent.so.5 libktorrent5 #MINVER#
  _ZTVN3dht7PingRspE@Base 1.3.0
  _ZTVN3mse12RC4EncryptorE@Base 1.3.0
  _ZTVN3mse21EncryptedPacketSocketE@Base 1.3.0
- _ZTVN3net10PollClientE@Base 1.3.0
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZTVN3net10PollClientE@Base 1.3.1
  _ZTVN3net10WakeUpPipeE@Base 1.3.0
- _ZTVN3net12ServerSocket11DataHandlerE@Base 1.3.0
- _ZTVN3net12ServerSocket17ConnectionHandlerE@Base 1.3.0
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZTVN3net12ServerSocket11DataHandlerE@Base 1.3.1
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZTVN3net12ServerSocket17ConnectionHandlerE@Base 1.3.1
  _ZTVN3net12ServerSocketE@Base 1.3.0
  _ZTVN3net13SocketMonitorE@Base 1.3.0
  _ZTVN3net15AddressResolverE@Base 1.3.0
@@ -2928,7 +2932,7 @@ libktorrent.so.5 libktorrent5 #MINVER#
  _ZTVN3utp11TransmitterE@Base 1.3.0
  _ZTVN3utp12PacketBufferE@Base 1.3.0
  _ZTVN3utp12RemoteWindowE@Base 1.3.0
- _ZTVN3utp13RetransmitterE@Base 1.3.0
+ (arch=!amd64 !arm64 !armhf !i386 !powerpc !ppc64el)_ZTVN3utp13RetransmitterE@Base 1.3.1
  _ZTVN3utp15UTPServerThreadE@Base 1.3.0
  _ZTVN3utp9UTPServer7PrivateE@Base 1.3.0
  _ZTVN3utp9UTPServerE@Base 1.3.0
